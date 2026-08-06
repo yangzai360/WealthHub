@@ -137,4 +137,17 @@ content = result['choices'][0]['message']['content']
 
 ---
 
+## 6. ⚠️ 站点隐私坑（VuePress 公开站必须遵守）
+
+**问题**：VuePress 内置 git 插件会无条件把提交信息注入每个页面的 JS 数据（contributors/changelog），即使 `repo` 未配置、`lastUpdated/contributors` 关闭也无法阻止（rc.30 实测）。注入内容包括：
+- contributor 主页链接 `https://github.com/yangzai`（点击即进用户 GitHub 主页 → 公开仓库 → 未脱敏数据）
+- 提交邮箱 `yangzai360@icloud.com`、用户名、commit message/hash
+- `themePlugins.git:false` 在 rc.30 有 bug（SSR 加载 GitChangelog css 报 `ERR_UNKNOWN_FILE_EXTENSION`）
+
+**解法（已落地）**：`scripts/clean_dist.py` 在 `vuepress build` 后运行（deploy.yml 已接入），把仓库 URL/主页链接/用户名/邮箱全部替换为不可达占位。**任何新页面/新组件上线后必须跑 `python3 scripts/clean_dist.py` 并验证 `grep -r github.com/yangzai docs/.vuepress/dist/` 无结果**。
+- 不要在 config.ts 配 `repo`（导航栏会出现 GitHub 图标链接）
+- 修改站点后验证清单：①页面 200 ②dist 无 `github.com/yangzai` / 个人邮箱 ③node --check 页面 JS 语法完整
+
+---
+
 *最后更新：2026-08-06。环境或接口有变化时，先改本文件再执行任务。*
