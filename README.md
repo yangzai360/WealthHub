@@ -14,14 +14,22 @@ Sean & Jasy 的资产记录中枢。数据主权在本地,所有记录可审计�
 
 ```
 WealthHub/
+├── AGENTS.md          agent 默认上下文入口(索引知识库与执行约定)
 ├── accounts/          账户定义与资料(账户档案)
 ├── data/
 │   ├── raw/           原始数据(截图、导出对账单)
 │   └── processed/     清洗后数据(CSV / JSON / Parquet)
+│       ├── history/   历史行情库(增量 CSV)
+│       ├── news/      新闻存档(JSON)
+│       └── events/    事件库(情绪+历史影响样本)
+├── docs/
+│   └── knowledge/     技术知识库(接口实测结论、技术坑、环境约定)
 ├── holdings/          交易流水 + 持仓快照(核心记录)
-├── reports/           分析报告(周报 / 月报 / 复盘)
+├── reports/           分析报告(日报 daily/ + 周报 weekly/)
 └── scripts/           自动化脚本(拉行情、算收益、出报告)
 ```
+
+> 💡 执行技术任务前请先读 **`docs/knowledge/technical-notes.md`**(接口可用性 + 运行时坑),入口见根目录 `AGENTS.md`。
 
 ## 记录规范
 
