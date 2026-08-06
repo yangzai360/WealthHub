@@ -33,9 +33,10 @@ export default defineUserConfig({
         },
       ],
     },
-    lastUpdated: true,
+    // 注意: 不配置 repo,避免导航栏出现 GitHub 链接暴露仓库(仓库含未脱敏持仓数据)
+    // lastUpdated/contributors 关闭: 防止 git 插件从 remote 推断并注入仓库 URL 与提交信息
+    lastUpdated: false,
     contributors: false,
-    repo: 'https://github.com/yangzai360/WealthHub',
     editLink: false,
   }),
 })

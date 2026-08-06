@@ -8,6 +8,7 @@ on:
       - 'data/processed/**'
       - 'docs/**'
       - 'scripts/build_site.py'
+      - 'scripts/clean_dist.py'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
@@ -45,6 +46,10 @@ jobs:
 
       - name: Build VuePress site
         run: npm run build
+
+      - name: Clean privacy leaks from dist
+        run: |
+          python3 scripts/clean_dist.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
