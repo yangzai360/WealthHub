@@ -150,4 +150,18 @@ content = result['choices'][0]['message']['content']
 
 ---
 
+## 7. ⚠️ VuePress 2 组件注册坑（图表不显示）
+
+**问题**：Markdown 里写了 `<DashboardCharts />` 但页面空白无图表。根因：**VuePress 2 不会自动注册 `.vuepress/components/` 下的组件**（那是 VuePress 1 的旧特性），组件从未被打包渲染——构建产物中无任何组件代码可验证（`grep 赛道配置分布 dist/assets/*.js` 为空）。
+
+**解法（已落地）**：新建 `docs/.vuepress/client.ts`，用 `defineClientConfig + enhance({ app }) { app.component('DashboardCharts', DashboardCharts) }` 手动注册全局组件。
+
+**验证方法**：
+- 构建后 `grep -c "图表加载中" docs/.vuepress/dist/index.html` ≥ 1（组件 SSR 占位出现）
+- `grep -c "赛道配置分布" docs/.vuepress/dist/assets/app-*.js` ≥ 1（组件代码进包）
+- app.js 含 echarts（大小 ~1.2MB）
+- ⚠️ 线上验证用 `git clone -b gh-pages` 拉分支检查最可靠，curl 可能被本地代理污染（大小/内容对不上、502）
+
+---
+
 *最后更新：2026-08-06。环境或接口有变化时，先改本文件再执行任务。*
