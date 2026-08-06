@@ -63,6 +63,14 @@ knowledge/  技术知识库
 
 任务执行 = 7 步链路（读持仓→行情→新闻→情绪+历史影响→策略→报告归档+git→**微信通知**），差异化参数在各自任务指令中。
 
+## 5.2 🌐 站点发布（自动，无需手动干预）
+
+- 报告 push 后，GitHub Actions 自动执行：`scripts/build_site.py`（脱敏转换 → docs/ + 图表数据）→ `vuepress build` → 部署 `gh-pages` 分支
+- 访问地址：`https://yangzai360.github.io/WealthHub/`
+- **脱敏规则**（build_site.py 顶部注释）：隐藏绝对金额/个股名称/账户持有人，保留百分比/指数行情/情绪/策略
+- 本地预览：`npm run build:site`（先生成脱敏内容再构建）；仅构建 `npm run build`
+- 注意：`docs/` 是站点源目录，`reports/` 是数据真相源，两者物理分离；知识库在 `knowledge/`（不在 docs/ 内，避免被当页面）
+
 ## 6. 📝 知识库维护规则
 
 - 接口可用性、技术坑、环境变化 → 更新 `knowledge/technical-notes.md`
