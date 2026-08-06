@@ -9,6 +9,7 @@
 ## 数据约定
 
 - 持仓数据来源:**用户截图(2026-08-06 起)**
+- 原始截图归档:`data/raw/stock-brokerage/snapshot-YYYY-MM-DD.jpg`(按快照日期命名,便于后续核对)
 - 行情数据来源:akshare / 交易所公开接口
 - 记账粒度:逐笔交易流水(买入 / 卖出 / 分红 / 配股)
 - 单一真相源:`holdings/stock-brokerage/` 下的 CSV/JSON 文件
