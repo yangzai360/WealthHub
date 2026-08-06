@@ -31,6 +31,8 @@
 | `ak.stock_hk_index_spot_sina()` | 港股指数实时（新浪源） | 恒生科技 HSTECH 4846.59 |
 | `ak.stock_zh_a_daily(symbol="sz002410", adjust="qfq")` | A股个股日线（新浪源） | 广联达；深市 `sz` 前缀 / 沪市 `sh` 前缀 |
 | `ak.stock_zh_index_daily(symbol="sh000932")` | 指数日线（新浪源） | 中证消费日线；**兼作 spot 缺失兜底**（见 §3.9） |
+| `ak.stock_us_daily(symbol="XLV")` | 美股 ETF 日线（新浪源，2026-08-07 盘前实测） | XLV（医疗保健精选）/IYH（医疗）/QQQ（纳指100）/DIA（道指）均可用，更新到隔夜收盘；**盘前档美股医疗代理首选 XLV/IYH** |
+| `ak.index_us_stock_sina(symbol=".IXIC")` | 美股指数日线（新浪源，2026-08-07 实测） | .IXIC/.DJI 可用但**间歇 IndexError**（重试 2 次仍失败则用 QQQ/DIA 代理）；**.INX/SPY 滞后一天**（盘前只到前日，勿用其判断隔夜方向） |
 
 ### 2.2 ❌ 不可用接口（被本地代理拦截）
 
@@ -109,7 +111,9 @@ content = result['choices'][0]['message']['content']
 **规避**：用 `re.sub(r"\D", "", code)` 剥离字母前缀后再匹配 6 位代码。
 **补充**：`fund_open_fund_info_em()` 场外净值存在 **T+1 延迟**——盘中档（13:45）只能拿到前一日或前两日净值（如 8/6 盘中仅到 8/4-8/5），当日净值需收盘后更新，属正常现象，报告中注明「净值 T+1 更新」即可，勿误判为接口故障。
 **补充2（2026-08-06 盘后实测）**：`stock_zh_index_spot_sina()` 存在**间歇性数据缺失**——同一天多次调用可能某次缺上证指数（000001）等条目，`df[df["code6"]==code]` 匹配为空即静默漏数据。**规避**：盘后/收盘数据不要依赖 spot，直接用 `stock_zh_index_daily(symbol="sh000001"/"sz399006"/"sh000932")` 取日线最后一行收盘价 + 与前一交易日算涨跌幅（一次调用拿全，稳定可靠）。
-**补充3（CSV 写入）**：`indices.csv` 表头为 `type,date,name,code,close,pct_change,note`（首列 `type` 固定 `index`）；`etf_intraday.csv` 表头 `date,code,name,price,pct,amount_wan,note`；`fund_nav.csv` 表头 `date,code,name,nav_date,nav,pct`。增量写入 key 必须**包含 note 字段**（如 `(date,code,note)`），否则盘中行与收盘行互相误判已存在而漏写。脚本写入行元素须全部 `str()` 转换，否则 `",".join` 对 float 报 TypeError。
+**补充3（CSV 写入）**：`indices.csv` 表头为 `type,date,name,code,close,pct_change,note`（首列 `type` 固定 `index`；美股行用 `type=us_index` 区分）；`etf_intraday.csv` 表头 `date,code,name,price,pct,amount_wan,note`；`fund_nav.csv` 表头 `date,code,name,nav_date,nav,pct`。增量写入 key 必须**包含 note 字段**（如 `(date,code,note)`），否则盘中行与收盘行互相误判已存在而漏写。脚本写入行元素须全部 `str()` 转换，否则 `",".join` 对 float 报 TypeError。
+**补充4（fund_nav.csv name 列，2026-08-07 踩坑）**：增量追加 fund_nav.csv 时第 3 列 `name` 是基金中文名，**不要用 code 占位**（会污染历史库，需事后修复）。名称映射建议维护在脚本内字典；QDII 基金净值存在 T+1~T+2（如广发全球医疗 000369/016280 在 8/7 早盘仅更新到 8/5），属正常现象。
+**补充5（盘前档美股口径）**：北京时间早盘抓美股，判断隔夜方向优先用 `stock_us_daily` 的 ETF 代理（QQQ 纳指 / DIA 道指 / XLV 医疗），`.INX` 滞后一天不可用；涨跌幅由日线最后两行收盘价自行计算（接口不返回 pct）。
 
 ---
 
