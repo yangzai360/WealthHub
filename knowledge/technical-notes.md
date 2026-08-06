@@ -30,7 +30,7 @@
 | `ak.stock_zh_index_spot_sina()` | A股指数实时（新浪源） | 上证 3872.19 / 中证消费 000932 |
 | `ak.stock_hk_index_spot_sina()` | 港股指数实时（新浪源） | 恒生科技 HSTECH 4846.59 |
 | `ak.stock_zh_a_daily(symbol="sz002410", adjust="qfq")` | A股个股日线（新浪源） | 广联达；深市 `sz` 前缀 / 沪市 `sh` 前缀 |
-| `ak.stock_zh_index_daily(symbol="sh000932")` | 指数日线（新浪源） | 中证消费日线 |
+| `ak.stock_zh_index_daily(symbol="sh000932")` | 指数日线（新浪源） | 中证消费日线；**兼作 spot 缺失兜底**（见 §3.9） |
 
 ### 2.2 ❌ 不可用接口（被本地代理拦截）
 
@@ -108,6 +108,8 @@ content = result['choices'][0]['message']['content']
 **现象**：`stock_zh_index_spot_sina()` 返回的「代码」列是 `sh000001`/`sz399006` 格式，直接 `.zfill(6)` 匹配 `000001` 会失败，导致 A股指数盘中抓取静默漏数据。
 **规避**：用 `re.sub(r"\D", "", code)` 剥离字母前缀后再匹配 6 位代码。
 **补充**：`fund_open_fund_info_em()` 场外净值存在 **T+1 延迟**——盘中档（13:45）只能拿到前一日或前两日净值（如 8/6 盘中仅到 8/4-8/5），当日净值需收盘后更新，属正常现象，报告中注明「净值 T+1 更新」即可，勿误判为接口故障。
+**补充2（2026-08-06 盘后实测）**：`stock_zh_index_spot_sina()` 存在**间歇性数据缺失**——同一天多次调用可能某次缺上证指数（000001）等条目，`df[df["code6"]==code]` 匹配为空即静默漏数据。**规避**：盘后/收盘数据不要依赖 spot，直接用 `stock_zh_index_daily(symbol="sh000001"/"sz399006"/"sh000932")` 取日线最后一行收盘价 + 与前一交易日算涨跌幅（一次调用拿全，稳定可靠）。
+**补充3（CSV 写入）**：`indices.csv` 表头为 `type,date,name,code,close,pct_change,note`（首列 `type` 固定 `index`）；`etf_intraday.csv` 表头 `date,code,name,price,pct,amount_wan,note`；`fund_nav.csv` 表头 `date,code,name,nav_date,nav,pct`。增量写入 key 必须**包含 note 字段**（如 `(date,code,note)`），否则盘中行与收盘行互相误判已存在而漏写。脚本写入行元素须全部 `str()` 转换，否则 `",".join` 对 float 报 TypeError。
 
 ---
 
