@@ -14,14 +14,14 @@ WealthHub = Sean & Jasy 的家庭理财工作台（3 账户：2 支付宝基金 
 
 | 文件 | 内容 | 何时加载 |
 |------|------|----------|
-| **`docs/knowledge/technical-notes.md`** | 数据接口实测结论（可用/不可用）、运行时技术坑与规避、环境约定、DeepSeek 调用模板 | **执行任何数据抓取/行情/分析/报告任务前，必读** |
+| **`knowledge/technical-notes.md`** | 数据接口实测结论（可用/不可用）、运行时技术坑与规避、环境约定、DeepSeek 调用模板 | **执行任何数据抓取/行情/分析/报告任务前，必读** |
 | `README.md` | 账户体系、目录结构、记录规范（快照 CSV 模板、成本法、涨跌配色） | 首次进入仓库时通读 |
 | `accounts/*.md` | 各账户档案（持有人、数据约定、历史异常说明） | 涉及具体账户时读取 |
 
 ## 2. 🚀 技术执行前强制检查（Checklist）
 
 任何 agent 触发以下动作前，先完成：
-1. [ ] 读 `docs/knowledge/technical-notes.md`（接口清单 + 技术坑）
+1. [ ] 读 `knowledge/technical-notes.md`（接口清单 + 技术坑）
 2. [ ] 确认 Python 用 `/Users/jieyang/.workbuddy/binaries/python/envs/default/bin/python`（venv，含 akshare 1.18.81）
 3. [ ] 读持仓基准：`holdings/<account>/` 下按日期取最新 `snapshot-*.csv`
 4. [ ] 数据写入前校验本地最新日期，**只增量写入**
@@ -42,7 +42,7 @@ data/raw/     原始截图/导出    data/processed/history/  历史行情（增
 data/processed/news/   新闻存档（JSON）   data/processed/events/  事件库（情绪+历史影响）
 reports/daily/   日报（每日单文件 YYYY-MM-DD.md，盘前/盘中/盘后为其中章节）
 reports/weekly/  周报（按周）  scripts/      自动化脚本
-docs/knowledge/  技术知识库
+knowledge/  技术知识库
 ```
 
 ## 5. 🔄 定时任务（3 个时段，共用本手册，输出到同一日报文件）
@@ -65,6 +65,6 @@ docs/knowledge/  技术知识库
 
 ## 6. 📝 知识库维护规则
 
-- 接口可用性、技术坑、环境变化 → 更新 `docs/knowledge/technical-notes.md`
+- 接口可用性、技术坑、环境变化 → 更新 `knowledge/technical-notes.md`
 - 本文件（AGENTS.md）只放**索引和速查**，不放细节；细节一律下沉到知识库
 - 修改后提交推送：`git add -A && git commit -m "docs: ..." && git push origin master`

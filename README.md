@@ -29,7 +29,7 @@ WealthHub/
 └── scripts/           自动化脚本(拉行情、算收益、出报告)
 ```
 
-> 💡 执行技术任务前请先读 **`docs/knowledge/technical-notes.md`**(接口可用性 + 运行时坑),入口见根目录 `AGENTS.md`。
+> 💡 执行技术任务前请先读 **`knowledge/technical-notes.md`**(接口可用性 + 运行时坑),入口见根目录 `AGENTS.md`。
 
 ## 记录规范
 
@@ -46,7 +46,7 @@ WealthHub/
 
 ## 自动化任务(已启用)
 
-3 个时段定时任务复用同一套 6 步执行链路(读持仓 → 行情更新 → 新闻抓取 → 情绪+历史影响 → 策略计算 → 报告归档+git 提交),仅差异化参数不同。执行前自动加载 `AGENTS.md` 与 `docs/knowledge/technical-notes.md`。
+3 个时段定时任务复用同一套 6 步执行链路(读持仓 → 行情更新 → 新闻抓取 → 情绪+历史影响 → 策略计算 → 报告归档+git 提交),仅差异化参数不同。执行前自动加载 `AGENTS.md` 与 `knowledge/technical-notes.md`。
 
 | 时段 | 任务 | 触发时间 | 产物 |
 |------|------|----------|------|
@@ -71,6 +71,6 @@ WealthHub/
 ## 如何运行
 
 1. 截图或导出对账单 → 交给 agent 识别录入(需人工确认金额)
-2. agent 用公开数据接口补全净值 / 行情(接口清单见 docs/knowledge/technical-notes.md)
+2. agent 用公开数据接口补全净值 / 行情(接口清单见 knowledge/technical-notes.md)
 3. 定期生成持仓汇总、收益曲线、资产配置分析
 4. 已启用定时任务:每日 08:00 / 13:45 / 20:00 自动执行盘前分析 / 盘中调仓建议 / 盘后复盘

@@ -3,3 +3,10 @@
 
 # macOS 系统文件
 .DS_Store
+
+# Node 依赖与构建产物
+node_modules/
+docs/.vuepress/dist/
+docs/.vuepress/cache/
+docs/.vuepress/temp/
+docs/.vuepress/.temp/

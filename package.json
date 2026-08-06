@@ -1,0 +1,24 @@
+{
+  "name": "wealthhub-site",
+  "version": "1.0.0",
+  "description": "WealthHub 家庭理财日报站点（脱敏公开版）",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "build:site": "python3 scripts/build_site.py && vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "next",
+    "@vuepress/theme-default": "next",
+    "sass": "^1.102.0",
+    "vuepress": "next"
+  },
+  "dependencies": {
+    "echarts": "^5.5.1"
+  },
+  "overrides": {
+    "sass-embedded": "npm:sass@^1.102.0"
+  }
+}
