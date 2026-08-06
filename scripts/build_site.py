@@ -52,6 +52,15 @@ def mask_amounts(text: str) -> str:
     return text
 
 def desensitize_md(content: str) -> str:
+    # 保护 markdown 链接中的 URL, 防止金额脱敏规则误伤(如 URL 含数字/千分位形态)
+    # 处理顺序: 保护 URL → 脱敏(TOKEN_MAP + 金额) → 最后还原 URL
+    url_placeholders = {}
+    def protect_url(m):
+        key = f"__URL{len(url_placeholders)}__"
+        url_placeholders[key] = m.group(2)
+        return f"[{m.group(1)}]({key})"
+    content = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", protect_url, content)
+
     for src, dst in TOKEN_MAP:
         content = content.replace(src, dst)
     # 按行处理: 受保护章节保留数字, 其他章节金额脱敏
@@ -63,7 +72,12 @@ def desensitize_md(content: str) -> str:
         if not in_protected:
             line = mask_amounts(line)
         out_lines.append(line)
-    return "\n".join(out_lines)
+    content = "\n".join(out_lines)
+
+    # 还原链接 URL(在脱敏完成后)
+    for key, url in url_placeholders.items():
+        content = content.replace(f"({key})", f"({url})")
+    return content
 
 def frontmatter(title: str, date: str, tags: list) -> str:
     tags_str = ", ".join(f'"{t}"' for t in tags)
