@@ -50,9 +50,11 @@ WealthHub/
 
 | 时段 | 任务 | 触发时间 | 产物 |
 |------|------|----------|------|
-| 盘前 | WealthHub-每日盘前分析 | 每日 08:00 | reports/daily/YYYY-MM-DD-盘前分析.md |
-| 盘中 | WealthHub-每日盘中调仓建议 | 每日 14:15 | reports/daily/YYYY-MM-DD-盘中调仓建议.md |
-| 盘后 | WealthHub-每日盘后复盘 | 每日 20:00 | reports/daily/YYYY-MM-DD-盘后复盘.md(周日额外生成周报 reports/weekly/YYYY-Www-周报.md) |
+| 盘前 | WealthHub-每日盘前分析 | 每日 08:00 | 创建 reports/daily/YYYY-MM-DD.md，写入「一、盘前分析」 |
+| 盘中 | WealthHub-每日盘中调仓建议 | 每日 14:15 | 同一文件追加「二、盘中调仓建议」 |
+| 盘后 | WealthHub-每日盘后复盘 | 每日 20:00 | 同一文件追加「三、盘后复盘」(周日额外生成周报 reports/weekly/YYYY-Www-周报.md) |
+
+> **单文件日报**：每天只有 1 个日报文件 `reports/daily/YYYY-MM-DD.md`，三个时段按章节追加，不再生成多个独立文件；账户快照分析归入当日文件「附录」章节。
 
 - 非交易日(周末/法定节假日):跳过行情更新与调仓建议,仅整理新闻,输出简版报告并注明「非交易日」
 - 数据:AKShare 开源接口(接口可用性清单见技术知识库),增量写入 data/processed/history/,失败重试 2 次后标注「数据暂缺」

@@ -40,17 +40,20 @@ WealthHub = Sean & Jasy 的家庭理财工作台（3 账户：2 支付宝基金 
 accounts/     账户档案        holdings/     持仓快照 CSV（单一真相源）
 data/raw/     原始截图/导出    data/processed/history/  历史行情（增量 CSV）
 data/processed/news/   新闻存档（JSON）   data/processed/events/  事件库（情绪+历史影响）
-reports/daily/   日报（按日期）  reports/weekly/  周报（按周）
-scripts/      自动化脚本       docs/knowledge/  技术知识库
+reports/daily/   日报（每日单文件 YYYY-MM-DD.md，盘前/盘中/盘后为其中章节）
+reports/weekly/  周报（按周）  scripts/      自动化脚本
+docs/knowledge/  技术知识库
 ```
 
-## 5. 🔄 定时任务（3 个时段，共用本手册）
+## 5. 🔄 定时任务（3 个时段，共用本手册，输出到同一日报文件）
 
 | 时段 | 任务 | 触发 | 产物 |
 |------|------|------|------|
-| 盘前 | 每日盘前分析 | 08:00 | `reports/daily/YYYY-MM-DD-盘前分析.md` |
-| 盘中 | 每日盘中调仓建议 | 14:15 | `reports/daily/YYYY-MM-DD-盘中调仓建议.md` |
-| 盘后 | 每日盘后复盘 | 20:00 | `reports/daily/YYYY-MM-DD-盘后复盘.md`（周日+周报） |
+| 盘前 | 每日盘前分析 | 08:00 | 创建 `reports/daily/YYYY-MM-DD.md`，写入「一、盘前分析」 |
+| 盘中 | 每日盘中调仓建议 | 14:15 | 同一文件追加「二、盘中调仓建议」 |
+| 盘后 | 每日盘后复盘 | 20:00 | 同一文件追加「三、盘后复盘」（周日另生成周报 reports/weekly/） |
+
+> **单文件日报约定**：每天只有 1 个日报文件 `reports/daily/YYYY-MM-DD.md`，三时段按章节追加，禁止新建独立文件；文件已存在时仅追加/更新对应章节，禁止覆盖其他章节。
 
 任务执行 = 6 步链路（读持仓→行情→新闻→情绪+历史影响→策略→报告归档+git），差异化参数在各自任务指令中。
 
