@@ -8,7 +8,7 @@ Sean & Jasy 的资产记录中枢。数据主权在本地,所有记录可审计�
 |------|------|--------|------|
 | sean-alipay-fund | 基金账户(支付宝) | Sean | 活跃 |
 | jasy-alipay-fund | 基金账户(支付宝) | Jasy | 活跃 |
-| stock-brokerage | 场内股票账户 | Sean | 待录入截图 |
+| stock-brokerage | 场内股票账户 | Sean | 活跃(2026-08-06 已录入首份快照) |
 
 ## 目录结构
 
@@ -44,17 +44,30 @@ WealthHub/
 - **快照模板**(holdings/{account}/snapshot-{date}.csv):
   `account,as_of,name,code,type,amount,shares,cost_price,open_date,pnl,daily_pnl,note`
 
+## 自动化任务(已启用)
+
+3 个时段定时任务复用同一套 6 步执行链路(读持仓 → 行情更新 → 新闻抓取 → 情绪+历史影响 → 策略计算 → 报告归档+git 提交),仅差异化参数不同。执行前自动加载 `AGENTS.md` 与 `docs/knowledge/technical-notes.md`。
+
+| 时段 | 任务 | 触发时间 | 产物 |
+|------|------|----------|------|
+| 盘前 | WealthHub-每日盘前分析 | 每日 08:00 | reports/daily/YYYY-MM-DD-盘前分析.md |
+| 盘中 | WealthHub-每日盘中调仓建议 | 每日 14:15 | reports/daily/YYYY-MM-DD-盘中调仓建议.md |
+| 盘后 | WealthHub-每日盘后复盘 | 每日 20:00 | reports/daily/YYYY-MM-DD-盘后复盘.md(周日额外生成周报 reports/weekly/YYYY-Www-周报.md) |
+
+- 非交易日(周末/法定节假日):跳过行情更新与调仓建议,仅整理新闻,输出简版报告并注明「非交易日」
+- 数据:AKShare 开源接口(接口可用性清单见技术知识库),增量写入 data/processed/history/,失败重试 2 次后标注「数据暂缺」
+- 策略:夏普比率(无风险基准=十年国债)、赛道集中度上限 40%、单次调仓 ≤5%、输出到赛道级
+
 ## 待确认的默认项(用户尚未拍板,暂按以下默认执行)
 
 | 项 | 当前默认 | 备选 |
 |----|---------|------|
 | 记账粒度 | 逐笔流水 + 快照 | 月度净变动汇总 |
-| 定时任务 | 未启用 | 每日/每周自动拉净值汇总 |
 | 历史数据补录 | 不强制 | 蚂蚁财富「交易记录」导出补全建仓日期 |
 
 ## 如何运行
 
 1. 截图或导出对账单 → 交给 agent 识别录入(需人工确认金额)
-2. agent 用公开数据接口补全净值 / 行情
+2. agent 用公开数据接口补全净值 / 行情(接口清单见 docs/knowledge/technical-notes.md)
 3. 定期生成持仓汇总、收益曲线、资产配置分析
-4. 可选:定时任务每日/每周自动拉净值并汇总
+4. 已启用定时任务:每日 08:00 / 14:15 / 20:00 自动执行盘前分析 / 盘中调仓建议 / 盘后复盘
