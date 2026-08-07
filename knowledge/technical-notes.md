@@ -202,4 +202,35 @@ content = result['choices'][0]['message']['content']
 
 ---
 
+## 9. 且慢（qieman.com）数据接口与参考组合
+
+**背景**：用户的 LONG_WIN（长赢指数投资计划-150份，主理人 ETF拯救世界）是主要操作参考来源，与用户持仓高度重合（15 只基金重合，市值约 21.6 万）。数据已落库 `reference-portfolios/long-win/`。
+
+### 9.1 可用接口（2026-08-07 实测，公开可访问，无需登录）
+
+| 接口 | 说明 |
+|------|------|
+| `GET https://qieman.com/pmdj/v2/long-win/plan?prodCode=LONG_WIN` | 组合详情（指标/大类 composition/38 个成分基金 prodSummaries） |
+| `GET https://qieman.com/pmdj/v2/long-win/plan/adjustments?desc=true&prodCode=LONG_WIN` | **全部调仓记录**（261 条，含 fundCode/份数/调仓日期/说明文章 url） |
+| `GET https://qieman.com/pmdj/v2/long-win/plan/nav-history?prodCode=LONG_WIN` | 净值历史（2698 条，2015-07 起，字段 navDate/nav/dailyReturn） |
+| `GET https://qieman.com/pmdj/v2/long-win/plan/clz-distribution` | 大类资产分布历史（541KB，各时段配置比例） |
+| `GET https://qieman.com/pmdj/v1/utils/index/000905.SH/history?start=2015-07-01&end=2026-08-06` | **指数历史数据**（中证500；hs300 同理）——"基金/指数历史数据"可从此拿 |
+| `POST https://qieman.com/alfa/v1/graphql` | GraphQL（operationName: Longwin / LongWinNavHistory / LongWinAcrHistory 等，需带浏览器同源 header） |
+
+### 9.2 抓取方式（重要经验）
+- **页面是 Taro/SSR SPA**：`curl` 只能拿到 detail 页的部分 SSR 数据（大类配置），**基金级持仓/调仓记录必须浏览器渲染或直接调 REST API**
+- **最可靠方式**：直接 curl REST API（`/pmdj/v2/...`），返回纯 JSON，无需登录，Referer 加 `https://qieman.com/` 即可
+- GraphQL introspection 被禁用；GraphQL 需正确 operationName + variables（可从浏览器 DevTools 抓）
+- **浏览器渲染**：系统 Chrome headless + playwright-core（`/Users/jieyang/.workbuddy/binaries/node/workspace/node_modules/playwright-core`），`executablePath: /Applications/Google Chrome.app/...`，拦截 response 保存 graphql/pmdj 响应
+- ⚠️ 且慢官方还有 **Qieman MCP**（qieman.com/mcp 免费申请 API Key，72 个工具含基金历史净值/组合穿透）——若需批量基金历史数据可申请接入
+
+### 9.3 落库约定（reference-portfolios/）
+- `reference-portfolios/<poCode>/meta.json` — 组合元数据与最新指标（快照式）
+- `reference-portfolios/<poCode>/composition-YYYY-MM-DD.json` — 持仓快照（按日期归档，含大类+成分基金代码/份数/占比/累计收益）
+- `reference-portfolios/<poCode>/adjustments.json` — 调仓记录全量（事件型，按 adjustmentId 增量追加）
+- `data/processed/reference/<poCode>-nav.csv` — 净值历史（时间序列，按日期增量 append）
+- 更新频率建议：**盘后档（20:00）每日增量拉取** nav-history 与 adjustments（`desc=true` 取最新 adjustmentId 对比），LONG_WIN 有新调仓时在日报「参考信号」提示用户
+
+---
+
 *最后更新：2026-08-07。环境或接口有变化时，先改本文件再执行任务。*

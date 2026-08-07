@@ -38,8 +38,10 @@ WealthHub = Sean & Jasy 的家庭理财工作台（3 账户：2 支付宝基金 
 
 ```
 accounts/     账户档案        holdings/     持仓快照 CSV（单一真相源）
+reference-portfolios/  外部参考组合（如 long-win 长赢计划，含 meta/composition/adjustments）
 data/raw/     原始截图/导出    data/processed/history/  历史行情（增量 CSV）
 data/processed/news/   新闻存档（JSON）   data/processed/events/  事件库（情绪+历史影响）
+data/processed/reference/  参考组合净值历史（如 long-win-nav.csv）
 reports/daily/   日报（每日单文件 YYYY-MM-DD.md，盘前/盘中/盘后为其中章节）
 reports/weekly/  周报（按周）  scripts/      自动化脚本
 knowledge/  技术知识库

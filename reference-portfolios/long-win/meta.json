@@ -1,0 +1,37 @@
+{
+  "poCode": "LONG_WIN",
+  "name": "长赢指数投资计划-150份",
+  "platform": "且慢(盈米基金)",
+  "url": "https://qieman.com/alfa/portfolio/LONG_WIN/detail",
+  "manager": "ETF拯救世界",
+  "risk_level": "中高风险",
+  "establish_date": "2015-07-01",
+  "total_units": 150,
+  "invested_units": 109,
+  "snapshot": {
+    "nav_date": "2026-08-06",
+    "nav": 1.6803,
+    "daily_return": -0.0027,
+    "from_setup_return": 0.6803,
+    "annual_compounded_return": 0.0478,
+    "invested_acr": 0.0573,
+    "max_drawdown": 0.1979,
+    "volatility": 0.1112,
+    "sharpe": 0.2952
+  },
+  "followers": {
+    "joined": 444808,
+    "active": 128975
+  },
+  "adjust_count": 261,
+  "benchmarks": [
+    {
+      "code": "hs300",
+      "name": "沪深300"
+    },
+    {
+      "code": "000905.SH",
+      "name": "中证500"
+    }
+  ]
+}
