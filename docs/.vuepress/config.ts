@@ -96,6 +96,9 @@ export default defineUserConfig({
         },
       ],
     },
+    // 侧边栏只到页面层级(日报=日期条目), 不展开页面内的段落标题;
+    // 段落导航由 RightToc 组件在页面右侧呈现(宽屏固定/窄屏浮动, 可展开收起)
+    sidebarDepth: 0,
     // 注意: 不配置 repo,避免导航栏出现 GitHub 链接暴露仓库(仓库含未脱敏持仓数据)
     // lastUpdated/contributors 关闭: 防止 git 插件从 remote 推断并注入仓库 URL 与提交信息
     lastUpdated: false,

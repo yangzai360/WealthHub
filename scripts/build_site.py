@@ -110,7 +110,8 @@ def convert_daily():
             tags = ["日报"]
         # 加上"上一日/下一日"导航
         dst_path = os.path.join(daily_dst, fname)
-        out = frontmatter(f"WealthHub 日报 {date}", date, tags) + masked
+        # 正文前注入右侧目录组件(段落导航显示在页面右侧, 宽屏固定/窄屏浮动)
+        out = frontmatter(f"WealthHub 日报 {date}", date, tags) + "<RightToc />\n\n" + masked
         with open(dst_path, "w", encoding="utf-8") as f:
             f.write(out)
         # 提取核心结论摘要
