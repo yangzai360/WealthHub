@@ -231,6 +231,14 @@ content = result['choices'][0]['message']['content']
 - `data/processed/reference/<poCode>-nav.csv` — 净值历史（时间序列，按日期增量 append）
 - 更新频率建议：**盘后档（20:00）每日增量拉取** nav-history 与 adjustments（`desc=true` 取最新 adjustmentId 对比），LONG_WIN 有新调仓时在日报「参考信号」提示用户
 
+### 9.4 ⚠️ 调仓方向判定（重要教训，2026-08-07 修正）
+- **REST `/adjustments` 的 `orders[].tradeUnit` 恒为正数**，只表示份数，**不区分买卖**！方向在：
+  1. **`adjustments[].comment` 字段**（权威）：中文描述如「卖出1份建信500，买入1份易方达1-3年国开债」，按 `(买入|卖出)(\d*)份?(名称)` 正则解析
+  2. **GraphQL `latestAdjustment.redeemOrders`（卖出）/ `buyOrders`（买入）** 分类，与 comment 一致
+- **此前错误**：曾用 `buyAdjustmentId != 自身批次 = 卖出` 判定，仅识别出 10 次网格卖出，漏判 159-10=149 份卖出（把大量卖出当买入）——**必须用 comment 解析**
+- 正确统计（全历史 261 批）：**买入 268 份 / 卖出 159 份 / 132 批含卖出**；2026 年 21 批含卖出
+- 正则解析 comment 后建议与 orders 的 variety 匹配回填 fund_code（名称含 `-` 如「易方达1-3年国开债」需在正则字符集加 `\-`）
+
 ---
 
 *最后更新：2026-08-07。环境或接口有变化时，先改本文件再执行任务。*
