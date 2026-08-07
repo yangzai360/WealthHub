@@ -114,6 +114,7 @@ content = result['choices'][0]['message']['content']
 **补充3（CSV 写入）**：`indices.csv` 表头为 `type,date,name,code,close,pct_change,note`（首列 `type` 固定 `index`；美股行用 `type=us_index` 区分）；`etf_intraday.csv` 表头 `date,code,name,price,pct,amount_wan,note`；`fund_nav.csv` 表头 `date,code,name,nav_date,nav,pct`。增量写入 key 必须**包含 note 字段**（如 `(date,code,note)`），否则盘中行与收盘行互相误判已存在而漏写。脚本写入行元素须全部 `str()` 转换，否则 `",".join` 对 float 报 TypeError。
 **补充4（fund_nav.csv name 列，2026-08-07 踩坑）**：增量追加 fund_nav.csv 时第 3 列 `name` 是基金中文名，**不要用 code 占位**（会污染历史库，需事后修复）。名称映射建议维护在脚本内字典；QDII 基金净值存在 T+1~T+2（如广发全球医疗 000369/016280 在 8/7 早盘仅更新到 8/5），属正常现象。
 **补充5（盘前档美股口径）**：北京时间早盘抓美股，判断隔夜方向优先用 `stock_us_daily` 的 ETF 代理（QQQ 纳指 / DIA 道指 / XLV 医疗），`.INX` 滞后一天不可用；涨跌幅由日线最后两行收盘价自行计算（接口不返回 pct）。
+**补充6（个股盘中实时，2026-08-07 盘中实测）**：A股个股**盘中实时价暂无可靠接口**——`stock_zh_a_spot()`（新浪全市场）返回 HTML 被代理污染（JSONDecodeError），`stock_zh_a_daily(symbol="sz002410")` 盘中最后一行只到**前一交易日**（无当日 bar）。盘中档对个股（广联达/通威）用指数近似估算并在报告标注：广联达(软件)→创业板指、通威(光伏)→上证指数保守口径。盘后收盘价仍可用 `stock_zh_a_daily` 更新。
 
 ---
 
@@ -201,4 +202,4 @@ content = result['choices'][0]['message']['content']
 
 ---
 
-*最后更新：2026-08-06。环境或接口有变化时，先改本文件再执行任务。*
+*最后更新：2026-08-07。环境或接口有变化时，先改本文件再执行任务。*
