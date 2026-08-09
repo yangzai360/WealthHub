@@ -1,0 +1,82 @@
+[
+ {
+  "id": "N20260810-001",
+  "sentiment": "正面",
+  "strength": 70,
+  "impact_direction": "利多",
+  "expected_volatility": "高",
+  "reason": "通胀数据低于预期，降息降准预期升温，利好成长与科技股，但周期消费承压。"
+ },
+ {
+  "id": "N20260810-002",
+  "sentiment": "正面",
+  "strength": 80,
+  "impact_direction": "利多",
+  "expected_volatility": "高",
+  "reason": "政策层超预期表态，降准降息预期升温，货币宽松利好成长股。"
+ },
+ {
+  "id": "N20260810-003",
+  "sentiment": "正面",
+  "strength": 75,
+  "impact_direction": "利多",
+  "expected_volatility": "高",
+  "reason": "医药板块反弹超30%，创新药出海基本面向好，公募低配后修复动能强。"
+ },
+ {
+  "id": "N20260810-004",
+  "sentiment": "正面",
+  "strength": 60,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "茅台五粮液批价上调，白酒价盘企稳，景气筑底回升，板块情绪改善。"
+ },
+ {
+  "id": "N20260810-005",
+  "sentiment": "负面",
+  "strength": 75,
+  "impact_direction": "利空",
+  "expected_volatility": "高",
+  "reason": "白酒行业量价利三杀，库存高企价格倒挂加剧，基本面深度调整。"
+ },
+ {
+  "id": "N20260810-006",
+  "sentiment": "正面",
+  "strength": 65,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "港股通科技资产扩容，南向资金持续流入，恒生科技结构升级。"
+ },
+ {
+  "id": "N20260810-007",
+  "sentiment": "中性",
+  "strength": 45,
+  "impact_direction": "中性",
+  "expected_volatility": "中",
+  "reason": "港股科技结构改善但中报窗口不确定性，建议均衡，影响中性。"
+ },
+ {
+  "id": "N20260810-008",
+  "sentiment": "中性",
+  "strength": 50,
+  "impact_direction": "中性",
+  "expected_volatility": "高",
+  "reason": "多件重磅事件同日落地，方向待确认，波动或加剧。"
+ },
+ {
+  "id": "N20260810-009",
+  "sentiment": "正面",
+  "strength": 60,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "环形RNA体内CAR-T全球首创获FDA许可，创新药技术突破提振板块情绪。"
+ },
+ {
+  "id": "N20260810-010",
+  "sentiment": "中性",
+  "strength": 35,
+  "impact_direction": "中性",
+  "expected_volatility": "低",
+  "reason": "央行连续增持黄金反映避险需求，但宏观层面影响有限。"
+ }
+]
