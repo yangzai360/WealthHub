@@ -1,0 +1,156 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""2026-08-11 盘前档: 新闻构建 + DeepSeek 情绪分析 + 事件库匹配"""
+import json, os, re, urllib.request, time
+
+BASE = "/Users/jieyang/Documents/WealthHub"
+NEWS_DIR = os.path.join(BASE, "data/processed/news")
+EVENTS_DIR = os.path.join(BASE, "data/processed/events")
+DATE = "2026-08-11"
+
+news_items = [
+ {"id": "N20260811-001", "date": DATE, "track": "宏观", "category": "宏观类",
+  "title": "隔夜美股三大指数小幅收跌：道指-0.11%标普-0.06%纳指-0.32% 能源板块+4.63%领涨 医疗保健+1.68% 半导体重挫费半-2.94%",
+  "summary": "美东8/10收盘：道指53975.98(-0.11%)、标普7753.11(-0.06%)、纳指26605.36(-0.32%)，前期上涨后技术性整理。WTI原油大涨5.1%突破82美元(霍尔木兹海峡地缘紧张)推动能源+4.63%领涨；医疗保健+1.68%紧随其后。费城半导体-2.94%(英伟达-2.86%、Coherent-14.24%、Lumentum-8.61%)，光模块/半导体成重灾区。美债10年期收益率4.65%附近。",
+  "source": "WebSearch/新华社", "source_url": "https://www.cnstock.com/commonDetail/757994"},
+ {"id": "N20260811-002", "date": DATE, "track": "宏观", "category": "宏观类",
+  "title": "纳斯达克中国金龙指数+1.65% 阿里+3.04% 中概逆势走强 对中国资产情绪偏暖",
+  "summary": "美东8/10：纳斯达克中国金龙指数收涨1.65%，阿里巴巴+3.04%、京东、爱奇艺、BOSS直聘等走强，A50期指几乎平盘(-0.05%)。中概逆势走强主因AI硬件回调中资金再平衡+中国资产估值优势，海外对中国资产情绪偏暖，利好港股/恒科映射。",
+  "source": "WebSearch/雪球", "source_url": "https://xueqiu.com/3997004814/404484571"},
+ {"id": "N20260811-003", "date": DATE, "track": "宏观", "category": "宏观类",
+  "title": "美国7月CPI明日(8/12)公布：预期整体同比3.4%核心2.5% 9月加息概率44% 能源反弹与服务通胀为最大风险",
+  "summary": "美东8/12 8:30将公布7月CPI。FactSet预期整体CPI同比由3.5%回落至3.4%、核心由2.6%降至2.5%，环比整体+0.1%/核心+0.2%。7月非农爆冷(-2.3万)后9月加息概率降至~44%。机构分歧：摩根大通预计核心环比+0.22%不足以触发9月加息；花旗认为偏弱通胀可基本排除9月加息；美银警告若核心服务价格重加速仍保留9月加息选项。若CPI显著走弱(≤3.2%)加息预期彻底锁死；若≥3.6%沃什'数据驱动式加息'兑现，成长股估值承压。",
+  "source": "WebSearch/TradingKey", "source_url": "https://www.tradingkey.com/zh-hans/analysis/economic/indicators/262092044-us-july-cpi-preview-inflation-cool-us-stocks-dollar-gold-tradingkey"},
+ {"id": "N20260811-004", "date": DATE, "track": "A股医药", "category": "行业事件类",
+  "title": "甘李药业出海大单：GLP-1双周制剂博凡格鲁肽欧洲39国独家许可 首付款6200万欧元 里程碑最高6.64亿欧元",
+  "summary": "8/10甘李药业公告：与意大利Menarini达成独家许可协议，授予博凡格鲁肽(GLP-1RA双周制剂,超重/肥胖适应症)在欧盟27国及英国、瑞士等39个欧洲国家开发及商业化独家权利。首付款6200万欧元不可退还，研发/上市/销售里程碑累计最高6.64亿欧元，另加最高双位数梯度特许权使用费。该药有望成为全球首款GLP-1双周制剂，进一步夯实中国创新药减重赛道出海叙事(1-7月中国创新药BD交易总额已超1063亿美元)。",
+  "source": "WebSearch/证券时报", "source_url": "https://www.stcn.com/article/detail/4068009.html"},
+ {"id": "N20260811-005", "date": DATE, "track": "A股医药", "category": "政策类",
+  "title": "石药创新猴痘mRNA疫苗SYS6037获美国FDA临床试验批准",
+  "summary": "8/10石药创新公告：控股子公司巨石生物与中科院微生物研究所合作开发的SYS6037注射液(猴痘mRNA疫苗)获美国FDA临床试验批准(IND 33047)，可在美国开展临床试验。技术路线简洁、免疫原性优于减毒活疫苗、对多种正痘病毒抗原广谱交叉反应。短期对业绩无重大影响，但为中国mRNA疫苗平台国际化里程碑。",
+  "source": "WebSearch/巨潮资讯", "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-10/1225465446.PDF"},
+ {"id": "N20260811-006", "date": DATE, "track": "A股医药", "category": "政策类",
+  "title": "长春高新GenSci148注射液(VEGF多重阻断剂,眼科)临床试验申请获批",
+  "summary": "8/10长春高新公告：子公司金赛药业GenSci148注射液(治疗用生物制品1类，VEGF多重阻断剂)境内生产药品注册临床试验申请获国家药监局批准，拟用于新生血管性年龄相关性黄斑变性(nAMD)、糖尿病性黄斑水肿(DME)和视网膜静脉阻塞(RVO)。眼科创新管线持续推进。",
+  "source": "WebSearch/证券时报", "source_url": "https://www.stcn.com/article/detail/4067416.html"},
+ {"id": "N20260811-007", "date": DATE, "track": "A股医药", "category": "行业事件类",
+  "title": "百花医药五连板(累计+60.97%) 但Q1净利暴跌67.94% 市盈率167倍 公司提示风险 医药情绪过热信号",
+  "summary": "8/10百花医药(600721)开盘即封涨停斩获第五个连续涨停板(累计+60.97%)，触发股票交易异常波动公告。公司基本面：Q1营收6718万(-30.68%)、归母净利664万(-67.94%)，滚动市盈率167.49倍显著高于行业33.67倍均值，控股股东拟变更为金华市国资委。基本面与股价严重背离，是医药板块情绪进入极度过热区间的警示信号。",
+  "source": "WebSearch/新浪财经", "source_url": "https://finance.sina.cn/stock/ssgs/2026-08-10/detail-inimwckz1062911.d.html"},
+ {"id": "N20260811-008", "date": DATE, "track": "大消费", "category": "行业事件类",
+  "title": "8/10高端白酒终端价持续上行：精品茅台2422元创近一月新高 普五破800元 青花汾20四连涨",
+  "summary": "新浪财经'酒价内参'监测：8/10中国白酒11大单品六涨两平三跌。精品茅台+12元至2422元创近一月新高；飞天茅台+4元至1777元高位震荡；普五八代+5元至803元(站上800关口)；青花汾20+5元至393元四连涨；洋河M6+、古井贡古20突破下跌趋势线。11大单品总售价9965元较前日+32元，创5/21以来新高。白酒价格总盘整体回暖继续推进。",
+  "source": "WebSearch/上证报", "source_url": "https://www.cnstock.com/commonDetail/757442"},
+ {"id": "N20260811-009", "date": DATE, "track": "大消费", "category": "行业事件类",
+  "title": "高盛：中国白酒最困难阶段已过去 行业处于复苏极早期 上调古井贡酒/今世缘至买入",
+  "summary": "高盛最新研报：中国白酒行业最艰难的去库存阶段已经过去——供应端削减提速、关键中高端品种批发价格企稳、渠道库存趋于健康，行业正处于复苏极早期阶段。6/23已将古井贡酒从卖出上调至买入(目标价105元)、今世缘从中性上调至买入(目标价31元)，维持茅台为板块首选，对五粮液/水井坊/洋河持谨慎。但受宏观不确定性拖累，更广泛的商业需求复苏仍待确认。",
+  "source": "WebSearch/高盛研报·追风交易台", "source_url": "http://mp.weixin.qq.com/s?__biz=MzU5NjQ5MzIzMQ==&mid=2247491661&idx=4&sn=fd3c090ab583ceed506d81350d3278c7"},
+ {"id": "N20260811-010", "date": DATE, "track": "大消费", "category": "行业事件类",
+  "title": "茅台8/10涨3.03%收1348.86元 单日主力净流入4.89亿居食品饮料行业首位",
+  "summary": "8/10 A股白酒板块'抢筹'行情：贵州茅台+3.03%收1348.86元(成交额84.28亿)，主力资金净流入4.89亿元居食品饮料行业首位(五粮液1.64亿的3倍)。白酒板块主力净流入超10亿元。同日飞天茅台终端均价升至1777元、自营店价1753元。资金集中涌向白酒龙头的逻辑：批价修复+机构持仓历史底部+中秋备货周期临近。",
+  "source": "WebSearch/今日头条", "source_url": "https://www.toutiao.com/article/7672325798669402643/"},
+ {"id": "N20260811-011", "date": DATE, "track": "恒生科技", "category": "业绩类",
+  "title": "高盛中国互联网Q2前瞻：腾讯8/12公布业绩 预期收入+9%经调整EBIT+9%至752亿 游戏+11%广告+18%",
+  "summary": "高盛报告：腾讯8/12公布Q2业绩，预测收入同比+9%、经调整EBIT同比+9%至752亿元。分部预测：游戏收入+11%、广告+18%(AI广告上行)、金融科技及企业服务+8%(云收入加速带动)。焦点：AI资本开支及分配优先级、混元模型策略、WorkBuddy及微信Agent指标。同时上调美团目标价116→123港元维持买入。板块前景具建设性。",
+  "source": "WebSearch/智通财经", "source_url": "https://www.163.com/dy/article/L3VPKO2605198UNI.html"},
+ {"id": "N20260811-012", "date": DATE, "track": "恒生科技", "category": "业绩类",
+  "title": "摩通上调腾讯2026资本开支预测至2000亿元 下调EPS 5% 市场聚焦AI商业化与自由现金流收缩",
+  "summary": "摩根大通：随AI投资增加，腾讯短期盈利或波动，已将2026调整后EPS预测下调5%，反映资本开支预算上调至2000亿元人民币(以2000亿/年计，下半年单季开支接近Q1自由现金流567亿)。彭博一致预期腾讯Q2收入2028-2038亿(+9~10%)、调整后净利666-682亿(+5~6%)；大摩预计剔除AI后核心经营利润+13.5%(Q1为17%)。摩通维持增持目标价690港元。核心矛盾：AI资本开支对盈利的侵蚀 vs 核心业务现金造血。",
+  "source": "WebSearch/搜狐·观点", "source_url": "https://www.sohu.com/a/1060877900_122014422"},
+ {"id": "N20260811-013", "date": DATE, "track": "恒生科技", "category": "宏观类",
+  "title": "8/10南向资金净买入20.22亿港元 港股通沪+27.97亿/深-7.75亿 连续净流入",
+  "summary": "8/10南向资金全天成交1080.22亿港元，净买入20.22亿港元：港股通(沪)净买入27.97亿、港股通(深)净卖出7.75亿。南向十大成交中MINIMAX-W净买入10.14亿、金斯瑞生物科技4.72亿居前，中芯国际遭净卖出4.52亿。叠加上周南向净流入阿里59.75亿/腾讯8.53亿，港股流动性支撑延续，但深市通道转为净卖出显示高位分歧。",
+  "source": "WebSearch/证券时报", "source_url": "https://www.stcn.com/article/detail/4067086.html"},
+ {"id": "N20260811-014", "date": DATE, "track": "美股标普医药", "category": "行业事件类",
+  "title": "AbCellera绝经期潮热药ABCL635二期达标：潮热频率降83%(安慰剂33%) 股价+34.78% 美股医疗保健+1.68%领涨",
+  "summary": "美东8/10：加拿大生物科技公司AbCellera(ABCL)公布ABCL635(NK3R非激素抗体，绝经期中重度血管舒缩症状)二期临床达主要终点——单剂量4周后潮热频率较基线降83%(安慰剂33%)，睡眠与整体感受显著改善，耐受性良好。股价+34.78%创4.5年来最大单日涨幅。同日美股标普500医疗保健板块+1.68%领涨(仅次于能源)，XLV口径IYH+1.63%，生物科技高beta活跃(OBX+27%)，非激素女性健康赛道获资金关注。",
+  "source": "WebSearch/Dow Jones·TradingView", "source_url": "https://www.tradingview.com/news/DJN_DN20260810006607:0"},
+]
+
+# ---------- DeepSeek 情绪分析 ----------
+def load_deepseek_key():
+    with open(os.path.expanduser("~/.pi/agent/auth.json")) as f:
+        return json.load(f)["deepseek"]["key"]
+
+def deepseek_chat(prompt, key, max_retry=3):
+    data = {
+        "model": "deepseek-v4-flash",
+        "messages": [{"role": "user", "content": prompt}],
+        "max_tokens": 8000,
+        "temperature": 0.3,
+    }
+    for attempt in range(max_retry):
+        try:
+            req = urllib.request.Request("https://api.deepseek.com/chat/completions",
+                data=json.dumps(data).encode(),
+                headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=180) as resp:
+                result = json.load(resp)
+            content = result["choices"][0]["message"]["content"]
+            if content and content.strip():
+                return content
+            print(f"[DS] 第{attempt+1}次返回空 content, 重试...")
+        except Exception as e:
+            print(f"[DS] 第{attempt+1}次失败: {e}")
+        time.sleep(3)
+    return None
+
+prompt = f"""你是资深医药/消费/港股行业分析师。请对以下 {len(news_items)} 条财经新闻逐条输出情绪标注。
+
+规则：
+- sentiment: 正面/中性/负面
+- strength: 0-100 整数(影响强度,60+为强影响)
+- impact_direction: 利多/中性/利空(对该新闻 track 对应赛道)
+- expected_volatility: 高/中/低(对该赛道短期波动预期)
+- reason: 一句话中文理由(≤40字)
+
+严格输出 JSON 数组,每元素对应一条新闻(id 一一对应),格式:
+[{{"id":"N20260811-001","sentiment":"正面","strength":70,"impact_direction":"利多","expected_volatility":"中","reason":"..."}}]
+
+新闻列表:
+{json.dumps([{k: v for k, v in n.items() if k in ("id","track","category","title","summary")} for n in news_items], ensure_ascii=False)}"""
+
+key = load_deepseek_key()
+content = deepseek_chat(prompt, key)
+if not content:
+    print("FATAL: DeepSeek 情绪分析失败")
+    raise SystemExit(1)
+
+# 解析 JSON(清理代码块包裹)
+content = content.strip()
+if content.startswith("```"):
+    content = re.sub(r"^```(?:json)?\s*", "", content)
+    content = re.sub(r"\s*```$", "", content)
+sentiments = json.loads(content)
+sent_map = {s["id"]: s for s in sentiments}
+
+# 合并写入 news JSON
+for n in news_items:
+    s = sent_map.get(n["id"], {})
+    n["sentiment"] = s.get("sentiment", "中性")
+    n["strength"] = s.get("strength", 50)
+    n["impact_direction"] = s.get("impact_direction", "中性")
+    n["expected_volatility"] = s.get("expected_volatility", "中")
+    n["reason"] = s.get("reason", "")
+
+news_path = os.path.join(NEWS_DIR, f"news-{DATE}.json")
+with open(news_path, "w", encoding="utf-8") as f:
+    json.dump(news_items, f, ensure_ascii=False, indent=1)
+print(f"[NEWS] 已写入 {news_path} ({len(news_items)} 条)")
+
+# 独立 sentiment 文件(简版)
+sent_path = os.path.join(NEWS_DIR, f"sentiment-{DATE}.json")
+with open(sent_path, "w", encoding="utf-8") as f:
+    json.dump([{k: v for k, v in n.items() if k in ("id","track","category","title","sentiment","strength","impact_direction","expected_volatility","reason","source_url")} for n in news_items], f, ensure_ascii=False, indent=1)
+print(f"[SENT] 已写入 {sent_path}")
+
+# ---------- 事件库匹配: 加载历史事件, 输出 track 汇总 ----------
+hist = []
+for fn in sorted(os.listdir(EVENTS_DIR)):
+    if fn.startswith("events-") and fn.endswith(".json"):
+        with open(os.path.join(EVENTS_DIR, fn), encoding="utf-8") as f:
+            hist.extend(json.load(f))
+print(f"[EVENTS] 历史事件库累计 {len(hist)} 条")
+for n in news_items:
+    print(f"{n['id']} [{n['track']}] {n['sentiment']}/{n['strength']} {n['title'][:30]}")
+print("DONE")

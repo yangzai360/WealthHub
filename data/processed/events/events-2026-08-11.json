@@ -1,0 +1,408 @@
+[
+ {
+  "id": "N20260811-001",
+  "date": "2026-08-11",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "隔夜美股三大指数小幅收跌：道指-0.11%标普-0.06%纳指-0.32% 能源板块+4.63%领涨 医疗保健+1.68% 半导体重挫费半-2.94%",
+  "summary": "美东8/10收盘：道指53975.98(-0.11%)、标普7753.11(-0.06%)、纳指26605.36(-0.32%)，前期上涨后技术性整理。WTI原油大涨5.1%突破82美元(霍尔木兹海峡地缘紧张)推动能源+4.63%领涨；医疗保健+1.68%紧随其后。费城半导体-2.94%(英伟达-2.86%、Coherent-14.24%、Lumentum-8.61%)，光模块/半导体成重灾区。美债10年期收益率4.65%附近。",
+  "source": "WebSearch/新华社",
+  "source_url": "https://www.cnstock.com/commonDetail/757994",
+  "sentiment": "中性",
+  "strength": 50,
+  "impact_direction": "中性",
+  "expected_volatility": "高",
+  "reason": "美股涨跌互现，半导体重挫与能源领涨对冲",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": null,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": null,
+   "match_titles": [
+    "2026-08-07 美股三大指数齐涨标普创新高(宏观)",
+    "2026-08-06 A股沪指五连阳(宏观)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-002",
+  "date": "2026-08-11",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "纳斯达克中国金龙指数+1.65% 阿里+3.04% 中概逆势走强 对中国资产情绪偏暖",
+  "summary": "美东8/10：纳斯达克中国金龙指数收涨1.65%，阿里巴巴+3.04%、京东、爱奇艺、BOSS直聘等走强，A50期指几乎平盘(-0.05%)。中概逆势走强主因AI硬件回调中资金再平衡+中国资产估值优势，海外对中国资产情绪偏暖，利好港股/恒科映射。",
+  "source": "WebSearch/雪球",
+  "source_url": "https://xueqiu.com/3997004814/404484571",
+  "sentiment": "正面",
+  "strength": 65,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "中概逆势走强显示海外情绪回暖，利好港股",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 70,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": 1.37,
+   "match_titles": [
+    "2026-08-10 港股收盘恒科+1.37% AI医疗领涨(恒生科技)",
+    "2026-08-10 中概互联ETF+1.29%(场内)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-003",
+  "date": "2026-08-11",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "美国7月CPI明日(8/12)公布：预期整体同比3.4%核心2.5% 9月加息概率44% 能源反弹与服务通胀为最大风险",
+  "summary": "美东8/12 8:30将公布7月CPI。FactSet预期整体CPI同比由3.5%回落至3.4%、核心由2.6%降至2.5%，环比整体+0.1%/核心+0.2%。7月非农爆冷(-2.3万)后9月加息概率降至~44%。机构分歧：摩根大通预计核心环比+0.22%不足以触发9月加息；花旗认为偏弱通胀可基本排除9月加息；美银警告若核心服务价格重加速仍保留9月加息选项。若CPI显著走弱(≤3.2%)加息预期彻底锁死；若≥3.6%沃什'数据驱动式加息'兑现，成长股估值承压。",
+  "source": "WebSearch/TradingKey",
+  "source_url": "https://www.tradingkey.com/zh-hans/analysis/economic/indicators/262092044-us-july-cpi-preview-inflation-cool-us-stocks-dollar-gold-tradingkey",
+  "sentiment": "中性",
+  "strength": 70,
+  "impact_direction": "中性",
+  "expected_volatility": "高",
+  "reason": "CPI数据待公布，加息预期博弈致不确定性",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 70,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": 1.37,
+   "match_titles": [
+    "2026-08-10 8/12情绪总开关:腾讯二季报+美国CPI+能源月报(宏观)",
+    "2026-08-10 静待美国7月CPI 9月加息概率44.4%(宏观)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-004",
+  "date": "2026-08-11",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "甘李药业出海大单：GLP-1双周制剂博凡格鲁肽欧洲39国独家许可 首付款6200万欧元 里程碑最高6.64亿欧元",
+  "summary": "8/10甘李药业公告：与意大利Menarini达成独家许可协议，授予博凡格鲁肽(GLP-1RA双周制剂,超重/肥胖适应症)在欧盟27国及英国、瑞士等39个欧洲国家开发及商业化独家权利。首付款6200万欧元不可退还，研发/上市/销售里程碑累计最高6.64亿欧元，另加最高双位数梯度特许权使用费。该药有望成为全球首款GLP-1双周制剂，进一步夯实中国创新药减重赛道出海叙事(1-7月中国创新药BD交易总额已超1063亿美元)。",
+  "source": "WebSearch/证券时报",
+  "source_url": "https://www.stcn.com/article/detail/4068009.html",
+  "sentiment": "正面",
+  "strength": 85,
+  "impact_direction": "利多",
+  "expected_volatility": "高",
+  "reason": "GLP-1出海大单首付款高，创新药BD重大利好",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 75,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": 1.63,
+   "match_titles": [
+    "2026-08-09 BD破千亿美元 中国创新药License-out占Top10八席(A股医药)",
+    "2026-08-09 创新药/CDMO获机构扎堆调研 百济上调指引(A股医药)",
+    "2026-08-10 医药基金大幅回血 部分反弹超30%(A股医药)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-005",
+  "date": "2026-08-11",
+  "track": "A股医药",
+  "category": "政策类",
+  "title": "石药创新猴痘mRNA疫苗SYS6037获美国FDA临床试验批准",
+  "summary": "8/10石药创新公告：控股子公司巨石生物与中科院微生物研究所合作开发的SYS6037注射液(猴痘mRNA疫苗)获美国FDA临床试验批准(IND 33047)，可在美国开展临床试验。技术路线简洁、免疫原性优于减毒活疫苗、对多种正痘病毒抗原广谱交叉反应。短期对业绩无重大影响，但为中国mRNA疫苗平台国际化里程碑。",
+  "source": "WebSearch/巨潮资讯",
+  "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-10/1225465446.PDF",
+  "sentiment": "正面",
+  "strength": 50,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "FDA批准是国际化里程碑，短期业绩影响有限",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 60,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": 0.5,
+   "match_titles": [
+    "2026-08-10 RiboX环形RNA体内CAR-T获FDA许可(美股标普医药)",
+    "2026-08-07 FDA批准密集 全球创新药技术突破(美股标普医药)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-006",
+  "date": "2026-08-11",
+  "track": "A股医药",
+  "category": "政策类",
+  "title": "长春高新GenSci148注射液(VEGF多重阻断剂,眼科)临床试验申请获批",
+  "summary": "8/10长春高新公告：子公司金赛药业GenSci148注射液(治疗用生物制品1类，VEGF多重阻断剂)境内生产药品注册临床试验申请获国家药监局批准，拟用于新生血管性年龄相关性黄斑变性(nAMD)、糖尿病性黄斑水肿(DME)和视网膜静脉阻塞(RVO)。眼科创新管线持续推进。",
+  "source": "WebSearch/证券时报",
+  "source_url": "https://www.stcn.com/article/detail/4067416.html",
+  "sentiment": "正面",
+  "strength": 40,
+  "impact_direction": "利多",
+  "expected_volatility": "低",
+  "reason": "眼科创新管线获批，利好但催化温和",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": null,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": null,
+   "match_titles": [
+    "2026-08-10 长春高新GenSci148眼科临床获批(个股级,弱影响)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-007",
+  "date": "2026-08-11",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "百花医药五连板(累计+60.97%) 但Q1净利暴跌67.94% 市盈率167倍 公司提示风险 医药情绪过热信号",
+  "summary": "8/10百花医药(600721)开盘即封涨停斩获第五个连续涨停板(累计+60.97%)，触发股票交易异常波动公告。公司基本面：Q1营收6718万(-30.68%)、归母净利664万(-67.94%)，滚动市盈率167.49倍显著高于行业33.67倍均值，控股股东拟变更为金华市国资委。基本面与股价严重背离，是医药板块情绪进入极度过热区间的警示信号。",
+  "source": "WebSearch/新浪财经",
+  "source_url": "https://finance.sina.cn/stock/ssgs/2026-08-10/detail-inimwckz1062911.d.html",
+  "sentiment": "负面",
+  "strength": 60,
+  "impact_direction": "利空",
+  "expected_volatility": "高",
+  "reason": "妖股基本面背离，板块情绪过热警示回调风险",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 70,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": -1.3,
+   "match_titles": [
+    "2026-08-06 医药情绪高点后次日回撤样本(A股医药)",
+    "2026-08-10 医药情绪极度过热 集中度逼近上限(A股医药)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-008",
+  "date": "2026-08-11",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "8/10高端白酒终端价持续上行：精品茅台2422元创近一月新高 普五破800元 青花汾20四连涨",
+  "summary": "新浪财经'酒价内参'监测：8/10中国白酒11大单品六涨两平三跌。精品茅台+12元至2422元创近一月新高；飞天茅台+4元至1777元高位震荡；普五八代+5元至803元(站上800关口)；青花汾20+5元至393元四连涨；洋河M6+、古井贡古20突破下跌趋势线。11大单品总售价9965元较前日+32元，创5/21以来新高。白酒价格总盘整体回暖继续推进。",
+  "source": "WebSearch/上证报",
+  "source_url": "https://www.cnstock.com/commonDetail/757442",
+  "sentiment": "正面",
+  "strength": 70,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "高端白酒批价普涨创阶段新高，行业回暖推进",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 75,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": 2.5,
+   "match_titles": [
+    "2026-08-09 五粮液批价8/8报770元 白酒景气筑底窗口(大消费)",
+    "2026-08-09 酒价内参:普五逼近800元(大消费)",
+    "2026-08-10 茅台自营店再调价 飞天1753元(大消费)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-009",
+  "date": "2026-08-11",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "高盛：中国白酒最困难阶段已过去 行业处于复苏极早期 上调古井贡酒/今世缘至买入",
+  "summary": "高盛最新研报：中国白酒行业最艰难的去库存阶段已经过去——供应端削减提速、关键中高端品种批发价格企稳、渠道库存趋于健康，行业正处于复苏极早期阶段。6/23已将古井贡酒从卖出上调至买入(目标价105元)、今世缘从中性上调至买入(目标价31元)，维持茅台为板块首选，对五粮液/水井坊/洋河持谨慎。但受宏观不确定性拖累，更广泛的商业需求复苏仍待确认。",
+  "source": "WebSearch/高盛研报·追风交易台",
+  "source_url": "http://mp.weixin.qq.com/s?__biz=MzU5NjQ5MzIzMQ==&mid=2247491661&idx=4&sn=fd3c090ab583ceed506d81350d3278c7",
+  "sentiment": "正面",
+  "strength": 75,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "高盛上调评级，行业去库存结束复苏早期",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 70,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": 2.5,
+   "match_titles": [
+    "2026-08-10 兴业证券:茅五批价上行行业修复信号渐明(大消费)",
+    "2026-08-09 方正证券:超跌反弹进入攻坚期(大消费)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-010",
+  "date": "2026-08-11",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "茅台8/10涨3.03%收1348.86元 单日主力净流入4.89亿居食品饮料行业首位",
+  "summary": "8/10 A股白酒板块'抢筹'行情：贵州茅台+3.03%收1348.86元(成交额84.28亿)，主力资金净流入4.89亿元居食品饮料行业首位(五粮液1.64亿的3倍)。白酒板块主力净流入超10亿元。同日飞天茅台终端均价升至1777元、自营店价1753元。资金集中涌向白酒龙头的逻辑：批价修复+机构持仓历史底部+中秋备货周期临近。",
+  "source": "WebSearch/今日头条",
+  "source_url": "https://www.toutiao.com/article/7672325798669402643/",
+  "sentiment": "正面",
+  "strength": 60,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "资金抢筹白酒龙头，批价修复叠加中秋备货",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 70,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": 2.5,
+   "match_titles": [
+    "2026-08-10 白酒板块全线爆发 普五批价突破800元(大消费)",
+    "2026-08-10 A股食品饮料全天强势 消费ETF+2.68%(大消费)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-011",
+  "date": "2026-08-11",
+  "track": "恒生科技",
+  "category": "业绩类",
+  "title": "高盛中国互联网Q2前瞻：腾讯8/12公布业绩 预期收入+9%经调整EBIT+9%至752亿 游戏+11%广告+18%",
+  "summary": "高盛报告：腾讯8/12公布Q2业绩，预测收入同比+9%、经调整EBIT同比+9%至752亿元。分部预测：游戏收入+11%、广告+18%(AI广告上行)、金融科技及企业服务+8%(云收入加速带动)。焦点：AI资本开支及分配优先级、混元模型策略、WorkBuddy及微信Agent指标。同时上调美团目标价116→123港元维持买入。板块前景具建设性。",
+  "source": "WebSearch/智通财经",
+  "source_url": "https://www.163.com/dy/article/L3VPKO2605198UNI.html",
+  "sentiment": "正面",
+  "strength": 70,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "腾讯Q2预期稳健，广告游戏业务强劲",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 70,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": 1.37,
+   "match_titles": [
+    "2026-08-10 8/12情绪总开关:腾讯二季报+美国CPI(恒生科技)",
+    "2026-08-10 港股收盘恒科+1.26%(恒生科技)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-012",
+  "date": "2026-08-11",
+  "track": "恒生科技",
+  "category": "业绩类",
+  "title": "摩通上调腾讯2026资本开支预测至2000亿元 下调EPS 5% 市场聚焦AI商业化与自由现金流收缩",
+  "summary": "摩根大通：随AI投资增加，腾讯短期盈利或波动，已将2026调整后EPS预测下调5%，反映资本开支预算上调至2000亿元人民币(以2000亿/年计，下半年单季开支接近Q1自由现金流567亿)。彭博一致预期腾讯Q2收入2028-2038亿(+9~10%)、调整后净利666-682亿(+5~6%)；大摩预计剔除AI后核心经营利润+13.5%(Q1为17%)。摩通维持增持目标价690港元。核心矛盾：AI资本开支对盈利的侵蚀 vs 核心业务现金造血。",
+  "source": "WebSearch/搜狐·观点",
+  "source_url": "https://www.sohu.com/a/1060877900_122014422",
+  "sentiment": "中性",
+  "strength": 60,
+  "impact_direction": "中性",
+  "expected_volatility": "高",
+  "reason": "AI投入增加下调盈利预测，短期承压但长期看好",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 60,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": 1.37,
+   "match_titles": [
+    "2026-08-10 华泰:港股反弹源于AI硬件去杠杆跨市场再平衡(恒生科技)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-013",
+  "date": "2026-08-11",
+  "track": "恒生科技",
+  "category": "宏观类",
+  "title": "8/10南向资金净买入20.22亿港元 港股通沪+27.97亿/深-7.75亿 连续净流入",
+  "summary": "8/10南向资金全天成交1080.22亿港元，净买入20.22亿港元：港股通(沪)净买入27.97亿、港股通(深)净卖出7.75亿。南向十大成交中MINIMAX-W净买入10.14亿、金斯瑞生物科技4.72亿居前，中芯国际遭净卖出4.52亿。叠加上周南向净流入阿里59.75亿/腾讯8.53亿，港股流动性支撑延续，但深市通道转为净卖出显示高位分歧。",
+  "source": "WebSearch/证券时报",
+  "source_url": "https://www.stcn.com/article/detail/4067086.html",
+  "sentiment": "正面",
+  "strength": 50,
+  "impact_direction": "利多",
+  "expected_volatility": "低",
+  "reason": "南向持续净买入，流动性支撑但存分歧",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 60,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": 1.37,
+   "match_titles": [
+    "2026-08-10 三大因素推动港股通科技属性增强(恒生科技)",
+    "2026-08-06 恒生科技-2.28%大跌样本(恒生科技)"
+   ]
+  }
+ },
+ {
+  "id": "N20260811-014",
+  "date": "2026-08-11",
+  "track": "美股标普医药",
+  "category": "行业事件类",
+  "title": "AbCellera绝经期潮热药ABCL635二期达标：潮热频率降83%(安慰剂33%) 股价+34.78% 美股医疗保健+1.68%领涨",
+  "summary": "美东8/10：加拿大生物科技公司AbCellera(ABCL)公布ABCL635(NK3R非激素抗体，绝经期中重度血管舒缩症状)二期临床达主要终点——单剂量4周后潮热频率较基线降83%(安慰剂33%)，睡眠与整体感受显著改善，耐受性良好。股价+34.78%创4.5年来最大单日涨幅。同日美股标普500医疗保健板块+1.68%领涨(仅次于能源)，XLV口径IYH+1.63%，生物科技高beta活跃(OBX+27%)，非激素女性健康赛道获资金关注。",
+  "source": "WebSearch/Dow Jones·TradingView",
+  "source_url": "https://www.tradingview.com/news/DJN_DN20260810006607:0",
+  "sentiment": "正面",
+  "strength": 65,
+  "impact_direction": "利多",
+  "expected_volatility": "高",
+  "reason": "临床数据亮眼带动板块热度，女性健康赛道受关注",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 60,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": 0.5,
+   "match_titles": [
+    "2026-08-10 RiboX环形RNA CAR-T获FDA许可(美股标普医药)",
+    "2026-08-07 安进市值新高 美股医疗防御获流入(美股标普医药)"
+   ]
+  }
+ }
+]
