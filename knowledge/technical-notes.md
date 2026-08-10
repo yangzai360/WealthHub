@@ -32,6 +32,7 @@
 | `ak.stock_zh_a_daily(symbol="sz002410", adjust="qfq")` | A股个股日线（新浪源） | 广联达；深市 `sz` 前缀 / 沪市 `sh` 前缀 |
 | `ak.stock_zh_index_daily(symbol="sh000932")` | 指数日线（新浪源） | 中证消费日线；**兼作 spot 缺失兜底**（见 §3.9） |
 | `ak.stock_us_daily(symbol="XLV")` | 美股 ETF 日线（新浪源，2026-08-07 盘前实测） | XLV（医疗保健精选）/IYH（医疗）/QQQ（纳指100）/DIA（道指）均可用，更新到隔夜收盘；**盘前档美股医疗代理首选 XLV/IYH** |
+| `ak.stock_us_daily(symbol="IYH")` | 美股医疗 ETF 日线（新浪源，2026-08-11 盘前实测） | **IYH 数据更新及时，XLV 偶发滞后 1-2 个交易日**（8/11 盘前 XLV 只到 8/7、IYH 已到 8/10 收盘 +1.63%）——**美股医疗方向优先用 IYH，XLV 滞后时作代理并标注** |
 | `ak.index_us_stock_sina(symbol=".IXIC")` | 美股指数日线（新浪源，2026-08-07 实测） | .IXIC/.DJI 可用但**间歇 IndexError**（重试 2 次仍失败则用 QQQ/DIA 代理）；**.INX/SPY 滞后一天**（盘前只到前日，勿用其判断隔夜方向） |
 
 ### 2.2 ❌ 不可用接口（被本地代理拦截）
@@ -258,4 +259,4 @@ content = result['choices'][0]['message']['content']
 - **fund_nav.csv 增量写入必须 6 列全含**：`date(抓取日),code,name,nav_date,nav,pct`——曾踩坑漏写首列 date 导致列错位（历史 45 行被污染），写入时统一用完整 6 列、全部 str() 转换
 - **DeepSeek v4-flash 偶发 content 为空（非必现）**：max_tokens=8000 时偶尔返回空 content（非 reasoning 占满，usage 正常），**重试一次即恢复**；情绪分析脚本需内置"content 为空则重试"逻辑，避免误判为接口故障
 
-*最后更新：2026-08-10。环境或接口有变化时，先改本文件再执行任务。*
+*最后更新：2026-08-11。环境或接口有变化时，先改本文件再执行任务。*
