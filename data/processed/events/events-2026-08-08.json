@@ -19,8 +19,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.37,
+   "actual_date": "2026-08-10"
   }
  },
  {
@@ -91,8 +91,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.63,
+   "actual_date": "2026-08-10"
   }
  },
  {
@@ -115,8 +115,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.63,
+   "actual_date": "2026-08-10"
   }
  },
  {
@@ -139,8 +139,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.37,
+   "actual_date": "2026-08-10"
   }
  },
  {
@@ -163,8 +163,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 2.5,
+   "actual_date": "2026-08-10"
   }
  },
  {
@@ -187,8 +187,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 2.5,
+   "actual_date": "2026-08-10"
   }
  },
  {
@@ -211,8 +211,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.37,
+   "actual_date": "2026-08-10"
   }
  }
 ]
