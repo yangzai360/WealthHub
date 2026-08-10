@@ -85,6 +85,7 @@ export default defineUserConfig({
       { text: '首页', link: '/' },
       { text: '每日日报', link: '/daily/' },
       { text: '周报', link: '/weekly/' },
+      { text: '知识库', link: '/knowledge/glossary.md' },
       { text: '关于', link: '/about.html' },
     ],
     sidebar: {
@@ -93,6 +94,21 @@ export default defineUserConfig({
         {
           text: '周报',
           children: ['/weekly/README.md'],
+        },
+      ],
+      '/knowledge/': [
+        {
+          text: '知识库',
+          children: [
+            {
+              text: '策略分析',
+              children: [
+                '/knowledge/strategies/long-win.md',
+                '/knowledge/strategies/grid-trading.md',
+              ],
+            },
+            '/knowledge/glossary.md',
+          ],
         },
       ],
     },

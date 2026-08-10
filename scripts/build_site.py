@@ -155,6 +155,53 @@ def convert_weekly():
         f.write("\n".join(lines) + "\n")
     return entries
 
+# ---------- 知识库转换 ----------
+KNOWLEDGE = os.path.join(REPO, "knowledge")
+
+def convert_knowledge():
+    """扫描 knowledge/strategies/*.md 和 knowledge/glossary.md，脱敏后输出到 docs/knowledge/。
+    knowledge/private/ 和 technical-notes.md 不扫描、不输出。"""
+    knowledge_dst = os.path.join(DOCS, "knowledge")
+    # 清理旧文件
+    if os.path.isdir(knowledge_dst):
+        shutil.rmtree(knowledge_dst)
+    os.makedirs(knowledge_dst, exist_ok=True)
+
+    entries = []  # (category, title, link)
+
+    # 1) 策略分析
+    strategies_src = os.path.join(KNOWLEDGE, "strategies")
+    strategies_dst = os.path.join(knowledge_dst, "strategies")
+    if os.path.isdir(strategies_src):
+        os.makedirs(strategies_dst, exist_ok=True)
+        for src in sorted(glob.glob(os.path.join(strategies_src, "*.md"))):
+            fname = os.path.basename(src)
+            with open(src, encoding="utf-8-sig") as f:
+                content = f.read()
+            masked = desensitize_md(content)
+            # 提取标题（第一个 # 标题）
+            m = re.search(r"^#\s+(.+)", masked, re.M)
+            title = m.group(1).strip() if m else fname.replace(".md", "")
+            dst_path = os.path.join(strategies_dst, fname)
+            out = frontmatter(title, "", ["知识库", "策略分析"]) + "<RightToc />\n\n" + masked
+            with open(dst_path, "w", encoding="utf-8") as f:
+                f.write(out)
+            entries.append(("策略分析", title, f"/knowledge/strategies/{fname}"))
+
+    # 2) 专有名词表
+    glossary_src = os.path.join(KNOWLEDGE, "glossary.md")
+    if os.path.exists(glossary_src):
+        with open(glossary_src, encoding="utf-8-sig") as f:
+            content = f.read()
+        masked = desensitize_md(content)
+        dst_path = os.path.join(knowledge_dst, "glossary.md")
+        out = frontmatter("专有名词表", "", ["知识库", "术语表"]) + "<RightToc />\n\n" + masked
+        with open(dst_path, "w", encoding="utf-8") as f:
+            f.write(out)
+        entries.append(("术语表", "专有名词表", "/knowledge/glossary.md"))
+
+    return entries
+
 # ---------- 图表数据 ----------
 def track_of(name: str) -> str:
     TRACKS = [
@@ -267,9 +314,10 @@ def build_home(entries, charts):
 def main():
     entries = convert_daily()
     convert_weekly()
+    kb_entries = convert_knowledge()
     charts = build_charts()
     build_home(entries, charts)
-    print(f"✅ docs 构建完成: {len(entries)} 份日报, {len(charts.get('indices', []))} 条指数, {len(charts.get('track_dist', []))} 个赛道")
+    print(f"✅ docs 构建完成: {len(entries)} 份日报, {len(kb_entries)} 篇知识库, {len(charts.get('indices', []))} 条指数, {len(charts.get('track_dist', []))} 个赛道")
     print(f"   图表数据 → {os.path.relpath(CHARTS_JSON, REPO)}")
 
 if __name__ == "__main__":
