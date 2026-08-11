@@ -259,4 +259,11 @@ content = result['choices'][0]['message']['content']
 - **fund_nav.csv 增量写入必须 6 列全含**：`date(抓取日),code,name,nav_date,nav,pct`——曾踩坑漏写首列 date 导致列错位（历史 45 行被污染），写入时统一用完整 6 列、全部 str() 转换
 - **DeepSeek v4-flash 偶发 content 为空（非必现）**：max_tokens=8000 时偶尔返回空 content（非 reasoning 占满，usage 正常），**重试一次即恢复**；情绪分析脚本需内置"content 为空则重试"逻辑，避免误判为接口故障
 
+### 3.12 🟡 盘后档情绪全量覆盖 + CSV 判重细节（2026-08-11 实测）
+
+- **盘中档未做 DeepSeek 标注时，sentiment JSON 只有盘前条目**：8/11 盘中 10 条新闻以「中性 50」占位写入 news JSON 但未进 sentiment 文件——盘后脚本必须**全量覆盖当日所有新闻（盘前保留 + 盘中补标 + 盘后新增）**，先追加盘中/盘后条目到 sentiment 文件再同步回 news JSON，避免情绪字段与 news 不一致（已用 fix_sentiment_20260811.py 修复）
+- **indices.csv 判重 name 列须严格一致**：同一标的（如 IYH）盘前名「美股医疗ETF(IYH)」vs 盘后名「美股医疗IYH」导致整行判重失败、写入重复行——增量脚本统一维护标的 name 字典，写前检查该 code+date 是否已存在（用 code+date+note 为主键更稳，必要时按 name 归一）
+- **XLV 新浪源滞后会在下一交易日盘后补更**：8/11 晚 XLV 已补更至 8/10 收盘（168.44 +1.67%），可用于回填美股医药事件 actual_ret_1d——美股医药事件回填不限于盘前，盘后若 XLV 已补更也可完成
+- **`stock_hk_index_daily_sina` 当日收盘滞后**：8/11 盘后该接口仍返回 8/10 数据（恒指 25937/恒科 4919），**当日港股收盘不可用日线接口**；`stock_hk_index_spot_sina` 间歇性空返回（重试 2-3 次即恢复），盘后港股收盘以 spot 重试为主
+
 *最后更新：2026-08-11。环境或接口有变化时，先改本文件再执行任务。*
