@@ -247,8 +247,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 70,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 1.67,
+   "actual_date": "2026-08-10",
    "ret_1d_ref": 0.5,
    "match_titles": [
     "标普500医疗保健指数3个月涨11.2%创历史新高,资金大幅流入",
@@ -445,8 +445,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.67,
+   "actual_date": "2026-08-10"
   }
  },
  {
@@ -541,8 +541,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.67,
+   "actual_date": "2026-08-10"
   }
  },
  {
