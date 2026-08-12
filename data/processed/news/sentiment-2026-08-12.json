@@ -142,5 +142,77 @@
   "impact_direction": "利多",
   "expected_volatility": "高",
   "reason": "医疗巨头财报超预期上调指引，器械数据走弱但整体强"
+ },
+ {
+  "id": "N20260812-013",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "百花医药7连板！政策助推药企出海 创新药板块延续强势 医药ETF(512120)跌0.40% 生物医药ETF涨0.23%",
+  "source_url": "https://www.nbd.com.cn/articles/2026-08-12/4539395.html",
+  "sentiment": "正面",
+  "strength": 70,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "政策支持创新药出海叠加百花医药7连板，板块情绪高涨，但ETF表现分化，短期偏多但波动中等。"
+ },
+ {
+  "id": "N20260812-014",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "创新药高位分歧加剧：百花医药7连板后发布风险提示（Q1净利-67.94% PE 184倍）CRO领跌 诚达药业-10.19%",
+  "source_url": "https://www.stcn.com/article/detail/4071003.html",
+  "sentiment": "负面",
+  "strength": 72,
+  "impact_direction": "利空",
+  "expected_volatility": "高",
+  "reason": "创新药高位分歧加剧，龙头百花医药风险提示且基本面不佳，CRO板块领跌、诚达药业跌停，短期回调压力显著。"
+ },
+ {
+  "id": "N20260812-015",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "8/12酒价11大单品六涨三平两跌：精品茅台2454元续创近月新高 飞天1789元创7/18调价以来最高 总价10022元破万",
+  "source_url": "https://k.sina.com.cn/article_5953466437_162dab0450670b8noo.html",
+  "sentiment": "正面",
+  "strength": 70,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "高端白酒价格普涨且总价突破万元，龙头茅台创阶段新高，直接提振白酒板块情绪与估值预期。"
+ },
+ {
+  "id": "N20260812-016",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "白酒板块有望率先实现估值修复：今世缘领涨7.48% 中证主要消费-0.10% 开源证券：板块估值处近年底部",
+  "source_url": "https://cj.sina.com.cn/articles/view/5182171545/134e1a99902002i3x4?finpagefr=p_104",
+  "sentiment": "正面",
+  "strength": 70,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "白酒板块估值处历史底部、筹码结构优化，叠加龙头领涨和券商积极观点，短期修复预期增强。"
+ },
+ {
+  "id": "N20260812-017",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股午评：恒指-1.17%恒生科技-1.17%报4767.88 腾讯跌近3%阿里跌超3%美团跌近2% 芯片股逆势走强（华虹+7%）",
+  "source_url": "https://www.163.com/dy/article/L44NGGHC05198CJN.html",
+  "sentiment": "负面",
+  "strength": 65,
+  "impact_direction": "利空",
+  "expected_volatility": "高",
+  "reason": "恒生科技指数续跌且大型科网股普跌，虽芯片逆势走强但整体拖累明显"
+ },
+ {
+  "id": "N20260812-018",
+  "track": "恒生科技",
+  "category": "业绩类",
+  "title": "腾讯财报公布前夕港互联网股普跌：腾讯自8/5高点497.8回落近10%至458 高盛前瞻Q2收入+9%调整EBIT 752亿",
+  "source_url": "https://hkcd.com/hkcdweb/content/2026/08/12/content_8769258.html",
+  "sentiment": "中性",
+  "strength": 55,
+  "impact_direction": "中性",
+  "expected_volatility": "高",
+  "reason": "财报公布前股价已回调近10%，高盛前瞻业绩中性，机构认为悲观预期充分定价，但短期方向待财报确认，波动预计加大。"
  }
 ]
