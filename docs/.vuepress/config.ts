@@ -105,6 +105,7 @@ export default defineUserConfig({
               children: [
                 '/knowledge/strategies/long-win.md',
                 '/knowledge/strategies/grid-trading.md',
+                '/knowledge/strategies/grid-depth.md',
               ],
             },
             '/knowledge/glossary.md',

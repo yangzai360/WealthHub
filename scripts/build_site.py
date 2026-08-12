@@ -280,6 +280,107 @@ def build_charts():
         json.dump(charts, f, ensure_ascii=False, indent=2)
     return charts
 
+# ---------- 网格深度数据 ----------
+ADJUSTMENTS_JSON = os.path.join(REPO, "reference-portfolios", "long-win", "adjustments.json")
+GRID_DEPTH_JSON = os.path.join(DOCS, ".vuepress", "public", "data", "grid-depth.json")
+TOTAL_UNITS = 150  # 长赢计划总份数
+
+def build_grid_depth():
+    """从长赢组合快照 + 调仓记录计算各品种投入深度, 输出 grid-depth.json。
+
+    当前持仓份数以**最新 composition 快照**为准(qieman 官方当前持仓, 含现金类),
+    累计买入/卖出与最近操作从 adjustments.json 按 fund_code 关联。
+    深度 = 持仓份数 / 计划总份数(150)。"""
+    # 1) 最新组合快照(权威当前持仓)
+    comp_files = sorted(glob.glob(os.path.join(REPO, "reference-portfolios", "long-win", "composition-*.json")))
+    if not comp_files:
+        print("⚠️ 未找到长赢组合快照, 跳过网格深度数据")
+        return None
+    comp_path = comp_files[-1]
+    with open(comp_path, encoding="utf-8") as f:
+        comp = json.load(f)
+
+    total_units = 0
+    cash_units = 0
+    comp_by_code = {}   # fund_code -> {fund_name, variety_hint, unit, large_class}
+    for cls in comp.get("composition", []):
+        unit = cls.get("unit") or 0
+        total_units += unit
+        if cls.get("is_cash"):
+            cash_units += unit
+        for fd in cls.get("funds", []):
+            if fd.get("is_cleared"):
+                continue
+            comp_by_code[fd["fund_code"]] = {
+                "fund_name": fd["fund_name"],
+                "unit": fd.get("unit") or 0,
+                "large_class": cls.get("class_name", ""),
+            }
+
+    # 2) 调仓记录(累计买入/卖出 + 最近操作), 按 fund_code 关联
+    adj_by_code = {}   # fund_code -> {variety, buy, sell, last_date, last_dir}
+    if os.path.exists(ADJUSTMENTS_JSON):
+        with open(ADJUSTMENTS_JSON, encoding="utf-8") as f:
+            data = json.load(f)
+        for a in sorted(data.get("adjustments", []), key=lambda x: x.get("txn_date", ""), reverse=True):
+            date = a.get("txn_date", "")
+            for o in a.get("orders", []):
+                code = o.get("fund_code", "")
+                if not code:
+                    continue
+                s = adj_by_code.setdefault(code, {
+                    "variety": o.get("variety") or o.get("fund_name", ""),
+                    "buy": 0, "sell": 0, "last_date": "", "last_dir": "",
+                })
+                d = o.get("direction", "")
+                try:
+                    u = int(o.get("trade_unit", 0) or 0)
+                except (TypeError, ValueError):
+                    u = 0
+                if d == "买入":
+                    s["buy"] += u
+                elif d == "卖出":
+                    s["sell"] += u
+                if date > s["last_date"]:
+                    s["last_date"] = date
+                    s["last_dir"] = d
+                    s["variety"] = o.get("variety") or o.get("fund_name", "")
+
+    # 3) 合并
+    positions = []
+    for code, c in comp_by_code.items():
+        a = adj_by_code.get(code, {})
+        unit = c["unit"]
+        positions.append({
+            "fund_code": code,
+            "variety": a.get("variety") or c["fund_name"],
+            "fund_name": c["fund_name"],
+            "large_class": c["large_class"],
+            "pos": unit,
+            "depth_pct": round(unit / TOTAL_UNITS * 100, 1),
+            "buy": a.get("buy", 0),
+            "sell": a.get("sell", 0),
+            "last_date": a.get("last_date", ""),
+            "last_dir": a.get("last_dir", ""),
+        })
+    positions.sort(key=lambda p: (-p["pos"], p["variety"]))
+
+    invested = total_units - cash_units
+    payload = {
+        "generated_at": datetime.now().strftime("%Y-%m-%d"),
+        "snapshot_date": comp.get("snapshot_date", ""),
+        "total_units": total_units,
+        "cash_units": cash_units,
+        "invested_units": invested,
+        "invested_pct": round(invested / total_units * 100, 1) if total_units else 0,
+        "holding_count": sum(1 for p in positions if p["pos"] > 0),
+        "positions": positions,
+    }
+    os.makedirs(os.path.dirname(GRID_DEPTH_JSON), exist_ok=True)
+    with open(GRID_DEPTH_JSON, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    return payload
+
 # ---------- 首页 ----------
 def build_home(entries, charts):
     latest = entries[0] if entries else None
@@ -316,9 +417,12 @@ def main():
     convert_weekly()
     kb_entries = convert_knowledge()
     charts = build_charts()
+    grid = build_grid_depth()
     build_home(entries, charts)
     print(f"✅ docs 构建完成: {len(entries)} 份日报, {len(kb_entries)} 篇知识库, {len(charts.get('indices', []))} 条指数, {len(charts.get('track_dist', []))} 个赛道")
     print(f"   图表数据 → {os.path.relpath(CHARTS_JSON, REPO)}")
+    if grid:
+        print(f"   网格深度 → {os.path.relpath(GRID_DEPTH_JSON, REPO)} ({grid['invested_units']}/{grid['total_units']} 份投入, {grid['holding_count']} 个品种)")
 
 if __name__ == "__main__":
     main()
