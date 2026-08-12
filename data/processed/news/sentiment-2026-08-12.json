@@ -214,5 +214,101 @@
   "impact_direction": "中性",
   "expected_volatility": "高",
   "reason": "财报公布前股价已回调近10%，高盛前瞻业绩中性，机构认为悲观预期充分定价，但短期方向待财报确认，波动预计加大。"
+ },
+ {
+  "id": "N20260812-019",
+  "track": "恒生科技",
+  "category": "业绩类",
+  "title": "腾讯Q2财报落地：营收2047.85亿首破2000亿(+11%) Non-IFRS经营利润756.4亿(+9%) 剔除新AI产品+19% 资本开支527.8亿(+176%)上半年超2025全年",
+  "source_url": "https://news.qq.com/rain/a/20260812A09X8P00?adChannelId=tech",
+  "sentiment": "正面",
+  "strength": 70,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "营收利润双增长且AI业务进展积极，但资本开支激增和自由现金流转负带来隐忧"
+ },
+ {
+  "id": "N20260812-020",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股收评：三大指数缩量反弹沪指+0.32%创业板+1.49% CPO/地产/白酒集体爆发 超4100只个股上涨",
+  "source_url": "https://stock.stockstar.com/IG2026081200027787.shtml",
+  "sentiment": "正面",
+  "strength": 70,
+  "impact_direction": "利多",
+  "expected_volatility": "中",
+  "reason": "A股集体收涨，超4100只个股上涨，CPO、地产、白酒等板块爆发，赚钱效应显著，市场情绪积极。"
+ },
+ {
+  "id": "N20260812-021",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股收盘：恒指-0.83%恒科-0.99%报4776.44 腾讯财报前-1.95%收461.6 阿里-3% 内房股与半导体强势领涨",
+  "source_url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_6186a7c429c53652",
+  "sentiment": "负面",
+  "strength": 60,
+  "impact_direction": "利空",
+  "expected_volatility": "中",
+  "reason": "恒生科技指数续跌，大型科网股普遍下行且腾讯财报前承压，但内房与半导体逆势上涨部分对冲跌幅。"
+ },
+ {
+  "id": "N20260812-022",
+  "track": "其他/宽基",
+  "category": "行业事件类",
+  "title": "通威股份+5.06%收13.49：多晶硅涨价预期升温 8大龙头'反内卷'倡议+期货主连+4.26% 主力净流入3.48亿",
+  "source_url": "https://www.163.com/dy/article/L45AL8PV05568W0A.html",
+  "sentiment": "正面",
+  "strength": 70,
+  "impact_direction": "利多",
+  "expected_volatility": "高",
+  "reason": "多晶硅涨价预期升温、龙头反内卷倡议及主力资金大幅流入推动股价大涨，但现货弱现实制约强度，预期博弈下波动加剧。"
+ },
+ {
+  "id": "N20260812-023",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "医药资金面分歧：医药生物主力净流出32.4亿 但Q2公募基金集体重仓医药 百花7连板换手35%PE202倍 哈药月涨180%",
+  "source_url": "https://m.chinanews.com/wap/detail/cht/zw/jw683236.shtml",
+  "sentiment": "中性",
+  "strength": 50,
+  "impact_direction": "中性",
+  "expected_volatility": "高",
+  "reason": "医药资金面分歧明显，主力净流出与公募重仓并存，个股炒作剧烈，风险与机遇交织。"
+ },
+ {
+  "id": "N20260812-024",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "白酒板块活跃：今世缘涨停9.99% 申万宏源'300元以上价格带扩容' 北京限购松绑+金九银十预期催化地产消费共振",
+  "source_url": "https://xueqiu.com/3075122481/404733154",
+  "sentiment": "正面",
+  "strength": 80,
+  "impact_direction": "利多",
+  "expected_volatility": "高",
+  "reason": "白酒板块活跃涨停，叠加北京限购松绑及金九银十预期，政策与消费情绪共振，利多明显。"
+ },
+ {
+  "id": "N20260812-025",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "美国7月CPI今夜公布（北京20:30/21:30口径）：预期环比+0.1%同比3.4% 油价连续5日上涨Brent近90美元 金价突破4450美元 9月加息概率50%附近",
+  "source_url": "https://xnews.jin10.com/details/227119",
+  "sentiment": "中性",
+  "strength": 50,
+  "impact_direction": "中性",
+  "expected_volatility": "高",
+  "reason": "CPI数据公布前油价上涨与加息概率回升带来不确定性，但市场预期环比转正且同比回落，多空因素交织。"
+ },
+ {
+  "id": "N20260812-026",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "医疗器械午后反弹：8款创新器械进入特别审查 宝莱特20cm涨停 澳华内镜涨超10%",
+  "source_url": "https://www.163.com/dy/article/L451MB3S0519QIKK.html",
+  "sentiment": "正面",
+  "strength": 85,
+  "impact_direction": "利多",
+  "expected_volatility": "高",
+  "reason": "创新器械特别审查政策利好叠加创新药业绩兑现，板块午后反弹明显，多股涨停"
  }
 ]
