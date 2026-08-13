@@ -278,6 +278,7 @@ content = result['choices'][0]['message']['content']
 - **判定**：非本地代理拦截（此前 8/6-8/11 均正常），疑似且慢服务端临时异常或链路限流。**盘中档若遇此现象，标注「E大调仓数据暂缺」并保留本地最新 adjustments.json 不变，盘后档必须复测**——若恢复则增量补录并提示用户；若持续异常，考虑 qieman 官方 MCP 或换浏览器渲染方案（§9.2）。
 - **注意**：空 body 与"连接失败"不同，不要误判为接口废弃，也不要反复重试浪费时长（2 次即可）。
 - **补充（2026-08-12 盘后复测）**：**连续第 2 日空 body（8/12 盘前→盘中→盘后均 SIZE:0）**，判定为持续性异常而非瞬时抖动；本地最新调仓仍为 7/30（adj_id 781）。**若 8/13 仍异常，按 §9.2 切换 qieman 官方 MCP（免费申请 API Key）或 playwright 浏览器渲染兜底**，避免 E大调仓信号长期缺失。
+- **补充2（2026-08-13 盘中实测：playwright 兜底可行，已成功验证）**：连续第 3 日空 body（8/13 盘前→盘中均 SIZE:0，页面上下文 fetch 同样返回空，判定且慢服务端对 REST `/pmdj/v2/...` 持续限流/异常）。**已实测可行兜底方案（scripts/qieman_pw_fallback.cjs）**：playwright-core + 系统 Chrome headless 打开 `https://qieman.com/longwin`，拦截 response 中 `/adjustments|nav-history|graphql|/plan` 的 JSON 响应即可拿到 `nav-history`（2702 条）与 `plan` 详情（composition/prodSummaries/sharpe 等）。**但注意：REST adjustments 明细（含 comment/orders）浏览器页面也不返回**——调仓判断改用 **`plan` 详情的 `adjustedCount` 字段**与本地 adjustments.json 的 `count` 对比（8/13 均为 261 → 无新调仓，交叉验证通过）；若 adjustedCount 增加则提示需要人工核对该批次调仓内容。**nav-history 增量更新**：数据源日期为 ms 时间戳（`navDate`），需 `/1000` 转换；本地 `long-win-nav.csv` 用日期字符串判重，一次增量写入 8/7-8/12 共 4 行。**plan 详情保存**：写 `reference-portfolios/long-win/composition-YYYY-MM-DD.json`（含 8 大类 composition）+ 更新 `meta.json` 指标（nav/sharpe/maxDrawdown/volatility/adjustedCount）。长期建议仍申请 qieman 官方 MCP 根治。
 
 ### 3.15 🟢 港股收盘 spot 失败时的补录方案（2026-08-12 盘后实测）
 

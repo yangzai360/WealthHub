@@ -33,5 +33,15 @@
       "code": "000905.SH",
       "name": "中证500"
     }
-  ]
+  ],
+  "updated": "2026-08-13 (盘中兜底更新)",
+  "nav": 1.6971,
+  "navDate": "2026-08-12",
+  "dailyReturn": -0.0002,
+  "sharpe": 0.3031,
+  "maxDrawdown": 0.1979,
+  "volatility": 0.1112,
+  "annualCompoundedReturn": 0.0487,
+  "investedUnit": 109,
+  "adjustedCount": 261
 }
