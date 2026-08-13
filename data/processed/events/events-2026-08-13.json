@@ -316,12 +316,13 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.04,
+   "actual_date": "2026-08-13",
+   "ret_1d_ref": "XLV 8/13收盘(新浪源);IYH新浪源滞后至8/12,未更新"
   },
   "score": 65,
-  "direction": "利多"
+  "direction": "利多",
+  "actual_ret_1d": -0.04
  },
  {
   "id": "N20260813-013",
