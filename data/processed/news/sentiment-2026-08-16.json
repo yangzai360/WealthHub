@@ -1,0 +1,110 @@
+[
+ {
+  "id": "N20260816-001",
+  "sentiment": "负面",
+  "score": 25,
+  "strength": 80,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "茅台中报净利首降，白酒龙头基本面与信心受挫"
+ },
+ {
+  "id": "N20260816-002",
+  "sentiment": "正面",
+  "score": 62,
+  "strength": 55,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "五粮液提价及茅台批价企稳，短期修复渠道预期"
+ },
+ {
+  "id": "N20260816-003",
+  "sentiment": "负面",
+  "score": 20,
+  "strength": 70,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "机构减持叠加高管被查，白酒资金与治理预期恶化"
+ },
+ {
+  "id": "N20260816-004",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 60,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "创新药管线领先但热门靶点内卷，机会与风险并存"
+ },
+ {
+  "id": "N20260816-005",
+  "sentiment": "正面",
+  "score": 85,
+  "strength": 75,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "业绩预喜、出海、双目录及调研升温四重共振"
+ },
+ {
+  "id": "N20260816-006",
+  "sentiment": "正面",
+  "score": 78,
+  "strength": 65,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "国产ADC与GLP-1授权出海，BD持续兑现提升估值"
+ },
+ {
+  "id": "N20260816-007",
+  "sentiment": "正面",
+  "score": 65,
+  "strength": 50,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "国产新药及仿制药海外获批，管线价值逐步落地"
+ },
+ {
+  "id": "N20260816-008",
+  "sentiment": "正面",
+  "score": 90,
+  "strength": 85,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "礼来业绩超预期并上调指引，GLP-1赛道景气再强化"
+ },
+ {
+  "id": "N20260816-009",
+  "sentiment": "正面",
+  "score": 60,
+  "strength": 45,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "强生双抗获FDA优先审评，医疗ETF回调影响有限"
+ },
+ {
+  "id": "N20260816-010",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 60,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "港股科技回调但南向加仓腾讯，对医药消费影响有限"
+ },
+ {
+  "id": "N20260816-011",
+  "sentiment": "正面",
+  "score": 70,
+  "strength": 45,
+  "direction": "中性",
+  "volatility": "低",
+  "reason": "AI大模型与算力进展积极，但对医药消费板块无直接冲击"
+ },
+ {
+  "id": "N20260816-012",
+  "sentiment": "负面",
+  "score": 25,
+  "strength": 80,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "美消费数据走弱叠加日本加息风险，成长/QDII承压"
+ }
+]

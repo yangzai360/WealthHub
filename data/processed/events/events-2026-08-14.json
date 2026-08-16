@@ -343,9 +343,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.6,
+   "actual_date": "2026-08-14",
+   "ret_1d_ref": "XLV收盘(8/14,新浪源)"
   },
   "score": 52,
   "direction": "中性"
