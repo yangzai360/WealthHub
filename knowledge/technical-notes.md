@@ -319,4 +319,12 @@ content = result['choices'][0]['message']['content']
 - **且慢 pmdj 连续第 8 日空 body**：8/17 盘前复测 `plan` 接口仍 HTTP 200 SIZE:0——持续异常已成常态，盘前/盘中档直接标注「E大调仓数据暂缺」即可，无需每次重试；周度或月度用 playwright 兜底（§3.14 补充2）验证 adjustedCount 变化即可
 - **8/17 盘前情绪标注 12 条一次成功**：DeepSeek v4-flash max_tokens=8000 无空响应；事件库 track 直接采用新闻自带的 track 字段（手动归类），避免关键词分类器误归（§3.18 教训）
 
+### 3.21 🟢 港股 spot 盘中恢复 + 且慢净值修正 + playwright 兜底再验证（2026-08-17 盘中实测）
+
+- **`stock_hk_index_spot_sina` 盘中恢复**：8/17 盘中 3 次重试均成功（恒指 25,545.03 +1.71%、恒科 4,812.69 +2.23%）——自 8/12 盘中起的连续失败并非永久失效，**盘中档可正常重试该接口；盘后档仍建议按 §3.15 WebSearch 口径兜底**（盘后稳定性差）
+- **且慢 pmdj 连续第 9 日空 body**（HTTP 200 SIZE:0），playwright 兜底（§3.14 补充2）再次成功：nav-history 2,704 条 + plan 详情 `adjustedCount=261` 与本地一致 → **无新调仓**；盘中档沿用「plan adjustedCount 对比」判断即可，无需每次跑 playwright（周度/月度验证即可）
+- **且慢组合净值 8/14 出现修正**：playwright 抓到 8/14 nav=1.69029（dailyReturn -0.237%），本地 long-win-nav.csv 8/14 为 1.69233（-0.117%）——**且慢对 8/14 净值做了 -0.12% 修正**（成分基金净值修正传导）。规避：**本地历史净值落库后不回写覆盖**，以首次落库为准并记录差异即可
+- **盘中新闻 track 手动归类**：盘中 9 条新闻（无 track 字段）由脚本按标题前缀手动映射赛道（恒生科技/大消费/A股医药/宏观），避免 §3.17 关键词分类器误归——**盘中追加事件脚本需内置手动 TRACK_MAP**，不能依赖自动分类器
+- 本次新增脚本：`fetch_intraday_20260817.py` / `build_intraday_news_20260817.py` / `sentiment_intraday_20260817.py` / `append_events_intraday_20260817.py` / `calc_portfolio_intraday_20260817.py`（8/13 同名脚本模板直接改日期复用，增量判重 key 不变）
+
 *最后更新：2026-08-17。环境或接口有变化时，先改本文件再执行任务。*
