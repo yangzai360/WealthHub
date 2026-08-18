@@ -202,15 +202,9 @@
    "ret_10d": null,
    "max_vol": 3.34,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 24,
-    "track_avg": 0.32,
-    "track_worst": -0.6,
-    "track_best": 1.67,
-    "track_pos_ratio": 0.75
-   }
+   "actual_ret_1d": -0.19,
+   "actual_date": "2026-08-17",
+   "ret_1d_ref": "XLV 8/17收盘(-0.19%)"
   }
  },
  {
@@ -234,15 +228,9 @@
    "ret_10d": null,
    "max_vol": 3.34,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 24,
-    "track_avg": 0.32,
-    "track_worst": -0.6,
-    "track_best": 1.67,
-    "track_pos_ratio": 0.75
-   }
+   "actual_ret_1d": -0.19,
+   "actual_date": "2026-08-17",
+   "ret_1d_ref": "XLV 8/17收盘(-0.19%)"
   }
  },
  {
@@ -738,15 +726,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 24,
-    "track_avg": 0.32,
-    "track_worst": -0.6,
-    "track_best": 1.67,
-    "track_pos_ratio": 0.75
-   }
+   "actual_ret_1d": -0.19,
+   "actual_date": "2026-08-17",
+   "ret_1d_ref": "XLV 8/17收盘(-0.19%)"
   }
  },
  {

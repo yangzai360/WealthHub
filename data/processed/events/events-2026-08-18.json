@@ -18,8 +18,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.19,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -41,8 +43,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.19,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -64,8 +68,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.19,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -87,8 +93,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.89,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -110,8 +118,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.89,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -133,8 +143,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.89,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -156,8 +168,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.89,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -179,8 +193,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": -0.22,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -202,8 +218,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": -0.22,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -225,8 +243,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": -0.22,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -248,8 +268,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": -0.22,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -271,8 +293,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": -0.22,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -363,8 +387,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": -0.9,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -386,8 +412,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": -0.9,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -409,8 +437,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": -0.9,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -434,15 +464,9 @@
    "ret_10d": null,
    "max_vol": 4.56,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 54,
-    "track_avg": -0.06,
-    "track_worst": -2.28,
-    "track_best": 1.58,
-    "track_pos_ratio": 0.59
-   }
+   "actual_ret_1d": -0.9,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -466,15 +490,9 @@
    "ret_10d": null,
    "max_vol": 4.56,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 54,
-    "track_avg": -0.06,
-    "track_worst": -2.28,
-    "track_best": 1.58,
-    "track_pos_ratio": 0.59
-   }
+   "actual_ret_1d": -0.9,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -498,15 +516,9 @@
    "ret_10d": null,
    "max_vol": 2.82,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 35,
-    "track_avg": -0.02,
-    "track_worst": -0.82,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.54
-   }
+   "actual_ret_1d": 0.19,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -530,15 +542,9 @@
    "ret_10d": null,
    "max_vol": 5.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 50,
-    "track_avg": 0.02,
-    "track_worst": -1.45,
-    "track_best": 2.5,
-    "track_pos_ratio": 0.54
-   }
+   "actual_ret_1d": 0.89,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -562,15 +568,9 @@
    "ret_10d": null,
    "max_vol": 5.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 50,
-    "track_avg": 0.02,
-    "track_worst": -1.45,
-    "track_best": 2.5,
-    "track_pos_ratio": 0.54
-   }
+   "actual_ret_1d": 0.89,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -594,15 +594,9 @@
    "ret_10d": null,
    "max_vol": 5.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 50,
-    "track_avg": 0.02,
-    "track_worst": -1.45,
-    "track_best": 2.5,
-    "track_pos_ratio": 0.54
-   }
+   "actual_ret_1d": 0.89,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -626,15 +620,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 69,
-    "track_avg": 0.87,
-    "track_worst": -1.3,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -0.22,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -658,15 +646,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 69,
-    "track_avg": 0.87,
-    "track_worst": -1.3,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -0.22,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -690,15 +672,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 69,
-    "track_avg": 0.87,
-    "track_worst": -1.3,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -0.22,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -722,15 +698,9 @@
    "ret_10d": null,
    "max_vol": 4.56,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 54,
-    "track_avg": -0.06,
-    "track_worst": -2.28,
-    "track_best": 1.58,
-    "track_pos_ratio": 0.59
-   }
+   "actual_ret_1d": -0.9,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -754,6 +724,64 @@
    "ret_10d": null,
    "max_vol": 4.56,
    "confidence": 90,
+   "actual_ret_1d": -0.9,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "赛道指数/ETF收盘"
+  }
+ },
+ {
+  "id": "N20260818-030",
+  "date": "2026-08-18",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股收评（8/18）：沪指+0.19%报3,990.30距4,000仅差10点冲关失败、深成指-0.56%、创业板指-0.92%报3,705.56、中证消费+0.89%报12,626.01站稳12,600——午后回暖、猪肉/医药走强、AI硬科技回调",
+  "summary": "8/18 A股三大指数涨跌分化：沪指收3,990.30（+0.19%），盘中最高3,992.09距4,000点整数关仅差10点后回落，冲关连续第二日失败；深证成指-0.56%报14,622.50、创业板指-0.92%报3,705.56、中证消费指数+0.89%报12,626.01（站稳12,600上方）。午后市场回暖，猪肉/农业、生物医药板块走强，AI硬科技（存储/CPO/PCB）回调。北向资金全天成交3,076.40亿元占两市12.81%，兆易创新/中际旭创/新易盛成交居前。沪股通中药明康德17.47亿、贵州茅台15.19亿成交活跃。",
+  "source": "WebSearch",
+  "source_url": "https://www.163.com/dy/article/L4KIVM5205568W0A.html",
+  "sentiment": "中性",
+  "score": 55,
+  "strength": 50,
+  "direction": "利多",
+  "volatility": "低",
+  "reason": "医药消费板块走强但指数冲关失败，市场分化，整体情绪中性偏暖",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 35,
+    "track_avg": -0.02,
+    "track_worst": -0.82,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.54
+   }
+  }
+ },
+ {
+  "id": "N20260818-031",
+  "date": "2026-08-18",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股收评（8/18，新华社）：恒指+0.07%收25,471.15（早盘一度跌超200点后倒升）、恒生科技-0.90%收4,739.18（盘中曾跌2.2%、尾盘收复4,700）——阿里+3.68%领涨、小米+1.16%、腾讯-0.9%收442.4、智谱-13.3%破千港元、联想-5.09%",
+  "summary": "8/18港股宽幅震荡：恒指低开84点、早盘一度跌超200点（最低25,240.62），午后大型科网股反弹翻红，收25,471.15（+0.07%，+17.92点），全日主板成交2,555.41亿港元；国企指数+0.16%收8,453.2；恒生科技指数-0.90%收4,739.18（盘中最低4,674.08，跌幅一度超2.2%，尾盘收复4,700）。个股：阿里巴巴+3.68%领涨（午后一度涨5%，成交151.1亿港元居首）、小米+1.16%（财报落地）、百度+0.8%；腾讯-0.9%收442.4港元、美团-2.4%、京东/快手-1.7%。AI概念重挫：智谱盘中跌破1,000港元（最低990）收1,043（-13.3%）、MiniMax-4.49%、联想-5.09%（财报后三日连跌回吐4%）。芯片股走弱：华虹宏力-7.86%、建滔积层板-8.12%。",
+  "source": "WebSearch",
+  "source_url": "https://www.163.com/dy/article/L4KQQP1S05346RC6.html",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 65,
+  "direction": "中性",
+  "volatility": "高",
+  "reason": "AI概念及芯片股重挫拖累科技指数，但大型科网股反弹支撑恒指收涨，市场分化剧烈。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
    "actual_ret_1d": null,
    "actual_date": null,
    "ret_1d_ref": {
@@ -762,6 +790,166 @@
     "track_worst": -2.28,
     "track_best": 1.58,
     "track_pos_ratio": 0.59
+   }
+  }
+ },
+ {
+  "id": "N20260818-032",
+  "date": "2026-08-18",
+  "track": "大消费",
+  "category": "业绩类",
+  "title": "茅台尾盘翻红+白酒止跌（8/18）：贵州茅台+0.38%收1,297.99（盘中最低1,285.17、午后翻红收复1,290+，5日-3.60%）、白酒Ⅱ板块+0.37%（10只白酒股上涨）；国泰海通：白酒处本轮周期底部、渠道库存稳中有降、价格急跌显著缓解",
+  "summary": "8/18白酒板块止跌企稳：盘中白酒Ⅱ一度跌至36,184.17点（-0.65%），午后回升收36,556.78（+0.37%），10只白酒股上涨。贵州茅台收1,297.99元（+0.38%），盘中最低1,285.17、最高1,302.90，尾盘翻红收复1,290+（前日-3.64%失守1,300后企稳）；五粮液+0.01%收72.56、山西汾酒+1.33%收120.52、泸州老窖+0.31%收86.62、洋河-0.43%收39.65。国泰海通研报：白酒行业处本轮周期底部、报表连续多季度调整、预计26Q2延续出清状态仅部分个股同比持平或正增长；酒厂愈发理性、渠道库存绝对量稳中有降、价格急跌显著缓解。",
+  "source": "WebSearch",
+  "source_url": "https://news.10jqka.com.cn/20260818/c679046627.shtml",
+  "sentiment": "正面",
+  "score": 65,
+  "strength": 60,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "白酒板块止跌企稳、茅台尾盘翻红，叠加券商研报确认行业处于周期底部且渠道库存与价格压力缓解，短期情绪修复。 ",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 50,
+    "track_avg": 0.02,
+    "track_worst": -1.45,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.54
+   }
+  }
+ },
+ {
+  "id": "N20260818-033",
+  "date": "2026-08-18",
+  "track": "恒生科技",
+  "category": "业绩类",
+  "title": "小米集团8/18财报落地：港股小米收+1.16%报26.18港元（盘中一度翻绿，财报后转涨）、恒科权重业绩验证通过；百度+0.8%飘红延续AI云预期",
+  "summary": "8/18小米集团发布二季度财报并召开电话会，港股小米收盘+1.16%报26.18港元（盘中一度下探翻绿，财报披露后转涨），业绩未暴雷、恒科权重验证通过。同日百度财报落地+0.8%飘红（AI云收入高增预期延续）。本周中概财报密集窗口：8/19快手、8/20阿里+网易。恒科收盘-0.90%（4,739.18）主要拖累来自AI概念杀跌（智谱-13.3%/MiniMax-4.49%）与芯片回调（华虹-7.86%），权重科网（阿里+3.68%/小米+1.16%）实际企稳。",
+  "source": "WebSearch",
+  "source_url": "https://finance.biggo.com/news/8c068e95-1bb6-4284-a246-163fe1f59260",
+  "sentiment": "正面",
+  "score": 70,
+  "strength": 60,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "小米二季度财报未暴雷，港股收涨，恒科权重验证通过，利好小米及恒科科技板块。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 54,
+    "track_avg": -0.06,
+    "track_worst": -2.28,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.59
+   }
+  }
+ },
+ {
+  "id": "N20260818-034",
+  "date": "2026-08-18",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "港股CXO/生物医药集体走强（8/18）：金斯瑞+8%、康龙化成/药明生物/凯莱英+5%；光大证券：中报期进入'业绩与临床数据共振'阶段，外需全球医药融资回暖+内需创新药研发回升双轮驱动",
+  "summary": "8/18港股生物医药、医药外包（CXO）概念股集体走强：金斯瑞生物科技涨超8%、康龙化成/药明生物/凯莱英涨超5%，光大证券指出CXO板块亮眼表现有望带动资金对生物医药板块整体关注度提升；中报期行业进入'业绩与临床数据共振'阶段，外需端全球医药融资回暖、内需端国内创新药研发热情回升，形成双轮驱动增长格局。对A股医药持仓（药明康德8/18收167.18 +0.17%高位震荡、港股药明生物走强）构成边际利多映射。",
+  "source": "WebSearch",
+  "source_url": "https://www.163.com/dy/article/L4KLEUGC05198ETO.html",
+  "sentiment": "正面",
+  "score": 85,
+  "strength": 75,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "港股CXO/生物医药集体走强，外需全球医药融资回暖与内需创新药研发回升双轮驱动，板块业绩与临床数据共振。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 69,
+    "track_avg": 0.87,
+    "track_worst": -1.3,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.55
+   }
+  }
+ },
+ {
+  "id": "N20260818-035",
+  "date": "2026-08-18",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "生猪产能去化实质进展（8/18）：猪肉股走强（牧原/中粮家佳康+4%）；国盛证券：2026年猪价创近十年新低、单头亏损576.82元创历史最高，但能繁母猪存栏降至3,904万头、新生仔猪数量首次同比下降——下半年出栏量将趋势性回落",
+  "summary": "8/18猪肉概念股全天活跃：牧原股份、中粮家佳康涨超4%。国盛证券研报：2026年生猪养殖行业供给过剩格局延续、猪价创近十年新低、全行业亏损深度加剧（单头亏损576.82元/头为历史最高水平）；但能繁母猪存栏已降至3,904万头、新生仔猪数量首次同比下降，预示下半年生猪出栏量将进入趋势性回落通道，行业产能去化已现实质性进展。与大消费（县域消费政策+农业链）联动，对消费板块构成边际利多（农业/食品为今日消费指数+0.89%主要拉动）。",
+  "source": "WebSearch",
+  "source_url": "https://www.163.com/dy/article/L4KLEUGC05198ETO.html",
+  "sentiment": "正面",
+  "score": 70,
+  "strength": 60,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "产能去化实质进展预示供给收缩，猪价有望见底回升，利好养殖板块盈利预期。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 50,
+    "track_avg": 0.02,
+    "track_worst": -1.45,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.54
+   }
+  }
+ },
+ {
+  "id": "N20260818-036",
+  "date": "2026-08-18",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "伊朗高级官员：政策从防御性转为'全面进攻性'（8/18，路透）——为美伊谅解备忘录履约设定数周最后期限，外交失败则升级霍尔木兹海峡紧张；特朗普称不寻求延长备忘录",
+  "summary": "路透社8/18报道：一名伊朗高级官员表示，伊朗已决定将政策从防御性转为'全面进攻性'，向美国施压或依靠调解人达成持久和平并不现实；伊朗已为美国全面履行谅解备忘录设定数周最后期限，若外交途径失败，所有伊朗实体将准备在霍尔木兹海峡及该地区升级紧张局势，且不会无限期等待美国解除海上封锁。此前特朗普明确表示不寻求延长与伊朗的谅解备忘录（8/17到期，谈判陷入僵局）。地缘风险持续升级，霍尔木兹海峡航运量仅为战前约5%，全球约五分之一海运原油运输受阻，WTI 84.95美元/桶高位——对全球风险资产构成持续压制（港股/A股外部变量）。",
+  "source": "WebSearch",
+  "source_url": "https://xnews.jin10.com/details/227616",
+  "sentiment": "负面",
+  "score": 70,
+  "strength": 75,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "伊朗转向全面进攻并可能升级霍尔木兹海峡冲突，地缘风险推高原油并压制全球风险资产",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 35,
+    "track_avg": -0.02,
+    "track_worst": -0.82,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.54
    }
   }
  }
