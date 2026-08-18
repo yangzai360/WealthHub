@@ -345,4 +345,10 @@ content = result['choices'][0]['message']['content']
 - **场外基金周一净值周二早盘全量可抓**：8/18 盘前 23 只持仓基金 8/17 净值全量拿到（医药普涨 +0.19%~+1.69%、消费 -1.06%、恒科 +1.51%、宽基 +1.54%），仅 QDII 停 8/14（T+1 正常）——与 §3.11 周一规则对称，**周二早盘同样可抓周一全量净值**
 - **DeepSeek 情绪标注 18 条一次成功**（max_tokens=8000 无空响应），事件库 track 直接采用手动归类赛道名（§3.17/3.20 规则延续）
 
-*最后更新：2026-08-18（盘前）。环境或接口有变化时，先改本文件再执行任务。*
+### 3.24 🟢 港股 spot 盘中连续第 2 日可用 + 且慢 pmdj 第 12 日空 body（2026-08-18 盘中实测）
+
+- **`stock_hk_index_spot_sina` 盘中再次成功**：8/18 盘中 3 次重试成功（恒指 25,297.15 -0.61%、恒科 4,687.79 -1.97%）——与 8/17 盘中恢复规律一致，**「盘前/盘后失败、盘中恢复」规律连续 2 日确认**；盘中档直接重试即可（§3.21/§3.23 规则延续）
+- **且慢 pmdj 连续第 12 日空 body**（HTTP 200 SIZE:0）：盘中档标注「E大调仓数据暂缺」即可，无需每次重试；8/17 盘后 playwright 兜底已验证 adjustedCount=261 无新调仓，周度/月度再验证（§3.23 规则延续）
+- **盘中新闻/事件链路复用 8/17 模板**：`fetch_intraday_YYYYMMDD.py`（新浪源指数+场内ETF+场外T+1）→ `build_intraday_news_YYYYMMDD.py`（TRACK_MAP 手动归类）→ `sentiment_intraday_YYYYMMDD.py`（DeepSeek max_tokens=8000）→ `append_events_intraday_YYYYMMDD.py`（增量判重 id 前缀）→ `calc_portfolio_intraday_YYYYMMDD.py`（场内 ETF 实时 + 场外赛道近似），脚本模板直接改日期复用、增量判重 key 不变
+
+*最后更新：2026-08-18（盘中）。环境或接口有变化时，先改本文件再执行任务。*
