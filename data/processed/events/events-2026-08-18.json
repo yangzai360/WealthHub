@@ -318,8 +318,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 1.52,
+   "note": "盘前档回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "IYH 8/18 收盘(+1.52%)，XLV 新浪源滞后"
   }
  },
  {
@@ -341,8 +343,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 1.52,
+   "note": "盘前档回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "IYH 8/18 收盘(+1.52%)，XLV 新浪源滞后"
   }
  },
  {
@@ -364,8 +368,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 1.52,
+   "note": "盘前档回填",
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "IYH 8/18 收盘(+1.52%)，XLV 新浪源滞后"
   }
  },
  {
