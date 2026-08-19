@@ -369,4 +369,11 @@ content = result['choices'][0]['message']['content']
 - **且慢 pmdj 连续第 14 日空 body**（HTTP 200 SIZE:0）：盘前档直接标注「E大调仓数据暂缺」，周度/月度 playwright 兜底验证 adjustedCount 即可（§3.23 规则延续）
 - **DeepSeek 情绪标注 16 条一次成功**（max_tokens=8000 无空响应）；事件库 track 直接采用手动归类赛道名（§3.17/§3.20 规则延续）；组合估值脚本更新净值字典即可复用（增量判重 key 不变）
 
-*最后更新：2026-08-19（盘前）。环境或接口有变化时，先改本文件再执行任务。*
+### 3.27 🟢 港股 spot 盘中连续第 3 日可用 + 且慢 pmdj 第 15 日空 body（2026-08-19 盘中实测）
+
+- **`stock_hk_index_spot_sina` 盘中连续第 3 日成功**：8/19 盘中 3 次重试成功（恒指 25,442.00 -0.11%、恒科 4,673.96 -1.38%）——「盘前/盘后失败、盘中恢复」规律第 3 日确认（§3.21/§3.24 规则延续）；盘中档直接重试即可
+- **且慢 pmdj 连续第 15 日空 body**（HTTP 200 SIZE:0）：盘中档标注「E大调仓数据暂缺」即可；8/17 盘后 playwright 兜底已验证 adjustedCount=261 无新调仓，周度/月度再验证（§3.23 规则延续）
+- **盘中链路 5 脚本模板连续第 3 日复用成功**（8/17/8/18/8/19）：`fetch_intraday_YYYYMMDD.py`（新浪源指数+场内ETF+场外T+1）→ `build_intraday_news_YYYYMMDD.py`（TRACK_MAP 手动归类，**每次必须更新 TRACK_MAP 标题前缀**）→ `sentiment_intraday_YYYYMMDD.py`（DeepSeek max_tokens=8000）→ `append_events_intraday_YYYYMMDD.py`（增量判重 id 前缀）→ `calc_portfolio_intraday_YYYYMMDD.py`（**每次更新 intraday 字典实时涨跌 + QDII 按 0**：QDII 当日无净值兑现，8/18 美股 +1.5% 需 8/20-21 才反映）
+- **8/19 盘中组合估算 -1.47%**：A股系统性回调日（沪指 -2.04%、创业板 -4.77%），宽基（广联达创业板映射 -2,081 元）+ A股医药（-1,709 元）双重拖累；大消费跌破 12,500、恒科跌破 4,700 双双触发/逼近盘前预案条件
+
+*最后更新：2026-08-19（盘中）。环境或接口有变化时，先改本文件再执行任务。*
