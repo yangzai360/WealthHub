@@ -756,15 +756,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 35,
-    "track_avg": -0.02,
-    "track_worst": -0.82,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.54
-   }
+   "actual_ret_1d": 0.19,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "8/18收盘(盘后追加事件补回填)"
   }
  },
  {
@@ -788,15 +782,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 54,
-    "track_avg": -0.06,
-    "track_worst": -2.28,
-    "track_best": 1.58,
-    "track_pos_ratio": 0.59
-   }
+   "actual_ret_1d": -0.9,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "8/18收盘(盘后追加事件补回填)"
   }
  },
  {
@@ -820,15 +808,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 50,
-    "track_avg": 0.02,
-    "track_worst": -1.45,
-    "track_best": 2.5,
-    "track_pos_ratio": 0.54
-   }
+   "actual_ret_1d": 0.89,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "8/18收盘(盘后追加事件补回填)"
   }
  },
  {
@@ -852,15 +834,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 54,
-    "track_avg": -0.06,
-    "track_worst": -2.28,
-    "track_best": 1.58,
-    "track_pos_ratio": 0.59
-   }
+   "actual_ret_1d": -0.9,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "8/18收盘(盘后追加事件补回填)"
   }
  },
  {
@@ -884,15 +860,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 69,
-    "track_avg": 0.87,
-    "track_worst": -1.3,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -0.22,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "8/18收盘(盘后追加事件补回填)"
   }
  },
  {
@@ -916,15 +886,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 50,
-    "track_avg": 0.02,
-    "track_worst": -1.45,
-    "track_best": 2.5,
-    "track_pos_ratio": 0.54
-   }
+   "actual_ret_1d": 0.89,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "8/18收盘(盘后追加事件补回填)"
   }
  },
  {
@@ -948,15 +912,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 35,
-    "track_avg": -0.02,
-    "track_worst": -0.82,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.54
-   }
+   "actual_ret_1d": 0.19,
+   "actual_date": "2026-08-18",
+   "ret_1d_ref": "8/18收盘(盘后追加事件补回填)"
   }
  }
 ]
