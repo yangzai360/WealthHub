@@ -18,8 +18,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.24,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -41,8 +43,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.24,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -64,8 +68,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.24,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -87,8 +93,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.24,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -110,8 +118,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.24,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -133,8 +143,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.24,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -202,8 +214,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.39,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -225,8 +239,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.39,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -248,8 +264,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 3.53,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -271,8 +289,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.71,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -294,8 +314,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.71,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -319,15 +341,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 52,
-    "track_avg": -0.5,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.48
-   }
+   "actual_ret_1d": 0.24,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -351,15 +367,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 84,
-    "track_avg": 0.53,
-    "track_worst": -2.55,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.45
-   }
+   "actual_ret_1d": 3.53,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -383,15 +393,9 @@
    "ret_10d": null,
    "max_vol": 4.56,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 69,
-    "track_avg": -0.27,
-    "track_worst": -2.28,
-    "track_best": 1.58,
-    "track_pos_ratio": 0.46
-   }
+   "actual_ret_1d": 0.39,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -415,15 +419,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 52,
-    "track_avg": -0.5,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.48
-   }
+   "actual_ret_1d": 0.24,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -447,15 +445,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 52,
-    "track_avg": -0.5,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.48
-   }
+   "actual_ret_1d": 0.24,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -479,15 +471,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 52,
-    "track_avg": -0.5,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.48
-   }
+   "actual_ret_1d": 0.24,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -511,15 +497,9 @@
    "ret_10d": null,
    "max_vol": 5.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 64,
-    "track_avg": 0.05,
-    "track_worst": -1.45,
-    "track_best": 2.5,
-    "track_pos_ratio": 0.56
-   }
+   "actual_ret_1d": 0.71,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -543,14 +523,264 @@
    "ret_10d": null,
    "max_vol": 5.0,
    "confidence": 90,
+   "actual_ret_1d": 0.71,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "赛道指数/ETF收盘"
+  }
+ },
+ {
+  "id": "N20260820-022",
+  "date": "2026-08-20",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股收评（8/20）：沪指+0.24%报3,903.72、深成指+0.59%（13,972.78）、创业板指+0.64%（3,495.59）、科创50-0.87%；成交2.09万亿缩量4,361亿、超4,000只上涨/涨停83只/跌停13只——医药生物掀涨停潮（38股涨停居首：沃森生物/键凯科技/康希诺封单居前，mRNA癌症疫苗III期阳性映射）、贵金属强势（兴业银锡触板）、地产午后崛起（上海优化房地产政策8/21施行）；白酒/饮料/酒类下跌、煤炭冲高回落",
+  "summary": "8/20 A股震荡反弹：上证指数报3,903.72（+0.24%）、深证成指13,972.78（+0.59%）、创业板指3,495.59（+0.64%）、科创50指数-0.87%、北证50-0.06%；沪深两市成交2.09万亿（较上日2.53万亿缩量4,361亿）；全市场超4,000只上涨（73.92%）、下跌1,347只、涨停83只、跌停13只。医药生物板块全面爆发（疫苗/细胞免疫/重组蛋白/基因编辑，三元基因/石药创新/沃森生物/智飞生物/康泰生物等20余股涨停，医药涨停38股居首——沃森8.06亿/键凯7.65亿/康希诺4.32亿封单居前），驱动为默沙东+莫德纳mRNA黑色素瘤疫苗III期阳性。贵金属强势（兴业银锡触板、赤峰黄金/山东黄金领涨，隔夜现货黄金+4.35%）。房地产午后崛起（京投发展/城投控股涨停）——上海六部门印发《关于优化本市房地产政策措施的通知》8/21施行（优化公积金提取/个人住房信贷/以旧换新购房补贴/房票安置/收购二手住房5方面8项）。白酒/饮料/酒类下跌（消费内部分化）、煤炭冲高回落（安泰集团触板跌停）。机构：中信建投认为市场进入震荡休整但快速下跌打开空间、沪指4,000点关口或反复拉锯；中金建议关注景气成长（AI基础设施/创新药）与周期改善两大主线。",
+  "source": "WebSearch",
+  "source_url": "https://news.qq.com/rain/a/20260820A0BX9S00",
+  "sentiment": "正面",
+  "score": 65,
+  "strength": 60,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "指数普涨叠加医药涨停潮与地产政策利好催化，但量能萎缩及板块分化限制上行强度。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.24,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": {
+    "track_n": 53,
+    "track_avg": -0.48,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.49
+   }
+  }
+ },
+ {
+  "id": "N20260820-023",
+  "date": "2026-08-20",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股收评（8/20，新华社）：恒指+0.80%收25,698.49（4连升）、国企指数+0.90%（8,547.84）、恒生科技+0.39%收4,700.53；主板成交2,691.19亿港元——mRNA疫苗III期阳性全产业链重估、生物医药领涨（康希诺+37%/云顶新耀+41%/思路迪+56%/中国生物制药+12%）、黄金股大涨（紫金黄金国际+11%）；百度+2.45%/京东、阿里+1.6% vs 快手-11%/网易、美团下跌；内房股活跃（公积金新政）；纸业大跌（玖龙纸业发盈喜股价倒跌16.8%）",
+  "summary": "8/20港股三大指数集体收涨、录得4连升：恒生指数+0.80%（+203.42点）报25,698.49、国企指数+0.90%报8,547.84、恒生科技指数+0.39%报4,700.53（尾盘涨幅收窄）；主板全日成交2,691.19亿港元。生物医药板块全天领涨（mRNA肿瘤疫苗三期大获成功全产业链价值重估）：思路迪医药早盘一度飙升130%、云顶新耀+41%、康希诺生物+37%、中国生物制药+12%、剂泰科技/金斯瑞跟涨。黄金股大涨（紫金黄金国际+11%、潼关黄金/中国黄金国际+7%——隔夜现货黄金+4.32%创五个月最大单日涨幅）。大型科网股多数上涨：百度+2.45%、京东/阿里巴巴+1.6%；但快手跌超11%、哔哩哔哩/联想/美团/网易下跌。内房股持续活跃（龙湖/金茂/碧桂园+4%，国务院修订《住房公积金管理条例》）。九部门发文力挺新能源车下乡、汽车股普涨（理想+5%）。纸业大跌（玖龙纸业发盈喜股价倒跌16.8%）。南向资金净卖出104.12亿港元（连续第三日，较昨日146.82亿收窄）。",
+  "source": "WebSearch",
+  "source_url": "https://www.163.com/dy/article/L4PPG45P05568W0A.html",
+  "sentiment": "正面",
+  "score": 72,
+  "strength": 68,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "mRNA疫苗III期成功引发生物医药全产业链重估，叠加黄金股与内房股活跃，带动港股放量四连升。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.39,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": {
+    "track_n": 69,
+    "track_avg": -0.27,
+    "track_worst": -2.28,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.46
+   }
+  }
+ },
+ {
+  "id": "N20260820-024",
+  "date": "2026-08-20",
+  "track": "恒生科技",
+  "category": "业绩类",
+  "title": "阿里巴巴2027财年Q1财报（8/20盘后）：营收2,689.53亿（+9%，符合预期）、经调整净利润207.15亿（-38%）、经营利润151.61亿（-57%）、归母净利105.37亿（-75.56%）；阿里云外部商业化收入+45%创22个季度新高、AI相关产品收入123.76亿（连续12季度三位数增长）、经调整EBITA 56.28亿（+133%）；资本开支676.78亿（+75%）致自由现金流净流出446.7亿；即时零售收入+45%（532.95亿）；88VIP会员约6,400万",
+  "summary": "8/20盘后阿里巴巴发布2027财年第一季度（2026年4-6月）财报：收入2,689.53亿元（+9%，基本符合市场预期+8.35%）；经营利润151.61亿（-57%，因经调整EBITA减少+商誉减值+欧盟DSA罚款5.5亿欧元准备金）；经调整EBITA 273.29亿（-30%，符合预期-32~33%，主因科技投入）；非公认会计准则净利润207.15亿（-38%，预期利润承压兑现）；归母净利润105.37亿（-75.56%）。阿里云外部商业化收入增速45%（创22个季度新高），AI云及算力服务收入484.37亿、经调整EBITA 56.28亿（+133%，利润率12%）、AI相关产品收入123.76亿（连续12个季度三位数增长）；平头哥真武M890芯片在20多个行业650+客户实现商业化。资本开支676.78亿（+75%，AI基础设施投入），自由现金流净流出446.7亿（去年同期188.15亿）。即时零售收入532.95亿（+45%，淘宝闪购UE环比改善）、88VIP会员约6,400万。CEO吴泳铭：AI已成为阿里云增长的确定性引擎。",
+  "source": "WebSearch",
+  "source_url": "https://stcn.com/article/detail/4092653.html",
+  "sentiment": "正面",
+  "score": 60,
+  "strength": 80,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "阿里云AI商业化加速、外部收入创22个季度新高且云业务利润大增，成为抵消整体利润下滑的核心利多因素",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.39,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": {
+    "track_n": 69,
+    "track_avg": -0.27,
+    "track_worst": -2.28,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.46
+   }
+  }
+ },
+ {
+  "id": "N20260820-025",
+  "date": "2026-08-20",
+  "track": "恒生科技",
+  "category": "业绩类",
+  "title": "网易2026年Q2财报（8/20盘后）：营收279亿（+9.4%，略低于预期284亿）、游戏收入228亿（+13.7%但环比-5%、低于预期233.7亿）、净利润86亿（+27.25%）、非公认会计净利润95.32亿（+22%符合预期）、毛利率64.9%；云音乐收入20亿（-3.5%）、创新业务17亿（-17.8%）；宣布每股ADS派息0.57美元、回购已执行20亿美元",
+  "summary": "8/20盘后网易发布2026年Q2财报：营收279亿元（+9.4%，低于市场预期284亿）；在线游戏收入228亿（+13.7%、环比-5%，低于预期233.7亿，增长势头放缓）；毛利润181亿（+12.5%，毛利率64.9%）；净利润86亿（+27.25%）；非公认会计准则净利润95.32亿（+22%，符合预期95.74亿中位数）；每股ADS派息0.57美元、股份回购已执行20亿美元。云音乐收入20亿（-3.5%）、有道14亿（+7.2%）、创新业务17亿（-17.8%）。《梦幻西游》电脑版8月最高同时在线突破293万人创历史新高；海外新品《界外狂潮》登PS5免费游戏北美第二，但下载量尚未充分转化为收入。游戏业务增长放缓+环比下滑为市场关注点，递延收入同比+28%为后续支撑。",
+  "source": "WebSearch",
+  "source_url": "https://wallstreetcn.com/life-and-art/articles/cn/3753337",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 55,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "营收及游戏收入低于预期且环比下滑，但净利润高增、派息回购及递延收入提供支撑，多空因素交织。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.39,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": {
+    "track_n": 69,
+    "track_avg": -0.27,
+    "track_worst": -2.28,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.46
+   }
+  }
+ },
+ {
+  "id": "N20260820-026",
+  "date": "2026-08-20",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "南向资金8/20净卖出104.12亿港元（连续第三日，较昨日146.82亿收窄）：阿里巴巴-W获净买入22.05亿/快手11.44亿/金斯瑞2.06亿；盈富基金遭净卖出27.59亿/石药-10.92亿/康方生物-6.31亿——南向流出连续三日但规模收窄，腾讯不再是净买入榜首（阿里接棒）",
+  "summary": "8/20南向资金净卖出港股104.12亿港元（成交1,191.85亿港元，港股大市成交2,691.19亿）：连续第三日净卖出（8/18 +140亿 → 8/19 -106.21亿 → 8/20 -104.12亿）但规模较昨日收窄42.7亿。南向十大成交股：阿里巴巴-W获净买入22.05亿（居首，财报前资金布局）、快手-W 11.44亿、金斯瑞生物科技2.06亿；盈富基金遭净卖出27.59亿、石药集团10.92亿、康方生物6.31亿。与此前几日'腾讯获净买入'不同，今日腾讯未入净买入前列、阿里接棒——南向资金结构从防守型（腾讯）转向事件驱动型（阿里财报），恒科资金面托底逻辑仍弱但边际缓和。",
+  "source": "WebSearch",
+  "source_url": "https://finance.eastmoney.com/a/202608203847927578.html",
+  "sentiment": "中性",
+  "score": 55,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "低",
+  "reason": "南向资金连续第三日净卖出但规模收窄，资金结构由腾讯转向阿里，边际缓和",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.39,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": {
+    "track_n": 69,
+    "track_avg": -0.27,
+    "track_worst": -2.28,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.46
+   }
+  }
+ },
+ {
+  "id": "N20260820-027",
+  "date": "2026-08-20",
+  "track": "宏观",
+  "category": "政策类",
+  "title": "上海六部门印发《关于优化本市房地产政策措施的通知》（8/21起施行）：优化住房公积金提取、优化个人住房信贷、实施'以旧换新'购房补贴、推行房票安置、推进收购二手住房——5方面8项政策组合拳，地产板块午后崛起（京投发展/城投控股涨停）",
+  "summary": "8/20上海住建委等六部门联合印发《关于优化本市房地产政策措施的通知》（2026/8/21起施行），涵盖5方面8项：①优化住房公积金提取（拓宽提取范围）；②优化个人住房信贷（提升贷款额度）；③实施'以旧换新'购房补贴；④推行房票安置；⑤推进收购二手住房（结合'十五五'保障性租赁住房要求，各中心城区推进二手住房收购并加快改造出租）。政策组合拳催化A股房地产板块午后崛起：京投发展/城投控股涨停、福星股份/荣安地产/亚通股份/华丽家族涨幅居前。叠加9/10月传统销售旺季临近+国务院《住房公积金管理条例》修订，地产链（建筑/钢铁/家居）情绪改善，对消费（家电/家居）形成间接利多。",
+  "source": "WebSearch",
+  "source_url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_8486a86bdfe59252",
+  "sentiment": "正面",
+  "score": 75,
+  "strength": 70,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "上海出台5方面8项房地产政策组合拳，直接催化地产板块涨停潮，并间接利好地产链及家电家居消费。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.24,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": {
+    "track_n": 53,
+    "track_avg": -0.48,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.49
+   }
+  }
+ },
+ {
+  "id": "N20260820-028",
+  "date": "2026-08-20",
+  "track": "美股标普医药",
+  "category": "行业事件类",
+  "title": "Moderna盘前跌近10%（8/20美股盘前，昨日暴涨近180%后回吐）：mRNA黑色素瘤疫苗III期阳性兑现后获利了结；存储/光通信盘前普涨（SK海力士+4%/闪迪/美光/Coherent/Credo/Lumentum约+1%）；比特币一度突破7.2万美元（27亿美元空头遭清算）、特朗普会见多家加密货币企业高管",
+  "summary": "8/20美股盘前：昨日暴涨近180%的疫苗企业Moderna盘前走低、现跌近10%（mRNA黑色素瘤疫苗III期阳性兑现后获利了结）；存储/光通信股盘前普涨（SK海力士+4%、闪迪/美光/Coherent/Credo/Lumentum约+1%，三星将公布100万亿韩元股东回报计划）。三大股指期货涨跌不一（纳指100期货+0.07%、标普500期货-0.03%、道指期货-0.15%）。加密货币概念股集体走强（BMNR+8%/Strategy+9%/Circle+7%）——比特币一度突破7.2万美元、27亿美元空头遭清算，特朗普会见多家加密货币企业高管。贝森特干预债市或迫使美联储更激进加息（'潘多拉魔盒'担忧）为隔夜最大宏观变量。现货黄金4,490.44（-0.72%，昨日+4.35%后回落）、WTI原油86.64（+2.67%）、布伦特93.87（+2.45%）。",
+  "source": "WebSearch",
+  "source_url": "https://finance.eastmoney.com/a/202608203847927578.html",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 60,
+  "direction": "中性",
+  "volatility": "高",
+  "reason": "mRNA疫苗利好兑现引发Moderna获利回吐，叠加宏观加息担忧与存储、加密板块普涨，市场多空交织。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
    "actual_ret_1d": null,
    "actual_date": null,
    "ret_1d_ref": {
-    "track_n": 64,
-    "track_avg": 0.05,
-    "track_worst": -1.45,
-    "track_best": 2.5,
-    "track_pos_ratio": 0.56
+    "track_n": 32,
+    "track_avg": 0.58,
+    "track_worst": -0.6,
+    "track_best": 3.51,
+    "track_pos_ratio": 0.72
+   }
+  }
+ },
+ {
+  "id": "N20260820-029",
+  "date": "2026-08-20",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "现货黄金冲高回落（8/20）：隔夜+4.35%创五个月最大单日涨幅后，8/20现货黄金-0.72%报4,490.44美元/盎司、现货白银-0.29%；WTI原油+2.67%报86.64、布伦特+2.45%报93.87（美伊制裁升级+阿联酋遭袭）——贵金属/原油高位波动为宏观通胀变量",
+  "summary": "8/20贵金属/原油高位波动：现货黄金8/19夜+4.35%收4,521.87创历史新高（五个月最大单日涨幅，财政部扩美债回购+避险驱动）后，8/20回落-0.72%报4,490.44美元/盎司、现货白银-0.29%报66.808美元；WTI原油8/20+2.67%报86.64美元/桶、布伦特+2.45%报93.87美元/桶（特朗普对伊'毁灭性经济行动'制裁升级+阿联酋遭袭+霍尔木兹海峡航运受阻支撑地缘溢价）。贝森特干预债市（扩大长债回购）被部分分析解读为或迫使美联储更激进加息——贵金属/原油持续高位为全球通胀定价与美联储政策路径的核心变量，对成长股估值与QDII构成中期扰动。",
+  "source": "WebSearch",
+  "source_url": "https://finance.eastmoney.com/a/202608203847927578.html",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 55,
+  "direction": "中性",
+  "volatility": "高",
+  "reason": "贵金属与原油高位波动加剧通胀与政策路径不确定性，对医药消费板块影响偏中性但扰动较大。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.24,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": {
+    "track_n": 53,
+    "track_avg": -0.48,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.49
    }
   }
  }

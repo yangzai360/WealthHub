@@ -790,15 +790,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 41,
-    "track_avg": 0.01,
-    "track_worst": -0.82,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.61
-   }
+   "actual_ret_1d": 0.24,
+   "actual_date": "2026-08-20",
+   "ret_1d_ref": "8/20收盘(纪要影响日)"
   }
  }
 ]
