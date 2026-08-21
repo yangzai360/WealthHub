@@ -18,8 +18,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.04,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -41,8 +43,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.04,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -64,8 +68,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.04,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -87,8 +93,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 0.04,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -110,8 +118,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 1.4,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -179,8 +189,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 1.4,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -202,8 +214,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 1.4,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -225,8 +239,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 1.4,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -248,8 +264,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": -3.14,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -271,8 +289,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": -1.6,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -294,8 +314,10 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": -1.6,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -319,15 +341,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 66,
-    "track_avg": -0.34,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.59
-   }
+   "actual_ret_1d": 0.04,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -351,15 +367,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 86,
-    "track_avg": 0.6,
-    "track_worst": -2.55,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.47
-   }
+   "actual_ret_1d": -3.14,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -383,15 +393,9 @@
    "ret_10d": null,
    "max_vol": 4.56,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 76,
-    "track_avg": -0.21,
-    "track_worst": -2.28,
-    "track_best": 1.58,
-    "track_pos_ratio": 0.51
-   }
+   "actual_ret_1d": 1.4,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -415,15 +419,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 66,
-    "track_avg": -0.34,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.59
-   }
+   "actual_ret_1d": 0.04,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -447,15 +445,9 @@
    "ret_10d": null,
    "max_vol": 5.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 68,
-    "track_avg": 0.09,
-    "track_worst": -1.45,
-    "track_best": 2.5,
-    "track_pos_ratio": 0.59
-   }
+   "actual_ret_1d": -1.6,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -479,14 +471,264 @@
    "ret_10d": null,
    "max_vol": 5.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.6,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": "赛道指数/ETF收盘"
+  }
+ },
+ {
+  "id": "N20260821-020",
+  "date": "2026-08-21",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股收评（8/21）：沪指+0.04%报3,905.20、深成指+0.87%（14,094.17）、创业板指+1.43%（3,545.58）、科创50+0.04%、北证50-0.57%、沪深300+0.57%；成交1.89万亿较上日缩量约2,000亿——创新药概念大面积下挫（医药生物-3.48%）、粮食概念大幅回调 vs 锂电池（碳酸锂期货涨超2%）、贵金属、算力硬件、PCB（WSTS：2026全球半导体或逼近万亿美元）活跃；数字货币概念活跃（央行新增8家数字人民币运营机构）",
+  "summary": "8/21 A股三大指数震荡上行但量能收缩：上证指数+0.04%报3,905.20、深证成指+0.87%报14,094.17、创业板指+1.43%报3,545.58（成长强于权重）、科创50+0.04%、北证50-0.57%、沪深300+0.57%、万得全A+0.36%；市场全天成交1.89万亿元（较上日缩量约2,000亿）。板块分化：锂电池概念活跃（美元指数走低驱动大宗商品，碳酸锂期货早盘涨超2%）、贵金属高开高走、算力硬件上攻、PCB走强（WSTS预测2026全球半导体市场向万亿美元迈进）、数字货币概念活跃（央行新增平安/恒丰/渤海等8家数字人民币运营机构）；创新药概念大面积下挫（300医药-3.30%、CS创新药-4.53%）、粮食概念大幅回调。机构：华西证券称资本市场'稳市机制'建设为A股慢牛制度基石，指数颠簸期加快风格轮动，低位红利/金融承接资金；中金建议关注景气成长与周期改善。",
+  "source": "WebSearch",
+  "source_url": "https://xueqiu.com/8545727982/406079376",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "指数小幅收涨但成交缩量，创新药与粮食回调、科技与新能源活跃，市场处于多空交织的存量博弈状态。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.04,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": {
+    "track_n": 66,
+    "track_avg": -0.34,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.59
+   }
+  }
+ },
+ {
+  "id": "N20260821-021",
+  "date": "2026-08-21",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股收评（8/21）：恒指+1.21%报26,009.46（5连升、站上26,000）、国企指数+1.01%、恒生科技+1.40%报4,766.16——黄金股大涨（赤峰黄金+12.5%/山东黄金+8%）、大模型双雄MINIMAX+11%/智谱+10%、小米尾盘涨超5%/网易+4.45%/腾讯百度涨超1% vs 阿里-2.5%（财报利润定价延续）/美团-1%；保险券商活跃（国寿+5%）；南向净卖出超76亿港元",
+  "summary": "8/21港股三大指数集体上涨且午后涨幅加大：恒生指数+1.21%（+310.97点）报26,009.46成功站上26,000点并录得5连升、国企指数+1.01%、恒生科技+1.40%报4,766.16。盘面：黄金股全天强势（现货黄金突破4,550美元，赤峰黄金+12.5%领衔、山东黄金/潼关黄金/紫金黄金国际涨超8%、老铺黄金+7%——贝森特暗示扩大长债回购规模压制美债收益率、支撑无息资产）；大模型'双雄'联手走强（MINIMAX-W涨近12%、智谱涨超10%，摩根大通上调MINIMAX目标价至260港元）；大型科网股多数上涨（小米尾盘一度涨超5%、网易+4.45%、腾讯/百度涨超1%、京东小幅上涨）vs 阿里巴巴跌2.5%（财报净利-75.56%定价延续）、美团跌约1%；保险/中资券商权重金融股集体活跃（中国人寿+5%、中国平安/中国银河涨超4%）；航运走强（中远海能+7%）、锂矿活跃（天齐锂业+11%）；猪肉概念走低（牧原-5%）、网易云音乐绩后大跌15.5%拖累影视娱乐。资金：南向净卖出超76亿港元（连续第四日）。中信证券：'最坏时期已过'，建议红利防御+增长弹性哑铃策略。",
+  "source": "WebSearch",
+  "source_url": "https://finance.sina.cn/2026-08-21/detail-inipakuq1371723.d.html",
+  "sentiment": "正面",
+  "score": 80,
+  "strength": 80,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "港股放量上涨站上26000点，黄金与科技股领涨，权重金融股活跃，市场情绪偏多。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 1.4,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": {
+    "track_n": 76,
+    "track_avg": -0.21,
+    "track_worst": -2.28,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.51
+   }
+  }
+ },
+ {
+  "id": "N20260821-022",
+  "date": "2026-08-21",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "医药板块收盘大幅回调（8/21）：医药生物-3.48%（主力净流出86.86亿）、创新药-3.78%（净流出73.62亿）、生物医药-3.33%（净流出73.16亿）、医疗服务-3.75%；药明康德162.86（-3.00%）/康龙化成-5.74%/恒瑞-3.56%/百济-3.22%/爱尔眼科-2.91% vs 键凯科技+20%（二连板）/康希诺+20.01%/北陆药业+20%/贝瑞基因+10.03%——权重与题材极致分化，'涨停潮次日大分歧'规律兑现",
+  "summary": "8/21医药板块主升第2日大分歧回调收盘确认：医药生物板块-3.48%（主力净流出86.86亿）、创新药-3.78%（主力净流出73.62亿，市场排名801/801垫底）、生物医药-3.33%（净流出73.16亿）、医疗服务-3.75%（净流出28.31亿）；300医药指数-3.30%、CS创新药-4.53%、生物医药ETF天弘-4.60%、创新药ETF银华-4.49%、医疗ETF华宝（512170）-2.79%。权重股全线回落：药明康德162.86（-3.00%，主力净流出2.83亿）、康龙化成47.98（-5.74%）、恒瑞47.74（-3.56%）、百济神州289.25（-3.22%）、爱尔眼科-2.91%；题材股续强：键凯科技+20%（二连板）、康希诺+20.01%（涨停）、北陆药业+20%、贝瑞基因+10.03%（涨停）。昨日8/20医药涨停潮（38股居首）后今日主力净流出超137亿（盘中口径）——与8/13→8/14'涨停潮次日大分歧'规律一致。华西医药深度报告：RAS靶点（KRAS突变覆盖20-30%实体瘤、胰腺癌G12D占比近30%为百亿级蓝海）四代技术突破，Pan-RAS三期将二线胰腺癌死亡风险降低60%，国产药企三条主线突围，2026-2027临床数据密集兑现——为创新药长期催化。",
+  "source": "WebSearch",
+  "source_url": "https://xueqiu.com/8545727982/406079376",
+  "sentiment": "负面",
+  "score": 75,
+  "strength": 80,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "医药板块主力资金大幅净流出、权重股全线回调，短期情绪退潮形成利空",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -3.14,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": {
+    "track_n": 86,
+    "track_avg": 0.6,
+    "track_worst": -2.55,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.47
+   }
+  }
+ },
+ {
+  "id": "N20260821-023",
+  "date": "2026-08-21",
+  "track": "大消费",
+  "category": "业绩类",
+  "title": "贵州茅台业绩会（8/21，董事长陈华首秀）：i茅台将增加投放时间段（申购时间由上午9点改至晚8点后仍供不应求）；正系统制定2027-2029三年市值管理整体方案（将依法依规用好分红/回购等市值管理工具组合）；茅台8/21收1,272.83（-1.45%），5日-5.15%",
+  "summary": "8/21贵州茅台召开2026年中期业绩说明会（新董事长陈华首秀）：①i茅台作为市场化改革核心平台上半年实现酒类不含税收入402.64亿元，申购时间从上午9点改为晚8点后仍有大量消费者无法成功申购——为更好满足购酒需求，正计划在i茅台上增加投放时间段，消费者也可到线下自营门店购买；②就分红/回购等提升投资回报举措：公司正系统制定未来三年（2027-2029年）市值管理整体方案，会依法依规用好市值管理工具组合，努力提升公司投资价值和股东回报；③回应茅台社会库存：社会库存健康。8/21茅台收盘价1,272.83元（-1.45%）、总市值1.59万亿元、市盈率(TTM)19.54、股息率4.09%。",
+  "source": "WebSearch",
+  "source_url": "https://new.qq.com/rain/a/20260821A0AFO400",
+  "sentiment": "正面",
+  "score": 65,
+  "strength": 60,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "i茅台需求旺盛且公司拟制定市值管理方案，提升股东回报预期，利好股价。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -1.6,
+   "actual_date": "2026-08-21",
    "ret_1d_ref": {
     "track_n": 68,
     "track_avg": 0.09,
     "track_worst": -1.45,
     "track_best": 2.5,
     "track_pos_ratio": 0.59
+   }
+  }
+ },
+ {
+  "id": "N20260821-024",
+  "date": "2026-08-21",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "8/21白酒批价企稳分化：26年飞天原箱1,715/散瓶1,695持平企稳、2025飞天散瓶与茅台1935上涨、精品茅台/散花飞天下跌约10元；五粮液普五八代830元（+4元二连涨站稳800）/国窖1573约825元（微跌）——食品饮料板块-1.36%、白酒Ⅱ-1.47%继续调整",
+  "summary": "8/21白酒批价监测（酒业网/国酒观察）：2026年飞天原箱1,715元/散瓶1,695元较昨日持平企稳，2025年飞天散瓶、2022年飞天原箱、茅台1935上涨；精品茅台、散花飞天等下跌约10元；生肖酒丙午马年报价1,920-3,810元。国窖1573（52度/500ml）行情价825元、泸州老窖特曲老字号248元；五粮液第八代普五830元（较昨日+4元，二连涨站稳800大关）、1618为850元、39度650元——整体较20日基本持平。A股白酒板块延续调整：食品饮料-1.36%、白酒Ⅱ-1.47%，茅台收1,272.83（-1.45%）。批价整体企稳但高端分化延续（精品茅台连跌），行业库存超3,000亿/价格倒挂蔓延的隐忧仍在。",
+  "source": "WebSearch",
+  "source_url": "https://new.qq.com/rain/a/20260821A06TVC00",
+  "sentiment": "中性",
+  "score": 45,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "批价整体企稳但高端分化、库存隐忧持续，白酒板块延续调整，消息面多空交织。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -1.6,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": {
+    "track_n": 68,
+    "track_avg": 0.09,
+    "track_worst": -1.45,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.59
+   }
+  }
+ },
+ {
+  "id": "N20260821-025",
+  "date": "2026-08-21",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "现货黄金突破4,550美元/盎司（8/21）：贝森特暗示进一步扩大长期国债回购规模（单次或超40亿美元）压制美债收益率上行空间→无息资产黄金获支撑；黄金股集体大涨（赤峰黄金+12.5%/山东黄金+8%/紫金黄金国际+8%）；A股贵金属高开高走",
+  "summary": "8/21现货黄金进一步走高，一度突破4,550美元/盎司（日内涨约0.5%），维持4,500美元上方强势。消息面：美国财长贝森特暗示可能进一步扩大长期国债回购规模（单次回购规模或超40亿美元），压制美债收益率上行空间，对无息资产黄金构成支撑。A股/港股黄金股集体大涨：A股贵金属板块高开高走、赤峰黄金+12.5%（港股）领涨、山东黄金/潼关黄金/紫金黄金国际涨超8%、老铺黄金+7%、灵宝黄金/中国黄金国际涨超5%。黄金强势对成长股估值构成'避险分流'，但缓解美债收益率上行压力对美股成长股为边际利好——组合层面无直接持仓，作为宏观通胀/避险变量跟踪。",
+  "source": "WebSearch",
+  "source_url": "https://www.mrjjxw.com/articles/2026-08-21/4549975.html",
+  "sentiment": "正面",
+  "score": 80,
+  "strength": 70,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "贝森特暗示扩大长期国债回购压制美债收益率，黄金突破4550美元，黄金股集体大涨",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.04,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": {
+    "track_n": 66,
+    "track_avg": -0.34,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.59
+   }
+  }
+ },
+ {
+  "id": "N20260821-026",
+  "date": "2026-08-21",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "南向资金8/21净卖出港股超76亿港元（连续第四日，8/18 +140亿→8/19 -106亿→8/20 -104亿→8/21 -76亿）：流出规模连续收窄但方向未变——恒科5连升与南向流出背离，资金面托底逻辑仍弱",
+  "summary": "8/21南向资金净卖出港股超76亿港元（每日经济新闻港股收评数据）——连续第四个交易日净卖出（8/18 +140亿 → 8/19 -106.21亿 → 8/20 -104.12亿 → 8/21 -76亿），但流出规模连续两日收窄（8/20收窄42.7亿后今日再收窄约28亿）。港股当日5连升站上26,000与南向流出形成背离：指数上行主要由黄金股、大模型题材、保险券商权重驱动，非南向主导。资金面：南向连续流出但边际缓和，恒科资金面托底逻辑仍弱、方向未反转，'指数涨资金撤'结构延续。",
+  "source": "WebSearch",
+  "source_url": "https://www.mrjjxw.com/articles/2026-08-21/4549975.html",
+  "sentiment": "负面",
+  "score": 55,
+  "strength": 60,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "南向资金连续四日净卖出但流出规模收窄，资金面托底逻辑仍弱，指数上涨与资金流出背离，短期港股上行动能存疑。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 1.4,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": {
+    "track_n": 76,
+    "track_avg": -0.21,
+    "track_worst": -2.28,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.51
+   }
+  }
+ },
+ {
+  "id": "N20260821-027",
+  "date": "2026-08-21",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "华西医药深度报告：RAS靶点四代技术突破摆脱'不可成药'桎梏（KRAS突变覆盖20-30%实体瘤、胰腺癌G12D占比近30%为百亿级蓝海；Pan-RAS三期将二线胰腺癌死亡风险降低60%）——国产药企三条差异化主线突围，2026-2027年临床数据密集兑现期为创新药长期催化",
+  "summary": "华西医药8/21发布RAS靶点深度报告：RAS历经四代技术突破，彻底摆脱'不可成药'桎梏，形成G12C、G12D、Pan-RAS三层差异化赛道。其中KRAS突变覆盖20%-30%的实体瘤（肺癌/结直肠癌/胰腺癌），胰腺癌G12D突变占比近30%，是临床无靶向药的百亿级蓝海市场；Pan-RAS泛靶点经三期临床验证，在二线胰腺癌治疗中可将死亡风险降低60%，具备成为超级重磅药物的潜力。国产药企正通过三条差异化主线积极突围（G12C差异化适应症、G12D抢先卡位、Pan-RAS联合治疗），预计2026-2027年迎来临床数据密集兑现期。当日医药板块虽大幅回调（创新药-3.78%），但RAS等创新药长期催化逻辑未变，中信建投同步覆盖CXO复苏/手术机器人/创新药国际化主题。",
+  "source": "WebSearch",
+  "source_url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?id=SN20260821142116b69b32ef",
+  "sentiment": "正面",
+  "score": 70,
+  "strength": 60,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "RAS靶点技术突破及国产药企差异化管线带来创新药长期催化",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -3.14,
+   "actual_date": "2026-08-21",
+   "ret_1d_ref": {
+    "track_n": 86,
+    "track_avg": 0.6,
+    "track_worst": -2.55,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.47
    }
   }
  }
