@@ -300,21 +300,37 @@ def build_grid_depth():
     with open(comp_path, encoding="utf-8") as f:
         comp = json.load(f)
 
+    def _pick(obj, *keys):
+        for k in keys:
+            v = obj.get(k)
+            if v is not None:
+                return v
+        return None
+
     total_units = 0
     cash_units = 0
     comp_by_code = {}   # fund_code -> {fund_name, variety_hint, unit, large_class}
     for cls in comp.get("composition", []):
         unit = cls.get("unit") or 0
         total_units += unit
-        if cls.get("is_cash"):
+        if _pick(cls, "is_cash", "isCash"):
             cash_units += unit
-        for fd in cls.get("funds", []):
-            if fd.get("is_cleared"):
+        class_name = _pick(cls, "class_name", "className") or ""
+        # 兼容两种快照结构:
+        #   旧格式 funds[] = {fund_code, fund_name, unit, is_cleared}
+        #   新格式 compList[] = {fund:{fundCode,fundName,...}, planUnit, isCash,...}
+        for fd in (cls.get("funds") or cls.get("compList") or []):
+            fund = fd.get("fund") if isinstance(fd.get("fund"), dict) else None
+            code = (fund or fd).get("fund_code") or (fund or fd).get("fundCode")
+            if not code:
                 continue
-            comp_by_code[fd["fund_code"]] = {
-                "fund_name": fd["fund_name"],
-                "unit": fd.get("unit") or 0,
-                "large_class": cls.get("class_name", ""),
+            if _pick(fd, "is_cleared", "isCleared"):
+                continue
+            comp_by_code[code] = {
+                "fund_name": (fund or fd).get("fund_name") or (fund or fd).get("fundName", ""),
+                "variety_hint": _pick(fd, "variety", "variety_hint") or "",
+                "unit": _pick(fd, "unit", "planUnit") or 0,
+                "large_class": class_name,
             }
 
     # 2) 调仓记录(累计买入/卖出 + 最近操作), 按 fund_code 关联
@@ -353,11 +369,11 @@ def build_grid_depth():
         unit = c["unit"]
         positions.append({
             "fund_code": code,
-            "variety": a.get("variety") or c["fund_name"],
+            "variety": a.get("variety") or c["variety_hint"] or c["fund_name"],
             "fund_name": c["fund_name"],
             "large_class": c["large_class"],
             "pos": unit,
-            "depth_pct": round(unit / TOTAL_UNITS * 100, 1),
+            "depth_pct": round(unit / total_units * 100, 1) if total_units else 0,
             "buy": a.get("buy", 0),
             "sell": a.get("sell", 0),
             "last_date": a.get("last_date", ""),
@@ -368,7 +384,7 @@ def build_grid_depth():
     invested = total_units - cash_units
     payload = {
         "generated_at": datetime.now().strftime("%Y-%m-%d"),
-        "snapshot_date": comp.get("snapshot_date", ""),
+        "snapshot_date": comp.get("snapshot_date") or comp.get("date", ""),
         "total_units": total_units,
         "cash_units": cash_units,
         "invested_units": invested,
