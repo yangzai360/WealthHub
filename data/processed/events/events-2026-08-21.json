@@ -143,8 +143,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 1.29,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "ret_1d_ref": "XLV 8/21收盘 +1.29%(周日盘后补回填)"
   }
  },
  {
@@ -166,8 +167,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件，actual_ret_1d 待今日收盘回填"
+   "actual_ret_1d": 1.29,
+   "note": "盘前事件，actual_ret_1d 待今日收盘回填",
+   "ret_1d_ref": "XLV 8/21收盘 +1.29%(周日盘后补回填)"
   }
  },
  {

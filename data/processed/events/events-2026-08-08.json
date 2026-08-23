@@ -43,8 +43,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.67,
+   "actual_date": null,
+   "ret_1d_ref": "XLV 8/10收盘 +1.67%(周末事件首个交易日)"
   }
  },
  {
@@ -67,8 +68,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.67,
+   "actual_date": null,
+   "ret_1d_ref": "XLV 8/10收盘 +1.67%(周末事件首个交易日)"
   }
  },
  {
