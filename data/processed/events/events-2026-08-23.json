@@ -20,9 +20,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.59,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
@@ -46,9 +47,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.59,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
@@ -72,9 +74,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.59,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
@@ -98,9 +101,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.59,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
@@ -124,9 +128,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -3.02,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
@@ -150,9 +155,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -3.02,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
@@ -176,9 +182,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -3.02,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
@@ -202,9 +209,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -3.02,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
@@ -228,9 +236,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.34,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
@@ -254,9 +263,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.34,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
@@ -280,9 +290,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -3.61,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
@@ -306,9 +317,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -3.61,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "8/24收盘(周末事件首个交易日)",
+   "actual_date": "2026-08-24"
   }
  },
  {
