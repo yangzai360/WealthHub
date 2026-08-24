@@ -344,9 +344,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.07,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "IYH 8/24收盘 -0.07%（XLV 新浪源滞后停在 8/21）"
   }
  },
  {
@@ -370,9 +370,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.07,
    "note": "周末事件,actual_ret_1d 待 8/24(周一)收盘回填",
-   "ret_1d_ref": null
+   "ret_1d_ref": "IYH 8/24收盘 -0.07%（XLV 新浪源滞后停在 8/21）"
   }
  }
 ]
