@@ -20,7 +20,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.82,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -47,7 +47,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.82,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -74,7 +74,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.82,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -101,7 +101,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.06,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -128,7 +128,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.06,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -155,7 +155,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.06,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -182,7 +182,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.22,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -209,7 +209,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.22,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -236,7 +236,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.22,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -344,7 +344,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.59,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -371,7 +371,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.59,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -398,7 +398,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.59,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -425,7 +425,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.59,
    "note": "盘前事件,actual_ret_1d 待 8/26(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-26"
@@ -452,15 +452,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 96,
-    "track_avg": -0.24,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.6
-   }
+   "actual_ret_1d": 0.59,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -484,15 +478,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 99,
-    "track_avg": -0.33,
-    "track_worst": -3.61,
-    "track_best": 1.58,
-    "track_pos_ratio": 0.48
-   }
+   "actual_ret_1d": 0.82,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -516,15 +504,9 @@
    "ret_10d": null,
    "max_vol": 5.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 91,
-    "track_avg": 0.03,
-    "track_worst": -1.6,
-    "track_best": 2.5,
-    "track_pos_ratio": 0.62
-   }
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -548,15 +530,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 108,
-    "track_avg": 0.17,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.44
-   }
+   "actual_ret_1d": -0.22,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -580,15 +556,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 108,
-    "track_avg": 0.17,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.44
-   }
+   "actual_ret_1d": -0.22,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -612,15 +582,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 96,
-    "track_avg": -0.24,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.6
-   }
+   "actual_ret_1d": 0.59,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -644,15 +608,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 99,
-    "track_avg": -0.33,
-    "track_worst": -3.61,
-    "track_best": 1.58,
-    "track_pos_ratio": 0.48
-   }
+   "actual_ret_1d": 0.82,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -676,9 +634,267 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
+   "actual_ret_1d": 0.59,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘"
+  }
+ },
+ {
+  "id": "N20260826-025",
+  "date": "2026-08-26",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股收评（8/26）：上证+0.59%报3,912.52重返3,900上方、深成指+0.69%（13,841.33）、创业板指+0.51%（3,414.88）、科创50+1.71%（1,632.02）领涨、沪深300+0.85%——造纸/工业金属/证券领涨（青山纸业/精艺股份/锦龙股份涨停）vs 出版/小家电/医疗服务领跌（医疗服务-1.34%）；指数普涨幅度温和、结构性机会为主",
+  "summary": "8/26 A股全线收涨、成长风格占优：上证指数+0.59%报3,912.52点（重返3,900上方）、深证成指+0.69%报13,841.33、创业板指+0.51%报3,414.88、科创50+1.71%报1,632.02领跑主要指数、沪深300+0.85%报4,590.79。板块：造纸（+3.79%，青山纸业涨停）、工业金属（+3.33%，精艺股份涨停）、证券（+2.75%，锦龙股份涨停）领涨，周期与金融板块联动走强；出版（-1.44%）、小家电（-1.35%）、医疗服务（-1.34%）居跌幅前列。医疗内部显著分化：A股中证医疗指数-0.90%（6,806.99），医疗服务-1.34%领跌全市场、医药商业-0.19%；港股创新药ETF（159567）大涨2.82%、生物制品+1.53%、化学制药+0.29%——资金明显偏好创新药资产，医疗服务等消费医疗方向遭回避。",
+  "source": "WebSearch",
+  "source_url": "https://xueqiu.com/2141023190/406749335",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 45,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "大盘温和收涨但医疗服务领跌，创新药资产受追捧，医药消费内部分化，整体影响中性",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.59,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 96,
+    "track_avg": -0.24,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.6
+   }
+  }
+ },
+ {
+  "id": "N20260826-026",
+  "date": "2026-08-26",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股收盘（8/26）：恒指+0.56%报25,652.97、恒生科技+0.82%报4,626.15、国企指数+1.05%报8,533.84（成交2,548亿港元）——券商/有色/地产领涨（中金+8.25%、江西铜业+9.92%、中国金茂+8.70%）、安踏+9.53%（H1营收+12.88%/净利+34.93%）；煤炭/医药逆势走低",
+  "summary": "8/26港股三大指数集体上涨（财联社）：恒生指数+0.56%报25,652.97点（+141.87点）、恒生科技指数+0.82%报4,626.15点（+37.61点）、国企指数+1.05%报8,533.84点；全日主板成交2,548.24亿港元。资金面抢筹顺周期与政策利好板块：①券商——中期分红超预期（截至8/25披露半年报的15家上市券商中10家公布中期分红预案、拟派现近170亿），中金公司+8.25%、招商证券+6.59%、金融街证券+5.93%，中资券商密集向香港子公司注资（头部数十亿至百亿）；②有色——江西铜业+9.92%、中国有色矿业+9.90%（LME期铜14,324.5美元/吨创收盘价历史新高+上海'十五五'规划扩大铜铝交易）；③地产——中国金茂+8.70%、新城发展+5.07%（'沪八条'8/21施行、花旗看好内房8-10月）；④安踏体育+9.53%（H1营收435.07亿+12.88%、归母净利94.87亿+34.93%）；煤炭、医药板块受短期情绪影响逆势走低。",
+  "source": "WebSearch",
+  "source_url": "https://www.163.com/dy/article/L598OGHI05198CJN.html",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 60,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "港股主要指数上涨与安踏业绩超预期利好消费，但医药板块逆势走低形成拖累，整体呈中性。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.82,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 99,
+    "track_avg": -0.33,
+    "track_worst": -3.61,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.48
+   }
+  }
+ },
+ {
+  "id": "N20260826-027",
+  "date": "2026-08-26",
+  "track": "大消费",
+  "category": "业绩类",
+  "title": "泸州老窖8/26收盘确认-2.37%（82.72元）：低开-4.4%后盘中回拉至-2.42%、尾盘小幅回落；白酒板块+0.64%（东财口径）/白酒Ⅱ-0.06%、10只白酒股下跌——贵州茅台1,302.80（-0.09%）守1,300、洋河+1.22%、五粮液+0.53%；中证消费12,484.34（-0.06%）守住12,400——「预期中的利空不是真利空」软着陆确认",
+  "summary": "8/26泸州老窖业绩爆雷定价日收盘确认：今开81.00（低开-4.4%）→盘中最高84.07（回拉至-2.42%）→收盘82.72（-2.37%），成交13.17亿、量比1.88、主力资金净流出1,019万元；市盈率TTM 16.22、股息率1.64%。白酒板块整体企稳：东方财富白酒板块1,877.04（+0.64%）、白酒Ⅱ-0.06%（10只白酒股下跌/9只上涨）；贵州茅台1,302.80（-0.09%）守住1,300、洋河39.91（+1.22%）、五粮液71.90（+0.53%）、山西汾酒117.09（+0.37%）、迎驾贡酒-1.42%。中证消费12,484.34（-0.06%）守住12,400——盘前预案「低开超2%且失守12,300止盈」未触发；「预期中的利空不是真利空」兑现（股民预期'至少跌5%或一字跌停'落空）。",
+  "source": "WebSearch",
+  "source_url": "https://finance.eastmoney.com/a/202608263854563927.html",
+  "sentiment": "正面",
+  "score": 65,
+  "strength": 60,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "业绩爆雷但跌幅远低于悲观预期，低开回升且板块企稳，利空出尽带来短期情绪修复。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 91,
+    "track_avg": 0.03,
+    "track_worst": -1.6,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.62
+   }
+  }
+ },
+ {
+  "id": "N20260826-028",
+  "date": "2026-08-26",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "白酒行业深度调整：华创食饮——主流酒种量价均深度调整、白酒短期报表仍在探底、26Q3低基数下有望逐步修复、中期窗口是明年春节茅台动销与批价；泸州老窖'控量挺价'路线代价（中高档酒产量-77.40%/销量-42.53%、市值4年从4,500亿缩水至1,216亿）",
+  "summary": "8/26新浪财经深度《白酒老三，掉队了》：泸州老窖过去一年'控量挺价'防守姿态——2026上半年国窖1573/泸州老窖特曲为代表的中高档酒实际产量仅4,801吨（同比-77.40%）、销量-42.53%、吨价逆势+6.4%、国窖1573批价保持相对稳定但市场份额被分流；中高档酒库存32,713吨（+8.6%）。对比：茅台开启线上直售价格随行就市、五粮液大额补贴变相降价（第八代五粮液动销两位数增长）——'以价换量'vs'挺价保利'路线之争以泸州老窖报表塌方暂告段落（市值从2021年2月305.43元高点4,500亿缩水至当前1,216亿，动态PE 16.22 vs 茅台/五粮液约22倍）。华创食饮观点：中国酒类主流酒种量价均深度调整（健康理念强化/社交场景变迁/人口结构变化），白酒短期报表仍在探底、26Q3低基数下有望逐步修复、中期窗口是明年春节茅台动销与批价；长期人均纯酒精消费量从2024年约3升逐步下行至2.5-3升区间。",
+  "source": "WebSearch",
+  "source_url": "https://finance.sina.com.cn/wm/2026-08-26/doc-iniprytr6024161.shtml",
+  "sentiment": "负面",
+  "score": 70,
+  "strength": 80,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "白酒行业量价深度调整，泸州老窖控量挺价导致中高档酒产销量大幅下滑，短期报表仍在探底。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 91,
+    "track_avg": 0.03,
+    "track_worst": -1.6,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.62
+   }
+  }
+ },
+ {
+  "id": "N20260826-029",
+  "date": "2026-08-26",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "医疗内部分化收盘确认（8/26）：A股中证医疗-0.90%（6,806.99）、医疗服务-1.34%领跌全市场、医药商业-0.19%、医疗ETF收-0.58%（盘中-0.86%尾盘回收）vs 港股创新药ETF+2.82%、生物制品+1.53%、化学制药+0.29%——反弹第3日'涨停潮次日大分歧'规律兑现中、资金明显偏好创新药资产",
+  "summary": "8/26医药板块内部分化收盘确认：A股中证医疗指数-0.90%报6,806.99——医疗服务-1.34%领跌全市场行业板块、医药商业-0.19%；场内医疗ETF（512170）收-0.58%（0.345元，成交4.39亿；盘中-0.86%、尾盘略回收）、医药ETF广发+0.15%；港股创新药ETF（159567）+2.82%、生物制品+1.53%、化学制药+0.29%、中药+0.75%、医疗器械+0.20%。资金明显偏好创新药资产、医疗服务等消费医疗方向遭回避——与盘中'港股医药爆发（恒生医疗+2.41%~3%）vs A股医药权重回调（康龙-5.54%/药明-1.55%）'分化延续；盘前'反弹第3日防回落兑现0-0.5%'预案（8/20+4.65%→8/21-3.06%「涨停潮次日大分歧」规律第3次验证）在医疗ETF未能翻红下触发。",
+  "source": "WebSearch",
+  "source_url": "https://xueqiu.com/2141023190/406749335",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 60,
+  "direction": "中性",
+  "volatility": "高",
+  "reason": "A股医疗回调与港股创新药上涨并存，资金偏好创新药资产但板块整体分化，故判断为中性。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.22,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 108,
+    "track_avg": 0.17,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.44
+   }
+  }
+ },
+ {
+  "id": "N20260826-030",
+  "date": "2026-08-26",
+  "track": "A股医药",
+  "category": "业绩类",
+  "title": "百利天恒双抗ADC III期达主要终点（8/26盘后公告）：全球首创EGFR×HER3双抗ADC（宜泽康/BL-B01D1）用于HR+HER2-乳腺癌III期期中分析达PFS主要终点——第5个III期成功、全球首个双抗ADC在HR+HER2-乳腺癌III期达主要终点；此前鼻咽癌/食管鳞癌已获批、三阴乳腺癌上市申请获受理",
+  "summary": "8/26盘后百利天恒公告：其自主研发的全球首创EGFR×HER3双抗ADC宜泽康（伦康依隆妥单抗/BL-B01D1/iza-bren）用于既往经至少一线化疗失败的不可手术切除的局部晚期、复发或转移性HR+HER2-乳腺癌的III期临床试验（BL-B01D1-306），经独立数据监查委员会判定期中分析达到无进展生存期（PFS）主要终点——这是该双抗ADC达到主要终点的第5个III期临床研究，也是全球首个双抗ADC在HR+HER2-乳腺癌治疗中达到主要终点的III期研究。宜泽康此前已有鼻咽癌、食管鳞癌两项适应症获NMPA上市批准，三阴乳腺癌上市申请已获CDE受理，另有7项适应症纳入CDE突破性治疗品种名单、2项纳入优先审评品种名单、1项获FDA突破性治疗品种认定——创新药国际化管线兑现延续（8/25医药反弹主逻辑之一）。",
+  "source": "WebSearch",
+  "source_url": "https://xueqiu.com/2141023190/406749335",
+  "sentiment": "正面",
+  "score": 90,
+  "strength": 85,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "全球首创双抗ADC第5个III期达主要终点，适应症扩展与国际化管线兑现持续验证，显著强化创新药价值预期。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.22,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 108,
+    "track_avg": 0.17,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.44
+   }
+  }
+ },
+ {
+  "id": "N20260826-031",
+  "date": "2026-08-26",
+  "track": "A股医药",
+  "category": "业绩类",
+  "title": "复星医药2026中报落地（8/26）：营收204.42亿元（+4.8%）、归母净利润17.21亿元（+1.1%）——医药龙头中报温和增长、与恒瑞/药明系高增长形成分化；创新药板块中报超预期定价持续（CXO高景气：订单充足/投融资放大/BD持续/FDA监管放宽）",
+  "summary": "8/26复星医药披露2026年半年度报告：实现营收204.42亿元、同比增长4.8%；归母净利润17.21亿元、同比增长1.1%——营收净利温和增长、与创新药龙头分化（信达H1营收+44.8%/净利+50.2%、恒瑞/药明系高增长）。行业逻辑：CXO基本面持续高景气（订单充足、投融资放大、BD持续、FDA监管放宽）+CRDMO龙头业绩确定性较高+创新药企业中报不少超预期或扭亏——创新药产业链底层景气逻辑未变；但传统药企（恒瑞8/23-15%、昆药8/23-283%爆雷、泸州老窖8/25-43%）与创新药企分化加剧，'中报超预期与地缘利空出清定价的景气修复'主线延续。",
+  "source": "WebSearch",
+  "source_url": "https://xueqiu.com/2141023190/406749335",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "低",
+  "reason": "复星医药中报营收净利温和增长，符合预期但缺乏亮点，与高增长创新药企分化。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.22,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 108,
+    "track_avg": 0.17,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.44
+   }
+  }
+ },
+ {
+  "id": "N20260826-032",
+  "date": "2026-08-26",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "美股盘前（8/26）：三大期指涨跌互现（纳指期货-0.26%/标普-0.10%）——今晚20:30 PCE（预期环比+0.1%、同比+3.6%；核心环比+0.2%）+ Q2 GDP修正值 + 明晨英伟达Q2财报（预期营收920-922.8亿、EPS 2.09）双靴落地前观望；10Y美债4.64%（+1.2bp）回升、软件股承压（Intuit -11.7%）；伊朗重启与阿曼霍尔木兹谈判、WTI 80.46",
+  "summary": "8/26（美东周三）美股盘前：三大股指期货涨跌互现（道指期货+0.06%、标普500期货-0.10%、纳指100期货-0.26%）——投资者在英伟达财报与PCE数据前保持谨慎。关键数据：7月核心PCE将于美股开盘前（北京20:30）公布——路透报道预计价格压力升至同比3.6%（环比+0.1%）、核心环比+0.2%；Q2 GDP修正值同日公布；交易员定价2026年内一次25bp加息、CPI温和已降低9月加息概率。个股：Intuit盘前-11.7%（TurboTax母公司全年营收指引低于预期）、软件股承压（Adobe下跌、ServiceNow/Atlassian跌超2%）——'软件 vs 半导体'分化加深；英伟达盘前+0.2%，财报（盘后，北京8/27凌晨）预期营收约920亿美元（同比近翻倍、超过其任何竞争对手全年营收）、期权定价波动5.4-6%。宏观：伊朗重启与阿曼霍尔木兹海峡谈判、WTI 80.46（-1.47%）续跌、10Y美债4.64%（+1.2bp）、现货金约4,625美元/盎司；周五（8/28）沃什杰克逊霍尔首次重要讲话为利率路径关键节点。",
+  "source": "WebSearch",
+  "source_url": "https://www.aol.com/articles/us-stock-futures-subdued-run-101153000.html",
+  "sentiment": "中性",
+  "score": 45,
+  "strength": 65,
+  "direction": "中性",
+  "volatility": "高",
+  "reason": "PCE与英伟达财报落地前市场观望，软件股承压但油价回落，整体中性偏谨慎。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.59,
+   "actual_date": "2026-08-26",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
     "track_n": 96,
     "track_avg": -0.24,
     "track_worst": -2.4,
