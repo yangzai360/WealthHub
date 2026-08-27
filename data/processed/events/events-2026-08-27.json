@@ -430,5 +430,261 @@
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-27"
   }
+ },
+ {
+  "id": "N20260827-017",
+  "date": "2026-08-27",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股午评（8/27）：三大指数集体上涨 上证+0.6%报3935.99 创业板+1.51%报3466.4 成交1.35万亿——CPO/光刻机/先进封装/PCB强势（赛微电子+20%）、英伟达财报引爆AI算力链；白酒调整（洋河-2.91%）、重组蛋白走弱（近岸蛋白-5.7%）",
+  "summary": "A股午评：创业板指上涨1.51%，CPO概念表现强势。8月27日早盘收盘，A股三大指数集体上涨，上证指数上涨0.6%报3935.99点，深证成指上涨1.19%，创业板指上涨1.51%。两市成交额1.35万亿元。光刻机概念涨幅居前（赛微电子+20%），共封装光学（CPO）概念强势，PCB/先进封装活跃；下跌方面重组蛋白概念走弱、白酒概念调整（伊力特-3.89%、洋河-2.91%）。全市场3067只上涨、2295只下跌。",
+  "source": "腾讯新闻",
+  "source_url": "https://new.qq.com/rain/a/20260827A06JZ000?refer=cp_1009",
+  "sentiment": "正面",
+  "score": 65,
+  "strength": 65,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "指数上涨AI链强势，但白酒调整拖累大消费，整体偏多",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 105,
+    "track_avg": -0.17,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.64
+   }
+  }
+ },
+ {
+  "id": "N20260827-018",
+  "date": "2026-08-27",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股午评（8/27）：恒指-0.42%报25544.93 恒科+0.19%报4634.94 英伟达业绩引爆存储半导体/PCB/光通信（澜起科技+10%、建滔积层板+9%、长飞光纤+8%） 百度+6% 内银股集体低迷（农行-2%）",
+  "summary": "港股午评：恒指跌0.42%、科指涨0.19%。大型科技股分化：腾讯+0.99%、百度+6%，小米-2.11%、美团-1.15%、京东-0.97%、阿里飘绿。英伟达Q2业绩与2028财年指引（+70%）双超预期引爆AI算力链，存储半导体、PCB、光通信概念强势，澜起科技涨超10%、华虹+4%、中芯+3%。内银股集体低迷拖累大市（农业银行-2%）。智谱GLM-5.3-Flash开源（AI应用）。",
+  "source": "新浪财经/金融界",
+  "source_url": "https://new.qq.com/rain/a/20260827A06E1G00?refer=cp_1009",
+  "sentiment": "中性",
+  "score": 55,
+  "strength": 55,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "恒指跌但恒科涨，AI算力链强，内银低迷拖累大市",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 7.22,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 105,
+    "track_avg": -0.26,
+    "track_worst": -3.61,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.51
+   }
+  }
+ },
+ {
+  "id": "N20260827-019",
+  "date": "2026-08-27",
+  "track": "大消费",
+  "category": "业绩类",
+  "title": "洋河股份定价（8/27盘中）：-2.43%报38.94 低开-2.0%后振幅收窄（振幅1.7%）无恐慌杀跌 白酒Ⅱ-0.80% 中证消费12484平盘守12,300——「利空提前定价软着陆」第2次验证窗口（泸州老窖先例）",
+  "summary": "洋河股份8/27盘中：最新价38.94元（-2.43%），开盘39.11（低开-2.0%），最高39.23、最低38.55，振幅1.70%，量比2.59。白酒Ⅱ板块-0.80%（36045），中证消费12,484.43（+0.00%）守住12,300防线。H1爆雷（净利-40.1%、Q2 -78.04%）定价未出现恐慌性杀跌，与泸州老窖8/26软着陆（低开-4.4%回拉-2.37%）先例一致。",
+  "source": "新浪财经",
+  "source_url": "https://finance.sina.com.cn/tob/2026-08-27/doc-inipthnz9078794.shtml",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "低",
+  "reason": "白酒利空提前定价，未恐慌杀跌，软着陆情绪平稳",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 5.0,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 97,
+    "track_avg": 0.03,
+    "track_worst": -1.6,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.58
+   }
+  }
+ },
+ {
+  "id": "N20260827-020",
+  "date": "2026-08-27",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "白酒批价8/27：11大单品八涨三跌 飞天茅台+2元至1780 五粮液普五+5元至808（月内高位） 洋河梦之蓝M6++2元二连阳——批价修复延续、总价10025元较昨日+7元",
+  "summary": "酒价内参8/27：11大单品八涨三跌，飞天茅台上涨2元至1780元、精品茅台小涨1元至2458元、五粮液普五八代上涨5元至808元（回升至近一个月高位）、青花汾20大涨5元至398元、国窖1573上涨2元至881元、洋河梦之蓝M6+上涨2元至618元（二连阳月高位）；下跌方面古井贡古20大跌7元、青花郎-6元。11大单品总价10025元，较昨日上涨7元，盘面延续偏强格局。",
+  "source": "新浪财经酒价内参",
+  "source_url": "https://finance.sina.cn/2026-08-27/detail-inipthnu0384619.d.html",
+  "sentiment": "正面",
+  "score": 70,
+  "strength": 70,
+  "direction": "利多",
+  "volatility": "低",
+  "reason": "白酒批价普涨，龙头酒价回升，利好大消费板块修复",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 5.0,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 97,
+    "track_avg": 0.03,
+    "track_worst": -1.6,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.58
+   }
+  }
+ },
+ {
+  "id": "N20260827-021",
+  "date": "2026-08-27",
+  "track": "A股医药",
+  "category": "业绩类",
+  "title": "百利天恒定价验证（8/27盘中）：-0.26%报268.49 低开下探-4.4%（257.31）后回拉 振幅5.33% 中报确认（营收1.87亿+9.43%、净利-16.37亿亏损扩大）——III期利多已部分定价，定价验证未决",
+  "summary": "百利天恒8/27盘中：最新价268.49元（-0.26%），开盘268.00，最高271.67、最低257.31（盘中一度-4.4%），振幅5.33%，量比1.15。中报确认：上半年营收1.87亿元（+9.43%），净利-16.37亿元亏损同比扩大。8/26盘后公告全球首款双抗ADC（EGFR×HER3）III期达终点（当日已部分定价+1.95%），8/27低开后回拉至平盘——利多利空交织、定价未决。",
+  "source": "东方财富",
+  "source_url": "https://quote.eastmoney.com/sh688506.html",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "高",
+  "reason": "医药III期利好已定价，亏损扩大压制，方向未决振幅大",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 116,
+    "track_avg": 0.15,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.41
+   }
+  }
+ },
+ {
+  "id": "N20260827-022",
+  "date": "2026-08-27",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "创新药板块8/27盘中分化：创新药指数+0.32%回正 vs 其他生物制品盘中-2%（近岸蛋白-6.33%）科创创新药ETF-1.41%——上海十五五规划+江苏生物医药三年行动计划政策双响、BD出海交易额上半年+34.5%",
+  "summary": "8/27盘中医药分化：创新药板块指数+0.32%（1125.87）、生物医药+0.29%，但其他生物制品板块10点一度跌2%（近岸蛋白-6.33%、三元基因-5.56%、诺唯赞-5.35%），科创创新药ETF国泰11:19飘绿-1.41%。政策面：上海《战略性新兴产业发展十五五规划》（创新药发现遴选机制+AI辅助）+ 江苏《生物医药产业三年行动计划》双响；2026H1中国创新药BD出海交易总额同比+34.5%、全球占比超30%。",
+  "source": "东方财富/界面新闻",
+  "source_url": "https://www.toutiao.com/article/7678559747330687528/",
+  "sentiment": "中性",
+  "score": 55,
+  "strength": 55,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "创新药政策利好但其他生物制品弱，板块分化，医药情绪中性",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 116,
+    "track_avg": 0.15,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.41
+   }
+  }
+ },
+ {
+  "id": "N20260827-023",
+  "date": "2026-08-27",
+  "track": "恒生科技",
+  "category": "业绩类",
+  "title": "理想汽车-W港股企稳（8/27盘中）：+0.37%报48.28 Q2爆雷（营收-15.1%、净亏15亿、Q3指引低于预期17%）后未深跌——利空定价消化+英伟达AI催化对冲",
+  "summary": "理想汽车-W 8/27港股盘中：+0.37%报48.28港元，今开48.10，最高49.00、最低47.50，成交2.85亿港元。Q2中报爆雷（营收256.67亿-15.1%、调整后净亏15亿由盈转亏、Q3指引中值低于预期17%）于8/27港股定价，但仅微涨0.37%未深跌——利空提前定价充分+英伟达业绩引爆AI/新能源车产业链情绪对冲。",
+  "source": "新浪港股",
+  "source_url": "https://www.toutiao.com/article/7678559738635895331/",
+  "sentiment": "中性",
+  "score": 55,
+  "strength": 55,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "汽车爆雷后未深跌，利空消化叠加AI催化，恒科相关情绪企稳",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 7.22,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 105,
+    "track_avg": -0.26,
+    "track_worst": -3.61,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.51
+   }
+  }
+ },
+ {
+  "id": "N20260827-024",
+  "date": "2026-08-27",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "英伟达财报引爆A股/港股AI算力链（8/27盘中）：澜起科技+10%、赛微电子+20%、长飞光纤+8%、中芯国际+3%、兆易创新+7%——2028财年指引+70%（预期45%）三年可见度",
+  "summary": "英伟达Q2 FY2027财报（营收962.21亿+106%、Q3指引1080亿、2028财年指引+70%远超预期45%、CFO强调供应制约至2028财年）引爆A股/港股AI算力链：A股光刻机/CPO/先进封装/PCB大涨（赛微电子+20%、长芯博创+14.58%、生益电子+13.34%、中际旭创+3.07%成交143亿居首），港股存储半导体（澜起科技+10%）、PCB（建滔积层板+9%）、光通信（长飞光纤+8%）、晶圆代工（华虹+4%、中芯+3%）全线走强——AI算力需求高景气三年可见度。",
+  "source": "金融界/腾讯新闻",
+  "source_url": "https://www.toutiao.com/article/7678558766450704896/",
+  "sentiment": "正面",
+  "score": 85,
+  "strength": 85,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "英伟达指引超预期，AI算力链全线爆发，科技成长高景气",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 7.22,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 105,
+    "track_avg": -0.26,
+    "track_worst": -3.61,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.51
+   }
+  }
  }
 ]
