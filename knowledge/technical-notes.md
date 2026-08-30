@@ -622,3 +622,10 @@ content = result['choices'][0]['message']['content']
 - **场外基金 8/28 当日净值 20:00 仅 2 只已出**（富国消费主题 -0.22%/富国清洁能源 -0.97%）：周五 20:00 出数少（T+1 常态），且富国消费主题与中证消费 +0.66% 背离（主动基含非白酒权重）——**「以实测为准，缺数用指数/ETF 代理」规律延续**（§3.22/§3.44）；QDII 广发全球医疗 A/C 8/27 净值未更新（最新 8/26 -0.93%/-0.95% 已兑现），8/27 美股 -1.13% 将于 8/29-31 兑现
 - **夏普比率净值样本达标（约 31 个交易日）**：8/6 起链路已满 30 个交易日样本线，**8/30 周日 W35 周报将首次计算夏普比率**（无风险基准 10 年期国债 1.70%）；净值序列取 portfolio_close_*.json 的 est_total_pct 拼接
 - **盘后链路 6 脚本模板复用成功**（fetch_close → append_close → calc_portfolio_close → build_close_news → sentiment_close → events_fill_close）：本轮直接写脚本（非 sed 复制）规避 §3.33 日期格式陷阱；event_stats_*.json 生成独立小脚本（不并入 events_fill 避免过长）；全库 539 条、留空 3 条（美股标普医药 N20260828-012/013/032 待 8/30 用 XLV/IYH 回填）、方向验证 256/416（62%）
+
+### 3.51 🟡 系统代理环境变化：HTTP(S)_PROXY 指向 7890 但不可用，需 unset 直连（2026-08-30 盘后实测）
+
+- **现象**：8/30（周日）执行 akshare 抓取时 `stock_us_daily`（XLV/IYH/QQQ/DIA）全部报 `ProxyError: Unable to connect to proxy (127.0.0.1:7890 Connection refused)`——**环境变量 HTTP_PROXY/HTTPS_PROXY 由原 127.0.0.1:49474 变为 127.0.0.1:7890（可能是用户侧代理软件变更），且 7890 端口未监听**
+- **规避**：**所有 akshare / urllib / 外部 HTTP 调用在执行时 `env -u HTTP_PROXY -u HTTPS_PROXY -u http_proxy -u https_proxy python xxx.py` 直连**——实测直连可正常访问新浪源（stock_us_daily/index_us_stock_sina）与 DeepSeek API（情绪标注 15 条一次成功）；`NO_PROXY` 含 localhost 无需改动
+- **注意**：§3.3 的「49474 代理」记录已过时，新环境以「unset 代理直连」为准；后续执行脚本统一加 env -u 前缀，避免依赖系统代理状态
+- **其他发现**：indices.csv 历史行存在 name/code 互换 + 日期带时间戳（'2026-08-21 00:00:00'）脏数据，已批量修复（时间戳 4 行 + 互换 1 行 + 完全重复 7 行）；**周报/日报的「美股 8/28 收盘」直接以 XLV 171.16(-0.24%)/IYH 72.31(-0.44%) 归档**，8/27 误标行（171.58 新闻口径）修正为 8/27 正确记录

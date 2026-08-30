@@ -317,9 +317,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.24,
    "note": "盘前事件,actual_ret_1d 待 8/28(周五)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
+   "ret_1d_ref": "XLV 8/28收盘 -0.24%(周日盘后补回填)",
    "actual_date": "2026-08-28"
   }
  },
@@ -344,9 +344,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.24,
    "note": "盘前事件,actual_ret_1d 待 8/28(周五)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
+   "ret_1d_ref": "XLV 8/28收盘 -0.24%(周日盘后补回填)",
    "actual_date": "2026-08-28"
   }
  },
@@ -892,9 +892,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 90,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.24,
    "actual_date": null,
-   "ret_1d_ref": null,
+   "ret_1d_ref": "XLV 8/28收盘 -0.24%(周日盘后补回填)",
    "track_stats": {
     "track_n": 54,
     "track_avg": 0.28,

@@ -1,0 +1,132 @@
+{
+ "date": "2026-08-30",
+ "total_events": 554,
+ "null_actual_ret_1d": 15,
+ "null_ids": [
+  "N20260830-001",
+  "N20260830-002",
+  "N20260830-003",
+  "N20260830-004",
+  "N20260830-005",
+  "N20260830-006",
+  "N20260830-007",
+  "N20260830-008",
+  "N20260830-009",
+  "N20260830-010",
+  "N20260830-011",
+  "N20260830-012",
+  "N20260830-013",
+  "N20260830-014",
+  "N20260830-015"
+ ],
+ "one_day_samples": 539,
+ "tracks": {
+  "A股医药": {
+   "n": 128,
+   "avg": 0.1,
+   "worst": -3.14,
+   "best": 4.5,
+   "strong_pos_n": 81,
+   "strong_pos_avg": 0.15,
+   "strong_neg_n": 10,
+   "strong_neg_avg": -1.64
+  },
+  "大消费": {
+   "n": 109,
+   "avg": 0.07,
+   "worst": -1.6,
+   "best": 2.5,
+   "strong_pos_n": 50,
+   "strong_pos_avg": 0.45,
+   "strong_neg_n": 12,
+   "strong_neg_avg": -0.07
+  },
+  "恒生科技": {
+   "n": 120,
+   "avg": -0.26,
+   "worst": -3.61,
+   "best": 1.58,
+   "strong_pos_n": 47,
+   "strong_pos_avg": 0.02,
+   "strong_neg_n": 16,
+   "strong_neg_avg": -1.05
+  },
+  "美股标普医药": {
+   "n": 57,
+   "avg": 0.25,
+   "worst": -1.87,
+   "best": 3.51,
+   "strong_pos_n": 25,
+   "strong_pos_avg": 0.49,
+   "strong_neg_n": 7,
+   "strong_neg_avg": -0.06
+  },
+  "宏观": {
+   "n": 124,
+   "avg": -0.07,
+   "worst": -2.4,
+   "best": 1.41,
+   "strong_pos_n": 31,
+   "strong_pos_avg": 0.15,
+   "strong_neg_n": 29,
+   "strong_neg_avg": -0.04
+  },
+  "其他/宽基": {
+   "n": 1,
+   "avg": 0.32,
+   "worst": 0.32,
+   "best": 0.32,
+   "strong_pos_n": 1,
+   "strong_pos_avg": 0.32,
+   "strong_neg_n": 0,
+   "strong_neg_avg": null
+  }
+ },
+ "direction_global": {
+  "ok": 258,
+  "n": 418,
+  "pct": 62
+ },
+ "window_3d_5d": {
+  "as_of": "2026-08-28收盘(8/28报告口径,周末无新行情)",
+  "window_3d": {
+   "美股标普医药": {
+    "n": 25,
+    "avg": 1.45
+   },
+   "恒生科技": {
+    "n": 88,
+    "avg": -1.1
+   },
+   "A股医药": {
+    "n": 95,
+    "avg": -0.17
+   },
+   "大消费": {
+    "n": 82,
+    "avg": -0.38
+   },
+   "宏观": {
+    "n": 91,
+    "avg": 0.02
+   }
+  },
+  "window_5d": {
+   "美股标普医药": {
+    "avg": 1.38
+   },
+   "恒生科技": {
+    "avg": -2.18
+   },
+   "A股医药": {
+    "avg": -1.05
+   },
+   "大消费": {
+    "avg": -0.9
+   },
+   "宏观": {
+    "avg": 0.01
+   }
+  }
+ }
+}
