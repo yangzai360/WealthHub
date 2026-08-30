@@ -34,14 +34,14 @@
    "name": "中证500"
   }
  ],
- "updated": "2026-08-13 (盘中兜底更新)",
- "nav": 1.6971,
- "navDate": "2026-08-12",
+ "updated": "2026-08-31",
+ "nav": 1.6862,
+ "navDate": "2026-08-28",
  "dailyReturn": -0.0002,
- "sharpe": 0.3031,
+ "sharpe": 0.2962,
  "maxDrawdown": 0.1979,
- "volatility": 0.1112,
+ "volatility": 0.1111,
  "annualCompoundedReturn": 0.0487,
  "investedUnit": 109,
- "adjustedCount": 261
+ "adjustedCount": 262
 }

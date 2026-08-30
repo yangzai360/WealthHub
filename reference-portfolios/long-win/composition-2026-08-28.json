@@ -1,0 +1,55 @@
+{
+ "date": "2026-08-28",
+ "source": "qieman playwright",
+ "adjustedCount": 262,
+ "composition": [
+  {
+   "className": "A股",
+   "unit": 70,
+   "percent": 0.4344,
+   "accProfitRate": 0.4922
+  },
+  {
+   "className": "现金",
+   "unit": 42,
+   "percent": 0.3058,
+   "accProfitRate": null
+  },
+  {
+   "className": "境内债券",
+   "unit": 14,
+   "percent": 0.105,
+   "accProfitRate": 0.4452
+  },
+  {
+   "className": "海外新兴市场股票",
+   "unit": 16,
+   "percent": 0.091,
+   "accProfitRate": 0.2452
+  },
+  {
+   "className": "海外债券",
+   "unit": 5,
+   "percent": 0.0352,
+   "accProfitRate": 0.0332
+  },
+  {
+   "className": "海外成熟市场股票",
+   "unit": 3,
+   "percent": 0.0286,
+   "accProfitRate": 0.6122
+  },
+  {
+   "className": "原油",
+   "unit": 0,
+   "percent": 0,
+   "accProfitRate": 0.2591
+  },
+  {
+   "className": "黄金",
+   "unit": 0,
+   "percent": 0,
+   "accProfitRate": 0.3866
+  }
+ ]
+}
