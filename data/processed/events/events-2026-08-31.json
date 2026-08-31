@@ -20,7 +20,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.86,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -47,7 +47,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.86,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -74,7 +74,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.86,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -101,7 +101,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.86,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -128,7 +128,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.86,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -155,7 +155,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.72,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -182,7 +182,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.72,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -209,7 +209,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.13,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -236,7 +236,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.13,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -344,7 +344,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.32,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -371,7 +371,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.32,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -398,7 +398,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.32,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -425,7 +425,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.6,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -452,7 +452,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.86,
    "note": "盘前事件,actual_ret_1d 待 8/31(周一)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-08-31"
@@ -479,15 +479,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 124,
-    "track_avg": -0.07,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.61
-   }
+   "actual_ret_1d": 0.86,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -511,15 +505,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 124,
-    "track_avg": -0.07,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.61
-   }
+   "actual_ret_1d": 0.86,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -543,15 +531,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 120,
-    "track_avg": -0.26,
-    "track_worst": -3.61,
-    "track_best": 1.58,
-    "track_pos_ratio": 0.45
-   }
+   "actual_ret_1d": 0.32,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -575,15 +557,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 128,
-    "track_avg": 0.1,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.41
-   }
+   "actual_ret_1d": -1.13,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -607,15 +583,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 128,
-    "track_avg": 0.1,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.41
-   }
+   "actual_ret_1d": -1.13,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -639,15 +609,9 @@
    "ret_10d": null,
    "max_vol": 5.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 109,
-    "track_avg": 0.07,
-    "track_worst": -1.6,
-    "track_best": 2.5,
-    "track_pos_ratio": 0.62
-   }
+   "actual_ret_1d": -0.72,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -671,15 +635,9 @@
    "ret_10d": null,
    "max_vol": 0.64,
    "confidence": 42,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 1,
-    "track_avg": 0.32,
-    "track_worst": 0.32,
-    "track_best": 0.32,
-    "track_pos_ratio": 1.0
-   }
+   "actual_ret_1d": -1.6,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -703,9 +661,267 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
+   "actual_ret_1d": 0.86,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘"
+  }
+ },
+ {
+  "id": "N20260831-026",
+  "date": "2026-08-31",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股8/31收评：沪指+0.86%报3,986.30距4,000仅14点、深成指+0.44%、创业板+0.42%、科创50+1.34%、沪深300+0.35%，成交2.13万亿约3,000股上涨——短剧概念涨停潮（中文在线/芒果超媒20cm涨停、中广天择/上海电影/博纳涨停）、AI芯片低开高走（炬芯+13%/瑞芯微涨停）、液冷服务器走高 vs 贵金属/创新药/白酒/光伏走低；8月三大指数集体收涨（沪指+4%、中证2000+13%）",
+  "summary": "8/31 A股午后集体拉升收涨：沪指+0.86%报3,986.30（距4,000仅14点）、深成指+0.44%报14,015、创业板+0.42%报3,438.68、科创50+1.34%报1,684.39、沪深300+0.35%报4,625.09；两市成交2.13万亿、约3,000股上涨。短剧概念掀涨停潮（中文在线/芒果超媒20cm涨停、中广天择/上海电影/博纳/欢瑞涨停，《后西游记》定档催化）；AI芯片低开高走（炬芯科技+13%/星宸+12%/瑞芯微涨停）、液冷服务器走高（浪潮信息涨停）；贵金属（黄金股ETF永赢-5.91%领跌）、重组蛋白、创新药、白酒、光伏走低。8月收官：三大指数集体收涨，沪指月涨超4%、中证2000月涨超13%。",
+  "source": "WebSearch",
+  "source_url": "https://www.163.com/dy/article/L5LV3RLP0519QIKK.html",
+  "sentiment": "负面",
+  "score": 40,
+  "strength": 35,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "创新药与白酒等医药消费核心方向逆势走低，资金明显向科技题材集中，板块短期承压。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.86,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 124,
+    "track_avg": -0.07,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.61
+   }
+  }
+ },
+ {
+  "id": "N20260831-027",
+  "date": "2026-08-31",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股8/31收盘：恒指-0.07%报25,566.99、恒生科技+0.32%报4,619.87收复4,600（盘中最低4,531.22）、国企指数+0.27%报8,513.18——大模型'双雄'暴涨（MiniMax+16.18%月涨51%/智谱+9.63%正式纳入MSCI成交127.55亿港币居首）、内银撑市（邮储+6.96%中报营收+7.26%分红率31%、中行+5.73%/建行+3.94%）；内房闪崩（绿城-17.58%中报营收-26%净利-61%、金茂-15.92%、越秀-13.64%）；8月恒指/国企跌逾1%、恒科跌超4%",
+  "summary": "港股8/31（8月收官）：恒指-0.07%报25,566.99（全日成交3,148亿港元）、恒生科技+0.32%报4,619.87收复4,600（盘中最低4,531.22、午后转涨）、国企指数+0.27%报8,513.18。大模型'双雄'暴涨：MiniMax-W+16.18%（月内+51%）、智谱+9.63%（正式纳入MSCI中国指数生效，成交127.55亿港币居港股之首）；PCB概念受AI服务器升级带动（大族数控+11.66%）。内银集体走强：邮储+6.96%（中报营收+7.26%、中期分红率提至31%）、中行+5.73%、建行+3.94%。内房全线下挫：绿城中国-17.58%（中报营收-26%/净利-61%）、金茂-15.92%、越秀-13.64%。8月港股三大指数收跌：恒指/国企跌逾1%、恒科跌超4%。",
+  "source": "WebSearch",
+  "source_url": "https://news.cnyes.com/news/id/6592717",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 70,
+  "direction": "中性",
+  "volatility": "高",
+  "reason": "恒指微跌但内房闪崩与科技/银行强势分化，市场多空交织且8月整体收跌。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.32,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 120,
+    "track_avg": -0.26,
+    "track_worst": -3.61,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.45
+   }
+  }
+ },
+ {
+  "id": "N20260831-028",
+  "date": "2026-08-31",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "A股医药8/31收跌：医药生物-1.35%居跌幅榜第三、主力净流出46.52亿（恒瑞-7.81亿/药明-4.29亿/誉衡-4.05亿居前、9股净流出超亿）、跌停7只；创新药概念-1.65%（阳光诺和+9.14%/泰格+5.90% vs 权重股跌）、医疗ETF-0.88%/医药ETF广发-1.38%——基药目录9/1政策底当日未定价（兑现后第3日回调，沃什鹰派压制全球创新药）",
+  "summary": "8/31 A股医药板块继续调整：医药生物-1.35%居今日跌幅榜第三（有色金属-1.39%/房地产-1.38%之后），主力资金净流出46.52亿（恒瑞-7.81亿、药明康德-4.29亿、誉衡-4.05亿居前，9只个股净流出超亿元）、478只成分股356只下跌、跌停7只；创新药概念-1.65%（相对沪深300超额-2.00%，近5日3涨2跌；阳光诺和+9.14%/泰格医药+5.90%逆势 vs 权重股拖累）；持仓医疗ETF-0.88%、医药ETF广发-1.38%。驱动：沃什鹰派（9月加息概率接近60%）压制全球创新药估值+8/28兑现后第3日回调，基药目录9/1正式实施政策底当日未定价。",
+  "source": "WebSearch",
+  "source_url": "https://www.stcn.com/article/detail/4165569.html",
+  "sentiment": "负面",
+  "score": 75,
+  "strength": 70,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "基药目录政策兑现后回调，叠加沃什鹰派压制全球创新药估值，主力资金大幅净流出致板块领跌。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -1.13,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 128,
+    "track_avg": 0.1,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.41
+   }
+  }
+ },
+ {
+  "id": "N20260831-029",
+  "date": "2026-08-31",
+  "track": "A股医药",
+  "category": "政策类",
+  "title": "2026版基药目录9/1正式实施（政策底落地确认）：794种+116、首次纳入国产I类创新药/肿瘤靶向药/单抗制剂，配备优先使用纳入公立医院绩效考核强制下沉基层；科创医药中报验证（60%成分股净利同比增长、11家+100%），创新药放量通道政策重开",
+  "summary": "2026年版《国家基本药物目录》9/1正式实施：总药品794种（+116），核心突破是首次将国产I类创新药、肿瘤靶向药、单抗制剂等高端创新药械纳入基药体系，打破以往基药排斥高价创新疗法惯例；新规明确基药配备、优先使用纳入公立医院绩效考核，强制推动创新药械下沉基层市场。基本面：截至8/31科创医药50家成分股全部披露半年报，30家净利同比增（60%）、11家增超100%——'商业化放量+BD兑现'逻辑获中报批量验证；国盛证券称肿瘤靶向治疗迎历史性临床突破。政策底+业绩底双支撑，但8/31当日医药板块未定价。",
+  "source": "WebSearch",
+  "source_url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_9196a95211194452",
+  "sentiment": "正面",
+  "score": 85,
+  "strength": 80,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "基药目录首次纳入创新药并强制基层配备，叠加科创医药中报业绩高增，政策与业绩双底确认，短期板块或迎修复行情。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -1.13,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 128,
+    "track_avg": 0.1,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.41
+   }
+  }
+ },
+ {
+  "id": "N20260831-030",
+  "date": "2026-08-31",
+  "track": "大消费",
+  "category": "业绩类",
+  "title": "白酒8/31收官偏弱：中证消费-0.72%报12,480.96再失12,500、茅台-0.43%收1,299.52（大宗平价成交7万股9,096万）、五粮液71.27微跌、老窖-0.57%报77.99——8月白酒市值前五全线下跌（茅台-3.78%/五粮液-8.63%/老窖-11.00%/汾酒-8.24%/洋河-9.93%），散飞批价1,782维稳/普五816、国窖1573批价+7元至885",
+  "summary": "8/31 白酒收官偏弱：中证消费-0.72%报12,480.96（盘中跌破12,500、8/28站上后再次失守），消费ETF添富(159928)收-0.75%。个股：茅台-0.43%收1,299.52（大宗平价成交7万股、成交额9,096.64万占当日2.94%）、五粮液微跌报71.27、泸州老窖-0.57%报77.99（分析师会议：上半年存量调整弱复苏、双节叠加预计阶段性消费增量）。8月白酒市值前五全线下跌：茅台-3.78%/五粮液-8.63%/老窖-11.00%/汾酒-8.24%/洋河-9.93%，业绩恢复增长的三家（今世缘/迎驾/金徽）相对抗跌。批价：散飞1,782元维稳、普五816元、国窖1573批价+7元至885元——'高端强、区域弱'格局延续。",
+  "source": "WebSearch",
+  "source_url": "https://new.qq.com/rain/a/20260831A0A9ZC00?refer=cp_1009",
+  "sentiment": "负面",
+  "score": 60,
+  "strength": 65,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "白酒板块8月市值前五全线下跌，但茅台批价企稳、国窖1573提价，短期承压但边际改善",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.72,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 109,
+    "track_avg": 0.07,
+    "track_worst": -1.6,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.62
+   }
+  }
+ },
+ {
+  "id": "N20260831-031",
+  "date": "2026-08-31",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "美股8/31盘前（美东周一）：三大股指期货涨跌不一（道指期货-0.15%/纳指100+0.06%/标普-0.13%）、半导体盘前集体走高（英特尔+1%/SK海力士/美光/西部数据）vs 中概股普跌（蔚来-2%/阿里/哔哩-1%）；南向资金8/31净买入11.76亿港元（阿里/长飞/中芯获净买，信达/中信证券/腾讯遭净卖）",
+  "summary": "美股8/31（美东周一）盘前：三大股指期货涨跌不一（道指期货-0.15%、纳指100期货+0.06%、标普500期货-0.13%）；半导体/芯片股盘前集体走高（英特尔+1%、SK海力士/闪迪/美光/西部数据均小幅上涨）；中概股盘前普跌（蔚来-2%、阿里/哔哩-1%）。港股南向资金8/31净买入11.76亿港元（阿里、长飞光纤、中芯国际获较多净买入；信达生物、中信证券、腾讯遭明显净卖出）。沃什鹰派（9月加息概率接近60%）后全球成长资产定价延续，今晚美股9/1开盘为组合QDII（8/28 XLV -0.24%）兑现窗口起点。",
+  "source": "WebSearch",
+  "source_url": "https://new.qq.com/rain/a/20260831A0A3ZB00?refer=cp_1009",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 40,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "美股期货涨跌不一，半导体走强但中概股普跌，南向资金结构分化，整体多空交织。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.86,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 124,
+    "track_avg": -0.07,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.61
+   }
+  }
+ },
+ {
+  "id": "N20260831-032",
+  "date": "2026-08-31",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "MSCI中国指数调整8/31收盘后正式生效：纳入智谱等33只（31只A股+智谱/建滔2只港股，智谱纳入首日成交127.55亿港币居港股之首）、剔除协鑫科技/金蝶国际/智飞生物等32只——被动资金调仓扰动（金蝶-3.24%拖累恒科权重）",
+  "summary": "MSCI中国指数8/31收盘后调整生效：新纳入智谱等33只（31只A股+智谱/建滔积层板2只港股）、剔除协鑫科技/金蝶国际/智飞生物等32只。智谱今日正式纳入即大涨+9.63%（成交127.55亿港币居港股成交之首）；金蝶国际被剔除今日-3.24%（恒科成分权重扰动）。被动资金调仓对恒科/中概权重股构成短期扰动，8/31盘后生效、9/1起按新权重跟踪。",
+  "source": "WebSearch",
+  "source_url": "https://news.cnyes.com/news/id/6592717",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "高",
+  "reason": "MSCI指数调整引发被动资金调仓，纳智谱等上涨与剔金蝶等下跌并存，结构性扰动而非系统性方向",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.32,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 120,
+    "track_avg": -0.26,
+    "track_worst": -3.61,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.45
+   }
+  }
+ },
+ {
+  "id": "N20260831-033",
+  "date": "2026-08-31",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "PMI'数据利多'午后补定价验证（8/31）：8月官方制造业PMI 49.8%（+0.6pct超预期）早盘未买账（沪指-0.20%午间）→午后集体拉升收+0.86%报3,986.30——顺周期/银行/传媒走强（中行+4.36%创新高、传媒+3.80%主力净流入55.31亿居首），'基本面利多未定价'样本收盘部分兑现",
+  "summary": "8/31 PMI数据利多午后补定价验证：8月官方制造业PMI 49.8%（+0.6pct超预期，新订单50.6%/新出口订单50.1%重回扩张）早盘市场未买账（沪指午间-0.20%），午后三大指数集体拉升收盘沪指+0.86%报3,986.30、传媒+3.80%（主力净流入55.31亿居首，短剧/AI影视催化）、银行走强（中行+4.36%创历史新高）、计算机+2.20%——'基本面利多未定价'样本（8/21茅台先例）收盘部分兑现，PMI回升+政策组合拳支撑顺周期定价。两市主力全天净流入25.13亿。",
+  "source": "WebSearch",
+  "source_url": "https://www.stcn.com/article/detail/4165569.html",
+  "sentiment": "正面",
+  "score": 80,
+  "strength": 70,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "8月官方制造业PMI超预期回升且新订单重回扩张，午后市场补涨确认基本面利多",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 0.86,
+   "actual_date": "2026-08-31",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
     "track_n": 124,
     "track_avg": -0.07,
     "track_worst": -2.4,

@@ -1,0 +1,91 @@
+{
+ "date": "2026-08-31",
+ "total_events": 587,
+ "null_actual_ret_1d": 6,
+ "null_ids": [
+  "N20260830-010",
+  "N20260830-011",
+  "N20260830-012",
+  "N20260831-010",
+  "N20260831-011",
+  "N20260831-012"
+ ],
+ "one_day_samples": 581,
+ "direction_ok": 271,
+ "direction_n": 447,
+ "direction_ratio": 0.61,
+ "tracks": {
+  "A股医药": {
+   "n": 137,
+   "avg": 0.02,
+   "worst": -3.14,
+   "best": 4.5,
+   "strong_pos_n": 85,
+   "strong_pos_avg": 0.09,
+   "strong_neg_n": 11,
+   "strong_neg_avg": -1.59,
+   "dir_ok": 63,
+   "dir_n": 119
+  },
+  "其他/宽基": {
+   "n": 4,
+   "avg": -1.12,
+   "worst": -1.6,
+   "best": 0.32,
+   "strong_pos_n": 3,
+   "strong_pos_avg": -0.96,
+   "strong_neg_n": 0,
+   "strong_neg_avg": null,
+   "dir_ok": 1,
+   "dir_n": 3
+  },
+  "大消费": {
+   "n": 115,
+   "avg": 0.03,
+   "worst": -1.6,
+   "best": 2.5,
+   "strong_pos_n": 52,
+   "strong_pos_avg": 0.41,
+   "strong_neg_n": 14,
+   "strong_neg_avg": -0.16,
+   "dir_ok": 70,
+   "dir_n": 100
+  },
+  "宏观": {
+   "n": 140,
+   "avg": 0.04,
+   "worst": -2.4,
+   "best": 1.41,
+   "strong_pos_n": 35,
+   "strong_pos_avg": 0.23,
+   "strong_neg_n": 34,
+   "strong_neg_avg": 0.09,
+   "dir_ok": 52,
+   "dir_n": 91
+  },
+  "恒生科技": {
+   "n": 128,
+   "avg": -0.22,
+   "worst": -3.61,
+   "best": 1.58,
+   "strong_pos_n": 50,
+   "strong_pos_avg": 0.04,
+   "strong_neg_n": 16,
+   "strong_neg_avg": -1.05,
+   "dir_ok": 56,
+   "dir_n": 89
+  },
+  "美股标普医药": {
+   "n": 57,
+   "avg": 0.25,
+   "worst": -1.87,
+   "best": 3.51,
+   "strong_pos_n": 25,
+   "strong_pos_avg": 0.49,
+   "strong_neg_n": 7,
+   "strong_neg_avg": -0.06,
+   "dir_ok": 29,
+   "dir_n": 45
+  }
+ }
+}
