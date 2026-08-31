@@ -263,9 +263,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "note": "周末事件,actual_ret_1d 待 8/31(周一)收盘回填",
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.36,
+   "note": "美股 8/31 收盘回填(XLV -0.36%, 新浪源)",
+   "ret_1d_ref": null,
+   "actual_date": "2026-08-31"
   }
  },
  {
@@ -289,9 +290,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "note": "周末事件,actual_ret_1d 待 8/31(周一)收盘回填",
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.36,
+   "note": "美股 8/31 收盘回填(XLV -0.36%, 新浪源)",
+   "ret_1d_ref": null,
+   "actual_date": "2026-08-31"
   }
  },
  {
@@ -315,9 +317,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "note": "周末事件,actual_ret_1d 待 8/31(周一)收盘回填",
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.36,
+   "note": "美股 8/31 收盘回填(XLV -0.36%, 新浪源)",
+   "ret_1d_ref": null,
+   "actual_date": "2026-08-31"
   }
  },
  {
