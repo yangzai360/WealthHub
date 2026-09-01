@@ -484,5 +484,261 @@
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-01"
   }
+ },
+ {
+  "id": "N20260901-019",
+  "date": "2026-09-01",
+  "track": "宏观",
+  "category": "行业事件类",
+  "title": "A股午评（9/1）：沪指涨0.03%报3987.56距4000仅12点，半日成交1.35万亿放量382亿；农业股涨停潮（厄尔尼诺超强概率95%：万向德农6连板/新赛股份4连板/神农种业20cm）vs AI阵营低迷（PCB/光模块/存储回调、华特气体-9%）；68只涨停/1只跌停；保险股拉升（人保+5%）",
+  "summary": "沪指0.03%报3987.56距4000仅12点，半日1.35万亿放量，农业涨停潮vs AI回调",
+  "source": "WebSearch",
+  "source_url": "https://m.cnfin.com/yw-lb//zixun/20260901/4463315_1.html",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "高",
+  "reason": "指数窄幅震荡，农业涨停潮与AI回调分化，宏观情绪平淡",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 140,
+    "track_avg": 0.04,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.66
+   }
+  }
+ },
+ {
+  "id": "N20260901-020",
+  "date": "2026-09-01",
+  "track": "大消费",
+  "category": "业绩类",
+  "title": "白酒「利空出尽」定价兑现（9/1盘中）：古井贡酒涨停/今世缘+6.05%/汾酒+4.39%/泸州老窖+3.65%/洋河+2.15%/五粮液+1.08%/茅台+0.24%齐涨，酒ETF鹏华+2.86%、中证酒+2.75%；20家A+H酒企中报营收2004.4亿(-6.65%)净利736.81亿(-8.28%)——中信证券：白酒基本面底部企稳（批价控货企稳/动销低基数修复/库存去化）",
+  "summary": "白酒利空出尽定价兑现：古井涨停、茅五泸齐涨、酒ETF+2.86%",
+  "source": "WebSearch",
+  "source_url": "https://news.qq.com/rain/a/20260901A04I3U00",
+  "sentiment": "正面",
+  "score": 76,
+  "strength": 76,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "白酒利空出尽，板块齐涨，大消费预期修复",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 5.0,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 115,
+    "track_avg": 0.03,
+    "track_worst": -1.6,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.59
+   }
+  }
+ },
+ {
+  "id": "N20260901-021",
+  "date": "2026-09-01",
+  "track": "大消费",
+  "category": "政策类",
+  "title": "商务部7部门60万亿消费扩容方案今日定价（9/1盘中）：零售涨停潮（茂业商业/国芳集团/新华百货/国光连锁涨停）+白酒齐涨——到2030年社零60万亿、培育绿色/智能/健康消费十万亿级市场，汽车/家电/通讯器材/纺织服装万亿级品类持续增长",
+  "summary": "60万亿消费扩容方案今日定价：零售涨停潮+白酒齐涨",
+  "source": "WebSearch",
+  "source_url": "https://www.chnfund.com/article/AR7799c3f5-9ce8-8cfd-c824-3a236d49264a",
+  "sentiment": "正面",
+  "score": 82,
+  "strength": 82,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "60万亿消费扩容政策催化，零售白酒领涨，大消费情绪高涨",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 5.0,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 115,
+    "track_avg": 0.03,
+    "track_worst": -1.6,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.59
+   }
+  }
+ },
+ {
+  "id": "N20260901-022",
+  "date": "2026-09-01",
+  "track": "A股医药",
+  "category": "政策类",
+  "title": "基药目录实施首日A股医药分化（9/1盘中）：生物医药ETF天弘标的指数-0.20%但净申购1.06亿份（连续3日吸金8932万）；透景生命20cm/千金药业涨停/瑞康医药涨停（医药商业题材）vs 恒瑞等权重平淡——招商证券：CXO上半年营收+24.5%/净利+52.7%订单全面回暖、AI制药重塑研发业态",
+  "summary": "基药目录实施首日医药分化：ETF-0.20%净申购1.06亿份，CXO订单回暖",
+  "source": "WebSearch",
+  "source_url": "https://www.163.com/dy/article/L5OASNGH0512B07B.html",
+  "sentiment": "中性",
+  "score": 55,
+  "strength": 55,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "医药分化，ETF净申购且CXO回暖，基药目录影响待观察",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 137,
+    "track_avg": 0.02,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.39
+   }
+  }
+ },
+ {
+  "id": "N20260901-023",
+  "date": "2026-09-01",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "港股创新药续跌（9/1盘中）：恒生港股通创新药指数-1.57%、港股创新药ETF博时标的-1.64%；康方生物-4.78%/信达生物-2.41%/百济神州-1.39%/翰森-2.38%——基药目录落地未扭转港股创新药回调（延续8/30-8/31退潮）",
+  "summary": "港股创新药续跌：康方-4.78%/信达-2.41%，基药目录未扭转退潮",
+  "source": "WebSearch",
+  "source_url": "https://www.sohu.com/a/1070407719_223785",
+  "sentiment": "负面",
+  "score": 30,
+  "strength": 30,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "港股创新药续跌，政策催化乏力，板块退潮延续",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 137,
+    "track_avg": 0.02,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.39
+   }
+  }
+ },
+ {
+  "id": "N20260901-024",
+  "date": "2026-09-01",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股午评（9/1）：恒指跌1%报25310.88、恒生科技-0.76%跌破4,600（午间）——阿里-3.5%/腾讯-2%/百度-2.49%（双重上市生效日催化平淡）/京东-2%；内房续跌（越秀-7%/建发国际4连跌）；希音-W首日破发-4%；PCB概念回调（建滔积层板-3%）；大摩：港股下一窗口期或9月中下旬",
+  "summary": "港股午评：恒指-1%、恒科-0.76%破4600，科网股低迷",
+  "source": "WebSearch",
+  "source_url": "https://new.qq.com/rain/a/20260901A05PP700?refer=cp_1009",
+  "sentiment": "负面",
+  "score": 32,
+  "strength": 32,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "恒指恒科下跌，科网股低迷，大摩窗口期未至",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 7.22,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 128,
+    "track_avg": -0.22,
+    "track_worst": -3.61,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.48
+   }
+  }
+ },
+ {
+  "id": "N20260901-025",
+  "date": "2026-09-01",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股科技分化+猪价加速反弹（9/1午盘）：快手+4%/MINIMAX+6%（上半年收入1.17亿美元+283%）vs 阿里-3.5%；猪肉概念逆势拉升（德康农牧+7%，全国生猪均价从6月下旬9.47元回升至11元区间+17%、8/31批发价16.33元/公斤）——内需消费边际改善信号",
+  "summary": "港股分化：快手+4%/MINIMAX+6% vs 阿里-3.5%；猪价加速反弹+17%",
+  "source": "WebSearch",
+  "source_url": "https://k.sina.com.cn/article_6192937794_17120bb4202002tthc.html",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "港股科技分化，猪价反弹提振内需，多空交织",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 7.22,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 128,
+    "track_avg": -0.22,
+    "track_worst": -3.61,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.48
+   }
+  }
+ },
+ {
+  "id": "N20260901-026",
+  "date": "2026-09-01",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "百济神州与美方达成PD-1降价协议（9/1）：百济神州(688235)PD-1海外价格协议落地、机构资金调仓布局创新药；常山药业GLP-1题材高换手活跃——基药目录+海外定价双催化下创新药机构关注度回升（资金从高位AI流向政策催化医药）",
+  "summary": "百济PD-1降价协议落地，创新药获机构调仓布局",
+  "source": "WebSearch",
+  "source_url": "https://caifuhao.eastmoney.com/news/20260901104051377926290",
+  "sentiment": "正面",
+  "score": 72,
+  "strength": 72,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "PD-1降价协议落地，创新药关注度回升，机构调仓布局",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": 90,
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": {
+    "track_n": 137,
+    "track_avg": 0.02,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.39
+   }
+  }
  }
 ]
