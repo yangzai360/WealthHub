@@ -65,6 +65,7 @@
 ### 3.3 🟡 系统代理影响所有外部调用
 
 **说明**：WorkBuddy 注入 `HTTP_PROXY/HTTPS_PROXY=127.0.0.1:49474`，绝大多数接口正常，仅东财 push2 被拦截。GitHub clone 走代理会 502（`git:` 方式安装扩展会卡死，改用 npm 源）。
+**补充（2026-09-02 盘前实测：代理端口漂移）**：代理地址可能变化为 `127.0.0.1:7890` 且**端口 7890 无监听进程（Connection refused）**，导致 akshare/urllib 全部请求直接失败（ProxyError）。**规避：执行任何数据抓取/DeepSeek 调用前，先 `curl --max-time 8 https://fund.eastmoney.com` 自测；失败则用 `env -u HTTP_PROXY -u HTTPS_PROXY -u ALL_PROXY -u http_proxy -u https_proxy` 前缀运行 Python 脚本（绕过代理直连实测 fund.eastmoney/sina/deepseek 均 200 可达）**——本次盘前档即因绕过代理成功抓取全量数据。
 
 ### 3.4 🟡 DeepSeek 调用代码模板（可直接复用）
 

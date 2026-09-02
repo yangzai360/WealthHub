@@ -1,0 +1,399 @@
+{
+ "date": "2026-09-02",
+ "as_of": "2026-09-01收盘",
+ "snap_total": 392555.65,
+ "total_mv": 385731.39,
+ "tracks": {
+  "其他/宽基": {
+   "mv": 99286.52,
+   "pct": 25.74
+  },
+  "A股医药": {
+   "mv": 85852.66,
+   "pct": 22.26
+  },
+  "大消费": {
+   "mv": 77408.04,
+   "pct": 20.07
+  },
+  "美股标普医药": {
+   "mv": 60214.26,
+   "pct": 15.61
+  },
+  "恒生科技": {
+   "mv": 33756.93,
+   "pct": 8.75
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct": 7.57
+  }
+ },
+ "med_exposure": 146066.92,
+ "med_pct": 37.87,
+ "sharpe_annual": -1.8,
+ "sharpe_samples": 18,
+ "rf_10y": 1.69,
+ "detail": [
+  {
+   "account": "stock-brokerage",
+   "name": "广联达",
+   "code": "002410.SZ",
+   "track": "其他/宽基",
+   "mv": 39916.8,
+   "shares": "4480"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "汇添富中证主要消费ETF联接A",
+   "code": "000248",
+   "track": "大消费",
+   "mv": 27201.73,
+   "shares": "14687.76"
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "现金",
+   "code": "",
+   "track": "现金",
+   "mv": 24114.4,
+   "shares": ""
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "富国消费主题混合A",
+   "code": "519915",
+   "track": "大消费",
+   "mv": 21700.53,
+   "shares": "11679.51"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "华宝中证医疗联接C",
+   "code": "012323",
+   "track": "A股医药",
+   "mv": 20470.47,
+   "shares": "34819.64"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "大摩健康产业混合A",
+   "code": "002708",
+   "track": "A股医药",
+   "mv": 19109.93,
+   "shares": "10031.46"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "广发全球医疗保健指数A",
+   "code": "000369",
+   "track": "美股标普医药",
+   "mv": 17515.26,
+   "shares": "6713.40"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "广发全球医疗保健指数C",
+   "code": "016280",
+   "track": "美股标普医药",
+   "mv": 16486.17,
+   "shares": "6424.85"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "融通医疗保健行业混合A/B",
+   "code": "161616",
+   "track": "A股医药",
+   "mv": 16339.7,
+   "shares": "9294.48"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "广发全球医疗保健指数(QDII)A",
+   "code": "000369",
+   "track": "美股标普医药",
+   "mv": 13404.47,
+   "shares": "5137.78"
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "消费ETF添富",
+   "code": "159928.SZ",
+   "track": "大消费",
+   "mv": 12873.4,
+   "shares": "19100"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "广发全球医疗保健指数(QDII)C",
+   "code": "016280",
+   "track": "美股标普医药",
+   "mv": 12808.37,
+   "shares": "4991.57"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "恒生ETF联接A",
+   "code": "000071",
+   "track": "其他/宽基",
+   "mv": 12207.59,
+   "shares": "8145.45"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "天弘恒生科技联接A",
+   "code": "012348",
+   "track": "恒生科技",
+   "mv": 11582.75,
+   "shares": "18588.91"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "华夏沪深300ETF联接A",
+   "code": "000051",
+   "track": "其他/宽基",
+   "mv": 9935.3,
+   "shares": "5637.69"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "天弘中证证券保险A",
+   "code": "001552",
+   "track": "其他/宽基",
+   "mv": 9530.53,
+   "shares": "8853.26"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "广发医药卫生ETF联接A",
+   "code": "001180",
+   "track": "A股医药",
+   "mv": 8806.74,
+   "shares": "10933.26"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "摩根士丹利健康产业混合A",
+   "code": "002708",
+   "track": "A股医药",
+   "mv": 7155.69,
+   "shares": "3756.27"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "广发中证养老产业A",
+   "code": "000968",
+   "track": "大消费",
+   "mv": 6912.37,
+   "shares": "8179.35"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "华夏恒生ETF联接(QDII)A",
+   "code": "000071",
+   "track": "其他/宽基",
+   "mv": 6701.15,
+   "shares": "4471.31"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "富国清洁能源产业灵活配置混合A",
+   "code": "005368",
+   "track": "其他/宽基",
+   "mv": 6474.87,
+   "shares": "5938.07"
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "医疗ETF",
+   "code": "512170.SH",
+   "track": "A股医药",
+   "mv": 6069.8,
+   "shares": "17800"
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "中概互联",
+   "code": "513050.SH",
+   "track": "恒生科技",
+   "mv": 5718.6,
+   "shares": "5400"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "易方达沪深300ETF联接A",
+   "code": "110020",
+   "track": "其他/宽基",
+   "mv": 5169.18,
+   "shares": "2737.19"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "融通健康产业灵活配置A/B",
+   "code": "000727",
+   "track": "A股医药",
+   "mv": 5162.68,
+   "shares": "2050.31"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "交银中证海外中国互联网指数(LOF)A",
+   "code": "164906",
+   "track": "恒生科技",
+   "mv": 5113.06,
+   "shares": "5474.37"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "余额宝",
+   "code": "",
+   "track": "现金",
+   "mv": 4858.02,
+   "shares": ""
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "交银中证海外中国互联网A",
+   "code": "164906",
+   "track": "恒生科技",
+   "mv": 4627.06,
+   "shares": "4954.03"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "广发中证全指金融地产联接A",
+   "code": "001469",
+   "track": "其他/宽基",
+   "mv": 4416.2,
+   "shares": "3465.59"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "天弘恒生科技ETF联接(QDII)A",
+   "code": "012348",
+   "track": "恒生科技",
+   "mv": 3945.86,
+   "shares": "6332.62"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "汇添富文体娱乐主题A",
+   "code": "004424",
+   "track": "大消费",
+   "mv": 3884.26,
+   "shares": "2199.59"
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "通威股份",
+   "code": "600438.SH",
+   "track": "其他/宽基",
+   "mv": 3546.0,
+   "shares": "300"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "富国消费主题混合A",
+   "code": "519915",
+   "track": "大消费",
+   "mv": 2964.53,
+   "shares": "1595.55"
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "恒指科技",
+   "code": "513180.SH",
+   "track": "恒生科技",
+   "mv": 2769.6,
+   "shares": "4800"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "天弘中证医药100指数C",
+   "code": "001551",
+   "track": "A股医药",
+   "mv": 2737.65,
+   "shares": "3697.03"
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "汇添富中证主要消费联接A",
+   "code": "000248",
+   "track": "大消费",
+   "mv": 1871.22,
+   "shares": "1010.38"
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "100红利",
+   "code": "515180.SH",
+   "track": "其他/宽基",
+   "mv": 1028.3,
+   "shares": "700"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "余额宝",
+   "code": "",
+   "track": "现金",
+   "mv": 240.55,
+   "shares": ""
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "恒生ETF华夏",
+   "code": "159920.SZ",
+   "track": "其他/宽基",
+   "mv": 148.9,
+   "shares": "100"
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "证券ETF",
+   "code": "512880.SH",
+   "track": "其他/宽基",
+   "mv": 111.3,
+   "shares": "100"
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "传媒ETF",
+   "code": "512980.SH",
+   "track": "其他/宽基",
+   "mv": 85.1,
+   "shares": "100"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "泓德裕祥债券A",
+   "code": "002742",
+   "track": "其他/宽基",
+   "mv": 9.44,
+   "shares": "7.44"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "富国中证红利指数增强A",
+   "code": "100032",
+   "track": "其他/宽基",
+   "mv": 4.89,
+   "shares": "4.91"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "广发中证传媒ETF联接A",
+   "code": "004752",
+   "track": "其他/宽基",
+   "mv": 0.97,
+   "shares": "1.14"
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "帮你投-锐意进取",
+   "code": "",
+   "track": "其他/宽基",
+   "mv": 0.0,
+   "shares": ""
+  }
+ ]
+}

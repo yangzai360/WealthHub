@@ -317,8 +317,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件,actual_ret_1d 待 9/1(周二)收盘回填",
+   "actual_ret_1d": 0.66,
+   "note": "美股 9/1 收盘回填(XLV +0.66%, 新浪源)",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-01"
   }
@@ -344,8 +344,8 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件,actual_ret_1d 待 9/1(周二)收盘回填",
+   "actual_ret_1d": 0.66,
+   "note": "美股 9/1 收盘回填(XLV +0.66%, 新浪源)",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-01"
   }
