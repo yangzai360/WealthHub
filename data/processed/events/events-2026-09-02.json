@@ -20,7 +20,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.97,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -47,7 +47,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.97,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -74,7 +74,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.97,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -101,7 +101,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.97,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -128,7 +128,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.97,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -155,7 +155,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.85,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -182,7 +182,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.85,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -209,7 +209,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.85,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -236,7 +236,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.83,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -263,7 +263,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.83,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -290,7 +290,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.83,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -371,7 +371,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.74,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -398,7 +398,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.74,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -425,7 +425,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.74,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -452,7 +452,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -3.24,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -479,7 +479,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -3.24,
    "note": "盘前事件,actual_ret_1d 待 9/2(周三)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-02"
@@ -506,15 +506,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 149,
-    "track_avg": 0.03,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.62
-   }
+   "actual_ret_1d": -0.97,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -538,15 +532,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 135,
-    "track_avg": -0.29,
-    "track_worst": -3.61,
-    "track_best": 1.58,
-    "track_pos_ratio": 0.46
-   }
+   "actual_ret_1d": -0.74,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -570,15 +558,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 145,
-    "track_avg": 0.05,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -0.83,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -602,15 +584,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 145,
-    "track_avg": 0.05,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -0.83,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -634,15 +610,9 @@
    "ret_10d": null,
    "max_vol": 5.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 120,
-    "track_avg": 0.07,
-    "track_worst": -1.6,
-    "track_best": 2.5,
-    "track_pos_ratio": 0.61
-   }
+   "actual_ret_1d": -0.85,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -666,15 +636,9 @@
    "ret_10d": null,
    "max_vol": 3.2,
    "confidence": 52,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 6,
-    "track_avg": -0.56,
-    "track_worst": -1.6,
-    "track_best": 0.55,
-    "track_pos_ratio": 0.5
-   }
+   "actual_ret_1d": -3.24,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -698,15 +662,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 149,
-    "track_avg": 0.03,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.62
-   }
+   "actual_ret_1d": -0.97,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘"
   }
  },
  {
@@ -730,14 +688,272 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
+   "actual_ret_1d": -0.74,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘"
+  }
+ },
+ {
+  "id": "N20260902-027",
+  "date": "2026-09-02",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股收评（9/2）：三大指数缩量调整——沪指-0.97%报3,941.39失守3,950、深成指-1.88%报13,611.55、创业板指-2.39%报3,312.24、科创综指-1.37%；沪深京三市成交18,203亿缩量2,319亿创近5个月新低；1,541涨/3,901跌、54涨停/8跌停；地面兵装/军工装备/美容护理/厨卫电器领涨 vs 种植业/粮食概念/能源金属/煤炭领跌（军工主力净流入22亿、电网设备14.82亿居首）",
+  "summary": "9/2A股三大指数缩量调整，成交1.82万亿创近5个月新低，军工逆势走强主力净流入22亿",
+  "source": "WebSearch",
+  "source_url": "https://www.cnfin.com/yw-lb/detail/20260902/4464030_1.html",
+  "sentiment": "负面",
+  "score": 35,
+  "strength": 80,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "三大指数缩量调整、成交创阶段新低，市场情绪降温，宏观组合承压。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.97,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 149,
+    "track_avg": 0.03,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.62
+   }
+  }
+ },
+ {
+  "id": "N20260902-028",
+  "date": "2026-09-02",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股收盘（9/2，新华社口径）：恒指25,311.21（-0.07%）盘中逼近25,000后尾盘拉回、成交2,166.91亿港元；恒生科技4,517.16（-0.74%）盘中最低4,460后收复4,500；国企指数8,450.1（-0.15%）——美团+2.74%/小米+1%+ vs 快手-3%/百度-1%+/腾讯438.2（-0.72%）/阿里-0.45%；内银午后拉升中行创新高、中资券商普跌（中金-7%+）、宁德时代H-4.65%/蔚来-3%",
+  "summary": "港股尾盘收复失地，恒科4,517.16收复4,500防线（盘中最低4,460），内银撑市美团走强",
+  "source": "WebSearch",
+  "source_url": "https://news.qq.com/rain/a/20260902A0CE3G00",
+  "sentiment": "负面",
+  "score": 40,
+  "strength": 60,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "恒指与科技指数走弱，科技权重分化偏弱，恒生科技组合短线承压。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.74,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
     "track_n": 135,
     "track_avg": -0.29,
     "track_worst": -3.61,
     "track_best": 1.58,
     "track_pos_ratio": 0.46
+   }
+  }
+ },
+ {
+  "id": "N20260902-029",
+  "date": "2026-09-02",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "医药收盘（9/2）：医药生物板块-0.91%但CRO概念主力净流入11.24亿元、创新药局部逆势——药明康德收+1.03%报155.99（主力净流入6.3亿居两市前列、盘中最高157.70）、凯莱英+2.31%/科伦药业+2.47%/康龙化成获净流入；港股生物医药逆市走高：百济神州+2.91%报219.4港元（贡献恒指11.49点）、百奥赛图+11%/基石药业+8%；但恒瑞-1.43%/冀衡医药/神奇制药跌停——分化延续",
+  "summary": "医药生物-0.91%但CXO/创新药局部逆势，药明收+1.03%主力净流入6.3亿，港股百济+2.91%",
+  "source": "WebSearch",
+  "source_url": "https://www.hkcd.com.hk/hkcdweb/content/2026/09/02/content_8772910.html",
+  "sentiment": "正面",
+  "score": 58,
+  "strength": 50,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "医药整体仍调整但CRO/创新药获主力逆势流入，港股生物医药走强，结构性机会偏多。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.83,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 145,
+    "track_avg": 0.05,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.42
+   }
+  }
+ },
+ {
+  "id": "N20260902-030",
+  "date": "2026-09-02",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "白酒收盘（9/2）：龙头集体飘绿但幅度温和——茅台-0.16%报1,297.50（K线三连阳）、五粮液-1.41%报70.82、泸州老窖-1.09%、山西汾酒-1.98%、洋河-1.55%、古井贡酒-3.12%；一鸣食品跌停/欢乐家-5.31%；飞天茅台批价续涨：9/2原箱1,740元/散瓶1,720元均较昨日+5元（站稳1,700连续上行）；细分食品指数PE 20.68倍处近10年14.12%分位低位",
+  "summary": "白酒温和回调（茅台-0.16%三连阳/古井-3.12%偏弱），飞天批价+5元续涨站稳1,700，细分食品PE处近10年14%分位",
+  "source": "WebSearch",
+  "source_url": "https://finance.sina.com.cn/money/fund/etf/2026-09-02/doc-iniqmwqu2746059.shtml",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "低",
+  "reason": "白酒股温和调整但批价上移、估值低位，板块处于磨底阶段，方向不明。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.85,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 120,
+    "track_avg": 0.07,
+    "track_worst": -1.6,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.61
+   }
+  }
+ },
+ {
+  "id": "N20260902-031",
+  "date": "2026-09-02",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "中证主要消费收盘（9/2）：12,516.21（-0.85%）守住12,500防线（盘中最低12,535上方）——60万亿政策第2日兑现后回吐 vs 8/21基本面利空破位区分：12,500-12,600政策底区间观察、失守12,400才触发止盈；消费ETF添富（159928）-0.89%成交2.31亿元",
+  "summary": "中证消费12,516.21守住12,500，政策回吐第2日vs8/21破位区分，失守12,400才止盈",
+  "source": "WebSearch",
+  "source_url": "https://finance.sina.com.cn/money/fund/aiassistant/etfsp/2026-09-02/doc-iniqmmyw1314700.shtml",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 40,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "消费指数回踩但守住12,500支撑，政策底区间仍有博弈，等待方向确认。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.85,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 120,
+    "track_avg": 0.07,
+    "track_worst": -1.6,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.61
+   }
+  }
+ },
+ {
+  "id": "N20260902-032",
+  "date": "2026-09-02",
+  "track": "恒生科技",
+  "category": "业绩类",
+  "title": "美团Q2业绩超预期获花旗上调点评：收盘+2.74%报78.75港元（成交39.62亿、贡献恒指17.83点）——总收入同比+14.4%较市场预测高3.5pct、核心本地商业经营溢利改善至56.7亿元人民币远超市场预期34.2亿——港股科网中报超预期样本（与腾讯/阿里财报后走弱对比）",
+  "summary": "美团Q2业绩胜预期+2.74%，核心本地商业溢利56.7亿远超预期，港股科网中报超预期样本",
+  "source": "WebSearch",
+  "source_url": "https://www.toutiao.com/article/7680856320882328105/",
+  "sentiment": "正面",
+  "score": 80,
+  "strength": 70,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "美团业绩大超预期并获花旗上调，提振港股科技盈利预期，利好恒生科技组合。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.74,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 135,
+    "track_avg": -0.29,
+    "track_worst": -3.61,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.46
+   }
+  }
+ },
+ {
+  "id": "N20260902-033",
+  "date": "2026-09-02",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "创新药ETF资金面分歧（9/2）：创新药ETF银华（159992）收-0.71%——主力资金连续4个交易日净流出3.73亿元（8/27-9/1）但份额连续3日净申购（8/28-9/1累计净申购4.81亿份）；近5日累计-2.88%、CS创新药指数PE 43.68倍——主力流出vs份额流入分歧、政策底定价后资金博弈",
+  "summary": "创新药ETF主力连续4日净流出3.73亿但份额3日净申购4.81亿份，资金分歧延续",
+  "source": "WebSearch",
+  "source_url": "https://www.toutiao.com/article/7680871725235487274/",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 40,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "创新药ETF主力净流出但份额持续净申购，多空分歧明显，短期趋向震荡。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.83,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 145,
+    "track_avg": 0.05,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.42
+   }
+  }
+ },
+ {
+  "id": "N20260902-034",
+  "date": "2026-09-02",
+  "track": "宏观",
+  "category": "行业事件类",
+  "title": "亚太普跌+算力硬件重挫（9/2）：韩国综合指数收跌近4%、日经225跌近3%创近1个月新低——全球流动性收紧共振（日本10Y 3.01%创1996年新高/新西兰加息25bp）；A股光模块/算力方向集体重挫（中际旭创-4.29%但成交220.6亿居个股首位）、PCB逆势（沃特股份5天4板）——市场从『造算力』向『用算力赚钱』切换、高位算力硬件承压",
+  "summary": "韩综-4%/日经-3%亚太普跌，A股算力硬件重挫（中际旭创-4.29%）PCB逆势，资金向AI应用轮动",
+  "source": "WebSearch",
+  "source_url": "https://www.stcn.com/article/detail/4169175.html",
+  "sentiment": "负面",
+  "score": 25,
+  "strength": 80,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "全球流动性收紧共振导致亚太股市重挫，高位算力硬件深度调整，风险偏好明显下降。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": -0.97,
+   "actual_date": "2026-09-02",
+   "ret_1d_ref": "赛道指数/ETF收盘",
+   "track_stats": {
+    "track_n": 149,
+    "track_avg": 0.03,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.62
    }
   }
  }
