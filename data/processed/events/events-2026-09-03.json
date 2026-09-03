@@ -317,9 +317,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件,actual_ret_1d 待 9/3(周四)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
+   "actual_ret_1d": 0.18,
+   "note": "美股 9/3 收盘回填(XLV +0.18%)",
+   "ret_1d_ref": "美股收盘(XLV 173.26 +0.18%, 新浪源)",
    "actual_date": "2026-09-03"
   }
  },
@@ -344,9 +344,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件,actual_ret_1d 待 9/3(周四)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
+   "actual_ret_1d": 0.18,
+   "note": "美股 9/3 收盘回填(XLV +0.18%)",
+   "ret_1d_ref": "美股收盘(XLV 173.26 +0.18%, 新浪源)",
    "actual_date": "2026-09-03"
   }
  },
@@ -371,9 +371,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
-   "note": "盘前事件,actual_ret_1d 待 9/3(周四)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
+   "actual_ret_1d": 0.18,
+   "note": "美股 9/3 收盘回填(XLV +0.18%)",
+   "ret_1d_ref": "美股收盘(XLV 173.26 +0.18%, 新浪源)",
    "actual_date": "2026-09-03"
   }
  },
