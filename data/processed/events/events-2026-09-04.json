@@ -20,7 +20,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.3,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -47,7 +47,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.3,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -74,7 +74,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.3,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -101,7 +101,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 2.27,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -128,7 +128,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 2.27,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -155,7 +155,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 2.27,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -182,7 +182,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.08,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -209,7 +209,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.08,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -236,7 +236,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.08,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -290,7 +290,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 2.65,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -317,7 +317,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 2.65,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -344,7 +344,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.3,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -371,7 +371,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.3,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -398,7 +398,7 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.3,
    "note": "盘前事件,actual_ret_1d 待 9/4(周五)收盘回填",
    "ret_1d_ref": "赛道指数/ETF收盘",
    "actual_date": "2026-09-04"
@@ -425,8 +425,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.3,
+   "actual_date": "2026-09-04",
    "ret_1d_ref": {
     "track_n": 168,
     "track_avg": -0.03,
@@ -457,8 +457,8 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 2.27,
+   "actual_date": "2026-09-04",
    "ret_1d_ref": {
     "track_n": 148,
     "track_avg": -0.34,
@@ -489,8 +489,8 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 2.27,
+   "actual_date": "2026-09-04",
    "ret_1d_ref": {
     "track_n": 148,
     "track_avg": -0.34,
@@ -521,8 +521,8 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.08,
+   "actual_date": "2026-09-04",
    "ret_1d_ref": {
     "track_n": 159,
     "track_avg": 0.03,
@@ -553,8 +553,8 @@
    "ret_10d": null,
    "max_vol": 5.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 2.65,
+   "actual_date": "2026-09-04",
    "ret_1d_ref": {
     "track_n": 131,
     "track_avg": 0.02,
@@ -585,8 +585,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.3,
+   "actual_date": "2026-09-04",
    "ret_1d_ref": {
     "track_n": 168,
     "track_avg": -0.03,
@@ -617,8 +617,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.3,
+   "actual_date": "2026-09-04",
    "ret_1d_ref": {
     "track_n": 168,
     "track_avg": -0.03,
@@ -649,14 +649,270 @@
    "ret_10d": null,
    "max_vol": 6.48,
    "confidence": 64,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 2.0,
+   "actual_date": "2026-09-04",
    "ret_1d_ref": {
     "track_n": 12,
     "track_avg": -1.29,
     "track_worst": -3.24,
     "track_best": 0.55,
     "track_pos_ratio": 0.25
+   }
+  }
+ },
+ {
+  "id": "N20260904-024",
+  "date": "2026-09-04",
+  "track": "宏观",
+  "category": "行业事件类",
+  "title": "A股9/4收评(冲高回落): 沪指-0.30%报3,930.12、深成指-0.79%报13,516.97、创业板-0.78%报3,286.55——隔夜美股大涨/沃勒转鸽缓冲下高开冲高(最高3,980.20)后午后集体跳水翻绿; 成交2.03万亿放量2,718亿; 农业猪肉涨停潮(敦煌种业6天3板/亚盛2连板/新希望/牧原+9%)、AI应用(龙版传媒5连板)、白酒食品涨幅居前 vs 半导体重灾(HBM/PCB/CPO/覆铜板跌3-4%、华虹宏力/国科微下挫)、煤炭(郑州煤电跌停)",
+  "summary": "A股放量冲高回落收跌，午后集体跳水，半导体板块重灾，市场情绪明显转弱。",
+  "source": "WebSearch",
+  "source_url": "",
+  "sentiment": "负面",
+  "score": 35,
+  "strength": 80,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "A股放量冲高回落收跌，午后集体跳水，半导体板块重灾，市场情绪明显转弱。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": 90,
+   "actual_ret_1d": -0.3,
+   "actual_date": "2026-09-04",
+   "ret_1d_ref": {
+    "track_n": 168,
+    "track_avg": -0.03,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.61
+   }
+  }
+ },
+ {
+  "id": "N20260904-025",
+  "date": "2026-09-04",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股9/4收评: 恒指+1.74%报25,650.87、恒生科技+2.27%报4,569.80(收复4,500站稳)——科网普涨(同程/联想+6%/美团+5%/百度+4.81%报95.90/小米网易京东+3%/阿里腾讯+2%)、大金融全线走强(国有五大行本周创新高/内险+3%左右/中资券商+2%); 猪肉股牧原+9%; AI应用MINIMAX一度+11%; 全日成交2,768.57亿港元——但南向资金逢高撤离净卖出超100亿港元",
+  "summary": "港股科技股普涨，恒生科技收复4500点，大金融同步走强，市场情绪积极。",
+  "source": "WebSearch",
+  "source_url": "",
+  "sentiment": "正面",
+  "score": 75,
+  "strength": 70,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "港股科技股普涨，恒生科技收复4500点，大金融同步走强，市场情绪积极。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 7.22,
+   "confidence": 90,
+   "actual_ret_1d": 2.27,
+   "actual_date": "2026-09-04",
+   "ret_1d_ref": {
+    "track_n": 148,
+    "track_avg": -0.34,
+    "track_worst": -3.61,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.42
+   }
+  }
+ },
+ {
+  "id": "N20260904-026",
+  "date": "2026-09-04",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "恒生指数系列季度调整9/4收市正式生效(9/7起新成分股运作): 恒指新纳华虹宏力/潍柴动力, 恒生科技新纳天数智芯剔除同程旅行, 恒生综合指数由534只增至580只半导体/AI大幅扩容; 高盛测算将产生超72亿美元双向被动资金流, 科技硬件及半导体预计流入约8.7亿美元; 西部证券看国产AI产业链或存系统性重估",
+  "summary": "恒指系列调整纳入半导体/AI品种，高盛测算产生72亿美元被动资金流，利好科技硬件。",
+  "source": "WebSearch",
+  "source_url": "",
+  "sentiment": "正面",
+  "score": 72,
+  "strength": 75,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "恒指系列调整纳入半导体/AI品种，高盛测算产生72亿美元被动资金流，利好科技硬件。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 7.22,
+   "confidence": 90,
+   "actual_ret_1d": 2.27,
+   "actual_date": "2026-09-04",
+   "ret_1d_ref": {
+    "track_n": 148,
+    "track_avg": -0.34,
+    "track_worst": -3.61,
+    "track_best": 1.58,
+    "track_pos_ratio": 0.42
+   }
+  }
+ },
+ {
+  "id": "N20260904-027",
+  "date": "2026-09-04",
+  "track": "宏观",
+  "category": "行业事件类",
+  "title": "央行9/4晚间公告: 将于9/7开展5000亿元3个月期买断式逆回购(固定数量/利率招标/多重价位中标)——9月有5000亿元到期故为等量续作(零投放零回笼), A股午后跳水后晚间出手稳定流动性预期; 东方金诚: 政策向稳增长方向进一步发力, 不排除后期实施降准; 8月公开市场国债买卖净投放500亿",
+  "summary": "央行5000亿逆回购等量续作虽无净投放，但释放稳定流动性预期，并暗示可能降准，偏暖信号。",
+  "source": "WebSearch",
+  "source_url": "",
+  "sentiment": "正面",
+  "score": 55,
+  "strength": 60,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "央行5000亿逆回购等量续作虽无净投放，但释放稳定流动性预期，并暗示可能降准，偏暖信号。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": 90,
+   "actual_ret_1d": -0.3,
+   "actual_date": "2026-09-04",
+   "ret_1d_ref": {
+    "track_n": 168,
+    "track_avg": -0.03,
+    "track_worst": -2.4,
+    "track_best": 1.41,
+    "track_pos_ratio": 0.61
+   }
+  }
+ },
+ {
+  "id": "N20260904-028",
+  "date": "2026-09-04",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "中证主要消费9/4收盘+2.65%报12,809.57站上12,800(冲高回落但仍收强): 白酒Ⅱ+2.64%主力净流入9.87亿(茅台+2.40%报1,330.00/汾酒+4.79%/泸州老窖+5.16%/古井+4.56%/洋河+2.17%/五粮液+1.84%)黄酒涨停潮+猪产业(新希望涨停/温氏+6.15%)——『超跌反弹+估值修复+中秋动销』左侧布局第2日; 申万宏源: 白酒报表加速出清股价底部特征已验证、茅台价格Q1已筑底迎周期拐点、优质白酒公司已处于战略配置期",
+  "summary": "中证主要消费大涨2.65%，白酒、猪产业集体走强，资金流入明显，估值修复逻辑强化。",
+  "source": "WebSearch",
+  "source_url": "",
+  "sentiment": "正面",
+  "score": 80,
+  "strength": 75,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "中证主要消费大涨2.65%，白酒、猪产业集体走强，资金流入明显，估值修复逻辑强化。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 5.0,
+   "confidence": 90,
+   "actual_ret_1d": 2.65,
+   "actual_date": "2026-09-04",
+   "ret_1d_ref": {
+    "track_n": 131,
+    "track_avg": 0.02,
+    "track_worst": -1.6,
+    "track_best": 2.5,
+    "track_pos_ratio": 0.56
+   }
+  }
+ },
+ {
+  "id": "N20260904-029",
+  "date": "2026-09-04",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "A股医药9/4收跌: 医药生物板块-0.30%/医疗服务-1.51%——药明康德除息日(XD)-1.47%收153.83(可转债转股新增682.71万股H股、主力净流出6,883.55万、近5日主力净流入4.91亿)、博济医药-1.43%; A股医药冲高回落收跌 vs 港股生物科技持续走强(恒生生物科技+1.86%三日) A/H背离第5日以A股走弱收盘确认",
+  "summary": "A股医药收跌，医疗服务走弱，药明康德除息拖累，且A/H背离以A股走弱确认，短线承压。",
+  "source": "WebSearch",
+  "source_url": "",
+  "sentiment": "负面",
+  "score": 42,
+  "strength": 50,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "A股医药收跌，医疗服务走弱，药明康德除息拖累，且A/H背离以A股走弱确认，短线承压。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": 90,
+   "actual_ret_1d": -0.08,
+   "actual_date": "2026-09-04",
+   "ret_1d_ref": {
+    "track_n": 159,
+    "track_avg": 0.03,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.43
+   }
+  }
+ },
+ {
+  "id": "N20260904-030",
+  "date": "2026-09-04",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "国家医保局『十五五』发布会(9/4国新办): 2018年以来累计新增纳入949种药其中199种创新药; 将继续每年调整基本医保药品目录, 将更多肿瘤/慢性病/罕见病/儿童疾病等创新药纳入报销; 优化商保创新药目录——对超出基本医保范围/创新程度高/临床价值大/患者获益显著的创新药推荐商业医保先行支付; 持续扩大集采覆盖面但坚持『新药不集采, 集采非新药』; 2026医保国谈9/5明日启动为期4-5天",
+  "summary": "医保局明确扩大创新药纳入报销、支持商保支付且新药不集采，显著利好创新药板块。",
+  "source": "WebSearch",
+  "source_url": "",
+  "sentiment": "正面",
+  "score": 85,
+  "strength": 85,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "医保局明确扩大创新药纳入报销、支持商保支付且新药不集采，显著利好创新药板块。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": 90,
+   "actual_ret_1d": -0.08,
+   "actual_date": "2026-09-04",
+   "ret_1d_ref": {
+    "track_n": 159,
+    "track_avg": 0.03,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.43
+   }
+  }
+ },
+ {
+  "id": "N20260904-031",
+  "date": "2026-09-04",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "CRO/创新药中报景气拐点确认(东吴/中邮/安永): 365家A/H医药上市公司2026H1营收+5.31%/归母净利+22.89%; A股58家创新药样本H1收入/净利+21.3%/+88.8%(盈利拐点+BD增厚); 中邮: 临床CRO需求供给双改善景气拐点渐明(美迪西扭亏新签订单12.33亿+104.74%); 渤海: CXO订单修复有望走出底部、龙头企业上调全年指引——机构共识创新药及产业链仍是医药板块产业趋势最明确方向",
+  "summary": "创新药/CXO中报景气拐点确认，盈利高增且机构上调指引，行业信心显著增强。",
+  "source": "WebSearch",
+  "source_url": "",
+  "sentiment": "正面",
+  "score": 85,
+  "strength": 80,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "创新药/CXO中报景气拐点确认，盈利高增且机构上调指引，行业信心显著增强。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": 90,
+   "actual_ret_1d": -0.08,
+   "actual_date": "2026-09-04",
+   "ret_1d_ref": {
+    "track_n": 159,
+    "track_avg": 0.03,
+    "track_worst": -3.14,
+    "track_best": 4.5,
+    "track_pos_ratio": 0.43
    }
   }
  }
