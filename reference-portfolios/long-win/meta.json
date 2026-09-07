@@ -9,21 +9,21 @@
  "total_units": 150,
  "invested_units": 109,
  "snapshot": {
-  "nav_date": "2026-08-14",
-  "nav": 1.6923,
-  "daily_return": -0.0012,
-  "from_setup_return": 0.6923,
-  "annual_compounded_return": 0.0484,
+  "nav_date": "2026-09-07",
+  "nav": 1.678,
+  "daily_return": -0.0008,
+  "from_setup_return": 0.678,
+  "annual_compounded_return": 0.0473,
   "invested_acr": 0.0573,
   "max_drawdown": 0.1979,
-  "volatility": 0.1112,
-  "sharpe": 0.3006
+  "volatility": 0.1109,
+  "sharpe": 0.2914
  },
  "followers": {
   "joined": 444808,
-  "active": 128975
+  "active": 128008
  },
- "adjust_count": 261,
+ "adjust_count": 263,
  "benchmarks": [
   {
    "code": "hs300",
@@ -34,14 +34,14 @@
    "name": "中证500"
   }
  ],
- "updated": "2026-08-31",
- "nav": 1.6862,
- "navDate": "2026-08-28",
- "dailyReturn": -0.0002,
- "sharpe": 0.2962,
+ "updated": "2026-09-07",
+ "nav": 1.678,
+ "navDate": "2026-09-07",
+ "dailyReturn": -0.0008,
+ "sharpe": 0.2914,
  "maxDrawdown": 0.1979,
- "volatility": 0.1111,
- "annualCompoundedReturn": 0.0487,
+ "volatility": 0.1109,
+ "annualCompoundedReturn": 0.0473,
  "investedUnit": 109,
- "adjustedCount": 262
+ "adjustedCount": 263
 }

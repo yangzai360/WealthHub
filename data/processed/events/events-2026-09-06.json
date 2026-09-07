@@ -20,10 +20,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.07,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -47,10 +47,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.07,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -74,10 +74,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.07,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -101,10 +101,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.07,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -128,10 +128,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.07,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -155,10 +155,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.07,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -182,10 +182,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.92,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -209,10 +209,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.92,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -236,10 +236,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.92,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -263,10 +263,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.27,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -290,10 +290,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.27,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -317,10 +317,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.45,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -344,10 +344,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.45,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -371,10 +371,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.45,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "首个交易日(9/7)赛道收盘",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -398,10 +398,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.04,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "XLV 9/4 -1.04%(周末美股医药事件, 用最近美股交易日收盘)",
+   "actual_date": "2026-09-07"
   }
  },
  {
@@ -425,10 +425,10 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.04,
    "note": "周末事件,actual_ret_1d 待 9/7(周一)收盘回填",
-   "ret_1d_ref": "赛道指数/ETF收盘",
-   "actual_date": null
+   "ret_1d_ref": "XLV 9/4 -1.04%(周末美股医药事件, 用最近美股交易日收盘)",
+   "actual_date": "2026-09-07"
   }
  }
 ]
