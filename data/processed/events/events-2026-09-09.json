@@ -20,15 +20,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 202,
-    "track_avg": -0.03,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.62
-   }
+   "actual_ret_1d": 0.28,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -84,15 +78,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 202,
-    "track_avg": -0.03,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.62
-   }
+   "actual_ret_1d": 0.28,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -116,15 +104,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 202,
-    "track_avg": -0.03,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.62
-   }
+   "actual_ret_1d": 0.28,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -148,15 +130,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 202,
-    "track_avg": -0.03,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.62
-   }
+   "actual_ret_1d": 0.28,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -180,15 +156,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 171,
-    "track_avg": -0.31,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.4
-   }
+   "actual_ret_1d": -0.76,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -212,15 +182,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 171,
-    "track_avg": -0.31,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.4
-   }
+   "actual_ret_1d": -0.76,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -244,15 +208,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 184,
-    "track_avg": 0.04,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -1.21,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -276,15 +234,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 184,
-    "track_avg": 0.04,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -1.21,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -308,15 +260,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 184,
-    "track_avg": 0.04,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -1.21,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -340,15 +286,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 146,
-    "track_avg": 0.08,
-    "track_worst": -1.6,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.53
-   }
+   "actual_ret_1d": -0.56,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -372,15 +312,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 146,
-    "track_avg": 0.08,
-    "track_worst": -1.6,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.53
-   }
+   "actual_ret_1d": -0.56,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -404,15 +338,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 146,
-    "track_avg": 0.08,
-    "track_worst": -1.6,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.53
-   }
+   "actual_ret_1d": -0.56,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -436,15 +364,9 @@
    "ret_10d": null,
    "max_vol": 6.48,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 20,
-    "track_avg": -0.31,
-    "track_worst": -3.24,
-    "track_best": 2.0,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -2.44,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -468,15 +390,9 @@
    "ret_10d": null,
    "max_vol": 6.48,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 20,
-    "track_avg": -0.31,
-    "track_worst": -3.24,
-    "track_best": 2.0,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -2.44,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -500,15 +416,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 202,
-    "track_avg": -0.03,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.62
-   }
+   "actual_ret_1d": 0.28,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -532,15 +442,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 202,
-    "track_avg": -0.03,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.62
-   }
+   "actual_ret_1d": 0.28,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -564,15 +468,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 171,
-    "track_avg": -0.31,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.4
-   }
+   "actual_ret_1d": -0.76,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -596,15 +494,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 171,
-    "track_avg": -0.31,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.4
-   }
+   "actual_ret_1d": -0.76,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -628,15 +520,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 184,
-    "track_avg": 0.04,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -1.21,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -660,15 +546,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 184,
-    "track_avg": 0.04,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -1.21,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -692,15 +572,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 146,
-    "track_avg": 0.08,
-    "track_worst": -1.6,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.53
-   }
+   "actual_ret_1d": -0.56,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  },
  {
@@ -724,15 +598,177 @@
    "ret_10d": null,
    "max_vol": 6.48,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 20,
-    "track_avg": -0.31,
-    "track_worst": -3.24,
-    "track_best": 2.0,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -2.44,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
+  }
+ },
+ {
+  "id": "N20260909-024",
+  "date": "2026-09-09",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股收评（9/9）：沪指+0.28%报3,951.51、深成指+0.15%、创业板-0.14%（缩量1.86万亿较昨日-1,052亿）——煤炭（+2.98%云煤/郑州煤电/大有能源涨停）/航运（招商轮船涨停）/培育钻石领涨 vs 传媒/AI语料/游戏领跌（出版传媒跌停）；49股涨停9跌停、超3,600股下跌；国泰海通看多AI算力/中银国际看多医药",
+  "summary": "9/9新华财经/上证报收盘：沪深两市高开分化，沪指窄幅震荡收涨0.28%，深成指午后翻红+0.15%，创业板冲高回落-0.14%，科创50 -0.69%；成交18,556亿缩量1,052亿；涨跌比约1:2（1,792涨/3,642跌）。煤炭/航运/有色等涨价周期领涨（资源链接棒），AI应用/创新药题材调整拖累双创。机构：中银国际维持医药强于大市（中报后行业盈利修复趋势确立）。",
+  "source": "WebSearch",
+  "source_url": "https://www.cnstock.com/commonDetail/787770",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 15,
+  "direction": "中性",
+  "volatility": "低",
+  "reason": "中银国际看多医药提供一定情绪支撑，但市场缩量分化，资金聚焦煤炭航运，医药无实质驱动。",
+  "reference": {
+   "actual_ret_1d": 0.28,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
+  }
+ },
+ {
+  "id": "N20260909-025",
+  "date": "2026-09-09",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股收评（9/9）：恒指-0.17%报25,274.96、恒生科技-0.76%报4,420.79（3连跌）——高开低收：美团-3%/网易/京东-2%+ vs 百度+3%/光通信PCB走强（曦智科技+19.19%）；海底捞-9.14%续跌（舒萍减持）；南向净买37.2亿港元（沪28.17/深9.04）；主板成交2,049亿港元",
+  "summary": "9/9新华社/香港商报港股收盘：恒指高开低收3连跌-0.17%，恒生科技-0.76%收4,420.79（破4,500第2日、盘中低点4,398.28逼近4,400后尾盘略回收）；腾讯-0.32%收434；百度+3%（回购5,000万）；光通信PCB强（曦智科技+19.19%/汇聚科技+7.42%）；运动消费弱（李宁-6.04%）；内房闪崩（富力-15.92%/世茂-14.29%）；优地机器人上市首日+153.84%。南向净买37.2亿为连续第5日净流入。",
+  "source": "WebSearch",
+  "source_url": "https://my-h5news.app.xinhuanet.com/h5/article.html?articleId=202609091543334794744eed957ce99b42e55e78",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 10,
+  "direction": "中性",
+  "volatility": "低",
+  "reason": "港股小幅波动，资金聚焦光通信与互联网，医药板块未现独立信号。",
+  "reference": {
+   "actual_ret_1d": -0.76,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
+  }
+ },
+ {
+  "id": "N20260909-026",
+  "date": "2026-09-09",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "A股医药收盘全线走弱（9/9）：创新药概念-1.31%/300医药-1.42%/中证医疗-1.40%（6大细分全跌：医疗器械-1.75%/化学制药-1.68%领跌、医疗服务-0.76%抗跌）——『定价兑现后回调第1日』收盘确认：医疗ETF-1.17%/医药ETF广发-1.24%、主力净流出（创新药-24.1亿/生物医药-28.7亿）；精华制药+9.98%/百诚医药+5.86%逆势",
+  "summary": "9/9雪球/Wind医药收盘：A股医药显著弱于大盘普跌——中证医疗-1.40%收6,644.17、六大细分全部收跌（器械-1.75%/化药-1.68%领跌）；9/8主动基+1.85%定价兑现后回调第1日收盘确认（盘中医疗ETF-1.47%→收盘-1.17%尾盘略回收、仍未收复-1%兑现线）；主力净流出创新药-24.1亿/生物医药-28.7亿；逆势：精华制药+9.98%/百诚医药+5.86%/博腾股份+5.41%（CRO局部活跃）。",
+  "source": "WebSearch",
+  "source_url": "https://xueqiu.com/8545727982/408655806",
+  "sentiment": "负面",
+  "score": 28,
+  "strength": 70,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "医药板块全线回调，创新药、医疗器械领跌，主力资金大幅流出，定价兑现后进入调整。",
+  "reference": {
+   "actual_ret_1d": -1.21,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
+  }
+ },
+ {
+  "id": "N20260909-027",
+  "date": "2026-09-09",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "港股创新药大跌收盘（9/9）：恒生港股通创新药指数-2.52%（港股通创新药ETF汇添富标的-2.5%+、石药/中生制药-4%+/翰森-3%/信达/百济-2%+）——国谈收官日『定价预期兑现』+大市值创新药连续消化+结构性轮动回吐；诺华del-desiran首个III期失败（9/8）压制AOC赛道；百济泽布替尼新适应症申报上市为结构亮点",
+  "summary": "9/9界面新闻：港股创新药全线回调（国谈9/5-9/9收官后定价预期兑现、叠加前几日结构性轮动回吐）；恒生港股通创新药指数-2.52%领跌（石药/中生制药-4%+、翰森-3%+、信达/百济-2%+）；诺华Del-desiran（收购Avidity核心AOC资产）首个III期HARBOR研究未达主要终点压制AOC/创新药估值；百济泽布替尼MCL一线新适应症申报上市获受理为结构利多。",
+  "source": "WebSearch",
+  "source_url": "https://view.inews.qq.com/a/20260909A0AORS00",
+  "sentiment": "负面",
+  "score": 25,
+  "strength": 75,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "港股创新药指数大跌，国谈定价预期兑现叠加龙头获利回吐，AOC赛道III期失败加重结构性利空。",
+  "reference": {
+   "actual_ret_1d": -1.21,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
+  }
+ },
+ {
+  "id": "N20260909-028",
+  "date": "2026-09-09",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "恒生科技收盘4,420.79（-0.76%）破4,500第2日确认、减仓0.5%执行：盘中最低4,398.28逼近4,400整数关、尾盘略回收仍收于4,400上方——『收盘确认为准』规则执行（9/8收盘4,454.85破位→9/9低开续跌）；南向净买37.2亿连续第5日缓冲 vs 『利好兑现』惯性第4日+金龙弱",
+  "summary": "9/9恒生科技收盘：4,420.79（-0.76%）连续第2日收于4,500下方、盘中最低4,398.28逼近4,400——9/8收盘确认破位后今日低开直接执行减仓0.5%预案（约1,680元513180/012348）；南向9/9净买37.2亿（连续第5日、9/8净买61.28亿）为缓冲；压制=美团-3%/海底捞-9.14%（舒萍减持27.5亿）/『利好兑现』惯性（季检+港股通生效后无新催化）；联想+5.53%/百度+3.35%反弹为权重支撑。",
+  "source": "WebSearch",
+  "source_url": "https://www.hkcd.com.hk/hkcdweb/content/2026/09/09/content_8774020.html",
+  "sentiment": "负面",
+  "score": 35,
+  "strength": 70,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "恒生科技破位确认且减仓执行，南向资金连续净买但难抵下行压力",
+  "reference": {
+   "actual_ret_1d": -0.76,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
+  }
+ },
+ {
+  "id": "N20260909-029",
+  "date": "2026-09-09",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "茅台收盘-1.41%报1,290.88（白酒Ⅱ-1.38%）破1,300第2日 vs 批价背离：飞天散瓶1,720/原箱1,780-1,790连涨、精品2,461三连阳、自营店调价1,766执行中——11大单品终端总价10,028元连跌4日（五粮液普五-4至810/国窖-3至877 9月新低）高端稳次高端倒挂分化延续",
+  "summary": "9/9新浪酒价内参/腾讯行情：茅台收1,290.88（-1.41%）连续第2日收于1,300下方（9/8 1,309.30、9/7 1,316.01），白酒Ⅱ-1.38%；批价面：飞天散瓶1,720、原箱1,780-1,790（连涨）、精品2,461三连阳、自营店调价1,766执行中——股价与批价继续背离（批价真修复）；但11大单品终端总价10,028元较昨日-8元连跌4日（9/5高点后回落），五粮液普五-4至810/国窖-3至877（9月新低）——高端稳、次高端倒挂分化。",
+  "source": "WebSearch",
+  "source_url": "https://finance.sina.com.cn/7x24/2026-09-09/doc-iniresxy8919488.shtml",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 60,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "白酒股股价跌破关键位但茅台批价连涨，高端稳与次高端倒挂的分化格局相互对冲",
+  "reference": {
+   "actual_ret_1d": -0.56,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
+  }
+ },
+ {
+  "id": "N20260909-030",
+  "date": "2026-09-09",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "中证消费收盘12,704.26（-0.56%）守12,600（回调第1日收窄）：白酒Ⅱ-1.38%领跌（茅台-1.41%/老窖-2%+）vs 农业/猪产业逆势（厄尔尼诺+猪价）——12,600防线距104点（0.82%）安全；消费ETF添富-0.59%/富国消费主题9/9净值-0.86%（主动基白酒权重高弱于指数）",
+  "summary": "9/9中证消费收盘：12,704.26（-0.56%）回调第1日但收窄（盘中-0.95%最低12,653→尾盘收复部分），12,600防线距104点（0.82%）未触发兑现；结构：白酒Ⅱ-1.38%领跌（茅台-1.41%破1,300/老窖-2%+）vs 农业/黄酒（会稽山涨停）/猪产业逆势；主力净流出白酒；富国消费主题9/9净值-0.86%（主动基白酒权重高，弱于指数-0.56%）。",
+  "source": "WebSearch",
+  "source_url": "https://xueqiu.com/3319711749/408579937",
+  "sentiment": "中性",
+  "score": 48,
+  "strength": 40,
+  "direction": "中性",
+  "volatility": "低",
+  "reason": "消费指数回踩支撑但跌幅收窄，白酒领跌与农业逆势形成缓冲，暂未破位",
+  "reference": {
+   "actual_ret_1d": -0.56,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
+  }
+ },
+ {
+  "id": "N20260909-031",
+  "date": "2026-09-09",
+  "track": "A股医药",
+  "category": "业绩类",
+  "title": "创新药出海BD延续（9/9）：诺诚健华首款双抗ADC（ICP-B381 PSMA×STEAP1）获CDE批准临床+翰森口服IL-23受体拮抗剂对外授权首付款1.2亿美元（潜在总金额超21亿美元）——国产创新药国际化加速、WCLC大会临近国产ADC/双抗数据窗口打开",
+  "summary": "9/9腾讯新闻/东方财富证券：创新药出海BD延续——诺诚健华PSMA×STEAP1双抗ADC（ICP-B381）获CDE批准开展前列腺癌等实体瘤临床（首款双抗ADC/第三款ADC进临床）；翰森自研口服IL-23受体拮抗剂海外授权首付1.2亿美元、潜在总金额超21亿美元（平台国际竞争力验证）；东方财富证券：医药主线聚焦创新+出海，近期先声-罗氏/和黄-GSK等BD密集；WCLC大会临近国产ADC/双抗数据窗口打开有望催化新一轮行情。",
+  "source": "WebSearch",
+  "source_url": "https://new.qq.com/rain/a/20260909A08EW000?refer=cp_1009",
+  "sentiment": "正面",
+  "score": 85,
+  "strength": 80,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "国产创新药BD授权金额大且双抗ADC获批临床，国际化加速催化板块情绪",
+  "reference": {
+   "actual_ret_1d": -1.21,
+   "actual_date": "2026-09-09",
+   "ret_1d_ref": "9/9赛道收盘(ETF均值/指数/个股均值)"
   }
  }
 ]
