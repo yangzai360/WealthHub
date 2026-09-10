@@ -1,61 +1,62 @@
 {
  "date": "2026-09-10",
- "as_of": "2026-09-09收盘回填(XLV 9/9 -0.33% 回填 N20260909-002, 全库0留空)",
- "sample_stats": {
+ "total_events": 862,
+ "null_ret": 3,
+ "track_1d": {
   "A股医药": {
-   "n": 192,
-   "avg": -0.01,
+   "n": 197,
+   "avg": -0.04,
    "worst": -3.14,
    "best": 4.5,
-   "pos": 0.4,
-   "strong_pos_n": 86,
-   "strong_pos_avg": -0.14,
-   "strong_neg_n": 20,
-   "strong_neg_avg": -0.93
+   "pos": 0.39,
+   "strong_pos_n": 89,
+   "strong_pos_avg": -0.18,
+   "strong_neg_n": 22,
+   "strong_neg_avg": -0.96
   },
   "其他/宽基": {
-   "n": 23,
-   "avg": -0.59,
+   "n": 28,
+   "avg": -0.81,
    "worst": -3.24,
    "best": 2.0,
-   "pos": 0.48,
-   "strong_pos_n": 10,
-   "strong_pos_avg": 0.15,
+   "pos": 0.39,
+   "strong_pos_n": 12,
+   "strong_pos_avg": -0.18,
    "strong_neg_n": 6,
    "strong_neg_avg": -1.87
   },
   "大消费": {
-   "n": 152,
-   "avg": 0.05,
-   "worst": -1.6,
+   "n": 157,
+   "avg": -0.01,
+   "worst": -1.8,
    "best": 2.65,
-   "pos": 0.51,
-   "strong_pos_n": 53,
-   "strong_pos_avg": 0.27,
-   "strong_neg_n": 22,
-   "strong_neg_avg": -0.25
+   "pos": 0.49,
+   "strong_pos_n": 54,
+   "strong_pos_avg": 0.23,
+   "strong_neg_n": 25,
+   "strong_neg_avg": -0.43
   },
   "宏观": {
-   "n": 209,
-   "avg": -0.02,
+   "n": 217,
+   "avg": -0.03,
    "worst": -2.4,
    "best": 1.41,
-   "pos": 0.63,
+   "pos": 0.61,
    "strong_pos_n": 40,
    "strong_pos_avg": 0.1,
-   "strong_neg_n": 61,
-   "strong_neg_avg": -0.08
+   "strong_neg_n": 64,
+   "strong_neg_avg": -0.1
   },
   "恒生科技": {
-   "n": 177,
-   "avg": -0.32,
+   "n": 183,
+   "avg": -0.38,
    "worst": -3.61,
    "best": 2.27,
-   "pos": 0.39,
-   "strong_pos_n": 51,
-   "strong_pos_avg": 0.0,
-   "strong_neg_n": 31,
-   "strong_neg_avg": -0.8
+   "pos": 0.38,
+   "strong_pos_n": 52,
+   "strong_pos_avg": -0.04,
+   "strong_neg_n": 34,
+   "strong_neg_avg": -0.91
   },
   "美股标普医药": {
    "n": 77,
@@ -70,35 +71,39 @@
   }
  },
  "direction": {
-  "ok": 372,
-  "total": 621,
-  "pct": 59.9,
+  "ok": 389,
+  "total": 646,
+  "rate": 60.2,
   "by_track": {
    "A股医药": {
-    "ok": 83,
-    "total": 159
+    "ok": 85,
+    "total": 164
    },
    "恒生科技": {
-    "ok": 81,
-    "total": 127
+    "ok": 86,
+    "total": 133
    },
    "美股标普医药": {
     "ok": 39,
     "total": 60
    },
    "大消费": {
-    "ok": 80,
-    "total": 121
+    "ok": 84,
+    "total": 126
    },
    "宏观": {
-    "ok": 76,
-    "total": 137
+    "ok": 82,
+    "total": 143
    },
    "其他/宽基": {
     "ok": 13,
-    "total": 17
+    "total": 20
    }
   }
+ },
+ "today_verify": {
+  "ok": 17,
+  "total": 25
  },
  "win3": {
   "A股医药": {
@@ -115,7 +120,7 @@
   },
   "大消费": {
    "n": 129,
-   "avg": -0.09
+   "avg": -0.1
   },
   "宏观": {
    "n": 179,
