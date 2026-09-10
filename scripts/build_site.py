@@ -264,14 +264,26 @@ def build_charts():
                     continue
     charts["fund_navs"] = funds
     # 5) 情绪分析(赛道 → 强度均值)
+    # 注意: events/ 目录下除 events-*.json(事件列表) 外还有 event_stats_*.json(统计字典),
+    # 早期版本对 "*.json" 一律按列表迭代 → dict 迭代出字符串 key 导致
+    # AttributeError: 'str' object has no attribute 'get'，构建自 2026-09-03 起中断。
+    # 修复: 只读 events-*.json, 且做 列表/字典元素 双重类型防御。
     events = {}
-    for ej in glob.glob(os.path.join(PROC, "events", "*.json")):
+    for ej in glob.glob(os.path.join(PROC, "events", "events-*.json")):
         with open(ej, encoding="utf-8") as f:
-            for ev in json.load(f):
-                t = ev.get("track", "其他")
-                s = ev.get("strength")
-                if isinstance(s, (int, float)):
-                    events.setdefault(t, []).append(float(s))
+            try:
+                data = json.load(f)
+            except (ValueError, OSError):
+                continue
+        if not isinstance(data, list):
+            continue
+        for ev in data:
+            if not isinstance(ev, dict):
+                continue
+            t = ev.get("track", "其他")
+            s = ev.get("strength")
+            if isinstance(s, (int, float)):
+                events.setdefault(t, []).append(float(s))
     charts["sentiment"] = [
         {"name": k, "value": round(sum(v) / len(v), 1)} for k, v in sorted(events.items(), key=lambda x: -sum(x[1]) / len(x[1]))
     ] if events else []
