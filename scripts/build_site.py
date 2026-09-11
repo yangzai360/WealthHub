@@ -322,7 +322,12 @@ def build_grid_depth():
     total_units = 0
     cash_units = 0
     comp_by_code = {}   # fund_code -> {fund_name, variety_hint, unit, large_class}
-    for cls in comp.get("composition", []):
+    # 兼容三种快照结构(§: composition 在 camelCase 快照中退化为「汇总数组」, 明细在 compDetail):
+    #   旧格式  composition[] = {class_name, funds[]}
+    #   中格式  composition[] = {className, compList[]}
+    #   新格式  composition[] 仅汇总(className/unit/percent) + compDetail[] = {className, isCash, compList[]}
+    classes = comp.get("compDetail") or comp.get("composition", [])
+    for cls in classes:
         unit = cls.get("unit") or 0
         total_units += unit
         if _pick(cls, "is_cash", "isCash"):
