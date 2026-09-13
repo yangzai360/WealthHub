@@ -1,0 +1,401 @@
+[
+ {
+  "id": "N20260913-001",
+  "date": "2026-09-13",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "美国8月CPI同比+3.4%符合预期, 核心CPI环比+0.3%超预期——CME 9月加息概率69.6%→86.7%-90%",
+  "summary": "核心CPI环比超预期，加息预期升温，压制A/H风险偏好",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://www.stcn.com/article/detail/4182499.html",
+  "sentiment": "负面",
+  "score": 82,
+  "strength": 82,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "核心CPI环比超预期，加息预期升温，压制A/H风险偏好",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-002",
+  "date": "2026-09-13",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "美股9/11(美东周五)三大指数集体收涨终结四连跌: 道指+0.98%/标普+0.86%/纳指+0.96%, 医疗板块-0.14%为唯二下跌",
+  "summary": "美股反弹、油价回落，短线风险偏好修复但全周仍跌",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://www.cnfin.com/gs-lb/detail/20260912/4469035_1.html",
+  "sentiment": "正面",
+  "score": 58,
+  "strength": 58,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "美股反弹、油价回落，短线风险偏好修复但全周仍跌",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-003",
+  "date": "2026-09-13",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "密歇根大学9月消费者信心初值47.8大幅低于预期51.4与前值51.7",
+  "summary": "消费者信心走弱与波动率回落并存，宏观信号多空交织",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://www.cnfin.com/gs-lb/detail/20260912/4469035_1.html",
+  "sentiment": "中性",
+  "score": 45,
+  "strength": 45,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "消费者信心走弱与波动率回落并存，宏观信号多空交织",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-004",
+  "date": "2026-09-13",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "中东局势急变: 胡塞控制也门整个西部海岸+沙特东西输油管道遭袭预防性关闭+9/14阿曼会谈",
+  "summary": "中东冲突升级，油价运价飙升，通胀与供应链风险上升",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://www.cnstock.com/commonDetail/789406",
+  "sentiment": "负面",
+  "score": 78,
+  "strength": 78,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "中东冲突升级，油价运价飙升，通胀与供应链风险上升",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-005",
+  "date": "2026-09-13",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "习近平出席金砖国家领导人第十八次会晤(新德里)提5项倡议, 中国2027年接任金砖主席国",
+  "summary": "金砖合作深化、中印关系缓和，提振多边与科技合作预期",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://news.qq.com/rain/a/20260913A02WIA00",
+  "sentiment": "正面",
+  "score": 65,
+  "strength": 65,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "金砖合作深化、中印关系缓和，提振多边与科技合作预期",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-006",
+  "date": "2026-09-13",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "国常会强调完善算力基础设施与骨干光纤网络建设; 中国算力大会15项重大突破成果揭晓",
+  "summary": "算力基建与算电协同政策加码，利好光通信、算力与绿电",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://www.toutiao.com/article/7684924529931452974/",
+  "sentiment": "正面",
+  "score": 85,
+  "strength": 85,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "算力基建与算电协同政策加码，利好光通信、算力与绿电",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-007",
+  "date": "2026-09-13",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "证监会发布《期货公司监督管理办法》+查处*ST卓然财务造假启动退市; 8月线下消费支付金额同比+2.6%",
+  "summary": "严监管净化市场，线下消费连续回升，利好市场信心",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_2506aa663b366252",
+  "sentiment": "正面",
+  "score": 60,
+  "strength": 60,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "严监管净化市场，线下消费连续回升，利好市场信心",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-008",
+  "date": "2026-09-13",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "高盛转鹰预计美联储9月加息25bp; Anthropic拟IPO募资至多1000亿美元、英伟达或投100亿",
+  "summary": "高盛转鹰压制流动性，AI巨额融资与投资热度延续",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://news.qq.com/rain/a/20260913A02WIA00",
+  "sentiment": "中性",
+  "score": 55,
+  "strength": 55,
+  "direction": "中性",
+  "volatility": "高",
+  "reason": "高盛转鹰压制流动性，AI巨额融资与投资热度延续",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-009",
+  "date": "2026-09-13",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股本周连续5日调整: 恒指-3.30%报24,805.63/恒生科技-5.45%报4,320.57, 有色与大模型概念拖累",
+  "summary": "港股连续调整，外部流动性压制，科技与有色拖累",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://xueqiu.com/2753428279/409049370",
+  "sentiment": "负面",
+  "score": 78,
+  "strength": 78,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "港股连续调整，外部流动性压制，科技与有色拖累",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-010",
+  "date": "2026-09-13",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "南向资金9/11净买入44.31亿港元连续第5日; 7月以来净买入985.8亿港元, 恒指同期+8.41%领先全球",
+  "summary": "南向资金连续加仓，AI硬件与消费电子获资金支撑",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://www.163.com/dy/article/L6K512B70552C2FY.html",
+  "sentiment": "正面",
+  "score": 78,
+  "strength": 78,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "南向资金连续加仓，AI硬件与消费电子获资金支撑",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-011",
+  "date": "2026-09-13",
+  "track": "恒生科技",
+  "category": "政策类",
+  "title": "下周港股政策催化: 香港新一版施政报告与五年规划发布 + 中证港股通人工智能应用指数9/21发布",
+  "summary": "施政报告与AI应用指数发布，提供港股政策与主题催化",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://caifuhao.eastmoney.com/news/20260912000402132532840",
+  "sentiment": "正面",
+  "score": 66,
+  "strength": 66,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "施政报告与AI应用指数发布，提供港股政策与主题催化",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-012",
+  "date": "2026-09-13",
+  "track": "A股医药",
+  "category": "政策类",
+  "title": "2026医保国谈收官: 124个目录外药品入围、12个商保创新药, CAR-T首次进谈判场, 新版目录11月发布",
+  "summary": "医保国谈推进创新药放量与商保衔接，利好创新药链",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://www.toutiao.com/article/7684616304438821427/",
+  "sentiment": "正面",
+  "score": 68,
+  "strength": 68,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "医保国谈推进创新药放量与商保衔接，利好创新药链",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-013",
+  "date": "2026-09-13",
+  "track": "A股医药",
+  "category": "政策类",
+  "title": "国家药监局化学创新药工艺验证资料要求征求意见——全球同步申报品种可滚动提交, 利好创新药出海",
+  "summary": "滚动提交工艺验证缩短上市时间差，利好创新药出海",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_9636aa679d234252",
+  "sentiment": "正面",
+  "score": 78,
+  "strength": 78,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "滚动提交工艺验证缩短上市时间差，利好创新药出海",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-014",
+  "date": "2026-09-13",
+  "track": "A股医药",
+  "category": "业绩类",
+  "title": "创新药长周期逻辑验证: 科创板28家2025年首次整体扭亏, 百济神州26H1净利+627.1%, 出海升级为全球分账",
+  "summary": "创新药盈利与出海兑现，板块长周期逻辑强化",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://www.toutiao.com/article/7684616304438821427/",
+  "sentiment": "正面",
+  "score": 88,
+  "strength": 88,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "创新药盈利与出海兑现，板块长周期逻辑强化",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-015",
+  "date": "2026-09-13",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "飞天茅台批价企稳: 9/12散瓶1725(+5)/原箱1745(+5), 9/13持平; 五粮液普五批价790元",
+  "summary": "茅台批价企稳，高端白酒价格压力边际缓解",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://xueqiu.com/1553736910/409099609",
+  "sentiment": "正面",
+  "score": 58,
+  "strength": 58,
+  "direction": "利多",
+  "volatility": "低",
+  "reason": "茅台批价企稳，高端白酒价格压力边际缓解",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-016",
+  "date": "2026-09-13",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "茅台9/12启动企业直采通道: 飞天直供价1639元/瓶砍掉省代市代黄牛, 「全面向C」战略深化",
+  "summary": "茅台加码企业直采与向C，强化价格管控但渠道重构",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "",
+  "sentiment": "正面",
+  "score": 62,
+  "strength": 62,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "茅台加码企业直采与向C，强化价格管控但渠道重构",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-017",
+  "date": "2026-09-13",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "白酒板块本周-3.78%申万排名27/31; 56.6%经销商价格倒挂加剧、61.9%终端门店规模收缩; 8月酒类价格同比-2.9%",
+  "summary": "白酒动销弱、价格倒挂与资金流出，板块基本面承压",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/lastest/rptid/842621460148/index.phtml",
+  "sentiment": "负面",
+  "score": 82,
+  "strength": 82,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "白酒动销弱、价格倒挂与资金流出，板块基本面承压",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-018",
+  "date": "2026-09-13",
+  "track": "美股标普医药",
+  "category": "行业事件类",
+  "title": "美股医疗9/11为标普11大板块唯二下跌之一(-0.14%): XLV 165.36(-0.18%)/IYH 69.92(-0.11%)",
+  "summary": "加息预期压制高估值医疗，防御板块短线走弱",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "https://www.cnfin.com/gs-lb/detail/20260912/4469035_1.html",
+  "sentiment": "负面",
+  "score": 62,
+  "strength": 62,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "加息预期压制高估值医疗，防御板块短线走弱",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ },
+ {
+  "id": "N20260913-019",
+  "date": "2026-09-13",
+  "track": "美股标普医药",
+  "category": "行业事件类",
+  "title": "美股医药产业: Exelixis肠癌联合疗法NDA审评延期3个月; Vesremi获FDA扩大适应症; 类器官AI分析工具发表",
+  "summary": "FDA审批有喜有忧，罕见病与AI工具带来结构催化",
+  "source": "WebSearch(周末窗口)",
+  "source_url": "",
+  "sentiment": "中性",
+  "score": 52,
+  "strength": 52,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "FDA审批有喜有忧，罕见病与AI工具带来结构催化",
+  "reference": {
+   "actual_ret_1d": null,
+   "actual_date": null,
+   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+  }
+ }
+]

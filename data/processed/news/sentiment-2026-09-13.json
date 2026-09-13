@@ -1,0 +1,215 @@
+{
+ "date": "2026-09-13",
+ "window": "2026-09-11 18:00 - 2026-09-13 20:00 (周末)",
+ "items": [
+  {
+   "idx": 1,
+   "title": "美国8月CPI: 同比+3.4%(符合预期)/环比+0.4%(符合预期,6月来新高); 核心CPI同比+2.4%(符合预",
+   "track": "宏观",
+   "sentiment": "负面",
+   "strength": 82,
+   "confidence": 78,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "核心CPI环比超预期，加息预期升温，压制A/H风险偏好"
+  },
+  {
+   "idx": 2,
+   "title": "美股9/11(美东周五)三大指数集体收涨终结四连跌: 道指+0.98%报52,573.29/标普+0.86%报7,656",
+   "track": "宏观",
+   "sentiment": "正面",
+   "strength": 58,
+   "confidence": 62,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "美股反弹、油价回落，短线风险偏好修复但全周仍跌"
+  },
+  {
+   "idx": 3,
+   "title": "密歇根大学9月消费者信心初值47.8大幅低于预期51.4与前值51.7; 10Y美债4.974%(+0.5bp)/30Y",
+   "track": "宏观",
+   "sentiment": "中性",
+   "strength": 45,
+   "confidence": 50,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "消费者信心走弱与波动率回落并存，宏观信号多空交织"
+  },
+  {
+   "idx": 4,
+   "title": "中东局势急变: 胡塞武装称9/3来已攻占约5400平方公里、控制也门整个西部海岸并南推; 沙特东西输油管道9/10多次遭",
+   "track": "宏观",
+   "sentiment": "负面",
+   "strength": 78,
+   "confidence": 72,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "中东冲突升级，油价运价飙升，通胀与供应链风险上升"
+  },
+  {
+   "idx": 5,
+   "title": "习近平出席金砖国家领导人第十八次会晤(新德里): 9/12第一阶段会议讲话《共担时代责任 勇做先锋力量》, 9/13第二",
+   "track": "宏观",
+   "sentiment": "正面",
+   "strength": 65,
+   "confidence": 62,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "金砖合作深化、中印关系缓和，提振多边与科技合作预期"
+  },
+  {
+   "idx": 6,
+   "title": "国常会(9/11李强主持): 进一步完善算力基础设施, 加强算力资源监测调度和骨干光纤网络建设, 推动算电协同算网融合、",
+   "track": "宏观",
+   "sentiment": "正面",
+   "strength": 85,
+   "confidence": 85,
+   "direction": "利多",
+   "volatility": "高",
+   "brief": "算力基建与算电协同政策加码，利好光通信、算力与绿电"
+  },
+  {
+   "idx": 7,
+   "title": "证监会发布《期货公司监督管理办法》及配套实施公告; 严肃查处*ST卓然财务造假(罚公司1250万+6名责任人3580万+",
+   "track": "宏观",
+   "sentiment": "正面",
+   "strength": 60,
+   "confidence": 65,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "严监管净化市场，线下消费连续回升，利好市场信心"
+  },
+  {
+   "idx": 8,
+   "title": "高盛转鹰预计美联储9月加息25个基点; Anthropic拟IPO募资至多1000亿美元(估值约2万亿)、英伟达或投至多",
+   "track": "宏观",
+   "sentiment": "中性",
+   "strength": 55,
+   "confidence": 58,
+   "direction": "中性",
+   "volatility": "高",
+   "brief": "高盛转鹰压制流动性，AI巨额融资与投资热度延续"
+  },
+  {
+   "idx": 9,
+   "title": "港股本周(9/8-9/12)连续5日调整: 恒指收24,805.63(-0.60%,5日-3.30%,跌回25,000下",
+   "track": "恒生科技",
+   "sentiment": "负面",
+   "strength": 78,
+   "confidence": 82,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "港股连续调整，外部流动性压制，科技与有色拖累"
+  },
+  {
+   "idx": 10,
+   "title": "南向资金9/11净买入44.31亿港元连续第5日(5日合计约201.05亿); 7月以来南向净买入985.8亿港元(7月",
+   "track": "恒生科技",
+   "sentiment": "正面",
+   "strength": 78,
+   "confidence": 82,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "南向资金连续加仓，AI硬件与消费电子获资金支撑"
+  },
+  {
+   "idx": 11,
+   "title": "下周港股政策催化: 香港新一版施政报告与五年规划将发布(本地金融/地产/科技板块政策修复机会); 中证港股通人工智能应用",
+   "track": "恒生科技",
+   "sentiment": "正面",
+   "strength": 66,
+   "confidence": 72,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "施政报告与AI应用指数发布，提供港股政策与主题催化"
+  },
+  {
+   "idx": 12,
+   "title": "2026医保国谈收官(9/5-8基本医保目录现场谈判+9/9商保创新药目录价格协商): 124个目录外药品入围谈判竞价(",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 68,
+   "confidence": 72,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "医保国谈推进创新药放量与商保衔接，利好创新药链"
+  },
+  {
+   "idx": 13,
+   "title": "国家药监局就化学创新药工艺验证资料要求征求意见: 普通口服固体制剂全球同步申报品种上市申请阶段可仅提交工艺验证方案、审评",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 78,
+   "confidence": 82,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "滚动提交工艺验证缩短上市时间差，利好创新药出海"
+  },
+  {
+   "idx": 14,
+   "title": "创新药长周期逻辑验证: 科创板28家创新药上市公司2025年合计营收+约30%并首次整体扭亏(归母净利约16亿); 百济",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 88,
+   "confidence": 86,
+   "direction": "利多",
+   "volatility": "高",
+   "brief": "创新药盈利与出海兑现，板块长周期逻辑强化"
+  },
+  {
+   "idx": 15,
+   "title": "飞天茅台批价企稳: 9/12散瓶1725元(+5)/原箱1745元(+5), 9/13持平(散瓶1725/原箱1745)",
+   "track": "大消费",
+   "sentiment": "正面",
+   "strength": 58,
+   "confidence": 65,
+   "direction": "利多",
+   "volatility": "低",
+   "brief": "茅台批价企稳，高端白酒价格压力边际缓解"
+  },
+  {
+   "idx": 16,
+   "title": "茅台9/12启动企业直采通道: 纳税达标企业凭营业执照与纳税证明直接与总部签约, 飞天/精品/生肖全系列厂价直供、飞天直",
+   "track": "大消费",
+   "sentiment": "正面",
+   "strength": 62,
+   "confidence": 65,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "茅台加码企业直采与向C，强化价格管控但渠道重构"
+  },
+  {
+   "idx": 17,
+   "title": "白酒板块本周(9/7-11)跌3.78%, 申万行业排名27/31、跑输沪深300约2.95pct; 9/11主力净流出",
+   "track": "大消费",
+   "sentiment": "负面",
+   "strength": 82,
+   "confidence": 84,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "白酒动销弱、价格倒挂与资金流出，板块基本面承压"
+  },
+  {
+   "idx": 18,
+   "title": "美股医疗9/11(美东周五)为标普11大板块唯二下跌之一(-0.14%, 公用事业-0.34%): XLV 165.36",
+   "track": "美股标普医药",
+   "sentiment": "负面",
+   "strength": 62,
+   "confidence": 68,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "加息预期压制高估值医疗，防御板块短线走弱"
+  },
+  {
+   "idx": 19,
+   "title": "美股医药产业: FDA通知Exelixis其Zanzalintinib联合阿替利珠单抗治疗转移性结直肠癌NDA审评延期3",
+   "track": "美股标普医药",
+   "sentiment": "中性",
+   "strength": 52,
+   "confidence": 58,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "FDA审批有喜有忧，罕见病与AI工具带来结构催化"
+  }
+ ]
+}

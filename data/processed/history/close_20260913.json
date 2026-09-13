@@ -1,0 +1,69 @@
+{
+ "date": "2026-09-13",
+ "us": [
+  {
+   "type": "us_index",
+   "date": "2026-09-13",
+   "name": "美股医疗ETF(XLV)",
+   "code": "XLV",
+   "close": 165.36,
+   "pct_change": -0.18,
+   "note": "美股2026-09-11收盘(非交易日归档)"
+  },
+  {
+   "type": "us_index",
+   "date": "2026-09-13",
+   "name": "美股医疗IYH",
+   "code": "IYH",
+   "close": 69.92,
+   "pct_change": -0.11,
+   "note": "美股2026-09-11收盘(非交易日归档)"
+  },
+  {
+   "type": "us_index",
+   "date": "2026-09-13",
+   "name": "纳指100ETF(QQQ)",
+   "code": "QQQ",
+   "close": 714.88,
+   "pct_change": 0.87,
+   "note": "美股2026-09-11收盘(非交易日归档)"
+  },
+  {
+   "type": "us_index",
+   "date": "2026-09-13",
+   "name": "道指ETF(DIA)",
+   "code": "DIA",
+   "close": 525.79,
+   "pct_change": 0.97,
+   "note": "美股2026-09-11收盘(非交易日归档)"
+  },
+  {
+   "type": "us_index",
+   "date": "2026-09-13",
+   "name": "纳斯达克",
+   "code": ".IXIC",
+   "close": 26333.04,
+   "pct_change": 0.96,
+   "note": "美股2026-09-11收盘(非交易日归档)"
+  },
+  {
+   "type": "us_index",
+   "date": "2026-09-13",
+   "name": "道琼斯",
+   "code": ".DJI",
+   "close": 52573.29,
+   "pct_change": 0.98,
+   "note": "美股2026-09-11收盘(非交易日归档)"
+  },
+  {
+   "type": "us_index",
+   "date": "2026-09-13",
+   "name": "标普500",
+   "code": ".INX",
+   "close": 7656.98,
+   "pct_change": 0.86,
+   "note": "美股2026-09-11收盘(非交易日归档)"
+  }
+ ],
+ "note": "非交易日(周日)，仅归档美股9/11收盘"
+}

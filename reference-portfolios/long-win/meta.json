@@ -9,15 +9,15 @@
  "total_units": 150,
  "invested_units": 109,
  "snapshot": {
-  "nav_date": "2026-09-07",
-  "nav": 1.678,
-  "daily_return": -0.0008,
-  "from_setup_return": 0.678,
-  "annual_compounded_return": 0.0473,
-  "invested_acr": 0.0573,
+  "nav_date": "1789056000",
+  "nav": 1.6578,
+  "daily_return": -0.0063,
+  "from_setup_return": 0.6578,
+  "annual_compounded_return": 0.0461,
+  "invested_acr": null,
   "max_drawdown": 0.1979,
   "volatility": 0.1109,
-  "sharpe": 0.2914
+  "sharpe": 0.2808
  },
  "followers": {
   "joined": 444808,
@@ -34,14 +34,15 @@
    "name": "中证500"
   }
  ],
- "updated": "2026-09-07",
- "nav": 1.678,
- "navDate": "2026-09-07",
- "dailyReturn": -0.0008,
- "sharpe": 0.2914,
+ "updated": "2026-09-13",
+ "nav": 1.657848,
+ "navDate": "2026-09-10",
+ "dailyReturn": -0.006263,
+ "sharpe": 0.2808,
  "maxDrawdown": 0.1979,
  "volatility": 0.1109,
- "annualCompoundedReturn": 0.0473,
+ "annualCompoundedReturn": 0.0461,
  "investedUnit": 109,
- "adjustedCount": 263
+ "adjustedCount": 263,
+ "nav_date": "2026-09-10"
 }
