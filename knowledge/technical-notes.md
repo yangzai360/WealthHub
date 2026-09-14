@@ -947,4 +947,24 @@ content = result['choices'][0]['message']['content']
 - **盘前档执行链路无新坑**：DeepSeek 情绪标注 27 条分 4 批（每批 7 条）**一次成功无空响应**，`results[bi + idx]` 全局偏移 key 生效（§3.72 教训有效）；事件库 track 手动归类赛道名；`event_stats` 的 3/5/10 日窗口按 indices.csv 序列计算（§3.78 口径修复后数值恢复正常：3 日美股医药 +0.36% 最强 / 恒科 -1.37% 最弱）。
 - 本次新增脚本：`fetch_preopen_20260914.py` / `build_news_20260914.py` / `sentiment_20260914.py` / `build_events_20260914.py` / `event_stats_20260914.py` / `calc_portfolio_preopen_20260914.py`
 
-*最后更新：2026-09-14（盘前）。环境或接口有变化时，先改本文件再执行任务。*
+### 3.80 🟡 场外基金「盘中估算净值」接口全线不可用（盘中档新坑）+ 且慢 playwright 兜底第 3 次 + 港股指数改 hq 直连（2026-09-14 盘中实测）
+
+- **⚠️ 盘中档场外基金估值无可用接口（新增，重要）**：本次盘中实测两条常用估值路径**均失败**：
+  - `https://fundgz.1234567.com.cn/js/<code>.js?rt=<ts>`（天天基金 JSONP 估值）→ 返回 **HTML 错误页**（非 JSONP），23 只基金全部为空
+  - `https://fundmobapi.eastmoney.com/FundMApi/FundVarietieValuationDetail.ashx?FCODE=<code>&deviceid=1&plat=Android&product=EFund&version=6.2.8` → HTTP 200 但 **`{"Datas":null,"ErrCode":0}`**
+  - **规避**：盘中档场外持仓**统一按对应场内 ETF / 板块指数做代理估算**，并在报告中明确标注「代理口径 + 成分权重」，不宣称是真实估算净值。**不要再浪费时间重试这两个估值接口。**
+  - **备用净值源（可作补抓，非估值）**：`https://hq.sinajs.cn/list=f_<6位代码>`（带 `Referer: https://finance.sina.com.cn/`）返回 `名称,单位净值,累计净值,前一交易日净值,净值日期,规模`（如 `大摩健康产业混合A,1.844,1.844,1.889,2026-09-11,7.87738`）——**T+1 历史净值，可用于净值补抓交叉校验**。
+- **🟡 `ak.stock_hk_index_spot_sina()` 本次返回空**（此前 §2.1 记录为可用）→ **改用新浪 hq 直连**（§3.74 规则：必须带 Referer）：
+  ```
+  GET https://hq.sinajs.cn/list=rt_hkHSI,rt_hkHSTECH   Headers: Referer: https://finance.sina.com.cn/
+  rt_hk 字段顺序： 代码,名称,今开,昨收,最高,最低,现价,涨跌额,涨跌幅%   ← 注意第 2 列是「名称」不是数字，解析易错
+  ```
+  **A股指数同法可用且更稳**：`list=sh000001,sz399001,sz399006,sh000300,sh000932`，字段顺序 `名称,今开,昨收,现价,最高,最低,成交量,成交额`（第 1 列即名称），**一次调用拿全、无 akshare spot 的间歇性缺条目问题，建议盘中档首选**。
+- **且慢 playwright 兜底第 3 次成功（§3.78 同型）**：REST pmdj 连续第 **69** 日空 body（v2/v1 全空），`scripts/qieman_pw_fallback.cjs` 一次跑通，捕获 `plan`（43.5KB 组合详情）、`nav-history`（196.7KB）、以及 20 条 **fund 级** adjustment 列表。**关键教训：playwright 抓到的小体积 adjustment 列表（7.3KB/20 条，adjustmentId 最大仅 649）是「单只基金的历史调仓」，不是全局调仓记录**——**判断「E大是否有新调仓」应看 `plan` 详情里的 `adjustedCount` 字段（本次 263，与本地一致 → 无新调仓）与本地 `adjustments.json` 最新 adj_id 比对**，切勿用那 20 条列表下结论。
+- **事件库 3/5/10 日窗口字段口径澄清**：事件条目内的 `reference.ret_3d/ret_5d/ret_10d` **始终为 null**（967 条全库验证），窗口统计由**独立脚本按赛道从价格序列计算**，产物落在 `data/processed/events/event_stats_YYYYMMDD.json` 的 `win3/win5/win10`。**盘中档无当日收盘数据 → 直接复用盘前档 as-of 前收盘口径的窗口值，并在报告注明 as-of 日期**，不要重算成 null 覆盖。
+- **盘中档组合估算口径（本次确立）**：基准用「最近一次盘后归档总资产」（本次 373,320.35），赛道代理涨跌：A股医药 = 医疗ETF/医药ETF广发/医药生物/创新药加权（本次 +1.70%）；其他/宽基按持仓明细逐项加权（广联达权重最大，约 39%）；QDII 按 0 并在下批兑现时修正；现金 0。**代理涨跌幅与贡献须在报告中逐条列明权重，避免被误读为真实净值。**
+- 本次新增脚本：`fetch_intraday_20260914.py` / `fetch_hq_intraday_20260914.py` / `sentiment_intraday_20260914.py` / `ingest_intraday_20260914.py`
+
+---
+
+*最后更新：2026-09-14（盘中）。环境或接口有变化时，先改本文件再执行任务。*
