@@ -15,9 +15,9 @@
   "volatility": "高",
   "reason": "核心CPI环比超预期，加息预期升温，压制A/H风险偏好",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -36,9 +36,9 @@
   "volatility": "中",
   "reason": "美股反弹、油价回落，短线风险偏好修复但全周仍跌",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -57,9 +57,9 @@
   "volatility": "中",
   "reason": "消费者信心走弱与波动率回落并存，宏观信号多空交织",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -78,9 +78,9 @@
   "volatility": "高",
   "reason": "中东冲突升级，油价运价飙升，通胀与供应链风险上升",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -99,9 +99,9 @@
   "volatility": "中",
   "reason": "金砖合作深化、中印关系缓和，提振多边与科技合作预期",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -120,9 +120,9 @@
   "volatility": "高",
   "reason": "算力基建与算电协同政策加码，利好光通信、算力与绿电",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -141,9 +141,9 @@
   "volatility": "中",
   "reason": "严监管净化市场，线下消费连续回升，利好市场信心",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -162,9 +162,9 @@
   "volatility": "高",
   "reason": "高盛转鹰压制流动性，AI巨额融资与投资热度延续",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -183,9 +183,9 @@
   "volatility": "高",
   "reason": "港股连续调整，外部流动性压制，科技与有色拖累",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -204,9 +204,9 @@
   "volatility": "中",
   "reason": "南向资金连续加仓，AI硬件与消费电子获资金支撑",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -225,9 +225,9 @@
   "volatility": "中",
   "reason": "施政报告与AI应用指数发布，提供港股政策与主题催化",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -246,9 +246,9 @@
   "volatility": "中",
   "reason": "医保国谈推进创新药放量与商保衔接，利好创新药链",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -267,9 +267,9 @@
   "volatility": "中",
   "reason": "滚动提交工艺验证缩短上市时间差，利好创新药出海",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -288,9 +288,9 @@
   "volatility": "高",
   "reason": "创新药盈利与出海兑现，板块长周期逻辑强化",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -309,9 +309,9 @@
   "volatility": "低",
   "reason": "茅台批价企稳，高端白酒价格压力边际缓解",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -330,9 +330,9 @@
   "volatility": "中",
   "reason": "茅台加码企业直采与向C，强化价格管控但渠道重构",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -351,9 +351,9 @@
   "volatility": "中",
   "reason": "白酒动销弱、价格倒挂与资金流出，板块基本面承压",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；A股/港股当日收盘）"
   }
  },
  {
@@ -372,9 +372,9 @@
   "volatility": "中",
   "reason": "加息预期压制高估值医疗，防御板块短线走弱",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.18,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；美股标普医药取最近美股交易日 XLV 9/11）"
   }
  },
  {
@@ -393,9 +393,9 @@
   "volatility": "中",
   "reason": "FDA审批有喜有忧，罕见病与AI工具带来结构催化",
   "reference": {
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "待 2026-09-14(周一)收盘回填"
+   "actual_ret_1d": -0.18,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（周末事件取次一交易日；美股标普医药取最近美股交易日 XLV 9/11）"
   }
  }
 ]

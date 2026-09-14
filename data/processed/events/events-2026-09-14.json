@@ -20,15 +20,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 227,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.58
-   }
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -52,15 +46,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 227,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.58
-   }
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -84,15 +72,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 227,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.58
-   }
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -116,15 +98,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 227,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.58
-   }
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -148,15 +124,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 227,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.58
-   }
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -180,15 +150,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 227,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.58
-   }
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -212,15 +176,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 227,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.58
-   }
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -244,15 +202,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 227,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.58
-   }
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -276,15 +228,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 205,
-    "track_avg": -0.11,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.38
-   }
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -308,15 +254,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 205,
-    "track_avg": -0.11,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.38
-   }
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -340,15 +280,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 205,
-    "track_avg": -0.11,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.38
-   }
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -372,15 +306,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 205,
-    "track_avg": -0.11,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.38
-   }
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -404,15 +332,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 205,
-    "track_avg": -0.11,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.38
-   }
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -436,15 +358,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 205,
-    "track_avg": -0.11,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.38
-   }
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -469,14 +385,8 @@
    "max_vol": 7.02,
    "confidence": 90,
    "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 81,
-    "track_avg": 0.07,
-    "track_worst": -2.52,
-    "track_best": 3.51,
-    "track_pos_ratio": 0.47
-   }
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
   }
  },
  {
@@ -501,14 +411,8 @@
    "max_vol": 7.02,
    "confidence": 90,
    "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 81,
-    "track_avg": 0.07,
-    "track_worst": -2.52,
-    "track_best": 3.51,
-    "track_pos_ratio": 0.47
-   }
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
   }
  },
  {
@@ -533,14 +437,8 @@
    "max_vol": 7.02,
    "confidence": 90,
    "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 81,
-    "track_avg": 0.07,
-    "track_worst": -2.52,
-    "track_best": 3.51,
-    "track_pos_ratio": 0.47
-   }
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
   }
  },
  {
@@ -564,15 +462,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 162,
-    "track_avg": -0.04,
-    "track_worst": -1.8,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.48
-   }
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -596,15 +488,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 162,
-    "track_avg": -0.04,
-    "track_worst": -1.8,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.48
-   }
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -628,15 +514,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 162,
-    "track_avg": -0.04,
-    "track_worst": -1.8,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.48
-   }
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -660,15 +540,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 162,
-    "track_avg": -0.04,
-    "track_worst": -1.8,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.48
-   }
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -692,15 +566,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 162,
-    "track_avg": -0.04,
-    "track_worst": -1.8,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.48
-   }
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -724,15 +592,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 188,
-    "track_avg": -0.38,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.37
-   }
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -756,15 +618,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 188,
-    "track_avg": -0.38,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.37
-   }
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -788,15 +644,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 188,
-    "track_avg": -0.38,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.37
-   }
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -820,15 +670,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 188,
-    "track_avg": -0.38,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.37
-   }
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -852,15 +696,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 188,
-    "track_avg": -0.38,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.37
-   }
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -885,9 +723,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -912,9 +750,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -939,9 +777,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -966,9 +804,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 75,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -993,9 +831,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1020,9 +858,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 60,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1047,9 +885,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1074,9 +912,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1101,9 +939,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1128,9 +966,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1155,9 +993,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1182,9 +1020,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 65,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1209,9 +1047,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1236,9 +1074,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1263,9 +1101,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 75,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1290,9 +1128,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 65,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1318,8 +1156,8 @@
    "max_vol": null,
    "confidence": 80,
    "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
   }
  },
  {
@@ -1345,8 +1183,8 @@
    "max_vol": null,
    "confidence": 85,
    "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
   }
  },
  {
@@ -1372,8 +1210,8 @@
    "max_vol": null,
    "confidence": 85,
    "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
   }
  },
  {
@@ -1399,8 +1237,8 @@
    "max_vol": null,
    "confidence": 80,
    "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
   }
  },
  {
@@ -1425,9 +1263,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1452,9 +1290,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 75,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  },
  {
@@ -1479,9 +1317,295 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 75,
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
+  }
+ },
+ {
+  "id": "N20260914-051",
+  "date": "2026-09-14",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股收评（9/14）：沪指-0.07%报3,885.33、深成指-0.64%报13,384.57、创业板指-1.10%报3,285.58、科创50 -1.62%——两市成交1.63万亿缩量3,427亿（创年内次低）；3,118家上涨/2,221家下跌（「指数弱、个股活」）；医药生物+2.22%领涨、汽车+0.97%、银行+0.83%次之，通信-2.91%、国防军工-1.70%、农林牧渔-1.50%领跌；主力净流入电子125.29亿/机械设备72.29亿/医药生物65.48亿居前，通信净流出50.54亿",
+  "summary": "9/14澎湃新闻/证券日报收盘：A股三大股指集体低开，早盘冲高转涨后回落（午市超3,500股上涨），午后快速走低后低位窄幅震荡。沪指-0.07%报3,885.33、深成指-0.64%报13,384.57、创业板指-1.10%报3,285.58、科创50 -1.62%报1,528.27。成交：两市及北交所16,292亿元，较前一交易日19,719亿元减少3,427亿元（沪市7,793亿/深市8,499亿），缩量至年内次低。广度：3,118家上涨/2,221家下跌/212家平盘，96只涨超9%、25只跌超9%——「指数弱、个股活」。资金：申万一级中电子+125.29亿、机械设备+72.29亿、医药生物+65.48亿获主力净流入居前；通信-50.54亿、国防军工-21.97亿、农林牧渔-16.74亿净流出居前。结构：医药生物开盘大幅拉升后领涨两市（近岸蛋白/万邦医药/百普赛斯/诺诚健华/乐心股份超10股涨停或涨超10%）；汽车股涨幅居前（安凯客车/山子高科/瑞玛精密/众泰/海马涨停）；银行继续强势（瑞丰/交行/重庆/江阴/北京银行涨超1%）；AI硬件侧核心标的普遍低迷，通信领跌（*ST实达跌停、鼎信通讯/广哈通信/中际旭创跌超5%）；培育钻石/氮化铝/网络安全劲升；农业/军工/传媒/煤炭/石化调整。",
+  "source": "澎湃新闻/证券日报",
+  "source_url": "https://www.toutiao.com/article/7685318553867780651/",
+  "sentiment": "中性",
+  "score": 45,
+  "strength": 45,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "指数缩量下跌但个股活跃，医药汽车领涨，通信军工承压",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 70,
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
+  }
+ },
+ {
+  "id": "N20260914-052",
+  "date": "2026-09-14",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "央行公布8月金融数据：M2余额356.81万亿同比+7.5%、社融存量464.8万亿同比+7.2%；8月社融增量1.66万亿、人民币贷款仅增600亿（住户贷款-2,029亿连续两月减少、企业贷款+2,600亿回归正增长）；前8月社融增量23.91万亿同比少2.64万亿；8月新发放企业贷款利率略低于3%、个人住房贷款利率约3.1%均处历史低位",
+  "summary": "9/14中国人民银行《2026年8月金融统计数据报告》：①总量：8月末M2余额356.81万亿元同比+7.5%、M1 115.77万亿元同比+4.1%、M0 14.83万亿元同比+11.2%；社融存量464.8万亿元同比+7.2%，均高于名义GDP增速。②增量：8月社会融资规模增加1.66万亿元，人民币贷款增加600亿元；前八个月人民币贷款增加10.44万亿元、社融增量累计23.91万亿元（比上年同期少2.64万亿）。③结构：8月住户贷款减少2,029亿（短期-1,219亿/中长期-822亿，连续两月减少）；企（事）业单位贷款增加2,600亿（短期-1,600亿/中长期+3,200亿/票据+1,000亿，回归正增长）；非银金融机构贷款减少436亿。④价格：8月新发放企业贷款加权平均利率略低于3%（同比低约0.2pct）、个人住房贷款加权平均利率约3.1%、5年期AAA级企业债到期收益率1.73%，均处历史低位。⑤结构变化：债券和股票融资在社融增量中占比超过贷款（对实体人民币贷款占社融存量59.9%、同比低1.3pct；政府债券占比22.3%、同比高1.2pct；企业债券占比7.9%、同比高0.2pct），普惠小微贷款余额38.13万亿同比+8.3%、不含房地产的服务业中长期贷款62.25万亿同比+9.3%。⑥解读：业内专家称金融总量合理增长、社融条件持续宽松，体现适度宽松货币政策取向；信贷结构持续优化，金融「五篇大文章」领域贷款保持两位数增速、增量占比提高至70%以上。",
+  "source": "中国人民银行/中国网财经",
+  "source_url": "https://finance.china.com.cn/money/20260914/6324268.shtml",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "信贷偏弱、住户贷款收缩，企业贷款转正，宏观中性偏谨慎",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 75,
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
+  }
+ },
+ {
+  "id": "N20260914-053",
+  "date": "2026-09-14",
+  "track": "其他/宽基",
+  "category": "行业事件类",
+  "title": "AI叙事突然降温引发全球芯片股集体下杀：Anthropic CEO达里奥·阿莫迪9/12发长文呼吁全行业放缓前沿模型能力提升（并提出「驻场评估/国家协同/全球协同」三步安全计划 + 150页RSI风险评估报告），OpenAI CEO奥特曼与马斯克公开支持并确认OpenAI不会在2026年启动IPO——软银-10.7%、铠侠-6.37%、SK海力士-6.35%、三星电子-4.05%、KOSPI-3.3%；A股光模块三巨头（易中天）市值蒸发约973亿、智谱-9.08%蒸发289亿、MiniMax-6.52%蒸发53亿，5家公司单日合计蒸发约1,315亿元",
+  "summary": "9/14新浪财经/21世纪经济报道：AI硬件股价集体大跌的起因是美国AI公司Anthropic CEO达里奥·阿莫迪9月12日发表长文，呼吁全行业放缓前沿AI模型能力提升速度，并提出「驻场评估、国家协同、全球协同」三步安全计划；同日Anthropic发布150页风险评估报告，强调模型递归式自我改进（RSI）的不可控风险。OpenAI CEO山姆·奥特曼与马斯克均公开支持，表示将引入第三方评估机制，奥特曼还确认OpenAI不会在2026年启动IPO。三巨头罕见站在同一立场引发市场对AI风险的担忧，亚太市场掀起抛售潮：日本铠侠收跌6.37%、软银集团收跌10.7%（当日跌幅最大的亚洲大型科技股之一）、东京电子跌约1%、日经225跌约0.8%；韩国SK海力士收跌6.35%、三星电子跌4.05%、KOSPI跌约3.3%。A股：光模块概念领跌——中际旭创-5.72%报873.00元、新易盛-4.99%报401.90元、天孚通信-1.91%；设备与PCB端东山精密-4.79%、鹏鼎控股-4.76%、罗博特科-2.81%、剑桥科技-2.49%；存储芯片长鑫科技/兆易创新/澜起科技跌超3%。港股：智谱收跌9.08%报721港元（市值蒸发约289亿，叠加刚启动约50亿美元融资含20亿美元配售+30亿美元可转债、配售价折让）、MiniMax跌6.52%报252.40港元（蒸发约53亿）、中际旭创H股-8.55%。关键限定：截至目前上述海外公司表态均停留在「口头倡议」与「上市节奏调整」层面，尚无云计算厂商或AI企业宣布削减资本开支、缩减订单或推迟数据中心建设的具体计划——**属叙事/情绪冲击而非基本面兑现，但对高估值AI叙事形成实质降温**。对持仓：恒生科技赛道AI概念股（智谱/MiniMax）直接承压，但权重科网（腾讯+0.51%/阿里）与医药生物主线对冲；广联达为软件属性，当日逆势+1.22%（不跟算力硬件跌）。",
+  "source": "新浪财经",
+  "source_url": "https://finance.sina.com.cn/roll/2026-09-14/doc-iniruxuy4544289.shtml.md",
+  "sentiment": "负面",
+  "score": 85,
+  "strength": 85,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "AI安全担忧发酵，OpenAI不IPO，全球芯片股重挫",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 85,
+   "actual_ret_1d": 1.61,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
+  }
+ },
+ {
+  "id": "N20260914-054",
+  "date": "2026-09-14",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "医药生物板块+2.22%领涨两市（478只成份股420只收涨、上涨比例约88%呈普涨格局），主力资金净流入65.48亿居申万一级第三；中证生科+2.72%、疫苗生物+2.23%位居ETF产品池涨幅前两位，CRO概念活跃（近岸蛋白/万邦医药双双20%涨停、诺诚健华涨超11%、美迪西涨超8%、百普赛斯涨近12%、乐心股份涨超10%）；机构：WCLC验证中国创新药临床价值与全球竞争力，积极把握回调后配置机会",
+  "summary": "9/14证券日报/腾讯新闻：申万医药生物板块上涨2.22%、涨幅居首（汽车+0.97%、银行+0.83%次之），478只成份股中420只收涨（上涨比例约88%），呈普涨格局；主力资金净流入65.48亿元，居申万一级行业第三（电子125.29亿/机械设备72.29亿之后）。细分：中证生科+2.72%、疫苗生物+2.23%（位居ETF产品池涨幅前两位）、医疗器械+0.32%；CRO概念活跃（近岸蛋白/万邦医药20%涨停、诺诚健华涨超11%、美迪西涨超8%）。消息面：2026年世界肺癌大会（WCLC）9/12-15在韩国首尔举行，多家国产药企密集交出重磅临床数据；中泰证券研报称WCLC集中展示多项肺癌领域临床进展、进一步验证中国创新药的临床价值和全球竞争力，可积极把握创新药回调后的配置机会；兴业证券称国内创新药全球竞争力持续提升、出海BD订单不断兑现、叠加临床数据密集披露，板块产业向上逻辑不变，看好管线优质龙头企业。资金面：医药板块前期调整充分、机构持仓处于低位，叠加创新药出海逻辑持续兑现，成为当日为数不多的增量方向。政策跟踪：2026年国家医保目录谈判竞价及商保创新药目录价格协商已启动，医保目录与商保目录预计11月发布、2027年1月1日起实施。对持仓：医药ETF广发+2.43%、医疗ETF+2.14%，场外广发医药卫生+2.02%、天弘医药100C+1.73%、融通医疗保健+3.63%、融通健康产业+1.48%——**A股医药单赛道当日+2.50%，为组合最大正贡献（+2,077元 / +0.56pct）**。",
+  "source": "证券日报",
+  "source_url": "https://www.toutiao.com/article/7685318553867780651/",
+  "sentiment": "正面",
+  "score": 88,
+  "strength": 88,
+  "direction": "利多",
+  "volatility": "高",
+  "reason": "医药普涨资金净流入，创新药CRO催化，短线利多。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 90,
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
+  }
+ },
+ {
+  "id": "N20260914-055",
+  "date": "2026-09-14",
+  "track": "A股医药",
+  "category": "政策类",
+  "title": "上海拓展职工医保个人账户使用范围（9/15起施行）：历年结余资金可用于支付《上海市非免疫规划疫苗集团采购中选产品目录》内非免疫规划疫苗（含被动免疫类生物制剂）费用及注射服务费，并支持医保家庭共济——支付端制度性扩容，直接催化当日疫苗板块走强（疫苗生物+2.23%）",
+  "summary": "9/14新华社/上海医保局官网：上海市医保局、市卫健委、市疾控局联合发布《关于本市职工医保个人账户历年结余资金支付非免疫规划疫苗费用有关事项的通知》，自2026年9月15日起，上海市职工医保个人账户历年结余资金支付范围拓展至《上海市非免疫规划疫苗集团采购中选产品目录》内的非免疫规划疫苗（含被动免疫类生物制剂）费用及注射服务费。适用规则：①仅限在上海市医保定点医疗机构接种；②职工医保参保人可直接使用本人历年结余资金，也可开通家庭共济给家人使用；③居民医保（中小学生/婴幼儿等）无个人账户，可通过组建家庭共济网使用家庭共济资金支付；④余额不足部分可用现金/银行卡/微信/支付宝自费补足；⑤免费剂次/赠送剂次或已由财政、工会、企业全额承担的，不重复支付。品种与价格由上海药品集团采购（GPO）平台公布。意义：属医保支付端对非免疫规划疫苗（HPV/流感/带状疱疹/肺炎等自费苗）的制度性扩容，直接激活个人账户「沉睡资金」；**当日疫苗生物指数+2.23%、中证生科+2.72%，疫苗与生物科技领涨医药板块**。与前期商保创新药目录过审率超93%、《国家基本药物目录（2026年版）》首次大规模纳入16种创新药形成「医保+商保+基药」三线支付端政策共振。",
+  "source": "上海市医疗保障局",
+  "source_url": "https://ybj.sh.gov.cn/zcjd/20260914/0c73e42a110a40bea0ebcc690a1cfebf.html",
+  "sentiment": "正面",
+  "score": 75,
+  "strength": 75,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "上海医保个账扩容至非免疫疫苗，利好疫苗支付端。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 85,
+   "actual_ret_1d": 2.29,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
+  }
+ },
+ {
+  "id": "N20260914-056",
+  "date": "2026-09-14",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "中证消费收12,324.03（-0.21%）守住12,300但未收复12,400（日内最高12,387.94/最低12,266.66）；白酒Ⅱ+0.11%报35,332.29、食品饮料+0.26%；贵州茅台1,277.96（+0.22%，主力净流出1.04亿、近3日累计净流出6.66亿）、五粮液69.85（+0.14%）、泸州老窖73.48（-0.20%）；吃喝板块逆市走高（莲花控股涨停、雪天盐业+5.13%、安德利+5.07%）；细分食品指数PE 20.34倍处近10年11.96%分位低位；国窖1573批价维持830-840元为千元价格带波动最小品牌",
+  "summary": "9/14新浪财经/网易财经/中财网收盘：中证消费12,324.03（-0.21%），日内最高12,387.94、最低12,266.66——**守住12,300防线但未收复12,400（9/11第5次破位后连续第2日位于12,400下方）**；白酒Ⅱ+0.11%报35,332.29、白酒概念2,911.20、食品饮料板块+0.26%。个股：贵州茅台1,277.96（+0.22%，成交21.17亿、振幅1.19%、总市值1.60万亿，当日主力净流出1.04亿、近3日累计净流出6.66亿、近5日累计净流出10.76亿）；五粮液69.85（+0.14%）、泸州老窖73.48（-0.20%）。吃喝板块逆市走高、大众品涨幅居前：莲花控股涨停（+10.02%）、雪天盐业+5.13%、安德利+5.07%；食品饮料ETF华宝（515710）标的细分食品指数收涨0.47%。估值：截至9/11细分食品指数PE 20.34倍，处近10年来11.96%分位点的低位。基本面：9/11泸州老窖投资者接待日，董事长刘淼表示低度国窖1573全国化布局是长期坚持的营销战略方向，28度高光销售收入突破2,000万元；国窖1573批价维持830-840元，是千元价格带波动最小的品牌。机构：中泰证券称白酒仍处主动去库存磨底期、看好行业底部反弹趋势；万联证券称1H2026食品饮料呈「边际改善+结构分化」，白酒渠道库存逐步去化、业绩跌幅收窄、底部信号更清晰。中秋动销：飞天茅台渠道进度达8成、9月配额到货后仍供不应求、批价稳在1,700元附近；五粮液批价微调至770-780元但回款顺畅、部分区域已达成全年目标；次高端300-800元持续承压，100-300元大众价格带动销同比恢复增长。对持仓：消费ETF添富-0.15%、汇添富主要消费A净值-0.20%、富国消费主题+0.55%——**大消费当日+0.14%（+103元）**。",
+  "source": "新浪财经/网易财经",
+  "source_url": "https://cj.sina.cn/article/norm_detail?url=https%3A%2F%2Ffinance.sina.com.cn%2Fmoney%2Ffund%2Fetf%2F2026-09-14%2Fdoc-iniruxuy4555919.shtml",
+  "sentiment": "中性",
+  "score": 45,
+  "strength": 45,
+  "direction": "中性",
+  "volatility": "低",
+  "reason": "消费指数小幅收跌，白酒资金流出，板块分化震荡。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 75,
+   "actual_ret_1d": -0.21,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
+  }
+ },
+ {
+  "id": "N20260914-057",
+  "date": "2026-09-14",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股收评（9/14）：恒生指数+0.45%报24,917.6（+111.97点，成交1,926.25亿港元）、国企指数+0.46%报8,284.58、恒生科技-0.06%报4,317.94——汽车板块普涨（广汽集团+8%+/零跑+4%+/奇瑞+3%+/吉利+3%）、生物医药走强（乐普生物+6%+/药明康德+5%/药明生物+4%+）；大模型概念下挫（智谱-9.08%/MINIMAX-W-6.52%）、光通信与半导体下跌（中际旭创H股-8.55%/剑桥科技-8%+/兆易创新-7%+/华虹宏力-4%+）；腾讯+0.51%报430.6港元、港交所+1.22%、汇丰+0.98%",
+  "summary": "9/14证券时报/新华社香港收盘：恒生指数涨111.97点（+0.45%）报24,917.6点，全日主板成交1,926.25亿港元；国企指数涨38.25点（+0.46%）报8,284.58点；恒生科技指数跌2.63点（-0.06%）报4,317.94点。板块：汽车普涨（广汽集团涨超8%——市场传中国一汽正推进入股广汽集团并就「持股联营」展开探讨、当日广汽A股停牌；零跑汽车+4%+、奇瑞汽车+3%+、吉利汽车+3%）；生物医药板块走强（乐普生物+6%+、药明康德+5%、药明生物+4%+）；大模型概念下挫（智谱-9.08%报721港元、MINIMAX-W-6.52%报252.40港元）；光通信与半导体下跌（中际旭创H股-8.55%报1,070港元、剑桥科技-8%+、兆易创新-7%+、华虹宏力-4%+）。蓝筹：腾讯控股+0.51%报430.6港元、香港交易所+1.22%报397.4港元、中国移动+0.38%、汇丰控股+0.98%；中资金融股中国银行+0.66%/建设银行+1.44%/工商银行+0.53%、中国平安-0.74%；石油石化中国石化-0.63%/中国石油-0.60%/中海油+0.33%。**结构特征：指数层面恒指走强（金融/汽车/医药），但恒生科技权重端被大模型概念与光通信拖累，收平（-0.06%）——组合恒生科技赛道当日-0.23%（-75元）**。",
+  "source": "证券时报/新华社",
+  "source_url": "https://www.stcn.com/article/detail/4184107.html",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "恒科微跌且内部分化，汽车医药强、大模型弱。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 80,
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
+  }
+ },
+ {
+  "id": "N20260914-058",
+  "date": "2026-09-14",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "南向资金9/14净买入44.72亿港元、连续第6日净买入（港股通沪+16.71亿/深+28.01亿，全天成交额724.64亿港元）——在内资持续流入与恒指走强背景下，恒生科技指数仍收平，显示权重端（大模型/光通信）承压与资金流向的背离",
+  "summary": "9/14证券时报·数据宝：9月14日南向资金全天成交额724.64亿港元，买入成交384.68亿港元、卖出成交339.96亿港元，成交净买入44.72亿港元，**连续6日净买入**。分渠道：港股通（沪）买入226.72亿/卖出210.01亿、净买入16.71亿；港股通（深）买入157.96亿/卖出129.95亿、净买入28.01亿。结合恒生指数当日+0.45%、恒生科技-0.06%，显示南向资金持续为港股提供底部支撑，但科技权重端（智谱/MiniMax/光通信）因AI叙事降温遭遇抛压，形成「资金净流入 vs 指数收平」的背离结构。对持仓：中概互联ETF（513050）-0.30%、恒指科技ETF（513180）-0.37%、天弘恒生科技联接净值-0.14%——**恒生科技赛道当日-0.23%**。",
+  "source": "证券时报",
+  "source_url": "https://www.stcn.com/article/detail/4184267.html",
+  "sentiment": "中性",
+  "score": 50,
+  "strength": 50,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "南向连续净流入，但恒科权重承压，资金与指数背离。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 75,
+   "actual_ret_1d": -0.06,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
+  }
+ },
+ {
+  "id": "N20260914-059",
+  "date": "2026-09-14",
+  "track": "美股标普医药",
+  "category": "宏观类",
+  "title": "美股9/14盘前：三大指数期货下跌（AI担忧 + 油价高企 + 美联储加息周），CME 9月加息25bp概率升至86.5%（上周59.4%）；英伟达盘前跌超2.47%、AMD/英特尔/美光/闪迪跌约5%、甲骨文跌超3%，TLT-0.25%、现货黄金跌至4,332.70美元；Summit Therapeutics（SMMT）因ivonescimab肺癌III期死亡风险较Keytruda降27%而盘前涨超4%；诺和诺德更名「Novo」且周一盘前再跌0.4%",
+  "summary": "9/14 Asianet Newsable/Basis Report/智通财经：①美股盘前：道指/标普500/纳指期货下跌，主因AI担忧（Anthropic/OpenAI放缓呼吁）+ 油价高企 + 美联储加息周；CME FedWatch显示9月加息25bp概率升至86.5%（上周59.4%）；FOMC会议9/15-16召开。Allianz首席经济顾问El-Erian称「本周美联储会议可能是多年来最棘手的一次，与其说关乎经济，不如说源于加息预期的突然转变（长端收益率飙升、债券融资供需失衡）」。TLT（20年+美债ETF）-0.25%，现货黄金跌至4,332.70美元/盎司。②AI芯片股盘前承压：英伟达跌超2.47%，AMD/英特尔/Marvell/美光/闪迪跌幅一度约5%，甲骨文跌超3%；Adobe/ServiceNow/Workday等软件股相对走强。③医药个股：Summit Therapeutics（SMMT）因ivonescimab在III期肺癌试验中较Keytruda降低27%死亡风险而盘前涨超4%（HARMONi-2：中位OS 30.8 vs 22.6个月、398名患者、中位随访36个月；PD-L1高表达亚组死亡风险降42%、低表达亚组HR 0.85置信区间跨1.0无统计显著性）；但基本面压力显著——现金6.9亿美元/年烧钱4.58亿美元（约18个月跑道）、6周内两次增发（6/10与7/23）、流通股做空比例26.4%，华尔街目标价29.08美元（较17.55美元高约66%）。④诺和诺德（NVO）推出以「Novo」为核心的全面品牌重塑（法定名称仍为Novo Nordisk A/S），并决定停止两项Ziltivekimab心血管试验（累计终止三项、削弱糖尿病与肥胖症之外的增长引擎）；股价上周录得2月以来最差单周、今年累跌约12%（2025年市值腰斩、创1984年以来最差年度表现），周一盘前再跌0.4%；礼来引用Q2 IQVIA数据控制60.9%肥胖症市场 vs 诺和诺德38.8%；中国近期批准Wegovy用于MASH（首个在华获批该肝病的GLP-1受体激动剂）。**对持仓：组合美股标普医药 QDII 已于9/14兑现9/11净值（-0.87%/-0.92%补更，含XLV 9/10 -0.55%与9/11 -0.18%）；今晚美股开盘为9/14定价首日。**",
+  "source": "Asianet Newsable",
+  "source_url": "https://newsable.asianetnews.com/markets/dow-s-p-500-nasdaq-futures-decline-amid-ai-concerns-rising-oil-prices-ahead-of-fed-rate-week-rum-orcl-smmt-uso-stocks-in-focus-articleshow-leegl5v",
+  "sentiment": "中性",
+  "score": 55,
+  "strength": 55,
+  "direction": "中性",
+  "volatility": "高",
+  "reason": "SMMT肺癌数据利好，但加息升温与美股期货下跌压制。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 70,
    "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": null
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
+  }
+ },
+ {
+  "id": "N20260914-060",
+  "date": "2026-09-14",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "国际油价维持高位：布伦特原油+3.1%报107.82美元/桶、WTI +3.2%报103.22美元/桶——胡塞武装袭击沙特吉赞省民宅与清真寺及军事基地、霍尔木兹海峡一船只被投射物击中起火、伊朗一商船遇袭1死4伤、沙特东西输油管道关闭（威胁全球4%供应，延布港库存仅够5-7天出口）、阿曼塞拉莱地区会议推迟；机构：若中断持续布油或上探120美元，JPMorgan测算每多一个月中断加价7-8美元/桶；IEA下调2026年石油需求预测（日均减少250万桶）形成中期对冲",
+  "summary": "9/14路透/经济时报/证券时报：布伦特原油期货涨3.21美元（+3.1%）报107.82美元/桶（亚市早盘一度涨超3%至107.73）、WTI涨3.17美元（+3.2%）报103.22美元/桶。驱动：①也门胡塞武装袭击沙特南部吉赞省民宅与清真寺（沙特国家媒体9/13发布损毁视频），并称打击了邻近省份一处沙特军事基地；②霍尔木兹海峡一船只被不明投射物击中起火、船员撤离（英国海上贸易行动办公室UKMTO通报），伊朗称其一艘商船在近海遇袭致1死4伤；③沙特东西输油管道9/11遭源自伊拉克的无人机袭击后预防性关闭，该管道帮助沙特绕开霍尔木兹海峡出口，其停运威胁高达全球4%的石油供应，延布港库存仅够5-7天出口；④胡塞武装9/11抵达战略要地丕林岛，收紧对曼德海峡（近月承载全球4%-5%供应）的控制；⑤阿曼外交部9/13晚宣布原定9/14在塞拉莱举行的地区会议推迟。上周油价因供应中断累计上涨8%、自7月以来首次突破100美元。机构观点：IG分析师Tony Sycamore称除非阿曼会谈取得可操作成果或东西管道迅速恢复，否则油价可能延续涨势至3月初119.48美元高点；高盛情景分析若船只袭击加剧油价或达120美元、若出口恢复正常则回落至80美元附近；JPMorgan测算每多一个月中断为布油加价7-8美元/桶、若持续三个月月均或达114美元；花旗将Q3布油均价预测由80美元上调至86美元。中期对冲：IEA大幅下调2026年石油需求预测（日均减少250万桶、疫情以来最大年度降幅）、OPEC连续第5次下调2026年需求增长预测。**对持仓：组合无油气赛道持仓，属纯负向敞口（输入性通胀→美债利率上行→压制高估值成长）。**",
+  "source": "路透/经济时报",
+  "source_url": "https://www.yahoo.com/finance/energy/articles/oil-prices-jump-more-3-224715375.html",
+  "sentiment": "负面",
+  "score": 88,
+  "strength": 88,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "地缘冲突推升油价，利空航空交运与大盘，利多油气。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 86,
+   "actual_ret_1d": -0.07,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
+  }
+ },
+ {
+  "id": "N20260914-061",
+  "date": "2026-09-14",
+  "track": "其他/宽基",
+  "category": "业绩类",
+  "title": "银行板块延续强势（瑞丰银行/交通银行/重庆银行/江阴银行/北京银行涨超1%）+ 汽车股涨幅居前（安凯客车/山子高科/瑞玛精密/众泰汽车/海马汽车涨停，广汽集团因重要事项未公告全天停牌、市场传中国一汽推进入股）；42家上市银行中32家实现营收净利双增长、17家净息差同比回升，上半年合计营收约3.14万亿元（+7.42%）——「哑铃策略」特征明显（银行高股息 + 中证1000/2000中小盘成长共振走强）",
+  "summary": "9/14证券日报/腾讯新闻：①银行板块继续强势，瑞丰银行、交通银行、重庆银行、江阴银行、北京银行等涨超1%；基本面上银行板块中报全面验证基本面修复——42家上市银行中32家实现营收净利双增长、17家净息差同比回升，上半年合计营收约3.14万亿元（同比+7.42%）。②汽车股涨幅居前，安凯客车、山子高科、瑞玛精密、众泰汽车、海马汽车等涨停；消息面上广汽集团因重要事项未公告9/14全天停牌，此前有市场消息称中国一汽正在推进入股广汽集团、双方正就「持股联营」计划展开探讨。③配置结构呈现典型「哑铃策略」：一头是银行代表的高股息低波动红利资产（银行AH ETF +0.72%、红利质量被连买7天），另一头是中证1000/2000代表的中小盘成长（中证2000 ETF +1.01%、中证1000 +0.55%）共振走强；消费80 +1.38%、CS电池 +1.30%。**对持仓：组合其他/宽基赛道当日+0.48%（+457元），广联达+1.22%、通威+1.99%为正贡献主力，证券ETF -0.57%、广发金融地产净值+0.27%、天弘证券保险-0.32%。**",
+  "source": "证券日报/腾讯新闻",
+  "source_url": "https://news.qq.com/rain/a/20260914A0B0M500",
+  "sentiment": "正面",
+  "score": 76,
+  "strength": 76,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "银行高股息与汽车重组共振，利多金融、汽车及中小盘。",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": null,
+   "confidence": 82,
+   "actual_ret_1d": 1.61,
+   "actual_date": "2026-09-14",
+   "ret_1d_ref": "9/14 收盘回填（A股/港股当日收盘口径）"
   }
  }
 ]

@@ -1,6 +1,6 @@
 {
  "date": "2026-09-14",
- "window": "2026-09-13 18:00 - 2026-09-14 07:30 (盘前) | 盘中(07:30-13:30) 追加 23 条",
+ "window": "2026-09-13 18:00 - 2026-09-14 07:30 (盘前) | 盘中(07:30-13:30) 追加 23 条 | 盘后(13:30-20:00) 追加 11 条",
  "items": [
   {
    "idx": 1,
@@ -597,6 +597,149 @@
    "brief": "恒科收复4300，南向与医药对冲压力",
    "source_url": "https://finance.sina.com.cn/jjxw/2026-09-14/doc-inirupew9493336.shtml",
    "window": "盘中(07:30-13:30)"
+  },
+  {
+   "idx": 51,
+   "title": "A股收评（9/14）：沪指-0.07%报3,885.33、深成指-0.64%报13,384.57、创业板指-1.10%报",
+   "track": "宏观",
+   "sentiment": "中性",
+   "strength": 45,
+   "confidence": 70,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "指数缩量下跌但个股活跃，医药汽车领涨，通信军工承压",
+   "source_url": "https://www.toutiao.com/article/7685318553867780651/",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 52,
+   "title": "央行公布8月金融数据：M2余额356.81万亿同比+7.5%、社融存量464.8万亿同比+7.2%；8月社融增量1.66",
+   "track": "宏观",
+   "sentiment": "中性",
+   "strength": 50,
+   "confidence": 75,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "信贷偏弱、住户贷款收缩，企业贷款转正，宏观中性偏谨慎",
+   "source_url": "https://finance.china.com.cn/money/20260914/6324268.shtml",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 53,
+   "title": "AI叙事突然降温引发全球芯片股集体下杀：Anthropic CEO达里奥·阿莫迪9/12发长文呼吁全行业放缓前沿模型能力",
+   "track": "其他/宽基",
+   "sentiment": "负面",
+   "strength": 85,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "AI安全担忧发酵，OpenAI不IPO，全球芯片股重挫",
+   "source_url": "https://finance.sina.com.cn/roll/2026-09-14/doc-iniruxuy4544289.shtml.md",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 54,
+   "title": "医药生物板块+2.22%领涨两市（478只成份股420只收涨、上涨比例约88%呈普涨格局），主力资金净流入65.48亿居",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 88,
+   "confidence": 90,
+   "direction": "利多",
+   "volatility": "高",
+   "brief": "医药普涨资金净流入，创新药CRO催化，短线利多。",
+   "source_url": "https://www.toutiao.com/article/7685318553867780651/",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 55,
+   "title": "上海拓展职工医保个人账户使用范围（9/15起施行）：历年结余资金可用于支付《上海市非免疫规划疫苗集团采购中选产品目录》内",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 75,
+   "confidence": 85,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "上海医保个账扩容至非免疫疫苗，利好疫苗支付端。",
+   "source_url": "https://ybj.sh.gov.cn/zcjd/20260914/0c73e42a110a40bea0ebcc690a1cfebf.html",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 56,
+   "title": "中证消费收12,324.03（-0.21%）守住12,300但未收复12,400（日内最高12,387.94/最低12,",
+   "track": "大消费",
+   "sentiment": "中性",
+   "strength": 45,
+   "confidence": 75,
+   "direction": "中性",
+   "volatility": "低",
+   "brief": "消费指数小幅收跌，白酒资金流出，板块分化震荡。",
+   "source_url": "https://cj.sina.cn/article/norm_detail?url=https%3A%2F%2Ffinance.sina.com.cn%2Fmoney%2Ffund%2Fetf%2F2026-09-14%2Fdoc-iniruxuy4555919.shtml",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 57,
+   "title": "港股收评（9/14）：恒生指数+0.45%报24,917.6（+111.97点，成交1,926.25亿港元）、国企指数+",
+   "track": "恒生科技",
+   "sentiment": "中性",
+   "strength": 50,
+   "confidence": 80,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "恒科微跌且内部分化，汽车医药强、大模型弱。",
+   "source_url": "https://www.stcn.com/article/detail/4184107.html",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 58,
+   "title": "南向资金9/14净买入44.72亿港元、连续第6日净买入（港股通沪+16.71亿/深+28.01亿，全天成交额724.6",
+   "track": "恒生科技",
+   "sentiment": "中性",
+   "strength": 50,
+   "confidence": 75,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "南向连续净流入，但恒科权重承压，资金与指数背离。",
+   "source_url": "https://www.stcn.com/article/detail/4184267.html",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 59,
+   "title": "美股9/14盘前：三大指数期货下跌（AI担忧 + 油价高企 + 美联储加息周），CME 9月加息25bp概率升至86.5",
+   "track": "美股标普医药",
+   "sentiment": "中性",
+   "strength": 55,
+   "confidence": 70,
+   "direction": "中性",
+   "volatility": "高",
+   "brief": "SMMT肺癌数据利好，但加息升温与美股期货下跌压制。",
+   "source_url": "https://newsable.asianetnews.com/markets/dow-s-p-500-nasdaq-futures-decline-amid-ai-concerns-rising-oil-prices-ahead-of-fed-rate-week-rum-orcl-smmt-uso-stocks-in-focus-articleshow-leegl5v",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 60,
+   "title": "国际油价维持高位：布伦特原油+3.1%报107.82美元/桶、WTI +3.2%报103.22美元/桶——胡塞武装袭击沙",
+   "track": "宏观",
+   "sentiment": "负面",
+   "strength": 88,
+   "confidence": 86,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "地缘冲突推升油价，利空航空交运与大盘，利多油气。",
+   "source_url": "https://www.yahoo.com/finance/energy/articles/oil-prices-jump-more-3-224715375.html",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 61,
+   "title": "银行板块延续强势（瑞丰银行/交通银行/重庆银行/江阴银行/北京银行涨超1%）+ 汽车股涨幅居前（安凯客车/山子高科/瑞玛",
+   "track": "其他/宽基",
+   "sentiment": "正面",
+   "strength": 76,
+   "confidence": 82,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "银行高股息与汽车重组共振，利多金融、汽车及中小盘。",
+   "source_url": "https://news.qq.com/rain/a/20260914A0B0M500",
+   "window": "盘后(13:30-20:00)"
   }
  ]
 }
