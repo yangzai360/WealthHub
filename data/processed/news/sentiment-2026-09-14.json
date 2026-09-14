@@ -1,0 +1,303 @@
+{
+ "date": "2026-09-14",
+ "window": "2026-09-13 18:00 - 2026-09-14 07:30 (盘前)",
+ "items": [
+  {
+   "idx": 1,
+   "title": "9/14亚太盘初风险资产转弱: 美股三大指数期货全线杀跌、纳指100期货大跌超1%; 贵金属集体走低; 国际油价大幅飙涨",
+   "track": "宏观",
+   "sentiment": "负面",
+   "strength": 70,
+   "confidence": 75,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "风险资产承压，油价飙升加剧通胀担忧"
+  },
+  {
+   "idx": 2,
+   "title": "沙特东西输油管道(利雅得段及麦地那段)9/10多次遭袭后预防性关闭, 交易商称若数日内不能恢复输送全球石油供应恐损失4%",
+   "track": "宏观",
+   "sentiment": "负面",
+   "strength": 85,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "原油供给危机升级，油气链利好但大盘承压"
+  },
+  {
+   "idx": 3,
+   "title": "中东外交进程受挫: 阿曼外交部9/13晚宣布原定9/14在塞拉莱举行的地区会议推迟(伊朗原称将讨论霍尔木兹海峡商运航线)",
+   "track": "宏观",
+   "sentiment": "负面",
+   "strength": 80,
+   "confidence": 80,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "中东局势恶化，航运受扰，避险情绪升温"
+  },
+  {
+   "idx": 4,
+   "title": "美联储9/15-16 FOMC进入最后定价窗口: 8月核心CPI环比+0.3%超预期后交易员预计本周加息概率约90%、年",
+   "track": "宏观",
+   "sentiment": "负面",
+   "strength": 80,
+   "confidence": 90,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "美联储加息预期强化，压制A/H风险偏好"
+  },
+  {
+   "idx": 5,
+   "title": "美股9/11(美东周五)三大指数终结四连跌: 道指+0.98%报52,573.29/标普+0.86%报7,656.98/",
+   "track": "宏观",
+   "sentiment": "正面",
+   "strength": 55,
+   "confidence": 65,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "美股反弹改善风险偏好，估值回落提供支撑"
+  },
+  {
+   "idx": 6,
+   "title": "A股指数样本与港股指数调整9/14集中生效: 科创50(调入睿创微纳/华丰科技/屹唐股份/影石创新/盛合晶微)与北证50",
+   "track": "宏观",
+   "sentiment": "中性",
+   "strength": 50,
+   "confidence": 80,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "指数调样引发被动资金流动，调入调出分化"
+  },
+  {
+   "idx": 7,
+   "title": "证监会批复同意中金公司吸收合并东兴证券、信达证券: 中金将通过新增股份方式吸收合并, 合并完成后两家券商依法解散、分支机",
+   "track": "宏观",
+   "sentiment": "正面",
+   "strength": 75,
+   "confidence": 85,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "券商并购整合落地，利好中金及券商板块"
+  },
+  {
+   "idx": 8,
+   "title": "9/14 17:00 中国金融数据密集公布: M2货币供应同比、人民币贷款余额同比、新增人民币贷款、社会融资规模; 另有",
+   "track": "宏观",
+   "sentiment": "中性",
+   "strength": 50,
+   "confidence": 65,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "金融数据待公布，线下消费连升略偏暖"
+  },
+  {
+   "idx": 9,
+   "title": "WCLC世界肺癌大会(9/12-9/15)9/14进入重磅临床数据集中读出窗口: 康方生物/荣昌生物/石药集团/恒瑞医药",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 78,
+   "confidence": 85,
+   "direction": "利多",
+   "volatility": "高",
+   "brief": "WCLC肺癌大会数据密集，双抗/ADC催化创新药"
+  },
+  {
+   "idx": 10,
+   "title": "两项医药重磅新规同时落地: 时隔八年全面焕新的《国家基本药物目录(2026年版)》收录药品794种、新增116种, 首次",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 78,
+   "confidence": 85,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "基药目录新增创新药，GCP接轨国际，利好创新药"
+  },
+  {
+   "idx": 11,
+   "title": "国产创新药BD出海持续升温: 迪哲医药舒沃替尼授权阿斯利康首付款6亿美元正式生效; 先声药业三特异性抗体授权罗氏潜在总交",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 82,
+   "confidence": 85,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "创新药BD出海升温，大额授权提振板块情绪"
+  },
+  {
+   "idx": 12,
+   "title": "第七批高值医用耗材集采落地: 覆盖23个品种, 19个品种中选率不低于80%, 拟中选企业承接原采购需求97.5%; 需",
+   "track": "A股医药",
+   "sentiment": "中性",
+   "strength": 55,
+   "confidence": 70,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "高值耗材集采落地，中选率高但价格承压"
+  },
+  {
+   "idx": 13,
+   "title": "医药中报与CDMO景气双向验证: 2026上半年医药上市公司累计收入同比+2.2%、利润总额+9.3%、扣非归母净利+1",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 82,
+   "confidence": 88,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "医药中报改善、CDMO订单高增，景气共振"
+  },
+  {
+   "idx": 14,
+   "title": "国家医保局「助力医药产业高质量发展媒体行」走进信达生物、恒瑞医药: 恒瑞表示过去十年产业跨越式发展依赖药审改革与医保改革",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 72,
+   "confidence": 80,
+   "direction": "利多",
+   "volatility": "低",
+   "brief": "医保改革畅通商业化，创新药入院预期改善"
+  },
+  {
+   "idx": 15,
+   "title": "美股医药9/11多空交织: Scholar Rock获FDA批准Isembyld(apitegromab)用于脊髓性肌萎",
+   "track": "美股标普医药",
+   "sentiment": "中性",
+   "strength": 50,
+   "confidence": 55,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "FDA新批与III期阳性对冲乳腺癌失败，板块多空交织。"
+  },
+  {
+   "idx": 16,
+   "title": "9/11标普医疗板块-0.14%为11大板块唯二下跌(仅强于公用事业-0.34%); XLV收165.36(-0.18%",
+   "track": "美股标普医药",
+   "sentiment": "负面",
+   "strength": 60,
+   "confidence": 50,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "标普医疗连续回调，大型药企情绪承压，利空医药板块。"
+  },
+  {
+   "idx": 17,
+   "title": "BioNTech将于9/14在WCLC公布gotistobart(CTLA-4抗体, Treg选择性清除)PRESERV",
+   "track": "美股标普医药",
+   "sentiment": "正面",
+   "strength": 55,
+   "confidence": 55,
+   "direction": "利多",
+   "volatility": "高",
+   "brief": "WCLC肺癌数据披露临近，阳性ORR带来催化但波动高。"
+  },
+  {
+   "idx": 18,
+   "title": "华创食饮白酒中秋动销系列一: 中秋备货开启, 行业有望从供给出清向供需再平衡转变, 呈「供给克制+需求弱修复」; 飞天茅",
+   "track": "大消费",
+   "sentiment": "中性",
+   "strength": 50,
+   "confidence": 85,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "白酒中秋动销分化，高端稳、次高端承压，整体弱修复。"
+  },
+  {
+   "idx": 19,
+   "title": "白酒价格拐点获机构确认: 茅台散瓶批价1720元、精品茅台2360元持平、15年茅台涨20元; 五粮液批价790元稳住、",
+   "track": "大消费",
+   "sentiment": "正面",
+   "strength": 65,
+   "confidence": 75,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "机构确认白酒价格拐点，悲观预期出清，配置窗口显现。"
+  },
+  {
+   "idx": 20,
+   "title": "茅台启动企业直采通道: 9/12起纳税达标企业凭营业执照与纳税证明直接与总部签约, 飞天/精品/生肖全系列厂价直供, 飞",
+   "track": "大消费",
+   "sentiment": "正面",
+   "strength": 60,
+   "confidence": 75,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "茅台企业直采强化渠道控价，利好直销与长期治理。"
+  },
+  {
+   "idx": 21,
+   "title": "白酒板块上周(9/7-9/11)跌3.78%、申万行业排名27/31、跑输沪深300约2.95个百分点; 招商中证白酒指",
+   "track": "大消费",
+   "sentiment": "负面",
+   "strength": 75,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "白酒板块领跌、资金流出，渠道倒挂加剧，短期承压。"
+  },
+  {
+   "idx": 22,
+   "title": "大众品出海加速: 安井食品携手印尼三林集团设厂(出资超3,750万美元); 海天味业完成对香港淘大收购、借其全球网络加速",
+   "track": "大消费",
+   "sentiment": "正面",
+   "strength": 75,
+   "confidence": 80,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "龙头出海与红利成长双主线，利好大众品龙头"
+  },
+  {
+   "idx": 23,
+   "title": "港股上周五(9/11)五连跌收官: 恒指-0.60%报24,805.63(周-3.30%, 失守25,000)、恒生科技",
+   "track": "恒生科技",
+   "sentiment": "负面",
+   "strength": 75,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "港股五连跌且恒科周最弱，短期风险偏好承压"
+  },
+  {
+   "idx": 24,
+   "title": "南向资金逆势大幅流入: 9/11净买入44.31亿港元连续第5日(全周合计约201.05亿港元, 前一周73.6亿); ",
+   "track": "恒生科技",
+   "sentiment": "正面",
+   "strength": 65,
+   "confidence": 80,
+   "direction": "利多",
+   "volatility": "高",
+   "brief": "南向加速流入支撑港股，但外资流出与沽空升温"
+  },
+  {
+   "idx": 25,
+   "title": "华泰港股策略(9/14): 9月FOMC前仍建议控制仓位、不做方向性押注, 靴子落地后再做方向押注; 配置上低波红利仍为",
+   "track": "恒生科技",
+   "sentiment": "中性",
+   "strength": 50,
+   "confidence": 75,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "FOMC前控仓不押注，红利底仓、创新药相对占优"
+  },
+  {
+   "idx": 26,
+   "title": "港股一级市场与指数调整: 年内港股已有108只新股挂牌、募资总额3,641.76亿港元居全球交易所前列(同比数量+60%",
+   "track": "恒生科技",
+   "sentiment": "正面",
+   "strength": 60,
+   "confidence": 70,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "港股融资活跃叠加科技/AI指数调整，利好相关标的"
+  },
+  {
+   "idx": 27,
+   "title": "AI硬件炒作降温信号: 金安国纪公告未与英伟达、华为有接触或业务合作(2024/2-2026/6股价涨超21倍、市值一度",
+   "track": "恒生科技",
+   "sentiment": "负面",
+   "strength": 80,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "公司澄清无英伟达合作，AI硬件概念炒作降温"
+  }
+ ]
+}
