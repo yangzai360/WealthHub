@@ -384,9 +384,9 @@
    "ret_10d": null,
    "max_vol": 7.02,
    "confidence": 90,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 1.45,
    "actual_date": "2026-09-14",
-   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
+   "ret_1d_ref": "9/15 盘前档兜底回填（美股 9/14 收盘口径 XLV +1.45%，§3.70）"
   }
  },
  {
@@ -410,9 +410,9 @@
    "ret_10d": null,
    "max_vol": 7.02,
    "confidence": 90,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 1.45,
    "actual_date": "2026-09-14",
-   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
+   "ret_1d_ref": "9/15 盘前档兜底回填（美股 9/14 收盘口径 XLV +1.45%，§3.70）"
   }
  },
  {
@@ -436,9 +436,9 @@
    "ret_10d": null,
    "max_vol": 7.02,
    "confidence": 90,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 1.45,
    "actual_date": "2026-09-14",
-   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
+   "ret_1d_ref": "9/15 盘前档兜底回填（美股 9/14 收盘口径 XLV +1.45%，§3.70）"
   }
  },
  {
@@ -1155,9 +1155,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 80,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 1.45,
    "actual_date": "2026-09-14",
-   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
+   "ret_1d_ref": "9/15 盘前档兜底回填（美股 9/14 收盘口径 XLV +1.45%，§3.70）"
   }
  },
  {
@@ -1182,9 +1182,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 85,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 1.45,
    "actual_date": "2026-09-14",
-   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
+   "ret_1d_ref": "9/15 盘前档兜底回填（美股 9/14 收盘口径 XLV +1.45%，§3.70）"
   }
  },
  {
@@ -1209,9 +1209,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 85,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 1.45,
    "actual_date": "2026-09-14",
-   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
+   "ret_1d_ref": "9/15 盘前档兜底回填（美股 9/14 收盘口径 XLV +1.45%，§3.70）"
   }
  },
  {
@@ -1236,9 +1236,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 80,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 1.45,
    "actual_date": "2026-09-14",
-   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
+   "ret_1d_ref": "9/15 盘前档兜底回填（美股 9/14 收盘口径 XLV +1.45%，§3.70）"
   }
  },
  {
@@ -1551,9 +1551,9 @@
    "ret_10d": null,
    "max_vol": null,
    "confidence": 70,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 1.45,
    "actual_date": "2026-09-14",
-   "ret_1d_ref": "待 2026-09-15 用 XLV 9/14 收盘回填（美股 9/14 未收盘）"
+   "ret_1d_ref": "9/15 盘前档兜底回填（美股 9/14 收盘口径 XLV +1.45%，§3.70）"
   }
  },
  {

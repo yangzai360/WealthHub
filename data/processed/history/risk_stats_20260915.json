@@ -1,0 +1,15 @@
+{
+ "date": "2026-09-15",
+ "chain_cum_pct": -4.57,
+ "chain_days": 28,
+ "w38_cum_pct": 0.68,
+ "w38_days": 1,
+ "sharpe": -3.62,
+ "sharpe_n": 28,
+ "daily_mean": -0.1643,
+ "daily_sd": 0.7504,
+ "max_dd_pct": -6.31,
+ "last5_cum_pct": -2.1,
+ "last10_cum_pct": -2.24,
+ "as_of": "9/14收盘"
+}
