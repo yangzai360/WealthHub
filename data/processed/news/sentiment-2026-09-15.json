@@ -364,6 +364,248 @@
    "direction": "中性",
    "volatility": "高",
    "brief": "AI多空交织，机构称属估值扰动非需求恶化。"
+  },
+  {
+   "idx": 34,
+   "title": "国新办10:00发布8月经济数据：规模以上工业增加值同比+5.2%(比上月加快0.7pct、环比+0.54%)、装备制造",
+   "track": "宏观",
+   "sentiment": "负面",
+   "strength": 72,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "消费投资大幅走弱，仅工业结构亮眼"
+  },
+  {
+   "idx": 35,
+   "title": "工信部、国家发改委联合印发《电子信息制造业发展『十五五』规划》：推动集成电路全链条攻关，发展高性能处理器、高密度存储器、",
+   "track": "宏观",
+   "sentiment": "正面",
+   "strength": 68,
+   "confidence": 78,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "集成电路十五五规划，利好半导体链"
+  },
+  {
+   "idx": 36,
+   "title": "特朗普就AI表态：AI进程的影响力远超石油、黄金，在其总统任期内AI产业不会被蓄意阻拦；受此影响隔夜美股跌幅收窄，9/1",
+   "track": "宏观",
+   "sentiment": "正面",
+   "strength": 62,
+   "confidence": 58,
+   "direction": "利多",
+   "volatility": "高",
+   "brief": "特朗普挺AI，对冲硬件链崩塌"
+  },
+  {
+   "idx": 37,
+   "title": "美方寻求与伊朗达成分步协议，国际油价隔夜回落；但国内期市午盘SC原油涨超6%、燃料油涨近2%、低硫燃料油与乙二醇涨超1%",
+   "track": "宏观",
+   "sentiment": "中性",
+   "strength": 55,
+   "confidence": 62,
+   "direction": "中性",
+   "volatility": "高",
+   "brief": "油价外弱内强，通胀与地缘并存"
+  },
+  {
+   "idx": 38,
+   "title": "FOMC(9/15-16)今日揭幕，CME显示9月加息25bp概率92.4%，决议北京时间9/17凌晨落地；隔夜shib",
+   "track": "宏观",
+   "sentiment": "中性",
+   "strength": 50,
+   "confidence": 78,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "FOMC前观望，两市成交缩量"
+  },
+  {
+   "idx": 39,
+   "title": "A股上午缩量震荡：沪指-0.10%报3881.41、深成指+0.04%、创业板指-0.18%、科创50+1.79%报15",
+   "track": "宏观",
+   "sentiment": "中性",
+   "strength": 45,
+   "confidence": 72,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "缩量分化，资金流入电子半导体"
+  },
+  {
+   "idx": 40,
+   "title": "WCLC(9/12-15)今日收官：中国新药入选口头报告19项、小型口头报告45项刷新历史纪录；翰森制药B7-H3 AD",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 68,
+   "confidence": 68,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "WCLC中国创新药创纪录，催化在即"
+  },
+  {
+   "idx": 41,
+   "title": "创新药盘中反弹乏力、资金持续离场：CS创新药指数午盘-0.64%、缩量74亿元；药明康德-0.74%、成交27亿缩量17",
+   "track": "A股医药",
+   "sentiment": "负面",
+   "strength": 65,
+   "confidence": 80,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "创新药缩量下跌资金持续离场"
+  },
+  {
+   "idx": 42,
+   "title": "9/14 ETF资金流：净流出TOP20合计约58.44亿元，创新药方向占4席合计净流出10.26亿元(港股创新药ETF",
+   "track": "A股医药",
+   "sentiment": "负面",
+   "strength": 70,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "创新药ETF遭赎回融资离场"
+  },
+  {
+   "idx": 43,
+   "title": "创新药出海维持高景气：2026年上半年中国License-out数量达100起、首付款50亿美元、交易总额997亿美元均",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 75,
+   "confidence": 75,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "创新药出海创纪录维持高景气"
+  },
+  {
+   "idx": 44,
+   "title": "医药个股进展：恒瑞医药SHR-2004注射液上市许可申请获国家药监局受理；博安生物BA1203(遮蔽型PD-1/IL-2",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 55,
+   "confidence": 75,
+   "direction": "利多",
+   "volatility": "低",
+   "brief": "恒瑞等研发进展利好医药"
+  },
+  {
+   "idx": 45,
+   "title": "A股医药板块盘中转跌：中证医药7,658.78(-0.64%)、中证医疗6,586.09(-0.19%)、医疗ETF 0",
+   "track": "A股医药",
+   "sentiment": "负面",
+   "strength": 50,
+   "confidence": 80,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "医药板块大涨后转跌消化"
+  },
+  {
+   "idx": 46,
+   "title": "8月社零同比仅+0.4%(机构预期+0.3%~+3.0%)、1-8月累计+1.1%，其中限额以上单位饮料类+4.9%、粮",
+   "track": "大消费",
+   "sentiment": "负面",
+   "strength": 75,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "社零大幅低于预期消费疲弱"
+  },
+  {
+   "idx": 47,
+   "title": "白酒终端零售价分化：11大单品六涨五跌，精品茅台+4元至2,459元(连续两日反弹)、青花汾20+6元至399元(三连阳",
+   "track": "大消费",
+   "sentiment": "中性",
+   "strength": 45,
+   "confidence": 75,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "白酒价格分化高端动销仍弱"
+  },
+  {
+   "idx": 48,
+   "title": "白酒批价：26年飞天散瓶1,730元(+5)、原箱1,750元、25年飞天1,760→1,770元；但高端年份酒明显回调",
+   "track": "大消费",
+   "sentiment": "负面",
+   "strength": 70,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "高端批价分化，次高端倒挂库存高"
+  },
+  {
+   "idx": 49,
+   "title": "华创食饮中秋动销系列一：中秋备货开启，行业从供给出清向供需再平衡转变，呈现供给克制、需求弱修复；飞天茅台渠道进度约8成、",
+   "track": "大消费",
+   "sentiment": "正面",
+   "strength": 55,
+   "confidence": 60,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "中秋弱修复，底部信号渐明"
+  },
+  {
+   "idx": 50,
+   "title": "白酒板块盘中表现：中证白酒6,230.41(-0.28%)、白酒Ⅱ板块指数35,254.73(-0.22%)、大消费板块",
+   "track": "大消费",
+   "sentiment": "负面",
+   "strength": 50,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "低",
+   "brief": "白酒板块弱势，主力净流出"
+  },
+  {
+   "idx": 51,
+   "title": "美股9/14(周一)收盘：标普500医疗保健板块+1.35%为11大板块涨幅前二(仅次于通信服务+2.79%)，XLV ",
+   "track": "美股标普医药",
+   "sentiment": "正面",
+   "strength": 70,
+   "confidence": 85,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "美股医药领涨，FDA批准及剥离"
+  },
+  {
+   "idx": 52,
+   "title": "欧股医药领涨：阿斯利康+3.81%、葛兰素史克+4.74%，富时100指数+0.44%由医药股驱动——美股+欧股医药板块",
+   "track": "美股标普医药",
+   "sentiment": "正面",
+   "strength": 65,
+   "confidence": 75,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "欧美医药共振，跨市场分化"
+  },
+  {
+   "idx": 53,
+   "title": "港股午盘：恒生指数-0.23%报24,859.45、恒生科技指数+0.76%报4,350.96、国企指数-0.15%报8",
+   "track": "恒生科技",
+   "sentiment": "正面",
+   "strength": 60,
+   "confidence": 85,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "恒科反弹，科网领涨但AI降温"
+  },
+  {
+   "idx": 54,
+   "title": "9/14 ETF资金流：恒生互联网ETF华夏净流出2.52亿元、恒生科技ETF华夏(513180)净流出2.50亿元，港",
+   "track": "恒生科技",
+   "sentiment": "负面",
+   "strength": 60,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "港股科技ETF净流出，资金承压"
+  },
+  {
+   "idx": 55,
+   "title": "港股承压项：内银股普跌(建行/招行跌逾2%、工行-1.76%，摩通称中国银行业8月信贷数据逊预期)、中资电讯股受压(联通",
+   "track": "恒生科技",
+   "sentiment": "负面",
+   "strength": 70,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "金融与新能源权重拖累恒指"
   }
  ]
 }
