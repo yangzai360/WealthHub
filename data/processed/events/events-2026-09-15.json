@@ -20,15 +20,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 252,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.52
-   }
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -52,15 +46,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 252,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.52
-   }
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -84,15 +72,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 252,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.52
-   }
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -116,15 +98,9 @@
    "ret_10d": null,
    "max_vol": 6.48,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 37,
-    "track_avg": -1.08,
-    "track_worst": -3.24,
-    "track_best": 2.0,
-    "track_pos_ratio": 0.35
-   }
+   "actual_ret_1d": -0.29,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：个股均值（广联达 +0.48% / 通威 -1.06%）"
   }
  },
  {
@@ -148,15 +124,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 252,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.52
-   }
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -180,15 +150,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 252,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.52
-   }
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -212,15 +176,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 252,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.52
-   }
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -244,15 +202,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 252,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.52
-   }
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -276,15 +228,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 252,
-    "track_avg": -0.08,
-    "track_worst": -2.4,
-    "track_best": 1.41,
-    "track_pos_ratio": 0.52
-   }
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -308,15 +254,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 222,
-    "track_avg": 0.07,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -340,15 +280,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 222,
-    "track_avg": 0.07,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -372,15 +306,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 222,
-    "track_avg": 0.07,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -404,15 +332,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 222,
-    "track_avg": 0.07,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -436,15 +358,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 222,
-    "track_avg": 0.07,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -468,15 +384,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 222,
-    "track_avg": 0.07,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -500,15 +410,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 222,
-    "track_avg": 0.07,
-    "track_worst": -3.14,
-    "track_best": 4.5,
-    "track_pos_ratio": 0.42
-   }
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -532,15 +436,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 175,
-    "track_avg": -0.05,
-    "track_worst": -1.8,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.44
-   }
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  },
  {
@@ -564,15 +462,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 175,
-    "track_avg": -0.05,
-    "track_worst": -1.8,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.44
-   }
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  },
  {
@@ -596,15 +488,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 175,
-    "track_avg": -0.05,
-    "track_worst": -1.8,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.44
-   }
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  },
  {
@@ -628,15 +514,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 175,
-    "track_avg": -0.05,
-    "track_worst": -1.8,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.44
-   }
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  },
  {
@@ -660,15 +540,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 175,
-    "track_avg": -0.05,
-    "track_worst": -1.8,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.44
-   }
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  },
  {
@@ -692,15 +566,9 @@
    "ret_10d": null,
    "max_vol": 5.3,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 175,
-    "track_avg": -0.05,
-    "track_worst": -1.8,
-    "track_best": 2.65,
-    "track_pos_ratio": 0.44
-   }
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  },
  {
@@ -884,15 +752,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 201,
-    "track_avg": -0.36,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.34
-   }
+   "actual_ret_1d": -0.62,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：HSTECH 4,291.34 -0.62%"
   }
  },
  {
@@ -916,15 +778,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 201,
-    "track_avg": -0.36,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.34
-   }
+   "actual_ret_1d": -0.62,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：HSTECH 4,291.34 -0.62%"
   }
  },
  {
@@ -948,15 +804,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 201,
-    "track_avg": -0.36,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.34
-   }
+   "actual_ret_1d": -0.62,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：HSTECH 4,291.34 -0.62%"
   }
  },
  {
@@ -980,15 +830,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 201,
-    "track_avg": -0.36,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.34
-   }
+   "actual_ret_1d": -0.62,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：HSTECH 4,291.34 -0.62%"
   }
  },
  {
@@ -1012,15 +856,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 201,
-    "track_avg": -0.36,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.34
-   }
+   "actual_ret_1d": -0.62,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：HSTECH 4,291.34 -0.62%"
   }
  },
  {
@@ -1044,15 +882,9 @@
    "ret_10d": null,
    "max_vol": 7.22,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 201,
-    "track_avg": -0.36,
-    "track_worst": -3.61,
-    "track_best": 2.27,
-    "track_pos_ratio": 0.34
-   }
+   "actual_ret_1d": -0.62,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：HSTECH 4,291.34 -0.62%"
   }
  },
  {
@@ -1074,7 +906,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -1096,7 +930,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -1118,7 +954,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -1140,7 +978,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -1162,7 +1002,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -1184,7 +1026,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
   }
  },
  {
@@ -1206,7 +1050,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -1228,7 +1074,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -1250,7 +1098,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -1272,7 +1122,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -1294,7 +1146,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -1316,7 +1170,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
   }
  },
  {
@@ -1338,7 +1194,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  },
  {
@@ -1360,7 +1218,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  },
  {
@@ -1382,7 +1242,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  },
  {
@@ -1404,7 +1266,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  },
  {
@@ -1426,7 +1290,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  },
  {
@@ -1492,7 +1358,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.62,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：HSTECH 4,291.34 -0.62%"
   }
  },
  {
@@ -1514,7 +1382,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.62,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：HSTECH 4,291.34 -0.62%"
   }
  },
  {
@@ -1536,7 +1406,474 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.62,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：HSTECH 4,291.34 -0.62%"
+  }
+ },
+ {
+  "id": "N20260915-056",
+  "date": "2026-09-15",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股收评（9/15）：沪指-0.54%报3,864.28、深成指-0.72%报13,287.97、创业板指冲高回落-1.15%报3,247.92、沪深300 -0.67%，唯独科创50 +1.55%报1,551.96逆势翻红；沪深京三市成交16,253亿元、较昨日缩量177亿元，持平年内最低单日成交记录（2026/4/7亦为16,253亿）；全市场下跌个股超4,300只，涨停28只、跌停18只；板块风电设备+2.36%（海力风电+12.84%）、玻璃玻纤+2.39%、电子化学品+1.63%领涨，旅游及景区-4.93%、种植业-4.65%、渔业-4.52%领跌",
+  "summary": "指数缩量创新低、个股普跌，结构极致撕裂：科技（半导体/风电/电子化学品）逆势独舞，消费与农业遭抛售。",
+  "source": "星岛环球网/新华财经",
+  "source_url": "https://www.stnn.cc/detail/6aa8dd55345621769ccbc262.html",
+  "sentiment": "负面",
+  "score": 62,
+  "strength": 62,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "A股缩量普跌，仅科创50逆势翻红",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
+  }
+ },
+ {
+  "id": "N20260915-057",
+  "date": "2026-09-15",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "A股申万行业资金流（9/15）：两市主力资金全天净流出158.12亿元，仅5个行业净流入——电子+23.44亿（涨幅0.75%）居首、建筑材料+15.40亿（+0.39%）；净流出前三为电力设备-26.20亿、医药生物-20.22亿、银行；申万一级仅2个行业上涨（电子+0.75%、建筑材料+0.39%），商贸零售-2.97%、社会服务-2.33%跌幅居前",
+  "summary": "资金从算力硬件向半导体/建材结构性切换，消费（商贸零售/社服）成最大失血方向。",
+  "source": "东方财富/证券时报",
+  "source_url": "https://finance.eastmoney.com/a/202609153874745018.html",
+  "sentiment": "负面",
+  "score": 58,
+  "strength": 58,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "主力净流出158亿，仅两行业上涨",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
+  }
+ },
+ {
+  "id": "N20260915-058",
+  "date": "2026-09-15",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "医药生物板块（9/15）下跌1.07%（申万一级），全天主力资金净流出20.22亿元居申万第二；478只成份股仅60只上涨（412只下跌、1只涨停）；细分全线走弱——生物制品-1.58%、医药商业-1.45%、中药-1.23%、医疗服务-1.19%、化学制药-1.08%、医疗器械-0.49%；创新药板块-1.53%（主力净流出17.71亿）、生物医药板块-1.60%；药明康德-1.38%（但主力净流入1.38亿居行业首位）、百济神州-1.18%、恒瑞医药-0.05%",
+  "summary": "WCLC收官日医药全线回落，「利好出尽」形态在收盘被确认；细分生物制品/医药商业领跌，资金净流出20.22亿居申万第二。",
+  "source": "东方财富/证券时报/雪球",
+  "source_url": "https://www.163.com/dy/article/L6SQ48F6053469RG.html",
+  "sentiment": "负面",
+  "score": 65,
+  "strength": 65,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "医药生物跌1.07%，主力净流出20亿",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
+  }
+ },
+ {
+  "id": "N20260915-059",
+  "date": "2026-09-15",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "医药生物行业资金流出榜（9/15）：净流出超5,000万元的有10只，居前为誉衡药业-1.56亿元、沃森生物-1.05亿元、恒瑞医药-9,160.71万元；净流入居首为药明康德+1.38亿元、康龙化成+9,704.70万元、国邦医药+5,439.65万元——CXO龙头与疫苗股资金方向分化",
+  "summary": "医药内部资金分化：CXO获逆势流入、疫苗与创新药龙头遭净流出。",
+  "source": "证券时报/东方财富",
+  "source_url": "https://finance.eastmoney.com/a/202609153874745018.html",
+  "sentiment": "中性",
+  "score": 45,
+  "strength": 45,
+  "direction": "中性",
+  "volatility": "中",
+  "reason": "医药资金分化：CXO流入，疫苗股流出",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
+  }
+ },
+ {
+  "id": "N20260915-060",
+  "date": "2026-09-15",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "港股收评（9/15）：恒生指数高开低走跌1.00%报24,667.24（跌250.36点、成交1,872.01亿港元）、恒生科技指数跌0.62%报4,291.34；锂电池链重挫——宁德时代跌超6%创今年3月10日以来新低（理想部分车型转向欣旺达及自研、小米部分车型转中创新航/欣旺达）、天齐锂业跌超5%、赣锋锂业跌超3%；汽车股赛力斯跌6%创港股上市以来新低（华为与赛力斯智选车模式调整，赛力斯主导、华为赋能）；大模型概念下挫（MINIMAX-W跌超7%、智谱跌超5%）；黄金股走弱（赤峰黄金跌超5%、招金矿业/山东黄金跌超4%）；科网股涨跌不一（联想/小米/快手跌超2%，网易涨超2%，腾讯/阿里巴巴涨超1%）；南向资金净买入港股超8亿港元（较9/14的44.72亿大幅放缓）",
+  "summary": "港股高开低走、恒指跌1%，锂电与汽车链因客户关系变动重挫、大模型概念续跌；南向净买入骤降至8亿（前日44.72亿）。",
+  "source": "每日经济新闻/证券时报",
+  "source_url": "https://www.toutiao.com/article/7685715986019779106/",
+  "sentiment": "负面",
+  "score": 72,
+  "strength": 72,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "港股科技走弱，锂电汽车AI概念重挫",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": null,
+   "actual_ret_1d": -0.62,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：HSTECH 4,291.34 -0.62%"
+  }
+ },
+ {
+  "id": "N20260915-061",
+  "date": "2026-09-15",
+  "track": "恒生科技",
+  "category": "行业事件类",
+  "title": "东吴证券港股策略：港股近期震荡偏弱主因海外因素，「油价—通胀—加息」链条对港股估值构成压制；美国8月PPI超预期强化9月加息预期，中东地缘冲突推升原油供给中断担忧、全球「二次通胀」预期升温、风险偏好受压；国内核心CPI仍低、内需修复温和、未能形成盈利上修支撑。配置建议底仓低波动高股息资产（恒生港股通高股息低波动、央企红利等），结构性关注创新药板块（政策支持与全球研发进展，近期虽受资金流出影响但长期逻辑未变）",
+  "summary": "机构判断港股弱势源于海外「油价—通胀—加息」链条，建议底仓高股息、结构关注创新药。",
+  "source": "东吴证券/每日经济新闻",
+  "source_url": "https://www.toutiao.com/article/7685715986019779106/",
+  "sentiment": "负面",
+  "score": 60,
+  "strength": 60,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "港股受海外加息压制，建议高股息防御",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.62,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：HSTECH 4,291.34 -0.62%"
+  }
+ },
+ {
+  "id": "N20260915-062",
+  "date": "2026-09-15",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "白酒板块（9/15）以1,824.31点收盘下跌1.32%，18只白酒股下跌；贵州茅台收1,272.75元（-0.41%）、五粮液69.70元（-0.21%）、山西汾酒112.28元（-0.35%）、泸州老窖72.00元（-2.01%）、洋河股份37.93元（-0.37%）；白酒Ⅱ -0.50%报35,154.35、白酒概念-1.21%、大消费-1.08%（主力净流出13.18亿元）",
+  "summary": "白酒板块跌1.32%、18只个股下跌，泸州老窖领跌2.01%；大消费主力净流出13.18亿。",
+  "source": "北京商报/东方财富",
+  "source_url": "https://www.163.com/dy/article/L6SK4FE30519DFFO.html",
+  "sentiment": "负面",
+  "score": 65,
+  "strength": 65,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "白酒板块普跌，主力净流出13.18亿",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
+  }
+ },
+ {
+  "id": "N20260915-063",
+  "date": "2026-09-15",
+  "track": "大消费",
+  "category": "业绩类",
+  "title": "国泰海通证券白酒研报：从目前调整情况看动销最差的时点已过，报表正处于深度调整状态，预计行业将在「动销—报表趋势交叉点」后进入实质性去库阶段；随着上述情形相继发生，各价位带产品批价有望确认筑底并企稳回升，进一步支撑基本面及股价回暖；考虑白酒板块估值分位较大盘偏低且微观结构已较大改善，叠加更为积极的宏观政策或将落地，白酒的预期拐点有望到来",
+  "summary": "券商判断白酒动销最差时点已过、进入实质去库，批价有望筑底、预期拐点可期。",
+  "source": "国泰海通证券/北京商报",
+  "source_url": "https://www.163.com/dy/article/L6SK4FE30519DFFO.html",
+  "sentiment": "正面",
+  "score": 65,
+  "strength": 65,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "白酒研报预计预期拐点将至",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
+  }
+ },
+ {
+  "id": "N20260915-064",
+  "date": "2026-09-15",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "新浪财经「酒价内参」9/15数据：中国白酒业11大单品终端零售均价六涨五跌，整体总价10,037元较昨日上涨6元、创4天以来新高、万元关口进一步巩固；上涨——精品茅台+4至2,459元（两连涨、较i茅台定价高100元）、青花汾20+6至399元（三连阳）、古井贡古20+5至535元（三连涨）、青花郎+5至694元、五粮液1618 +1至831元、水晶剑南春+1至408元；下跌——飞天茅台-2至1,794元（仍处近30天高位）、五粮液普五八代-2至796元（五连跌、创近30天新低）、国窖1573 -4至877元、洋河梦之蓝M6+ -3至608元、习酒君品-5至636元",
+  "summary": "11大单品总价连续两日回升至10,037元（4天新高），但五粮液普五八代五连跌创近30天新低、飞天小幅回落。",
+  "source": "新浪财经",
+  "source_url": "https://finance.sina.com.cn/7x24/2026-09-15/doc-inirwfqe6975274.shtml",
+  "sentiment": "中性",
+  "score": 35,
+  "strength": 35,
+  "direction": "中性",
+  "volatility": "低",
+  "reason": "白酒终端均价微涨，单品涨跌互现",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 1.5,
+   "confidence": null,
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
+  }
+ },
+ {
+  "id": "N20260915-065",
+  "date": "2026-09-15",
+  "track": "美股标普医药",
+  "category": "宏观类",
+  "title": "美股盘前（9/15，FOMC前夜）：三大股指期货集体下跌——道指期货-0.66%、纳指期货-0.46%、标普500期货-0.50%；大型科技股多数下挫（Meta -0.99%、亚马逊-0.58%、谷歌-1.27%、苹果-0.80%、微软-1.26%、特斯拉-0.36%），英伟达逆势+0.28%；存储芯片多数微涨（闪迪+0.13%、美光+0.22%）、光通信股普涨（康宁+0.81%、Coherent+0.91%、Ciena+0.86%）；国际油价上涨（WTI +1.91%报103.33美元、布伦特+1.85%报107.63美元），金银下挫（伦敦金现-0.57%报4,272.65美元、失守4,300）",
+  "summary": "FOMC前夜美股期货普跌、科技股承压，AI硬件链（存储/光通信）企稳反弹；油价续涨、黄金失守4,300。",
+  "source": "腾讯新闻",
+  "source_url": "https://news.qq.com/rain/a/20260915A09XUO00",
+  "sentiment": "负面",
+  "score": 50,
+  "strength": 50,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "美股期指普跌，FOMC前夜避险升温",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": null
+  }
+ },
+ {
+  "id": "N20260915-066",
+  "date": "2026-09-15",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "美债与美联储（9/15）：美国30年期国债收益率盘中最高升至5.40%关口、创2007年6月以来新高；10年期收益率突破5.00%报5.02%（盘中最高5.04%）、为全球金融危机以来最高水平；美联储9/15-16举行议息会议，市场分析其「三年来首次重启紧缩」几成定局；Macro Risk Advisors测算若美联储启动加息周期，标普500或回调8-10%（高利率压缩无法转嫁成本企业的利润率、并向未做好准备的市况注入波动冲击）",
+  "summary": "美债收益率创多年新高（30Y 5.40%创2007年6月以来新高、10Y 破5%），FOMC紧缩几成定局，机构测算加息周期或致标普回调8-10%。",
+  "source": "Newsquawk/腾讯新闻",
+  "source_url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-opening-news---15th-september-2026",
+  "sentiment": "负面",
+  "score": 85,
+  "strength": 85,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "美债收益率飙升，美联储紧缩施压市场",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": null,
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
+  }
+ },
+ {
+  "id": "N20260915-067",
+  "date": "2026-09-15",
+  "track": "宏观",
+  "category": "宏观类",
+  "title": "地缘与全球通胀（9/15）：伊朗革命卫队在霍尔木兹海峡以东击落一架MQ-1无人机；联合国粮农组织主管称该海峡航运受阻将导致2026年下半年和2027年全球粮食生产与供给减少；俄军使用无人机打击乌克兰物流中心、港口和船只；西班牙8月通胀率达4.3%、为2023年2月以来最高水平；中东「二次通胀」预期升温",
+  "summary": "霍尔木兹海峡冲突升级、粮农组织警告全球粮食供给风险，西班牙通胀创2023年2月以来新高，全球二次通胀预期升温。",
+  "source": "腾讯新闻",
+  "source_url": "https://news.qq.com/rain/a/20260915A09XUO00",
+  "sentiment": "负面",
+  "score": 80,
+  "strength": 80,
+  "direction": "利空",
+  "volatility": "高",
+  "reason": "中东冲突与通胀升温，粮食供给受扰",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 9.0,
+   "confidence": null,
+   "actual_ret_1d": -0.54,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：上证指数 3,864.28 -0.54%"
+  }
+ },
+ {
+  "id": "N20260915-068",
+  "date": "2026-09-15",
+  "track": "A股医药",
+  "category": "政策类",
+  "title": "石药创新（石药集团）公告：控股子公司巨石生物SYS6010被国家药监局药品审评中心纳入突破性治疗品种名单，拟定适应症为「免疫及含铂化疗治疗失败的复发或转移性驱动基因阴性非鳞非小细胞肺癌」；SYS6010为靶向EGFR的抗体偶联药物（ADC），单药用于经标准治疗失败的驱动基因阴性局部晚期或转移性非鳞NSCLC的随机、开放、多中心III期临床试验正在开展；我国2024年肺癌新增约117.6万例、死亡约74.3万例，NSCLC占85%、驱动基因阴性约占40%",
+  "summary": "石药创新EGFR ADC（SYS6010）纳入突破性治疗品种，国产ADC在肺癌大适应症再获监管加速通道。",
+  "source": "石药创新公告/新浪财经",
+  "source_url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?CompanyCode=80354493&gather=1&id=12603272",
+  "sentiment": "正面",
+  "score": 65,
+  "strength": 65,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "石药SYS6010获突破性治疗认定",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
+  }
+ },
+ {
+  "id": "N20260915-069",
+  "date": "2026-09-15",
+  "track": "A股医药",
+  "category": "业绩类",
+  "title": "石药集团公布SYS6010联合恩朗苏拜单抗一线治疗驱动基因阴性晚期NSCLC的I/II期临床数据（WCLC口头报告）：由周彩存教授牵头、入组123例未接受系统治疗的晚期患者、中位随访10.8个月，两组给药方案整体ORR分别达58.9%/49.2%；PD-L1高表达（TPS≥50%）亚组ORR分别为77.8%与82.4%，非鳞癌高表达亚组ORR最高达91.7%；两组3级及以上治疗相关不良事件发生率51.6%/52.5%，因不良反应停药比例较低、整体安全可控；该联合疗法已推进至III期临床",
+  "summary": "石药SYS6010+PD-1一线治疗驱动基因阴性NSCLC的ORR达49.2%-58.9%、高表达亚组最高91.7%，已进入III期。",
+  "source": "石药集团公告/雪球",
+  "source_url": "https://xueqiu.com/1515690066/409263839",
+  "sentiment": "正面",
+  "score": 70,
+  "strength": 70,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "SYS6010联合疗法临床数据积极",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
+  }
+ },
+ {
+  "id": "N20260915-070",
+  "date": "2026-09-15",
+  "track": "A股医药",
+  "category": "行业事件类",
+  "title": "创新药板块估值与资金（9/15）：创新药ETF银华(159992) -0.96%（5日-3.18%、20日-10.55%）、创新药ETF建信(159835) -0.78%、创新药ETF摩根(560900) -1.01%、创新药ETF广发(515120) -0.96%、创新药ETF南方(159858) -1.04%；天弘中证医药100C(001551) 9/15净值-0.60%、近一月-7.94%；创新药板块5日/20日累计跌幅显著大于单日，呈「反弹缩量、下跌放量」的持续回吐形态",
+  "summary": "创新药ETF 20日累计-10.55%，资金持续回吐；单日跌幅温和但中期趋势走弱。",
+  "source": "天天基金/东方财富",
+  "source_url": "https://fund.10jqka.com.cn/20260915/c679917416.shtml",
+  "sentiment": "负面",
+  "score": 60,
+  "strength": 60,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "创新药ETF续跌，板块持续回吐",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.78,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：医药ETF广发 -0.95% / 医疗ETF -0.60%（申万医药生物 -1.07%）"
+  }
+ },
+ {
+  "id": "N20260915-071",
+  "date": "2026-09-15",
+  "track": "其他/宽基",
+  "category": "政策类",
+  "title": "A股半导体与科技（9/15）逆势走强：半导体产业链拉升（大为股份、中晶科技、西陇科学涨停，臻宝科技/气派科技涨超13%），PCB概念延续涨势（华正新材/澳弘电子/诺德股份涨停、澳弘电子3连板），MLCC概念活跃（双星新材/华瓷股份涨停），存储芯片、光刻胶、小金属、PET铜箔涨幅居前；科创50 +1.55%、科创综指+0.73%为唯一翻红宽基；驱动为工信部与发改委联合印发《电子信息制造业发展「十五五」规划》（集成电路全链条攻关、先进制程、端侧智能计算芯片、存算一体架构），在费城半导体指数暴跌5.86%的背景下走出「内政策外恐慌」的独立行情",
+  "summary": "半导体在国产替代政策驱动下逆势独立走强（「利空出尽」），科创50成为唯一翻红宽基；与组合持仓无直接映射。",
+  "source": "新华财经/雪球",
+  "source_url": "https://www.cnfin.com/yw-lb/detail/20260915/4470069_1.html",
+  "sentiment": "正面",
+  "score": 75,
+  "strength": 75,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "半导体科技逆势走强，政策催化",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.29,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：个股均值（广联达 +0.48% / 通威 -1.06%）"
+  }
+ },
+ {
+  "id": "N20260915-072",
+  "date": "2026-09-15",
+  "track": "其他/宽基",
+  "category": "行业事件类",
+  "title": "中信证券光博会（CIOE）研报：2026年国内光互联产业实现跨越式升级，正式从「产能代工」迈向「技术引领、全链自主」新阶段；算力网络迭代推动光模块梯队化落地，800G/1.6T规模出货，3.2T/6.4T NPO、12.8T XPO等前沿方案进入试点；薄膜铌酸锂产业化提速，OCS全光交换迎全球巨头布局、市场空间显著扩容；国产光芯片、硅光技术持续追赶升级。投资聚焦两大主线：技术壁垒深厚的光模块龙头，以及TFLN、OCS、高端光芯片与无源器件升级的新技术赛道",
+  "summary": "机构看好国内光互联产业链技术升级（NPO/CPO/OCS、薄膜铌酸锂），属主题机会，组合无直接敞口。",
+  "source": "中信证券/新华财经",
+  "source_url": "https://www.cnfin.com/yw-lb/detail/20260915/4470069_1.html",
+  "sentiment": "正面",
+  "score": 60,
+  "strength": 60,
+  "direction": "利多",
+  "volatility": "中",
+  "reason": "光互联产业升级，关注光模块龙头",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.29,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：个股均值（广联达 +0.48% / 通威 -1.06%）"
+  }
+ },
+ {
+  "id": "N20260915-073",
+  "date": "2026-09-15",
+  "track": "大消费",
+  "category": "行业事件类",
+  "title": "消费电子与汽车链承压（9/15）：iPhone 18 Pro 上市即破发，消费电子产业链承压；华为与赛力斯智选车模式本周调整——未来华为将以轻资产方式合作，产品/营销/销售/服务由华为主导调整为赛力斯主导、华为赋能，赛力斯将全面接管问界，赛力斯港股跌6%创上市以来新低",
+  "summary": "消费电子（iPhone 18 Pro破发）与汽车链（华为赛力斯合作调整）双双承压，压制消费板块情绪。",
+  "source": "雪球/每日经济新闻",
+  "source_url": "https://www.toutiao.com/article/7685715986019779106/",
+  "sentiment": "负面",
+  "score": 65,
+  "strength": 65,
+  "direction": "利空",
+  "volatility": "中",
+  "reason": "消费电子承压，赛力斯港股创新低",
+  "reference": {
+   "ret_3d": null,
+   "ret_5d": null,
+   "ret_10d": null,
+   "max_vol": 4.8,
+   "confidence": null,
+   "actual_ret_1d": -0.57,
+   "actual_date": "2026-09-15",
+   "ret_1d_ref": "9/15 收盘：中证消费 12,253.35 -0.57%"
   }
  }
 ]
