@@ -9,15 +9,15 @@
  "total_units": 150,
  "invested_units": 109,
  "snapshot": {
-  "nav_date": "2026-09-14",
-  "nav": 1.6572,
-  "daily_return": -0.0032,
-  "from_setup_return": 0.6572,
+  "nav_date": "2026-09-15",
+  "nav": 1.6575,
+  "daily_return": 0.0003,
+  "from_setup_return": 0.6575,
   "annual_compounded_return": 0.0461,
   "invested_acr": null,
   "max_drawdown": 0.1979,
-  "volatility": 0.1109,
-  "sharpe": 0.2802
+  "volatility": 0.1108,
+  "sharpe": 0.2803
  },
  "followers": {
   "joined": 444808,
@@ -35,15 +35,15 @@
   }
  ],
  "updated": "2026-09-16",
- "nav": 1.6572,
- "navDate": "2026-09-14",
- "dailyReturn": -0.0032,
- "sharpe": 0.2802,
+ "nav": 1.6575,
+ "navDate": "2026-09-15",
+ "dailyReturn": 0.0003,
+ "sharpe": 0.2803,
  "maxDrawdown": 0.1979,
- "volatility": 0.1109,
+ "volatility": 0.1108,
  "annualCompoundedReturn": 0.0461,
  "investedUnit": 109,
  "adjustedCount": 263,
  "nav_date": "2026-09-10",
- "nav_date_beijing": "2026-09-15"
+ "nav_date_beijing": "2026-09-16"
 }

@@ -1,6 +1,6 @@
 {
  "date": "2026-09-16",
- "window": "2026-09-15 18:00 - 2026-09-16 07:30 (盘前)",
+ "window": "2026-09-15 18:00 - 2026-09-16 07:30 (盘前) 34 条 | 盘中(07:30-13:30) 追加 26 条 | 盘后(13:30-20:00) 追加 23 条",
  "items": [
   {
    "idx": 1,
@@ -11,7 +11,8 @@
    "confidence": 60,
    "direction": "利空",
    "volatility": "中",
-   "brief": "美股收跌且FOMC前避险，压制港股与A股风险偏好"
+   "brief": "美股收跌且FOMC前避险，压制港股与A股风险偏好",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 2,
@@ -22,7 +23,8 @@
    "confidence": 75,
    "direction": "利空",
    "volatility": "高",
-   "brief": "美债收益率破5%压制全球估值，利空成长与港股"
+   "brief": "美债收益率破5%压制全球估值，利空成长与港股",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 3,
@@ -33,7 +35,8 @@
    "confidence": 65,
    "direction": "中性",
    "volatility": "高",
-   "brief": "加息落地悬念小，点阵图与措辞定方向，市场波动加剧"
+   "brief": "加息落地悬念小，点阵图与措辞定方向，市场波动加剧",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 4,
@@ -44,7 +47,8 @@
    "confidence": 70,
    "direction": "利多",
    "volatility": "高",
-   "brief": "地缘催化油价大涨，利好石油石化油服，通胀压力升温"
+   "brief": "地缘催化油价大涨，利好石油石化油服，通胀压力升温",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 5,
@@ -55,7 +59,8 @@
    "confidence": 70,
    "direction": "中性",
    "volatility": "中",
-   "brief": "工业与新动能偏强，消费仍弱，结构性行情为主"
+   "brief": "工业与新动能偏强，消费仍弱，结构性行情为主",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 6,
@@ -66,7 +71,8 @@
    "confidence": 80,
    "direction": "利多",
    "volatility": "中",
-   "brief": "扩消费顶层规划发布，利好汽车家电零售等板块"
+   "brief": "扩消费顶层规划发布，利好汽车家电零售等板块",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 7,
@@ -77,7 +83,8 @@
    "confidence": 80,
    "direction": "利多",
    "volatility": "中",
-   "brief": "电子信息十五五规划发布，利好半导体算力消费电子"
+   "brief": "电子信息十五五规划发布，利好半导体算力消费电子",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 8,
@@ -88,7 +95,8 @@
    "confidence": 60,
    "direction": "中性",
    "volatility": "中",
-   "brief": "美银上修芯片长期空间，但月度销售走弱，多空交织"
+   "brief": "美银上修芯片长期空间，但月度销售走弱，多空交织",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 9,
@@ -99,7 +107,8 @@
    "confidence": 75,
    "direction": "利空",
    "volatility": "中",
-   "brief": "医药板块回调且主力净流出居前，短线承压"
+   "brief": "医药板块回调且主力净流出居前，短线承压",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 10,
@@ -110,7 +119,8 @@
    "confidence": 80,
    "direction": "利多",
    "volatility": "高",
-   "brief": "依沃西OS头对头击败K药，创新药出海催化显著"
+   "brief": "依沃西OS头对头击败K药，创新药出海催化显著",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 11,
@@ -121,7 +131,8 @@
    "confidence": 70,
    "direction": "利多",
    "volatility": "中",
-   "brief": "GSK再购国产TCE管线，创新药出海情绪提振"
+   "brief": "GSK再购国产TCE管线，创新药出海情绪提振",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 12,
@@ -132,7 +143,8 @@
    "confidence": 75,
    "direction": "利多",
    "volatility": "中",
-   "brief": "石药ADC获突破性疗法认定，研发进展利好"
+   "brief": "石药ADC获突破性疗法认定，研发进展利好",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 13,
@@ -143,7 +155,8 @@
    "confidence": 80,
    "direction": "利空",
    "volatility": "中",
-   "brief": "中成药集采落地平均降幅超50%，盈利承压"
+   "brief": "中成药集采落地平均降幅超50%，盈利承压",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 14,
@@ -154,7 +167,8 @@
    "confidence": 65,
    "direction": "利多",
    "volatility": "低",
-   "brief": "医保常态化支持创新，产业政策利好创新药械"
+   "brief": "医保常态化支持创新，产业政策利好创新药械",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 15,
@@ -165,7 +179,8 @@
    "confidence": 88,
    "direction": "利多",
    "volatility": "中",
-   "brief": "创新药与CXO景气上行，License-out创新高，板块利好"
+   "brief": "创新药与CXO景气上行，License-out创新高，板块利好",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 16,
@@ -176,7 +191,8 @@
    "confidence": 78,
    "direction": "利多",
    "volatility": "低",
-   "brief": "恒瑞临床获批叠加药明回购，医药个股情绪偏暖"
+   "brief": "恒瑞临床获批叠加药明回购，医药个股情绪偏暖",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 17,
@@ -187,7 +203,8 @@
    "confidence": 62,
    "direction": "中性",
    "volatility": "中",
-   "brief": "白酒短线下跌但研报看拐点，多空信号交织"
+   "brief": "白酒短线下跌但研报看拐点，多空信号交织",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 18,
@@ -198,7 +215,8 @@
    "confidence": 60,
    "direction": "中性",
    "volatility": "中",
-   "brief": "酒价涨跌互现，普五连跌创新低，整体中性偏弱"
+   "brief": "酒价涨跌互现，普五连跌创新低，整体中性偏弱",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 19,
@@ -209,7 +227,8 @@
    "confidence": 70,
    "direction": "利空",
    "volatility": "中",
-   "brief": "渠道库存分化，国窖及次高端压力大，动销偏弱"
+   "brief": "渠道库存分化，国窖及次高端压力大，动销偏弱",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 20,
@@ -220,7 +239,8 @@
    "confidence": 85,
    "direction": "利空",
    "volatility": "高",
-   "brief": "消费服务领跌、多股跌停，短期市场情绪承压"
+   "brief": "消费服务领跌、多股跌停，短期市场情绪承压",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 21,
@@ -231,7 +251,8 @@
    "confidence": 50,
    "direction": "中性",
    "volatility": "低",
-   "brief": "美股医疗小幅回调且相对抗跌，对A/H医药影响有限"
+   "brief": "美股医疗小幅回调且相对抗跌，对A/H医药影响有限",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 22,
@@ -242,7 +263,8 @@
    "confidence": 55,
    "direction": "利多",
    "volatility": "中",
-   "brief": "FDA批准Lutathera首个放射配体等效药，利好核药赛道"
+   "brief": "FDA批准Lutathera首个放射配体等效药，利好核药赛道",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 23,
@@ -253,7 +275,8 @@
    "confidence": 60,
    "direction": "利多",
    "volatility": "中",
-   "brief": "FDA多项批准与并购合作，医药创新交易活跃"
+   "brief": "FDA多项批准与并购合作，医药创新交易活跃",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 24,
@@ -264,7 +287,8 @@
    "confidence": 62,
    "direction": "利多",
    "volatility": "高",
-   "brief": "IgA肾病与肺癌III期数据积极，创新药情绪提振"
+   "brief": "IgA肾病与肺癌III期数据积极，创新药情绪提振",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 25,
@@ -275,7 +299,8 @@
    "confidence": 55,
    "direction": "利多",
    "volatility": "低",
-   "brief": "NICE推荐骨髓瘤四联疗法，医药融资合作活跃"
+   "brief": "NICE推荐骨髓瘤四联疗法，医药融资合作活跃",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 26,
@@ -286,7 +311,8 @@
    "confidence": 90,
    "direction": "利空",
    "volatility": "高",
-   "brief": "港股三大指数收跌，锂电、汽车、大模型、黄金普跌"
+   "brief": "港股三大指数收跌，锂电、汽车、大模型、黄金普跌",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 27,
@@ -297,7 +323,8 @@
    "confidence": 80,
    "direction": "利多",
    "volatility": "中",
-   "brief": "南向连续7日净流入，但腾讯阿里遭净卖出"
+   "brief": "南向连续7日净流入，但腾讯阿里遭净卖出",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 28,
@@ -308,7 +335,8 @@
    "confidence": 75,
    "direction": "中性",
    "volatility": "中",
-   "brief": "宁德客户流失利空，腾讯回购与华润销售向好对冲"
+   "brief": "宁德客户流失利空，腾讯回购与华润销售向好对冲",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 29,
@@ -319,7 +347,8 @@
    "confidence": 72,
    "direction": "利空",
    "volatility": "中",
-   "brief": "海外加息与地缘压制估值，恒生科技短期偏弱"
+   "brief": "海外加息与地缘压制估值，恒生科技短期偏弱",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 30,
@@ -330,7 +359,8 @@
    "confidence": 65,
    "direction": "利多",
    "volatility": "高",
-   "brief": "外资与南向加仓港股科技，但资金博弈波动加大"
+   "brief": "外资与南向加仓港股科技，但资金博弈波动加大",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 31,
@@ -341,7 +371,8 @@
    "confidence": 78,
    "direction": "利空",
    "volatility": "高",
-   "brief": "指数与个股普跌，仅科创电子逆势，分化剧烈"
+   "brief": "指数与个股普跌，仅科创电子逆势，分化剧烈",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 32,
@@ -352,7 +383,8 @@
    "confidence": 76,
    "direction": "利空",
    "volatility": "中",
-   "brief": "主力连续净流出，资金抱团半导体，整体承压"
+   "brief": "主力连续净流出，资金抱团半导体，整体承压",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 33,
@@ -363,7 +395,8 @@
    "confidence": 74,
    "direction": "利多",
    "volatility": "高",
-   "brief": "海风政策与欧洲招标催化，风电产业链景气上行"
+   "brief": "海风政策与欧洲招标催化，风电产业链景气上行",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 34,
@@ -374,7 +407,8 @@
    "confidence": 62,
    "direction": "中性",
    "volatility": "中",
-   "brief": "海外股市偏弱、美元走强，商品偏暖，整体中性"
+   "brief": "海外股市偏弱、美元走强，商品偏暖，整体中性",
+   "window": "盘前(18:00-07:30)"
   },
   {
    "idx": 35,
@@ -385,7 +419,8 @@
    "confidence": 82,
    "direction": "利多",
    "volatility": "高",
-   "brief": "放量普涨，科技成长领涨，风险偏好回升"
+   "brief": "放量普涨，科技成长领涨，风险偏好回升",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 36,
@@ -396,7 +431,8 @@
    "confidence": 72,
    "direction": "中性",
    "volatility": "低",
-   "brief": "净投放1130亿，资金面平稳但利率趋升"
+   "brief": "净投放1130亿，资金面平稳但利率趋升",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 37,
@@ -407,7 +443,8 @@
    "confidence": 65,
    "direction": "中性",
    "volatility": "高",
-   "brief": "美联储决议前夜，紧缩落地待验证"
+   "brief": "美联储决议前夜，紧缩落地待验证",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 38,
@@ -418,7 +455,8 @@
    "confidence": 82,
    "direction": "利空",
    "volatility": "高",
-   "brief": "宁德三连跌，权重拖累创业板情绪"
+   "brief": "宁德三连跌，权重拖累创业板情绪",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 39,
@@ -429,7 +467,8 @@
    "confidence": 68,
    "direction": "中性",
    "volatility": "中",
-   "brief": "油价回落缓解通胀，但拖累能源股"
+   "brief": "油价回落缓解通胀，但拖累能源股",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 40,
@@ -440,7 +479,8 @@
    "confidence": 78,
    "direction": "利多",
    "volatility": "中",
-   "brief": "创新药出海破1200亿美元，景气延续"
+   "brief": "创新药出海破1200亿美元，景气延续",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 41,
@@ -451,7 +491,8 @@
    "confidence": 76,
    "direction": "利多",
    "volatility": "中",
-   "brief": "创新药盈利拐点确认，估值体系切换"
+   "brief": "创新药盈利拐点确认，估值体系切换",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 42,
@@ -462,7 +503,8 @@
    "confidence": 85,
    "direction": "利多",
    "volatility": "高",
-   "brief": "创新药CXO集体反弹，情绪回暖"
+   "brief": "创新药CXO集体反弹，情绪回暖",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 43,
@@ -473,7 +515,8 @@
    "confidence": 72,
    "direction": "利多",
    "volatility": "中",
-   "brief": "创新药出海深化，审批提效"
+   "brief": "创新药出海深化，审批提效",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 44,
@@ -484,7 +527,8 @@
    "confidence": 76,
    "direction": "利多",
    "volatility": "中",
-   "brief": "一品红痛风新药III期达预期"
+   "brief": "一品红痛风新药III期达预期",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 45,
@@ -495,7 +539,8 @@
    "confidence": 58,
    "direction": "利多",
    "volatility": "中",
-   "brief": "医药估值修复可期，关注医保谈判"
+   "brief": "医药估值修复可期，关注医保谈判",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 46,
@@ -506,7 +551,8 @@
    "confidence": 82,
    "direction": "利空",
    "volatility": "中",
-   "brief": "大消费续跌，白酒弱于大盘"
+   "brief": "大消费续跌，白酒弱于大盘",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 47,
@@ -517,7 +563,8 @@
    "confidence": 80,
    "direction": "利空",
    "volatility": "高",
-   "brief": "白酒剧烈分化，批价下探承压"
+   "brief": "白酒剧烈分化，批价下探承压",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 48,
@@ -528,7 +575,8 @@
    "confidence": 85,
    "direction": "利多",
    "volatility": "低",
-   "brief": "烟酒零售增12.4%，消费有韧性"
+   "brief": "烟酒零售增12.4%，消费有韧性",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 49,
@@ -539,7 +587,8 @@
    "confidence": 60,
    "direction": "利多",
    "volatility": "高",
-   "brief": "黄酒量价重构预期，概念股异动"
+   "brief": "黄酒量价重构预期，概念股异动",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 50,
@@ -550,7 +599,8 @@
    "confidence": 72,
    "direction": "利多",
    "volatility": "中",
-   "brief": "白酒备货正常，行业供需再平衡可期"
+   "brief": "白酒备货正常，行业供需再平衡可期",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 51,
@@ -561,7 +611,8 @@
    "confidence": 78,
    "direction": "利多",
    "volatility": "高",
-   "brief": "生物科技与诊断工具链集体走强"
+   "brief": "生物科技与诊断工具链集体走强",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 52,
@@ -572,7 +623,8 @@
    "confidence": 75,
    "direction": "中性",
    "volatility": "中",
-   "brief": "FDA动态多空交织，药企影响分化"
+   "brief": "FDA动态多空交织，药企影响分化",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 53,
@@ -583,7 +635,8 @@
    "confidence": 75,
    "direction": "利多",
    "volatility": "中",
-   "brief": "阿尔茨海默PET诊断工具扩容"
+   "brief": "阿尔茨海默PET诊断工具扩容",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 54,
@@ -594,7 +647,8 @@
    "confidence": 68,
    "direction": "利多",
    "volatility": "中",
-   "brief": "Celltrion推进高剂量方案临床"
+   "brief": "Celltrion推进高剂量方案临床",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 55,
@@ -605,7 +659,8 @@
    "confidence": 85,
    "direction": "利多",
    "volatility": "中",
-   "brief": "恒生科技收复4300，半导体光通信领涨"
+   "brief": "恒生科技收复4300，半导体光通信领涨",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 56,
@@ -616,7 +671,8 @@
    "confidence": 78,
    "direction": "利空",
    "volatility": "中",
-   "brief": "平台股普跌，AI硬件走强分化"
+   "brief": "平台股普跌，AI硬件走强分化",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 57,
@@ -627,7 +683,8 @@
    "confidence": 68,
    "direction": "中性",
    "volatility": "低",
-   "brief": "个股公告分化，医药销售局部利好"
+   "brief": "个股公告分化，医药销售局部利好",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 58,
@@ -638,7 +695,8 @@
    "confidence": 80,
    "direction": "利多",
    "volatility": "高",
-   "brief": "算力硬件全面爆发，多股涨停"
+   "brief": "算力硬件全面爆发，多股涨停",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 59,
@@ -649,7 +707,8 @@
    "confidence": 78,
    "direction": "利空",
    "volatility": "中",
-   "brief": "工程机械重挫，资金转向科技"
+   "brief": "工程机械重挫，资金转向科技",
+   "window": "盘中(07:30-13:30)"
   },
   {
    "idx": 60,
@@ -660,7 +719,284 @@
    "confidence": 72,
    "direction": "利多",
    "volatility": "中",
-   "brief": "贵金属集体拉升，黄金股普涨"
+   "brief": "贵金属集体拉升，黄金股普涨",
+   "window": "盘中(07:30-13:30)"
+  },
+  {
+   "idx": 61,
+   "title": "A股收评（9/16）：三大指数低开高走集体收涨——上证指数+0.71%报3,891.60、深证成指+1.26%报13,4",
+   "track": "宏观",
+   "sentiment": "正面",
+   "strength": 80,
+   "confidence": 98,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "A股三大指数低开高走收涨，成交放量",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 62,
+   "title": "A股资金流向日报（9/16）：主力资金全天净流入359.80亿元；创业板主力净流入60.80亿元、科创板净流入91.20",
+   "track": "宏观",
+   "sentiment": "正面",
+   "strength": 75,
+   "confidence": 96,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "主力净流入359.8亿，电子通信获资金追捧",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 63,
+   "title": "A股板块涨跌结构（9/16）：涨幅前三——通信设备+5.18%（领涨股长芯博创+12.95%）、半导体+4.44%、电子",
+   "track": "其他/宽基",
+   "sentiment": "中性",
+   "strength": 55,
+   "confidence": 95,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "通信半导体领涨，工程机械养殖家电领跌",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 64,
+   "title": "美股盘前（9/16，FOMC决议前夜）：三大股指期货齐涨——道指期货+0.08%~0.20%、标普500期货+0.22%",
+   "track": "宏观",
+   "sentiment": "中性",
+   "strength": 70,
+   "confidence": 88,
+   "direction": "中性",
+   "volatility": "高",
+   "brief": "FOMC前夜美股期货齐涨，加息25bp概率高",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 65,
+   "title": "美国市场其他动态（9/16）：美国8月零售销售数据于美股开盘前公布，彭博经济研究预计名义零售销售强劲反弹（价格上涨与季节",
+   "track": "宏观",
+   "sentiment": "中性",
+   "strength": 45,
+   "confidence": 90,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "美参院否决加密法案，比特币跌；欧亚股涨",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 66,
+   "title": "A股医药板块（9/16）由跌转涨：医药生物板块收7,581.24（+0.52%），创新药板块收1,062.91（+0.7",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 55,
+   "confidence": 95,
+   "direction": "利多",
+   "volatility": "低",
+   "brief": "医药板块由跌转涨，医疗服务领涨，资金分化",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 67,
+   "title": "CRO/CXO概念9/16大爆发：成都先导大涨14.05%（36.62元）领涨，美迪西+4.96%、凯莱英+2.98%（",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 82,
+   "confidence": 95,
+   "direction": "利多",
+   "volatility": "高",
+   "brief": "CRO/CXO概念大涨，医保与WCLC催化创新药",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 68,
+   "title": "国家医保局9/15印发《关于试行高水平新技术新产品医疗服务价格项目预立项制度的通知》（医保发〔2026〕23号）：将价格",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 72,
+   "confidence": 98,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "医保局试行新技术医疗服务价格预立项制度",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 69,
+   "title": "创新药ETF收盘与中期表现（9/16）：创新药ETF银华（159992）+0.49%（5日-1.31%、20日-7.92",
+   "track": "A股医药",
+   "sentiment": "中性",
+   "strength": 25,
+   "confidence": 95,
+   "direction": "中性",
+   "volatility": "低",
+   "brief": "创新药ETF小幅收涨，但中期仍回调",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 70,
+   "title": "恒瑞医药9/16披露两项临床试验获批公告：①子公司广东恒瑞的注射用瑞卡西单抗获批开展III期临床试验，适应症为颅内动脉粥",
+   "track": "A股医药",
+   "sentiment": "正面",
+   "strength": 58,
+   "confidence": 95,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "恒瑞医药两款新药获批临床试验",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 71,
+   "title": "A股白酒与吃喝板块9/16承压调整：中证白酒指数收6,182.27点下跌0.37%（新浪hq直连口径；部分媒体引用6,163.24点/-0.67%存在差异，本报告以直连数据为准），白酒板块整体弱于大盘；贵州茅台收1,",
+   "track": "大消费",
+   "sentiment": "负面",
+   "strength": 62,
+   "confidence": 95,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "白酒吃喝板块承压，茅台等多数下跌",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 72,
+   "title": "黄酒概念9/16集体爆发：会稽山（+10.02%报28.33元）、古越龙山（+10.02%报9.77元）、金枫酒业三家同",
+   "track": "大消费",
+   "sentiment": "正面",
+   "strength": 85,
+   "confidence": 95,
+   "direction": "利多",
+   "volatility": "高",
+   "brief": "黄酒概念集体涨停，政策催化价值重估",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 73,
+   "title": "白酒11大单品终端零售均价（9/16）五涨五跌一平、总售价突破万元关口：上涨端累计涨幅领先——飞天茅台+4元至1,798",
+   "track": "大消费",
+   "sentiment": "中性",
+   "strength": 30,
+   "confidence": 90,
+   "direction": "中性",
+   "volatility": "低",
+   "brief": "白酒终端均价五涨五跌，总售价破万元",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 74,
+   "title": "国家统计局9/15数据：1-8月全国烟酒类零售总额4,437亿元、同比增长12.4%（8月单月475亿元、同比+12.5",
+   "track": "大消费",
+   "sentiment": "中性",
+   "strength": 45,
+   "confidence": 90,
+   "direction": "中性",
+   "volatility": "低",
+   "brief": "烟酒零售增12.4%，酿酒大师称号撤销",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 75,
+   "title": "汉达（6620）完成505(b)(2)新药HND-039（OMCAZIO）在美国的取证程序：该产品已取得美国FDA最终核",
+   "track": "美股标普医药",
+   "sentiment": "正面",
+   "strength": 55,
+   "confidence": 95,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "汉达新药OMCAZIO获FDA核准可上市",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 76,
+   "title": "西比曼生物9/16宣布：FDA已许可公司在其C-CAR168（靶向CD20/BCMA的双特异性CAR-T疗法）新药临床试",
+   "track": "美股标普医药",
+   "sentiment": "正面",
+   "strength": 45,
+   "confidence": 95,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "西比曼CAR-T疗法获FDA临床许可",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 77,
+   "title": "FDA 9/16动态（三项）：①缩短安进Imdelltra（tarlatamab-dlle）处方信息中初始监测时间——广",
+   "track": "美股标普医药",
+   "sentiment": "中性",
+   "strength": 50,
+   "confidence": 90,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "FDA缩短安进监测，批准仿制药并听证迷幻药",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 78,
+   "title": "港股收评（9/16）：恒生指数收24,713.78（+0.19%，成交1,811亿港元）、恒生科技指数收4,325.45",
+   "track": "恒生科技",
+   "sentiment": "正面",
+   "strength": 40,
+   "confidence": 95,
+   "direction": "利多",
+   "volatility": "低",
+   "brief": "恒生科技涨0.79%收复4300，平台股分化",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 79,
+   "title": "南向资金9/16全天成交额787.89亿港元、成交净买入20.99亿港元、连续8个交易日净买入：港股通（沪）买入260.",
+   "track": "恒生科技",
+   "sentiment": "正面",
+   "strength": 35,
+   "confidence": 95,
+   "direction": "利多",
+   "volatility": "低",
+   "brief": "南向资金连续8日净买入，恒指微涨",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 80,
+   "title": "平台经济监管与产业动态（9/16）：市场监管总局、文化和旅游部对美团、抖音、京东、携程、同程、飞猪等平台企业开展行政指导",
+   "track": "恒生科技",
+   "sentiment": "负面",
+   "strength": 40,
+   "confidence": 90,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "平台企业遭行政指导，互联网平台相对偏弱",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 81,
+   "title": "A股半导体与AI算力产业链9/16全面爆发：中证半导（561980）以+4.88%领涨全场、科创芯片设计（589390）",
+   "track": "其他/宽基",
+   "sentiment": "正面",
+   "strength": 88,
+   "confidence": 92,
+   "direction": "利多",
+   "volatility": "高",
+   "brief": "半导体AI算力全线爆发，成市场最强主线",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 82,
+   "title": "A股工程机械板块9/16放量走弱、传统周期与消费遭系统性减持：工程机械板块-4.17%领跌全市场，三一重工盘中闪崩跌超5",
+   "track": "其他/宽基",
+   "sentiment": "中性",
+   "strength": 50,
+   "confidence": 88,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "工程机械领跌，周期消费遭减持，科技逆势",
+   "window": "盘后(13:30-20:00)"
+  },
+  {
+   "idx": 83,
+   "title": "宁德时代9/16放量跌超3%再创阶段新低（盘中一度跌超5%、A股股价跌破300元至299.7元、A+H市值缩水至1.41",
+   "track": "其他/宽基",
+   "sentiment": "负面",
+   "strength": 75,
+   "confidence": 95,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "宁德时代放量大跌，连续三次重挫",
+   "window": "盘后(13:30-20:00)"
   }
  ]
 }
