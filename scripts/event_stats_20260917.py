@@ -1,0 +1,168 @@
+# -*- coding: utf-8 -*-
+"""盘前档 2026-09-17: 事件库统计——①1日样本 ②方向验证 ③3/5/10日事件后窗口统计
+美股序列按「行情日」解析去重（§3.78：indices.csv 美股行 date 口径不统一）
+"""
+import json, os, glob, csv, re
+from collections import defaultdict
+
+BASE = '/Users/jieyang/Documents/WealthHub'
+EV = os.path.join(BASE, 'data/processed/events')
+TODAY = '2026-09-17'
+
+all_ev = []
+for p in sorted(glob.glob(os.path.join(EV, 'events-*.json'))):
+    if TODAY in p:
+        continue
+    all_ev.extend(json.load(open(p, encoding='utf-8')))
+
+def get_ret1d(e):
+    v = e.get('actual_ret_1d')
+    if v is None:
+        v = e.get('reference', {}).get('actual_ret_1d')
+    return v
+
+samples = defaultdict(lambda: {'n': 0, 'rets': [], 'pos': 0, 'spos': 0, 'spos_rets': [], 'sneg': 0, 'sneg_rets': []})
+direction_total = 0
+direction_ok = 0
+track_dv = defaultdict(lambda: [0, 0])
+
+for e in all_ev:
+    t = e.get('track', '?')
+    v = get_ret1d(e)
+    if v is None:
+        continue
+    s = samples[t]
+    s['n'] += 1
+    s['rets'].append(float(v))
+    if float(v) > 0:
+        s['pos'] += 1
+    senti = e.get('sentiment')
+    try:
+        score = int(e.get('score'))
+    except:
+        score = None
+    if senti == '正面' and score is not None and score >= 65:
+        s['spos'] += 1
+        s['spos_rets'].append(float(v))
+    if senti == '负面' and score is not None and score <= 40:
+        s['sneg'] += 1
+        s['sneg_rets'].append(float(v))
+    if senti not in ('正面', '负面'):
+        continue
+    direction_total += 1
+    track_dv[t][1] += 1
+    ok = (senti == '正面' and float(v) > 0) or (senti == '负面' and float(v) < 0)
+    if ok:
+        direction_ok += 1
+        track_dv[t][0] += 1
+
+out_stats = {}
+print('=== 1日样本统计（截至 9/16 收盘回填） ===')
+for t, s in sorted(samples.items()):
+    if s['n'] == 0:
+        continue
+    rec = {
+        'n': s['n'], 'avg': round(sum(s['rets']) / len(s['rets']), 2),
+        'worst': round(min(s['rets']), 2), 'best': round(max(s['rets']), 2),
+        'pos': round(s['pos'] / s['n'], 2),
+        'strong_pos_n': s['spos'], 'strong_pos_avg': round(sum(s['spos_rets']) / len(s['spos_rets']), 2) if s['spos_rets'] else None,
+        'strong_neg_n': s['sneg'], 'strong_neg_avg': round(sum(s['sneg_rets']) / len(s['sneg_rets']), 2) if s['sneg_rets'] else None,
+    }
+    out_stats[t] = rec
+    print(f"  {t}: n={rec['n']} avg={rec['avg']}% worst={rec['worst']} best={rec['best']} pos={rec['pos']} "
+          f"强正{rec['strong_pos_n']}均值{rec['strong_pos_avg']} 强负{rec['strong_neg_n']}均值{rec['strong_neg_avg']}")
+
+print("\n=== 方向验证（sentiment 口径, 中性剔除） ===")
+print(f'  全局 {direction_ok}/{direction_total} ({round(direction_ok/direction_total*100,1) if direction_total else 0}%)')
+for t, (ok, tot) in sorted(track_dv.items(), key=lambda x: -x[1][0]):
+    if tot > 0:
+        print(f'  {t}: {ok}/{tot} ({round(ok/tot*100)}%)')
+
+# ---------- 3/5/10 日窗口统计 ----------
+idx_rows = list(csv.reader(open(os.path.join(BASE, 'data/processed/history/indices.csv'), encoding='utf-8-sig')))
+track_index = {
+    'A股医药': ('399006', '创业板指'),
+    '大消费': ('000932', '中证消费'),
+    '恒生科技': ('HSTECH', '恒生科技'),
+    '宏观': ('000001', '上证指数'),
+    '美股标普医药': ('XLV', '美股医疗XLV'),
+}
+
+def row_quote_date(r):
+    """美股行按 note 解析行情日（note 形如「美股2026-09-11收盘...」），失败回退 date 列"""
+    m = re.search(r'美股(\d{4}-\d{2}-\d{2})', r[6] if len(r) > 6 else '')
+    return m.group(1) if m else r[1][:10]
+
+def build_series(code):
+    """按 code 构建 (日期, 收盘) 序列；美股按行情日去重，A股/港股按 date 去重"""
+    seen = {}
+    for r in idx_rows:
+        if not r or len(r) < 6 or r[3] != code or r[1] == '':
+            continue
+        try:
+            c = float(r[4])
+        except:
+            continue
+        d = row_quote_date(r) if r[0] == 'us_index' else r[1][:10]
+        seen[d] = c          # 同键后者覆盖前者（值相同，仅去重）
+    ds = sorted(seen.items())
+    return [d for d, _ in ds], [c for _, c in ds]
+
+def window_stats(ev_date, code, n_days):
+    dates, closes = build_series(code)
+    if not dates or ev_date not in dates:
+        return None
+    i0 = dates.index(ev_date)
+    ret = 1.0
+    cnt = 0
+    for i in range(i0 + 1, len(dates)):
+        if cnt >= n_days:
+            break
+        if closes[i] is None or closes[i - 1] in (None, 0):
+            continue
+        ret *= closes[i] / closes[i - 1]
+        cnt += 1
+    if cnt < n_days:
+        return None
+    return (ret - 1) * 100
+
+win3 = defaultdict(lambda: {'n': 0, 'rets': []})
+win5 = defaultdict(lambda: {'n': 0, 'rets': []})
+win10 = defaultdict(lambda: {'n': 0, 'rets': []})
+for e in all_ev:
+    d, t = e.get('date'), e.get('track')
+    if not d or t not in track_index:
+        continue
+    code = track_index[t][0]
+    for wd, store in [(3, win3), (5, win5), (10, win10)]:
+        r = window_stats(d, code, wd)
+        if r is not None:
+            store[t]['n'] += 1
+            store[t]['rets'].append(r)
+
+def agg(w):
+    return {t: {'n': s['n'], 'avg': round(sum(s['rets']) / len(s['rets']), 2)}
+            for t, s in w.items() if s['n']}
+
+w3, w5, w10 = agg(win3), agg(win5), agg(win10)
+print('\n=== 3日窗口统计(事件后) ===')
+for t, v in sorted(w3.items(), key=lambda x: -x[1]['avg']):
+    print(f'  {t}: n={v["n"]} 均值 {v["avg"]}%')
+print('=== 5日窗口统计(事件后) ===')
+for t, v in sorted(w5.items(), key=lambda x: -x[1]['avg']):
+    print(f'  {t}: n={v["n"]} 均值 {v["avg"]}%')
+print('=== 10日窗口统计(事件后) ===')
+for t, v in sorted(w10.items(), key=lambda x: -x[1]['avg']):
+    print(f'  {t}: n={v["n"]} 均值 {v["avg"]}%')
+
+out = {
+    'date': TODAY, 'as_of': '2026-09-16收盘回填',
+    'sample_stats': out_stats,
+    'direction': {'ok': direction_ok, 'total': direction_total,
+                  'pct': round(direction_ok / direction_total * 100, 1) if direction_total else 0,
+                  'by_track': {t: {'ok': v[0], 'total': v[1]} for t, v in track_dv.items() if v[1] > 0}},
+    'win3': w3, 'win5': w5, 'win10': w10,
+}
+json.dump(out, open(os.path.join(BASE, "data/processed/history", "event_stats_" + TODAY.replace("-", "") + ".json"), 'w', encoding='utf-8'),
+          ensure_ascii=False, indent=1)
+print(f'\nevent_stats_' + TODAY.replace("-", "") + '.json 已保存')

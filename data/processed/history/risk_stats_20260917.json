@@ -1,0 +1,14 @@
+{
+ "date": "2026-09-17",
+ "chain_cum_pct": -4.54,
+ "chain_days": 30,
+ "w38_cum_pct": 0.71,
+ "w38_days": 3,
+ "sharpe": -3.48,
+ "sharpe_n": 30,
+ "daily_mean": -0.1523,
+ "daily_sd": 0.726,
+ "max_dd_pct": -6.31,
+ "last5_cum_pct": -1.28,
+ "last10_cum_pct": -1.45
+}
