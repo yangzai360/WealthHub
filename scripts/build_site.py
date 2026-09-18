@@ -46,7 +46,12 @@ AMOUNT_PATTERNS = [
     re.compile(r"\d{1,3}(?:,\d{3})+(?:\.\d+)?"),
 ]
 
-def mask_amounts(text: str) -> str:
+def mask_amounts(text: str, protected: bool = False) -> str:
+    # 受保护章节(行情/新闻/情绪/指数/历史影响/策略建议/核心结论)保留指数点位与裸数字,
+    # 但「带货币单位的绝对金额」仍需打码(§ 隐私坑: 组合总资产/基准/贡献额会写在核心结论里)。
+    # 只匹配「数字 + 元」,不匹配「X亿元 / X万亿元 / X美元 / X港元」等市场口径。
+    if protected:
+        return re.sub(r"[\d,]+(?:\.\d+)?\s*元", "***", text)
     for pat in AMOUNT_PATTERNS:
         text = pat.sub("***", text)
     return text
@@ -71,6 +76,8 @@ def desensitize_md(content: str) -> str:
             in_protected = any(s in line for s in PROTECTED_SECTIONS)
         if not in_protected:
             line = mask_amounts(line)
+        else:
+            line = mask_amounts(line, protected=True)
         out_lines.append(line)
     content = "\n".join(out_lines)
 
