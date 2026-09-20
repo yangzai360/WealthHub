@@ -426,15 +426,9 @@
    "ret_10d": null,
    "max_vol": 7.02,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 119,
-    "track_avg": 0.19,
-    "track_worst": -2.52,
-    "track_best": 3.51,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -0.25,
+   "actual_date": "2026-09-18",
+   "ret_1d_ref": "9/18 美股收盘：XLV 168.39 -0.25%（IYH -0.28%）"
   }
  },
  {
@@ -459,15 +453,9 @@
    "ret_10d": null,
    "max_vol": 7.02,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 119,
-    "track_avg": 0.19,
-    "track_worst": -2.52,
-    "track_best": 3.51,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -0.25,
+   "actual_date": "2026-09-18",
+   "ret_1d_ref": "9/18 美股收盘：XLV 168.39 -0.25%（IYH -0.28%）"
   }
  },
  {
@@ -492,15 +480,9 @@
    "ret_10d": null,
    "max_vol": 7.02,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 119,
-    "track_avg": 0.19,
-    "track_worst": -2.52,
-    "track_best": 3.51,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -0.25,
+   "actual_date": "2026-09-18",
+   "ret_1d_ref": "9/18 美股收盘：XLV 168.39 -0.25%（IYH -0.28%）"
   }
  },
  {
@@ -525,15 +507,9 @@
    "ret_10d": null,
    "max_vol": 7.02,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 119,
-    "track_avg": 0.19,
-    "track_worst": -2.52,
-    "track_best": 3.51,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -0.25,
+   "actual_date": "2026-09-18",
+   "ret_1d_ref": "9/18 美股收盘：XLV 168.39 -0.25%（IYH -0.28%）"
   }
  },
  {
@@ -558,15 +534,9 @@
    "ret_10d": null,
    "max_vol": 7.02,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": {
-    "track_n": 119,
-    "track_avg": 0.19,
-    "track_worst": -2.52,
-    "track_best": 3.51,
-    "track_pos_ratio": 0.55
-   }
+   "actual_ret_1d": -0.25,
+   "actual_date": "2026-09-18",
+   "ret_1d_ref": "9/18 美股收盘：XLV 168.39 -0.25%（IYH -0.28%）"
   }
  },
  {
@@ -1005,7 +975,9 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null
+   "actual_ret_1d": -0.25,
+   "actual_date": "2026-09-18",
+   "ret_1d_ref": "9/18 美股收盘：XLV 168.39 -0.25%（IYH -0.28%）"
   }
  },
  {
@@ -1464,7 +1436,10 @@
    "ret_5d": null,
    "ret_10d": null,
    "max_vol": 4.8,
-   "confidence": null
+   "confidence": null,
+   "actual_ret_1d": -0.25,
+   "actual_date": "2026-09-18",
+   "ret_1d_ref": "9/18 美股收盘：XLV 168.39 -0.25%（IYH -0.28%）"
   }
  },
  {

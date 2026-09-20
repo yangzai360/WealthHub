@@ -10,18 +10,18 @@
  "invested_units": 109,
  "snapshot": {
   "nav_date": "2026-09-17",
-  "nav": 1.6604,
-  "daily_return": 0.0016,
-  "from_setup_return": 0.6604,
-  "annual_compounded_return": 0.0462,
-  "invested_acr": null,
+  "nav": 1.6639,
+  "daily_return": 0.0035,
+  "from_setup_return": 0.6639,
+  "annual_compounded_return": 0.0464,
+  "invested_acr": 0.0553,
   "max_drawdown": 0.1979,
   "volatility": 0.1108,
-  "sharpe": 0.2816
+  "sharpe": 0.2834
  },
  "followers": {
   "joined": 444808,
-  "active": 128008
+  "active": 127595
  },
  "adjust_count": 263,
  "benchmarks": [
@@ -34,14 +34,14 @@
    "name": "中证500"
   }
  ],
- "updated": "2026-09-18",
- "nav": 1.6604,
+ "updated": "2026-09-20",
+ "nav": 1.6639,
  "navDate": "2026-09-17",
- "dailyReturn": 0.0016,
- "sharpe": 0.2816,
+ "dailyReturn": 0.0035,
+ "sharpe": 0.2834,
  "maxDrawdown": 0.1979,
  "volatility": 0.1108,
- "annualCompoundedReturn": 0.0462,
+ "annualCompoundedReturn": 0.0464,
  "investedUnit": 110,
  "adjustedCount": 264,
  "nav_date": "2026-09-10",
@@ -49,5 +49,7 @@
  "last_checked": "2026-09-18",
  "latest_adj_id": 781,
  "latest_adj_date": "2026-07-30",
- "composition_snapshot": "composition-2026-09-18.json"
+ "composition_snapshot": "composition-2026-09-18.json",
+ "joinedCount": 444808,
+ "activeCount": 127595
 }
