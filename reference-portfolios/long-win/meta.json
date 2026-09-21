@@ -36,7 +36,7 @@
  ],
  "updated": "2026-09-20",
  "nav": 1.6639,
- "navDate": "2026-09-17",
+ "navDate": 1789660800000,
  "dailyReturn": 0.0035,
  "sharpe": 0.2834,
  "maxDrawdown": 0.1979,
@@ -46,10 +46,10 @@
  "adjustedCount": 264,
  "nav_date": "2026-09-10",
  "nav_date_beijing": "2026-09-18",
- "last_checked": "2026-09-18",
+ "last_checked": "2026-09-21",
  "latest_adj_id": 781,
  "latest_adj_date": "2026-07-30",
- "composition_snapshot": "composition-2026-09-18.json",
+ "composition_snapshot": "composition-2026-09-21.json",
  "joinedCount": 444808,
  "activeCount": 127595
 }
