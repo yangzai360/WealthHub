@@ -1,0 +1,17 @@
+{
+ "date": "2026-09-21",
+ "chain_cum_pct": -2.6,
+ "chain_days": 33,
+ "w38_cum_pct": 1.37,
+ "w38_days": 5,
+ "w39_cum_pct": 1.38,
+ "w39_days": 1,
+ "sharpe": -1.77,
+ "sharpe_n": 33,
+ "daily_mean": -0.077,
+ "daily_sd": 0.7504,
+ "max_dd_pct": -6.31,
+ "last5_cum_pct": 2.07,
+ "last10_cum_pct": -0.08,
+ "fix_applied": "portfolio_close_20260918_fix.json（9/18 净值补更修正值 +0.57%）"
+}

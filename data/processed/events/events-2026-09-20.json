@@ -21,9 +21,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.97,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：上证指数 3,949.91 +0.97%"
   }
  },
  {
@@ -48,9 +48,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.97,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：上证指数 3,949.91 +0.97%"
   }
  },
  {
@@ -75,9 +75,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.97,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：上证指数 3,949.91 +0.97%"
   }
  },
  {
@@ -102,9 +102,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.97,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：上证指数 3,949.91 +0.97%"
   }
  },
  {
@@ -129,9 +129,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.97,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：上证指数 3,949.91 +0.97%"
   }
  },
  {
@@ -156,9 +156,9 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.97,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：上证指数 3,949.91 +0.97%"
   }
  },
  {
@@ -183,9 +183,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.97,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：上证指数 3,949.91 +0.97%"
   }
  },
  {
@@ -210,9 +210,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.97,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：上证指数 3,949.91 +0.97%"
   }
  },
  {
@@ -237,9 +237,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.97,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：上证指数 3,949.91 +0.97%"
   }
  },
  {
@@ -264,9 +264,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 2.83,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：医药ETF广发 0.655 +3.31% / 医疗ETF 0.348 +2.35%（中证医药 7,954.82 +3.04% / 中证医疗 6,869.19 +2.63% / 300医药 8,282.40 +3.64%）"
   }
  },
  {
@@ -291,9 +291,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 2.83,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：医药ETF广发 0.655 +3.31% / 医疗ETF 0.348 +2.35%（中证医药 7,954.82 +3.04% / 中证医疗 6,869.19 +2.63% / 300医药 8,282.40 +3.64%）"
   }
  },
  {
@@ -318,9 +318,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 2.83,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：医药ETF广发 0.655 +3.31% / 医疗ETF 0.348 +2.35%（中证医药 7,954.82 +3.04% / 中证医疗 6,869.19 +2.63% / 300医药 8,282.40 +3.64%）"
   }
  },
  {
@@ -345,9 +345,9 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 2.83,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：医药ETF广发 0.655 +3.31% / 医疗ETF 0.348 +2.35%（中证医药 7,954.82 +3.04% / 中证医疗 6,869.19 +2.63% / 300医药 8,282.40 +3.64%）"
   }
  },
  {
@@ -372,9 +372,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.88,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：中证消费 12,321.63 +0.88%（中证白酒 6,254.47 +1.01%）"
   }
  },
  {
@@ -399,9 +399,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.88,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：中证消费 12,321.63 +0.88%（中证白酒 6,254.47 +1.01%）"
   }
  },
  {
@@ -426,9 +426,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.88,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：中证消费 12,321.63 +0.88%（中证白酒 6,254.47 +1.01%）"
   }
  },
  {
@@ -453,9 +453,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.88,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：中证消费 12,321.63 +0.88%（中证白酒 6,254.47 +1.01%）"
   }
  },
  {
@@ -480,9 +480,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.4,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：HSTECH 4,423.29 +0.40%（中证港股通互联网 +1.72%）"
   }
  },
  {
@@ -507,9 +507,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.4,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：HSTECH 4,423.29 +0.40%（中证港股通互联网 +1.72%）"
   }
  },
  {
@@ -534,9 +534,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.4,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：HSTECH 4,423.29 +0.40%（中证港股通互联网 +1.72%）"
   }
  },
  {
@@ -615,9 +615,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 2.25,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：个股均值（广联达 8.60 +2.38% / 通威股份 11.59 +2.11%）"
   }
  },
  {
@@ -642,9 +642,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 2.25,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：个股均值（广联达 8.60 +2.38% / 通威股份 11.59 +2.11%）"
   }
  }
 ]
