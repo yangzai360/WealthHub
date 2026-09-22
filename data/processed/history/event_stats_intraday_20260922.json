@@ -1,0 +1,1435 @@
+{
+ "date": "2026-09-22",
+ "window": "intraday",
+ "total_events": 1401,
+ "today_events": 73,
+ "added": 31,
+ "blank": 73,
+ "blank_by_date": {
+  "2026-09-22": 73
+ },
+ "blank_by_track": {
+  "宏观": 18,
+  "A股医药": 14,
+  "大消费": 13,
+  "恒生科技": 14,
+  "美股标普医药": 7,
+  "其他/宽基": 7
+ },
+ "similarity_by_track": {
+  "恒生科技": {
+   "n": 8,
+   "avg_3d": -1.42,
+   "avg_5d": -2.54,
+   "avg_10d": -4.24,
+   "avg_conf": 80.1
+  },
+  "A股医药": {
+   "n": 7,
+   "avg_3d": 1.1,
+   "avg_5d": 0.0,
+   "avg_10d": 0.0,
+   "avg_conf": 80.3
+  },
+  "大消费": {
+   "n": 5,
+   "avg_3d": -1.05,
+   "avg_5d": -1.76,
+   "avg_10d": -1.25,
+   "avg_conf": 80.4
+  },
+  "美股标普医药": {
+   "n": 2,
+   "avg_3d": 2.02,
+   "avg_5d": 2.23,
+   "avg_10d": 3.77,
+   "avg_conf": 77.5
+  },
+  "宏观": {
+   "n": 4,
+   "avg_3d": 0.0,
+   "avg_5d": 0.0,
+   "avg_10d": 0.0,
+   "avg_conf": 80.2
+  },
+  "其他/宽基": {
+   "n": 5,
+   "avg_3d": 0.02,
+   "avg_5d": -2.1,
+   "avg_10d": -0.78,
+   "avg_conf": 79.4
+  }
+ },
+ "similarity_detail": [
+  {
+   "id": "N20260922-043",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "2026 云栖大会 9/22 上午在杭州开幕：主题「智以致用」、以 Agentic AI 为核心锚点",
+   "direction": "利多",
+   "strength": 78,
+   "top3": [
+    {
+     "similarity": 81.0,
+     "hist_date": "2026-09-21",
+     "hist_title": "2026 阿里云栖大会明日（9/22）在杭州国际博览中心开幕，会期 9/22-9/24，",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-08-25",
+     "hist_title": "阿里800亿港元配售获近3倍超额认购（超2,000亿港元、主权和长线基金认购比例超40%",
+     "hist_direction": "利多",
+     "ret_3d": 0.362,
+     "ret_5d": -0.8207,
+     "ret_10d": -2.9136
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-08-31",
+     "hist_title": "百度9/1双重主要上市生效（香港第二上市转主要上市）：最快9/7纳入港股通、南向增量资金",
+     "hist_direction": "利多",
+     "ret_3d": -3.2769,
+     "ret_5d": -1.9949,
+     "ret_10d": -6.5355
+    }
+   ],
+   "avg_3d": -1.46,
+   "avg_5d": -1.41,
+   "avg_10d": -4.72,
+   "confidence": 81
+  },
+  {
+   "id": "N20260922-044",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "阿里平头哥在云栖大会发布国产 AI 芯片「真武 V900」，算力提升至真武 M890 的 3 倍，基",
+   "direction": "利多",
+   "strength": 85,
+   "top3": [
+    {
+     "similarity": 80.7,
+     "hist_date": "2026-08-25",
+     "hist_title": "小米连发玄戒O3/O100/D100三款自研芯片（O3安兔兔跑分522万创安卓纪录、D1",
+     "hist_direction": "利多",
+     "ret_3d": 0.362,
+     "ret_5d": -0.8207,
+     "ret_10d": -2.9136
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-09-02",
+     "hist_title": "港股资金面支撑：年内港股配售总额2,779.99亿港元同比+41.43%（AI企业及产业",
+     "hist_direction": "利多",
+     "ret_3d": 0.2336,
+     "ret_5d": -2.1334,
+     "ret_10d": -4.244
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-24",
+     "hist_title": "阿里 7 年来首次新股配售落地：800 亿港元配售定价 112.7 港元/股、获长线投资",
+     "hist_direction": "利多",
+     "ret_3d": 0.5714,
+     "ret_5d": 0.5623,
+     "ret_10d": -1.4438
+    }
+   ],
+   "avg_3d": 0.39,
+   "avg_5d": -0.8,
+   "avg_10d": -2.87,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-045",
+   "track": "恒生科技",
+   "category": "业绩类",
+   "title": "阿里巴巴 CEO 吴泳铭：客户 AI 需求非常强劲，目标到 2032 年阿里云运营的全球数据中心规模",
+   "direction": "利多",
+   "strength": 70,
+   "top3": [
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-08-20",
+     "hist_title": "阿里巴巴2027财年Q1财报（8/20盘后）：营收2,689.53亿（+9%，符合预期）",
+     "hist_direction": "利多",
+     "ret_3d": -2.3825,
+     "ret_5d": -1.707,
+     "ret_10d": -4.9367
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-08-21",
+     "hist_title": "阿里巴巴2027财年Q1财报（8/20盘后）：营收2,689.53亿（+9%略超预期）、",
+     "hist_direction": "利多",
+     "ret_3d": -2.9376,
+     "ret_5d": -3.3782,
+     "ret_10d": -4.1199
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-08-17",
+     "hist_title": "商汤预计上半年净利润约5-7亿元同比扭亏（2025年同期亏损近15亿）；南向资金周净买腾",
+     "hist_direction": "利多",
+     "ret_3d": -1.7043,
+     "ret_5d": -3.9312,
+     "ret_10d": -3.391
+    }
+   ],
+   "avg_3d": -2.34,
+   "avg_5d": -3.01,
+   "avg_10d": -4.15,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-046",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "千问新一代 AI 硬件首次集中亮相云栖大会：千问 AI 眼镜 N1、N1 Pro（5,000 万像素",
+   "direction": "利多",
+   "strength": 66,
+   "top3": [
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-08-17",
+     "hist_title": "苹果自训中国专属AI大模型、阿里参与提供支持（有望首家获批在华推出自有AI模型）；智谱发",
+     "hist_direction": "利多",
+     "ret_3d": -1.7043,
+     "ret_5d": -3.9312,
+     "ret_10d": -3.391
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-21",
+     "hist_title": "港股AI催化密集：阿里巴巴2026云栖大会9/22-9/24召开（阿里云9/20起将\"云",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-21",
+     "hist_title": "2026 阿里云栖大会明日（9/22）在杭州国际博览中心开幕，会期 9/22-9/24，",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -1.7,
+   "avg_5d": -3.93,
+   "avg_10d": -3.39,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-047",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "腾讯混元正式发布混元图像 3.5 预览版（Hunyuan Image 3.5 preview），支持",
+   "direction": "利多",
+   "strength": 64,
+   "top3": [
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-21",
+     "hist_title": "港股AI催化密集：阿里巴巴2026云栖大会9/22-9/24召开（阿里云9/20起将\"云",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-09-17",
+     "hist_title": "港股9/16温和收高、恒生科技收复4,300关口: 恒生指数收24,713.78(+0.",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.2,
+     "hist_date": "2026-08-30",
+     "hist_title": "恒科权重中报与AI动态：美团Q2到店酒旅超预期/经营利润环比转正（'资本效率'正向样本）",
+     "hist_direction": "利多",
+     "ret_3d": -3.2769,
+     "ret_5d": -1.9949,
+     "ret_10d": -6.5355
+    }
+   ],
+   "avg_3d": -3.28,
+   "avg_5d": -1.99,
+   "avg_10d": -6.54,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-048",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "港股 9/22 集体拉升：恒生科技指数盘中一度涨近 2%（若收阳为五连阳），腾讯控股一度涨近 8%、",
+   "direction": "利多",
+   "strength": 76,
+   "top3": [
+    {
+     "similarity": 81.9,
+     "hist_date": "2026-08-27",
+     "hist_title": "港股8/26收盘：恒指+0.56%报25,652.97、恒生科技+0.82%报4,626",
+     "hist_direction": "利多",
+     "ret_3d": -1.5023,
+     "ret_5d": -3.2857,
+     "ret_10d": -6.2723
+    },
+    {
+     "similarity": 81.7,
+     "hist_date": "2026-09-16",
+     "hist_title": "南向资金9/16全天成交额787.89亿港元、成交净买入20.99亿港元、连续8个交易日",
+     "hist_direction": "利多",
+     "ret_3d": 2.262,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.6,
+     "hist_date": "2026-09-04",
+     "hist_title": "港股9/4收评: 恒指+1.74%报25,650.87、恒生科技+2.27%报4,569",
+     "hist_direction": "利多",
+     "ret_3d": -3.2608,
+     "ret_5d": -5.4538,
+     "ret_10d": -3.5953
+    }
+   ],
+   "avg_3d": -0.83,
+   "avg_5d": -4.37,
+   "avg_10d": -4.93,
+   "confidence": 82
+  },
+  {
+   "id": "N20260922-049",
+   "track": "恒生科技",
+   "category": "宏观类",
+   "title": "摩根士丹利研报预估：中国消费端 AI 可变现收入潜在规模将由今年约 540 亿元扩大至 2030 年",
+   "direction": "利多",
+   "strength": 55,
+   "top3": [
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-26",
+     "hist_title": "高盛上调中国芯片资本开支预测（8/26）：2030年规模可达820亿美元（较一年前预测上",
+     "hist_direction": "利多",
+     "ret_3d": -0.1358,
+     "ret_5d": -2.356,
+     "ret_10d": -4.4391
+    },
+    {
+     "similarity": 75.0,
+     "hist_date": "2026-08-06",
+     "hist_title": "光大证券对港股转中性:反弹后短期性价比下降,美联储加息概率上升压制估值",
+     "hist_direction": null,
+     "ret_3d": 0.0755,
+     "ret_5d": -0.5889,
+     "ret_10d": -2.4944
+    },
+    {
+     "similarity": 75.0,
+     "hist_date": "2026-08-07",
+     "hist_title": "美联储主席沃什:若通胀数据偏热将支持上调利率",
+     "hist_direction": null,
+     "ret_3d": -1.6847,
+     "ret_5d": -3.1013,
+     "ret_10d": -1.8963
+    }
+   ],
+   "avg_3d": -0.58,
+   "avg_5d": -2.02,
+   "avg_10d": -2.94,
+   "confidence": 77
+  },
+  {
+   "id": "N20260922-050",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "恒生科技成分内部结构分化：午间腾讯控股领涨 6.60%、阿里巴巴-W +2.93%、联想集团 +2.",
+   "direction": "中性",
+   "strength": 48,
+   "top3": [
+    {
+     "similarity": 81.1,
+     "hist_date": "2026-08-21",
+     "hist_title": "港股8/20收盘：恒指+0.80%报25,698.49（4连升）、恒科+0.39%报4,",
+     "hist_direction": "中性",
+     "ret_3d": -2.9376,
+     "ret_5d": -3.3782,
+     "ret_10d": -4.1199
+    },
+    {
+     "similarity": 81.0,
+     "hist_date": "2026-08-18",
+     "hist_title": "港股收评（8/18，新华社）：恒指+0.07%收25,471.15（早盘一度跌超200点",
+     "hist_direction": "中性",
+     "ret_3d": 0.5693,
+     "ret_5d": -3.1786,
+     "ret_10d": -3.9733
+    },
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-08-20",
+     "hist_title": "南向资金8/20净卖出104.12亿港元（连续第三日，较昨日146.82亿收窄）：阿里巴",
+     "hist_direction": "中性",
+     "ret_3d": -2.3825,
+     "ret_5d": -1.707,
+     "ret_10d": -4.9367
+    }
+   ],
+   "avg_3d": -1.58,
+   "avg_5d": -2.75,
+   "avg_10d": -4.34,
+   "confidence": 81
+  },
+  {
+   "id": "N20260922-051",
+   "track": "A股医药",
+   "category": "行业事件类",
+   "title": "A股生物制品板块低开高走领涨市场：义翘神州、诺唯赞均触及 20cm 涨停，康希诺涨超 11%、百奥泰",
+   "direction": "利多",
+   "strength": 72,
+   "top3": [
+    {
+     "similarity": 81.4,
+     "hist_date": "2026-09-08",
+     "hist_title": "A股医药生物收盘+1.12%午后大幅拉升（9/8）：CXO/医疗服务/生物制品爆发——奥",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.4,
+     "hist_date": "2026-09-18",
+     "hist_title": "创新药板块盘中爆发: 创新药板块指数+1.29%(1,086.43)、CRO 板块+2.",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.2,
+     "hist_date": "2026-09-15",
+     "hist_title": "9/14 A股医药生物板块+2.22%领涨两市(涨幅第一): 478只成份股420只收涨",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.96,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20260922-052",
+   "track": "A股医药",
+   "category": "行业事件类",
+   "title": "CRO、创新药概念板块走强（早盘 CRO 概念跌幅靠前、开盘后轮动上扬）；南华生物走出 10cm 涨",
+   "direction": "利多",
+   "strength": 55,
+   "top3": [
+    {
+     "similarity": 82.2,
+     "hist_date": "2026-09-21",
+     "hist_title": "【盘中核心】A股医药生物板块掀涨停潮：华仁药业(300110)盘中直线拉升3分钟封上20",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.0,
+     "hist_date": "2026-09-21",
+     "hist_title": "A股医药领涨结构：医疗服务、CRO概念、创新药、生物制品、化学制药涨幅居前；对应板块指数",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.8,
+     "hist_date": "2026-08-17",
+     "hist_title": "创新药概念震荡回升：誉衡药业7天5板、华森制药2连板；2026上半年License-ou",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.96,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20260922-053",
+   "track": "A股医药",
+   "category": "业绩类",
+   "title": "罗氏的 ENICEPATIDE 达到了 II 期临床试验的两个主要终点",
+   "direction": "利多",
+   "strength": 35,
+   "top3": [
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-08-26",
+     "hist_title": "百利天恒双抗ADC III期达主要终点（8/26盘后公告）：全球首创EGFR×HER3双",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-08-27",
+     "hist_title": "百利天恒8/26：中报亏损16.37亿同比扩大+全球首款双抗ADC（EGFR×HER3）",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-16",
+     "hist_title": "恒瑞医药(600276.SH)获两份药物临床试验批准通知书: 子公司福建盛迪医药收到HR",
+     "hist_direction": "利多",
+     "ret_3d": 3.9386,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 1.95,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-054",
+   "track": "A股医药",
+   "category": "行业事件类",
+   "title": "华源证券研报：生物制品行业迎来需求扩容与国产创新加速双重机遇；细胞培养基国产化率已提升至 40.2%",
+   "direction": "中性",
+   "strength": 50,
+   "top3": [
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-06",
+     "hist_title": "A股医药'利多未定价'进入第5日(9/4医药生物-0.30%收跌): 医保局发布会+国谈",
+     "hist_direction": "中性",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-26",
+     "hist_title": "医疗内部分化收盘确认（8/26）：A股中证医疗-0.90%（6,806.99）、医疗服务",
+     "hist_direction": "中性",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.2,
+     "hist_date": "2026-08-21",
+     "hist_title": "医药主升第2日成色验证（8/21）：昨日医药生物+3.73%涨停38股居首、生物制品指数",
+     "hist_direction": "中性",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.96,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-055",
+   "track": "A股医药",
+   "category": "行业事件类",
+   "title": "医药内部结构在政策后第 2 个交易日发生反向切换：大市值/龙头口径转跌——300 医药 -0.32%",
+   "direction": "利空",
+   "strength": 65,
+   "top3": [
+    {
+     "similarity": 81.6,
+     "hist_date": "2026-09-15",
+     "hist_title": "A股医药板块盘中转跌：中证医药7,658.78(-0.64%)、中证医疗6,586.09",
+     "hist_direction": "利空",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-08-26",
+     "hist_title": "A股医药回调分化（8/26）：医疗ETF-0.86%、医药ETF广发0.00%、康龙化成",
+     "hist_direction": "利空",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.7,
+     "hist_date": "2026-08-28",
+     "hist_title": "A股医药8/28全线回调：创新药概念-1.09%（连续3日上涨后回落）、CRO走弱（凯莱",
+     "hist_direction": "利空",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.96,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20260922-056",
+   "track": "A股医药",
+   "category": "行业事件类",
+   "title": "隔夜美股「癌症疫苗」牛股莫德纳（Moderna）周一收涨 12.27%，接近回到 8 月 19 日发",
+   "direction": "利多",
+   "strength": 60,
+   "top3": [
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-20",
+     "hist_title": "医药生物板块盘中集体爆发：医疗ETF512170盘中+4.65%、医药ETF159938",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-23",
+     "hist_title": "mRNA抗癌疫苗V940 III期成功后创新药'GPT时刻'延伸：浙商证券研报指出V94",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-26",
+     "hist_title": "医药8/25逆市领涨收盘确认：医药生物+2.08%、医疗服务+3.40%、创新药+2.3",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.96,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-057",
+   "track": "大消费",
+   "category": "行业事件类",
+   "title": "华创食饮中秋备货中段三大观察（走访河南/江苏/安徽）：①超高端茅台龙头效应凸显，i茅台同比放量下飞天",
+   "direction": "利多",
+   "strength": 60,
+   "top3": [
+    {
+     "similarity": 80.7,
+     "hist_date": "2026-09-14",
+     "hist_title": "华创食饮中秋动销系列：中秋备货开启、行业从供给出清向供需再平衡转变；飞天茅台渠道进度约8",
+     "hist_direction": "利多",
+     "ret_3d": -1.3127,
+     "ret_5d": -0.0195,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-08-13",
+     "hist_title": "白酒板块震荡拉升：会稽山涨停、古井贡酒/山西汾酒涨超4%、茅台+1.12%报1358，中",
+     "hist_direction": "利多",
+     "ret_3d": -1.7023,
+     "ret_5d": -2.0748,
+     "ret_10d": -2.766
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-09-06",
+     "hist_title": "飞天茅台批价续涨: 9/5原箱1,745-1,786元/散瓶1,725-1,790元(周",
+     "hist_direction": "利多",
+     "ret_3d": -2.3503,
+     "ret_5d": -3.5342,
+     "ret_10d": -3.553
+    }
+   ],
+   "avg_3d": -1.79,
+   "avg_5d": -1.88,
+   "avg_10d": -3.16,
+   "confidence": 81
+  },
+  {
+   "id": "N20260922-058",
+   "track": "大消费",
+   "category": "业绩类",
+   "title": "华安证券双节白酒调研要点：中秋国庆整体动销同比下降 10%-20%（预计持续收窄），名酒表现优于行业",
+   "direction": "利空",
+   "strength": 68,
+   "top3": [
+    {
+     "similarity": 80.7,
+     "hist_date": "2026-09-06",
+     "hist_title": "白酒中报收官(19家A股酒企): 合计营收1,963亿(-6.7%)/归母净利731亿(",
+     "hist_direction": "利空",
+     "ret_3d": -2.3503,
+     "ret_5d": -3.5342,
+     "ret_10d": -3.553
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-08-18",
+     "hist_title": "白酒股集体下跌：贵州茅台盘中跌3.64%失守1300元（报1293.09元，总市值约1.",
+     "hist_direction": "利空",
+     "ret_3d": -1.9739,
+     "ret_5d": -1.0595,
+     "ret_10d": -0.0166
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-08-25",
+     "hist_title": "泸州老窖2026年半年报爆雷（8/25晚间）：营收104.72亿（-36.35%）、归母",
+     "hist_direction": "利空",
+     "ret_3d": 0.6384,
+     "ret_5d": 1.0541,
+     "ret_10d": 2.2653
+    }
+   ],
+   "avg_3d": -1.23,
+   "avg_5d": -1.18,
+   "avg_10d": -0.43,
+   "confidence": 81
+  },
+  {
+   "id": "N20260922-059",
+   "track": "大消费",
+   "category": "行业事件类",
+   "title": "国际金融报对上海烟酒店/商超的终端走访：飞天茅台报价上调至 1,950 元/瓶（个体店，平日 1,7",
+   "direction": "利空",
+   "strength": 60,
+   "top3": [
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-17",
+     "hist_title": "8/17酒价内参：飞天茅台跌3元终端均价1784元高位窄幅振荡，11大单品三涨七跌一平、",
+     "hist_direction": "利空",
+     "ret_3d": 0.5074,
+     "ret_5d": -0.7664,
+     "ret_10d": -0.2694
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-18",
+     "hist_title": "8/17飞天茅台散瓶跌6元至1710元（原箱1720持平）、终端零售均价1784(-3)",
+     "hist_direction": "利空",
+     "ret_3d": -1.9739,
+     "ret_5d": -1.0595,
+     "ret_10d": -0.0166
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-19",
+     "hist_title": "8/18飞天茅台散瓶批价约1700元（较前日再跌10元）；i茅台零售价1639（提价后）",
+     "hist_direction": "利空",
+     "ret_3d": -0.5702,
+     "ret_5d": -0.0452,
+     "ret_10d": 0.21
+    }
+   ],
+   "avg_3d": -0.68,
+   "avg_5d": -0.62,
+   "avg_10d": -0.03,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-060",
+   "track": "大消费",
+   "category": "业绩类",
+   "title": "中秋酒市观察：多地酒商反馈「今年中秋销量同比去年下降一半」，备货积极性不高、按需进货；送礼价位集中 ",
+   "direction": "利空",
+   "strength": 80,
+   "top3": [
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-06",
+     "hist_title": "白酒中报收官(19家A股酒企): 合计营收1,963亿(-6.7%)/归母净利731亿(",
+     "hist_direction": "利空",
+     "ret_3d": -2.3503,
+     "ret_5d": -3.5342,
+     "ret_10d": -3.553
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-16",
+     "hist_title": "贵州茅台2026中报：营收922.78亿(+1.30%)、归母净利445.17亿(-1.",
+     "hist_direction": "利空",
+     "ret_3d": 0.5074,
+     "ret_5d": -0.7664,
+     "ret_10d": -0.2694
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-17",
+     "hist_title": "茅台筹码结构深度解析：汇金/证金退出前十大股东、系列酒Q2单季-25%、批发代理收入-2",
+     "hist_direction": "利空",
+     "ret_3d": 0.5074,
+     "ret_5d": -0.7664,
+     "ret_10d": -0.2694
+    }
+   ],
+   "avg_3d": -0.45,
+   "avg_5d": -1.69,
+   "avg_10d": -1.36,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-061",
+   "track": "大消费",
+   "category": "宏观类",
+   "title": "中秋、国庆假期出行热：国家移民管理局预测中秋节假期日均出入境旅客将达 225 万人次、国庆节假期日均",
+   "direction": "利多",
+   "strength": 35,
+   "top3": [
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-09",
+     "hist_title": "8月进出口超预期: 海关总署8月进出口4.65万亿+19.8%(出口+18.6%/进口+",
+     "hist_direction": "利多",
+     "ret_3d": -2.9929,
+     "ret_5d": -4.3484,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-10",
+     "hist_title": "猪价回升+双节消费旺季启动: 全国生猪均价11.59元/公斤(较6月底累计+15%), ",
+     "hist_direction": "利多",
+     "ret_3d": -1.7789,
+     "ret_5d": -2.5092,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-16",
+     "hist_title": "国家统计局：1-8月全国烟酒类零售总额同比增长12.4%，行业整体消费保持较高增速；1-",
+     "hist_direction": "利多",
+     "ret_3d": 1.3974,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -1.12,
+   "avg_5d": -3.43,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-062",
+   "track": "美股标普医药",
+   "category": "业绩类",
+   "title": "杰富瑞将诺和诺德目标价从 285 丹麦克朗下调至 275 丹麦克朗",
+   "direction": "利空",
+   "strength": 30,
+   "top3": [
+    {
+     "similarity": 75.0,
+     "hist_date": "2026-08-05",
+     "hist_title": "默沙东Q2超预期并上调全年指引,辉瑞上调营收预期",
+     "hist_direction": null,
+     "ret_3d": 2.6072,
+     "ret_5d": 2.6072,
+     "ret_10d": 5.0134
+    },
+    {
+     "similarity": 75.0,
+     "hist_date": "2026-08-06",
+     "hist_title": "礼来Q2营收+48%并上调全年指引至850-870亿美元,股价大涨9%",
+     "hist_direction": null,
+     "ret_3d": 2.1648,
+     "ret_5d": 2.3898,
+     "ret_10d": 6.1843
+    },
+    {
+     "similarity": 75.0,
+     "hist_date": "2026-08-07",
+     "hist_title": "大摩将礼来目标价从1347上调至1419美元",
+     "hist_direction": null,
+     "ret_3d": 1.6659,
+     "ret_5d": 1.02,
+     "ret_10d": 3.5611
+    }
+   ],
+   "avg_3d": 2.15,
+   "avg_5d": 2.01,
+   "avg_10d": 4.92,
+   "confidence": 75
+  },
+  {
+   "id": "N20260922-063",
+   "track": "美股标普医药",
+   "category": "政策类",
+   "title": "FDA 批准莫德纳更新版 2026-2027 年 Spikevax 与 mNEXSPIKE 新冠疫苗",
+   "direction": "利多",
+   "strength": 55,
+   "top3": [
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-17",
+     "hist_title": "FDA加速批准百时美施贵宝首款CELMoD疗法Zenbexus（治疗多发性骨髓瘤），为B",
+     "hist_direction": "利多",
+     "ret_3d": 4.5316,
+     "ret_5d": 2.4603,
+     "ret_10d": 2.6339
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-15",
+     "hist_title": "FDA 9/14密集审批落地: Biofrontera的Ameluz(氨基酮戊酸盐酸盐外",
+     "hist_direction": "利多",
+     "ret_3d": 0.4354,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-16",
+     "hist_title": "FDA 9/15批准Curium的Bexlutry(lutetium Lu 177 do",
+     "hist_direction": "利多",
+     "ret_3d": 0.7391,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 1.9,
+   "avg_5d": 2.46,
+   "avg_10d": 2.63,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-064",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "欧洲央行首席经济学家 Philip Lane：新一轮能源价格高企意味着欧元区通胀将比最初预期持续更长",
+   "direction": "利空",
+   "strength": 70,
+   "top3": [
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-09-14",
+     "hist_title": "全球央行超级周：日本央行9/18加息25bp至1.25%概率约76%；欧洲央行上周已加息",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-09-10",
+     "hist_title": "全球加息预期突袭: 欧洲央行今日(9/10)利率决议预期加息25bp至2.5%, 瑞银将",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.2,
+     "hist_date": "2026-08-20",
+     "hist_title": "A股8/19放量长阴：沪指-2.40%破3,900（3,894.42）、创业板-6.26",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": null,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-065",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "摩根大通 CEO 杰米·戴蒙：AI 领域支出热潮几乎没有放缓迹象，超大规模云服务商生态投资总额明年可",
+   "direction": "中性",
+   "strength": 40,
+   "top3": [
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-01",
+     "hist_title": "今日22:00美国8月ISM制造业PMI+21:45标普全球制造业PMI终值+22:00",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-27",
+     "hist_title": "隔夜美股8/26收盘（财报前缩量整固）：道指-0.21%报53,463.88止步三连涨、",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-09-04",
+     "hist_title": "今晚20:30美国8月非农(本周总开关): 市场预期新增约5.6-6.5万(7月-2.3",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": null,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-066",
+   "track": "其他/宽基",
+   "category": "行业事件类",
+   "title": "A股冲高回落形态确认：创业板指、科创综指盘中均涨超 2% 后收窄涨幅，午间创业板指 +0.93%、沪",
+   "direction": "利空",
+   "strength": 55,
+   "top3": [
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-09-16",
+     "hist_title": "9/15 A股「指数弱、结构强」极端分化: 上证指数收3,864.28(-0.54%)、",
+     "hist_direction": "利空",
+     "ret_3d": 1.3235,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-09-17",
+     "hist_title": "A股科技板块9/17高位分化：前一交易日大幅上涨的算力硬件/半导体链条出现明显分歧——中",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-18",
+     "hist_title": "A股市场结构与持仓个股（9/17收盘）: 两市成交1.82万亿元(缩量约160亿)、上涨",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 1.32,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-067",
+   "track": "其他/宽基",
+   "category": "行业事件类",
+   "title": "AI 应用与算力芯片赛道走强：南威软件 2 连板，光云科技、引力传媒、智度股份涨停，旋极信息封 20",
+   "direction": "中性",
+   "strength": 30,
+   "top3": [
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-09-03",
+     "hist_title": "传媒短剧AIGC情绪延续第3日（9/3盘中）：欢瑞世纪4连板（近80万手封单）/博纳影业",
+     "hist_direction": "中性",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-09-16",
+     "hist_title": "A股板块涨跌结构（9/16）：涨幅前三——通信设备+5.18%（领涨股长芯博创+12.9",
+     "hist_direction": "中性",
+     "ret_3d": 1.3235,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-30",
+     "hist_title": "英伟达财报后定价分化（8/28美股收盘确认）：英伟达-4.57%、市值一天蒸发2,514",
+     "hist_direction": "中性",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    }
+   ],
+   "avg_3d": 0.05,
+   "avg_5d": -2.08,
+   "avg_10d": -0.78,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-068",
+   "track": "其他/宽基",
+   "category": "行业事件类",
+   "title": "文化传媒板块高开高走：新华传媒、新华文轩、引力传媒、中国出版、智度股份等多股涨停，值得买涨超 10%",
+   "direction": "利多",
+   "strength": 60,
+   "top3": [
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-09-04",
+     "hist_title": "传媒/AI应用大涨（9/4盘中）：传媒ETF（512980）+3.75%领涨持仓ETF—",
+     "hist_direction": "利多",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    },
+    {
+     "similarity": 80.2,
+     "hist_date": "2026-09-16",
+     "hist_title": "9/15 风电设备板块掀涨停潮: 大金重工、锡华科技、天顺风能等多股涨停, 板块资金净流",
+     "hist_direction": "利多",
+     "ret_3d": 1.3235,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-31",
+     "hist_title": "传媒AIGC爆发（8/31盘中）：国内首部上星AIGC长剧《后西游记》登陆湖南卫视黄金档",
+     "hist_direction": "利多",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    }
+   ],
+   "avg_3d": 0.05,
+   "avg_5d": -2.08,
+   "avg_10d": -0.78,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-069",
+   "track": "其他/宽基",
+   "category": "行业事件类",
+   "title": "港口航运板块走势低迷：招商轮船 -5.94%、招商南油 -5.15%、国航远洋 -4.39% 跌幅居",
+   "direction": "中性",
+   "strength": 25,
+   "top3": [
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-09-17",
+     "hist_title": "市场其他重要动态(9/16-9/17): ①三一重工盘中闪崩带动工程机械板块-4.17%",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-30",
+     "hist_title": "英伟达财报后定价分化（8/28美股收盘确认）：英伟达-4.57%、市值一天蒸发2,514",
+     "hist_direction": "中性",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-03",
+     "hist_title": "传媒短剧AIGC情绪延续第3日（9/3盘中）：欢瑞世纪4连板（近80万手封单）/博纳影业",
+     "hist_direction": "中性",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    }
+   ],
+   "avg_3d": -0.58,
+   "avg_5d": -2.08,
+   "avg_10d": -0.78,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-070",
+   "track": "其他/宽基",
+   "category": "宏观类",
+   "title": "机构观点分歧收窄至「震荡」：国泰海通称外部风险已逐步计价、叠加美债利率压力缓和与稳市场政策托底，A股",
+   "direction": "中性",
+   "strength": 25,
+   "top3": [
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-09-08",
+     "hist_title": "全球资金动向（9/8）：LME铜价创历史新高14,533-14,617美元（美国关税预期",
+     "hist_direction": "中性",
+     "ret_3d": -1.0659,
+     "ret_5d": -2.3844,
+     "ret_10d": null
+    },
+    {
+     "similarity": 75.2,
+     "hist_date": "2026-09-07",
+     "hist_title": "银行股『利好出尽』（9/7盘中）：财政部3,600亿注资+央行5,000亿买断式逆回购落",
+     "hist_direction": "利空",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    },
+    {
+     "similarity": 75.0,
+     "hist_date": "2026-09-03",
+     "hist_title": "A股9/3盘前: 沪指3,941.39跌破年线(约3,984.65转压力, 下方3,92",
+     "hist_direction": "利空",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    }
+   ],
+   "avg_3d": -0.74,
+   "avg_5d": -2.18,
+   "avg_10d": -0.78,
+   "confidence": 77
+  },
+  {
+   "id": "N20260922-071",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "国家发改委在新闻发布会介绍：将加快推动《中华人民共和国卫星导航条例》出台实施；近期向民营企业推介 3",
+   "direction": "中性",
+   "strength": 30,
+   "top3": [
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-08-31",
+     "hist_title": "G20财长和央行行长会议8/31-9/1在美北卡举行（贝森特主持）+ 9/4美国8月非农",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-09-20",
+     "hist_title": "LPR 报价（9/20 央行公布）+ 流动性：9 月 1 年期 LPR 为 3.00%、",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-03",
+     "hist_title": "中国宏观组合: 8月官方制造业PMI 49.8(环比+0.6pp但连续第二月荣枯线下, ",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": null,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260922-072",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "中东局势未实质缓和：也门胡塞武装领导人要求沙特「停止侵略、解除封锁」，称沙特的侵略与封锁无异于对也门",
+   "direction": "中性",
+   "strength": 20,
+   "top3": [
+    {
+     "similarity": 81.3,
+     "hist_date": "2026-08-28",
+     "hist_title": "黄金4,601.58（+0.15%）、白银69.25（+1.69%）、美元指数99.19",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.0,
+     "hist_date": "2026-09-15",
+     "hist_title": "黄金被美债收益率「打下来」: COMEX黄金期货-1.56%报4,340.0美元/盎司、",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-08-20",
+     "hist_title": "现货黄金冲高回落（8/20）：隔夜+4.35%创五个月最大单日涨幅后，8/20现货黄金-",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": null,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20260922-073",
+   "track": "A股医药",
+   "category": "业绩类",
+   "title": "医药内部资金结构：13:47 时点医药生物板块整体 +0.31%、生物制品 +1.40%、创新药 +",
+   "direction": "利空",
+   "strength": 50,
+   "top3": [
+    {
+     "similarity": 80.2,
+     "hist_date": "2026-08-23",
+     "hist_title": "周末医药中报'爆雷潮'（8/21晚间集中披露）：8家医药龙头集体下滑——恒瑞-15.25",
+     "hist_direction": "利空",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-26",
+     "hist_title": "机构操作警示：内资机构在创新药反弹时连续减仓（8/25反弹中被大幅减仓）；键凯科技中报净",
+     "hist_direction": "利空",
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 75.7,
+     "hist_date": "2026-08-07",
+     "hist_title": "创新药出海红利集中释放 多家药企上半年业绩亮眼",
+     "hist_direction": null,
+     "ret_3d": 0.9553,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.96,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 79
+  }
+ ],
+ "onesample": {
+  "A股医药": {
+   "n": 293,
+   "mean": 0.2343,
+   "up_ratio": 0.5017
+  },
+  "恒生科技": {
+   "n": 252,
+   "mean": -0.205,
+   "up_ratio": 0.3968
+  },
+  "美股标普医药": {
+   "n": 134,
+   "mean": 0.1746,
+   "up_ratio": 0.5522
+  },
+  "大消费": {
+   "n": 234,
+   "mean": -0.0562,
+   "up_ratio": 0.4573
+  },
+  "其他/宽基": {
+   "n": 80,
+   "mean": -0.0829,
+   "up_ratio": 0.55
+  }
+ },
+ "windows": {
+  "A股医药": {
+   "3": {
+    "n": 259,
+    "mean": 1.1742
+   }
+  },
+  "恒生科技": {
+   "3": {
+    "n": 224,
+    "mean": -0.9661
+   },
+   "5": {
+    "n": 201,
+    "mean": -1.928
+   },
+   "10": {
+    "n": 166,
+    "mean": -4.0643
+   }
+  },
+  "美股标普医药": {
+   "3": {
+    "n": 111,
+    "mean": 0.4102
+   },
+   "5": {
+    "n": 91,
+    "mean": 0.2318
+   },
+   "10": {
+    "n": 71,
+    "mean": -0.5112
+   }
+  },
+  "大消费": {
+   "3": {
+    "n": 204,
+    "mean": -0.3336
+   },
+   "5": {
+    "n": 175,
+    "mean": -0.6876
+   },
+   "10": {
+    "n": 142,
+    "mean": -0.9807
+   }
+  },
+  "其他/宽基": {
+   "3": {
+    "n": 51,
+    "mean": -0.3303
+   },
+   "5": {
+    "n": 37,
+    "mean": -1.5026
+   },
+   "10": {
+    "n": 17,
+    "mean": -0.8336
+   }
+  }
+ },
+ "track_index_map": {
+  "A股医药": "000933",
+  "大消费": "000932",
+  "恒生科技": "HSTECH",
+  "美股标普医药": "XLV",
+  "其他/宽基": "000300"
+ },
+ "note": "本档不回填（A股/港股 9/22 未收盘）；A股医药 3/5/10 日窗口以 399006 创业板指为代理（§3.90）"
+}
