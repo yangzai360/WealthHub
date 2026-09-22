@@ -561,9 +561,9 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.3682,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：XLV 169.01 +0.37%"
   }
  },
  {
@@ -588,9 +588,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ret_1d_ref": "非交易日（周日），待 9/21 收盘回填"
+   "actual_ret_1d": 0.3682,
+   "actual_date": "2026-09-21",
+   "ret_1d_ref": "9/21 收盘：XLV 169.01 +0.37%"
   }
  },
  {
