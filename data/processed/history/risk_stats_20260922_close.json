@@ -1,0 +1,21 @@
+{
+ "date": "2026-09-22",
+ "chain_cum_pct": -2.59,
+ "chain_days": 34,
+ "w38_cum_pct": 1.37,
+ "w38_days": 5,
+ "w39_cum_pct": 1.39,
+ "w39_days": 2,
+ "sharpe": -1.76,
+ "sharpe_n": 34,
+ "daily_mean": -0.0746,
+ "daily_sd": 0.7316,
+ "max_dd_pct": -6.31,
+ "last5_cum_pct": 2.17,
+ "last10_cum_pct": -0.2,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先），未依赖 glob/sorted 顺序（§3.98）"
+}
