@@ -1,0 +1,93 @@
+{
+ "date": "2026-09-24",
+ "as_of": "2026-09-24 盘前(08:00)",
+ "base_total": 383039.0,
+ "base_date": "2026-09-23收盘(净值补更修正)",
+ "base_pnl_prev_day": -559.81,
+ "base_pct_prev_day": -0.1459,
+ "tracks": {
+  "其他/宽基": {
+   "mv": 95782.13,
+   "w": 25.01,
+   "prev_day_pct": -1.167,
+   "prev_day_pnl": -1131.43
+  },
+  "大消费": {
+   "mv": 75629.77,
+   "w": 19.74,
+   "prev_day_pct": -0.354,
+   "prev_day_pnl": -268.89
+  },
+  "现金": {
+   "mv": 29212.97,
+   "w": 7.63,
+   "prev_day_pct": 0.0,
+   "prev_day_pnl": 0.0
+  },
+  "A股医药": {
+   "mv": 90334.78,
+   "w": 23.58,
+   "prev_day_pct": 0.936,
+   "prev_day_pnl": 837.25
+  },
+  "美股标普医药": {
+   "mv": 59562.78,
+   "w": 15.55,
+   "prev_day_pct": 0.392,
+   "prev_day_pnl": 232.69
+  },
+  "恒生科技": {
+   "mv": 32516.58,
+   "w": 8.49,
+   "prev_day_pct": -0.701,
+   "prev_day_pnl": -229.43
+  }
+ },
+ "med_exposure": 149897.56,
+ "med_pct": 39.13,
+ "threshold_all_med": 3.69,
+ "threshold_a_sh_med": 6.12,
+ "us_overnight": {
+  "XLV": -0.64,
+  "IYH": -0.75,
+  "QQQ": -0.84,
+  "DIA": -0.71,
+  "SPY": -0.72,
+  ".IXIC": -1.13,
+  ".DJI": -0.68,
+  ".INX": -0.75
+ },
+ "qdii_trans_coef": 0.75,
+ "us_track_pred_pct": -0.48,
+ "us_track_pred_pnl": -285.9,
+ "us_track_pred_pnl_range": [
+  -285.14,
+  -290.48
+ ],
+ "defense_lines": {
+  "中证消费 12,100 下沿": {
+   "current": 12288.7946,
+   "target": 12100.0,
+   "dist_pct": 1.56,
+   "formula": "(收盘−防线)/防线"
+  },
+  "中证消费 12,400 上沿观察位": {
+   "current": 12288.7946,
+   "target": 12400.0,
+   "dist_pct": 0.905,
+   "formula": "(目标−收盘)/收盘"
+  },
+  "恒生科技 4,250 防线": {
+   "current": 4379.07,
+   "target": 4250.0,
+   "dist_pct": 3.037,
+   "formula": "(收盘−防线)/防线"
+  },
+  "中证医药单日 -1.5% 反向兑现线": {
+   "current": "9/23 A股医药赛道 +0.936%",
+   "target": -1.5,
+   "dist_pct": "未触发",
+   "formula": "单日赛道跌幅阈值"
+  }
+ }
+}
