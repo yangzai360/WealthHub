@@ -1,0 +1,25 @@
+{
+ "date": "2026-09-24",
+ "chain_cum_pct": -3.98,
+ "chain_days": 36,
+ "w38_cum_pct": 1.37,
+ "w38_days": 5,
+ "w39_cum_pct": -0.06,
+ "w39_days": 4,
+ "sharpe": -2.51,
+ "sharpe_n": 36,
+ "daily_mean": -0.1101,
+ "daily_sd": 0.7375,
+ "max_dd_pct": -6.31,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-09-11",
+ "last5_cum_pct": 0.51,
+ "last10_cum_pct": 0.31,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）"
+}

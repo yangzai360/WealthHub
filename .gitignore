@@ -10,3 +10,7 @@ docs/.vuepress/dist/
 docs/.vuepress/cache/
 docs/.vuepress/temp/
 docs/.vuepress/.temp/
+
+# Python 字节码缓存
+__pycache__/
+*.pyc
