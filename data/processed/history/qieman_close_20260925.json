@@ -1,0 +1,23 @@
+{
+ "date": "2026-09-25",
+ "session": "close",
+ "rest_all_empty": true,
+ "plan_bytes": 43545,
+ "nav_bytes": 197360,
+ "adjustedCount": 264,
+ "investedUnit": 110,
+ "nav": 1.6605,
+ "navDate_bj": "2026-09-24",
+ "dailyReturn": -0.0069,
+ "new_adjustment": false,
+ "nav_src_latest": [
+  "2026-09-24",
+  1.6604536681
+ ],
+ "nav_local_latest": [
+  "2026-09-21",
+  "1.668416"
+ ],
+ "nav_serial_divergence": true,
+ "policy": "按 §3.97/§3.99：源与本地口径分歧时不追加、不回写（用户决策项）"
+}

@@ -1,0 +1,1141 @@
+{
+ "date": "2026-09-25",
+ "window": "close",
+ "total_events": 1715,
+ "today_events": 105,
+ "added": 23,
+ "blank": 105,
+ "blank_by_date": {
+  "2026-09-25": 105
+ },
+ "blank_by_track": {
+  "宏观": 23,
+  "A股医药": 25,
+  "美股标普医药": 11,
+  "恒生科技": 17,
+  "大消费": 18,
+  "其他/宽基": 11
+ },
+ "similarity_by_track": {
+  "宏观": {
+   "n": 5,
+   "avg_3d": 0.0,
+   "avg_5d": 0.0,
+   "avg_10d": 0.0,
+   "avg_conf": 80.8,
+   "n_win_na": {
+    "3": 5,
+    "5": 5,
+    "10": 5
+   }
+  },
+  "恒生科技": {
+   "n": 4,
+   "avg_3d": -0.39,
+   "avg_5d": -1.24,
+   "avg_10d": -3.49,
+   "avg_conf": 81.2,
+   "n_win_na": {
+    "3": 0,
+    "5": 1,
+    "10": 1
+   }
+  },
+  "A股医药": {
+   "n": 5,
+   "avg_3d": 0.61,
+   "avg_5d": 3.87,
+   "avg_10d": 0.0,
+   "avg_conf": 80.8,
+   "n_win_na": {
+    "3": 0,
+    "5": 0,
+    "10": 5
+   }
+  },
+  "大消费": {
+   "n": 4,
+   "avg_3d": -0.09,
+   "avg_5d": 0.26,
+   "avg_10d": 0.0,
+   "avg_conf": 80.2,
+   "n_win_na": {
+    "3": 0,
+    "5": 0,
+    "10": 1
+   }
+  },
+  "美股标普医药": {
+   "n": 2,
+   "avg_3d": 0.34,
+   "avg_5d": 0.24,
+   "avg_10d": -0.17,
+   "avg_conf": 80.5,
+   "n_win_na": {
+    "3": 0,
+    "5": 1,
+    "10": 1
+   }
+  },
+  "其他/宽基": {
+   "n": 3,
+   "avg_3d": -0.74,
+   "avg_5d": -1.93,
+   "avg_10d": -0.97,
+   "avg_conf": 79.3,
+   "n_win_na": {
+    "3": 0,
+    "5": 0,
+    "10": 0
+   }
+  }
+ },
+ "similarity_detail": [
+  {
+   "id": "N20260925-083",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "🔴 事实更正：美国 8 月 PCE 公布日为美东 2026-09-30（北京时间 9/30 20:3",
+   "direction": "利空",
+   "strength": 45,
+   "top3": [
+    {
+     "similarity": 81.9,
+     "hist_date": "2026-09-11",
+     "hist_title": "美国8月PPI同比+5.4%超预期(预期5.3%/前值4.8%), 环比+0.4%; 核",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.7,
+     "hist_date": "2026-09-13",
+     "hist_title": "美国8月CPI同比+3.4%符合预期, 核心CPI环比+0.3%超预期——CME 9月加",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.3,
+     "hist_date": "2026-08-27",
+     "hist_title": "美国7月PCE落地（8/26晚20:30）：整体PCE同比+3.7%略超预期（预期3.6",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": null,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 82
+  },
+  {
+   "id": "N20260925-084",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "中美元首会谈成果的「落地度」被集中审视：无联合公报、300 亿美元对等降税清单未公布、稀土出口管制细",
+   "direction": "中性",
+   "strength": 35,
+   "top3": [
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-09-23",
+     "hist_title": "利率与商品：CME 定价10月再加息25bp概率回落至约50%（前一日54.2%），美债",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.2,
+     "hist_date": "2026-08-30",
+     "hist_title": "周末外部地缘与商品：美加关税战升级（200亿美元对200亿美元）；特朗普称获得委内瑞拉6",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.2,
+     "hist_date": "2026-09-20",
+     "hist_title": "下周关键事件日程与节前交易日安排：9/22-9/25 多场机器人/低空经济/储能产业大会",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": null,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260925-085",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "全球债市抛售潮加剧：日本 2 年期与 10 年期国债收益率均创逾 30 年新高、5 年期创历史新高，",
+   "direction": "利空",
+   "strength": 78,
+   "top3": [
+    {
+     "similarity": 82.2,
+     "hist_date": "2026-08-19",
+     "hist_title": "全球债券收益率飙升：美国30年期国债收益率盘中创2007年以来新高（近5.30%）、10",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 82.2,
+     "hist_date": "2026-09-20",
+     "hist_title": "全球债市同步抛售、收益率创2008年以来最高：美国10年期国债收益率升5bp报4.995",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.2,
+     "hist_date": "2026-09-02",
+     "hist_title": "沃什鹰派+全球债市抛售潮：10Y美债4.79%(连续5日上行累计+10bp创2025年1",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": null,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 82
+  },
+  {
+   "id": "N20260925-086",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "中东局势双向缓和信号：伊朗外长称已向美国提出「七天内重新开放霍尔木兹海峡」方案（以解除经济封锁为对价",
+   "direction": "利多",
+   "strength": 52,
+   "top3": [
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-09-15",
+     "hist_title": "国际油价冲高回落: 沙特东西输油管道遇袭停运(日输送能力峰值700万桶/约500万桶可出",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-08-21",
+     "hist_title": "现货黄金突破4,550美元/盎司（8/21）：贝森特暗示进一步扩大长期国债回购规模（单次",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-08-13",
+     "hist_title": "隔夜美股CPI后分化：标普+0.26%纳指+0.54%道指-0.04%，费城半导体+3.",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": null,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260925-087",
+   "track": "宏观",
+   "category": "政策类",
+   "title": "上交所与中证指数公司将于 9 月 29 日发布「上证创新药科创领先指数」与「上证科创板软件服务指数」",
+   "direction": "利多",
+   "strength": 48,
+   "top3": [
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-14",
+     "hist_title": "央行8/14开展1万亿元买断式逆回购（6个月）+ 8/14-8/19每日开展不超6,00",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-19",
+     "hist_title": "国务院修改《住房公积金管理条例》（9/20施行）：房租提取取消收入比例门槛、装修/物业费",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-20",
+     "hist_title": "上海六部门印发《关于优化本市房地产政策措施的通知》（8/21起施行）：优化住房公积金提取",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": null,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260925-088",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "港股 9/25 收盘：恒生指数 −1.01% 报 24,510.09（盘中一度创近两个月阶段新低）、",
+   "direction": "利空",
+   "strength": 55,
+   "top3": [
+    {
+     "similarity": 83.6,
+     "hist_date": "2026-09-02",
+     "hist_title": "港股收盘（9/2，新华社口径）：恒指25,311.21（-0.07%）盘中逼近25,00",
+     "hist_direction": "利空",
+     "ret_3d": 0.2336,
+     "ret_5d": -2.1334,
+     "ret_10d": -4.244
+    },
+    {
+     "similarity": 83.1,
+     "hist_date": "2026-09-16",
+     "hist_title": "港股9/15高开低走、三大指数集体收跌: 恒生指数收24,667.24点(-1.00%、",
+     "hist_direction": "利空",
+     "ret_3d": 2.262,
+     "ret_5d": 1.2396,
+     "ret_10d": null
+    },
+    {
+     "similarity": 83.0,
+     "hist_date": "2026-08-24",
+     "hist_title": "港股收评（8/24）：恒指-1.89%报25,517.33、恒生科技-3.61%报4,5",
+     "hist_direction": "利空",
+     "ret_3d": 0.5714,
+     "ret_5d": 0.5623,
+     "ret_10d": -1.4438
+    }
+   ],
+   "avg_3d": 1.02,
+   "avg_5d": -0.11,
+   "avg_10d": -2.84,
+   "confidence": 83
+  },
+  {
+   "id": "N20260925-089",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "港股午后震荡回升、跌幅显著收窄：恒指早盘一度跌近 500 点最终收跌 251 点，恒生科技由盘中跌逾",
+   "direction": "中性",
+   "strength": 40,
+   "top3": [
+    {
+     "similarity": 80.8,
+     "hist_date": "2026-09-22",
+     "hist_title": "恒生科技成分内部结构分化：午间腾讯控股领涨 6.60%、阿里巴巴-W +2.93%、联想",
+     "hist_direction": "中性",
+     "ret_3d": -2.8487,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.7,
+     "hist_date": "2026-08-18",
+     "hist_title": "港股收评（8/18，新华社）：恒指+0.07%收25,471.15（早盘一度跌超200点",
+     "hist_direction": "中性",
+     "ret_3d": 0.5693,
+     "ret_5d": -3.1786,
+     "ret_10d": -3.9733
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-08-21",
+     "hist_title": "港股8/20收盘：恒指+0.80%报25,698.49（4连升）、恒科+0.39%报4,",
+     "hist_direction": "中性",
+     "ret_3d": -2.9376,
+     "ret_5d": -3.3782,
+     "ret_10d": -4.1199
+    }
+   ],
+   "avg_3d": -1.74,
+   "avg_5d": -3.28,
+   "avg_10d": -4.05,
+   "confidence": 81
+  },
+  {
+   "id": "N20260925-090",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "甲骨文「不可抗力」通知事件向供应链扩散：Oracle 就新墨西哥州 Project Jupiter ",
+   "direction": "利空",
+   "strength": 65,
+   "top3": [
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-08-13",
+     "hist_title": "港股8/12收盘：恒指-0.83%报25,440.17、恒生科技-0.99%报4,776",
+     "hist_direction": "利空",
+     "ret_3d": -1.1103,
+     "ret_5d": -1.9168,
+     "ret_10d": -3.5911
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-16",
+     "hist_title": "港股大型科技股9/16午盘普遍走弱：阿里巴巴-0.37%、腾讯控股-0.91%、京东集团",
+     "hist_direction": "利空",
+     "ret_3d": 2.262,
+     "ret_5d": 1.2396,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-23",
+     "hist_title": "海外大模型降价潮引发AI资产重估：港股智谱跌12.40%、天数智芯跌8.75%、海清智元",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.58,
+   "avg_5d": -0.34,
+   "avg_10d": -3.59,
+   "confidence": 80
+  },
+  {
+   "id": "N20260925-091",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "港股内房股与地产产业链集体下挫：融创中国、万科企业跌逾 4%，碧桂园跌逾 3%，物管、建材水泥同步走",
+   "direction": "中性",
+   "strength": 30,
+   "top3": [
+    {
+     "similarity": 81.2,
+     "hist_date": "2026-09-21",
+     "hist_title": "港股午后走弱分化：恒生指数+0.62%报24,903.76、恒生国企+0.83%报8,2",
+     "hist_direction": "中性",
+     "ret_3d": -1.4053,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-09-24",
+     "hist_title": "港股内房股涨幅居前、由「全国性房贷贴息」传闻驱动：融信中国收涨22.22%、万科企业早盘",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-23",
+     "hist_title": "港股结构性亮点：内房股表现强劲，融信中国涨19%、万科企业涨近5%、旭辉控股与融创中国涨",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -1.41,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20260925-092",
+   "track": "A股医药",
+   "category": "行业事件类",
+   "title": "港股创新药/CRO 概念股逆势上扬：金斯瑞生物科技 +8.05%（盘中一度 +9.16%、股价创历史",
+   "direction": "利多",
+   "strength": 75,
+   "top3": [
+    {
+     "similarity": 81.2,
+     "hist_date": "2026-09-22",
+     "hist_title": "港股医药同步共振（确认非A股内部纯情绪博弈）：9/21恒生生物科技指数大涨近5%，中国生",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.1,
+     "hist_date": "2026-08-18",
+     "hist_title": "港股CXO/生物医药集体走强（8/18）：金斯瑞+8%、康龙化成/药明生物/凯莱英+5%",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-09-21",
+     "hist_title": "券商盘后密集上调医药观点（「十五五」规划深度解读）+ 港股医药同步共振：中金公司——「十",
+     "hist_direction": "利多",
+     "ret_3d": -2.5692,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -0.81,
+   "avg_5d": 3.87,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20260925-093",
+   "track": "A股医药",
+   "category": "政策类",
+   "title": "花旗研报：美国财政部对华生物技术投资新规（9/21 路透报道）预计重点限制病原体与可能被武器化的生物",
+   "direction": "利多",
+   "strength": 78,
+   "top3": [
+    {
+     "similarity": 80.8,
+     "hist_date": "2026-09-23",
+     "hist_title": "医药工业「十五五」规划持续发酵，花旗发布研报：规划核心是推动中国医药工业由规模驱动转向创",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-08-19",
+     "hist_title": "山东省发布《医药工业'十五五'发展行动方案(征求意见稿)》：2030年营收破4000亿、",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-08-26",
+     "hist_title": "国家药监局8/24局务（扩大）会议要求：支持仿制药高质量发展、强化特殊人群用药保障、扩大",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.96,
+   "avg_5d": 3.87,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20260925-094",
+   "track": "A股医药",
+   "category": "政策类",
+   "title": "国家医保局 9/25 组织「中国医保助力医药产业高质量发展」主题调研采访团，走进江苏、上海、河北多家",
+   "direction": "中性",
+   "strength": 50,
+   "top3": [
+    {
+     "similarity": 81.1,
+     "hist_date": "2026-08-30",
+     "hist_title": "《中华人民共和国医疗保障法》8/28全国人大常委会表决通过（共7章56条、2027年1月",
+     "hist_direction": "中性",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-09-07",
+     "hist_title": "2026医保国谈第二日(9/6): 肿瘤创新药集中谈判——恒瑞/信达/百利天恒/复宏汉霖",
+     "hist_direction": "中性",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-02",
+     "hist_title": "医保局发布按病种付费3.0版分组方案和技术规范（9/2）：继2019年1.0/2024年",
+     "hist_direction": "中性",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.96,
+   "avg_5d": 3.87,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20260925-095",
+   "track": "A股医药",
+   "category": "政策类",
+   "title": "药监与集采双向扩围：国家药监局 2026 年第 86 号公告开展「化学药品其他剂型」（除口服固体制剂",
+   "direction": "中性",
+   "strength": 45,
+   "top3": [
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-08-30",
+     "hist_title": "《中华人民共和国医疗保障法》8/28全国人大常委会表决通过（共7章56条、2027年1月",
+     "hist_direction": "中性",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-01",
+     "hist_title": "基药目录实施首日A股医药分化（9/1盘中）：生物医药ETF天弘标的指数-0.20%但净申",
+     "hist_direction": "中性",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-02",
+     "hist_title": "医保局发布按病种付费3.0版分组方案和技术规范（9/2）：继2019年1.0/2024年",
+     "hist_direction": "中性",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.96,
+   "avg_5d": 3.87,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260925-096",
+   "track": "A股医药",
+   "category": "业绩类",
+   "title": "中国生物制药 2026H1：收入 194.4 亿元（+10.6%），创新药及对外授权总收入 87.9",
+   "direction": "利多",
+   "strength": 70,
+   "top3": [
+    {
+     "similarity": 81.2,
+     "hist_date": "2026-08-14",
+     "hist_title": "药明康德8/13续创新高收162.33元(+2.07%)，东方证券强推'买入'目标价24",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.2,
+     "hist_date": "2026-08-17",
+     "hist_title": "医药半年报密集兑现：药明康德H1营收288.97亿(+38.93%)扣非净利105.72",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.1,
+     "hist_date": "2026-08-18",
+     "hist_title": "泽璟制药半年报首现半年度盈利：2026H1营收12.05亿(+220.88%)、归母净利",
+     "hist_direction": "利多",
+     "ret_3d": 0.9553,
+     "ret_5d": 3.8693,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.96,
+   "avg_5d": 3.87,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20260925-097",
+   "track": "大消费",
+   "category": "业绩类",
+   "title": "贵州茅台 9/25 披露：9 月茅台酒终端动销环比增长约一倍、同比增长超 20%，渠道存销比下降至良",
+   "direction": "利多",
+   "strength": 65,
+   "top3": [
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-08-30",
+     "hist_title": "五粮液中报超预期（8/28盘后）：上半年营收284.17亿元（+20.87%）、归母净利",
+     "hist_direction": "利多",
+     "ret_3d": -0.019,
+     "ret_5d": 2.3602,
+     "ret_10d": -1.2574
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-14",
+     "hist_title": "茅台8/14盘后披露中报：飞天自营零售价上调至1,753元（半年四次调价、终结1,499",
+     "hist_direction": "利多",
+     "ret_3d": -1.3315,
+     "ret_5d": -2.2258,
+     "ret_10d": -0.6836
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-18",
+     "hist_title": "茅台尾盘翻红+白酒止跌（8/18）：贵州茅台+0.38%收1,297.99（盘中最低1,",
+     "hist_direction": "利多",
+     "ret_3d": -1.9739,
+     "ret_5d": -1.0595,
+     "ret_10d": -0.0166
+    }
+   ],
+   "avg_3d": -1.11,
+   "avg_5d": -0.31,
+   "avg_10d": -0.65,
+   "confidence": 80
+  },
+  {
+   "id": "N20260925-098",
+   "track": "大消费",
+   "category": "行业事件类",
+   "title": "⚠️ 批价源口径分歧延续并扩大：酒业网 9/25 价表显示 2026 年飞天原箱 1,755 元/瓶",
+   "direction": "中性",
+   "strength": 50,
+   "top3": [
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-08-21",
+     "hist_title": "8/21白酒批价企稳分化：26年飞天原箱1,715/散瓶1,695持平企稳、2025飞天",
+     "hist_direction": "中性",
+     "ret_3d": 0.869,
+     "ret_5d": 1.5772,
+     "ret_10d": 3.4969
+    },
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-09-16",
+     "hist_title": "白酒11大单品终端零售均价（9/16）五涨五跌一平、总售价突破万元关口：上涨端累计涨幅领",
+     "hist_direction": "中性",
+     "ret_3d": 1.3974,
+     "ret_5d": 1.1272,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-01",
+     "hist_title": "中秋动销前瞻：8/31飞天茅台终端零售均价1,782元、五粮液普五816元（控量稳价下价",
+     "hist_direction": "中性",
+     "ret_3d": 1.4707,
+     "ret_5d": 1.1986,
+     "ret_10d": -2.9354
+    }
+   ],
+   "avg_3d": 1.25,
+   "avg_5d": 1.3,
+   "avg_10d": 0.28,
+   "confidence": 81
+  },
+  {
+   "id": "N20260925-099",
+   "track": "大消费",
+   "category": "行业事件类",
+   "title": "中秋动销「环比温和回暖、同比仍显疲软」：酒业分析师肖竹青称多地渠道反馈中秋期间销量预计同比下滑约 1",
+   "direction": "利空",
+   "strength": 65,
+   "top3": [
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-08-13",
+     "hist_title": "白酒涨价'成色'存疑：8月上旬名酒环比价格指数微跌0.29%，渠道称涨价为厂家主动管控（",
+     "hist_direction": "利空",
+     "ret_3d": -1.7023,
+     "ret_5d": -2.0748,
+     "ret_10d": -2.766
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-08-21",
+     "hist_title": "8/20名酒批价：26年飞天散瓶1,695-1,700（微跌5元持平）/原箱1,715-",
+     "hist_direction": "利空",
+     "ret_3d": 0.869,
+     "ret_5d": 1.5772,
+     "ret_10d": 3.4969
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-15",
+     "hist_title": "白酒批价：26年飞天散瓶1,730元(+5)、原箱1,750元、25年飞天1,760→1",
+     "hist_direction": "利空",
+     "ret_3d": -0.3178,
+     "ret_5d": 0.5641,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -0.38,
+   "avg_5d": 0.02,
+   "avg_10d": 0.37,
+   "confidence": 80
+  },
+  {
+   "id": "N20260925-100",
+   "track": "大消费",
+   "category": "行业事件类",
+   "title": "港股消费细分板块 9/25 全线跌幅靠前：影视（柠萌影视 −3.62%、猫眼娱乐 −2.51%）、化",
+   "direction": "利空",
+   "strength": 70,
+   "top3": [
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-09-17",
+     "hist_title": "9/16 A股消费板块在全市场放量普涨中显著承压: 中证消费收12,151.82(-0.",
+     "hist_direction": "利空",
+     "ret_3d": 1.3174,
+     "ret_5d": -0.4335,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-14",
+     "hist_title": "白酒板块资金面持续走弱：当日主力资金净流出3.27亿元、连续3个交易日净流出(其中高端白",
+     "hist_direction": "利空",
+     "ret_3d": -1.3127,
+     "ret_5d": -0.0195,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-15",
+     "hist_title": "白酒板块盘中表现：中证白酒6,230.41(-0.28%)、白酒Ⅱ板块指数35,254.",
+     "hist_direction": "利空",
+     "ret_3d": -0.3178,
+     "ret_5d": 0.5641,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -0.1,
+   "avg_5d": 0.04,
+   "avg_10d": null,
+   "confidence": 80
+  },
+  {
+   "id": "N20260925-101",
+   "track": "美股标普医药",
+   "category": "宏观类",
+   "title": "美股标普医药赛道双事件窗口确认（本档更正前档日期错误）：① 8 月 PCE 于美东 9/30 8:3",
+   "direction": "利空",
+   "strength": 65,
+   "top3": [
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-08-28",
+     "hist_title": "美股8/28（美东周五）前瞻：沃什演讲前美股期货转跌（纳指期货-0.34%）、医疗板块8",
+     "hist_direction": "利空",
+     "ret_3d": 1.0458,
+     "ret_5d": 0.1694,
+     "ret_10d": -1.9923
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-09-08",
+     "hist_title": "美股本周PPI/CPI'定生死'(9/10 PPI+苹果发布会+甲骨文财报+欧央行决议/",
+     "hist_direction": "利空",
+     "ret_3d": -1.0591,
+     "ret_5d": 0.3171,
+     "ret_10d": 1.6514
+    },
+    {
+     "similarity": 80.3,
+     "hist_date": "2026-09-21",
+     "hist_title": "美股医药利率与政策双重约束：10Y美债4.99%-5.01%叠加TIPS实际利率随名义收",
+     "hist_direction": "利空",
+     "ret_3d": 0.5088,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.17,
+   "avg_5d": 0.24,
+   "avg_10d": -0.17,
+   "confidence": 80
+  },
+  {
+   "id": "N20260925-102",
+   "track": "美股标普医药",
+   "category": "行业事件类",
+   "title": "美国药企收缩信号延续：百时美施贵宝计划再裁减 265 名与新泽西总部相关的员工；Adagio Med",
+   "direction": "中性",
+   "strength": 40,
+   "top3": [
+    {
+     "similarity": 80.8,
+     "hist_date": "2026-09-20",
+     "hist_title": "美股医药 9/18（美东周五）收盘：XLV（医疗保健精选行业 ETF）收 168.39，",
+     "hist_direction": "中性",
+     "ret_3d": 0.5088,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-09-20",
+     "hist_title": "美股医药前期产业催化回顾（截至 9/18）：FDA 9/17 批准 Ultragenyx",
+     "hist_direction": "中性",
+     "ret_3d": 0.5088,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-21",
+     "hist_title": "美股医药9/18收盘与周线：XLV 168.39（-0.25%，振幅0.76%）、IYH",
+     "hist_direction": "中性",
+     "ret_3d": 0.5088,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.51,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20260925-103",
+   "track": "其他/宽基",
+   "category": "宏观类",
+   "title": "A股复市倒计时与节前日历确认：9/25-9/27 中秋休市（本档为休市第 1 日）→ 9/28 复市",
+   "direction": "中性",
+   "strength": 25,
+   "top3": [
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-08",
+     "hist_title": "全球资金动向（9/8）：LME铜价创历史新高14,533-14,617美元（美国关税预期",
+     "hist_direction": "中性",
+     "ret_3d": -1.0659,
+     "ret_5d": -2.3844,
+     "ret_10d": -0.3104
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-22",
+     "hist_title": "机构观点分歧收窄至「震荡」：国泰海通称外部风险已逐步计价、叠加美债利率压力缓和与稳市场政",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 75.3,
+     "hist_date": "2026-09-03",
+     "hist_title": "A股9/3盘前: 沪指3,941.39跌破年线(约3,984.65转压力, 下方3,92",
+     "hist_direction": "利空",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    }
+   ],
+   "avg_3d": -0.82,
+   "avg_5d": -2.23,
+   "avg_10d": -0.54,
+   "confidence": 78
+  },
+  {
+   "id": "N20260925-104",
+   "track": "其他/宽基",
+   "category": "宏观类",
+   "title": "北京「现房销售第一枪」细则落地后的首个完整交易日反应：港股内房股与地产产业链系统性走弱（融创中国、万",
+   "direction": "利空",
+   "strength": 45,
+   "top3": [
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-03",
+     "hist_title": "A股9/3盘前: 沪指3,941.39跌破年线(约3,984.65转压力, 下方3,92",
+     "hist_direction": "利空",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-07",
+     "hist_title": "银行股『利好出尽』（9/7盘中）：财政部3,600亿注资+央行5,000亿买断式逆回购落",
+     "hist_direction": "利空",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-17",
+     "hist_title": "A股贵金属与有色金属9/17大幅回调：贵金属板块跌5.37%领跌两市，山东黄金-6.46",
+     "hist_direction": "利空",
+     "ret_3d": 1.893,
+     "ret_5d": -0.4711,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.24,
+   "avg_5d": -1.54,
+   "avg_10d": -0.78,
+   "confidence": 80
+  },
+  {
+   "id": "N20260925-105",
+   "track": "其他/宽基",
+   "category": "政策类",
+   "title": "央行 9/25 开展 515 亿元 7 天期逆回购、单日净回笼 1,105 亿元；中国 10 年期国",
+   "direction": "中性",
+   "strength": 40,
+   "top3": [
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-02",
+     "hist_title": "A股9/2盘前变量：沪指3,979.89距4,000仅20点（9/1两次冲关未破、成交2",
+     "hist_direction": "中性",
+     "ret_3d": -0.5821,
+     "ret_5d": -2.0752,
+     "ret_10d": -0.775
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-10",
+     "hist_title": "今日15:00国新办'十五五'金融专场发布会: 央行副行长陆磊/金融监管总局副局长丛林/",
+     "hist_direction": "中性",
+     "ret_3d": -2.1623,
+     "ret_5d": -1.9399,
+     "ret_10d": -2.4019
+    },
+    {
+     "similarity": 80.0,
+     "hist_date": "2026-09-20",
+     "hist_title": "地产链与消费端政策边际变化：住建部推进房地产发展新模式落地，公积金提取范围新增装修、自住",
+     "hist_direction": "中性",
+     "ret_3d": -2.2121,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -1.65,
+   "avg_5d": -2.01,
+   "avg_10d": -1.59,
+   "confidence": 80
+  }
+ ],
+ "onesample": {
+  "A股医药": {
+   "n": 342,
+   "mean": 0.1287,
+   "up_ratio": 0.4942
+  },
+  "恒生科技": {
+   "n": 297,
+   "mean": -0.2391,
+   "up_ratio": 0.3939
+  },
+  "美股标普医药": {
+   "n": 164,
+   "mean": 0.1634,
+   "up_ratio": 0.5671
+  },
+  "大消费": {
+   "n": 288,
+   "mean": -0.1461,
+   "up_ratio": 0.4271
+  },
+  "其他/宽基": {
+   "n": 105,
+   "mean": -0.1525,
+   "up_ratio": 0.5143
+  }
+ },
+ "windows": {
+  "A股医药": {
+   "3": {
+    "n": 296,
+    "mean": 1.0746
+   },
+   "5": {
+    "n": 268,
+    "mean": 3.7687
+   }
+  },
+  "恒生科技": {
+   "3": {
+    "n": 269,
+    "mean": -0.9477
+   },
+   "5": {
+    "n": 240,
+    "mean": -1.4141
+   },
+   "10": {
+    "n": 188,
+    "mean": -3.6116
+   }
+  },
+  "美股标普医药": {
+   "3": {
+    "n": 137,
+    "mean": 0.423
+   },
+   "5": {
+    "n": 119,
+    "mean": 0.3708
+   },
+   "10": {
+    "n": 80,
+    "mean": -0.2385
+   }
+  },
+  "大消费": {
+   "3": {
+    "n": 237,
+    "mean": -0.3426
+   },
+   "5": {
+    "n": 213,
+    "mean": -0.4694
+   },
+   "10": {
+    "n": 157,
+    "mean": -1.1957
+   }
+  },
+  "其他/宽基": {
+   "3": {
+    "n": 83,
+    "mean": -0.3177
+   },
+   "5": {
+    "n": 60,
+    "mean": -0.7396
+   },
+   "10": {
+    "n": 28,
+    "mean": -1.0979
+   }
+  }
+ },
+ "track_index_map": {
+  "A股医药": "000933",
+  "大消费": "000932",
+  "恒生科技": "HSTECH",
+  "美股标普医药": "XLV",
+  "其他/宽基": "000300"
+ },
+ "note": "本档 A股休市（中秋），9/25 全部事件参考交易日 = 9/28（复市首日），一律留空属预期状态；A股医药 3/5/10 日窗口以 399006 创业板指为代理（§3.90）"
+}

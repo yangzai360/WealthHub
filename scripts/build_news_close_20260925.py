@@ -1,0 +1,217 @@
+# -*- coding: utf-8 -*-
+"""2026-09-25 盘后档新闻构建（窗口 14:00-20:00）
+⚠️ 本档为「混合档」：A股休市、港股正常交易（收盘后复盘为主）+ 欧美盘前信息
+⚠️ §3.103：每条必须写 window 字段；每条必须带 source_url
+⚠️ 🔴 本档一处**对前档事实性错误的更正**：8 月 PCE 实际公布日为美东 2026-09-30（北京时间 9/30 20:30），
+   非前档所述「9/25」；多方独立信源交叉验证（BEA 日程 / CMC Markets / FXIFY / Octagon / 美国商务部与劳工部公开日程）
+"""
+import json, os
+
+BASE = '/Users/jieyang/Documents/WealthHub'
+TODAY = '2026-09-25'
+WIN = '盘后(14:00-20:00)'
+
+U_XH = 'https://my-h5news.app.xinhuanet.com/h5/article.html?articleId=20260925e566baf018ab43808b189c4f3bb92ec2'
+U_STCN = 'https://stcn.com/article/detail/4199290.html'
+U_GLH = 'https://www.gelonghui.com/live/2689053'
+U_QQ_HK = 'https://news.qq.com/rain/a/20260925A07YJR00'
+U_QQ_HK2 = 'https://news.qq.com/rain/a/20260925A07S3W00'
+U_SINA_HK = 'https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-09-25/doc-iniszrtx7720176.shtml'
+U_FUTU = 'https://news.futunn.com/post/1000202260/hong-kong-stocks-declined-what-happened-analysis-a-confluence-of'
+U_JIMU = 'https://so.html5.qq.com/page/real/search_news?docid=70000021_5986ab6284162852'
+U_CITI = 'https://www.163.com/dy/article/L7MAKJ2R0519QIKK.html'
+U_CF = 'https://so.html5.qq.com/page/real/search_news?docid=70000021_9116ab5d89722752'
+U_CM = 'https://www.cmcmarkets.com/en-ie/news-and-analysis/the-week-ahead-us-pce-jobs-report-micron-earnings'
+U_FXIFY = 'https://fxify.com/blog/trading-desk-brief-28-september'
+U_OCTA = 'https://www.octagonai.co/markets/financials/interest-rates/5y-us-treasury-yield-on-sep-30-2026'
+U_CFH = 'https://guba.eastmoney.com/news,of519696,1777468080.html'
+U_LIQ = 'https://www.toutiao.com/article/7689399800093884937'
+U_EI = 'https://www.163.com/dy/article/L7M2PS1P05561J29.html'
+U_TD = 'https://edgeconsultancykw.com/trump-xi-summit-trade-truce-10-january-2027'
+U_NHSA = 'https://www.nhsa.gov.cn/'
+U_EM_YW = 'https://caifuhao.eastmoney.com/news/20260925120005533874530'
+U_MAS = 'https://www.massbio.org/news/recent-news/ceo-innovation-policy-update-09-24-26'
+
+N = [
+    # ===================== 宏观 =====================
+    dict(track='宏观', category='宏观类',
+         title='🔴 事实更正：美国 8 月 PCE 公布日为美东 2026-09-30（北京时间 9/30 20:30），非前档所述「9/25」；9/25 美东仅公布 8 月耐用品订单初值（20:30）与密歇根大学消费者信心指数终值（22:00）',
+         summary='本档经四方独立信源交叉验证：BEA 公开日程、CMC Markets《The Week Ahead》、FXIFY Trading Desk Brief、Octagon 市场日历，均指向「8 月 Personal Income and Outlays（含 PCE/核心 PCE）于周三 9 月 30 日 8:30 ET 发布」，并与 Q2 GDP 第三次估算同日；TradingView 经济日历亦显示核心 PCE 下一次公布为「Sep 30, 2026」。卖方共识：8 月核心 PCE 环比 +0.3%（前值 +0.2%）、同比升至 3.4%（前值 3.3%）。',
+         source='BEA / CMC Markets / FXIFY / Octagon（交叉验证）', source_url=U_CM,
+         sentiment='中性', score=50, direction='中性', volatility='中',
+         brief='8月PCE实为9/30公布，非9/25', confidence=92),
+
+    dict(track='宏观', category='宏观类',
+         title='中美元首会谈成果的「落地度」被集中审视：无联合公报、300 亿美元对等降税清单未公布、稀土出口管制细则未定，市场评价「礼节隆重、实质有限」',
+         summary='休战延期（11/10 → 2027/1/10）是唯一确定的日期型成果；商务部口径仅称「达成多项共识」，未给出税率与采购数字。大豆此前已采购约 1,100 万吨、波音 200 架订单基本保住但无新大单。对组合的净含义：中美尾部风险确被移除，但「宣布多、签约少」意味着不能按一揽子大协议定价，11 月至明年 1 月的清单执行才是真考验。',
+         source='商务部 / The Edge / 网易财经', source_url=U_TD,
+         sentiment='中性', score=55, direction='中性', volatility='中',
+         brief='休战延期确定，降税清单未落地', confidence=80),
+
+    dict(track='宏观', category='宏观类',
+         title='全球债市抛售潮加剧：日本 2 年期与 10 年期国债收益率均创逾 30 年新高、5 年期创历史新高，德国 10 年期创 2009 年以来新高，全球政府债务平均收益率接近 4%（2007 年以来最高）；CME 10 月加息概率升至约 71%',
+         summary='本轮由「长端领涨的陡峭化上行」升级为「全球无风险利率共振上行」。配合美联储官员密集放鹰（威廉姆斯、保尔森、哈玛克、巴尔金），高久期资产（港股科技、A股成长）的估值折现率抬升是分母端的、不因盈利变化而缓解。',
+         source='陆家嘴财经早餐 / 华尔街见闻', source_url=U_EM_YW,
+         sentiment='负面', score=82, direction='利空', volatility='高',
+         brief='全球债市抛售加剧，加息概率71%', confidence=90),
+
+    dict(track='宏观', category='宏观类',
+         title='中东局势双向缓和信号：伊朗外长称已向美国提出「七天内重新开放霍尔木兹海峡」方案（以解除经济封锁为对价），法国总统马克龙拟召集七国集团商讨释放战略石油储备',
+         summary='两条均为油价的下行催化。此前布伦特已因胡塞袭击沙特目标与「美国拟议 90 天柴油出口禁令」传闻连涨两日至 106.60 美元/桶；若霍尔木兹通航预期兑现，输入性通胀压力与航运成本将同步回落，对 A股/港股估值端构成边际利好。',
+         source='央视新闻 / 新浪财经', source_url=U_SINA_HK,
+         sentiment='正面', score=58, direction='利多', volatility='高',
+         brief='伊朗提7天重开霍尔木兹方案', confidence=70),
+
+    dict(track='宏观', category='政策类',
+         title='上交所与中证指数公司将于 9 月 29 日发布「上证创新药科创领先指数」与「上证科创板软件服务指数」',
+         summary='指数供给扩容将为创新药与软件服务两条主线带来被动资金配置通道；对组合的间接含义是「A股医药」赛道的主题资金载体增加（本组合未直接持有相应 ETF，故为间接影响）。',
+         source='陆家嘴财经早餐 / 上交所公告', source_url=U_EM_YW,
+         sentiment='正面', score=48, direction='利多', volatility='低',
+         brief='9/29发布创新药科创领先指数', confidence=82),
+
+    # ===================== 恒生科技 =====================
+    dict(track='恒生科技', category='行业事件类',
+         title='港股 9/25 收盘：恒生指数 −1.01% 报 24,510.09（盘中一度创近两个月阶段新低）、恒生科技 −1.13% 报 4,311.78（盘中一度跌超 2.5%）、国企指数 −1.21%；三大指数连续第 3 日收跌',
+         summary='恒指全天跌 251.04 点、全日主板成交 1,022.03 亿港元（较前日缩量逾 800 亿港元）。科技板块成为拖累大市主要力量，商汤 −3.08%、网易 −3.05%、小米/快手/理想/比亚迪/京东跌近 3%，阿里 −1.46%、腾讯 −0.41%。',
+         source='新华社 / 证券时报 / 格隆汇', source_url=U_XH,
+         sentiment='负面', score=72, direction='利空', volatility='中',
+         brief='港股三连跌，恒科收4311.78', confidence=95),
+
+    dict(track='恒生科技', category='行业事件类',
+         title='港股午后震荡回升、跌幅显著收窄：恒指早盘一度跌近 500 点最终收跌 251 点，恒生科技由盘中跌逾 2.5% 收窄至 −1.13%，联想集团逆势涨超 3% 居恒科成份股涨幅榜首',
+         summary='「早盘杀跌、午后收窄」的日内形态说明卖压更多来自节前流动性缺位（南向暂停）而非基本面重定价；同时日内低点 4,246.12 距 4,250 防线仅 0.09%，尾盘收复 4,300 上方。',
+         source='格隆汇 / 腾讯新闻', source_url=U_GLH,
+         sentiment='正面', score=60, direction='利多', volatility='中',
+         brief='午后跌幅收窄，恒科收复4300', confidence=82),
+
+    dict(track='恒生科技', category='行业事件类',
+         title='甲骨文「不可抗力」通知事件向供应链扩散：Oracle 就新墨西哥州 Project Jupiter 数据中心向 Blue Owl Capital 发出不可抗力通知并试图推迟付款，AI 资本开支的信用端出现裂痕，港股电力设备/物理AI 概念股承压',
+         summary='上海电气 −3.50%、中国高速传动 −2.82%、中广核矿业 −2.76%、福莱特玻璃 −2.29%、金风科技 −1.86%；物理AI 概念商汤 −3.08%、地平线机器人 −2.66%、壁仞科技 −2.95%、天数智芯 −3.53%。甲骨文 CDS 利差创历史新高。',
+         source='格隆汇 / 腾讯新闻', source_url=U_QQ_HK2,
+         sentiment='负面', score=68, direction='利空', volatility='高',
+         brief='甲骨文数据中心不可抗力扩散', confidence=80),
+
+    dict(track='恒生科技', category='行业事件类',
+         title='港股内房股与地产产业链集体下挫：融创中国、万科企业跌逾 4%，碧桂园跌逾 3%，物管、建材水泥同步走低',
+         summary='与北京 9/24 落地「现房销售第一枪」形成呼应——新出让土地项目申请预售须主体结构封顶、预售资金全额监管，行业现金流节奏进一步后移。地产链对恒指与恒生综合的拖累独立于科技股。',
+         source='格隆汇 / 腾讯新闻', source_url='https://news.qq.com/rain/a/20260925A07S3W00',
+         sentiment='负面', score=55, direction='利空', volatility='中',
+         brief='港股内房股集体下挫', confidence=78),
+
+    # ===================== A股医药 =====================
+    dict(track='A股医药', category='行业事件类',
+         title='港股创新药/CRO 概念股逆势上扬：金斯瑞生物科技 +8.05%（盘中一度 +9.16%、股价创历史新高）、药明康德 +2.24%、药明生物 +2.31%、凯莱英 +3.81%；恒生医疗保健指数 +0.29%，跑赢恒生科技 1.42pct',
+         summary='在三大指数集体收跌、恒生科技 −1.13% 的背景下，港股医药走出完全独立的行情（9/24 金斯瑞曾被南向净卖出 2.79 亿港元、当日跌 4.8%，本档完全反转）。**这是本档组合层面最重要的正向结构信号**：与 9/24「压力由互联网向 AI 硬件转移」的判断相反，本档资金重新在平台与医药之间做了明确取舍。',
+         source='智通财经 / 格隆汇 / 财联社', source_url=U_CITI,
+         sentiment='正面', score=78, direction='利多', volatility='中',
+         brief='港股创新药逆势大涨，金斯瑞创新高', confidence=88),
+
+    dict(track='A股医药', category='政策类',
+         title='花旗研报：美国财政部对华生物技术投资新规（9/21 路透报道）预计重点限制病原体与可能被武器化的生物技术，不会一刀切封禁全部生物医药跨境交易；对源自中国的医药授权（BD）政策前景展望偏正面，继续看好创新药及生物科技',
+         summary='花旗于 9/24 再次举办专家电话会议讨论美国对华医药授权政策路径；野村同时表示中国医药「十五五」规划突出创新与全球化，利好创新药企及 CRDMO。**直接对冲了 9/24 盘前档所列「BINSA 法案仍在推进」的尾部风险**，是本档 A股医药情绪修复的核心政策依据。',
+         source='智通财经 / 花旗 / 野村', source_url=U_CITI,
+         sentiment='正面', score=75, direction='利多', volatility='中',
+         brief='花旗：美对华药企授权政策偏正面', confidence=82),
+
+    dict(track='A股医药', category='政策类',
+         title='国家医保局 9/25 组织「中国医保助力医药产业高质量发展」主题调研采访团，走进江苏、上海、河北多家药企（石药智能化产线、信达 2025 年首次全年盈利、恒瑞多款产品新进医保）',
+         summary='医保局释放的叙事信号：集采与国谈正从「压价工具」转向「产业创新引擎」，规模化现金流成为药企研发弹药。与 9/24 盘前档披露的《全民医疗保障「十五五」规划》「集采进阶为**基础制度**」形成方向上的对冲——**同一政策主体在同两日内给出「价格天花板锁定」与「支付反哺创新」两种表述，须并列披露、不得单取其一**。',
+         source='国家医保局 / 人民日报', source_url=U_NHSA,
+         sentiment='正面', score=65, direction='利多', volatility='中',
+         brief='医保局转向「促产」叙事', confidence=75),
+
+    dict(track='A股医药', category='政策类',
+         title='药监与集采双向扩围：国家药监局 2026 年第 86 号公告开展「化学药品其他剂型」（除口服固体制剂与注射剂外）仿制药一致性评价；第四批中成药集采 + 第二批接续中选结果 9 月底在山东、湖南、广西、海南等多省执行（周期至 2028/12/31）',
+         summary='一致性评价从口服固体制剂、注射剂延伸至更多剂型 → 抬升仿制药质量门槛、增加研发申报成本，长期利好质控完备的头部、利空低质仿制产能；中成药集采落地则直接压缩部分中药企业份额与价格。**两条均为结构性压制，但落在组合持仓（创新药/CXO/医疗器械/指数联接）上的直接暴露有限。**',
+         source='NMPA / 米内网', source_url=U_NHSA,
+         sentiment='负面', score=58, direction='利空', volatility='中',
+         brief='一致性评价扩围+中成药集采落地', confidence=76),
+
+    dict(track='A股医药', category='业绩类',
+         title='中国生物制药 2026H1：收入 194.4 亿元（+10.6%），创新药及对外授权总收入 87.9 亿元（+44.3%）占比 45.2%，其中对外授权收入 9.8 亿元（同比 +2101.9%），预计全年创新药及出海收入占比约 50%',
+         summary='头部药企「创新 + 出海」双轮驱动的第一个完整样本，为行业估值重构提供锚点（西部证券维持买入）。与诺诚健华 33 亿美元 BD、翰森 B7-H3 ADC 骨肉瘤上市申请获受理等共同构成「国产管线资产被跨国买方系统性重估」的证据链。',
+         source='中国生物制药公告 / 西部证券', source_url=U_NHSA,
+         sentiment='正面', score=62, direction='利多', volatility='低',
+         brief='中生制药出海收入占比45.2%', confidence=80),
+
+    # ===================== 大消费 =====================
+    dict(track='大消费', category='业绩类',
+         title='贵州茅台 9/25 披露：9 月茅台酒终端动销环比增长约一倍、同比增长超 20%，渠道存销比下降至良好水平；秋季市场调研覆盖 16 个省区、与 300 余家渠道商面对面交流，明确体验馆 2025-2027 年「三步走」规划',
+         summary='厂商口径连续第 2 档转正（9/24 盘前档为「动销降幅收窄至约 10%」的渠道口径），本档升级为公司官方口径的**绝对正增长**。需并列披露：该口径为厂商自述、无法独立验证，且与渠道端（肖竹青：多地中秋销量预计同比降 15%-20%）方向相反。',
+         source='贵州茅台官微 / 酒业家', source_url=U_LIQ,
+         sentiment='正面', score=72, direction='利多', volatility='中',
+         brief='茅台9月动销环比翻倍、同比+20%', confidence=72),
+
+    dict(track='大消费', category='行业事件类',
+         title='⚠️ 批价源口径分歧延续并扩大：酒业网 9/25 价表显示 2026 年飞天原箱 1,755 元/瓶（+5）、2025 年飞天原箱 1,840 元（+20）、2026 年散瓶 1,740 元持平、五粮液普五 780 元；而「今日酒价」同日口径为原箱冲至 1,810 元/瓶',
+         summary='同一交易日两套主流批价源相差 **55 元/瓶（约 3.1%）**，且方向相反（酒业网口径「散瓶持平、多款年份酒回落」，今日酒价口径「五连涨」）。**批价是本组合大消费赛道的第一手基本面锚，口径不可比将直接导致趋势误判** → 本档起报告须对每一处批价引用标注数据源，禁止混用。',
+         source='酒业网 / 今日酒价 / 酒业家', source_url=U_LIQ,
+         sentiment='中性', score=40, direction='中性', volatility='中',
+         brief='批价源分歧达55元/瓶，须标源', confidence=85),
+
+    dict(track='大消费', category='行业事件类',
+         title='中秋动销「环比温和回暖、同比仍显疲软」：酒业分析师肖竹青称多地渠道反馈中秋期间销量预计同比下滑约 15%-20%，超八成酒商预计双节销售业绩与去年基本持平或同比下滑；消费端理性化强化，100-300 元成中秋礼赠主流价位',
+         summary='与厂商口径（茅台同比 +20%）形成**明确对立**。同时「50-200 元价格带成为动销主流」、玻汾/茅台王子酒/五粮春/海之蓝在多地热销 → **量在下沉、价在上抬受限**，行业呈「腰部托底、头部靠配额」的双轨结构。',
+         source='酒业家 / 每日经济新闻', source_url=U_LIQ,
+         sentiment='负面', score=66, direction='利空', volatility='中',
+         brief='渠道侧预计中秋销量同比降15-20%', confidence=80),
+
+    dict(track='大消费', category='行业事件类',
+         title='港股消费细分板块 9/25 全线跌幅靠前：影视（柠萌影视 −3.62%、猫眼娱乐 −2.51%）、化妆品、新能源汽车（赛力斯 −5.13%、北京汽车 −4.79%）、啤酒、家电、奶制品（茶百道 −3.79%、卫龙美味 −3.03%）；花旗预测 2026 年国庆档票房 16 亿元、同比 −12%',
+         summary='港股消费是「A股大消费」最重要的跨境映射之一，本档其跌幅显著大于恒指 −1.01%，说明**节前消费板块的资金流出是行业性的、非个别标的**；花旗对国庆档的判断（消费疲弱 + 缺明确爆款 + 长假旅游替代观影）与白酒「场次增加、单场规模下降」的降档描述同源。',
+         source='腾讯新闻 / 格隆汇', source_url=U_QQ_HK,
+         sentiment='负面', score=62, direction='利空', volatility='中',
+         brief='港股消费细分板块全线领跌', confidence=78),
+
+    # ===================== 美股标普医药 =====================
+    dict(track='美股标普医药', category='宏观类',
+         title='美股标普医药赛道双事件窗口确认（本档更正前档日期错误）：① 8 月 PCE 于美东 9/30 8:30 公布（非 9/25）；② 美国 Section 232 进口专利药 100% 关税 + MFN 定价仍是 9/29 零时生效，且落在国内 10/1 长假之前、仅剩 9/28-9/30 三个交易日可响应',
+         summary='两件事的时点差被前档压缩为「同一晚」，实际相隔 5 个自然日。**修正后的含义更清晰**：9/28 复市不需要为 PCE 定价（PCE 在 9/30 盘后、且 A股 10/1 起休市 → 相关反应将被推迟到 10/8 之后），9/28 只需消化「港股 9/25-9/26 两日 + 美股 9/25 一日」的累积信息。',
+         source='BEA 日程 / CMC Markets / 华盛通', source_url=U_CM,
+         sentiment='中性', score=52, direction='中性', volatility='高',
+         brief='PCE 9/30，关税 9/29，时点差5日', confidence=88),
+
+    dict(track='美股标普医药', category='行业事件类',
+         title='美国药企收缩信号延续：百时美施贵宝计划再裁减 265 名与新泽西总部相关的员工；Adagio Medical 启动战略评估、裁减超过一半全职员工并面临纳斯达克退市压力，冷冻消融器械业务收缩',
+         summary='「大药企总部落成本 + 小器械出清」并行，反映高利率环境下生物医药行业的两端承压（现金流端与融资端）。对组合「美股标普医药」赛道的含义：**指数级（XLV/IYH）权重集中在有现金流的大市值药企，裁员反而利于利润率，属中性偏正；而中小市值生物科技压力更大。**',
+         source='FiercePharma / FierceBiotech', source_url=U_MAS,
+         sentiment='负面', score=48, direction='利空', volatility='中',
+         brief='BMS再裁265人，小器械出清', confidence=78),
+
+    # ===================== 其他/宽基 =====================
+    dict(track='其他/宽基', category='宏观类',
+         title='A股复市倒计时与节前日历确认：9/25-9/27 中秋休市（本档为休市第 1 日）→ 9/28 复市 → 9/28-9/30 为本年度最后 3 个连续交易日 → 10/1-10/7 国庆休市 → 10/8 复市',
+         summary='本档是「9/28 复市」前最后一个完整信息窗口（9/26-9/27 为周末、A股与港股均休市）。**9/28 开盘将一次性定价：港股 9/25 收盘（恒指 −1.01%、恒科 −1.13%）+ 美股 9/25 隔夜（本档时点尚未开盘）+ 周末政策/地缘增量。**',
+         source='沪深交易所休市安排', source_url=U_EM_YW,
+         sentiment='中性', score=40, direction='中性', volatility='高',
+         brief='9/28复市，节前仅剩3个交易日', confidence=95),
+
+    dict(track='其他/宽基', category='宏观类',
+         title='北京「现房销售第一枪」细则落地后的首个完整交易日反应：港股内房股与地产产业链系统性走弱（融创中国、万科企业跌逾 4%），叠加世界黄金协会口径中国黄金进口创历史新高',
+         summary='北京四部门 9/24 印发实施意见（新出让土地项目申请预售须主体结构封顶、预售资金全额全过程监管、土地出让价款首付不低于 50% 且余款两年内缴清、按揭发放后移至竣工备案），是本轮地产政策中「保交楼优先于保房企现金流」取向最强的一份细则。**对组合无直接暴露，但属「其他/宽基」赛道的宏观风险因子。**',
+         source='北京市住建委 / 陆家嘴财经早餐', source_url=U_EM_YW,
+         sentiment='负面', score=58, direction='利空', volatility='中',
+         brief='北京现房销售细则后地产链走弱', confidence=80),
+
+    dict(track='其他/宽基', category='政策类',
+         title='央行 9/25 开展 515 亿元 7 天期逆回购、单日净回笼 1,105 亿元；中国 10 年期国债收益率 1.672%（与上日持平）、Shibor 隔夜 1.3640%，银行间资金面依旧平稳；9/24 已开展 8,000 亿元 1 年期 MLF 操作',
+         summary='境内外利率路径出现**历史性背离**：美债 10Y 5.196%（2007 年来首破 5.2%）vs 中债 10Y 1.672%，中美利差约 352bp。国内流动性宽松取向明确（对应三季度例会「保持流动性充裕」+「发挥增量与存量政策集成效应」），构成 A股估值的分母端支撑；但对港股（港元锚定美元）无对冲作用。',
+         source='新华财经 / 陆家嘴财经早餐', source_url=U_EM_YW,
+         sentiment='正面', score=55, direction='利多', volatility='低',
+         brief='央行净回笼1105亿，资金面平稳', confidence=88),
+]
+
+for i, it in enumerate(N, 1):
+    it['date'] = TODAY
+    it['window'] = WIN
+    it.setdefault('strength', it['score'])
+    it['source_url'] = it.get('source_url', '')
+
+out = os.path.join(BASE, f'data/processed/news/news-close-{TODAY.replace("-","")}.json')
+json.dump(N, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+
+from collections import Counter
+print(f'已写入 {out}：{len(N)} 条')
+print('赛道分布:', dict(Counter(x['track'] for x in N)))
+print('方向分布:', dict(Counter(x['direction'] for x in N)))
+print('source_url 覆盖:', sum(1 for x in N if x['source_url']), '/', len(N))

@@ -1,0 +1,49 @@
+{
+ "date": "2026-09-25",
+ "session": "close-mixedday(A股休市)",
+ "chain_cum_pct": -4.12,
+ "chain_days": 36,
+ "chain_last_row": "2026-09-24",
+ "chain_0pct_row_inserted": false,
+ "mixedday_note": "A股 9/25 休市 → 不插入 0% 链式行；序列与 9/25 盘前档同口径（末行 = 2026-09-24 修正口径）",
+ "w38_cum_pct": 1.37,
+ "w38_days": 5,
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "w39_components": [
+  {
+   "date": "2026-09-21",
+   "pct": 1.2312
+  },
+  {
+   "date": "2026-09-22",
+   "pct": 0.1396
+  },
+  {
+   "date": "2026-09-23",
+   "pct": -0.1459
+  },
+  {
+   "date": "2026-09-24",
+   "pct": -1.4121
+  }
+ ],
+ "sharpe": -2.58,
+ "sharpe_n": 36,
+ "daily_mean": -0.1141,
+ "daily_sd": 0.7444,
+ "max_dd_pct": -6.31,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-09-11",
+ "last5_cum_pct": 0.36,
+ "last10_cum_pct": 0.17,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json"
+ ],
+ "fix_count": 5,
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）"
+}
