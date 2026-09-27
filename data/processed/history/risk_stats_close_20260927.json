@@ -1,0 +1,57 @@
+{
+ "date": "2026-09-27",
+ "chain_cum_pct": -4.12,
+ "chain_days": 36,
+ "chain_0pct_row_inserted": false,
+ "w38_cum_pct": 1.37,
+ "w38_days": 5,
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "sharpe": -2.58,
+ "sharpe_n": 36,
+ "daily_mean": -0.1141,
+ "daily_sd": 0.7444,
+ "max_dd_pct": -6.31,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-09-11",
+ "last5_cum_pct": 0.36,
+ "last10_cum_pct": 0.17,
+ "rf_pct": 1.68,
+ "rf_note": "中国 10Y 国债硬编码 1.68%（本档实际观察到 2026-09-24 10Y = 1.6700%，序列缺口待补）",
+ "tracks_end": {
+  "其他/宽基": {
+   "mv": 94808.36,
+   "pct_of_total": 25.11
+  },
+  "大消费": {
+   "mv": 74507.62,
+   "pct_of_total": 19.73
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.74
+  },
+  "A股医药": {
+   "mv": 87617.2,
+   "pct_of_total": 23.2
+  },
+  "美股标普医药": {
+   "mv": 59179.0,
+   "pct_of_total": 15.67
+  },
+  "恒生科技": {
+   "mv": 32304.98,
+   "pct_of_total": 8.55
+  }
+ },
+ "med_pct_end": 38.87,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）",
+ "note": "非交易日档：未向链式序列插入 0% 行（§3.108）；末行仍为 2026-09-24"
+}
