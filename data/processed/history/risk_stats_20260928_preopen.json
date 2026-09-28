@@ -1,0 +1,36 @@
+{
+ "date": "2026-09-28",
+ "session": "preopen(A股+港股同日复市首日)",
+ "chain_cum_pct": -4.12,
+ "chain_days": 36,
+ "chain_last_row": "2026-09-24",
+ "chain_0pct_row_inserted": false,
+ "holiday_note": "9/25-9/27 中秋休市（9/25 为港股单边开市的「混合档」）→ 未向链式序列插入 0% 行；序列与 9/27 周日盘后档同口径（末行 = 2026-09-24 修正口径）",
+ "w38_cum_pct": 1.37,
+ "w38_days": 5,
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "w40_cum_pct": 0.0,
+ "w40_days": 0,
+ "sharpe": -2.58,
+ "sharpe_n": 36,
+ "daily_mean": -0.1141,
+ "daily_sd": 0.7444,
+ "max_dd_pct": -6.31,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-09-11",
+ "last5_cum_pct": 0.36,
+ "last10_cum_pct": 0.17,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json"
+ ],
+ "fix_guard_failed": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）；另加 §3.107/§3.109 双硬守卫（Σtracks.mv / Σtracks.pnl）"
+}

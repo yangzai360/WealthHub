@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+fix_amount_unit_20260928.py — 「绝对金额必须带元」补齐器（9/28 复市首日盘前档）
+
+背景（§3.105 / §3.109 复发保护）：
+  build_site.py 对受保护章节只对「数字 + 元」与千分位金额打码。
+  日报若在「区间 A ~ B 元」「赛道日盈亏流水」两处以**裸数字**书写绝对金额，
+  区间下界与赛道盈亏额将不被掩码（网页可见，且「金额 ÷ 涨跌%」可反推市值）。
+  本脚本按**白名单**（取自 9/28 档报告引用的真实赛道/组合盈亏与待消化端点）
+  为裸数字补「元」，使脱敏规则命中。
+
+用法：python scripts/fix_amount_unit_20260928.py [--dry]
+"""
+import os
+import re
+import sys
+
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+TARGETS = [
+    os.path.join(REPO, 'reports', 'daily', '2026-09-28.md'),
+]
+
+# 白名单（无符号）：绝对金额（元）。含 exact 与「流水记法」四舍五入形式。
+AMOUNTS = [
+    # 9/24 修正基准六赛道市值
+    '377,630.12', '87,617.20', '94,808.36', '74,507.62', '59,179.00', '32,304.98', '29,212.97',
+    '146,796.20',
+    # 9/24 六赛道当日盈亏 + 组合合计
+    '2,717.58', '973.77', '1,122.15', '383.78', '211.60', '5,408.88',
+    # 9/28 待消化三段 + 合计 + 区间端点
+    '623.49', '197.42', '238.26', '187.81', '319.57', '213.04', '532.61', '435.68',
+    '90.88', '758.01', '460.73', '554.80', '369.87', '463.94',
+    # `_fix` 遗留不自洽两项
+    '2,468.33', '333.12',
+    # 流水记法（四舍五入/截断）
+    '377,630', '87,617', '94,808', '74,508', '59,179', '32,305', '29,213',
+    '2,718', '974', '1,122', '384', '212', '5,409',
+    '623', '197', '238', '188', '320', '213', '533', '436', '91', '758', '461', '555', '370', '464',
+]
+
+# 右侧边界：必须紧跟非数字字符（排除 2030年 / URL尾号 / n=269 等误伤），
+# 且其后不得已是 %/元/万/亿 口径；左侧边界排除紧跟数字或 '='。
+NOT_SUFFIX = r'(?![\d,.])(?!\s*(?:%|元|万|亿|美元|港元))'
+
+
+def fix(text: str):
+    changes = []
+    for amt in AMOUNTS:
+        pat = re.compile(r'(?<![\d,.=])([+-]?)' + re.escape(amt) + NOT_SUFFIX)
+        def rep(m):
+            changes.append(m.group(0))
+            return m.group(0) + ' 元'
+        text = pat.sub(rep, text)
+    return text, changes
+
+
+def main():
+    dry = '--dry' in sys.argv
+    grand = 0
+    for f in TARGETS:
+        if not os.path.exists(f):
+            print(f'{os.path.relpath(f, REPO)}: 不存在，跳过')
+            continue
+        s = open(f, encoding='utf-8').read()
+        out, ch = fix(s)
+        print(f'{os.path.relpath(f, REPO)}: 补「元」{len(ch)} 处')
+        if ch:
+            print('   ', ch)
+        grand += len(ch)
+        if not dry and ch:
+            open(f, 'w', encoding='utf-8').write(out)
+    print(f'合计 {grand} 处' + ('（dry-run，未写盘）' if dry else ''))
+
+
+if __name__ == '__main__':
+    main()
