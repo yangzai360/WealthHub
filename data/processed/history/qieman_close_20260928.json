@@ -1,0 +1,62 @@
+{
+ "date": "2026-09-28",
+ "session": "close",
+ "rest_all_empty": true,
+ "plan_bytes": 43523,
+ "nav_bytes": 197433,
+ "adjustedCount": 265,
+ "investedUnit": 111,
+ "nav": 1.6573,
+ "navDate_bj": "2026-09-28",
+ "dailyReturn": -0.0016,
+ "new_adjustment": true,
+ "nav_src_latest": [
+  "2026-09-28",
+  1.6572623213
+ ],
+ "nav_local_latest": [
+  "2026-09-21",
+  "1.668416"
+ ],
+ "nav_serial_divergence": true,
+ "policy": "按 §3.97/§3.99：源与本地口径分歧时不追加、不回写（用户决策项）",
+ "new_adjustment_detail": {
+  "adjustedCount": "264 -> 265",
+  "investedUnit": "110 -> 111",
+  "changes": [
+   {
+    "fund": "022424",
+    "name": "广发中证A500ETF联接A",
+    "class": "A股",
+    "planUnit": "1 -> 2"
+   },
+   {
+    "fund": "现金",
+    "name": "现金",
+    "class": "现金",
+    "planUnit": "40 -> 39"
+   }
+  ],
+  "class_unit_changes": [
+   {
+    "class": "A股",
+    "unit": "70 -> 71"
+   },
+   {
+    "class": "现金",
+    "unit": "40 -> 39"
+   }
+  ],
+  "inference": "E大 9/28 调仓：现金减 1 份 → 增配 A股（广发中证A500ETF联接A）1 份；宽基 A500 加仓，属「A股宽基增配」信号"
+ },
+ "nav_latest": {
+  "date": "2026-09-28",
+  "nav": 1.6573,
+  "dailyReturn_pct": -0.16
+ },
+ "risk_metrics": {
+  "sharpe": 0.2792,
+  "maxDrawdown": 0.1979,
+  "volatility": 0.1107
+ }
+}

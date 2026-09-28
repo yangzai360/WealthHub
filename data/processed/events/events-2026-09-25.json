@@ -18,9 +18,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.67,
    "max_vol": 9.0,
-   "confidence": 100
+   "confidence": 100,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -42,9 +44,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.67,
    "max_vol": 9.0,
-   "confidence": 95
+   "confidence": 95,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -66,9 +70,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.67,
    "max_vol": 1.5,
-   "confidence": 100
+   "confidence": 100,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -90,9 +96,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.67,
    "max_vol": 9.0,
-   "confidence": 95
+   "confidence": 95,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -114,9 +122,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.67,
    "max_vol": 4.8,
-   "confidence": 100
+   "confidence": 100,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -138,9 +148,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.67,
    "max_vol": 1.5,
-   "confidence": 100
+   "confidence": 100,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -162,9 +174,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.67,
    "max_vol": 4.8,
-   "confidence": 70
+   "confidence": 70,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -186,9 +200,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.67,
    "max_vol": 4.8,
-   "confidence": 100
+   "confidence": 100,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -210,9 +226,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.67,
    "max_vol": 9.0,
-   "confidence": 90
+   "confidence": 90,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -234,9 +252,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.67,
    "max_vol": 4.8,
-   "confidence": 80
+   "confidence": 80,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -258,9 +278,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -1.67,
    "max_vol": 9.0,
-   "confidence": 95
+   "confidence": 95,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -282,9 +304,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 9.0,
-   "confidence": 100
+   "confidence": 100,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -306,9 +330,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 4.8,
-   "confidence": 90
+   "confidence": 90,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -330,9 +356,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 4.8,
-   "confidence": 85
+   "confidence": 85,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -354,9 +382,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 4.8,
-   "confidence": 95
+   "confidence": 95,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -378,9 +408,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 9.0,
-   "confidence": 92
+   "confidence": 92,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -402,9 +434,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 4.8,
-   "confidence": 90
+   "confidence": 90,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -426,9 +460,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 1.5,
-   "confidence": 88
+   "confidence": 88,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -450,9 +486,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 4.8,
-   "confidence": 88
+   "confidence": 88,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -474,9 +512,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 4.8,
-   "confidence": 85
+   "confidence": 85,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -498,9 +538,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 9.0,
-   "confidence": 95
+   "confidence": 95,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -522,9 +564,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 1.5,
-   "confidence": 90
+   "confidence": 90,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -546,9 +590,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 1.5,
-   "confidence": 98
+   "confidence": 98,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -570,9 +616,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": 0.26,
    "max_vol": 4.8,
-   "confidence": 98
+   "confidence": 98,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -880,9 +928,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.11,
    "max_vol": 4.8,
-   "confidence": 80
+   "confidence": 80,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -904,9 +954,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.11,
    "max_vol": 1.5,
-   "confidence": 85
+   "confidence": 85,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -928,9 +980,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.11,
    "max_vol": 4.8,
-   "confidence": 65
+   "confidence": 65,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -952,9 +1006,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.11,
    "max_vol": 4.8,
-   "confidence": 70
+   "confidence": 70,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -976,9 +1032,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.11,
    "max_vol": 4.8,
-   "confidence": 95
+   "confidence": 95,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -1000,9 +1058,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -0.11,
    "max_vol": 4.8,
-   "confidence": 85
+   "confidence": 85,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -1024,9 +1084,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -2.22,
    "max_vol": 9.0,
-   "confidence": 95
+   "confidence": 95,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000300 沪深300 4340.76 -2.22%"
   }
  },
  {
@@ -1048,9 +1110,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -2.22,
    "max_vol": 1.5,
-   "confidence": 95
+   "confidence": 95,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000300 沪深300 4340.76 -2.22%"
   }
  },
  {
@@ -1072,9 +1136,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
+   "actual_ret_1d": -2.22,
    "max_vol": 1.5,
-   "confidence": 95
+   "confidence": 95,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000300 沪深300 4340.76 -2.22%"
   }
  },
  {
@@ -1099,8 +1165,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -1125,8 +1192,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 86,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -1151,8 +1219,9 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 91,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -1177,8 +1246,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 87,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -1230,8 +1300,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 92,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -1256,8 +1327,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -1282,8 +1354,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 66,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -2.22,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000300 沪深300 4340.76 -2.22%"
   }
  },
  {
@@ -1308,8 +1381,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 70,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -1334,8 +1408,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 78,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -2.22,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000300 沪深300 4340.76 -2.22%"
   }
  },
  {
@@ -1522,8 +1597,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 65,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -1548,8 +1624,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 75,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -1574,8 +1651,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 75,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -1600,8 +1678,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 60,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -1626,8 +1705,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -1652,8 +1732,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 70,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -1678,8 +1759,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -1812,8 +1894,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -1838,8 +1921,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 70,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -1864,8 +1948,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 78,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -1890,8 +1975,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 86,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -1916,8 +2002,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -1942,8 +2029,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -1968,8 +2056,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 76,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -1994,8 +2083,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 66,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -2020,8 +2110,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 78,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -2.22,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000300 沪深300 4340.76 -2.22%"
   }
  },
  {
@@ -2046,8 +2137,9 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 82,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -2.22,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000300 沪深300 4340.76 -2.22%"
   }
  },
  {
@@ -2072,8 +2164,9 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 76,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -2.22,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000300 沪深300 4340.76 -2.22%"
   }
  },
  {
@@ -2098,8 +2191,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 82,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -2124,8 +2218,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 58,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -2150,8 +2245,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 86,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -2176,8 +2272,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 68,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -2202,8 +2299,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 76,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.67,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000001 上证指数 3823.6206 -1.67%（深成 -3.44% / 创业板指 -4.53%）"
   }
  },
  {
@@ -2336,8 +2434,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 86,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -2362,8 +2461,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 82,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -2388,8 +2488,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 58,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -2414,8 +2515,9 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 72,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -2440,8 +2542,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 0.26,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000933 中证医药 7770.69 +0.26%（中证医疗 6721.58 -0.14% / 300医药 8052.78 +0.23%）"
   }
  },
  {
@@ -2466,8 +2569,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 52,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -2492,8 +2596,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 60,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -2518,8 +2623,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 70,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -2544,8 +2650,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.11,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000932 中证消费 12096.02 -0.11%（中证白酒 6049.99 -0.91%）"
   }
  },
  {
@@ -2624,8 +2731,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -2.22,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000300 沪深300 4340.76 -2.22%"
   }
  },
  {
@@ -2650,8 +2758,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 72,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -2.22,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000300 沪深300 4340.76 -2.22%"
   }
  },
  {
@@ -2676,8 +2785,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 62,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -2.22,
+   "actual_date": "2026-09-28",
+   "ret_1d_ref": "9/28 收盘：000300 沪深300 4340.76 -2.22%"
   }
  }
 ]
