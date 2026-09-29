@@ -1,0 +1,149 @@
+{
+ "date": "2026-09-29",
+ "as_of": "2026-09-29收盘",
+ "base_total": 375885.31,
+ "base_file": "portfolio_close_20260928_fix.json",
+ "total_mv": 376574.96,
+ "est_total_pnl": 689.65,
+ "est_total_pct": 0.18,
+ "defense_lines": {
+  "zz_consume_12100": {
+   "line": 12100.0,
+   "close": 12107.1705,
+   "dist_pct": 0.0593,
+   "state": "restored_close_level",
+   "verdict": "收盘 12,107.1705 收复 12,100（+0.0593%）→ 9/28 执行的 0.5% 兑现**事后确认为「技术性误触」**（假破位），显式记录，**纪律不改回**、不补回仓位；防线回归 12,100（下一线 12,000）"
+  },
+  "hstech_4250": {
+   "line": 4250.0,
+   "close": 4249.62,
+   "dist_pct": -0.0089,
+   "state": "broken_close_level",
+   "verdict": "收盘 4,249.62 低于防线 4,250（-0.0089%）→ **收盘级有效跌破成立**；按 9/24 防线设立时预设的纪律「收盘级跌破 → 重启 0.5% 减仓」，**本档判定执行**（执行权属下一可交易档 9/30 盘前）"
+  },
+  "a_med_reverse_1_5pct": {
+   "line_pct": -1.5,
+   "proxy_pct": -0.0825,
+   "state": "not_triggered",
+   "verdict": "板块代理单日 -0.0825% > -1.5% → 未触发（该线为「利好兑现回调观察线」非止损线）"
+  }
+ },
+ "defense_lines_note": "判定权由 20:00 盘后档接管（§3.113i）；防线触发条件一律以「收盘价」为准，盘中破位仅作预警（知识库「盘中破位 vs 收盘确认」固化规则）",
+ "discipline": {
+  "trigger": "恒生科技 9/29 收盘 4,249.62 跌破 4,250 防线（-0.0089%，收盘级）",
+  "pct": 0.5,
+  "amount": 1882.87,
+  "base_used": 376574.96,
+  "base_rule": "组合总资产 × 0.5pct（与 9/28 大消费兑现同式，基准取「防线判定日收盘总资产」）",
+  "target_primary": "012348 天弘恒生科技联接A（被动联接，纯恒科口径，优先）",
+  "target_alt": "513180 恒指科技（场内 ETF，纯恒科口径）",
+  "not_target": "164906 / 513050（中概互联口径）—— 防线对应 HSTECH，减仓应落在纯恒科，不落在中概",
+  "settle": "9/30（节前最后一个 A股交易日）按 9/30 净值成交；场外联接净值只在 A股交易日发布",
+  "margin_note": "⚠️ 本次为「边际破位」（仅低于防线 0.38 点 / -0.0089%），为防线设立以来最贴线的一次；但仍满足「收盘价 < 防线」的二元判据，按纪律执行，不引入主观容差（避免规则漂移）"
+ },
+ "exposure": {
+  "med_total": 146925.55,
+  "med_pct": 39.02,
+  "med_limit_pct": 40.0,
+  "threshold_all_med_pct": 4.2,
+  "threshold_a_sh_med_pct": 7.07,
+  "non_med_total": 229649.41
+ },
+ "hk_exposure": {
+  "split": {
+   "pure": 17024.8,
+   "concept": 14621.05,
+   "broad": 18400.85
+  },
+  "pnl": {
+   "pure": -178.32,
+   "concept": -119.88,
+   "broad": -94.18
+  },
+  "total": 50046.7,
+  "pct": 13.29,
+  "note": "三层拆解（纯恒科 / 中概互联 / 宽基恒生系）；只报赛道层会低估宽基层"
+ },
+ "risk": {
+  "date": "2026-09-29",
+  "chain_cum_pct": -4.39,
+  "chain_days": 38,
+  "chain_0pct_row_inserted": false,
+  "w38_cum_pct": 1.37,
+  "w38_days": 5,
+  "w39_cum_pct": -0.2,
+  "w39_days": 4,
+  "w40_cum_pct": -0.28,
+  "w40_days": 2,
+  "sharpe": -2.66,
+  "sharpe_n": 38,
+  "daily_mean": -0.1154,
+  "daily_sd": 0.7279,
+  "max_dd_pct": -6.31,
+  "max_dd_peak": "2026-08-10",
+  "max_dd_trough": "2026-09-11",
+  "last5_cum_pct": -1.69,
+  "last10_cum_pct": 0.19,
+  "rf_pct": 1.68,
+  "rf_note": "中国 10Y 国债硬编码 1.68%（本地 10Y 序列自 2026-08-11 后未维护，缺口待补）",
+  "tracks_end": {
+   "其他/宽基": {
+    "mv": 94295.56,
+    "pct_of_total": 25.04
+   },
+   "大消费": {
+    "mv": 74495.04,
+    "pct_of_total": 19.78
+   },
+   "现金": {
+    "mv": 29212.97,
+    "pct_of_total": 7.76
+   },
+   "A股医药": {
+    "mv": 87281.13,
+    "pct_of_total": 23.18
+   },
+   "美股标普医药": {
+    "mv": 59644.42,
+    "pct_of_total": 15.84
+   },
+   "恒生科技": {
+    "mv": 31645.85,
+    "pct_of_total": 8.4
+   }
+  },
+  "med_pct_end": 39.02,
+  "fix_applied": [
+   "portfolio_close_20260918_fix.json",
+   "portfolio_close_20260921_fix.json",
+   "portfolio_close_20260922_fix.json",
+   "portfolio_close_20260923_fix.json",
+   "portfolio_close_20260924_fix.json",
+   "portfolio_close_20260928_fix.json"
+  ],
+  "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）",
+  "note": "正常交易日；末行 = 2026-09-29；9/25「混合档」产物为 portfolio_pending_* 不参与链式序列"
+ },
+ "pending": {
+  "close_or_pending_emitted": "portfolio_close_20260929.json（正常交易日 → 产出 `close`，不产 `pending`）",
+  "new_pending": 0.0,
+  "unquantified": [
+   {
+    "code": "164906",
+    "name": "交银中证海外中国互联网(LOF)A + 交银海外互联A",
+    "reason": "US 9/25-9/28 两日净值挂账，传导系数未标定 → 不计入待消化合计，仅作披露",
+    "ref_index": "纳斯达克中国金龙指数（9/25 -0.64% / 9/28 +1.12%，复合 +0.47%）",
+    "approx": "+44 元（量级，全档不变）"
+   }
+  ],
+  "qdii_warehouse_closed": "000369 / 016280 的 9/28 净值已出库 → 挂账闭环（真实兑现 +302.77 元）"
+ },
+ "action": {
+  "new_buy": 0,
+  "active_take_profit": 0,
+  "discipline_cut": 1882.87,
+  "discipline_cut_target": "012348 天弘恒生科技联接A",
+  "note": "除 9/29 盘前档已触发的大消费 0.5% 兑现（1,879.43 元）与本档判定的恒生科技 0.5% 减仓（1,882.87 元）外，其余赛道动作 0；两条纪律单合计约 3,762.30 元"
+ },
+ "note": "⚠️ 「技术性误触」口径落地：中证消费 9/29 收盘 12,107.1705 收复 12,100 → 9/28 兑现定性为假破位，记录而不改回；⚠️ 恒生科技 4,250 收盘级跌破 → 执行 0.5% 减仓，标的限纯恒科（012348/513180）"
+}
