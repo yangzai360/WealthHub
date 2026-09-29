@@ -1,0 +1,94 @@
+{
+ "date": "2026-09-29",
+ "session": "preopen",
+ "base_total": 375885.31,
+ "base_file": "portfolio_close_20260928_fix.json",
+ "tracks": {
+  "其他/宽基": {
+   "mv": 93669.69,
+   "pct_of_total": 24.92,
+   "day_pct": -1.201
+  },
+  "大消费": {
+   "mv": 74423.07,
+   "pct_of_total": 19.8,
+   "day_pct": -0.113
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.77,
+   "day_pct": 0.0
+  },
+  "A股医药": {
+   "mv": 87293.89,
+   "pct_of_total": 23.22,
+   "day_pct": -0.369
+  },
+  "美股标普医药": {
+   "mv": 59341.65,
+   "pct_of_total": 15.79,
+   "day_pct": 0.275
+  },
+  "恒生科技": {
+   "mv": 31944.05,
+   "pct_of_total": 8.5,
+   "day_pct": -1.117
+  }
+ },
+ "med_exposure": 146635.54,
+ "med_pct": 39.01,
+ "threshold_all_med": 4.23,
+ "threshold_a_sh_med": 7.1,
+ "hk_total": 50439.08,
+ "hk_total_pct": 13.42,
+ "hk_segments": {
+  "pure_hstech": 17203.12,
+  "china_internet": 14740.93,
+  "broad_hk": 18495.03
+ },
+ "qdii_pending": {
+  "sessions": [
+   "2026-09-25",
+   "2026-09-28"
+  ],
+  "iyh_pct": [
+   0.5,
+   0.32
+  ],
+  "compound_pct": 0.8216,
+  "coef_mid": 0.72,
+  "pnl_mid": 351.04,
+  "pnl_low": 292.53,
+  "pnl_high": 438.8,
+  "note": "QDII 000369/016280 最新出库净值日 = 2026-09-24，US 9/25 与 US 9/28 两个交易日为挂账；按 IYH 复合 × 传导系数 0.72 预告，区间取系数 0.60~0.90"
+ },
+ "cut_big_consume": {
+  "pct": 0.5,
+  "amount": 1879.43,
+  "target": "000248 汇添富中证主要消费ETF联接A（被动联接，优先）",
+  "trigger": "中证消费 9/28 收盘级跌破 12,100（12,096.0166，−0.033%）"
+ },
+ "defense_lines": {
+  "zz_consume_12100": {
+   "last": 12096.0166,
+   "state": "broken_close_level",
+   "dist_pct": -0.033
+  },
+  "hstech_4250": {
+   "last": 4296.0,
+   "state": "intact",
+   "dist_pct": 1.08
+  }
+ },
+ "scenario": {
+  "upside": "恒生科技收复 4,400 + 中证消费收复 12,100 + 医药不追高",
+  "base": "指数缩量整固（成交 < 1.5 万亿）、结构延续防御（医药/必需消费/高股息）",
+  "downside": "美债 5.25% 传导 + 解禁高峰 + 节前取现 → 上证失守 3,800 后加速"
+ },
+ "action": {
+  "new_buy": 0,
+  "active_take_profit": 0,
+  "discipline_cut": 1879.43,
+  "note": "除 9/28 已触发的大消费 0.5% 纪律兑现外，其余赛道实际动作 0"
+ }
+}
