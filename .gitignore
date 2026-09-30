@@ -14,3 +14,6 @@ docs/.vuepress/.temp/
 # Python 字节码缓存
 __pycache__/
 *.pyc
+
+# 数据补写脚本产生的安全备份（可再生，不入库）
+*.bak
