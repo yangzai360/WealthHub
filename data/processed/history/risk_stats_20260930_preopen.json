@@ -1,0 +1,38 @@
+{
+ "date": "2026-09-30",
+ "session": "preopen(国庆长假前最后一个交易日)",
+ "chain_cum_pct": -4.41,
+ "chain_days": 38,
+ "chain_last_row": "2026-09-29",
+ "chain_0pct_row_inserted": false,
+ "holiday_note": "链式序列已含 9/28 与 9/29 收盘（均以 _fix 修正口径计入：9/28 = −0.4620%、9/29 = +0.1613%）；9/25-9/27 中秋休市未插入 0% 行，末行 = 2026-09-29（修正口径）。下一假期窗口 10/1-10/7（A股休市、港股仅 10/1 休市）",
+ "w38_cum_pct": 1.37,
+ "w38_days": 5,
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "w40_cum_pct": -0.3,
+ "w40_days": 2,
+ "sharpe": -2.68,
+ "sharpe_n": 38,
+ "daily_mean": -0.116,
+ "daily_sd": 0.7276,
+ "max_dd_pct": -6.31,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-09-11",
+ "last5_cum_pct": -1.72,
+ "last10_cum_pct": 0.17,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json",
+  "portfolio_close_20260928_fix.json",
+  "portfolio_close_20260929_fix.json"
+ ],
+ "fix_guard_failed": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）；另加 §3.107/§3.109 双硬守卫（Σtracks.mv / Σtracks.pnl）"
+}

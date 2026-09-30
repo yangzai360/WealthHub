@@ -1,0 +1,128 @@
+{
+ "date": "2026-09-30",
+ "session": "preopen",
+ "session_type": "normal_trading_day_preopen",
+ "base_total": 376491.53,
+ "base_file": "portfolio_close_20260929_fix.json",
+ "base_revision": {
+  "prev_total": 376574.96,
+  "delta": -83.43,
+  "reason": "161616 / 000727 / 002742 的 9/29 真实净值补更"
+ },
+ "tracks": {
+  "其他/宽基": {
+   "mv": 94295.57,
+   "pct_of_total": 25.05,
+   "day_pct": 0.668
+  },
+  "大消费": {
+   "mv": 74495.04,
+   "pct_of_total": 19.79,
+   "day_pct": 0.097
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.76,
+   "day_pct": 0.0
+  },
+  "A股医药": {
+   "mv": 87197.69,
+   "pct_of_total": 23.16,
+   "day_pct": -0.11
+  },
+  "美股标普医药": {
+   "mv": 59644.42,
+   "pct_of_total": 15.84,
+   "day_pct": 0.51
+  },
+  "恒生科技": {
+   "mv": 31645.85,
+   "pct_of_total": 8.41,
+   "day_pct": -0.934
+  }
+ },
+ "med_exposure": 146842.11,
+ "med_pct": 39.0,
+ "threshold_all_med": 4.26,
+ "threshold_a_sh_med": 7.18,
+ "non_med_total": 229649.42,
+ "hk_total": 50046.7,
+ "hk_total_pct": 13.29,
+ "hk_segments": {
+  "pure_hstech": 17024.8,
+  "china_internet": 14621.05,
+  "broad_hk": 18400.85
+ },
+ "hk_southbound_gap_days": [
+  "2026-10-02",
+  "2026-10-05",
+  "2026-10-06",
+  "2026-10-07"
+ ],
+ "qdii_pending": {
+  "sessions": [
+   "2026-09-29"
+  ],
+  "iyh_pct": [
+   -0.36
+  ],
+  "coef_mid": 0.72,
+  "pnl_mid": -154.6,
+  "pnl_low": -193.25,
+  "pnl_high": -128.83,
+  "pnl_at_062": -133.13,
+  "note": "QDII 000369/016280 最新出库净值日 = 2026-09-28（本档盘前已补入 9/29 修正件），US 9/29 为唯一挂账交易日；按 IYH −0.36% × 传导系数预告，区间取系数 0.60~0.90（§3.114e 实测 0.62 作为参照点）"
+ },
+ "unquantified_pending": {
+  "code": "164906",
+  "mv": 9183.25,
+  "note": "US 9/29 挂账未计入合计（传导系数未标定），参照纳斯达克中国金龙 9/29 −1.55% 量级约 −90 元"
+ },
+ "new_pending": 0,
+ "discipline_hstech": {
+  "pct": 0.5,
+  "amount": 1882.46,
+  "amount_prev": 1882.87,
+  "trigger": "恒生科技 9/29 收盘 4,249.62 < 防线 4,250（−0.0089%，收盘级）",
+  "settle": "9/30 按 9/30 净值成交（节前最后一个 A 股交易日）",
+  "target_primary": "012348 天弘恒生科技联接A（纯恒科口径）",
+  "target_alt": "513180 恒指科技（场内 ETF）",
+  "not_target": "513050 / 164906（中概口径，与触发源不一致）",
+  "margin_note": "边际破位（仅 −0.0089%），仍按二元判据执行、不引入主观容差（§3.114c）"
+ },
+ "defense_lines": {
+  "hstech_4250": {
+   "last": 4249.62,
+   "state": "broken_close_level",
+   "dist_pct": -0.0089
+  },
+  "zz_consume_12100": {
+   "last": 12107.1705,
+   "state": "restored_close_level",
+   "dist_pct": 0.0593,
+   "next_line": 12000,
+   "next_line_dist_pct": 0.89
+  },
+  "a_med_reverse_1_5pct": {
+   "proxy_pct": -0.0825,
+   "state": "not_triggered"
+  }
+ },
+ "scenario": {
+  "upside": "威廉姆斯鸽派 + CME 加息概率降至 50% 以下 传导 → 恒科超跌反弹收复 4,250、A股 PMI 超预期 → 宽基与恒科双向修复",
+  "base": "节前最后一个交易日、成交延续 1.4 万亿级地量，指数窄幅震荡；风格延续「红利/地产/传媒强、油气/煤炭/航运弱」",
+  "downside": "30Y 美债 5.567% 连涨 6 日 + 中秋/国庆双假期海外定价缺失 → 持币过节抛压致上证失守 3,800；医药催化密度高但板块不响应"
+ },
+ "action": {
+  "new_buy": 0,
+  "active_take_profit": 0,
+  "discipline_cut": 1882.46,
+  "note": "9/30 唯一动作 = 恒生科技 0.5% 纪律减仓（9/29 收盘级破位触发）；其余赛道动作 0；不因中证消费收复而补回仓位；现金维持长假缓冲"
+ },
+ "calendar": {
+  "2026-09-30": "A股 + 港股 + 美股均交易（节前最后一个 A 股交易日）",
+  "2026-10-01": "A股休市 + 港股休市（港股通关闭）",
+  "2026-10-02~10-07": "A股休市；港股 10/2、10/5、10/6、10/7 交易；港股通关闭；美股照常",
+  "2026-10-08": "A股复市 + 港股通恢复（美股类事件一次性回填）"
+ }
+}
