@@ -14542,27 +14542,27 @@
   "sentiment": [
     {
       "name": "A股医药",
-      "value": 66.8
+      "value": 66.5
     },
     {
       "name": "宏观",
-      "value": 61.5
+      "value": 61.3
     },
     {
       "name": "其他/宽基",
-      "value": 60.7
+      "value": 60.6
     },
     {
       "name": "恒生科技",
-      "value": 60.0
+      "value": 59.8
     },
     {
       "name": "大消费",
-      "value": 59.1
+      "value": 59.0
     },
     {
       "name": "美股标普医药",
-      "value": 57.1
+      "value": 57.0
     }
   ]
 }
