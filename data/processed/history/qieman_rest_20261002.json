@@ -1,6 +1,16 @@
 {
  "date": "2026-10-02",
- "http": 200,
- "size": 0,
- "body": ""
+ "session": "intraday-1345",
+ "plan": {
+  "status": 200,
+  "size": 0
+ },
+ "nav": {
+  "status": 200,
+  "size": 0
+ },
+ "adjustments": {
+  "status": 200,
+  "size": 0
+ }
 }
