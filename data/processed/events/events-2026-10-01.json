@@ -640,11 +640,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.3181,
+   "actual_date": "2026-10-01",
    "max_vol": 4.8,
    "confidence": 95,
-   "ret_1d_ref": "盘前档（2026-10-01 08:00，尚未收盘），参考交易日 = 2026-10-08，待 2026-10-08 收盘回填"
+   "ret_1d_ref": "2026-10-01 收盘：XLV 166.2 -1.32%"
   }
  },
  {
@@ -667,11 +667,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.3181,
+   "actual_date": "2026-10-01",
    "max_vol": 4.8,
    "confidence": 85,
-   "ret_1d_ref": "盘前档（2026-10-01 08:00，尚未收盘），参考交易日 = 2026-10-08，待 2026-10-08 收盘回填"
+   "ret_1d_ref": "2026-10-01 收盘：XLV 166.2 -1.32%"
   }
  },
  {
@@ -694,11 +694,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.3181,
+   "actual_date": "2026-10-01",
    "max_vol": 4.8,
    "confidence": 85,
-   "ret_1d_ref": "盘前档（2026-10-01 08:00，尚未收盘），参考交易日 = 2026-10-08，待 2026-10-08 收盘回填"
+   "ret_1d_ref": "2026-10-01 收盘：XLV 166.2 -1.32%"
   }
  },
  {
@@ -721,11 +721,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.3181,
+   "actual_date": "2026-10-01",
    "max_vol": 4.8,
    "confidence": 90,
-   "ret_1d_ref": "盘前档（2026-10-01 08:00，尚未收盘），参考交易日 = 2026-10-08，待 2026-10-08 收盘回填"
+   "ret_1d_ref": "2026-10-01 收盘：XLV 166.2 -1.32%"
   }
  },
  {
@@ -748,11 +748,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.3181,
+   "actual_date": "2026-10-01",
    "max_vol": 1.5,
    "confidence": 95,
-   "ret_1d_ref": "盘前档（2026-10-01 08:00，尚未收盘），参考交易日 = 2026-10-08，待 2026-10-08 收盘回填"
+   "ret_1d_ref": "2026-10-01 收盘：XLV 166.2 -1.32%"
   }
  },
  {
@@ -775,11 +775,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.3181,
+   "actual_date": "2026-10-01",
    "max_vol": 4.8,
    "confidence": 80,
-   "ret_1d_ref": "盘前档（2026-10-01 08:00，尚未收盘），参考交易日 = 2026-10-08，待 2026-10-08 收盘回填"
+   "ret_1d_ref": "2026-10-01 收盘：XLV 166.2 -1.32%"
   }
  },
  {
@@ -1302,8 +1302,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 78,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.3181,
+   "actual_date": "2026-10-01",
+   "ret_1d_ref": "2026-10-01 收盘：XLV 166.2 -1.32%"
   }
  },
  {
@@ -1328,8 +1329,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 66,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.3181,
+   "actual_date": "2026-10-01",
+   "ret_1d_ref": "2026-10-01 收盘：XLV 166.2 -1.32%"
   }
  },
  {
@@ -1354,8 +1356,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 75,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -1.3181,
+   "actual_date": "2026-10-01",
+   "ret_1d_ref": "2026-10-01 收盘：XLV 166.2 -1.32%"
   }
  },
  {
@@ -1968,9 +1971,10 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 84,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ref_trade_day": "2026-10-01"
+   "actual_ret_1d": -1.3181,
+   "actual_date": "2026-10-01",
+   "ref_trade_day": "2026-10-01",
+   "ret_1d_ref": "2026-10-01 收盘：XLV 166.2 -1.32%"
   }
  },
  {
@@ -1995,9 +1999,10 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ref_trade_day": "2026-10-01"
+   "actual_ret_1d": -1.3181,
+   "actual_date": "2026-10-01",
+   "ref_trade_day": "2026-10-01",
+   "ret_1d_ref": "2026-10-01 收盘：XLV 166.2 -1.32%"
   }
  },
  {
