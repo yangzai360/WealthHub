@@ -1,0 +1,84 @@
+{
+ "date": "2026-10-04",
+ "window": "盘后(10/2 20:00-10/4 20:00)",
+ "count": 25,
+ "nominal_total": 242.0,
+ "weighted_total": 68.6083,
+ "pos": 10,
+ "neg": 5,
+ "neu": 10,
+ "mean_strength": 52.68,
+ "distribution": [
+  {
+   "track": "其他/宽基",
+   "n": 5,
+   "pos": 2,
+   "neg": 0,
+   "neu": 3,
+   "nominal": 117.0,
+   "mean_strength": 46.4,
+   "weight": 24.94,
+   "weighted": 29.1798
+  },
+  {
+   "track": "大消费",
+   "n": 4,
+   "pos": 3,
+   "neg": 0,
+   "neu": 1,
+   "nominal": 145.0,
+   "mean_strength": 43.8,
+   "weight": 19.87,
+   "weighted": 28.8115
+  },
+  {
+   "track": "A股医药",
+   "n": 3,
+   "pos": 2,
+   "neg": 0,
+   "neu": 1,
+   "nominal": 120.0,
+   "mean_strength": 55.0,
+   "weight": 23.57,
+   "weighted": 28.284
+  },
+  {
+   "track": "宏观",
+   "n": 6,
+   "pos": 2,
+   "neg": 1,
+   "neu": 3,
+   "nominal": 66.0,
+   "mean_strength": 54.2,
+   "weight": 0.0,
+   "weighted": 0.0
+  },
+  {
+   "track": "美股标普医药",
+   "n": 3,
+   "pos": 1,
+   "neg": 1,
+   "neu": 1,
+   "nominal": -8.0,
+   "mean_strength": 59.0,
+   "weight": 15.66,
+   "weighted": -1.2528
+  },
+  {
+   "track": "恒生科技",
+   "n": 4,
+   "pos": 0,
+   "neg": 3,
+   "neu": 1,
+   "nominal": -198.0,
+   "mean_strength": 60.8,
+   "weight": 8.29,
+   "weighted": -16.4142
+  }
+ ],
+ "dilution_note": "暴露加权 / 名义 比值 = 28.3505%（宏观类零暴露被完全剔除）",
+ "strong_pos_n": 4,
+ "strong_neg_n": 5,
+ "strong_pos_mean": 64.8,
+ "strong_neg_mean": 66.0
+}

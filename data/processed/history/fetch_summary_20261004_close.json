@@ -1,0 +1,131 @@
+{
+ "date": "2026-10-04",
+ "session": "close",
+ "session_type": "pure_non_trading_day_close",
+ "session_type_note": "档型①「纯非交易日」（A股与港股「均」未开市；美股照常开市不改变该判定，§3.109/§3.118b/§3.120a）。本档为国庆长假第 4 日（周日）20:00 盘后复盘档，不产 portfolio_close_* / portfolio_pending_*，不向链式序列插入 0% 行。",
+ "three_market_verification": {
+  "ashare": {
+   "source": "akshare.stock_zh_index_daily('sh000001')",
+   "last_row_date": "2026-09-30",
+   "close": 3842.195,
+   "verdict": "未开市（末行日期 = 上一交易日 2026-09-30）"
+  },
+  "hk": {
+   "source": "新浪 hq 直连 rt_hkHSTECH 返回体日期字段",
+   "date_field": "2026/10/02",
+   "time_field": "16:08:32",
+   "close": 4157.94,
+   "verdict": "未开市（返回体日期字段 = 2026/10/02，上一港股交易日，§3.119b/§3.122b）"
+  },
+  "us": {
+   "source": "akshare.stock_us_daily('IYH' / 'XLV')",
+   "last_row_date": "2026-10-02",
+   "IYH": 70.4,
+   "XLV": 166.18,
+   "verdict": "美股 10/2（周五）已收盘（成型于北京 10/3 04:00）→ 本档为**新增量**"
+  },
+  "rule": "三市场各自独立验证、不得互相外推（§3.119b）"
+ },
+ "data_increment": {
+  "indices_csv_new_rows": 8,
+  "indices_csv_rows": [
+   [
+    "us_index",
+    "2026-10-02",
+    "美股医疗XLV",
+    "XLV",
+    "166.18",
+    "-0.01",
+    "美股收盘"
+   ],
+   [
+    "us_index",
+    "2026-10-02",
+    "美股医疗IYH",
+    "IYH",
+    "70.4",
+    "0",
+    "美股收盘"
+   ],
+   [
+    "us_index",
+    "2026-10-02",
+    "纳指100ETF",
+    "QQQ",
+    "749.58",
+    "1.02",
+    "美股收盘"
+   ],
+   [
+    "us_index",
+    "2026-10-02",
+    "道指ETF",
+    "DIA",
+    "511.1",
+    "0.49",
+    "美股收盘"
+   ],
+   [
+    "us_index",
+    "2026-10-02",
+    "标普500ETF",
+    "SPY",
+    "769.64",
+    "0.74",
+    "美股收盘"
+   ],
+   [
+    "us_index",
+    "2026-10-02",
+    "纳斯达克",
+    ".IXIC",
+    "27190.9",
+    "1.19",
+    "美股收盘"
+   ],
+   [
+    "us_index",
+    "2026-10-02",
+    "道琼斯",
+    ".DJI",
+    "51177",
+    "0.49",
+    "美股收盘"
+   ],
+   [
+    "us_index",
+    "2026-10-02",
+    "标普500",
+    ".INX",
+    "7722.72",
+    "0.73",
+    "美股收盘"
+   ]
+  ],
+  "etf_intraday_csv": 0,
+  "fund_nav_csv": 0,
+  "zero_increment_self_proof": {
+   "rule": "§3.119e 三项自证：三表 numstat / 且慢 session / 事件库 session_added",
+   "numstat": {
+    "indices.csv": "8\t0\tdata/processed/history/indices.csv",
+    "etf_intraday.csv": "0/0 (无变化)",
+    "fund_nav.csv": "0/0 (无变化)"
+   },
+   "note": "本档**非零增量档**：indices.csv 获美股 10/2 真实收盘 8 行；etf_intraday.csv / fund_nav.csv 为 0 行属预期（沪深交易所休市、场外基金不发净值）"
+  },
+  "next_increment": "2026-10-05（港股复市 + 美股 10/5 收盘）；2026-10-08（A股 + 港股通复市，全量）"
+ },
+ "us_close_20261002": {
+  "note": "美股 10/2 收盘（真实新增量）：纳指 +1.19% / 标普500 +0.73% / 道指 +0.49%，三大指数齐涨；而 XLV −0.01%、IYH 0.00% 双双跑输宽基",
+  "closes": {
+   "XLV": 166.18,
+   "IYH": 70.4,
+   "QQQ": 749.58,
+   "DIA": 511.1,
+   "SPY": 769.64,
+   ".IXIC": 27190.8633,
+   ".DJI": 51176.9609,
+   ".INX": 7722.7202
+  }
+ }
+}

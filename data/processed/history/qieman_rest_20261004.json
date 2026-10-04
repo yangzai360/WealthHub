@@ -1,0 +1,9 @@
+{
+ "date": "2026-10-04",
+ "endpoint": "https://qieman.com/pmdj/v2/long-win/plan",
+ "ok": false,
+ "body_len": 0,
+ "note": "HTTP body 0B（空 body）→ 需 playwright 兜底",
+ "sample": "",
+ "consecutive_empty_trading_days": 101
+}
