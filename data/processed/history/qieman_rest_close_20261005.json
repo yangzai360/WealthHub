@@ -1,0 +1,19 @@
+{
+ "date": "2026-10-05",
+ "session": "close-2000",
+ "plan": {
+  "status": 200,
+  "size": 0
+ },
+ "nav": {
+  "status": 200,
+  "size": 0
+ },
+ "adjustments": {
+  "status": 200,
+  "size": 0
+ },
+ "ok": false,
+ "consecutive_empty_trading_days": 104,
+ "note": "三端点 HTTP 200 / size 0B 全空 → playwright 兜底第 30 次成功"
+}

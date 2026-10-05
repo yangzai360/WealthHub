@@ -183,8 +183,8 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 82,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 0.6191,
+   "actual_date": "2026-10-05",
    "ref_trade_day": "2026-10-05"
   }
  },
@@ -210,8 +210,8 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 0.6191,
+   "actual_date": "2026-10-05",
    "ref_trade_day": "2026-10-05"
   }
  },
@@ -237,8 +237,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 0.6191,
+   "actual_date": "2026-10-05",
    "ref_trade_day": "2026-10-05"
   }
  },
@@ -264,8 +264,8 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 55,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 0.6191,
+   "actual_date": "2026-10-05",
    "ref_trade_day": "2026-10-05"
   }
  },
