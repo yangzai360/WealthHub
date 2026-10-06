@@ -1,0 +1,27 @@
+{
+ "date": "2026-10-06",
+ "session": "intraday",
+ "session_type": "mixed_market_intraday",
+ "session_type_note": "档型②混合档（A股休市第 6 日 + 港股续市第 3 个交易日）· 盘中档",
+ "rest_all_empty": true,
+ "rest_blank_streak_days": 104,
+ "playwright_fallback_n": 31,
+ "plan_bytes": 43497,
+ "nav_bytes": 197576,
+ "adjustedCount": 265,
+ "investedUnit": 111,
+ "nav": 1.6612,
+ "navDate_bj": "2026-09-30",
+ "dailyReturn": 0.0059,
+ "new_adjustment": false,
+ "nav_src_latest": [
+  "2026-09-30",
+  1.6611547586
+ ],
+ "nav_local_latest": [
+  "2026-09-21",
+  "1.668416"
+ ],
+ "nav_serial_divergence": true,
+ "policy": "按 §3.97/§3.99：源与本地口径分歧时不追加、不回写（用户决策项）"
+}

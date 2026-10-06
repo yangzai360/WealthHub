@@ -1,6 +1,18 @@
 {
  "date": "2026-10-06",
- "http": 200,
- "size": 0,
- "body": ""
+ "session": "intraday-1345",
+ "session_type": "mixed_market_intraday",
+ "session_type_note": "档型②混合档（A股休市 + 港股开市）· 盘中档",
+ "plan": {
+  "status": 200,
+  "size": 0
+ },
+ "nav": {
+  "status": 200,
+  "size": 0
+ },
+ "adjustments": {
+  "status": 200,
+  "size": 0
+ }
 }

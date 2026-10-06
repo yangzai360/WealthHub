@@ -37,7 +37,7 @@
  "updated": "2026-09-21",
  "nav": 1.6612,
  "navDate": 1790697600000,
- "dailyReturn": 0.59,
+ "dailyReturn": 0.0059,
  "sharpe": 0.281,
  "maxDrawdown": 0.1979,
  "volatility": 0.1107,
@@ -53,6 +53,6 @@
  "joinedCount": 444808,
  "activeCount": 127592,
  "composition_snapshot_close": "composition-2026-09-24-close.json",
- "date": "2026-10-05",
+ "date": "2026-10-06",
  "navDate_bj": "2026-09-30"
 }

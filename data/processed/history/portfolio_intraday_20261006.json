@@ -1,0 +1,426 @@
+{
+ "date": "2026-10-06",
+ "session": "intraday",
+ "as_of": "2026-10-06 13:45",
+ "session_type": "mixed_market_intraday",
+ "session_type_note": "档型②「混合档」第 3 日 = A股休市（10/1-10/7，第 6 日）+ 港股续市（复市后第 3 个交易日，09:30-16:00）；本档港股有 13:45 盘中价，但组合全部持仓标的仍不可定价（A股休市 → 20 只 A股类场外基金无净值、场内 ETF/LOF 无成交价，且组合未直接持有港股正股或港交所上市工具）→ 当日可实现盈亏恒为 0 元（§3.107/§3.117a）",
+ "base_total": 380888.29,
+ "base_file": "portfolio_close_20260930_fix.json",
+ "base_guard_dev": 0.01,
+ "base_guard_rule": "|Σ tracks.mv − total_mv| < 1.5",
+ "tracks_weight": {
+  "其他/宽基": 24.94,
+  "大消费": 19.87,
+  "现金": 7.67,
+  "A股医药": 23.57,
+  "美股标普医药": 15.66,
+  "恒生科技": 8.29
+ },
+ "tracks_mv": {
+  "其他/宽基": 95005.73,
+  "大消费": 75675.43,
+  "现金": 29212.97,
+  "A股医药": 89776.91,
+  "美股标普医药": 59644.42,
+  "恒生科技": 31572.84
+ },
+ "weights_after_discipline": {
+  "恒生科技": 7.3,
+  "现金": 8.66
+ },
+ "day_result": {
+  "est_pnl": 0.0,
+  "est_pct": 0.0,
+  "attribution": "全部持仓标的不可定价（非市场持平）",
+  "reasons": [
+   "A股 10/1-10/7 休市（第 6 日）→ 20 只 A股类场外基金不发布净值",
+   "场外港股联接（000071 / 012348）在 A股休市期不发布净值（§3.112i）",
+   "场内 ETF / LOF（513050 / 513180 / 159920 等，沪深交易所）无交易时段 → 无成交价",
+   "港股 10/6 开市（09:30-16:00），但组合未直接持有港股正股或港交所上市工具 → 港股行情不产生组合层当日定价",
+   "美股 10/5 收盘已入库（10/6 盘前档），其组合传导属 QDII 挂账项、不在本档基准内；US 10/6 当日尚未开盘（北京 21:30）"
+  ],
+  "note": "⚠️ 「0 元」是账面冻结，不构成任何方向判断（§3.107/§3.117a/§3.118b）"
+ },
+ "hk_intraday": {
+  "as_of": "2026-10-06 13:45",
+  "indices": {
+   "恒生指数": {
+    "cur": 24203.219,
+    "pct": 0.68,
+    "prev": 24040.34,
+    "high": 24354.11,
+    "low": 24198.66,
+    "date_field": "2026/10/06"
+   },
+   "恒生科技": {
+    "cur": 4212.07,
+    "pct": 0.68,
+    "prev": 4183.68,
+    "high": 4251.54,
+    "low": 4205.73,
+    "date_field": "2026/10/06"
+   },
+   "恒生国企": {
+    "cur": 8108.88,
+    "pct": 0.71,
+    "prev": 8051.67,
+    "high": 8154.37,
+    "low": 8105.98,
+    "date_field": "2026/10/06"
+   },
+   "恒生医疗保健": {
+    "cur": 3978.91,
+    "pct": 2.68,
+    "prev": 3874.99,
+    "high": 3986.96,
+    "low": 3910.36,
+    "date_field": "2026/10/06"
+   },
+   "恒生综合": {
+    "cur": 3573.46,
+    "pct": 0.77,
+    "prev": 3546.0,
+    "high": 3590.89,
+    "low": 3573.03,
+    "date_field": "2026/10/06"
+   }
+  },
+  "stocks": {
+   "腾讯控股": {
+    "cur": 427.8,
+    "pct": 1.14
+   },
+   "阿里巴巴-W": {
+    "cur": 108.1,
+    "pct": 2.56
+   },
+   "小米集团-W": {
+    "cur": 24.24,
+    "pct": 1.51
+   },
+   "京东集团-SW": {
+    "cur": 103.1,
+    "pct": 0.68
+   },
+   "美团-W": {
+    "cur": 70.35,
+    "pct": -0.42
+   },
+   "网易-S": {
+    "cur": 184.9,
+    "pct": -0.38
+   },
+   "快手-W": {
+    "cur": 30.2,
+    "pct": 2.37
+   },
+   "百度集团-SW": {
+    "cur": 86.25,
+    "pct": 3.42
+   },
+   "金斯瑞生物科技": {
+    "cur": 48.38,
+    "pct": 6.0
+   },
+   "比亚迪股份": {
+    "cur": 74.5,
+    "pct": 0.54
+   },
+   "中芯国际": {
+    "cur": 61.65,
+    "pct": 0.57
+   }
+  },
+  "china_internet_proxy": {
+   "net8_equal_weight": 1.36,
+   "net6_large_platform": 1.1667,
+   "net8_members": [
+    "腾讯控股",
+    "阿里巴巴-W",
+    "小米集团-W",
+    "京东集团-SW",
+    "美团-W",
+    "网易-S",
+    "快手-W",
+    "百度集团-SW"
+   ],
+   "net6_members": [
+    "腾讯控股",
+    "阿里巴巴-W",
+    "京东集团-SW",
+    "美团-W",
+    "网易-S",
+    "百度集团-SW"
+   ],
+   "note": "513050 跟踪中证海外中国互联网50；组合无港交所上市工具 → 代理仅用于待消化测算"
+  }
+ },
+ "hk_pending_digest": {
+  "window": [
+   "2026-10-02",
+   "2026-10-05",
+   "2026-10-06",
+   "2026-10-07"
+  ],
+  "total_days": 4,
+  "priced_days": 3,
+  "as_of": "2026-10-06 13:45（10/6 盘中，非收盘）",
+  "prev_segment_source": "portfolio_preopen_20261006.json#hk_leg_pending.priced_segment_cum（10/2 + 10/5 真实收盘价，10/5 盘后档已覆盖为正式版）",
+  "prev_segment_pct_cum": {
+   "pure_hstech": [
+    -1.6505
+   ],
+   "china_internet": [
+    -2.8451,
+    -2.5722,
+    -2.3883,
+    -2.1141
+   ],
+   "broad_hk": [
+    -2.3429,
+    -2.3277,
+    -2.3162,
+    -2.301
+   ]
+  },
+  "today_segment_pct": {
+   "pure_hstech": 0.68,
+   "china_internet_worst": 1.36,
+   "china_internet_best": 1.1667,
+   "broad_hk_a": 0.77,
+   "broad_hk_b": 0.68
+  },
+  "segments": {
+   "pure_hstech": {
+    "mv": 17017.68,
+    "cum_pct": -0.9817,
+    "pnl": -167.07
+   },
+   "china_internet": {
+    "mv": 14555.16,
+    "cum_low_pct": -1.7116,
+    "cum_high_pct": -0.7829,
+    "pnl_low": -249.13,
+    "pnl_high": -113.95
+   },
+   "broad_hk": {
+    "mv": 18451.42,
+    "cum_low_pct": -1.6788,
+    "cum_high_pct": -1.5487,
+    "pnl_low": -309.77,
+    "pnl_high": -285.76
+   },
+   "segment_field_rule": "§3.123b 字段对齐：各段 cum_low_pct / cum_high_pct 一律取 min / max（与其他区间同规则），不按代理书写顺序"
+  },
+  "hk_total": 50024.259999999995,
+  "hk_pct": 13.13,
+  "total_low": -725.96,
+  "total_mid": -646.37,
+  "total_high": -566.77,
+  "track_only_low": -416.2,
+  "track_only_mid": -348.6,
+  "track_only_high": -281.01,
+  "combo_count": 64,
+  "interval_rule": "§3.123b：对 64 组（1 × 4 × 4 × 2 × 2）「合计结果值」取 min/max；assert low ≤ 中枢 ≤ high 已通过",
+  "finalized": false,
+  "finalize_at": "2026-10-06 20:00（港股 10/6 收盘后，以收盘价重算并覆盖 portfolio_pending_20261006.json，§3.121b）",
+  "rule": "§3.108 条款 23/24 + §3.123b + §3.126c：三段法 + 累积窗口几何复合 + 笛卡尔积取合计值 min/max；静态测算只给区间上下界、不得作方向判断；本档为累积窗口第 3 日（10/2、10/5、10/6 已定价，10/7 未走完）",
+  "cumulative_note": "累积口径 = 各段代理涨跌几何复合 (1+r1)(1+r2)(1+r3)−1，非简单相加"
+ },
+ "qdii_pending": {
+  "refreshed": false,
+  "reason": "本档无新增美股交易日（US 10/6 尚未开盘，北京 21:30 开盘、收盘成型于北京 10/7 04:00）→ 挂账区间维持 10/6 盘前档值",
+  "total_low": -1377.23,
+  "total_mid": -1155.35,
+  "total_high": -1007.43,
+  "unknown_sessions": [
+   "2026-10-06",
+   "2026-10-07"
+  ],
+  "coef_note": "长假前后实测隐含系数 1.25~1.29（§3.118a），远超标定 0.72 / 实测 0.62 → 只给区间、不给中枢点值",
+  "source": "portfolio_preopen_20261006.json#pending"
+ },
+ "sentiment": {
+  "window": "盘中(07:30-13:30)",
+  "n": 25,
+  "nominal_net": 605,
+  "exposure_weighted_net": 20.528,
+  "weighted_ratio_pct": 3.4,
+  "formula_note": "名义净分 = Σ利多强度 − Σ利空强度；暴露加权净分 = Σ(赛道净强度分 × 赛道权重) ÷ 总资产（§3.128e 就地写公式）",
+  "annotation_mode": "rule_table_fallback",
+  "degraded_items": 25,
+  "by_track": {
+   "宏观": {
+    "n": 5,
+    "net": 68,
+    "mean_strength": 60.0,
+    "pos": 2,
+    "neg": 1,
+    "neu": 2
+   },
+   "恒生科技": {
+    "n": 5,
+    "net": 266,
+    "mean_strength": 64.4,
+    "pos": 4,
+    "neg": 0,
+    "neu": 1
+   },
+   "A股医药": {
+    "n": 4,
+    "net": 198,
+    "mean_strength": 62.5,
+    "pos": 3,
+    "neg": 0,
+    "neu": 1
+   },
+   "大消费": {
+    "n": 4,
+    "net": 4,
+    "mean_strength": 56.0,
+    "pos": 1,
+    "neg": 1,
+    "neu": 2
+   },
+   "美股标普医药": {
+    "n": 3,
+    "net": 5,
+    "mean_strength": 53.7,
+    "pos": 1,
+    "neg": 1,
+    "neu": 1
+   },
+   "其他/宽基": {
+    "n": 4,
+    "net": 64,
+    "mean_strength": 55.5,
+    "pos": 1,
+    "neg": 0,
+    "neu": 3
+   }
+  },
+  "exposure_detail": {
+   "恒生科技": {
+    "n": 5,
+    "mean_strength": 64.4,
+    "net": 266,
+    "weight_pct": 8.29,
+    "contrib": 4.41
+   },
+   "A股医药": {
+    "n": 4,
+    "mean_strength": 62.5,
+    "net": 198,
+    "weight_pct": 23.57,
+    "contrib": 11.667
+   },
+   "大消费": {
+    "n": 4,
+    "mean_strength": 56.0,
+    "net": 4,
+    "weight_pct": 19.87,
+    "contrib": 0.199
+   },
+   "其他/宽基": {
+    "n": 4,
+    "mean_strength": 55.5,
+    "net": 64,
+    "weight_pct": 24.94,
+    "contrib": 3.991
+   },
+   "美股标普医药": {
+    "n": 3,
+    "mean_strength": 53.7,
+    "net": 5,
+    "weight_pct": 15.66,
+    "contrib": 0.261
+   }
+  },
+  "strong_pos": {
+   "n": 2,
+   "mean": 71.0
+  },
+  "strong_neg": {
+   "n": 0,
+   "mean": null
+  },
+  "merged_all": {
+   "n": 58,
+   "pos": 31,
+   "neu": 20,
+   "neg": 7,
+   "nominal_net": 1571,
+   "mean_strength": 60.5,
+   "strong_pos_n": 9,
+   "strong_pos_mean": 72.9,
+   "strong_neg_n": 2,
+   "strong_neg_mean": 79.0
+  }
+ },
+ "defense_lines": {
+  "hstech_4250": {
+   "last": 4212.07,
+   "prev_close": 4183.68,
+   "dist_pct": -0.8925,
+   "state": "intraday_break_confirmed",
+   "day_low": 4205.73,
+   "day_high": 4251.54,
+   "intraday_touched_above": true,
+   "intraday_above_note": "⚠️ 日内高 4,251.54 → **盘中一度站上 4,250 但 13:45 未站稳**；按 §3.117d 只写「盘中一度」，不得写「站上/收复」；收盘级判定权归 20:00 盘后档",
+   "verify_at": "2026-10-06 16:00（港股收盘）→ 判定权归 20:00 盘后档；10/2 收盘级破位已锁定、本档不重新判定（§3.114c）",
+   "next_trigger": "收盘价 < 4,250 → 第 2 次 0.5% 纪律减仓（标的限纯恒科口径，1,904.44 元，执行待 10/8）；若盘中收复亦**不撤销**（§3.114c）"
+  },
+  "zz_consume_12100": {
+   "last": 12295.9591,
+   "dist_pct": 1.6195,
+   "state": "restored_close_level",
+   "next_line": 12000,
+   "next_line_dist_pct": 2.47,
+   "verify_at": "2026-10-08（A股复市）"
+  },
+  "a_med_reverse_1_5pct": {
+   "proxy_pct": 2.958,
+   "state": "not_triggered",
+   "verify_at": "2026-10-08（A股复市）"
+  },
+  "sh_comp": {
+   "last": 3842.1946
+  }
+ },
+ "med_exposure": {
+  "mv": 149421.33,
+  "pct": 39.23,
+  "non_med_total": 231466.97,
+  "threshold_all_med_pct": 3.27,
+  "threshold_a_sh_med_pct": 5.45,
+  "rule": "§3.98 方程解法 A(1+r)/(B+A(1+r)) = 40%"
+ },
+ "hk_exposure": {
+  "total": 50024.259999999995,
+  "pct": 13.13,
+  "segments": {
+   "pure_hstech": 17017.68,
+   "china_internet": 14555.16,
+   "broad_hk": 18451.42
+  },
+  "southbound_gap_days": [
+   "2026-10-02",
+   "2026-10-05",
+   "2026-10-06",
+   "2026-10-07"
+  ],
+  "gap_day_index_today": 3,
+  "rule_hint": "只报赛道层 8.29% 将低估 4.84pct（宽基层），§3.108 条款 23"
+ },
+ "sensitivity": {
+  "bull_minus1.0pct": -500.24,
+  "base_mid_cum": -646.37,
+  "bear_minus5.0pct": -2501.21,
+  "tail_minus8.0pct": -4001.94
+ },
+ "chain_0pct_row_inserted": false,
+ "chain_note": "混合档不产 portfolio_close_*、不向链式序列插入 0% 行（§3.108 条款 22）；链式末行仍 = 2026-09-30（_fix）",
+ "risk_stats_source": "risk_stats_20261006_preopen.json（本档不重算，§3.127e）",
+ "pending_file_note": "portfolio_pending_20261006.json 正式版由 20:00 盘后档以港股 10/6 收盘价重算并覆盖；本档不覆盖（§3.121b）",
+ "intraday_pseudo_close_warning": "本档已向 indices.csv 写入 2026-10-06 港股「盘中 13:45」伪收盘行（5 行）→ 全库 n 日窗口的恒生科技 n 已被推高（见 event_stats_intraday_20261006.json）；盘后档以真实收盘行覆盖当日日期键后即自动修正（§3.126a/§3.127d）"
+}
