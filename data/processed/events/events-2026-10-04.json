@@ -588,9 +588,10 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ref_trade_day": "2026-10-05"
+   "actual_ret_1d": 0.7161,
+   "actual_date": "2026-10-05",
+   "ref_trade_day": "2026-10-05",
+   "ret_1d_ref": "2026-10-05 收盘：XLV 167.37 +0.72%"
   }
  },
  {
@@ -615,9 +616,10 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ref_trade_day": "2026-10-05"
+   "actual_ret_1d": 0.7161,
+   "actual_date": "2026-10-05",
+   "ref_trade_day": "2026-10-05",
+   "ret_1d_ref": "2026-10-05 收盘：XLV 167.37 +0.72%"
   }
  },
  {
@@ -642,9 +644,10 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 75,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ref_trade_day": "2026-10-05"
+   "actual_ret_1d": 0.7161,
+   "actual_date": "2026-10-05",
+   "ref_trade_day": "2026-10-05",
+   "ret_1d_ref": "2026-10-05 收盘：XLV 167.37 +0.72%"
   }
  },
  {
