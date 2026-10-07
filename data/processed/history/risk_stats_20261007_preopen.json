@@ -1,0 +1,62 @@
+{
+ "date": "2026-10-07",
+ "chain_cum_pct": -3.29,
+ "chain_days": 39,
+ "chain_0pct_row_inserted": false,
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "w40_cum_pct": 0.86,
+ "w40_days": 3,
+ "w41_cum_pct": 0.0,
+ "w41_days": 0,
+ "sharpe": -1.91,
+ "sharpe_n": 39,
+ "daily_mean": -0.0831,
+ "daily_sd": 0.7469,
+ "max_dd_pct": -6.31,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-09-11",
+ "last5_cum_pct": -0.71,
+ "last10_cum_pct": 1.43,
+ "rf_pct": 1.68,
+ "rf_note": "中国 10Y 国债硬编码 1.68%（本地 10Y 序列自 2026-08-11 后未维护，缺口待补）",
+ "tracks_end": {
+  "其他/宽基": {
+   "mv": 95005.73,
+   "pct_of_total": 24.94
+  },
+  "大消费": {
+   "mv": 75675.43,
+   "pct_of_total": 19.87
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.67
+  },
+  "A股医药": {
+   "mv": 89776.91,
+   "pct_of_total": 23.57
+  },
+  "美股标普医药": {
+   "mv": 59644.42,
+   "pct_of_total": 15.66
+  },
+  "恒生科技": {
+   "mv": 31572.84,
+   "pct_of_total": 8.29
+  }
+ },
+ "med_pct_end": 39.23,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json",
+  "portfolio_close_20260928_fix.json",
+  "portfolio_close_20260929_fix.json",
+  "portfolio_close_20260930_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）",
+ "note": "混合档（A股休市 + 港股续市第 4 日，档型②；10/7 港股开市、A股休市）；10/7 盘前不产出 portfolio_close_* 与 portfolio_pending 正式版（仅 preopen_estimate），链式序列末行仍 = 2026-09-30（已含真实净值补更修正件 portfolio_close_20260930_fix.json，Δ −549.39 元）；10/2、10/5、10/6「混合档」产物为 portfolio_pending_*.json 不参与链式序列；10/1、10/3-10/4 均无 close 产物 → W41（10/5-10/11）仍未含任何已实现交易日"
+}
