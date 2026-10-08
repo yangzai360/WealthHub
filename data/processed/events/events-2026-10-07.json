@@ -672,11 +672,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 1.0294,
+   "actual_date": "2026-10-07",
    "max_vol": 9.0,
    "confidence": 96,
-   "ret_1d_ref": "盘前档（2026-10-07 08:00，尚未收盘）；逐市场参考交易日 = 2026-10-07，待该日收盘回填"
+   "ret_1d_ref": "2026-10-07 收盘：XLV 168.81 +1.03%"
   }
  },
  {
@@ -699,11 +699,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 1.0294,
+   "actual_date": "2026-10-07",
    "max_vol": 4.8,
    "confidence": 90,
-   "ret_1d_ref": "盘前档（2026-10-07 08:00，尚未收盘）；逐市场参考交易日 = 2026-10-07，待该日收盘回填"
+   "ret_1d_ref": "2026-10-07 收盘：XLV 168.81 +1.03%"
   }
  },
  {
@@ -726,11 +726,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 1.0294,
+   "actual_date": "2026-10-07",
    "max_vol": 4.8,
    "confidence": 88,
-   "ret_1d_ref": "盘前档（2026-10-07 08:00，尚未收盘）；逐市场参考交易日 = 2026-10-07，待该日收盘回填"
+   "ret_1d_ref": "2026-10-07 收盘：XLV 168.81 +1.03%"
   }
  },
  {
@@ -753,11 +753,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 1.0294,
+   "actual_date": "2026-10-07",
    "max_vol": 1.5,
    "confidence": 90,
-   "ret_1d_ref": "盘前档（2026-10-07 08:00，尚未收盘）；逐市场参考交易日 = 2026-10-07，待该日收盘回填"
+   "ret_1d_ref": "2026-10-07 收盘：XLV 168.81 +1.03%"
   }
  },
  {
@@ -780,11 +780,11 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": 1.0294,
+   "actual_date": "2026-10-07",
    "max_vol": 4.8,
    "confidence": 90,
-   "ret_1d_ref": "盘前档（2026-10-07 08:00，尚未收盘）；逐市场参考交易日 = 2026-10-07，待该日收盘回填"
+   "ret_1d_ref": "2026-10-07 收盘：XLV 168.81 +1.03%"
   }
  },
  {
@@ -1453,8 +1453,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.0294,
+   "actual_date": "2026-10-07",
+   "ret_1d_ref": "2026-10-07 收盘：XLV 168.81 +1.03%"
   }
  },
  {
@@ -1481,8 +1482,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 90,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.0294,
+   "actual_date": "2026-10-07",
+   "ret_1d_ref": "2026-10-07 收盘：XLV 168.81 +1.03%"
   }
  },
  {
@@ -1509,8 +1511,9 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.0294,
+   "actual_date": "2026-10-07",
+   "ret_1d_ref": "2026-10-07 收盘：XLV 168.81 +1.03%"
   }
  },
  {
@@ -1537,8 +1540,9 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 92,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": 1.0294,
+   "actual_date": "2026-10-07",
+   "ret_1d_ref": "2026-10-07 收盘：XLV 168.81 +1.03%"
   }
  },
  {
@@ -1705,7 +1709,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -1732,7 +1737,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -1759,7 +1765,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -1786,7 +1793,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -1813,7 +1821,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -1840,7 +1849,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -1867,7 +1877,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -1894,7 +1905,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -1921,7 +1933,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -1948,7 +1961,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -1975,7 +1989,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -2002,7 +2017,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -2029,7 +2045,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -2056,7 +2073,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -2083,7 +2101,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -2110,7 +2129,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -2137,7 +2157,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -2164,7 +2185,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -2191,7 +2213,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -2216,9 +2239,10 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ref_trade_day": "2026-10-07"
+   "actual_ret_1d": 1.0294,
+   "actual_date": "2026-10-07",
+   "ref_trade_day": "2026-10-07",
+   "ret_1d_ref": "2026-10-07 收盘：XLV 168.81 +1.03%"
   }
  },
  {
@@ -2243,9 +2267,10 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ref_trade_day": "2026-10-07"
+   "actual_ret_1d": 1.0294,
+   "actual_date": "2026-10-07",
+   "ref_trade_day": "2026-10-07",
+   "ret_1d_ref": "2026-10-07 收盘：XLV 168.81 +1.03%"
   }
  },
  {
@@ -2272,7 +2297,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  },
  {
@@ -2299,7 +2325,8 @@
    "confidence": 88,
    "actual_ret_1d": null,
    "actual_date": null,
-   "ref_trade_day": "2026-10-08"
+   "ref_trade_day": "2026-10-08",
+   "backfill_deferred_reason": "§3.127a：本事件采集窗口为盘后(14:00-20:00)，已晚于该市场当日收盘（A股 15:00 / 港股 16:00，北京时间）→ 参考交易日顺延至事件日之后的下一交易日；本档 08:00 该日收盘尚未成型 → 留空，属预期状态"
   }
  }
 ]

@@ -1,0 +1,22 @@
+{
+ "date": "2026-10-08",
+ "session": "preopen-0800",
+ "session_type": "normal_trading_day_preopen",
+ "session_type_note": "档型③「正常交易日盘前」（A股 10/8 复市首日 + 港股 10/8 正常交易日；08:00 双方均无新价格）",
+ "plan": {
+  "status": 200,
+  "size": 0
+ },
+ "nav": {
+  "status": 200,
+  "size": 0
+ },
+ "adjustments": {
+  "status": 200,
+  "size": 0
+ },
+ "ok": false,
+ "consecutive_empty_trading_days": 105,
+ "consecutive_note": "10/8 为 **A股 交易日（长假后复市首日）** → 依 §3.130d 规则① 本计数**推进 +1**：10/7 盘后 = 104 → 本档 = 105；该计数为人工维护、历史存在 ±1 记录差异，已登记为口径待清理项（§3.133c）",
+ "note": "三端点 HTTP 200 / size 0B 全空 → playwright 兜底第 35 次成功"
+}
