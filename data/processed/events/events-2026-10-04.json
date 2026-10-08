@@ -21,8 +21,8 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 78,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.7884,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -48,8 +48,8 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 78,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.7884,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -75,8 +75,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 72,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.7884,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -102,8 +102,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 65,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.7884,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -129,8 +129,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 75,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.7884,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -156,8 +156,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 75,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.7884,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -291,8 +291,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.0864,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -318,8 +318,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 86,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.0864,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -345,8 +345,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.0864,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -372,8 +372,8 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 75,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.0864,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -399,8 +399,8 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.3184,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -426,8 +426,8 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.3184,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -453,8 +453,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 60,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.3184,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -480,8 +480,8 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 75,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.3184,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -507,8 +507,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 72,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -2.5542,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -534,8 +534,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 70,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -2.5542,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -561,8 +561,8 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 80,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -2.5542,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  },
@@ -672,8 +672,8 @@
    "ret_10d": null,
    "max_vol": 1.5,
    "confidence": 85,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -1.0864,
+   "actual_date": "2026-10-08",
    "ref_trade_day": "2026-10-08"
   }
  }
