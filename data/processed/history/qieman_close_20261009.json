@@ -1,0 +1,181 @@
+{
+ "date": "2026-10-09",
+ "session": "close",
+ "session_type": "normal_trading_day_close",
+ "rest_probe": {
+  "date": "2026-10-09",
+  "session": "close-2000",
+  "session_type": "normal_trading_day_close",
+  "plan": {
+   "status": 200,
+   "size": 0
+  },
+  "nav": {
+   "status": 200,
+   "size": 0
+  },
+  "adjustments": {
+   "status": 200,
+   "size": 0
+  },
+  "ok": false,
+  "consecutive_empty_trading_days": 106,
+  "consecutive_note": "A股 10/9 = 长假后第 2 个交易日（新交易日）→ 计数由 105 推进至 **106**；该计数为人工维护、历史存在 ±1 记录差异，已登记为口径待清理项（§3.121c）",
+  "note": "三端点 HTTP 200 / size 0B 全空（连续第 106 个交易日空 body）→ playwright 兜底第 38 次成功"
+ },
+ "playwright_fallback": true,
+ "playwright_success_count": 38,
+ "plan_body_bytes": 44979,
+ "nav_body_bytes": 197722,
+ "adjustedCount": 266,
+ "investedUnit": 112,
+ "planUnit_sum": 112,
+ "planUnit_cat_sum": 150,
+ "plan_unit_zero_change": true,
+ "planunit_diff": [],
+ "planunit_diff_baseline": "composition-2026-10-09.json",
+ "composition_by_class": [
+  {
+   "className": "A股",
+   "unit": 71,
+   "percent": 0.4412,
+   "funds": 32
+  },
+  {
+   "className": "现金",
+   "unit": 38,
+   "percent": 0.2835,
+   "funds": 1
+  },
+  {
+   "className": "境内债券",
+   "unit": 15,
+   "percent": 0.1121,
+   "funds": 12
+  },
+  {
+   "className": "海外新兴市场股票",
+   "unit": 17,
+   "percent": 0.0925,
+   "funds": 5
+  },
+  {
+   "className": "海外债券",
+   "unit": 6,
+   "percent": 0.0421,
+   "funds": 5
+  },
+  {
+   "className": "海外成熟市场股票",
+   "unit": 3,
+   "percent": 0.0286,
+   "funds": 5
+  },
+  {
+   "className": "原油",
+   "unit": 0,
+   "percent": 0,
+   "funds": 3
+  },
+  {
+   "className": "黄金",
+   "unit": 0,
+   "percent": 0,
+   "funds": 1
+  }
+ ],
+ "composition_categories": 8,
+ "nav": 1.6535,
+ "nav_date_beijing": "2026-10-09",
+ "daily_return_pct": 0.27,
+ "sharpe": 0.2765,
+ "maxDrawdown": 0.1979,
+ "volatility": 0.1106,
+ "annualCompoundedReturn": 0.0456,
+ "nav_history_count": 2738,
+ "nav_history_tail": [
+  {
+   "date": "2026-09-18",
+   "nav": 1.6640517,
+   "ret": 0.3659
+  },
+  {
+   "date": "2026-09-21",
+   "nav": 1.6763402,
+   "ret": 0.7385
+  },
+  {
+   "date": "2026-09-22",
+   "nav": 1.6768936,
+   "ret": 0.033
+  },
+  {
+   "date": "2026-09-23",
+   "nav": 1.6719871,
+   "ret": -0.2926
+  },
+  {
+   "date": "2026-09-24",
+   "nav": 1.6600455,
+   "ret": -0.7142
+  },
+  {
+   "date": "2026-09-28",
+   "nav": 1.652426,
+   "ret": -0.459
+  },
+  {
+   "date": "2026-09-29",
+   "nav": 1.6513461,
+   "ret": -0.0654
+  },
+  {
+   "date": "2026-09-30",
+   "nav": 1.6607516,
+   "ret": 0.5696
+  },
+  {
+   "date": "2026-10-08",
+   "nav": 1.6490142,
+   "ret": -0.7068
+  },
+  {
+   "date": "2026-10-09",
+   "nav": 1.653516,
+   "ret": 0.273
+  }
+ ],
+ "local_csv_last": [
+  "2026-09-21",
+  "1.668416",
+  "0.2623"
+ ],
+ "local_csv_rows": 3306,
+ "caliber_divergence": {
+  "status": "挂起（连续第 21 档）",
+  "source_last": {
+   "date": "2026-10-09",
+   "nav": 1.653516,
+   "ret": 0.273
+  },
+  "local_last": {
+   "date": "2026-09-21",
+   "nav": 1.668416
+  },
+  "action": "按 §3.97/§3.99 不追加、不回写；口径统一为用户决策第 1 优先项"
+ },
+ "adjustment": {
+  "changed": false,
+  "note": "adjustedCount 266 = 266、investedUnit 112 = 112、逐品种 planUnit 差分零变动（63 品种合计恒 112）、8 类别 unit 零变动（合计恒 150）→ E大无新调仓；最新调仓仍 adj_id 781 / 2026-07-30",
+  "adjustedCount_prev": 266,
+  "investedUnit_prev": 112,
+  "latest_adj_id": 781,
+  "latest_adj_date": "2026-07-30"
+ },
+ "nav_stale_note": "nav 1.6535（北京净值日 2026-10-09，日收益 +0.2700%）；源序列末 3 条 = [('2026-09-30', 1.6607516), ('2026-10-08', 1.6490142), ('2026-10-09', 1.653516)]",
+ "adjusted_files": {
+  "plan": "qieman_pwc_plan_20261009c_1791547668939_1.json",
+  "nav": "qieman_pwc_nav_20261009c_1791547668694_1.json",
+  "adj": "无（adjustments 明细仍缺，承接待办）"
+ }
+}

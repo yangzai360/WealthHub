@@ -1,0 +1,68 @@
+{
+ "date": "2026-10-09",
+ "chain_cum_pct": -4.27,
+ "chain_days": 41,
+ "chain_0pct_row_inserted": false,
+ "chain_gap_note": "10/1-10/7 长假「混合档」产物均为 portfolio_pending_*（不匹配 portfolio_close_* glob）→ 链式序列无 0% 行插入；10/9 正常交易日直接以 portfolio_close_20261009.json 接续 10/8 末行（10/8 由 portfolio_close_20261008.json 接续 9/30 修正件）",
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "w40_cum_pct": 0.86,
+ "w40_days": 3,
+ "w41_cum_pct": -1.01,
+ "w41_days": 2,
+ "w41_daily": [
+  "10-08 -1.6860%",
+  "10-09 +0.6832%"
+ ],
+ "sharpe": -2.24,
+ "sharpe_n": 41,
+ "daily_mean": -0.1035,
+ "daily_sd": 0.78,
+ "max_dd_pct": -6.31,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-09-11",
+ "last5_cum_pct": -0.16,
+ "last10_cum_pct": 0.2,
+ "rf_pct": 1.68,
+ "rf_note": "中国 10Y 国债硬编码 1.68%（本地 10Y 序列自 2026-08-11 后未维护，缺口待补）",
+ "tracks_end": {
+  "其他/宽基": {
+   "mv": 95744.94,
+   "pct_of_total": 25.39
+  },
+  "大消费": {
+   "mv": 75675.98,
+   "pct_of_total": 20.07
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.75
+  },
+  "A股医药": {
+   "mv": 86953.73,
+   "pct_of_total": 23.06
+  },
+  "美股标普医药": {
+   "mv": 58318.17,
+   "pct_of_total": 15.47
+  },
+  "恒生科技": {
+   "mv": 31119.28,
+   "pct_of_total": 8.25
+  }
+ },
+ "med_pct_end": 38.53,
+ "total_mv_end": 377025.06,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json",
+  "portfolio_close_20260928_fix.json",
+  "portfolio_close_20260929_fix.json",
+  "portfolio_close_20260930_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）",
+ "note": "正常交易日（A股 长假后第 2 个交易日 + 港股正常交易日）；末行 = 2026-10-09；本档无代理估算（全部真实价格/真实净值）；⚠️ 场外净值出库节奏：161616 / 000727 已于本档 **20:14 复抓后补入**（−0.61% / +0.93%），剩余 **000051（华夏沪深300ETF联接A）** 的 10/9 净值尚未发布 → 按「基准已含计 0」处理（§3.105）；若 10/12 盘前兜底取到净值，将以同日 `_fix` 覆盖本档读数（组合当日估算已由首抓 +2,613.60 元下修至 +2,558.50 元）"
+}
