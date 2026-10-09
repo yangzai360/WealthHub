@@ -1,0 +1,204 @@
+{
+ "date": "2026-10-09",
+ "session": "intraday",
+ "session_type": "normal_trading_day_intraday",
+ "session_type_note": "正常交易日盘中档（A股 长假后第 2 个交易日 + 港股正常交易日；13:45 双方均开市）",
+ "rest_probe": {
+  "date": "2026-10-09",
+  "session": "intraday-1345",
+  "session_type": "normal_trading_day_intraday",
+  "session_type_note": "正常交易日盘中档（A股 + 港股均开市；13:45）",
+  "plan": {
+   "status": 200,
+   "size": 0
+  },
+  "nav": {
+   "status": 200,
+   "size": 0
+  },
+  "adjustments": {
+   "status": 200,
+   "size": 0
+  },
+  "session_ref": "intraday-1345（本档实测三端点均 HTTP 200 / size 0）"
+ },
+ "playwright_fallback": true,
+ "playwright_success_count": 38,
+ "consecutive_empty_trading_days": 106,
+ "consecutive_note": "A股 10/9 为交易日 → 计数由 10/8 收盘档 105 推进至 106；该计数为人工维护、历史存在 ±1 记录差异（§3.133c）",
+ "plan_body_bytes": 44195,
+ "nav_body_bytes": 197650,
+ "adjustedCount": 266,
+ "investedUnit": 112,
+ "planUnit_sum": 112,
+ "planUnit_cat_sum": 150,
+ "plan_unit_zero_change": true,
+ "planunit_diff": [],
+ "planunit_diff_baseline": "composition-2026-10-08-close.json",
+ "composition_by_class": [
+  {
+   "className": "A股",
+   "unit": 71,
+   "percent": 0.4404,
+   "funds": 32
+  },
+  {
+   "className": "现金",
+   "unit": 38,
+   "percent": 0.2834,
+   "funds": 1
+  },
+  {
+   "className": "境内债券",
+   "unit": 15,
+   "percent": 0.1125,
+   "funds": 12
+  },
+  {
+   "className": "海外新兴市场股票",
+   "unit": 17,
+   "percent": 0.0931,
+   "funds": 5
+  },
+  {
+   "className": "海外债券",
+   "unit": 6,
+   "percent": 0.0421,
+   "funds": 5
+  },
+  {
+   "className": "海外成熟市场股票",
+   "unit": 3,
+   "percent": 0.0285,
+   "funds": 5
+  },
+  {
+   "className": "原油",
+   "unit": 0,
+   "percent": 0,
+   "funds": 3
+  },
+  {
+   "className": "黄金",
+   "unit": 0,
+   "percent": 0,
+   "funds": 1
+  }
+ ],
+ "composition_categories": 8,
+ "composition_distinct_codes": 63,
+ "composition_rows": 64,
+ "nav": 1.6495,
+ "nav_date_beijing": "2026-10-08",
+ "daily_return_pct": -0.68,
+ "sharpe": 0.2745,
+ "maxDrawdown": 0.1979,
+ "volatility": 0.1106,
+ "annualCompoundedReturn": 0.0454,
+ "nav_history_count": 2737,
+ "nav_history_tail": [
+  {
+   "date": "2026-09-17",
+   "nav": 1.6579847,
+   "ret": -0.0486
+  },
+  {
+   "date": "2026-09-18",
+   "nav": 1.6640517,
+   "ret": 0.3659
+  },
+  {
+   "date": "2026-09-21",
+   "nav": 1.6763402,
+   "ret": 0.7385
+  },
+  {
+   "date": "2026-09-22",
+   "nav": 1.6768936,
+   "ret": 0.033
+  },
+  {
+   "date": "2026-09-23",
+   "nav": 1.6719871,
+   "ret": -0.2926
+  },
+  {
+   "date": "2026-09-24",
+   "nav": 1.6600455,
+   "ret": -0.7142
+  },
+  {
+   "date": "2026-09-28",
+   "nav": 1.652426,
+   "ret": -0.459
+  },
+  {
+   "date": "2026-09-29",
+   "nav": 1.6513461,
+   "ret": -0.0654
+  },
+  {
+   "date": "2026-09-30",
+   "nav": 1.6607516,
+   "ret": 0.5696
+  },
+  {
+   "date": "2026-10-08",
+   "nav": 1.6495218,
+   "ret": -0.6762
+  }
+ ],
+ "local_csv_last": [
+  "2026-09-21",
+  "1.668416",
+  "0.2623"
+ ],
+ "local_csv_rows": 3306,
+ "caliber_divergence": {
+  "status": "挂起（连续第 21 档）",
+  "source_last": {
+   "date": "2026-10-08",
+   "nav": 1.6495218,
+   "ret": -0.6762
+  },
+  "local_last": {
+   "date": "2026-09-21",
+   "nav": 1.668416
+  },
+  "action": "按 §3.97/§3.99 不追加、不回写；口径统一为用户决策第 1 优先项"
+ },
+ "source_revision": {
+  "observed": true,
+  "target": "2026-10-08 组合净值",
+  "prior": 1.6579582,
+  "now": 1.6495218,
+  "note": "源侧把 10/8 收盘档读到 1.6579582 修订为 1.6495218488（−0.51%）→ 按 §3.97 判定为源修订，本地不追加不回写，仅登记"
+ },
+ "adjustment": {
+  "changed": false,
+  "note": "adjustedCount 266 = 266、investedUnit 112 = 112、逐品种 planUnit 差分零变动（63 个去重代码合计恒 112）、8 类别 unit 零变动 → **本档（10/9 13:45）无新调仓**；最新调仓仍 adj_id 781 / 2026-07-30",
+  "adjustedCount_prev": 266,
+  "investedUnit_prev": 112,
+  "latest_adj_id": 781,
+  "latest_adj_date": "2026-07-30",
+  "recent_new_adjustment": {
+   "fund_code": "001257",
+   "fund_name": "兴业收益增强债券A",
+   "variety": "兴业收益增强债",
+   "large_class": "境内债券",
+   "direction": "买入",
+   "units": 1,
+   "txn_date_estimated": "2026-10-08",
+   "detected_at": "2026-10-08 20:00 收盘档（本档补录落库）",
+   "recorded_to_adjustments_json": true,
+   "source_detail_available": false,
+   "pending_user_verification": true
+  }
+ },
+ "nav_stale_note": "nav 1.6495 / nav_date_beijing = 2026-10-08；10/9 当日净值收盘后（20:00 前后）发布 → 13:45 档不可得",
+ "adjusted_files": {
+  "plan": "qieman_pwc_plan_20261009i_1791524872406_1.json",
+  "nav": "qieman_pwc_nav_20261009i_1791524872128_1.json",
+  "adj": "无（adjustments 明细仍缺，承接待办）"
+ }
+}
