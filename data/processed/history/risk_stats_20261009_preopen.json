@@ -1,0 +1,67 @@
+{
+ "date": "2026-10-09",
+ "session": "preopen",
+ "session_type": "normal_trading_day_preopen",
+ "session_type_note": "档型③「正常交易日盘前」= A股 10/9 正常交易日（长假后第 2 个交易日）+ 港股 10/9 正常交易日；08:00 双方均无当日价格 → **不产 `portfolio_close_*` 与 `portfolio_pending_*`**",
+ "chain_cum_pct": -4.92,
+ "chain_days": 40,
+ "chain_last_row_date": "2026-10-08",
+ "chain_0pct_row_inserted": false,
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "w40_cum_pct": 0.86,
+ "w40_days": 3,
+ "w41_cum_pct": -1.69,
+ "w41_days": 1,
+ "w41_note": "本档 W41 已有 1 个已实现交易日（10/8 收盘行，−1.6860%）；下一实现日 = 10/9 收盘（§3.125a）",
+ "sharpe": -2.64,
+ "sharpe_n": 40,
+ "daily_mean": -0.1232,
+ "daily_sd": 0.7796,
+ "max_dd_pct": -6.31,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-09-11",
+ "last5_cum_pct": -2.24,
+ "last10_cum_pct": -0.4,
+ "rf_pct": 1.68,
+ "rf_note": "中国 10Y 国债硬编码 1.68%（本地 10Y 序列自 2026-08-11 后未维护，缺口待补）",
+ "tracks_end": {
+  "其他/宽基": {
+   "mv": 93626.54,
+   "pct_of_total": 25.0
+  },
+  "大消费": {
+   "mv": 74925.38,
+   "pct_of_total": 20.01
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.8
+  },
+  "A股医药": {
+   "mv": 87200.65,
+   "pct_of_total": 23.29
+  },
+  "美股标普医药": {
+   "mv": 58701.87,
+   "pct_of_total": 15.68
+  },
+  "恒生科技": {
+   "mv": 30799.16,
+   "pct_of_total": 8.22
+  }
+ },
+ "med_pct_end": 38.97,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json",
+  "portfolio_close_20260928_fix.json",
+  "portfolio_close_20260929_fix.json",
+  "portfolio_close_20260930_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）",
+ "note": "档型③「正常交易日盘前」= A股 10/9 正常交易日（长假后第 2 个交易日）+ 港股 10/9 正常交易日；08:00 双方均无当日价格 → **不产 `portfolio_close_*` 与 `portfolio_pending_*`**；本档不产 `portfolio_close_*` → 链式序列末行 = 2026-10-08（10/8 收盘行已计入，−1.6860% / −6,421.73 元，为链路单日最大跌幅）；10/2、10/5、10/6、10/7「混合档」产物为 portfolio_pending_*.json 不参与链式序列；10/1、10/3-10/4 均无 close 产物 → W41（10/5-10/11）现含 1 个已实现交易日（10/8）"
+}
