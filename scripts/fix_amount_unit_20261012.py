@@ -76,6 +76,8 @@ CTX_GUARD = re.compile(
     r'|净值[^，。；]{0,4}|批价[^，。；]{0,4}|零售[^，。；]{0,4}|终端价[^，。；]{0,4}'
     r'|B\s*/?\s*|条[^，。；]{0,2}|行[^，。；]{0,2}|张[^，。；]{0,2}|亿元[^，。；]{0,2}'
     r'|%（\s*$)'
+    # §3.141b 新增：计数/份数上下文（各慢长赢计划的 planUnit / investedUnit / adjustedCount 等）
+    r'|(?:adjustedCount|investedUnit|planUnit(?:_sum|_cat_sum)?|unit|份数|份|个品种)[\s=]{0,3}[^，。；]{0,10}'
 )
 
 

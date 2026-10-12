@@ -1,0 +1,204 @@
+# -*- coding: utf-8 -*-
+"""2026-10-12 **盘中档（13:45）**：且慢 LONG_WIN 落库判定（REST 探针 + playwright 产物归档）
+
+⚠️ 四类字面量核对（§3.121c / §3.138a）：
+   · 读写路径 = *20261012*（REST 探针产物 = qieman_rest_20261012_intraday.json，本档复用不改写）
+   · 输出档型名 = qieman_20261012_intraday.json / composition-2026-10-12.json
+   · session = "intraday"；session_type = "normal_trading_day_intraday"
+   · 基线 = composition-2026-10-09-close.json（上一 A股 收盘基线）
+   · 计数：consecutive_empty_trading_days = 107（10/12 为 A股 交易日，较 10/9 收盘档 106 推进 +1）
+           playwright_success_count = 39（10/9 收盘档 38 → 本档 +1）
+⚠️ 档型语义：正常交易日盘中（A股 + 港股均开市；长假后第 3 个交易日 / 本周复市首日）
+"""
+import json, glob, os, csv, datetime, shutil
+
+ROOT = "/Users/jieyang/Documents/WealthHub"
+TAG = "20261012i"
+OUT = f"{ROOT}/reference-portfolios/long-win"
+TODAY = "2026-10-12"
+SESSION_TYPE = "normal_trading_day_intraday"
+SESSION_NOTE = "正常交易日盘中档（A股 长假后第 3 个交易日 / 本周复市首日 + 港股正常交易日；13:45 双方均开市）"
+
+
+def ts2date(ts):
+    return datetime.datetime.fromtimestamp(ts / 1000, datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d")
+
+
+# ---------- 1. REST 探针（沿用本档探针产物，不改写） ----------
+p_rest = f"{ROOT}/data/processed/history/qieman_rest_20261012_intraday.json"
+probe = json.load(open(p_rest, encoding="utf-8"))
+probe["session_ref"] = "intraday-1345（本档实测三端点均 HTTP 200 / size 0）"
+print("REST 探针（本档实测）:", {k: v for k, v in probe.items() if isinstance(v, dict)})
+
+# ---------- 2. 归档 playwright 产物 ----------
+plan_f = sorted(glob.glob(f"/tmp/qieman_pwc_plan_{TAG}_*.json"), key=os.path.getmtime)[-1]
+nav_f = sorted(glob.glob(f"/tmp/qieman_pwc_nav_{TAG}_*.json"), key=os.path.getmtime)[-1]
+adj_f = sorted(glob.glob(f"/tmp/qieman_pwc_adj_{TAG}_*.json"), key=os.path.getmtime)
+for p in (plan_f, nav_f):
+    assert os.path.exists(p), f"⚠️ 路径不存在: {p}"
+plan = json.load(open(plan_f))
+navs = json.load(open(nav_f))
+navs = navs if isinstance(navs, list) else navs.get("data", navs)
+
+shutil.copy2(plan_f, f"{OUT}/composition-{TODAY}.json")
+
+
+# ---------- 3. composition 逐品种 planUnit 差分（§3.93 两层嵌套） ----------
+def flat(plan_obj):
+    m = {}
+    for cl in plan_obj.get("composition") or []:
+        for it in (cl.get("compList") or []):
+            f = it.get("fund") or {}
+            code = f.get("fundCode") or f.get("code")
+            if code is None:
+                continue
+            m[code] = m.get(code, 0) + (it.get("planUnit") or 0)
+    return m
+
+
+cur_units = flat(plan)
+BASE_FILES = [
+    f"{OUT}/composition-2026-10-09-close.json",   # 上一 A股 收盘基线
+    f"{OUT}/composition-2026-10-09.json",         # 上一档盘中基线（第二兜底）
+    f"{OUT}/composition-2026-10-08-close.json",   # 第三兜底
+]
+print("基线候选存在性:", [(os.path.basename(b), os.path.exists(b)) for b in BASE_FILES])
+existing = [b for b in BASE_FILES if os.path.exists(b)]
+assert existing, "⚠️ 候选基线文件均不存在 → 终止"
+base_file = existing[0]
+base_units = flat(json.load(open(base_file, encoding="utf-8")))
+print(f"composition 基线 = {os.path.basename(base_file)}（{len(base_units)} 个去重代码，§3.133d）")
+
+diffs = []
+for code in sorted(set(cur_units) | set(base_units), key=lambda x: str(x)):
+    a, b = base_units.get(code, 0), cur_units.get(code, 0)
+    if a != b:
+        diffs.append({"code": code, "prev": a, "now": b, "delta": b - a})
+unit_sum = sum(cur_units.values())
+cat_unit_sum = sum(c.get("unit") or 0 for c in plan["composition"])
+comp_rows = sum(len(c.get("compList") or []) for c in plan["composition"])
+print(f"planUnit 合计 = {unit_sum}（逐品种）；类别 unit 合计 = {cat_unit_sum}")
+print(f"品种数两口径：去重代码 = {len(cur_units)} / 成分条数 = {comp_rows}（§3.133d）")
+print(f"逐品种差分：{diffs if diffs else '零变动'}")
+
+ADJ_PREV, INV_PREV = 266, 112
+changed = bool(diffs) or plan.get("adjustedCount") != ADJ_PREV or plan.get("investedUnit") != INV_PREV
+
+# ---------- 4. adjustments.json 落库判定（本档预期：无新调仓） ----------
+adj_p = f"{OUT}/adjustments.json"
+adj_doc = json.load(open(adj_p, encoding="utf-8"))
+print(f"\n=== adjustments.json 落库判定 ===")
+print(f"  本地现有 {len(adj_doc['adjustments'])} 条调仓（count={adj_doc.get('count')}）")
+if changed:
+    print("  ⚠️ 检测到差分 → 需人工核对且慢 App 后落库（本档不自动推定写入）")
+else:
+    print("  → 无新调仓，无需写入")
+
+cats = [{"className": c.get("className"), "unit": c.get("unit"), "percent": c.get("percent"),
+         "funds": len(c.get("compList") or [])} for c in plan["composition"]]
+
+nav_last = navs[-1]
+nav_seq_tail = [{"date": ts2date(x["navDate"]), "nav": round(x["nav"], 7), "ret": round(x["dailyReturn"] * 100, 4)}
+                for x in navs[-10:]]
+
+rows = list(csv.reader(open(f"{ROOT}/data/processed/reference/long-win-nav.csv", encoding="utf-8-sig")))
+local_last = rows[-1]
+NAV_1009_PRIOR = 1.6535   # 10/9 收盘档 plan.nav 读数
+NAV_1009_NOW = None
+for x in nav_seq_tail:
+    if x["date"] == "2026-10-09":
+        NAV_1009_NOW = x["nav"]
+revision = bool(NAV_1009_NOW is not None and abs(NAV_1009_NOW - NAV_1009_PRIOR) > 1e-6)
+
+digest = {
+    "date": TODAY,
+    "session": "intraday",
+    "session_type": SESSION_TYPE,
+    "session_type_note": SESSION_NOTE,
+    "rest_probe": probe,
+    "playwright_fallback": True,
+    "playwright_success_count": 39,
+    "consecutive_empty_trading_days": 107,
+    "consecutive_note": "A股 10/12 为交易日 → 计数由 10/9 收盘档 106 推进至 107；该计数为人工维护、历史存在 ±1 记录差异（§3.133c）",
+    "plan_body_bytes": os.path.getsize(plan_f),
+    "nav_body_bytes": os.path.getsize(nav_f),
+    "adjustedCount": plan.get("adjustedCount"),
+    "investedUnit": plan.get("investedUnit"),
+    "planUnit_sum": unit_sum,
+    "planUnit_cat_sum": cat_unit_sum,
+    "plan_unit_zero_change": len(diffs) == 0,
+    "planunit_diff": diffs,
+    "planunit_diff_baseline": os.path.basename(base_file),
+    "composition_by_class": cats,
+    "composition_categories": len(plan["composition"]),
+    "composition_distinct_codes": len(cur_units),
+    "composition_rows": comp_rows,
+    "nav": plan.get("nav"),
+    "nav_date_beijing": ts2date(plan.get("navDate") or 0),
+    "daily_return_pct": round((plan.get("dailyReturn") or 0) * 100, 4),
+    "sharpe": plan.get("sharpe"),
+    "maxDrawdown": plan.get("maxDrawdown"),
+    "volatility": plan.get("volatility"),
+    "annualCompoundedReturn": plan.get("annualCompoundedReturn"),
+    "nav_history_count": len(navs),
+    "nav_history_tail": nav_seq_tail,
+    "local_csv_last": local_last,
+    "local_csv_rows": len(rows),
+    "caliber_divergence": {
+        "status": "挂起（连续第 24 档）",
+        "source_last": nav_seq_tail[-1],
+        "local_last": {"date": local_last[0], "nav": float(local_last[1])},
+        "action": "按 §3.97/§3.99 不追加、不回写；口径统一为用户决策第 1 优先项",
+    },
+    "source_revision": {
+        "observed": revision,
+        "target": "2026-10-09 组合净值",
+        "prior": NAV_1009_PRIOR,
+        "now": NAV_1009_NOW,
+        "note": (f"源侧把 10/9 收盘档读到 {NAV_1009_PRIOR} 修订为 {NAV_1009_NOW} → 按 §3.97 判定为源修订，"
+                 "本地不追加不回写，仅登记") if revision else "无修订",
+    },
+    "adjustment": {
+        "changed": changed,
+        "note": (f"adjustedCount {plan.get('adjustedCount')} = {ADJ_PREV}、investedUnit {plan.get('investedUnit')} = {INV_PREV}、"
+                 f"逐品种 planUnit 差分零变动（{len(cur_units)} 个去重代码合计恒 {unit_sum}）、{len(plan['composition'])} 类别 unit 零变动"
+                 f" → **本档（10/12 13:45）无新调仓**；最新调仓仍 adj_id 781 / 2026-07-30") if not changed else
+                f"⚠️ 检测到调仓：差分 {diffs}；建议用户在且慢 App 核对",
+        "adjustedCount_prev": ADJ_PREV, "investedUnit_prev": INV_PREV,
+        "latest_adj_id": 781, "latest_adj_date": "2026-07-30",
+        "recent_new_adjustment": None,
+    },
+    "nav_stale_note": (f"nav {plan.get('nav')} / nav_date_beijing = {ts2date(plan.get('navDate') or 0)}；"
+                       f"10/12 当日净值收盘后（20:00 前后）发布 → 13:45 档不可得"),
+    "adjusted_files": {
+        "plan": os.path.basename(plan_f), "nav": os.path.basename(nav_f),
+        "adj": [os.path.basename(x) for x in adj_f] or "无（adjustments 端点仍空 body）",
+    },
+}
+json.dump(digest, open(f"{ROOT}/data/processed/history/qieman_20261012_intraday.json", "w", encoding="utf-8"),
+          ensure_ascii=False, indent=1)
+
+meta_p = f"{OUT}/meta.json"
+meta = json.load(open(meta_p))
+meta.update({
+    "nav": plan.get("nav"), "navDate": plan.get("navDate"),
+    "dailyReturn": round((plan.get("dailyReturn") or 0) * 100, 4),
+    "sharpe": plan.get("sharpe"), "maxDrawdown": plan.get("maxDrawdown"),
+    "volatility": plan.get("volatility"), "annualCompoundedReturn": plan.get("annualCompoundedReturn"),
+    "investedUnit": plan.get("investedUnit"), "adjustedCount": plan.get("adjustedCount"),
+    "nav_date_beijing": ts2date(plan.get("navDate") or 0),
+    "last_checked": TODAY, "composition_snapshot": f"composition-{TODAY}.json",
+    "joinedCount": plan.get("joinedCount"), "activeCount": plan.get("activeCount"),
+    "date": TODAY, "navDate_bj": ts2date(plan.get("navDate") or 0),
+    "latest_adj_id": 781, "latest_adj_date": "2026-07-30",
+})
+json.dump(meta, open(meta_p, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+print("\n=== 且慢 LONG_WIN 落库（盘中档） ===")
+print(f"plan {digest['plan_body_bytes']}B / nav {digest['nav_body_bytes']}B")
+print(f"adjustedCount={digest['adjustedCount']} investedUnit={digest['investedUnit']} planUnit_sum={unit_sum}")
+print(f"nav={digest['nav']} nav_date={digest['nav_date_beijing']} 日收益={digest['daily_return_pct']}%")
+print(f"nav-history {len(navs)} 条；末 3 条：{nav_seq_tail[-3:]}")
+print(f"本地 CSV 末行：{local_last}（口径分歧连续第 24 档，不追加）")
+print(f"🟢 E大调仓判定：{'⚠️ 本档有新调仓' if changed else '本档无新调仓'}")
+print("✅ qieman_20261012_intraday.json / composition-2026-10-12.json / meta.json 已更新")
