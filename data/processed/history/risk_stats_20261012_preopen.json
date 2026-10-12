@@ -1,0 +1,68 @@
+{
+ "date": "2026-10-12",
+ "session": "preopen",
+ "session_type": "normal_trading_day_preopen",
+ "session_type_note": "档型③「正常交易日盘前」= A股 10/12 正常交易日（双市场复市首日）+ 港股 10/12 正常交易日；08:00 双方均无当日价格 → **不产 `portfolio_close_*` 与 `portfolio_pending_*`**",
+ "chain_cum_pct": -4.27,
+ "chain_days": 41,
+ "chain_last_row_date": "2026-10-09",
+ "chain_0pct_row_inserted": false,
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "w40_cum_pct": 0.86,
+ "w40_days": 3,
+ "w41_cum_pct": -1.01,
+ "w41_days": 2,
+ "w41_note": "本档 W41 已有 2 个已实现交易日（10/8 −1.6860% / 10/9 +0.6875%，§3.127e 取 `_fix` 修正值）；W41 已收官",
+ "sharpe": -2.24,
+ "sharpe_n": 41,
+ "daily_mean": -0.1034,
+ "daily_sd": 0.7801,
+ "max_dd_pct": -6.31,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-09-11",
+ "last5_cum_pct": -0.16,
+ "last10_cum_pct": 0.21,
+ "rf_pct": 1.68,
+ "rf_note": "中国 10Y 国债硬编码 1.68%（本地 10Y 序列自 2026-08-11 后未维护，缺口待补）",
+ "tracks_end": {
+  "其他/宽基": {
+   "mv": 95760.73,
+   "pct_of_total": 25.39
+  },
+  "大消费": {
+   "mv": 75675.98,
+   "pct_of_total": 20.07
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.75
+  },
+  "A股医药": {
+   "mv": 86953.73,
+   "pct_of_total": 23.06
+  },
+  "美股标普医药": {
+   "mv": 58318.17,
+   "pct_of_total": 15.47
+  },
+  "恒生科技": {
+   "mv": 31119.28,
+   "pct_of_total": 8.25
+  }
+ },
+ "med_pct_end": 38.53,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json",
+  "portfolio_close_20260928_fix.json",
+  "portfolio_close_20260929_fix.json",
+  "portfolio_close_20260930_fix.json",
+  "portfolio_close_20261009_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）",
+ "note": "档型③「正常交易日盘前」= A股 10/12 正常交易日（双市场复市首日）+ 港股 10/12 正常交易日；08:00 双方均无当日价格 → **不产 `portfolio_close_*` 与 `portfolio_pending_*`**；本档不产 `portfolio_close_*` → 链式序列末行 = 2026-10-09（10/9 收盘修正件已计入，+0.6875% / +2,574.29 元，§3.127e）；10/2、10/5、10/6、10/7「混合档」产物为 portfolio_pending_*.json 不参与链式序列；10/1、10/3-10/4、10/10-10/11 均无 close 产物 → W41（10/5-10/11）收盘 2 个已实现交易日（10/8、10/9）"
+}

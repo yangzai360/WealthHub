@@ -1,0 +1,46 @@
+{
+ "大消费": {
+  "n": 4,
+  "net_nominal": 106.0,
+  "net_weighted_100": 1.06,
+  "expo_pct": 20.07,
+  "weighted_contrib": 0.2127
+ },
+ "A股医药": {
+  "n": 4,
+  "net_nominal": 138.0,
+  "net_weighted_100": 1.38,
+  "expo_pct": 23.06,
+  "weighted_contrib": 0.3182
+ },
+ "美股标普医药": {
+  "n": 3,
+  "net_nominal": 66.0,
+  "net_weighted_100": 0.66,
+  "expo_pct": 15.47,
+  "weighted_contrib": 0.1021
+ },
+ "恒生科技": {
+  "n": 4,
+  "net_nominal": 244.0,
+  "net_weighted_100": 2.44,
+  "expo_pct": 8.25,
+  "weighted_contrib": 0.2013
+ },
+ "其他/宽基": {
+  "n": 4,
+  "net_nominal": 6.0,
+  "net_weighted_100": 0.06,
+  "expo_pct": 25.39,
+  "weighted_contrib": 0.0152
+ },
+ "宏观": {
+  "n": 7,
+  "net_nominal": -244.0,
+  "net_weighted_100": -2.44,
+  "expo_pct": 0.0,
+  "weighted_contrib": -0.0
+ },
+ "_total_nominal": 316.0,
+ "_total_weighted": 0.8496
+}
