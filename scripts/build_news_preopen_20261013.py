@@ -599,6 +599,18 @@ for x in N:
     x['window'] = WIN
     x['date'] = TODAY
 
+# ---------- [§3.144a 硬守卫] QDII notional 必须取 tracks[].mv，禁止用 detail[].mv ----------
+_PC = json.load(open(os.path.join(BASE, 'data/processed/history/portfolio_close_20261012.json')))
+QDII_MV_TRACK = _PC['tracks']['美股标普医药']['mv']
+QDII_MV_DETAIL = round(sum(float(r['mv']) for r in _PC['detail'] if r['track'] == '美股标普医药'), 2)
+assert abs(QDII_MV_TRACK - QDII_MV_DETAIL) > 1.5, \
+    '[§3.144a] 守卫失效：tracks[].mv 与 detail[].mv 恰好相等，守卫无法区分两者，须人工确认'
+QDII_MV_DECLARED = 58992.94
+assert abs(QDII_MV_DECLARED - QDII_MV_TRACK) < 1.5, (
+    f'[§3.144a 硬守卫] 正文声明的 QDII notional {QDII_MV_DECLARED:,.2f} 元 != '
+    f'tracks["美股标普医药"].mv {QDII_MV_TRACK:,.2f} 元（detail[].mv = {QDII_MV_DETAIL:,.2f} 元，为陈旧继承值）-> 终止')
+print(f'[§3.144a] 守卫通过：QDII notional = {QDII_MV_TRACK:,.2f} 元（tracks[].mv）；detail[].mv = {QDII_MV_DETAIL:,.2f} 元（已排除）')
+
 json.dump(N, open(NEWS, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 from collections import Counter
 c = Counter(x['track'] for x in N)

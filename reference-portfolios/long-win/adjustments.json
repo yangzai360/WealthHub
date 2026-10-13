@@ -1,8 +1,48 @@
 {
- "count": 262,
+ "count": 263,
  "source": "qieman.com pmdj/v2/long-win/plan/adjustments",
  "direction_note": "direction 字段来自 comment(与 GraphQL redeemOrders/buyOrders 一致): 卖出=卖出份额, 买入=买入份额",
  "adjustments": [
+  {
+   "adjustment_id": null,
+   "txn_date": "2026-10-12",
+   "create_time": null,
+   "invest_type": "E",
+   "url": "",
+   "comment": "买入1份兴业收益增强债（现金类 38→37 份、境内债券类 15→16 份）",
+   "orders": [
+    {
+     "fund_code": "001257",
+     "fund_name": "兴业收益增强债券A",
+     "variety": "兴业收益增强债",
+     "large_class": "境内债券",
+     "direction": "买入",
+     "trade_unit": 1,
+     "post_plan_unit": 2,
+     "nav": "1.61",
+     "nav_date": 1791388800000
+    }
+   ],
+   "detection": {
+    "detected_at": "2026-10-12T20:00 (close档)",
+    "recorded_at": "2026-10-13 13:45 (intraday档)",
+    "method": "composition 逐品种/逐类别 planUnit 差分 + adjustedCount/investedUnit 三重交叉验证",
+    "evidence": {
+     "adjustedCount": "266 → 267",
+     "investedUnit": "112 → 113",
+     "class_shift": "现金 38 → 37；境内债券 15 → 16（计划总量恒 150 份）"
+    },
+    "unavailable_fields": [
+     "adjustment_id",
+     "create_time",
+     "url",
+     "comment(原文)"
+    ],
+    "unavailable_reason": "qieman pmdj adjustments 端点连续第 108 个交易日空 body（HTTP 200 / size 0），playwright 亦未捕获 adjustments 响应 → 无法取得调仓原文",
+    "prior_same_fund": "10/8 收盘档（adj 265→266 / inv 111→112）→ 属「连续第 2 次同券加仓」",
+    "pending_user_verification": "建议用户在且慢 App 核对本次加仓"
+   }
+  },
   {
    "adjustment_id": null,
    "txn_date": "2026-10-08",
@@ -7274,6 +7314,6 @@
    ]
   }
  ],
- "last_updated": "2026-10-09",
- "last_updated_note": "由 2026-10-09 盘中档据 composition 差分推定补录（源 adjustments 端点不可用）"
+ "last_updated": "2026-10-13",
+ "last_updated_note": "由 2026-10-13 盘中档据 composition 差分推定补录（源 adjustments 端点不可用）"
 }
