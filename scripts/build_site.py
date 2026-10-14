@@ -26,16 +26,68 @@ CHARTS_JSON = os.path.join(DOCS, ".vuepress", "public", "data", "charts.json")
 
 # ---------- 脱敏规则 ----------
 # 1. 账户/持有人 → 匿名
+#    §隐私坑(2026-10-14): 报告正文同时使用「大小写两种写法」——
+#    `sean-alipay-fund`(29 次) 与 `sean`(1 次/降序)、`Sean`(2 次)；原表只覆盖首字母大写形态，
+#    导致小节正文里的 `sean/jasy 双账户` 原样上线。故**同一标识必须同时登记大小写两形态**，
+#    且长形态(`sean-alipay-fund`)必须排在短形态(`sean`)之前，避免 `startswith` 式替换截断。
 TOKEN_MAP = [
     ("sean-alipay-fund", "基金账户A"),
     ("jasy-alipay-fund", "基金账户B"),
     ("stock-brokerage", "股票账户"),
+    ("sean", "基金账户A"),
+    ("jasy", "基金账户B"),
     ("Sean", "持有人"),
     ("Jasy", "持有人"),
     ("广联达", "个股A(软件)"),
     ("通威股份", "个股B(光伏)"),
     ("通威", "个股B(光伏)"),
 ]
+# 1b. 持仓基金/ETF 名称 → 匿名
+#    §隐私坑(2026-10-14): 原脱敏只掩「个股名」，但组合约 97% 为场外基金/ETF——
+#    **发行人 + 产品名 + 份额类别**三要素齐备即为可唯一识别的持仓（如「大摩健康产业混合A」= 002708），
+#    不掩则等于公开全部持仓。判据: 仅掩「带发行人前缀的完整产品名」，
+#    **纯赛道词/产品类别词（医疗ETF / 证券ETF / 场外联接 / 被动联接 …）保留**，以维持报告可读性。
+#    匹配规则: 前缀 + 可选份额/类型后缀；**长前缀优先**（`广发中证全指金融地产` 先于 `广发金融地产`）。
+FUND_SUFFIX = (r"(?:ETF联接[AC]?|ETF|联接[AC]?|混合[A-E]?|指数[AC]?|增强[AC]?|LOF|债券[AC]?|"
+               r"灵活配置[A-C]?|国际\(QDII\)|[A-E])?")
+#    ⚠️ 后缀分支**必须长形态在前、单字母份额 `[A-E]` 放最后**——
+#    否则 `ETF联接A` 会被 `[A-E]` 吃掉 `E`，产出「基金X(…)TF联接A」这类**半掩码**（2026-10-14 实测）。)
+FUND_ALIASES = [
+    ("华夏恒生", "基金A(恒生宽基)"),
+    ("华夏沪深300", "基金B(沪深300)"),
+    ("恒生ETF华夏", "基金A(恒生宽基)"),
+    ("天弘恒生科技", "基金C(恒生科技)"),
+    ("天弘恒科", "基金C(恒生科技)"),
+    ("天弘医药100", "基金D(医药100)"),
+    ("天弘证券保险", "基金E(证券保险)"),
+    ("易方达沪深300", "基金F(沪深300)"),
+    ("广发中证全指金融地产", "基金G(金融地产)"),
+    ("广发金融地产", "基金G(金融地产)"),
+    ("广发全球医疗保健", "基金H(全球医疗)"),
+    ("广发医药卫生", "基金I(医药卫生)"),
+    ("广发养老产业", "基金J(养老产业)"),
+    ("广发中证A500", "基金K(A500)"),
+    ("广发中证传媒", "基金L(传媒)"),
+    ("广发传媒", "基金L(传媒)"),
+    ("汇添富中证主要消费", "基金M(主要消费)"),
+    ("汇添富主要消费", "基金M(主要消费)"),
+    ("汇添富文体娱乐", "基金N(文体娱乐)"),
+    ("华宝中证医疗", "基金O(医疗)"),
+    ("华宝医疗", "基金O(医疗)"),
+    ("大摩健康产业", "基金P(健康产业主动)"),
+    ("摩根士丹利健康产业", "基金P(健康产业主动)"),
+    ("融通医疗保健", "基金Q(医疗保健)"),
+    ("融通健康产业", "基金R(健康产业)"),
+    ("泓德裕祥", "基金S(债券)"),
+    ("兴业收益增强", "基金T(增强收益)"),
+    ("富国消费主题", "基金U(消费主题)"),
+    ("富国清洁能源", "基金V(清洁能源)"),
+    ("富国红利", "基金W(红利)"),
+    ("交银中概互联", "基金X(中概互联)"),
+]
+FUND_MASK_RULES = [(re.compile(rf"{re.escape(p)}{FUND_SUFFIX}"), label)
+                   for p, label in sorted(FUND_ALIASES, key=lambda x: -len(x[0]))]
+
 # 2. 受保护章节(保留公开数字: 指数点位/行情/新闻/情绪/策略占比)
 PROTECTED_SECTIONS = ("行情", "新闻", "情绪", "指数", "历史影响", "策略建议", "核心结论")
 # 3. 金额模式: 只打码绝对金额, 保留百分比(%结尾)与裸点位
@@ -75,6 +127,9 @@ def desensitize_md(content: str) -> str:
 
     for src, dst in TOKEN_MAP:
         content = content.replace(src, dst)
+    # 1b. 持仓基金/ETF 名称 → 匿名（长前缀优先，规则表已按前缀长度降序排列）
+    for _pat, _label in FUND_MASK_RULES:
+        content = _pat.sub(_label, content)
     # 按行处理: 受保护章节保留数字, 其他章节金额脱敏
     out_lines = []
     in_protected = False
@@ -308,7 +363,11 @@ def build_charts():
 
 # ---------- 网格深度数据 ----------
 ADJUSTMENTS_JSON = os.path.join(REPO, "reference-portfolios", "long-win", "adjustments.json")
-GRID_DEPTH_JSON = os.path.join(DOCS, ".vuepress", "public", "data", "grid-depth.json")
+def grid_depth_path():
+    """⚠️ 必须**调用时**从模块级 `DOCS` 派生，不得在 import 期固化成常量——
+    否则「构建到临时目录」（`bs.DOCS='/tmp/…'`）时该文件仍写回仓库 `docs/.vuepress/public/data/`、
+    污染工作区（2026-10-14 实测踩到）。"""
+    return os.path.join(DOCS, ".vuepress", "public", "data", "grid-depth.json")
 TOTAL_UNITS = 150  # 长赢计划总份数
 
 def build_grid_depth():
@@ -423,8 +482,9 @@ def build_grid_depth():
         "holding_count": sum(1 for p in positions if p["pos"] > 0),
         "positions": positions,
     }
-    os.makedirs(os.path.dirname(GRID_DEPTH_JSON), exist_ok=True)
-    with open(GRID_DEPTH_JSON, "w", encoding="utf-8") as f:
+    _grid_path = grid_depth_path()
+    os.makedirs(os.path.dirname(_grid_path), exist_ok=True)
+    with open(_grid_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
     return payload
 
@@ -469,7 +529,7 @@ def main():
     print(f"✅ docs 构建完成: {len(entries)} 份日报, {len(kb_entries)} 篇知识库, {len(charts.get('indices', []))} 条指数, {len(charts.get('track_dist', []))} 个赛道")
     print(f"   图表数据 → {os.path.relpath(CHARTS_JSON, REPO)}")
     if grid:
-        print(f"   网格深度 → {os.path.relpath(GRID_DEPTH_JSON, REPO)} ({grid['invested_units']}/{grid['total_units']} 份投入, {grid['holding_count']} 个品种)")
+        print(f"   网格深度 → {os.path.relpath(grid_depth_path(), REPO)} ({grid['invested_units']}/{grid['total_units']} 份投入, {grid['holding_count']} 个品种)")
 
 if __name__ == "__main__":
     main()
