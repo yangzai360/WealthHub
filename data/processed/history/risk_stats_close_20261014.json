@@ -1,0 +1,78 @@
+{
+ "date": "2026-10-14",
+ "chain_cum_pct": -5.45,
+ "chain_days": 44,
+ "chain_0pct_row_inserted": false,
+ "chain_gap_note": "10/1-10/7 长假「混合档」产物均为 portfolio_pending_*（不匹配 portfolio_close_* glob）→ 链式序列无 0% 行插入；10/14 正常交易日直接以 portfolio_close_20261014.json 接续 10/13 收盘**修正件**末行（portfolio_close_20261013_fix.json，§3.108：同日期以 _fix 为准）",
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "w40_cum_pct": 0.86,
+ "w40_days": 3,
+ "w41_cum_pct": -1.01,
+ "w41_days": 2,
+ "w41_daily": [
+  "10-08 -1.6860%",
+  "10-09 +0.6875%"
+ ],
+ "w42_cum_pct": -1.24,
+ "w42_days": 3,
+ "w42_daily": [
+  "10-12 -0.0344%",
+  "10-13 -0.6691%",
+  "10-14 -0.5357%"
+ ],
+ "sharpe": -2.74,
+ "sharpe_n": 44,
+ "daily_mean": -0.1245,
+ "daily_sd": 0.76,
+ "max_dd_pct": -6.54,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-10-14",
+ "last5_cum_pct": -2.23,
+ "last10_cum_pct": -2.92,
+ "rf_pct": 1.68,
+ "rf_note": "中国 10Y 国债硬编码 1.68%（本地 10Y 序列自 2026-08-11 后未维护，缺口待补）",
+ "tracks_end": {
+  "其他/宽基": {
+   "mv": 93725.83,
+   "pct_of_total": 25.17
+  },
+  "大消费": {
+   "mv": 75116.71,
+   "pct_of_total": 20.17
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.84
+  },
+  "A股医药": {
+   "mv": 84240.73,
+   "pct_of_total": 22.62
+  },
+  "美股标普医药": {
+   "mv": 58690.46,
+   "pct_of_total": 15.76
+  },
+  "恒生科技": {
+   "mv": 31397.16,
+   "pct_of_total": 8.43
+  }
+ },
+ "med_pct_end": 38.38,
+ "total_mv_end": 372383.85,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json",
+  "portfolio_close_20260928_fix.json",
+  "portfolio_close_20260929_fix.json",
+  "portfolio_close_20260930_fix.json",
+  "portfolio_close_20261009_fix.json",
+  "portfolio_close_20261013_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）",
+ "tracks_end_note": "赛道权重一律由 mv / total_mv 现算（§3.146a ①）；med_pct 亦由 mv 求和现算（§3.146a ②）",
+ "note": "正常交易日（A股 长假后第 5 个正常交易日 + 港股正常交易日）；末行 = 2026-10-14；本档**有 1 只未定价券**（002708 大摩健康产业，2 行：最新净值日 10/13 == 基准净值日 → 计 0，属「基准已含」口径 §3.105，20:00 复抓时 10/14 净值尚未出库）；场外 19 只出 10/14 真实净值；QDII 000369/016280 与 LOF 164906 的 10/13 净值本档释放（US 10/13 段核销）；⚠️ 10/13 末行取 _fix 修正件（portfolio_close_20261013_fix.json，−2,521.74 元 / −0.6691%），非原始 portfolio_close_20261013.json（§3.108：同日期以 _fix 为准）"
+}

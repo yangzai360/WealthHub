@@ -1,0 +1,21 @@
+{
+ "date": "2026-10-14",
+ "session": "close-2000",
+ "session_type": "normal_trading_day_close",
+ "plan": {
+  "status": 200,
+  "size": 0
+ },
+ "nav": {
+  "status": 200,
+  "size": 0
+ },
+ "adjustments": {
+  "status": 200,
+  "size": 0
+ },
+ "ok": false,
+ "consecutive_empty_trading_days": 109,
+ "consecutive_note": "A股 10/14 与 10/14 盘中档 = **同一交易日** → 计数不推进，维持 **109**（§3.130d：分母为 A股 交易日）；该计数为人工维护、历史存在 ±1 记录差异，已登记为口径待清理项（§3.121c / §3.133c）",
+ "note": "三端点 HTTP 200 / size 0B 全空（连续第 109 个交易日空 body）→ playwright 兜底第 43 次成功"
+}
