@@ -1,0 +1,78 @@
+{
+ "date": "2026-10-14",
+ "session": "preopen",
+ "session_type": "normal_trading_day_preopen",
+ "session_type_note": "档型③「正常交易日盘前」= A股 10/14 正常交易日 + 港股 10/14 正常交易日 + 美股 10/14 正常交易日（开盘前）；08:00 A股/港股均无当日价格 → **不产 `portfolio_close_*` 与 `portfolio_pending_*`**",
+ "chain_cum_pct": -4.94,
+ "chain_days": 43,
+ "chain_last_row_date": "2026-10-13",
+ "chain_0pct_row_inserted": false,
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "w40_cum_pct": 0.86,
+ "w40_days": 3,
+ "w41_cum_pct": -1.01,
+ "w41_days": 2,
+ "w41_note": "W41（10/5-10/11）已收官：2 个已实现交易日（10/8 −1.6860% / 10/9 +0.6875%，§3.127e 取 `_fix` 修正值）",
+ "w42_cum_pct": -0.7,
+ "w42_days": 2,
+ "w42_note": "本档 W42（10/12-10/18）已有 2 个已实现交易日（10/12 −0.0344% / −129.64 元、10/13 −0.6691% / −2,521.74 元，取 `_fix` 修正值）",
+ "sharpe": -2.52,
+ "sharpe_n": 43,
+ "daily_mean": -0.1149,
+ "daily_sd": 0.7663,
+ "max_dd_pct": -6.31,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-09-11",
+ "last5_cum_pct": -0.56,
+ "last10_cum_pct": -2.26,
+ "rf_pct": 1.68,
+ "rf_note": "中国 10Y 国债硬编码 1.68%（本地 10Y 序列自 2026-08-11 后未维护，缺口待补）",
+ "tracks_end": {
+  "其他/宽基": {
+   "mv": 94486.04,
+   "pct_of_total": 25.24
+  },
+  "大消费": {
+   "mv": 75201.8,
+   "pct_of_total": 20.09
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.8
+  },
+  "A股医药": {
+   "mv": 85002.61,
+   "pct_of_total": 22.7
+  },
+  "美股标普医药": {
+   "mv": 59341.95,
+   "pct_of_total": 15.85
+  },
+  "恒生科技": {
+   "mv": 31144.11,
+   "pct_of_total": 8.32
+  }
+ },
+ "med_pct_end": 38.55,
+ "stale_weight_fields_in_fix": {
+  "其他/宽基": 25.21,
+  "大消费": 20.07,
+  "A股医药": 22.78
+ },
+ "weight_rule": "赛道权重一律由 mv / total_mv 现算；`_fix` 件内 `pct_of_total` 为修正前分母派生值、不得引用（§3.144c：同一指标不作两个字面量）",
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json",
+  "portfolio_close_20260928_fix.json",
+  "portfolio_close_20260929_fix.json",
+  "portfolio_close_20260930_fix.json",
+  "portfolio_close_20261009_fix.json",
+  "portfolio_close_20261013_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）",
+ "note": "档型③「正常交易日盘前」= A股 10/14 正常交易日 + 港股 10/14 正常交易日 + 美股 10/14 正常交易日（开盘前）；08:00 A股/港股均无当日价格 → **不产 `portfolio_close_*` 与 `portfolio_pending_*`**；本档不产 `portfolio_close_*` → 链式序列末行 = 2026-10-13（10/13 收盘行（`_fix` 修正值）已计入，−0.6691% / −2,521.74 元）；10/2、10/5、10/6、10/7「混合档」产物为 portfolio_pending_*.json 不参与链式序列；10/1、10/3-10/4、10/10-10/11 均无 close 产物 → W41（10/5-10/11）收盘 2 日、W42（10/12-10/18）2 日"
+}
