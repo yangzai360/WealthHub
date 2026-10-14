@@ -1,8 +1,50 @@
 {
- "count": 263,
+ "count": 264,
  "source": "qieman.com pmdj/v2/long-win/plan/adjustments",
  "direction_note": "direction 字段来自 comment(与 GraphQL redeemOrders/buyOrders 一致): 卖出=卖出份额, 买入=买入份额",
  "adjustments": [
+  {
+   "adjustment_id": null,
+   "txn_date": "2026-10-13",
+   "create_time": null,
+   "invest_type": "E",
+   "url": "",
+   "comment": "买入1份富国全球债券(QDII)人民币A（现金类 37→36 份、海外债券类 6→7 份）",
+   "orders": [
+    {
+     "fund_code": "100050",
+     "fund_name": "富国全球债券(QDII)人民币A",
+     "variety": "富国全球债券",
+     "large_class": "海外债券",
+     "direction": "买入",
+     "trade_unit": 1,
+     "post_plan_unit": 4,
+     "nav": null,
+     "nav_date": null
+    }
+   ],
+   "detection": {
+    "detected_at": "2026-10-13T20:00 (close档)",
+    "recorded_at": "2026-10-14 13:45 (intraday档)",
+    "method": "composition 逐品种/逐类别 planUnit 差分 + adjustedCount/investedUnit 三重交叉验证",
+    "evidence": {
+     "adjustedCount": "267 → 268",
+     "investedUnit": "113 → 114",
+     "class_shift": "现金 37 → 36；海外债券 6 → 7（计划总量恒 150 份）"
+    },
+    "unavailable_fields": [
+     "adjustment_id",
+     "create_time",
+     "url",
+     "comment(原文)",
+     "nav",
+     "nav_date"
+    ],
+    "unavailable_reason": "qieman pmdj adjustments 端点连续第 109 个交易日空 body（HTTP 200 / size 0），playwright 亦未捕获 adjustments 响应 → 无法取得调仓原文",
+    "prior_same_fund": "该券上一次变动 = 计划纳入期（本地 adjustments.json 无同券近期记录）",
+    "pending_user_verification": "建议用户在且慢 App 核对本次加仓"
+   }
+  },
   {
    "adjustment_id": null,
    "txn_date": "2026-10-12",
@@ -7314,6 +7356,6 @@
    ]
   }
  ],
- "last_updated": "2026-10-13",
- "last_updated_note": "由 2026-10-13 盘中档据 composition 差分推定补录（源 adjustments 端点不可用）"
+ "last_updated": "2026-10-14",
+ "last_updated_note": "由 2026-10-14 盘中档据 composition 差分推定补录（源 adjustments 端点不可用）"
 }
