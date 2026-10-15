@@ -1,0 +1,47 @@
+{
+ "大消费": {
+  "n": 4,
+  "net_nominal": 63.0,
+  "net_weighted_100": 0.63,
+  "expo_pct": 20.2,
+  "weighted_contrib": 0.1273
+ },
+ "A股医药": {
+  "n": 4,
+  "net_nominal": 54.0,
+  "net_weighted_100": 0.54,
+  "expo_pct": 22.5,
+  "weighted_contrib": 0.1215
+ },
+ "美股标普医药": {
+  "n": 4,
+  "net_nominal": 186.0,
+  "net_weighted_100": 1.86,
+  "expo_pct": 15.79,
+  "weighted_contrib": 0.2937
+ },
+ "恒生科技": {
+  "n": 3,
+  "net_nominal": -50.0,
+  "net_weighted_100": -0.5,
+  "expo_pct": 8.44,
+  "weighted_contrib": -0.0422
+ },
+ "其他/宽基": {
+  "n": 4,
+  "net_nominal": 56.0,
+  "net_weighted_100": 0.56,
+  "expo_pct": 25.21,
+  "weighted_contrib": 0.1412
+ },
+ "宏观": {
+  "n": 7,
+  "net_nominal": -78.0,
+  "net_weighted_100": -0.78,
+  "expo_pct": 0.0,
+  "weighted_contrib": -0.0
+ },
+ "_total_nominal": 231.0,
+ "_total_weighted": 0.6414,
+ "_expo_source": "portfolio_close_20261014_fix.json（§3.140a 补正后 total_mv）"
+}

@@ -84,6 +84,8 @@ FUND_ALIASES = [
     ("富国清洁能源", "基金V(清洁能源)"),
     ("富国红利", "基金W(红利)"),
     ("交银中概互联", "基金X(中概互联)"),
+    ("交银中证海外中国互联网指数", "基金X(中概互联)"),
+    ("交银中证海外", "基金X(中概互联)"),
 ]
 FUND_MASK_RULES = [(re.compile(rf"{re.escape(p)}{FUND_SUFFIX}"), label)
                    for p, label in sorted(FUND_ALIASES, key=lambda x: -len(x[0]))]
