@@ -1,0 +1,82 @@
+{
+ "date": "2026-10-16",
+ "chain_cum_pct": -6.12,
+ "chain_days": 46,
+ "chain_0pct_row_inserted": false,
+ "chain_gap_note": "10/1-10/7 长假「混合档」产物均为 portfolio_pending_*（不匹配 portfolio_close_* glob）→ 链式序列无 0% 行插入；10/16 正常交易日直接以 portfolio_close_20261016.json 接续 10/15 收盘**修正件**末行（portfolio_close_20261015_fix.json，§3.108：同日期以 _fix 为准）",
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "w40_cum_pct": 0.86,
+ "w40_days": 3,
+ "w41_cum_pct": -1.01,
+ "w41_days": 2,
+ "w41_daily": [
+  "10-08 -1.6860%",
+  "10-09 +0.6875%"
+ ],
+ "w42_cum_pct": -1.93,
+ "w42_days": 5,
+ "w42_daily": [
+  "10-12 -0.0344%",
+  "10-13 -0.6691%",
+  "10-14 -0.6941%",
+  "10-15 -0.4117%",
+  "10-16 -0.1377%"
+ ],
+ "sharpe": -3.0,
+ "sharpe_n": 46,
+ "daily_mean": -0.1345,
+ "daily_sd": 0.7464,
+ "max_dd_pct": -7.2,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-10-16",
+ "last5_cum_pct": -1.93,
+ "last10_cum_pct": -2.09,
+ "rf_pct": 1.68,
+ "rf_note": "中国 10Y 国债硬编码 1.68%（本地 10Y 序列自 2026-08-11 后未维护，缺口待补）",
+ "tracks_end": {
+  "其他/宽基": {
+   "mv": 92422.64,
+   "pct_of_total": 25.0
+  },
+  "大消费": {
+   "mv": 74961.56,
+   "pct_of_total": 20.27
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.9
+  },
+  "A股医药": {
+   "mv": 81217.32,
+   "pct_of_total": 21.97
+  },
+  "美股标普医药": {
+   "mv": 61040.92,
+   "pct_of_total": 16.51
+  },
+  "恒生科技": {
+   "mv": 30895.34,
+   "pct_of_total": 8.36
+  }
+ },
+ "med_pct_end": 38.47,
+ "total_mv_end": 369750.74,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json",
+  "portfolio_close_20260928_fix.json",
+  "portfolio_close_20260929_fix.json",
+  "portfolio_close_20260930_fix.json",
+  "portfolio_close_20261009_fix.json",
+  "portfolio_close_20261013_fix.json",
+  "portfolio_close_20261014_fix.json",
+  "portfolio_close_20261015_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）",
+ "tracks_end_note": "赛道权重一律由 mv / total_mv 现算（§3.146a ①）；med_pct 亦由 mv 求和现算（§3.146a ②）",
+ "note": "正常交易日（A股 长假后第 7 个正常交易日 + 港股正常交易日）；末行 = 2026-10-16；本档**有 3 只未定价券**（000248 双账户 2 行 / 110020 / 002742，共 4 行；最新净值日 10/15 == 基准净值日 → 计 0，属「基准已含」口径 §3.105，20:00 首抓未出库）；场外 20 只中 17 只出 10/16 真实净值；QDII 000369/016280 与 LOF 164906 的 10/15 净值本档释放（US 10/15 段核销）；⚠️ 10/15 末行取 _fix 修正件（portfolio_close_20261015_fix.json，−1,530.57 元 / −0.41%），非原始 portfolio_close_20261015.json（§3.108：同日期以 _fix 为准）"
+}
