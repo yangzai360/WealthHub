@@ -1,0 +1,41 @@
+{
+ "date": "2026-10-16",
+ "session": "intraday",
+ "window": "盘中(10/16 07:30-13:30)",
+ "session_type": "normal_trading_day_intraday",
+ "session_type_note": "正常交易日盘中档（A股 长假后第 7 个正常交易日 09:30 开盘 + 港股 10/16 正常交易日；双市场均开市、均可定价；场外基金净值 15:00 后发布）",
+ "item_count": 19,
+ "direction_dist": {
+  "中性": 7,
+  "利空": 1,
+  "利多": 11
+ },
+ "mean_strength": 57.58,
+ "annotation_mode": "rule_table_fallback",
+ "net_by_track": {
+  "A股医药": 1.84,
+  "其他/宽基": 0.6,
+  "大消费": 0.62,
+  "宏观": 0.52,
+  "恒生科技": 1.76,
+  "美股标普医药": 0.58
+ },
+ "count_by_track": {
+  "宏观": 5,
+  "大消费": 3,
+  "A股医药": 3,
+  "恒生科技": 3,
+  "其他/宽基": 4,
+  "美股标普医药": 1
+ },
+ "expo_weights_pct": {
+  "其他/宽基": 24.97,
+  "大消费": 20.22,
+  "A股医药": 22.42,
+  "美股标普医药": 16.17,
+  "恒生科技": 8.33
+ },
+ "exposure_weighted_net": 0.9281,
+ "baseline": "portfolio_close_20261015_fix.json",
+ "note": "暴露加权口径 = 赛道净分 × 10/15 收盘修正件权重之和（仅五大赛道，现金与宏观权重 0）"
+}
