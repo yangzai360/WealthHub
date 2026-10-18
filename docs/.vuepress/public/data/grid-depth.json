@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-07",
+  "generated_at": "2026-10-18",
   "snapshot_date": "",
   "total_units": 150,
-  "cash_units": 39,
-  "invested_units": 111,
-  "invested_pct": 74.0,
-  "holding_count": 38,
+  "cash_units": 36,
+  "invested_units": 114,
+  "invested_pct": 76.0,
+  "holding_count": 39,
   "positions": [
     {
       "fund_code": "100032",
@@ -128,6 +128,18 @@
       "last_dir": "买入"
     },
     {
+      "fund_code": "100050",
+      "variety": "富国全球债券",
+      "fund_name": "富国全球债券(QDII)人民币A",
+      "large_class": "海外债券",
+      "pos": 4,
+      "depth_pct": 2.7,
+      "buy": 3,
+      "sell": 0,
+      "last_date": "2026-10-13",
+      "last_dir": "买入"
+    },
+    {
       "fund_code": "007169",
       "variety": "易方达1-3年国开债",
       "fund_name": "易方达中债1-3年国开债A",
@@ -149,18 +161,6 @@
       "buy": 3,
       "sell": 0,
       "last_date": "2023-08-22",
-      "last_dir": "买入"
-    },
-    {
-      "fund_code": "100050",
-      "variety": "富国全球债A",
-      "fund_name": "富国全球债券(QDII)人民币A",
-      "large_class": "海外债券",
-      "pos": 3,
-      "depth_pct": 2.0,
-      "buy": 2,
-      "sell": 0,
-      "last_date": "2026-03-03",
       "last_dir": "买入"
     },
     {
@@ -269,6 +269,18 @@
       "buy": 2,
       "sell": 0,
       "last_date": "2025-07-24",
+      "last_dir": "买入"
+    },
+    {
+      "fund_code": "001257",
+      "variety": "兴业收益增强债",
+      "fund_name": "兴业收益增强债券A",
+      "large_class": "境内债券",
+      "pos": 2,
+      "depth_pct": 1.3,
+      "buy": 2,
+      "sell": 0,
+      "last_date": "2026-10-12",
       "last_dir": "买入"
     },
     {

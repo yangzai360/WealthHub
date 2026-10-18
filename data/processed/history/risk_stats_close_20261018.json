@@ -1,0 +1,60 @@
+{
+ "date": "2026-10-18",
+ "chain_cum_pct": -6.02,
+ "chain_days": 46,
+ "chain_0pct_row_inserted": false,
+ "chain_gap_note": "10/1-10/7 长假「混合档」产物为 portfolio_pending_*（不匹配 portfolio_close_* glob）→ 无 0% 行；**10/18 已生成 portfolio_close_20261016_fix.json（4 行净值到位）→ 末行估值由 369,750.74 元 修订为 370,152.61 元，本档按 §3.107 / §3.127e 全量重算链路/夏普/回撤（非沿用 10/16 旧值）**",
+ "w41_cum_pct": -1.01,
+ "w41_days": 2,
+ "w42_cum_pct": -1.83,
+ "w42_days": 5,
+ "w42_daily": [
+  "10-12 -0.0344%",
+  "10-13 -0.6691%",
+  "10-14 -0.6941%",
+  "10-15 -0.4117%",
+  "10-16 -0.0291%"
+ ],
+ "sharpe": -2.95,
+ "sharpe_n": 46,
+ "daily_mean": -0.1321,
+ "daily_sd": 0.7465,
+ "max_dd_pct": -7.1,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-10-16",
+ "last5_cum_pct": -1.83,
+ "last10_cum_pct": -1.98,
+ "rf_pct": 1.68,
+ "rf_note": "中国 10Y 国债硬编码 1.68%（本地 10Y 序列自 2026-08-11 后未维护，缺口待补）",
+ "tracks_end": {
+  "其他/宽基": {
+   "mv": 92428.94,
+   "pct_of_total": 24.97
+  },
+  "大消费": {
+   "mv": 75357.13,
+   "pct_of_total": 20.36
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.89
+  },
+  "A股医药": {
+   "mv": 81217.32,
+   "pct_of_total": 21.94
+  },
+  "美股标普医药": {
+   "mv": 61040.92,
+   "pct_of_total": 16.49
+  },
+  "恒生科技": {
+   "mv": 30895.34,
+   "pct_of_total": 8.35
+  }
+ },
+ "med_pct_end": 38.43,
+ "total_mv_end": 370152.61,
+ "fix_applied": [],
+ "recompute_note": "本档为**纯非交易日**，但 10/16 末行已 _fix 修订 → 风险指标全量重算（§3.127e 口径一致原则）。",
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）"
+}

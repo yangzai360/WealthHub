@@ -72,7 +72,7 @@ tags: ["知识库", "策略分析"]
 |--------|------|----------|
 | 2026-07-30 | **卖出**1份汇添富消费; **卖出**1份全指金融 | [link](https://qieman.com/content/items/24763) |
 | 2026-07-29 | 买入1份广发A500; **卖出**1份富国中证红利 | [link](https://qieman.com/content/items/24703) |
-| 2026-07-15 | **卖出**1份华宝医疗C | [link](https://qieman.com/content/items/24463) |
+| 2026-07-15 | **卖出**1份基金O(医疗) | [link](https://qieman.com/content/items/24463) |
 | 2026-06-30 | 买入1份南方标普红利低波50 | [link](https://qieman.com/content/items/24157) |
 | 2026-06-25 | **卖出**1份建信500; 买入1份易方达红利低波; **卖出**1份证券公司 | [link](https://qieman.com/content/items/24109) |
 | 2026-06-24 | 买入1份易方达中证红利 | [link](https://qieman.com/content/items/24091) |

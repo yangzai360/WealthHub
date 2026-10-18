@@ -383,11 +383,12 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.2709,
+   "actual_date": "2026-10-16",
    "max_vol": 9.0,
    "confidence": 94,
-   "ret_1d_ref": "盘前档（2026-10-16 08:00，A股/港股均未开盘）；逐市场参考交易日 = 2026-10-16，待该日收盘回填"
+   "ret_1d_ref": "盘前档（2026-10-16 08:00，A股/港股均未开盘）；逐市场参考交易日 = 2026-10-16，待该日收盘回填",
+   "ref_trade_day": "2026-10-16"
   }
  },
  {
@@ -410,11 +411,12 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.2709,
+   "actual_date": "2026-10-16",
    "max_vol": 4.8,
    "confidence": 92,
-   "ret_1d_ref": "盘前档（2026-10-16 08:00，A股/港股均未开盘）；逐市场参考交易日 = 2026-10-16，待该日收盘回填"
+   "ret_1d_ref": "盘前档（2026-10-16 08:00，A股/港股均未开盘）；逐市场参考交易日 = 2026-10-16，待该日收盘回填",
+   "ref_trade_day": "2026-10-16"
   }
  },
  {
@@ -437,11 +439,12 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.2709,
+   "actual_date": "2026-10-16",
    "max_vol": 1.5,
    "confidence": 80,
-   "ret_1d_ref": "盘前档（2026-10-16 08:00，A股/港股均未开盘）；逐市场参考交易日 = 2026-10-16，待该日收盘回填"
+   "ret_1d_ref": "盘前档（2026-10-16 08:00，A股/港股均未开盘）；逐市场参考交易日 = 2026-10-16，待该日收盘回填",
+   "ref_trade_day": "2026-10-16"
   }
  },
  {
@@ -464,11 +467,12 @@
    "ret_3d": null,
    "ret_5d": null,
    "ret_10d": null,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.2709,
+   "actual_date": "2026-10-16",
    "max_vol": 1.5,
    "confidence": 92,
-   "ret_1d_ref": "盘前档（2026-10-16 08:00，A股/港股均未开盘）；逐市场参考交易日 = 2026-10-16，待该日收盘回填"
+   "ret_1d_ref": "盘前档（2026-10-16 08:00，A股/港股均未开盘）；逐市场参考交易日 = 2026-10-16，待该日收盘回填",
+   "ref_trade_day": "2026-10-16"
   }
  },
  {
@@ -1241,8 +1245,9 @@
    "ret_10d": null,
    "max_vol": 9.0,
    "confidence": 94,
-   "actual_ret_1d": null,
-   "actual_date": null
+   "actual_ret_1d": -0.2709,
+   "actual_date": "2026-10-16",
+   "ref_trade_day": "2026-10-16"
   }
  },
  {
@@ -1456,8 +1461,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 91,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.2709,
+   "actual_date": "2026-10-16",
    "ref_trade_day": "2026-10-16"
   }
  },
@@ -1483,8 +1488,8 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 89,
-   "actual_ret_1d": null,
-   "actual_date": null,
+   "actual_ret_1d": -0.2709,
+   "actual_date": "2026-10-16",
    "ref_trade_day": "2026-10-16"
   }
  },
