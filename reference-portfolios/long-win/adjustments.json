@@ -1,5 +1,5 @@
 {
- "count": 264,
+ "count": 265,
  "source": "qieman.com pmdj/v2/long-win/plan/adjustments",
  "direction_note": "direction 字段来自 comment(与 GraphQL redeemOrders/buyOrders 一致): 卖出=卖出份额, 买入=买入份额",
  "adjustments": [
@@ -7354,8 +7354,59 @@
      "nav_date": 1438531200000
     }
    ]
+  },
+  {
+   "adjustment_id": null,
+   "txn_date": "2026-10-16",
+   "create_time": null,
+   "invest_type": "再平衡",
+   "url": "",
+   "comment": "（原文不可得）源侧 adjustedCount 268→269 / investedUnit 114→115；composition 逐品种 001257 兴业收益增强债券A planUnit 2→3、现金类 unit 36→35、境内债券 16→17 → 判定为「现金 → 境内债券」1 unit 再平衡。该信号于 2026-10-16 盘后档检出，本档（2026-10-19 盘中）补录落库。",
+   "orders": [
+    {
+     "fund_code": "001257",
+     "fund_name": "兴业收益增强债券A",
+     "variety": "境内债券",
+     "large_class": "境内债券",
+     "direction": "买入",
+     "trade_unit": 1,
+     "post_plan_unit": 3,
+     "nav": null,
+     "nav_date": null
+    }
+   ],
+   "detection": {
+    "source": "qieman composition diff（playwright 兜底）",
+    "evidence": {
+     "adjustedCount": "268→269",
+     "investedUnit": "114→115",
+     "planUnit": "001257: 2→3",
+     "classUnit": "现金 36→35 / 境内债券 16→17"
+    },
+    "detected_on": "2026-10-16-close",
+    "backfilled_on": "2026-10-19-intraday"
+   },
+   "unavailable_fields": [
+    "adjustment_id",
+    "create_time",
+    "url",
+    "comment(原文)",
+    "nav",
+    "nav_date"
+   ]
   }
  ],
  "last_updated": "2026-10-14",
- "last_updated_note": "由 2026-10-14 盘中档据 composition 差分推定补录（源 adjustments 端点不可用）"
+ "last_updated_note": "由 2026-10-14 盘中档据 composition 差分推定补录（源 adjustments 端点不可用）",
+ "backfill_log": [
+  {
+   "txn_date": "2026-10-16",
+   "fund_code": "001257",
+   "direction": "买入",
+   "trade_unit": 1,
+   "detected_on": "2026-10-16-close",
+   "backfilled_on": "2026-10-19",
+   "reason": "10/16 收盘档仅写入 composition 快照、未落 adjustments.json（跨档遗留待办）"
+  }
+ ]
 }

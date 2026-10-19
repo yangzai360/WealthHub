@@ -1,0 +1,1269 @@
+{
+ "date": "2026-10-19",
+ "window": "intraday",
+ "total_events": 3030,
+ "today_events": 37,
+ "added": 21,
+ "workingset": 21,
+ "blank": 64,
+ "session_added": 21,
+ "session_backfilled_total": 0,
+ "session_backfilled_this_run": 0,
+ "session_prior_filled": 0,
+ "session_backfilled_note": "本档 0 条 —— 13:45 A股 未收盘、港股全天休市（无当日收盘）、美股 10/19 收盘成型于北京 10/20 04:00 → 三市场均无可用「严格晚于事件日」的收盘读数（§3.127a/§3.130b 的严格取数口径）",
+ "cross_session_continuity_guard": {
+  "checked": "blank items whose reference index already has a real close",
+  "miss_count": 0,
+  "miss": []
+ },
+ "session_phase_note": "单阶段执行（盘中档）：仅追加本档事件，不回填（A股 未收盘 + 港股休市 + 美股未开盘，三市场均无可用收盘读数）",
+ "session_type": "reverse_mixed_closed_hk",
+ "session_type_note": "反向混合档盘中 = A股 **第 8 个正常交易日**（09:30 开盘）+ 港股 10/19 重阳节翌日**休市**；A股 可定价、港股无当日价格（防线判定顺延 10/20）；场外基金净值 15:00 后发布",
+ "blank_by_date_final": {
+  "2026-10-16": 11,
+  "2026-10-18": 16,
+  "2026-10-19": 37
+ },
+ "rerun_note": "可重入脚本：二次执行 added 归零；工作集取自库内本窗口条目（§3.113f）",
+ "blank_by_track": {
+  "其他/宽基": 11,
+  "大消费": 11,
+  "A股医药": 14,
+  "恒生科技": 9,
+  "宏观": 13,
+  "美股标普医药": 6
+ },
+ "ref_market_map": {
+  "A股医药": "A股",
+  "大消费": "A股",
+  "其他/宽基": "A股",
+  "宏观": "A股",
+  "恒生科技": "港股",
+  "美股标普医药": "美股"
+ },
+ "planned_ref_date_map": {
+  "A股": "2026-10-19",
+  "港股": "2026-10-20",
+  "美股": "2026-10-19"
+ },
+ "title_match_miss": [],
+ "intraday_pseudo_close_warning": "indices.csv 本档写入 2026-10-19「盘中 13:45」伪收盘行共 **7 行，全部为 A股 板块**（中证医药 7,610.69 / 中证医疗 6,421.16 / 中证白酒 6,426.19 / 中证环保 1,466.39 / 中证金融 5,752.10 / 300医药 7,988.41 / 证券公司 715.83）；**港股 0 行 —— 港股今日休市，stale 价一律不写当日行（§3.159 新增规则）**。🔴 **本档实测结论：多日窗口 n 与读数 Δ = 0（六个赛道全部）** —— 原因是本档写入的 7 个板块代码（000933 / 399989 / 399997 / 000827 / 000934 / 000913 / 399975）**均非 `track_index` 的赛道代理序列**（A股医药 399006 / 大消费 000932 / 其他·宽基 000300 / 宏观 000001 / 恒生科技 HSTECH / 美股 XLV），故伪收盘行**未进入任何 n 日窗口的取数路径**。宏观 `n/a → 715/678/414` 属「上一档 stats 无该赛道键」的口径变化，**不是污染增量**（§3.156e 语义区分）。→ **推论：§3.122a 污染是否发生，取决于「写入的代码是否恰好等于赛道代理」**，此前 10/14~10/16 档「仅恒生科技受影响」正是因为该档同时写了 HSTECH 当日行；本档港股休市不写 HSTECH → 污染为零。",
+ "pseudo_close_n_delta": {
+  "A股医药": {
+   "3": {
+    "now": 541,
+    "prev": 541,
+    "delta": 0
+   },
+   "5": {
+    "now": 513,
+    "prev": 513,
+    "delta": 0
+   },
+   "10": {
+    "now": 342,
+    "prev": 342,
+    "delta": 0
+   }
+  },
+  "恒生科技": {
+   "3": {
+    "now": 484,
+    "prev": 484,
+    "delta": 0
+   },
+   "5": {
+    "now": 456,
+    "prev": 456,
+    "delta": 0
+   },
+   "10": {
+    "now": 390,
+    "prev": 390,
+    "delta": 0
+   }
+  },
+  "美股标普医药": {
+   "3": {
+    "now": 301,
+    "prev": 301,
+    "delta": 0
+   },
+   "5": {
+    "now": 281,
+    "prev": 281,
+    "delta": 0
+   },
+   "10": {
+    "now": 235,
+    "prev": 235,
+    "delta": 0
+   }
+  },
+  "大消费": {
+   "3": {
+    "now": 466,
+    "prev": 466,
+    "delta": 0
+   },
+   "5": {
+    "now": 442,
+    "prev": 442,
+    "delta": 0
+   },
+   "10": {
+    "now": 288,
+    "prev": 288,
+    "delta": 0
+   }
+  },
+  "宏观": {
+   "3": {
+    "now": 715,
+    "prev": null,
+    "delta": null
+   },
+   "5": {
+    "now": 678,
+    "prev": null,
+    "delta": null
+   },
+   "10": {
+    "now": 414,
+    "prev": null,
+    "delta": null
+   }
+  },
+  "其他/宽基": {
+   "3": {
+    "now": 284,
+    "prev": 284,
+    "delta": 0
+   },
+   "5": {
+    "now": 252,
+    "prev": 252,
+    "delta": 0
+   },
+   "10": {
+    "now": 105,
+    "prev": 105,
+    "delta": 0
+   }
+  }
+ },
+ "pseudo_close_prev_stats": "event_stats_20261019_preopen.json",
+ "similarity_by_track": {
+  "宏观": {
+   "n": 6,
+   "avg_3d": -0.49,
+   "avg_5d": -1.23,
+   "avg_10d": -0.2,
+   "avg_conf": 81.2
+  },
+  "大消费": {
+   "n": 3,
+   "avg_3d": 0.12,
+   "avg_5d": 0.33,
+   "avg_10d": -1.85,
+   "avg_conf": 81.0
+  },
+  "A股医药": {
+   "n": 4,
+   "avg_3d": -3.6,
+   "avg_5d": -7.11,
+   "avg_10d": -10.91,
+   "avg_conf": 81.0
+  },
+  "美股标普医药": {
+   "n": 2,
+   "avg_3d": 3.37,
+   "avg_5d": 1.54,
+   "avg_10d": 0.0,
+   "avg_conf": 81.5
+  },
+  "恒生科技": {
+   "n": 3,
+   "avg_3d": -0.6,
+   "avg_5d": -1.06,
+   "avg_10d": -3.74,
+   "avg_conf": 81.0
+  },
+  "其他/宽基": {
+   "n": 3,
+   "avg_3d": -1.35,
+   "avg_5d": -2.72,
+   "avg_10d": -4.87,
+   "avg_conf": 81.0
+  }
+ },
+ "similarity_detail": [
+  {
+   "id": "N20261019-017",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "🔴 **10:00 落地读数①：三季度 GDP 同比 +4.5%（预期 4.4%、前值 4.3%）、",
+   "direction": "利多",
+   "strength": 66,
+   "top3": [
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-08-13",
+     "hist_title": "美国7月CPI同比3.4%符合预期、核心2.5%回落，9月加息概率降至36-43%（前一",
+     "hist_direction": "利多",
+     "ret_3d": 1.6127,
+     "ret_5d": -0.5921,
+     "ret_10d": 0.7538
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-09-09",
+     "hist_title": "中国8月CPI/PPI数据（09:30公布）：CPI同比+0.8%符合预期（环比+0.4",
+     "hist_direction": "利多",
+     "ret_3d": -1.6748,
+     "ret_5d": -1.5161,
+     "ret_10d": -0.3794
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-09-30",
+     "hist_title": "🟢 **央行 9/29 单日净投放 930 亿元**：开展 905 亿元 7 天期逆回购",
+     "hist_direction": "利多",
+     "ret_3d": -1.17,
+     "ret_5d": -1.9512,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -0.41,
+   "avg_5d": -1.35,
+   "avg_10d": 0.19,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-018",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "🔴 **10:00 落地读数②（本档最大预期差）：9 月社会消费品零售总额 42,433 亿元、同比",
+   "direction": "利多",
+   "strength": 68,
+   "top3": [
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-08-13",
+     "hist_title": "美国7月CPI同比3.4%符合预期、核心2.5%回落，9月加息概率降至36-43%（前一",
+     "hist_direction": "利多",
+     "ret_3d": 1.6127,
+     "ret_5d": -0.5921,
+     "ret_10d": 0.7538
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-10-01",
+     "hist_title": "长假首日国内出行与消费的「供给端」增量集中落地：**文化和旅游部启动全国国庆文化和旅游消",
+     "hist_direction": "利多",
+     "ret_3d": -0.2896,
+     "ret_5d": -2.7395,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-10-15",
+     "hist_title": "🟢 央行 10/15 开展 7,000 亿元 6 个月（182 天）买断式逆回购、加量续",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.66,
+   "avg_5d": -1.67,
+   "avg_10d": 0.75,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-019",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "🟡 **10:00 落地读数③：9 月规模以上工业增加值同比 +5.5%（前值 +5.2%、环比 +",
+   "direction": "中性",
+   "strength": 56,
+   "top3": [
+    {
+     "similarity": 81.9,
+     "hist_date": "2026-09-16",
+     "hist_title": "国新办9/15公布8月国民经济运行数据: 规模以上工业增加值同比+5.2%(较上月加快0",
+     "hist_direction": "中性",
+     "ret_3d": 1.4983,
+     "ret_5d": 1.1543,
+     "ret_10d": -2.0479
+    },
+    {
+     "similarity": 81.4,
+     "hist_date": "2026-10-16",
+     "hist_title": "🟡 **商品与地缘并列读数（本档跨资产参照，只登记不作方向判断）：① 国际油价分化 ——",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-10-15",
+     "hist_title": "🔴 **中国 9 月 CPI 同比 +0.9%（涨幅扩大 0.1pct）、核心 CPI ",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 1.5,
+   "avg_5d": 1.15,
+   "avg_10d": -2.05,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-020",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "🔴 **10:00 落地读数④（本档最大负向项）：1-9 月全国固定资产投资 334,115 亿元、",
+   "direction": "利空",
+   "strength": 58,
+   "top3": [
+    {
+     "similarity": 81.2,
+     "hist_date": "2026-10-15",
+     "hist_title": "🔴 **美国 9 月 CPI 超预期的「加息路径」读数本档新增量级维度：交易员预计 20",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.1,
+     "hist_date": "2026-10-16",
+     "hist_title": "🔴 **隔夜美股与利率路径的「鸽派表态 vs 通胀顽固」双向并列（本档分母端口径）：旧金",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.8,
+     "hist_date": "2026-10-13",
+     "hist_title": "🟡 IMF 下调中国 2026 增长预期至 4.5%，同时上调全球增长预期；并列中国前三",
+     "hist_direction": "利空",
+     "ret_3d": -2.2253,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -2.23,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-021",
+   "track": "宏观",
+   "category": "宏观类",
+   "title": "🔴 **A股 日内结构（本档组合估值的直接定价背景）：三大指数低开后探底回升、沪指翻红 —— 午间沪",
+   "direction": "中性",
+   "strength": 58,
+   "top3": [
+    {
+     "similarity": 82.6,
+     "hist_date": "2026-10-16",
+     "hist_title": "🔴 **A股 早盘集体反弹、午后回落（本档核心结构事实）：午间沪指 +0.95% 报 3",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.5,
+     "hist_date": "2026-09-30",
+     "hist_title": "A股 9/30 半日「指数平、结构剧烈分化」：上证指数 +0.27% 报 3,840.8",
+     "hist_direction": "中性",
+     "ret_3d": -1.17,
+     "ret_5d": -1.9512,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.4,
+     "hist_date": "2026-09-08",
+     "hist_title": "A股午评（9/8）：沪指+0.36%报3,946.99、创业板指-0.15%——农业/化",
+     "hist_direction": "中性",
+     "ret_3d": -1.3308,
+     "ret_5d": -1.9355,
+     "ret_10d": 0.2938
+    }
+   ],
+   "avg_3d": -1.25,
+   "avg_5d": -1.94,
+   "avg_10d": 0.29,
+   "confidence": 82
+  },
+  {
+   "id": "N20261019-022",
+   "track": "宏观",
+   "category": "政策类",
+   "title": "🟢 **政策面「尚未落地」的时点事实（本档最重要的纪律前提）：2026 金融街论坛年会开幕式定于今日",
+   "direction": "中性",
+   "strength": 54,
+   "top3": [
+    {
+     "similarity": 80.7,
+     "hist_date": "2026-10-09",
+     "hist_title": "🔴 **财政部 1,500 亿元中央金融机构注资特别国债（一期）10/8 发行**：**",
+     "hist_direction": "中性",
+     "ret_3d": -1.2209,
+     "ret_5d": -2.5567,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-10-09",
+     "hist_title": "🟡 **央行 10/9 早盘公告：将开展 11,000 亿元 3 个月期买断式逆回购操作",
+     "hist_direction": "中性",
+     "ret_3d": -1.2209,
+     "ret_5d": -2.5567,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-09-30",
+     "hist_title": "央行 9/30 公开市场操作「7 天期零投放 + 隔夜巨量续作」：7 天期逆回购操作量 ",
+     "hist_direction": "中性",
+     "ret_3d": -1.17,
+     "ret_5d": -1.9512,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -1.2,
+   "avg_5d": -2.35,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-023",
+   "track": "大消费",
+   "category": "行业事件类",
+   "title": "🔴 **白酒板块「涨幅居前」为今日消费内部最强方向（组合「大消费」腿的核心正向读数）：中证白酒 6,",
+   "direction": "利多",
+   "strength": 64,
+   "top3": [
+    {
+     "similarity": 81.6,
+     "hist_date": "2026-08-28",
+     "hist_title": "大消费8/28收涨：中证消费+0.66%报12,571.99站上12,500、泸州老窖除",
+     "hist_direction": "利多",
+     "ret_3d": -0.4437,
+     "ret_5d": 1.8898,
+     "ret_10d": -1.7692
+    },
+    {
+     "similarity": 81.6,
+     "hist_date": "2026-10-16",
+     "hist_title": "🔴 **A股 白酒概念震荡拉升（组合「大消费」腿本档最重要正向读数）：皇台酒业 3 天 ",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.4,
+     "hist_date": "2026-10-12",
+     "hist_title": "🟢 白酒股同步回暖、贵州茅台重夺「股王」，大消费成为超 4,300 只个股下跌日里为数不",
+     "hist_direction": "利多",
+     "ret_3d": -1.2738,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -0.86,
+   "avg_5d": 1.89,
+   "avg_10d": -1.77,
+   "confidence": 82
+  },
+  {
+   "id": "N20261019-024",
+   "track": "大消费",
+   "category": "宏观类",
+   "title": "🟢 **9 月社零的结构拆解（本档「大消费」腿的基本面支撑）：除汽车以外 +3.9%（整体 +1.1",
+   "direction": "利多",
+   "strength": 62,
+   "top3": [
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-10-07",
+     "hist_title": "**🟢 国庆消费高频数据本档完整发布：商圈客流与营业额双增、免税购物金额与人数双增（本档",
+     "hist_direction": "利多",
+     "ret_3d": 0.5939,
+     "ret_5d": 0.4365,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.5,
+     "hist_date": "2026-09-16",
+     "hist_title": "国家统计局：1-8月全国烟酒类零售总额同比增长12.4%，行业整体消费保持较高增速；1-",
+     "hist_direction": "利多",
+     "ret_3d": 1.3974,
+     "ret_5d": 1.1272,
+     "ret_10d": 0.864
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-10-06",
+     "hist_title": "🟢 **假期客流与返程本档两条增量**：**① 交通运输部数据 —— 2026 年 10",
+     "hist_direction": "利多",
+     "ret_3d": 0.5939,
+     "ret_5d": 0.4365,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 0.86,
+   "avg_5d": 0.67,
+   "avg_10d": 0.86,
+   "confidence": 80
+  },
+  {
+   "id": "N20261019-025",
+   "track": "大消费",
+   "category": "行业事件类",
+   "title": "🔴 **消费内部「非酒类」明显走弱（与本档白酒走强构成同日背离）：乳业、饮料、餐饮旅游、教育均列入跌",
+   "direction": "利空",
+   "strength": 56,
+   "top3": [
+    {
+     "similarity": 81.0,
+     "hist_date": "2026-10-13",
+     "hist_title": "🔴 **大消费本档价格与结构：中证消费 12,368.76（−0.81%）、消费ETF添",
+     "hist_direction": "利空",
+     "ret_3d": 1.2981,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.7,
+     "hist_date": "2026-10-08",
+     "hist_title": "🔴 **白酒「酒价内参」10/8 读数（本档大消费最强价格端读数，方向明确转弱）：12 ",
+     "hist_direction": "利空",
+     "ret_3d": 0.5939,
+     "ret_5d": 0.4365,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-09-04",
+     "hist_title": "中证消费9/3收12,478.59(-0.30%)连续第2日收于12,500下方但守12",
+     "hist_direction": "利空",
+     "ret_3d": -0.8222,
+     "ret_5d": -3.5911,
+     "ret_10d": -4.6463
+    }
+   ],
+   "avg_3d": 0.36,
+   "avg_5d": -1.58,
+   "avg_10d": -4.65,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-026",
+   "track": "A股医药",
+   "category": "行业事件类",
+   "title": "🔴 **中药板块逆势走强（组合「A股医药」腿今日最强细分）：中证中药指数 +2%（盘中读数），达仁堂",
+   "direction": "利多",
+   "strength": 64,
+   "top3": [
+    {
+     "similarity": 81.8,
+     "hist_date": "2026-10-14",
+     "hist_title": "🟢 中药板块逆市走强 +0.86%（本档医药腿唯一正向结构）：**中药板块整体上涨 0.",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.5,
+     "hist_date": "2026-10-15",
+     "hist_title": "🔴 **医药内部剧烈分化：中药板块逆势走强 +0.86%（申万医药生物 −1.13%），",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.1,
+     "hist_date": "2026-09-18",
+     "hist_title": "A股医药板块9/18收盘表现：中证医药+0.50%报7,720.12、中证医疗+0.82",
+     "hist_direction": "利多",
+     "ret_3d": 0.2056,
+     "ret_5d": -6.904,
+     "ret_10d": -12.1225
+    }
+   ],
+   "avg_3d": 0.21,
+   "avg_5d": -6.9,
+   "avg_10d": -12.12,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-027",
+   "track": "A股医药",
+   "category": "行业事件类",
+   "title": "🟢 **生物制品板块盘中直线拉升（医药内部第二条正向细分）：信诺维涨超 10%，上海莱士、三元基因、",
+   "direction": "利多",
+   "strength": 60,
+   "top3": [
+    {
+     "similarity": 81.6,
+     "hist_date": "2026-09-21",
+     "hist_title": "A股医药领涨结构：医疗服务、CRO概念、创新药、生物制品、化学制药涨幅居前；对应板块指数",
+     "hist_direction": "利多",
+     "ret_3d": -3.2546,
+     "ret_5d": -7.5605,
+     "ret_10d": -12.9794
+    },
+    {
+     "similarity": 81.2,
+     "hist_date": "2026-09-30",
+     "hist_title": "🔴 A股医药本档「全线爆发」：中证医药 +3.03%、中证医疗 +3.14%、300医药",
+     "hist_direction": "利多",
+     "ret_3d": -5.4685,
+     "ret_5d": -8.5643,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.1,
+     "hist_date": "2026-09-18",
+     "hist_title": "A股医药板块9/18收盘表现：中证医药+0.50%报7,720.12、中证医疗+0.82",
+     "hist_direction": "利多",
+     "ret_3d": 0.2056,
+     "ret_5d": -6.904,
+     "ret_10d": -12.1225
+    }
+   ],
+   "avg_3d": -2.84,
+   "avg_5d": -7.68,
+   "avg_10d": -12.55,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-028",
+   "track": "A股医药",
+   "category": "行业事件类",
+   "title": "🔴 **医药内部负向细分（本档「A股医药」腿的最大拖累来源）：CRO 概念、医疗服务、生物科技均列入",
+   "direction": "利空",
+   "strength": 58,
+   "top3": [
+    {
+     "similarity": 81.6,
+     "hist_date": "2026-10-13",
+     "hist_title": "🔴 **A股医药价格面（10/12 收盘口径，强制并列项）：中证医药 −0.82%、中证",
+     "hist_direction": "利空",
+     "ret_3d": -6.2859,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.3,
+     "hist_date": "2026-09-28",
+     "hist_title": "CXO/CRO 板块当日相对承压的结构细节：CRO 板块指数跌 1.53%（南模生物 +",
+     "hist_direction": "利空",
+     "ret_3d": -3.2858,
+     "ret_5d": -5.6054,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.2,
+     "hist_date": "2026-10-12",
+     "hist_title": "🔴 A股 医药本档价格面继续走弱，科创板创新药领跌：**创新药板块 −2.08%（1,0",
+     "hist_direction": "利空",
+     "ret_3d": -6.0951,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -5.22,
+   "avg_5d": -5.61,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-029",
+   "track": "A股医药",
+   "category": "行业事件类",
+   "title": "🟢 **ESMO 2026（10/23-27，马德里）中国原研读数（中期事件，非今日价格）：12 项",
+   "direction": "利多",
+   "strength": 58,
+   "top3": [
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-10-16",
+     "hist_title": "🟡 **港股医药本档显著走强（A+H 同向的第二日样本）：恒生医疗保健指数 13:46 ",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.8,
+     "hist_date": "2026-10-15",
+     "hist_title": "🟡 **港股医药本档逆势上涨（A+H 同向的当日样本）** —— **恒生医疗保健指数 ",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.6,
+     "hist_date": "2026-08-17",
+     "hist_title": "康方生物依沃西单抗获批联合化疗一线治疗晚期鳞状非小细胞肺癌；医药高位股批量进监管（百花医",
+     "hist_direction": "利多",
+     "ret_3d": -6.539,
+     "ret_5d": -8.2422,
+     "ret_10d": -8.0606
+    }
+   ],
+   "avg_3d": -6.54,
+   "avg_5d": -8.24,
+   "avg_10d": -8.06,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-030",
+   "track": "美股标普医药",
+   "category": "行业事件类",
+   "title": "🟢 **美股标普医药腿的「相对抗跌」结构性读数（US 10/16 收盘，本档唯一可引用定价）：XLV",
+   "direction": "利多",
+   "strength": 56,
+   "top3": [
+    {
+     "similarity": 81.6,
+     "hist_date": "2026-10-13",
+     "hist_title": "🔴 **美股 10/12 医疗保健位列上涨阵营：XLV +0.69%（171.99）、I",
+     "hist_direction": "利多",
+     "ret_3d": 4.1554,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.4,
+     "hist_date": "2026-10-06",
+     "hist_title": "🔴 **美股医药本档「三源齐备」的价格事实（§3.119a）**：**XLV 收 167",
+     "hist_direction": "利多",
+     "ret_3d": 2.2263,
+     "ret_5d": 1.5381,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.4,
+     "hist_date": "2026-10-11",
+     "hist_title": "🔴 美股 10/9（周五）收盘 —— 医疗保健领涨（本档组合美股标普医药腿 15.47%",
+     "hist_direction": "利多",
+     "ret_3d": 3.0234,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 3.14,
+   "avg_5d": 1.54,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-031",
+   "track": "美股标普医药",
+   "category": "行业事件类",
+   "title": "🔴 **【§3.148d 强制条目】美股腿本档无新增定价 + QDII 挂账区间未刷新：US 10/",
+   "direction": "中性",
+   "strength": 54,
+   "top3": [
+    {
+     "similarity": 82.1,
+     "hist_date": "2026-10-14",
+     "hist_title": "🔴 **QDII 挂账机制项（组合强制披露口径）：US 10/13 收盘成型于北京 10",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 82.0,
+     "hist_date": "2026-10-12",
+     "hist_title": "🔴 **QDII 挂账机制项（组合强制披露项，非新闻）：US 10/9 段已在上一档量化",
+     "hist_direction": "中性",
+     "ret_3d": 3.0234,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.8,
+     "hist_date": "2026-10-13",
+     "hist_title": "🔴 **QDII 挂账机制项（组合强制披露口径）：US 10/12 收盘成型于北京 10",
+     "hist_direction": "中性",
+     "ret_3d": 4.1554,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 3.59,
+   "avg_5d": null,
+   "avg_10d": null,
+   "confidence": 82
+  },
+  {
+   "id": "N20261019-032",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "🔴 **港股休市确认 + A股 港股类 ETF 的「独市定价」实测（本档组合中唯一可定价的港联系部分",
+   "direction": "利空",
+   "strength": 56,
+   "top3": [
+    {
+     "similarity": 81.4,
+     "hist_date": "2026-10-15",
+     "hist_title": "🔴 港股 10/15 收盘「指数全线走弱、恒生科技创本轮调整新低」（组合恒生科技腿 −5",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.3,
+     "hist_date": "2026-10-08",
+     "hist_title": "🔴 **港股 10/8 低开低走、半导体领跌：午间恒指 −0.69% 报 23,963.",
+     "hist_direction": "利空",
+     "ret_3d": 1.5528,
+     "ret_5d": -0.3042,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.3,
+     "hist_date": "2026-10-08",
+     "hist_title": "🔴 港股 10/8 收盘（组合港联系暴露 13% 的当日定价输入）：**恒生指数 23,",
+     "hist_direction": "利空",
+     "ret_3d": 1.5528,
+     "ret_5d": -0.3042,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": 1.55,
+   "avg_5d": -0.3,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-033",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "🟡 **10/20（周二）港股复市首日的「三重日程叠加」：09:00 中国 10 月 LPR 公布（",
+   "direction": "中性",
+   "strength": 52,
+   "top3": [
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-08-21",
+     "hist_title": "港股8/20收盘：恒指+0.80%报25,698.49（4连升）、恒科+0.39%报4,",
+     "hist_direction": "中性",
+     "ret_3d": -2.9376,
+     "ret_5d": -3.3782,
+     "ret_10d": -4.1199
+    },
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-08-26",
+     "hist_title": "港股8/25收盘：恒指-0.02%报25,511.10、恒科-0.12%报4,588.5",
+     "hist_direction": "中性",
+     "ret_3d": -0.1358,
+     "ret_5d": -2.356,
+     "ret_10d": -4.4391
+    },
+    {
+     "similarity": 80.7,
+     "hist_date": "2026-09-18",
+     "hist_title": "港股9/17收评与资金: 恒生指数跌0.44%报24,604.29(全日主板成交1,85",
+     "hist_direction": "中性",
+     "ret_3d": -0.5999,
+     "ret_5d": -2.1273,
+     "ret_10d": -5.0351
+    }
+   ],
+   "avg_3d": -1.22,
+   "avg_5d": -2.62,
+   "avg_10d": -4.53,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-034",
+   "track": "恒生科技",
+   "category": "行业事件类",
+   "title": "🟡 **中概/港股复市的「先行指标方向冲突」（本档只并列、不作结论）：US 10/16 纳斯达克中国",
+   "direction": "利空",
+   "strength": 54,
+   "top3": [
+    {
+     "similarity": 81.4,
+     "hist_date": "2026-08-14",
+     "hist_title": "隔夜中概股大跌：纳斯达克中国金龙指数-1.84%，京东-7%、拼多多-5%、B站-3%、",
+     "hist_direction": "利空",
+     "ret_3d": -0.5432,
+     "ret_5d": 1.2435,
+     "ret_10d": -2.1767
+    },
+    {
+     "similarity": 81.4,
+     "hist_date": "2026-10-04",
+     "hist_title": "🔴 中概股与港股「同源资产」在本档出现方向背离的关键信号：**美东 10/2 纳斯达克中",
+     "hist_direction": "利空",
+     "ret_3d": -2.6364,
+     "ret_5d": -0.3373,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.8,
+     "hist_date": "2026-09-28",
+     "hist_title": "港股AI硬件链与光通信集体重挫：长飞光纤光缆跌16.62%、中际旭创与剑桥科技跌约12%",
+     "hist_direction": "利空",
+     "ret_3d": -3.2137,
+     "ret_5d": -1.6974,
+     "ret_10d": -3.7097
+    }
+   ],
+   "avg_3d": -2.13,
+   "avg_5d": -0.26,
+   "avg_10d": -2.94,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-035",
+   "track": "其他/宽基",
+   "category": "行业事件类",
+   "title": "🟢 **低估值权重方向今日领涨（「其他/宽基」腿的主要正向来源）：银行板块表现强势、工商银行股价创历",
+   "direction": "利多",
+   "strength": 58,
+   "top3": [
+    {
+     "similarity": 81.1,
+     "hist_date": "2026-10-09",
+     "hist_title": "🔴 A股 10/9 收盘「探底回升、四大指数集体翻红」（本档组合损益的第一性来源）：**",
+     "hist_direction": "利多",
+     "ret_3d": -2.3064,
+     "ret_5d": -3.3966,
+     "ret_10d": null
+    },
+    {
+     "similarity": 81.1,
+     "hist_date": "2026-10-15",
+     "hist_title": "🟢 「低估值 + 高股息」防御簇本档逆势收正、成为全市场唯二的上涨行业：**非银金融 +",
+     "hist_direction": "利多",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-09-18",
+     "hist_title": "富时中国A50指数调整9/18收盘后生效: 纳入中微公司、生益科技, 剔除牧原股份、万华",
+     "hist_direction": "利多",
+     "ret_3d": 0.2193,
+     "ret_5d": -3.697,
+     "ret_10d": -4.8678
+    }
+   ],
+   "avg_3d": -1.04,
+   "avg_5d": -3.55,
+   "avg_10d": -4.87,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-036",
+   "track": "其他/宽基",
+   "category": "宏观类",
+   "title": "🔴 **房地产链条为今日最弱方向（「其他/宽基」腿的负向来源）：房地产板块低开低走（荣丰控股、我爱我",
+   "direction": "利空",
+   "strength": 58,
+   "top3": [
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-10-15",
+     "hist_title": "🟡 **「其他/宽基」腿当日个股层读数（组合直接持仓的盘中价）：广联达（002410.S",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.7,
+     "hist_date": "2026-10-15",
+     "hist_title": "🔴 **A股 10/14 缩量普跌：上证指数 −0.88% 报 3,767.23、深证成",
+     "hist_direction": "利空",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.4,
+     "hist_date": "2026-09-25",
+     "hist_title": "北京「现房销售第一枪」细则落地后的首个完整交易日反应：港股内房股与地产产业链系统性走弱（",
+     "hist_direction": "利空",
+     "ret_3d": -0.7021,
+     "ret_5d": -1.2158,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -0.7,
+   "avg_5d": -1.22,
+   "avg_10d": null,
+   "confidence": 81
+  },
+  {
+   "id": "N20261019-037",
+   "track": "其他/宽基",
+   "category": "行业事件类",
+   "title": "🟡 **卖方观点与三季报节奏（本档「预期层」读数）：申万宏源称「短期调整已处尾声阶段」，理由是长期性",
+   "direction": "中性",
+   "strength": 56,
+   "top3": [
+    {
+     "similarity": 81.0,
+     "hist_date": "2026-10-16",
+     "hist_title": "🟡 **宽基 ETF 放量与被動资金读数（组合「其他/宽基」腿的资金面参照）：10/15",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-10-09",
+     "hist_title": "🟡 **A股 其他增量三条：① 江淮汽车 10/9 早盘再度跌停（封单 11 万手）——",
+     "hist_direction": "中性",
+     "ret_3d": -2.3064,
+     "ret_5d": -3.3966,
+     "ret_10d": null
+    },
+    {
+     "similarity": 80.9,
+     "hist_date": "2026-10-15",
+     "hist_title": "🟡 **「护盘/稳市」口径与市场情绪读数（只登记、不采纳）：前券商首席经济学家李大霄称「",
+     "hist_direction": "中性",
+     "ret_3d": null,
+     "ret_5d": null,
+     "ret_10d": null
+    }
+   ],
+   "avg_3d": -2.31,
+   "avg_5d": -3.4,
+   "avg_10d": null,
+   "confidence": 81
+  }
+ ],
+ "onesample": {
+  "A股医药": {
+   "n": 566,
+   "mean": -0.1882,
+   "up_ratio": 0.4682
+  },
+  "恒生科技": {
+   "n": 509,
+   "mean": -0.3689,
+   "up_ratio": 0.3694
+  },
+  "美股标普医药": {
+   "n": 323,
+   "mean": 0.184,
+   "up_ratio": 0.5418
+  },
+  "大消费": {
+   "n": 494,
+   "mean": -0.0544,
+   "up_ratio": 0.3887
+  },
+  "宏观": {
+   "n": 756,
+   "mean": -0.3325,
+   "up_ratio": 0.4272
+  },
+  "其他/宽基": {
+   "n": 318,
+   "mean": -0.6002,
+   "up_ratio": 0.3428
+  }
+ },
+ "direction_hit_strict": {
+  "A股医药": {
+   "pos_hit": 161,
+   "pos_n": 268,
+   "neg_hit": 45,
+   "neg_n": 62
+  },
+  "恒生科技": {
+   "pos_hit": 75,
+   "pos_n": 166,
+   "neg_hit": 109,
+   "neg_n": 140
+  },
+  "美股标普医药": {
+   "pos_hit": 62,
+   "pos_n": 118,
+   "neg_hit": 33,
+   "neg_n": 63
+  },
+  "大消费": {
+   "pos_hit": 87,
+   "pos_n": 153,
+   "neg_hit": 55,
+   "neg_n": 89
+  },
+  "宏观": {
+   "pos_hit": 97,
+   "pos_n": 159,
+   "neg_hit": 138,
+   "neg_n": 227
+  },
+  "其他/宽基": {
+   "pos_hit": 47,
+   "pos_n": 89,
+   "neg_hit": 42,
+   "neg_n": 60
+  }
+ },
+ "windows": {
+  "A股医药": {
+   "3": {
+    "n": 541,
+    "mean": -2.0028
+   },
+   "5": {
+    "n": 513,
+    "mean": -3.7313
+   },
+   "10": {
+    "n": 342,
+    "mean": -5.9754
+   }
+  },
+  "恒生科技": {
+   "3": {
+    "n": 484,
+    "mean": -1.0535
+   },
+   "5": {
+    "n": 456,
+    "mean": -1.6419
+   },
+   "10": {
+    "n": 390,
+    "mean": -3.4041
+   }
+  },
+  "美股标普医药": {
+   "3": {
+    "n": 301,
+    "mean": 0.5228
+   },
+   "5": {
+    "n": 281,
+    "mean": 0.5537
+   },
+   "10": {
+    "n": 235,
+    "mean": 0.7174
+   }
+  },
+  "大消费": {
+   "3": {
+    "n": 466,
+    "mean": 0.0676
+   },
+   "5": {
+    "n": 442,
+    "mean": 0.1683
+   },
+   "10": {
+    "n": 288,
+    "mean": -0.3797
+   }
+  },
+  "宏观": {
+   "3": {
+    "n": 715,
+    "mean": -0.536
+   },
+   "5": {
+    "n": 678,
+    "mean": -1.0989
+   },
+   "10": {
+    "n": 414,
+    "mean": -1.6984
+   }
+  },
+  "其他/宽基": {
+   "3": {
+    "n": 284,
+    "mean": -1.14
+   },
+   "5": {
+    "n": 252,
+    "mean": -2.4355
+   },
+   "10": {
+    "n": 105,
+    "mean": -4.1707
+   }
+  }
+ },
+ "track_index_map": {
+  "A股医药": "399006",
+  "大消费": "000932",
+  "恒生科技": "HSTECH",
+  "美股标普医药": "XLV",
+  "其他/宽基": "000300",
+  "宏观": "000001"
+ },
+ "window_sparse_tracks": {},
+ "window_min_days": 20,
+ "window_guard": {
+  "399006": {
+   "track": "A股医药",
+   "distinct_days": 77,
+   "span_days": 114,
+   "pass": true
+  },
+  "000932": {
+   "track": "大消费",
+   "distinct_days": 77,
+   "span_days": 114,
+   "pass": true
+  },
+  "HSTECH": {
+   "track": "恒生科技",
+   "distinct_days": 82,
+   "span_days": 115,
+   "pass": true
+  },
+  "XLV": {
+   "track": "美股标普医药",
+   "distinct_days": 78,
+   "span_days": 115,
+   "pass": true
+  },
+  "000300": {
+   "track": "其他/宽基",
+   "distinct_days": 45,
+   "span_days": 70,
+   "pass": true
+  },
+  "000001": {
+   "track": "宏观",
+   "distinct_days": 77,
+   "span_days": 114,
+   "pass": true
+  }
+ },
+ "note": "本档不回填（A股 未收盘 + 港股休市 + 美股未开盘）；A股医药 3/5/10 日窗口以 399006（创业板指）为代理（§3.90/§3.111b），1 日窗口用 000933；宏观类参考交易日 = 000001（§3.100）；方向命中率按 actual_date == 事件日 严格过滤（§3.115b）；逐市场参考交易日：A股 = 2026-10-19（今日收盘）、港股 = 2026-10-20（休市顺延 +1 档）、美股 = 2026-10-19（美东日历日，收盘成型于北京 10/20 04:00）（§3.119c/§3.110）",
+ "pseudo_close_note": "Δ=0（6/6 赛道）：写入的 7 个板块代码非 track_index 代理 → 未进入 n 日窗口取数路径"
+}

@@ -1,0 +1,18 @@
+{
+ "date": "2026-10-19",
+ "session": "intraday-1345",
+ "session_type": "reverse_mixed_closed_hk",
+ "session_type_note": "反向混合档盘中（A股 正常交易日 + 港股重阳节翌日休市；13:45）",
+ "plan": {
+  "status": 200,
+  "size": 0
+ },
+ "nav": {
+  "status": 200,
+  "size": 0
+ },
+ "adjustments": {
+  "status": 200,
+  "size": 0
+ }
+}
