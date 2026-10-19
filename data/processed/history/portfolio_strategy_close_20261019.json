@@ -1,0 +1,316 @@
+{
+ "date": "2026-10-19",
+ "as_of": "2026-10-19 收盘（反向混合档：A股 15:00 收盘 + 港股重阳节翌日休市 + 美股未开盘）",
+ "session_type": "reverse_mixed_closed_hk",
+ "total_mv": 371946.45,
+ "est_total_pnl": 1793.84,
+ "est_total_pct": 0.48,
+ "weights": {
+  "其他/宽基": 25.07,
+  "大消费": 20.37,
+  "现金": 7.85,
+  "A股医药": 21.97,
+  "美股标普医药": 16.41,
+  "恒生科技": 8.32
+ },
+ "track_actions": [
+  {
+   "track": "其他/宽基",
+   "weight_pct": 25.07,
+   "action_range_pct": [
+    0,
+    0
+   ],
+   "amount": 0,
+   "rationale": "无防线约束；本档 +815.31 元（+0.882%）但**收益集中于个股**（广联达 +716.80 元 = 87.9%），银行创新高属「红利防守」而非主动加仓理由；地产链（投资 −20.6% / 荣丰控股跌停）负向未解",
+   "gates": [
+    "无"
+   ]
+  },
+  {
+   "track": "A股医药",
+   "weight_pct": 21.97,
+   "action_range_pct": [
+    0,
+    0
+   ],
+   "amount": 0,
+   "rationale": "**反向兑现线闭环判定 = 假破位**（收盘板块代理 +1.1825% > 0%）→ 10/16 第三次触发按 §3.114c 对称处置回落、10/20 不建减配预案（原 1,851.30 元作废）；中药领涨但属防御属性驱动、非板块反转；敞口 38.38% 距 40% 余量 1.62pct、门槛 +7.01%（概率极低）",
+   "gates": [
+    "a_med_reverse_1_5pct: closed_false_break"
+   ]
+  },
+  {
+   "track": "大消费",
+   "weight_pct": 20.37,
+   "action_range_pct": [
+    0,
+    0
+   ],
+   "amount": 0,
+   "rationale": "中证消费 12,467.08（−0.18%）连续第 2 日冲高回落、距 12,100 防线 +3.0337%（安全垫收窄）；**科技兴商意见属供给侧政策、无量化目标**；本档 +423.42 元几乎全部来自 519915 单只净值超预期（+424.79 元），其余 6 券位合计 −1.37 元 → **不外推为消费腿修复**",
+   "gates": [
+    "zz_consume_12100: above_lower_line"
+   ]
+  },
+  {
+   "track": "美股标普医药",
+   "weight_pct": 16.41,
+   "action_range_pct": [
+    0,
+    0
+   ],
+   "amount": 0,
+   "rationale": "本档不可定价（US 10/19 未开盘）；**QDII 10/16 净值 0.00% 疑似占位 → US 10/16 挂账未实质核销**；传导系数 0.72 仍 pending（5 样本 3 越界）→ **系数未重估前基于该系数的一切仓位决策无效**（§3.118a）",
+   "gates": [
+    "qdii_double_uncertainty: pending"
+   ]
+  },
+  {
+   "track": "恒生科技",
+   "weight_pct": 8.32,
+   "action_range_pct": [
+    0,
+    0
+   ],
+   "amount": 0,
+   "rationale": "港股 10/19 休市、**无交易时段**；4,250 破位与 4,000 观察线判定**顺延 10/20 收盘**；本档 +41.84 元来自 A股 场内溢折价与 164906 净值兑现，方向不一致、不构成判定依据",
+   "gates": [
+    "hstech_4250: deferred_hk_closed",
+    "hstech_4000: deferred_hk_closed"
+   ]
+  },
+  {
+   "track": "现金",
+   "weight_pct": 7.85,
+   "action_range_pct": [
+    0,
+    0
+   ],
+   "amount": 0,
+   "rationale": "无交易时段；纪律后权重 8.87%（累计减仓 3,786.90 元已成交）",
+   "gates": [
+    "无"
+   ]
+  }
+ ],
+ "action_range_total_pct": [
+  0,
+  0
+ ],
+ "action_amount_total": 0,
+ "constraints": {
+  "single_track_cap_pct": 40,
+  "med_exposure": {
+   "mv": 142771.51,
+   "pct": 38.38,
+   "headroom_pct": 1.62,
+   "threshold_all_med_pct": 7.01,
+   "threshold_a_sh_med_pct": 12.25,
+   "note": "门槛为解方程值（`A(1+r)/(B+A·r)=0.40`）：全部医药同涨需 +7.01%、仅 A股医药上涨需 +12.25% → **概率均极低，不得把 1.62pct 余量读作「逼近上限」**"
+  },
+  "max_single_trade_pct": 5,
+  "max_single_trade_used_pct": 0,
+  "new_buy": 0,
+  "active_take_profit": 0,
+  "status": "all_clear"
+ },
+ "discipline": {
+  "cumulative_cut_amount": 3786.9,
+  "settled": [
+   "2026-09-30",
+   "2026-10-08"
+  ],
+  "today_cut": 0,
+  "reason": "无新增防线触发：恒科两条线本档不可判定（港股休市）；A股医药反向线闭环为假破位 → 不建预案；中证消费距 12,100 为 +3.0337%，安全",
+  "hk_after_mv": 27150.28,
+  "cash_after_mv": 32999.87,
+  "weight_after": {
+   "其他/宽基": 25.07,
+   "大消费": 20.37,
+   "现金": 8.87,
+   "A股医药": 21.97,
+   "美股标普医药": 16.41,
+   "恒生科技": 7.3
+  }
+ },
+ "attribution": [
+  {
+   "track": "其他/宽基",
+   "mv": 93244.25,
+   "weight_pct": 25.07,
+   "pnl": 815.31,
+   "day_pct": 0.882,
+   "share_of_total_pnl_pct": 45.5
+  },
+  {
+   "track": "A股医药",
+   "mv": 81730.6,
+   "weight_pct": 21.97,
+   "pnl": 513.28,
+   "day_pct": 0.632,
+   "share_of_total_pnl_pct": 28.6
+  },
+  {
+   "track": "大消费",
+   "mv": 75780.55,
+   "weight_pct": 20.37,
+   "pnl": 423.42,
+   "day_pct": 0.562,
+   "share_of_total_pnl_pct": 23.6
+  },
+  {
+   "track": "恒生科技",
+   "mv": 30937.18,
+   "weight_pct": 8.32,
+   "pnl": 41.84,
+   "day_pct": 0.135,
+   "share_of_total_pnl_pct": 2.3
+  },
+  {
+   "track": "现金",
+   "mv": 29212.97,
+   "weight_pct": 7.85,
+   "pnl": 0.0,
+   "day_pct": 0.0,
+   "share_of_total_pnl_pct": 0.0
+  },
+  {
+   "track": "美股标普医药",
+   "mv": 61040.91,
+   "weight_pct": 16.41,
+   "pnl": -0.01,
+   "day_pct": -0.0,
+   "share_of_total_pnl_pct": -0.0
+  }
+ ],
+ "verification": {
+  "close_vs_intraday": {
+   "intraday_pnl": 1665.45,
+   "intraday_pct": 0.4499,
+   "close_pnl": 1793.84,
+   "close_pct": 0.48,
+   "delta_pnl": 128.39,
+   "note": "盘中 13:45 估算 +1,665.45 元 → 收盘 +1,793.84 元（+128.39 元）；**增量主因 = 场外真实净值取代代理估算**（519915 +1.805% vs 盘中代理 +0.22%），而非尾盘价格上行（中证消费尾盘反而由 +0.12% 转 −0.18%）"
+  },
+  "intraday_assumption_broken": [
+   {
+    "assumption": "主动医药基偏离 CRO、跑赢指数（盘中代理 002708 +1.435%）",
+    "realized": "002708 真实净值 +0.387%，跑输板块代理 0.80pct",
+    "verdict": "❌ 假设被证伪"
+   },
+   {
+    "assumption": "消费腿尾盘维持正收益（盘中 +0.12%）",
+    "realized": "中证消费收盘 −0.18%，但组合消费腿因 519915 真实净值 +1.805% 仍录得 +423.42 元",
+    "verdict": "⚠️ 指数假设证伪 / 组合损益反而改善（口径分裂）"
+   },
+   {
+    "assumption": "医药反向线闭环可能成立（盘中代理 +1.03%，需回吐 1.03pct）",
+    "realized": "收盘代理 +1.1825%，未回吐反而扩大",
+    "verdict": "❌ 闭环不成立（假破位确认）"
+   }
+  ],
+  "unpriced": {
+   "count": 4,
+   "notional": 20084.79,
+   "priceable_pct": 94.6,
+   "codes": [
+    "161616",
+    "000727",
+    "002742",
+    "100032"
+   ],
+   "gap_estimate_note": "4 只未定价券（161616 / 000727 / 100032 / 002742）按基准计 0；若按各自代理（医药 ×2 用 BOARD_MED +1.1825%、红利用 中证金融 +0.83%）粗估，组合损益另有约 +150 元 ~ +210 元的**低估**，**不并入本档主口径**"
+  }
+ },
+ "tomorrow_plan": [
+  {
+   "item": "注销 A股医药减配预案",
+   "detail": "10/16 登记的 0.5% 被动减配（≈1,851.30 元，候选 012323 / 001180）因闭环不成立而作废，须在 10/20 盘前档显式注销，不得静默保留",
+   "priority": "P0"
+  },
+  {
+   "item": "恒生科技两条防线判定",
+   "detail": "以 **10/20 收盘价**判定 4,250 破位（10/16 读数 −3.3355%）与 4,000 观察线（+2.7060%）；09:00 LPR 与港股复市同日，开盘 30 分钟价格不具代表性",
+   "priority": "P0"
+  },
+  {
+   "item": "4 只未定价券兜底复抓",
+   "detail": "161616 / 000727 / 100032 / 002742（notional 合计 20,084.79 元）；到位即以同日 `_fix` 覆盖并**同步重算 tracks[].pnl**（硬守卫 |Σpnl − est_total_pnl| < 1.5）",
+   "priority": "P1"
+  },
+  {
+   "item": "QDII 10/16 净值占位复核",
+   "detail": "000369 / 016280 的 10/16 净值是否被事后修订；若修订则重算美股腿并核销 US 10/16 段（预告区间 −206.50 ~ −137.65 元）",
+   "priority": "P1"
+  },
+  {
+   "item": "US 10/19 收盘归档",
+   "detail": "北京 10/20 04:00 成型 → 盘前档仅可登记、不可作结论（§3.120c）",
+   "priority": "P2"
+  },
+  {
+   "item": "10 月 LPR（09:00）",
+   "detail": "预期 1Y 3.0% / 5Y+ 3.5% 连续 16 个月不变；意外下调才改变分母端假设",
+   "priority": "P2"
+  },
+  {
+   "item": "三季报窗口跟踪",
+   "detail": "10/19-10/31 密集期，重点关注组合医药/消费腿主动基的重仓股业绩预告",
+   "priority": "P2"
+  }
+ ],
+ "risk": {
+  "chain_cum_pct": -5.56,
+  "chain_days": 47,
+  "sharpe": -2.68,
+  "rf_pct": 1.68,
+  "mdd_pct": -7.1,
+  "mdd_peak": "2026-08-10",
+  "mdd_trough": "2026-10-16",
+  "w43_pct": 0.48,
+  "w43_days": 1,
+  "ret_5d_pct": -1.32,
+  "ret_10d_pct": -1.05,
+  "note": "rf 仍为硬编码 1.68%（10Y 序列自 2026-08-11 未维护）→ 夏普绝对水平不可引用，只看方向"
+ },
+ "sentiment": {
+  "window_net_nominal": 7.4,
+  "window_net_weighted": 3.1268,
+  "day_net_nominal": 30.4,
+  "day_net_weighted": 7.901,
+  "annotation_mode": "rule_table_fallback",
+  "degraded_items": 17,
+  "note": "DeepSeek HTTP 402 连续第 14 个日历日；本档 17/17 条为规则表标注，跨档比较须标注口径差异"
+ },
+ "hk_split": {
+  "pure_hk": 16406.0,
+  "cn_internet": 14531.18,
+  "hk_broad": 18116.9,
+  "total": 49054.08,
+  "total_pct": 13.19,
+  "track_layer_pct": 8.32,
+  "note": "只报赛道层会低估宽基恒生系（§3.108 条款 23）；港股 10/19 休市 → 本档不做待消化测算"
+ },
+ "event_lib": {
+  "total_events": 3047,
+  "session_added": 54,
+  "session_backfilled_total": 49,
+  "blank": 32,
+  "ref_by_track": {
+   "A股医药": "2026-10-20",
+   "大消费": "2026-10-20",
+   "其他/宽基": "2026-10-20",
+   "宏观": "2026-10-20",
+   "恒生科技": "2026-10-20",
+   "美股标普医药": "2026-10-19"
+  },
+  "note": "本档盘后窗口 17 条全部留空（参考日 = 10/20 或 US 10/19），属预期状态；A股 类回填 49 条（10/16 与 10/18 档留空条目于本档有真实收盘）"
+ },
+ "guards": {
+  "sum_tracks_mv_dev": 0.01,
+  "sum_tracks_pnl_dev": 0.0,
+  "weights_sum": 99.99,
+  "med_pct_check": 0.005
+ }
+}
