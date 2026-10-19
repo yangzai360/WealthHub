@@ -1,0 +1,140 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""fix_amount_unit_20261019.py — 「绝对金额必须带元」补齐器 / 回归守卫
+（2026-10-19 **08:00 盘前分析档** · 档型②反向「混合档」：A股 开市 + 港股休市）
+
+⚠️ §3.112e / §3.145g：白名单**逐档重建**，来源 = 本档产物
+   data/processed/history/portfolio_close_20261016_fix.json   （基准：tracks mv/pnl / total_mv / base_total / med_exposure）
+   data/processed/history/portfolio_preopen_20261019.json     （本档：med_mv / 港联系三段 / 纪律台账 / QDII 区间 / 情景合计）
+   data/processed/history/portfolio_close_20261016.json       （修正前原值，用于「原值→修正值」三件套）
+⚠️ 白名单禁纳：① 指数点位（3,716.28 / 4,108.24 / 12,489.65）② 百分比与 β ③ 计数类（3,009 / 53 / 43 / n 值）
+   ④ 两位及以下纯整数（§3.145g 硬红线）⑤ 批价（1,700 / 1,750 / 750 / 800 / 830 / 850 —— 正文已逐处带「元」）
+
+用法：python scripts/fix_amount_unit_20261019.py [--dry]
+"""
+import os
+import re
+import sys
+import json
+
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+H = os.path.join(REPO, 'data/processed/history')
+TARGETS = [os.path.join(REPO, 'reports', 'daily', '2026-10-19.md')]
+
+
+def forms(x):
+    """exact（千分位两位小数）与四舍五入（整数千分位）两种记法；两位及以下纯整数不入（§3.145g）。
+    零值不入白名单：`0.00` 会误伤表格中的 β / 涨跌幅单元格（§3.145g 误伤复盘）。"""
+    out = set()
+    v = float(x)
+    if abs(v) < 0.005:
+        return out
+    out.add(f'{abs(v):,.2f}')
+    b = f'{round(abs(v)):,d}'
+    if ',' in b or len(b) > 3:
+        out.add(b)
+    return out
+
+
+AMOUNTS = set()
+fx = json.load(open(os.path.join(H, 'portfolio_close_20261016_fix.json'), encoding='utf-8'))
+for k in ('total_mv', 'base_total'):
+    AMOUNTS |= forms(fx[k])
+for t, v in fx['tracks'].items():
+    AMOUNTS |= forms(v['mv'])
+    AMOUNTS |= forms(abs(v['pnl']))
+AMOUNTS |= forms(abs(fx['est_total_pnl']))
+AMOUNTS |= forms(fx['med_exposure'])
+
+og = json.load(open(os.path.join(H, 'portfolio_close_20261016.json'), encoding='utf-8'))
+AMOUNTS |= forms(og['total_mv'])
+AMOUNTS |= forms(abs(og['est_total_pnl']))
+
+po = json.load(open(os.path.join(H, 'portfolio_preopen_20261019.json'), encoding='utf-8'))
+AMOUNTS |= forms(po['med_mv'])
+AMOUNTS |= forms(po['med_mv'] - po['tracks']['美股标普医药']['mv'])
+for v in po['hk_pending_digest']['segments'].values():
+    AMOUNTS |= forms(v)
+AMOUNTS |= forms(po['hk_pending_digest']['total_mv'])
+AMOUNTS |= forms(po['qdii_pending']['notional'])
+AMOUNTS |= forms(po['qdii_pending']['lof_164906_mv'])
+AMOUNTS |= forms(po['discipline']['cumulative_amount'])
+AMOUNTS |= forms(po['discipline']['hk_after'])
+AMOUNTS |= forms(po['discipline']['cash_after'])
+for c in po['scenario']['cases']:
+    AMOUNTS |= forms(abs(c['total_pnl']))
+
+# 报告侧手算/派生值（逐项来自产物字段）
+AMOUNTS |= {'206.50', '207', '165.20', '165', '137.65', '138',
+            '1,851.30', '1,851', '1,882.46', '1,882', '1,904.44', '1,904',
+            '401.87', '402', '370.11', '370', '25.46', '6.30',
+            '2,336.35', '2,336', '6,455.29', '6,455', '9,022.65', '9,023',
+            '2,500.00', '2,500', '509.68', '510'}
+
+AMOUNTS = {a for a in AMOUNTS if not re.fullmatch(r'\d{1,2}', a)}
+
+NOT_SUFFIX = (r'(?![\d,.])(?!\s*(?:%|元|万|亿|美元|港元|点|bp|倍|条|次|只|家|个|日|年|月|季|pct|股))'
+              r'(?!\s*[~～—－])'
+              r'(?!\s*/\s*(?:\d|total|n\b))')
+
+CTX_GUARD = re.compile(
+    r'(?:n\s*=\s*\d*\s*/\s*\d*\s*/\s*|样本量[^，。；]{0,12}|bytes[^，。；]{0,3}'
+    r'|\d{2,}\s*/\s*|指数[^，。；]{0,6}|点位[^，。；]{0,4}|收盘[^，。；]{0,6}|报\s*$|收\s*$'
+    r'|(?:负面|正面|中性|利多|利空)\s*$|置信度\s*$|强度\s*$|波动(?:高|中|低)?\s*$'
+    r'|净值[^，。；]{0,4}|批价[^，。；]{0,4}|β|得分\s*$'
+    r'|条[^，。；]{0,2}|行[^，。；]{0,2}|张[^，。；]{0,2}|亿元[^，。；]{0,2}'
+    r'|计算项[^，。；]{0,10}|ARCHIVED|notional[^，。；]{0,14}|自证|LOF[\s）]'
+    r'|事件\s*$|留空\s*$|回填\s*$|新增\s*$|匹配\s*$|条数\s*$|交易日\s*$|第\s*$|档\s*$'
+    r'|HTTP\s*$|（\s*$|分为\s*$|净分\s*$|评分\s*$|得分\s*$)'
+)
+
+
+def _url_spans(text):
+    spans = []
+    for m in re.finditer(r'\]\(([^)\s]+)\)', text):
+        spans.append((m.start(1), m.end(1)))
+    for m in re.finditer(r'https?://[^\s)\]，。；]+', text):
+        spans.append((m.start(), m.end()))
+    return spans
+
+
+def fix(text):
+    changes = []
+    urls = _url_spans(text)
+    for amt in sorted(AMOUNTS, key=len, reverse=True):
+        pat = re.compile(r'(?<![\d,.=])([+-]?)' + re.escape(amt) + NOT_SUFFIX)
+
+        def rep(m):
+            if any(a <= m.start() and m.end() <= b for a, b in urls):
+                return m.group(0)
+            head = text[max(0, m.start() - 30):m.start()]
+            if CTX_GUARD.search(head):
+                return m.group(0)
+            changes.append(text[max(0, m.start() - 18):m.end() + 6].replace('\n', ' '))
+            return m.group(0) + ' 元'
+
+        text = pat.sub(rep, text)
+    return text, changes
+
+
+def main():
+    dry = '--dry' in sys.argv
+    grand = 0
+    for f in TARGETS:
+        if not os.path.exists(f):
+            print(f'{os.path.relpath(f, REPO)}: 不存在，跳过')
+            continue
+        s = open(f, encoding='utf-8').read()
+        out, ch = fix(s)
+        print(f'{os.path.relpath(f, REPO)}: 补「元」{len(ch)} 处')
+        for c in ch:
+            print('    ·', c)
+        print(f'   白名单 {len(AMOUNTS)} 条；「## 」{len(re.findall(r"^## ", s, re.M))}；「### 」{len(re.findall(r"^### ", s, re.M))}；正文 {len(s)} 字符')
+        grand += len(ch)
+        if not dry and ch:
+            open(f, 'w', encoding='utf-8').write(out)
+    print(f'合计 {grand} 处' + ('（dry-run，未写盘）' if dry else ''))
+
+
+if __name__ == '__main__':
+    main()

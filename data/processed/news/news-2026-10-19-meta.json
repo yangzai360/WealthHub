@@ -1,0 +1,29 @@
+{
+ "date": "2026-10-19",
+ "window": "盘前(10/18 20:00-10/19 07:30)",
+ "count": 16,
+ "annotation_mode": "rule_table",
+ "annotation_note": "DeepSeek v4-flash 端点返回 HTTP 402（Payment Required）—— 连续第 13 个日历日；按 §3.127b 降级路径：情绪标签与强度分由规则表标注，未做模型二次复核，跨档比较均值强度/净分时须注意口径差异",
+ "by_track": {
+  "宏观": 3,
+  "其他/宽基": 3,
+  "大消费": 3,
+  "A股医药": 3,
+  "美股标普医药": 2,
+  "恒生科技": 2
+ },
+ "by_sentiment": {
+  "正面": 4,
+  "中性": 8,
+  "负面": 4
+ },
+ "source_url_audit": {
+  "filled": 14,
+  "total": 16,
+  "blank": [
+   "🟢 **中泰证券金工《秋种春收，把握医药困境反转》（10…",
+   "🔴 **第十一批国家组织药品集中采购文件发布后的第一个 …"
+  ],
+  "size_note": "14 条非空链接实测 HTTP 200：10~80KB 共 9 条判定为正常正文页；88~144KB 共 3 条（10jqka usstock / jin10 / eastmoney hk）超出「正常」区间但正文关键字齐备，保留；2 条（toutiao 72.9KB JS 混淆壳 `_$jsvmprt`、gzylhyzx 6.2KB JS 壳）判定为壳页 → source_url 置空、改纯文本（§3.123c 双向误判处置）。t.10jqka.com.cn 返回 HTTP 401 → 该条改用 jin10 早餐替代。"
+ }
+}

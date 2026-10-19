@@ -1,0 +1,247 @@
+{
+ "date": "2026-10-19",
+ "session": "preopen",
+ "state": "preopen_estimate",
+ "finalized": false,
+ "session_type": "mixed_session_preopen_hk_closed",
+ "session_type_note": "档型②反向「混合档」：A股 10/19 正常交易日（08:00 未开盘）+ 港股重阳节翌日休市+ 美股 10/19 待开盘 → 三市场均无当日价格 → close / pending 均不产，待消化沿用上一档",
+ "base_file": "portfolio_close_20261016_fix.json",
+ "base_total_mv": 370152.61,
+ "total_mv": 370152.61,
+ "guard": {
+  "sum_tracks_mv": 370152.62,
+  "dev_mv": 0.01,
+  "sum_tracks_pnl": -107.81,
+  "est_total_pnl": -107.81,
+  "dev_pnl": 0.0,
+  "detail_restore_rule": "mv0_new",
+  "detail_restore_max_dev": 0.0
+ },
+ "est_total_pnl": 0.0,
+ "est_total_pct": 0.0,
+ "day_result_note": "本档当日估算盈亏 **0 元**，归因是「全部持仓标的不可定价」而非「市场持平」：① A股 场外基金当日净值未发布（15:00 后）；② A股 场内 ETF/个股未开盘（09:30）；③ 港股休市（重阳翌日）→ 恒生系与场外港股联接无新价格；④ 美股 10/19 未开盘（收盘成型于北京 10/20 04:00）。",
+ "tracks": {
+  "其他/宽基": {
+   "mv": 92428.94,
+   "pct": 24.9705,
+   "pnl": -6.88
+  },
+  "大消费": {
+   "mv": 75357.13,
+   "pct": 20.3584,
+   "pnl": 496.44
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct": 7.8921,
+   "pnl": 0.0
+  },
+  "A股医药": {
+   "mv": 81217.32,
+   "pct": 21.9416,
+   "pnl": -1798.15
+  },
+  "美股标普医药": {
+   "mv": 61040.92,
+   "pct": 16.4907,
+   "pnl": 1151.97
+  },
+  "恒生科技": {
+   "mv": 30895.34,
+   "pct": 8.3466,
+   "pnl": 48.81
+  }
+ },
+ "weights_recomputed_from_mv": true,
+ "stale_weight_fields_in_fix": {
+  "note": "§3.146a：_fix 件 pct_of_total 为修正前分母派生值，本档一律按 mv/total_mv 现算"
+ },
+ "med_mv": 142258.24,
+ "med_pct": 38.43,
+ "med_cap_pct": 40.0,
+ "threshold_all_med_pct": 6.8,
+ "threshold_a_sh_med_pct": 11.91,
+ "threshold_formula": "A(1+r)/(B + A·r) = 0.40（全部医药同涨）／(A(1+r)+M)/(B+A·r) = 0.40（仅 A股医药）；B = 基准总资产",
+ "defense": {
+  "hstech_4250": {
+   "close": 4108.24,
+   "close_date": "2026-10-16",
+   "line": 4250.0,
+   "dist_pct": -3.3355,
+   "prev_dist_pct": -3.3355,
+   "abs_delta_pct": 0.0,
+   "state": "close_level_break_narrowed",
+   "state_note": "本档无新收盘 → state 沿用 10/16 收盘判定（close_level_break_narrowed），未重新判定",
+   "next_line": 4000.0,
+   "next_line_dist_pct": 2.706,
+   "action": "0（港股休市、无交易时段；判定权 10/20 收盘）"
+  },
+  "csi_consume_12100": {
+   "close": 12489.6502,
+   "close_date": "2026-10-16",
+   "line": 12100.0,
+   "dist_pct": 3.2202,
+   "state": "above_lower_line",
+   "action": "0（A股 09:30 后按盘中价复核）"
+  },
+  "a_med_reverse": {
+   "proxy_pct_1016": -1.8025,
+   "line": -1.5,
+   "state": "TRIGGERED_3RD",
+   "closure_rule": "10/19 收盘板块代理 ≤ 0% → 连续 2 日回调成立 → 10/20 盘前建立 0.5% 被动减配预案（约 1,851.30 元）",
+   "semantics": "该线是「利好兑现后的回调观察线」，不是止损线（§3.71 / §3.136a）"
+  }
+ },
+ "hk_pending_digest": {
+  "refreshed": false,
+  "refresh_note": "本档无新增港股交易日（10/19 港股休市）→ 无新增待消化段，沿用 10/16 收盘件",
+  "segments": {
+   "pure": 16413.29,
+   "concept": 14482.05,
+   "broad": 18120.68
+  },
+  "total_mv": 49016.02,
+  "total_pct": 13.2421,
+  "track_layer_pct": 8.3466,
+  "broad_layer_pct": 4.8955,
+  "window_closed": true,
+  "window": [
+   "2026-10-02",
+   "2026-10-05",
+   "2026-10-06",
+   "2026-10-07"
+  ],
+  "static_rule": "静态测算只可给区间上下界、不得作方向判断（§3.108 条款 24）"
+ },
+ "qdii_pending": {
+  "refreshed": false,
+  "refresh_note": "本档无新增美股收盘（US 10/16 已于 10/18 档归档；US 10/19 收盘成型于北京 10/20 04:00）→ US 10/16 段区间沿用，未刷新",
+  "segment": "US 2026-10-16",
+  "notional": 61040.92,
+  "low": -206.5,
+  "mid": -165.2,
+  "high": -137.65,
+  "iyh_pct": -0.3759,
+  "elasticity_range": [
+   0.6,
+   0.9
+  ],
+  "basis_rule": "notional 取 tracks[].mv（§3.144a），区间端点 low = 最差（弹性 0.90）、high = 最优（弹性 0.60）",
+  "stale_nav_legs": {
+   "000369": "2026-10-15",
+   "016280": "2026-10-15",
+   "164906": "2026-10-15"
+  },
+  "lof_164906_mv": 9022.65,
+  "lof_note": "164906 计入恒生科技腿、不在 QDII 区间内；其 10/16 净值仍未出库",
+  "coefficient_status": "pending（可量化样本 2 券位 × 5 窗口，未达 ≥4 券位 × ≥5 交易日重估门槛）"
+ },
+ "discipline": {
+  "cumulative_amount": 3786.9,
+  "new_trigger_today": 0.0,
+  "hk_after": 27108.44,
+  "hk_after_pct": 7.32,
+  "cash_after": 32999.87,
+  "cash_after_pct": 8.92,
+  "basis_rule": "累计口径（已成交 + 已登记 全量扣除，§3.125c）"
+ },
+ "scenario": {
+  "basis": "各赛道代理指数同向 ±1.0%，腿 β 由近端 25 个定价日回归得出",
+  "cases": [
+   {
+    "label": "指数 +1.0%",
+    "total_pnl": 2500.0,
+    "total_pct": 0.6754,
+    "detail": {
+     "A股医药": {
+      "leg_pct": 1.12,
+      "pnl": 909.63
+     },
+     "大消费": {
+      "leg_pct": 0.931,
+      "pnl": 701.57
+     },
+     "其他/宽基": {
+      "leg_pct": 0.747,
+      "pnl": 690.44
+     },
+     "恒生科技": {
+      "leg_pct": 0.642,
+      "pnl": 198.35
+     }
+    }
+   },
+   {
+    "label": "指数 −1.0%",
+    "total_pnl": -2500.0,
+    "total_pct": -0.6754,
+    "detail": {
+     "A股医药": {
+      "leg_pct": -1.12,
+      "pnl": -909.63
+     },
+     "大消费": {
+      "leg_pct": -0.931,
+      "pnl": -701.57
+     },
+     "其他/宽基": {
+      "leg_pct": -0.747,
+      "pnl": -690.44
+     },
+     "恒生科技": {
+      "leg_pct": -0.642,
+      "pnl": -198.35
+     }
+    }
+   }
+  ],
+  "low": -2500.0,
+  "high": 2500.0,
+  "note": "本档无当日定价，情景为「若指数沿该方向走 1%」的敏感度，不是收益预测"
+ },
+ "beta": {
+  "A股医药": 1.12,
+  "大消费": 0.931,
+  "其他/宽基": 0.747,
+  "恒生科技": 0.642
+ },
+ "beta_samples": {
+  "A股医药": 17,
+  "大消费": 25,
+  "其他/宽基": 25,
+  "恒生科技": 25
+ },
+ "risk": {
+  "chain_cum_pct": -6.02,
+  "chain_days": 46,
+  "sharpe": -2.95,
+  "sharpe_n": 46,
+  "daily_mean_pct": -0.1321,
+  "daily_sd_pct": 0.7465,
+  "max_dd_pct": -7.1,
+  "max_dd_peak": "2026-08-10",
+  "max_dd_trough": "2026-10-16",
+  "last5_cum_pct": -1.83,
+  "last10_cum_pct": -1.98,
+  "rf_pct": 1.68,
+  "rf_note": "中国 10Y 国债硬编码 1.68%（本地序列自 2026-08-11 后未维护）",
+  "w42_cum_pct": -1.83,
+  "w42_days": 5,
+  "w43_cum_pct": 0.0,
+  "w43_days": 0,
+  "w43_note": "W43（10/19-10/25）本档尚无已实现交易日 → 0 日 / 0.00%，非除零",
+  "unchanged_vs_1018": true
+ },
+ "new_buy": 0.0,
+ "track_actions": {
+  "其他/宽基": 0.0,
+  "大消费": 0.0,
+  "现金": 0.0,
+  "A股医药": 0.0,
+  "美股标普医药": 0.0,
+  "恒生科技": 0.0
+ },
+ "track_actions_note": "本档无交易时段（港股休市、A股 未开盘）→ 赛道级动作全部为 0；预案（非执行）见报告「策略建议」",
+ "chain_0pct_row_inserted": false,
+ "note": "档型②反向「混合档」→ **不产 portfolio_close_* 与 portfolio_pending_***（港股无当日收盘）。基准取 portfolio_close_20261016_fix.json（§3.108 同日期以 _fix 为准）。赛道权重按 mv/total_mv 现算（§3.146a），不复用 _fix 件 pct_of_total。"
+}

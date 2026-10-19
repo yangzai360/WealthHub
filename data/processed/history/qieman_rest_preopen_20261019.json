@@ -1,0 +1,21 @@
+{
+ "date": "2026-10-19",
+ "session": "preopen-0800",
+ "session_type": "mixed_session_preopen_hk_closed",
+ "plan": {
+  "status": 200,
+  "size": 0
+ },
+ "nav": {
+  "status": 200,
+  "size": 0
+ },
+ "adjustments": {
+  "status": 200,
+  "size": 0
+ },
+ "ok": false,
+ "consecutive_empty_trading_days": 112,
+ "consecutive_note": "10/19 为新 A股 交易日 → 计数由 111 推进至 112（§3.130d：分母为 A股 交易日）；人工维护计数、历史存在 ±1 差异",
+ "note": "三端点 HTTP 200 / size 0B 全空（连续第 112 个 A股 交易日空 body）→ 本档仅做 REST 探针，未跑 playwright 兜底（盘前档耗时约束），状态与上一档一致"
+}
