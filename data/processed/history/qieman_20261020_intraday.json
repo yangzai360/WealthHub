@@ -1,0 +1,208 @@
+{
+ "date": "2026-10-20",
+ "session": "intraday",
+ "session_type": "normal_trading_day_intraday",
+ "session_type_note": "正常交易日盘中（A股 第 9 个正常交易日 + 港股复市首日；13:45）",
+ "rest_probe": {
+  "date": "2026-10-16",
+  "session": "intraday-1345",
+  "session_type": "normal_trading_day_intraday",
+  "session_type_note": "正常交易日盘中档（A股 长假后第 7 个正常交易日 + 港股正常交易日；13:45）",
+  "plan": {
+   "status": 200,
+   "size": 0
+  },
+  "nav": {
+   "status": 200,
+   "size": 0
+  },
+  "adjustments": {
+   "status": 200,
+   "size": 0
+  },
+  "session_ref": "intraday-1345（本档实测三端点均 HTTP 200 / size 0）"
+ },
+ "playwright_fallback": true,
+ "playwright_success_count": 48,
+ "consecutive_empty_trading_days": 113,
+ "consecutive_note": "A股 10/20 为交易日；盘前档已记 113，本档同一 A股 交易日不重复推进（§3.130d）；该计数为人工维护、历史存在 ±1 记录差异（§3.133c）",
+ "plan_body_bytes": 44172,
+ "nav_body_bytes": 198157,
+ "plan_candidates": [
+  {
+   "file": "qieman_pwc_plan_20261020i_1792475273541_1.json",
+   "bytes": 44172
+  }
+ ],
+ "adjustedCount": 269,
+ "investedUnit": 115,
+ "planUnit_sum": 115,
+ "planUnit_cat_sum": 150,
+ "plan_unit_zero_change": true,
+ "planunit_diff": [],
+ "class_unit_diff": {},
+ "planunit_diff_baseline": "composition-2026-10-19-close.json",
+ "composition_by_class": [
+  {
+   "className": "A股",
+   "unit": 71,
+   "percent": 0.4363,
+   "funds": 32
+  },
+  {
+   "className": "现金",
+   "unit": 35,
+   "percent": 0.2631,
+   "funds": 1
+  },
+  {
+   "className": "境内债券",
+   "unit": 17,
+   "percent": 0.1266,
+   "funds": 12
+  },
+  {
+   "className": "海外新兴市场股票",
+   "unit": 17,
+   "percent": 0.0944,
+   "funds": 5
+  },
+  {
+   "className": "海外债券",
+   "unit": 7,
+   "percent": 0.0504,
+   "funds": 5
+  },
+  {
+   "className": "海外成熟市场股票",
+   "unit": 3,
+   "percent": 0.0292,
+   "funds": 5
+  },
+  {
+   "className": "原油",
+   "unit": 0,
+   "percent": 0,
+   "funds": 3
+  },
+  {
+   "className": "黄金",
+   "unit": 0,
+   "percent": 0,
+   "funds": 1
+  }
+ ],
+ "composition_categories": 8,
+ "composition_distinct_codes": 63,
+ "composition_rows": 64,
+ "nav": 1.6385,
+ "nav_date_beijing": "2026-10-19",
+ "daily_return_pct": 0.36,
+ "sharpe": 0.268,
+ "maxDrawdown": 0.1979,
+ "volatility": 0.1105,
+ "annualCompoundedReturn": 0.0446,
+ "nav_history_count": 2744,
+ "nav_history_tail": [
+  {
+   "date": "2026-09-29",
+   "nav": 1.6513467,
+   "ret": -0.0654
+  },
+  {
+   "date": "2026-09-30",
+   "nav": 1.6607521,
+   "ret": 0.5696
+  },
+  {
+   "date": "2026-10-08",
+   "nav": 1.6484643,
+   "ret": -0.7399
+  },
+  {
+   "date": "2026-10-09",
+   "nav": 1.6549564,
+   "ret": 0.3939
+  },
+  {
+   "date": "2026-10-12",
+   "nav": 1.6525397,
+   "ret": -0.1461
+  },
+  {
+   "date": "2026-10-13",
+   "nav": 1.6485504,
+   "ret": -0.2414
+  },
+  {
+   "date": "2026-10-14",
+   "nav": 1.6447691,
+   "ret": -0.2293
+  },
+  {
+   "date": "2026-10-15",
+   "nav": 1.6338529,
+   "ret": -0.6637
+  },
+  {
+   "date": "2026-10-16",
+   "nav": 1.6325341,
+   "ret": -0.0807
+  },
+  {
+   "date": "2026-10-19",
+   "nav": 1.6384641,
+   "ret": 0.3632
+  }
+ ],
+ "local_csv_last": [
+  "2026-09-21",
+  "1.668416",
+  "0.2623"
+ ],
+ "local_csv_rows": 3306,
+ "caliber_divergence": {
+  "status": "挂起（连续第 30 档）",
+  "source_last": {
+   "date": "2026-10-19",
+   "nav": 1.6384641,
+   "ret": 0.3632
+  },
+  "local_last": {
+   "date": "2026-09-21",
+   "nav": 1.668416
+  },
+  "action": "按 §3.97/§3.99 不追加、不回写；口径统一为用户决策第 1 优先项"
+ },
+ "source_revision": {
+  "observed": false,
+  "note": "本档未对 10/19 组合净值做前后档比对（10/19 盘中档未落 nav 快照），不主张「无修订」"
+ },
+ "adjustment": {
+  "changed": false,
+  "source_state": {
+   "adjustedCount": 269,
+   "investedUnit": 115
+  },
+  "local_db_state": {
+   "adjustedCount": 269,
+   "investedUnit": 115
+  },
+  "appended_this_session": false,
+  "appended_detail": null,
+  "appended_txn_date": null,
+  "note": "源侧 269/115 与本地一致、planUnit 差分全零 → 今日无新调仓",
+  "adjustedCount_prev": 269,
+  "investedUnit_prev": 115,
+  "latest_adj_id": 781,
+  "latest_adj_date": "2026-07-30",
+  "recent_new_adjustment": false,
+  "sequence_note": "10/19 收盘档至本档连续零差分（继 10/16 001257 补录之后的平静档续接）"
+ },
+ "nav_stale_note": "nav 1.6385 / nav_date_beijing = 2026-10-19；10/20 当日净值收盘后（20:00 前后）发布 → 13:45 档不可得",
+ "adjusted_files": {
+  "plan": "qieman_pwc_plan_20261020i_1792475273541_1.json",
+  "nav": "qieman_pwc_nav_20261020i_1792475273388_1.json",
+  "adj": "无（adjustments 端点仍空 body）"
+ }
+}
