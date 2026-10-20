@@ -1,0 +1,1683 @@
+{
+ "date": "2026-10-20",
+ "as_of": "2026-10-20 收盘（正常交易日：A股 15:00 收盘 + 港股复市 16:00 收盘 + 美股未开盘）",
+ "session_type": "normal_trading_day_close",
+ "session_type_note": "档型：正常交易日收盘（A股 + 港股 同开）→ 产 portfolio_close_20261020.json 并计入链式序列",
+ "base_total": 372163.96,
+ "base_file": "portfolio_close_20261019_fix.json",
+ "chain_0pct_row_inserted": false,
+ "restore_rule_used": "mv0_new+pnl",
+ "restore_dev": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "detail_restore_rule": "mv0_new+pnl",
+ "detail_restore_dev": 0.0,
+ "detail_restore_total": 372163.97,
+ "detail_restore_note": "逐券还原式 = mv0_new + est_pnl（机器判据：mv0+pnl 偏差 [3353.19, 272.64, 0.0, 9117.46, -1478.14, 1621.24] 元被排除）",
+ "est_total_pnl": 756.05,
+ "est_total_pct": 0.2,
+ "est_total_pct_raw": 0.2031,
+ "est_total_pnl_best": 756.05,
+ "est_total_pnl_worst": 756.05,
+ "est_total_pnl_high": 756.05,
+ "est_total_pnl_low": 756.05,
+ "band_note": "本档为「准全定价日」——3 行未定价（012348 双行 / 000051，notional 23,006.75 元 = 6.17%），其余全部真实价格/净值 → 上下界 = 点值，未定价缺口另见 unpriced_shadow",
+ "total_mv": 372920.01,
+ "tracks": {
+  "其他/宽基": {
+   "mv0": 93244.3,
+   "mv": 93283.79,
+   "pnl": 39.49,
+   "pct_of_total": 25.01,
+   "day_pct": 0.042
+  },
+  "大消费": {
+   "mv0": 75780.55,
+   "mv": 75660.28,
+   "pnl": -120.27,
+   "pct_of_total": 20.29,
+   "day_pct": -0.159
+  },
+  "现金": {
+   "mv0": 29212.97,
+   "mv": 29212.97,
+   "pnl": 0.0,
+   "pct_of_total": 7.83,
+   "day_pct": 0.0
+  },
+  "A股医药": {
+   "mv0": 81948.06,
+   "mv": 83205.02,
+   "pnl": 1256.96,
+   "pct_of_total": 22.31,
+   "day_pct": 1.534
+  },
+  "美股标普医药": {
+   "mv0": 61040.91,
+   "mv": 60691.9,
+   "pnl": -349.01,
+   "pct_of_total": 16.27,
+   "day_pct": -0.572
+  },
+  "恒生科技": {
+   "mv0": 30937.18,
+   "mv": 30866.06,
+   "pnl": -71.12,
+   "pct_of_total": 8.28,
+   "day_pct": -0.23
+  }
+ },
+ "discipline": {
+  "cut1": {
+   "pct": 0.5,
+   "amount": 1882.46,
+   "triggered_on": "2026-09-29",
+   "settled_on": "2026-09-30"
+  },
+  "cut2": {
+   "pct": 0.5,
+   "amount": 1904.44,
+   "triggered_on": "2026-10-02",
+   "settled_on": "2026-10-08",
+   "targets": [
+    "012348（天弘恒生科技联接A）",
+    "513180（恒生科技ETF华夏）"
+   ],
+   "target_rule": "标的限「纯恒科」口径，不落在中概（513050 / 164906）"
+  },
+  "cumulative_amount": 3786.9,
+  "cumulative_selfcheck": {
+   "sum_of_cuts": 3786.9,
+   "cumulative_amount": 3786.9,
+   "ok": true
+  },
+  "settled_on": [
+   "2026-09-30",
+   "2026-10-08"
+  ],
+  "today_action": {
+   "discipline_cut_today": 0,
+   "reason": "恒生科技 **4,250 破位在案**（收盘 4,045.91 / −4.80%，较 10/16 stale 读数 −3.3355% 扩大），**同一防线本季已触发 2 次（9/29、10/2）、同日只触发一次 → 本档不重复减仓（§3.114c）**；**4,000 观察线未破**（+1.15%，日内低 4,026.90）→ 新防线未触发；中证消费 12,422.96（距 12,100 +2.67%）安全；A股医药反向线新基线起算（板块代理 1.5925% > −1.5%）→ 未触发"
+  },
+  "settle": "两笔均已按净值成交（价值中性，P&L 口径不变）；本档只重算纪律后权重",
+  "hk_after": 27079.16,
+  "cash_after": 32999.87,
+  "weight_after": {
+   "其他/宽基": 25.01,
+   "大消费": 20.29,
+   "现金": 8.85,
+   "A股医药": 22.31,
+   "美股标普医药": 16.27,
+   "恒生科技": 7.26
+  },
+  "basis_note": "累计口径 = 已成交 1,882.46 元 + 已成交 1,904.44 元（§3.123e / §3.125c）；分母为「上一有效估值日基准总资产」×0.5%",
+  "defense": {
+   "hstech_4250": {
+    "close": 4045.91,
+    "line": 4250,
+    "gap_pct": -4.8021,
+    "state": "close_level_break_widened",
+    "action": "no_new_cut_same_line_used_twice"
+   },
+   "hstech_4000": {
+    "close": 4045.91,
+    "line": 4000,
+    "gap_pct": 1.1478,
+    "state": "above_observation_line",
+    "intraday_low": 4026.9
+   },
+   "zz_consume_12100": {
+    "close": 12422.9632,
+    "line": 12100,
+    "gap_pct": 2.6691,
+    "state": "above_lower_line"
+   },
+   "a_med_reverse_1_5pct": {
+    "board_proxy_pct": 1.5925,
+    "line": -1.5,
+    "state": "not_triggered",
+    "baseline_reset_on": "2026-10-19"
+   }
+  }
+ },
+ "med_exposure": 143896.92,
+ "med_pct": 38.59,
+ "threshold_all_med": 6.11,
+ "threshold_a_sh_med": 10.56,
+ "board_med": 1.5925,
+ "leader_med": 1.25,
+ "lag_med": 1.75,
+ "board_detail": {
+  "中证医药": 0.89,
+  "中证医疗": 2.21,
+  "医疗ETF": 2.15,
+  "医药ETF": 1.12,
+  "300医药": 1.25,
+  "中证白酒": -0.6
+ },
+ "idx": {
+  "sh000001": {
+   "name": "上证指数",
+   "close": 3735.3704,
+   "pct": 0.12
+  },
+  "sz399001": {
+   "name": "深证成指",
+   "close": 11801.29,
+   "pct": -0.14
+  },
+  "sz399006": {
+   "name": "创业板指",
+   "close": 2739.203,
+   "pct": -0.26
+  },
+  "sh000300": {
+   "name": "沪深300",
+   "close": 4152.1076,
+   "pct": -0.54
+  },
+  "sh000932": {
+   "name": "中证消费",
+   "close": 12422.9632,
+   "pct": -0.35
+  },
+  "sh000688": {
+   "name": "科创50",
+   "close": 1342.4243,
+   "pct": 1.0
+  },
+  "sz399005": {
+   "name": "中小100",
+   "close": 7391.484,
+   "pct": 0.08
+  }
+ },
+ "hk_mkt": {
+  "HSI": {
+   "name": "恒生指数",
+   "close": 23867.74,
+   "pct": -1.32,
+   "high": 24035.0,
+   "low": 23846.99,
+   "date_field": "2026/10/20",
+   "time": "16:08:42"
+  },
+  "HSTECH": {
+   "name": "恒生科技",
+   "close": 4045.91,
+   "pct": -1.52,
+   "high": 4083.66,
+   "low": 4026.9,
+   "date_field": "2026/10/20",
+   "time": "16:08:42"
+  },
+  "HSCEI": {
+   "name": "恒生国企",
+   "close": 8030.26,
+   "pct": -1.21,
+   "high": 8099.96,
+   "low": 8021.3,
+   "date_field": "2026/10/20",
+   "time": "16:08:42"
+  },
+  "HSHCI": {
+   "name": "恒生医疗保健",
+   "close": 3654.54,
+   "pct": 1.5418,
+   "high": 3695.0,
+   "low": 3569.88,
+   "date_field": "2026/10/20",
+   "time": "16:08:42"
+  },
+  "HSCI": {
+   "name": "恒生综合",
+   "close": 3481.82,
+   "pct": -1.426,
+   "high": 3506.18,
+   "low": 3477.14,
+   "date_field": "2026/10/20",
+   "time": "16:08:42"
+  }
+ },
+ "hk_stocks": [
+  {
+   "code": "00700",
+   "name": "腾讯控股",
+   "eng": "TENCENT",
+   "open": 413.2,
+   "prev": 417.8,
+   "high": 415.6,
+   "low": 406.4,
+   "close": 411.2,
+   "pct": -1.58,
+   "time": "2026/10/20"
+  },
+  {
+   "code": "09988",
+   "name": "阿里巴巴－Ｗ",
+   "eng": "BABA-W",
+   "open": 106.8,
+   "prev": 108.8,
+   "high": 107.1,
+   "low": 104.5,
+   "close": 104.9,
+   "pct": -3.58,
+   "time": "2026/10/20"
+  },
+  {
+   "code": "01810",
+   "name": "小米集团－Ｗ",
+   "eng": "XIAOMI-W",
+   "open": 26.84,
+   "prev": 26.66,
+   "high": 27.46,
+   "low": 26.56,
+   "close": 27.1,
+   "pct": 1.65,
+   "time": "2026/10/20"
+  },
+  {
+   "code": "09618",
+   "name": "京东集团－ＳＷ",
+   "eng": "JD-SW",
+   "open": 105.5,
+   "prev": 106.1,
+   "high": 105.7,
+   "low": 104.0,
+   "close": 104.4,
+   "pct": -1.6,
+   "time": "2026/10/20"
+  },
+  {
+   "code": "03690",
+   "name": "美团－Ｗ",
+   "eng": "MEITUAN-W",
+   "open": 75.05,
+   "prev": 75.7,
+   "high": 76.2,
+   "low": 73.6,
+   "close": 76.1,
+   "pct": 0.53,
+   "time": "2026/10/20"
+  },
+  {
+   "code": "09999",
+   "name": "网易",
+   "eng": "NTES",
+   "open": 197.7,
+   "prev": 197.7,
+   "high": 198.9,
+   "low": 195.1,
+   "close": 195.2,
+   "pct": -1.26,
+   "time": "2026/10/20"
+  },
+  {
+   "code": "01024",
+   "name": "快手－Ｗ",
+   "eng": "KUAISHOU-W",
+   "open": 29.0,
+   "prev": 29.3,
+   "high": 29.0,
+   "low": 28.38,
+   "close": 28.8,
+   "pct": -1.71,
+   "time": "2026/10/20"
+  },
+  {
+   "code": "09888",
+   "name": "百度集团－Ｗ",
+   "eng": "BIDU-W",
+   "open": 77.95,
+   "prev": 79.45,
+   "high": 79.0,
+   "low": 77.4,
+   "close": 78.6,
+   "pct": -1.07,
+   "time": "2026/10/20"
+  },
+  {
+   "code": "01548",
+   "name": "金斯瑞生物－一千",
+   "eng": "GENSCRIPT B-1K",
+   "open": 33.32,
+   "prev": 33.3,
+   "high": 34.96,
+   "low": 32.64,
+   "close": 33.52,
+   "pct": 0.66,
+   "time": "2026/10/20"
+  },
+  {
+   "code": "01211",
+   "name": "比亚迪股份",
+   "eng": "BYD COMPANY",
+   "open": 73.75,
+   "prev": 73.75,
+   "high": 74.4,
+   "low": 73.25,
+   "close": 73.8,
+   "pct": 0.07,
+   "time": "2026/10/20"
+  },
+  {
+   "code": "00981",
+   "name": "中芯国际",
+   "eng": "SMIC",
+   "open": 51.0,
+   "prev": 52.4,
+   "high": 52.85,
+   "low": 50.6,
+   "close": 50.85,
+   "pct": -2.96,
+   "time": "2026/10/20"
+  }
+ ],
+ "active_mult": {
+  "002708": {
+   "name": "大摩健康产业A",
+   "real_pct": 1.2672,
+   "mult_vs_board_med": 0.796,
+   "mult_vs_300med": 1.014,
+   "estimated": false
+  },
+  "161616": {
+   "name": "融通医疗保健",
+   "real_pct": 1.5198,
+   "mult_vs_board_med": 0.954,
+   "mult_vs_300med": 1.216,
+   "estimated": false
+  },
+  "000727": {
+   "name": "融通健康产业",
+   "real_pct": 1.1894,
+   "mult_vs_board_med": 0.747,
+   "mult_vs_300med": 0.952,
+   "estimated": false
+  },
+  "001180": {
+   "name": "广发医药卫生",
+   "real_pct": 1.0624,
+   "mult_vs_board_med": 0.667,
+   "mult_vs_300med": 0.85,
+   "estimated": false
+  },
+  "001551": {
+   "name": "天弘医药100C",
+   "real_pct": 0.8236,
+   "mult_vs_board_med": 0.517,
+   "mult_vs_300med": 0.659,
+   "estimated": false
+  }
+ },
+ "proxy_check": {
+  "012323": {
+   "real": 2.0918,
+   "index": 2.21,
+   "label": "中证医疗",
+   "dev": -0.1182
+  },
+  "000051": {
+   "real": 0.0,
+   "index": -0.54,
+   "label": "沪深300",
+   "dev": 0.54
+  },
+  "000071": {
+   "real": -1.2494,
+   "index": -1.32,
+   "label": "恒生指数(跨市场参考,§3.112i 禁互验)",
+   "dev": 0.0706
+  },
+  "001551": {
+   "real": 0.8236,
+   "index": 0.89,
+   "label": "中证医药(近似代理·中证医药100未入库)",
+   "dev": -0.0664
+  },
+  "001180": {
+   "real": 1.0624,
+   "index": 0.89,
+   "label": "中证医药(近似代理·中证医药卫生未入库)",
+   "dev": 0.1724
+  },
+  "110020": {
+   "real": -0.5337,
+   "index": -0.54,
+   "label": "沪深300",
+   "dev": 0.0063
+  },
+  "012348": {
+   "real": 0.0,
+   "index": -1.52,
+   "label": "恒生科技(跨市场参考,§3.112i 禁互验)",
+   "dev": 1.52
+  }
+ },
+ "structure_order": [
+  {
+   "index": "中证医疗",
+   "pct": 2.21
+  },
+  {
+   "index": "300医药",
+   "pct": 1.25
+  },
+  {
+   "index": "中证医药",
+   "pct": 0.89
+  }
+ ],
+ "hk_split": {
+  "pure": 16386.8,
+  "concept": 14479.26,
+  "broad": 17890.71
+ },
+ "hk_split_pnl": {
+  "pure": -19.2,
+  "concept": -51.92,
+  "broad": -226.19
+ },
+ "hk_split_rows": [
+  {
+   "code": "000071",
+   "name": "恒生ETF联接A",
+   "seg": "broad",
+   "basis": 11604.82,
+   "pct": -1.2494,
+   "pnl": -144.99
+  },
+  {
+   "code": "012348",
+   "name": "天弘恒生科技联接A",
+   "seg": "pure",
+   "basis": 10400.5,
+   "pct": 0.0,
+   "pnl": 0.0
+  },
+  {
+   "code": "000071",
+   "name": "华夏恒生ETF联接(QDII)A",
+   "seg": "broad",
+   "basis": 6370.28,
+   "pct": -1.2495,
+   "pnl": -79.6
+  },
+  {
+   "code": "513050",
+   "name": "中概互联",
+   "seg": "concept",
+   "basis": 5432.4,
+   "pct": -0.994,
+   "pnl": -54.0
+  },
+  {
+   "code": "164906",
+   "name": "交银中证海外中国互联网指数(LOF)A",
+   "seg": "concept",
+   "basis": 4776.39,
+   "pct": 0.0229,
+   "pnl": 1.09
+  },
+  {
+   "code": "164906",
+   "name": "交银中证海外中国互联网A",
+   "seg": "concept",
+   "basis": 4322.39,
+   "pct": 0.0229,
+   "pnl": 0.99
+  },
+  {
+   "code": "012348",
+   "name": "天弘恒生科技ETF联接(QDII)A",
+   "seg": "pure",
+   "basis": 3543.1,
+   "pct": 0.0,
+   "pnl": 0.0
+  },
+  {
+   "code": "513180",
+   "name": "恒指科技",
+   "seg": "pure",
+   "basis": 2462.4,
+   "pct": -0.7797,
+   "pnl": -19.2
+  },
+  {
+   "code": "159920",
+   "name": "恒生ETF华夏",
+   "seg": "broad",
+   "basis": 141.8,
+   "pct": -1.1283,
+   "pnl": -1.6
+  }
+ ],
+ "hk_total": 48756.77,
+ "hk_total_pct": 13.07,
+ "track_layer_hk_pct": 8.28,
+ "qdii_applied": [
+  {
+   "code": "000369",
+   "name": "广发全球医疗保健指数A",
+   "nav_date": "2026-10-19",
+   "nav": 2.631,
+   "pct": -0.5669
+  },
+  {
+   "code": "016280",
+   "name": "广发全球医疗保健指数C",
+   "nav_date": "2026-10-19",
+   "nav": 2.585,
+   "pct": -0.5769
+  },
+  {
+   "code": "000369",
+   "name": "广发全球医疗保健指数(QDII)A",
+   "nav_date": "2026-10-19",
+   "nav": 2.631,
+   "pct": -0.5669
+  },
+  {
+   "code": "016280",
+   "name": "广发全球医疗保健指数(QDII)C",
+   "nav_date": "2026-10-19",
+   "nav": 2.585,
+   "pct": -0.5769
+  },
+  {
+   "code": "164906",
+   "name": "交银中证海外中国互联网指数(LOF)A",
+   "nav_date": "2026-10-19",
+   "nav": 0.8727,
+   "pct": 0.0229
+  },
+  {
+   "code": "164906",
+   "name": "交银中证海外中国互联网A",
+   "nav_date": "2026-10-19",
+   "nav": 0.8727,
+   "pct": 0.0229
+  }
+ ],
+ "qdii_pending": {
+  "as_of": "2026-10-20 20:00",
+  "booked_this_session": {
+   "desc": "QDII 000369/016280 自基准净值日 10/16 推进至 **10/19**（覆盖 10/16 → 10/19 共 1 个美股交易日区间）＝ 前档登记的「US 10/19 挂账段」本档按真实净值核销",
+   "nav_date": "2026-10-19",
+   "nav": {
+    "000369": 2.631,
+    "016280": 2.585
+   },
+   "pct": {
+    "000369": -0.5669,
+    "016280": -0.5769
+   },
+   "amount": -349.01,
+   "pred_range": {
+    "low": -313.14,
+    "mid": -250.51,
+    "high": -208.76
+   },
+   "coef_vs_IYH_1019": {
+    "000369": 0.9946,
+    "016280": 1.0121
+   },
+   "coef_vs_IYH_1016": {
+    "000369": 1.4918,
+    "016280": 1.5182
+   },
+   "mapping_ambiguity": "净值日 10/19 若映射 US 10/19（IYH −0.57%）→ 系数 [0.9946, 1.0121]；若映射 US 10/16（IYH −0.38%）→ 系数 [1.4918, 1.5182]。**两种映射不可能同时成立 → 传导系数继续 `pending`**（§3.118a）",
+   "suspect_placeholder": {
+    "000369": true,
+    "016280": true
+   },
+   "note": "⚠️ 基准行 10/16 净值 2.6460 / 2.6000 与 10/15 完全相同（0.00%），而 IYH 同期 −0.38% → **10/16 净值疑为占位**（10/19 档已登记 `suspect_placeholder`）。本档新净值 −0.567% / −0.580% 若按 IYH 10/19 计系数 ≈ 1.00（越区间上界 0.90）、若解释为「弥补 10/16 占位」则真实两日复合应为 −0.38%×0.72 + −0.57% ≈ −0.84% → **两种口径均越界**"
+  },
+  "remaining_pending": {
+   "window": [
+    "2026-10-20"
+   ],
+   "estimate_low": null,
+   "estimate_high": null,
+   "note": "US 10/20 尚未开盘（北京 20:00 = 美东 08:00）→ 本档**无新增可量化挂账段**，按规则只登记不给数值（§3.120c）"
+  },
+  "unpriced_012348": {
+   "mv": 13943.6,
+   "shadow_est_pnl": -180.15,
+   "note": "场外港股联接净值 10/20 未出库 → 计入恒生科技腿的「未定价缺口」"
+  },
+  "unpriced_000051": {
+   "mv": 9063.15,
+   "shadow_est_pnl": -47.96,
+   "note": "沪深300联接 10/20 净值未出库 → 计入其他/宽基的「未定价缺口」"
+  }
+ },
+ "qdii_mv": 60691.9,
+ "lof_164906_mv": 9098.78,
+ "detail": [
+  {
+   "account": "stock-brokerage",
+   "name": "广联达",
+   "code": "002410.SZ",
+   "track": "其他/宽基",
+   "mv": 38617.6,
+   "shares": "4480",
+   "price_src": "场内收盘 2026-10-20 8.57（基准 8.43）",
+   "est_pct": 1.6608,
+   "est_pnl": 627.22,
+   "est_pnl_low": -268.83,
+   "mv0": 37900.82,
+   "mv0_new": 37766.39,
+   "est_pct_best": 0.9456,
+   "est_pnl_best": 358.39,
+   "est_pct_worst": 0.9456,
+   "est_pnl_worst": 358.39
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "汇添富中证主要消费ETF联接A",
+   "code": "000248",
+   "track": "大消费",
+   "mv": 26584.85,
+   "shares": "14687.76",
+   "price_src": "净值 2026-10-20 (1.8261)，基准净值日 2026-10-19",
+   "est_pct": -0.3274,
+   "est_pnl": -88.1,
+   "est_pnl_low": -105.75,
+   "mv0": 26529.03,
+   "mv0_new": 26909.43,
+   "est_pct_best": 1.3922,
+   "est_pnl_best": 370.11,
+   "est_pct_worst": 1.3922,
+   "est_pnl_worst": 370.11,
+   "fix_applied": true
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "现金",
+   "code": "",
+   "track": "现金",
+   "mv": 24114.4,
+   "shares": "",
+   "price_src": "现金",
+   "est_pct": 0.0,
+   "est_pnl": 0.0,
+   "est_pnl_low": 0.0,
+   "mv0": 24114.4,
+   "mv0_new": 24114.4,
+   "est_pct_best": 0.0,
+   "est_pnl_best": 0.0,
+   "est_pct_worst": 0.0,
+   "est_pnl_worst": 0.0
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "富国消费主题混合A",
+   "code": "519915",
+   "track": "大消费",
+   "mv": 20742.81,
+   "shares": "11679.51",
+   "price_src": "净值 2026-10-20 (1.805)，基准净值日 2026-10-19",
+   "est_pct": 0.0,
+   "est_pnl": 0.0,
+   "est_pnl_low": -11.68,
+   "mv0": 21396.87,
+   "mv0_new": 21081.51,
+   "est_pct_best": -0.0563,
+   "est_pnl_best": -11.68,
+   "est_pct_worst": -0.0563,
+   "est_pnl_worst": -11.68,
+   "fix_applied": true
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "华宝中证医疗联接C",
+   "code": "012323",
+   "track": "A股医药",
+   "mv": 20870.89,
+   "shares": "34819.64",
+   "price_src": "净值 2026-10-20 (0.5759)，基准净值日 2026-10-19",
+   "est_pct": 2.0918,
+   "est_pnl": 410.87,
+   "est_pnl_low": -449.17,
+   "mv0": 20933.57,
+   "mv0_new": 19641.76,
+   "est_pct_best": 2.6478,
+   "est_pnl_best": 539.71,
+   "est_pct_worst": 2.6478,
+   "est_pnl_worst": 539.71
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "大摩健康产业混合A",
+   "code": "002708",
+   "track": "A股医药",
+   "mv": 18819.02,
+   "shares": "10031.46",
+   "price_src": "净值 2026-10-20 (1.838)，基准净值日 2026-10-19",
+   "est_pct": 1.2672,
+   "est_pnl": 230.72,
+   "est_pnl_low": -431.34,
+   "mv0": 20865.44,
+   "mv0_new": 18207.1,
+   "est_pct_best": -2.2408,
+   "est_pnl_best": -431.34,
+   "est_pct_worst": -2.2408,
+   "est_pnl_worst": -431.34,
+   "fix_applied": true
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "融通医疗保健行业混合A/B",
+   "code": "161616",
+   "track": "A股医药",
+   "mv": 15503.19,
+   "shares": "9294.48",
+   "price_src": "净值 2026-10-20 (1.67)，基准净值日 2026-10-19",
+   "est_pct": 1.5198,
+   "est_pnl": 232.37,
+   "est_pnl_low": -158.01,
+   "mv0": 17529.38,
+   "mv0_new": 15289.41,
+   "est_pct_best": 1.0442,
+   "est_pnl_best": 158.0,
+   "est_pct_worst": 1.0442,
+   "est_pnl_worst": 158.0,
+   "fix_applied": true
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "广发全球医疗保健指数A",
+   "code": "000369",
+   "track": "美股标普医药",
+   "mv": 17260.15,
+   "shares": "6713.40",
+   "price_src": "新净值 2026-10-19 (2.631) 真实兑现（基准为 2026-10-16，跨 1 个交易日）｜Δ -0.5669%",
+   "est_pct": -0.5669,
+   "est_pnl": -100.7,
+   "est_pnl_low": -107.43,
+   "mv0": 17327.29,
+   "mv0_new": 17763.66,
+   "est_pct_best": 0.0,
+   "est_pnl_best": 0.0,
+   "est_pct_worst": 0.0,
+   "est_pnl_worst": 0.0
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "广发全球医疗保健指数C",
+   "code": "016280",
+   "track": "美股标普医药",
+   "mv": 16242.02,
+   "shares": "6424.85",
+   "price_src": "新净值 2026-10-19 (2.585) 真实兑现（基准为 2026-10-16，跨 1 个交易日）｜Δ -0.5769%",
+   "est_pct": -0.5769,
+   "est_pnl": -96.37,
+   "est_pnl_low": -109.25,
+   "mv0": 16306.27,
+   "mv0_new": 16704.61,
+   "est_pct_best": 0.0,
+   "est_pnl_best": 0.0,
+   "est_pct_worst": 0.0,
+   "est_pnl_worst": 0.0
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "广发全球医疗保健指数(QDII)A",
+   "code": "000369",
+   "track": "美股标普医药",
+   "mv": 13209.23,
+   "shares": "5137.78",
+   "price_src": "新净值 2026-10-19 (2.631) 真实兑现（基准为 2026-10-16，跨 1 个交易日）｜Δ -0.5669%",
+   "est_pct": -0.5669,
+   "est_pnl": -77.07,
+   "est_pnl_low": -82.22,
+   "mv0": 13260.61,
+   "mv0_new": 13594.56,
+   "est_pct_best": 0.0,
+   "est_pnl_best": 0.0,
+   "est_pct_worst": 0.0,
+   "est_pnl_worst": 0.0
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "广发全球医疗保健指数(QDII)C",
+   "code": "016280",
+   "track": "美股标普医药",
+   "mv": 12618.69,
+   "shares": "4991.57",
+   "price_src": "新净值 2026-10-19 (2.585) 真实兑现（基准为 2026-10-16，跨 1 个交易日）｜Δ -0.5769%",
+   "est_pct": -0.5769,
+   "est_pnl": -74.87,
+   "est_pnl_low": -84.88,
+   "mv0": 12668.61,
+   "mv0_new": 12978.08,
+   "est_pct_best": 0.0,
+   "est_pnl_best": 0.0,
+   "est_pct_worst": 0.0,
+   "est_pnl_worst": 0.0
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "消费ETF添富",
+   "code": "159928.SZ",
+   "track": "大消费",
+   "mv": 12567.8,
+   "shares": "19100",
+   "price_src": "场内收盘 2026-10-20 0.664（基准 0.666）",
+   "est_pct": -0.3003,
+   "est_pnl": -38.2,
+   "est_pnl_low": -190.99,
+   "mv0": 12529.59,
+   "mv0_new": 12720.6,
+   "est_pct_best": 1.7002,
+   "est_pnl_best": 210.11,
+   "est_pct_worst": 1.7002,
+   "est_pnl_worst": 210.11
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "恒生ETF联接A",
+   "code": "000071",
+   "track": "其他/宽基",
+   "mv": 12056.08,
+   "shares": "8145.45",
+   "price_src": "净值 2026-10-20 (1.4069)，基准净值日 2026-10-19",
+   "est_pct": -1.2494,
+   "est_pnl": -144.99,
+   "est_pnl_low": -34.21,
+   "mv0": 11945.3,
+   "mv0_new": 11604.82,
+   "est_pct_best": 0.2765,
+   "est_pnl_best": 32.59,
+   "est_pct_worst": 0.2765,
+   "est_pnl_worst": 32.59
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "天弘恒生科技联接A",
+   "code": "012348",
+   "track": "恒生科技",
+   "mv": 11242.57,
+   "shares": "18588.91",
+   "price_src": "净值未推进(nd=2026-10-19，基准 2026-10-19) → 计 0（基准已含）",
+   "est_pct": 0.0,
+   "est_pnl": 0.0,
+   "est_pnl_low": -39.05,
+   "mv0": 11105.02,
+   "mv0_new": 10400.5,
+   "est_pct_best": 0.0172,
+   "est_pnl_best": 1.85,
+   "est_pct_worst": 0.0172,
+   "est_pnl_worst": 1.85
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "华夏沪深300ETF联接A",
+   "code": "000051",
+   "track": "其他/宽基",
+   "mv": 9830.44,
+   "shares": "5637.69",
+   "price_src": "净值未推进(nd=2026-10-19，基准 2026-10-19) → 计 0（基准已含）",
+   "est_pct": 0.0,
+   "est_pnl": 0.0,
+   "est_pnl_low": 15.79,
+   "mv0": 9758.84,
+   "mv0_new": 9063.15,
+   "est_pct_best": 0.1691,
+   "est_pnl_best": 15.79,
+   "est_pct_worst": 0.1691,
+   "est_pnl_worst": 15.79,
+   "fix_applied": true
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "天弘中证证券保险A",
+   "code": "001552",
+   "track": "其他/宽基",
+   "mv": 9215.36,
+   "shares": "8853.26",
+   "price_src": "净值 2026-10-20 (0.9826)，基准净值日 2026-10-19",
+   "est_pct": -1.5628,
+   "est_pnl": -138.11,
+   "est_pnl_low": -154.93,
+   "mv0": 9158.69,
+   "mv0_new": 8837.32,
+   "est_pct_best": 0.6105,
+   "est_pnl_best": 54.01,
+   "est_pct_worst": 0.6105,
+   "est_pnl_worst": 54.01
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "广发医药卫生ETF联接A",
+   "code": "001180",
+   "track": "A股医药",
+   "mv": 8914.98,
+   "shares": "10933.26",
+   "price_src": "净值 2026-10-20 (0.7896)，基准净值日 2026-10-19",
+   "est_pct": 1.0624,
+   "est_pnl": 90.75,
+   "est_pnl_low": -215.39,
+   "mv0": 8927.01,
+   "mv0_new": 8542.15,
+   "est_pct_best": 2.87,
+   "est_pnl_best": 246.0,
+   "est_pct_worst": 2.87,
+   "est_pnl_worst": 246.0
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "摩根士丹利健康产业混合A",
+   "code": "002708",
+   "track": "A股医药",
+   "mv": 7046.76,
+   "shares": "3756.27",
+   "price_src": "净值 2026-10-20 (1.838)，基准净值日 2026-10-19",
+   "est_pct": 1.2672,
+   "est_pnl": 86.39,
+   "est_pnl_low": -161.52,
+   "mv0": 7813.04,
+   "mv0_new": 6817.63,
+   "est_pct_best": -2.2408,
+   "est_pnl_best": -161.52,
+   "est_pct_worst": -2.2408,
+   "est_pnl_worst": -161.52,
+   "fix_applied": true
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "广发中证养老产业A",
+   "code": "000968",
+   "track": "大消费",
+   "mv": 6773.32,
+   "shares": "8179.35",
+   "price_src": "净值 2026-10-20 (0.8172)，基准净值日 2026-10-19",
+   "est_pct": 0.6156,
+   "est_pnl": 40.9,
+   "est_pnl_low": -129.24,
+   "mv0": 6722.61,
+   "mv0_new": 6643.27,
+   "est_pct_best": 1.6255,
+   "est_pnl_best": 107.15,
+   "est_pct_worst": 1.6255,
+   "est_pnl_worst": 107.15
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "华夏恒生ETF联接(QDII)A",
+   "code": "000071",
+   "track": "其他/宽基",
+   "mv": 6617.99,
+   "shares": "4471.31",
+   "price_src": "净值 2026-10-20 (1.4069)，基准净值日 2026-10-19",
+   "est_pct": -1.2495,
+   "est_pnl": -79.6,
+   "est_pnl_low": -18.79,
+   "mv0": 6557.18,
+   "mv0_new": 6370.28,
+   "est_pct_best": 0.2764,
+   "est_pnl_best": 17.88,
+   "est_pct_worst": 0.2764,
+   "est_pnl_worst": 17.88
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "富国清洁能源产业灵活配置混合A",
+   "code": "005368",
+   "track": "其他/宽基",
+   "mv": 6271.2,
+   "shares": "5938.07",
+   "price_src": "净值 2026-10-20 (0.961)，基准净值日 2026-10-19",
+   "est_pct": -0.8154,
+   "est_pnl": -46.91,
+   "est_pnl_low": -87.29,
+   "mv0": 6245.66,
+   "mv0_new": 5753.4,
+   "est_pct_best": 0.1956,
+   "est_pnl_best": 11.87,
+   "est_pct_worst": 0.1956,
+   "est_pnl_worst": 11.87
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "医疗ETF",
+   "code": "512170.SH",
+   "track": "A股医药",
+   "mv": 6194.4,
+   "shares": "17800",
+   "price_src": "场内收盘 2026-10-20 0.333（基准 0.326）",
+   "est_pct": 2.1472,
+   "est_pnl": 124.6,
+   "est_pnl_low": -142.4,
+   "mv0": 6212.2,
+   "mv0_new": 5802.8,
+   "est_pct_best": 2.9499,
+   "est_pnl_best": 178.0,
+   "est_pct_worst": 2.9499,
+   "est_pnl_worst": 178.0
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "中概互联",
+   "code": "513050.SH",
+   "track": "恒生科技",
+   "mv": 5670.0,
+   "shares": "5400",
+   "price_src": "场内收盘 2026-10-20 0.996（基准 1.006）",
+   "est_pct": -0.994,
+   "est_pnl": -54.0,
+   "est_pnl_low": -27.0,
+   "mv0": 5562.0,
+   "mv0_new": 5432.4,
+   "est_pct_best": -0.0993,
+   "est_pnl_best": -5.4,
+   "est_pct_worst": -0.0993,
+   "est_pnl_worst": -5.4
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "融通健康产业灵活配置A/B",
+   "code": "000727",
+   "track": "A股医药",
+   "mv": 4978.15,
+   "shares": "2050.31",
+   "price_src": "净值 2026-10-20 (2.467)，基准净值日 2026-10-19",
+   "est_pct": 1.1894,
+   "est_pnl": 59.45,
+   "est_pnl_low": -14.35,
+   "mv0": 5298.0,
+   "mv0_new": 4998.66,
+   "est_pct_best": 1.2038,
+   "est_pnl_best": 59.46,
+   "est_pct_worst": 1.2038,
+   "est_pnl_worst": 59.46,
+   "fix_applied": true
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "易方达沪深300ETF联接A",
+   "code": "110020",
+   "track": "其他/宽基",
+   "mv": 5107.05,
+   "shares": "2737.19",
+   "price_src": "净值 2026-10-20 (1.7148)，基准净值日 2026-10-19",
+   "est_pct": -0.5337,
+   "est_pnl": -25.18,
+   "est_pnl_low": -81.84,
+   "mv0": 5078.31,
+   "mv0_new": 4718.92,
+   "est_pct_best": 0.1338,
+   "est_pnl_best": 6.3,
+   "est_pct_worst": 0.1338,
+   "est_pnl_worst": 6.3,
+   "fix_applied": true
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "交银中证海外中国互联网指数(LOF)A",
+   "code": "164906",
+   "track": "恒生科技",
+   "mv": 4895.18,
+   "shares": "5474.37",
+   "price_src": "新净值 2026-10-19 (0.8727) 真实兑现（基准为 2026-10-16，跨 1 个交易日）｜Δ +0.0229%",
+   "est_pct": 0.0229,
+   "est_pnl": 1.09,
+   "est_pnl_low": -61.87,
+   "mv0": 4943.36,
+   "mv0_new": 4776.39,
+   "est_pct_best": -0.6586,
+   "est_pnl_best": -31.75,
+   "est_pct_worst": -0.6586,
+   "est_pnl_worst": -31.75
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "余额宝",
+   "code": "",
+   "track": "现金",
+   "mv": 4858.02,
+   "shares": "",
+   "price_src": "现金",
+   "est_pct": 0.0,
+   "est_pnl": 0.0,
+   "est_pnl_low": 0.0,
+   "mv0": 4858.02,
+   "mv0_new": 4858.02,
+   "est_pct_best": 0.0,
+   "est_pnl_best": 0.0,
+   "est_pct_worst": 0.0,
+   "est_pnl_worst": 0.0
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "交银中证海外中国互联网A",
+   "code": "164906",
+   "track": "恒生科技",
+   "mv": 4429.89,
+   "shares": "4954.03",
+   "price_src": "新净值 2026-10-19 (0.8727) 真实兑现（基准为 2026-10-16，跨 1 个交易日）｜Δ +0.0229%",
+   "est_pct": 0.0229,
+   "est_pnl": 0.99,
+   "est_pnl_low": -55.98,
+   "mv0": 4473.49,
+   "mv0_new": 4322.39,
+   "est_pct_best": -0.6587,
+   "est_pnl_best": -28.74,
+   "est_pct_worst": -0.6587,
+   "est_pnl_worst": -28.74
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "广发中证全指金融地产联接A",
+   "code": "001469",
+   "track": "其他/宽基",
+   "mv": 4348.62,
+   "shares": "3465.59",
+   "price_src": "净值 2026-10-20 (1.2423)，基准净值日 2026-10-19",
+   "est_pct": -1.0907,
+   "est_pnl": -47.48,
+   "est_pnl_low": -25.64,
+   "mv0": 4326.09,
+   "mv0_new": 4352.78,
+   "est_pct_best": 1.0537,
+   "est_pnl_best": 45.05,
+   "est_pct_worst": 1.0537,
+   "est_pnl_worst": 45.05
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "天弘恒生科技ETF联接(QDII)A",
+   "code": "012348",
+   "track": "恒生科技",
+   "mv": 3829.97,
+   "shares": "6332.62",
+   "price_src": "净值未推进(nd=2026-10-19，基准 2026-10-19) → 计 0（基准已含）",
+   "est_pct": 0.0,
+   "est_pnl": 0.0,
+   "est_pnl_low": -13.3,
+   "mv0": 3783.11,
+   "mv0_new": 3543.1,
+   "est_pct_best": 0.0171,
+   "est_pnl_best": 0.63,
+   "est_pct_worst": 0.0171,
+   "est_pnl_worst": 0.63
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "汇添富文体娱乐主题A",
+   "code": "004424",
+   "track": "大消费",
+   "mv": 3724.79,
+   "shares": "2199.59",
+   "price_src": "净值 2026-10-20 (1.6666)，基准净值日 2026-10-19",
+   "est_pct": -0.7799,
+   "est_pnl": -28.81,
+   "est_pnl_low": -26.17,
+   "mv0": 3703.67,
+   "mv0_new": 3694.65,
+   "est_pct_best": 0.7826,
+   "est_pnl_best": 28.59,
+   "est_pct_worst": 0.7826,
+   "est_pnl_worst": 28.59
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "通威股份",
+   "code": "600438.SH",
+   "track": "其他/宽基",
+   "mv": 3516.0,
+   "shares": "300",
+   "price_src": "场内收盘 2026-10-20 11.25（基准 11.55）",
+   "est_pct": -2.5974,
+   "est_pnl": -90.0,
+   "est_pnl_low": -138.0,
+   "mv0": 3474.0,
+   "mv0_new": 3465.0,
+   "est_pct_best": 4.065,
+   "est_pnl_best": 135.0,
+   "est_pct_worst": 4.065,
+   "est_pnl_worst": 135.0
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "富国消费主题混合A",
+   "code": "519915",
+   "track": "大消费",
+   "mv": 2833.69,
+   "shares": "1595.55",
+   "price_src": "净值 2026-10-20 (1.805)，基准净值日 2026-10-19",
+   "est_pct": -0.0001,
+   "est_pnl": -0.0,
+   "est_pnl_low": -1.6,
+   "mv0": 2923.05,
+   "mv0_new": 2879.97,
+   "est_pct_best": -0.0563,
+   "est_pnl_best": -1.6,
+   "est_pct_worst": -0.0563,
+   "est_pnl_worst": -1.6,
+   "fix_applied": true
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "天弘中证医药100指数C",
+   "code": "001551",
+   "track": "A股医药",
+   "mv": 2750.22,
+   "shares": "3697.03",
+   "price_src": "净值 2026-10-20 (0.7223)，基准净值日 2026-10-19",
+   "est_pct": 0.8236,
+   "est_pnl": 21.81,
+   "est_pnl_low": -64.7,
+   "mv0": 2756.14,
+   "mv0_new": 2648.55,
+   "est_pct_best": 2.7429,
+   "est_pnl_best": 73.94,
+   "est_pct_worst": 2.7429,
+   "est_pnl_worst": 73.94
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "恒指科技",
+   "code": "513180.SH",
+   "track": "恒生科技",
+   "mv": 2678.4,
+   "shares": "4800",
+   "price_src": "场内收盘 2026-10-20 0.509（基准 0.513）",
+   "est_pct": -0.7797,
+   "est_pnl": -19.2,
+   "est_pnl_low": -14.4,
+   "mv0": 2649.6,
+   "mv0_new": 2462.4,
+   "est_pct_best": -0.3731,
+   "est_pnl_best": -9.6,
+   "est_pct_worst": -0.3731,
+   "est_pnl_worst": -9.6
+  },
+  {
+   "account": "jasy-alipay-fund",
+   "name": "汇添富中证主要消费联接A",
+   "code": "000248",
+   "track": "大消费",
+   "mv": 1828.79,
+   "shares": "1010.38",
+   "price_src": "净值 2026-10-20 (1.8261)，基准净值日 2026-10-19",
+   "est_pct": -0.3276,
+   "est_pnl": -6.06,
+   "est_pnl_low": -7.27,
+   "mv0": 1824.95,
+   "mv0_new": 1851.12,
+   "est_pct_best": 1.3921,
+   "est_pnl_best": 25.46,
+   "est_pct_worst": 1.3921,
+   "est_pnl_worst": 25.46,
+   "fix_applied": true
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "100红利",
+   "code": "515180.SH",
+   "track": "其他/宽基",
+   "mv": 996.1,
+   "shares": "700",
+   "price_src": "场内收盘 2026-10-20 1.372（基准 1.39）",
+   "est_pct": -1.295,
+   "est_pnl": -12.6,
+   "est_pnl_low": -2.1,
+   "mv0": 988.4,
+   "mv0_new": 973.0,
+   "est_pct_best": 1.4316,
+   "est_pnl_best": 14.0,
+   "est_pct_worst": 1.4316,
+   "est_pnl_worst": 14.0
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "余额宝",
+   "code": "",
+   "track": "现金",
+   "mv": 240.55,
+   "shares": "",
+   "price_src": "现金",
+   "est_pct": 0.0,
+   "est_pnl": 0.0,
+   "est_pnl_low": 0.0,
+   "mv0": 240.55,
+   "mv0_new": 240.55,
+   "est_pct_best": 0.0,
+   "est_pnl_best": 0.0,
+   "est_pct_worst": 0.0,
+   "est_pnl_worst": 0.0
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "恒生ETF华夏",
+   "code": "159920.SZ",
+   "track": "其他/宽基",
+   "mv": 147.3,
+   "shares": "100",
+   "price_src": "场内收盘 2026-10-20 1.402（基准 1.418）",
+   "est_pct": -1.1283,
+   "est_pnl": -1.6,
+   "est_pnl_low": -0.7,
+   "mv0": 146.0,
+   "mv0_new": 141.8,
+   "est_pct_best": 0.0693,
+   "est_pnl_best": 0.1,
+   "est_pct_worst": 0.0693,
+   "est_pnl_worst": 0.1
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "证券ETF",
+   "code": "512880.SH",
+   "track": "其他/宽基",
+   "mv": 106.9,
+   "shares": "100",
+   "price_src": "场内收盘 2026-10-20 1.015（基准 1.033）",
+   "est_pct": -1.7425,
+   "est_pnl": -1.8,
+   "est_pnl_low": -1.9,
+   "mv0": 106.5,
+   "mv0_new": 103.3,
+   "est_pct_best": 0.3902,
+   "est_pnl_best": 0.4,
+   "est_pct_worst": 0.3902,
+   "est_pnl_worst": 0.4
+  },
+  {
+   "account": "stock-brokerage",
+   "name": "传媒ETF",
+   "code": "512980.SH",
+   "track": "其他/宽基",
+   "mv": 83.6,
+   "shares": "100",
+   "price_src": "场内收盘 2026-10-20 0.796（基准 0.79）",
+   "est_pct": 0.7595,
+   "est_pnl": 0.6,
+   "est_pnl_low": -1.1,
+   "mv0": 81.3,
+   "mv0_new": 79.0,
+   "est_pct_best": -0.6289,
+   "est_pnl_best": -0.5,
+   "est_pct_worst": -0.6289,
+   "est_pnl_worst": -0.5
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "泓德裕祥债券A",
+   "code": "002742",
+   "track": "其他/宽基",
+   "mv": 9.44,
+   "shares": "7.44",
+   "price_src": "净值 2026-10-20 (1.2693)，基准净值日 2026-10-19",
+   "est_pct": -0.1734,
+   "est_pnl": -0.02,
+   "est_pnl_low": -0.02,
+   "mv0": 9.4,
+   "mv0_new": 9.46,
+   "est_pct_best": 0.172,
+   "est_pnl_best": 0.02,
+   "est_pct_worst": 0.172,
+   "est_pnl_worst": 0.02,
+   "fix_applied": true
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "富国中证红利指数增强A",
+   "code": "100032",
+   "track": "其他/宽基",
+   "mv": 4.75,
+   "shares": "4.91",
+   "price_src": "净值 2026-10-20 (0.963)，基准净值日 2026-10-19",
+   "est_pct": -0.8736,
+   "est_pnl": -0.04,
+   "est_pnl_low": -0.01,
+   "mv0": 4.71,
+   "mv0_new": 4.77,
+   "est_pct_best": 0.6861,
+   "est_pnl_best": 0.03,
+   "est_pct_worst": 0.6861,
+   "est_pnl_worst": 0.03,
+   "fix_applied": true
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "广发中证传媒ETF联接A",
+   "code": "004752",
+   "track": "其他/宽基",
+   "mv": 0.95,
+   "shares": "1.14",
+   "price_src": "净值 2026-10-20 (0.7979)，基准净值日 2026-10-19",
+   "est_pct": -0.0433,
+   "est_pnl": -0.0,
+   "est_pnl_low": -0.01,
+   "mv0": 0.93,
+   "mv0_new": 0.91,
+   "est_pct_best": 0.0,
+   "est_pnl_best": -0.0,
+   "est_pct_worst": 0.0,
+   "est_pnl_worst": -0.0
+  },
+  {
+   "account": "sean-alipay-fund",
+   "name": "帮你投-锐意进取",
+   "code": "",
+   "track": "其他/宽基",
+   "mv": 0.0,
+   "shares": "",
+   "price_src": "现金",
+   "est_pct": 0.0,
+   "est_pnl": 0.0,
+   "est_pnl_low": 0.0,
+   "mv0": 0.0,
+   "mv0_new": 0.0,
+   "est_pct_best": 0.0,
+   "est_pnl_best": 0.0,
+   "est_pct_worst": 0.0,
+   "est_pnl_worst": 0.0
+  }
+ ],
+ "nav_today": [
+  {
+   "code": "000248",
+   "name": "汇添富中证主要消费ETF联接A",
+   "nav": 1.8261,
+   "pct": -0.3274
+  },
+  {
+   "code": "519915",
+   "name": "富国消费主题混合A",
+   "nav": 1.805,
+   "pct": 0.0
+  },
+  {
+   "code": "012323",
+   "name": "华宝中证医疗联接C",
+   "nav": 0.5759,
+   "pct": 2.0918
+  },
+  {
+   "code": "002708",
+   "name": "大摩健康产业混合A",
+   "nav": 1.838,
+   "pct": 1.2672
+  },
+  {
+   "code": "161616",
+   "name": "融通医疗保健行业混合A/B",
+   "nav": 1.67,
+   "pct": 1.5198
+  },
+  {
+   "code": "000071",
+   "name": "恒生ETF联接A",
+   "nav": 1.4069,
+   "pct": -1.2494
+  },
+  {
+   "code": "001552",
+   "name": "天弘中证证券保险A",
+   "nav": 0.9826,
+   "pct": -1.5628
+  },
+  {
+   "code": "001180",
+   "name": "广发医药卫生ETF联接A",
+   "nav": 0.7896,
+   "pct": 1.0624
+  },
+  {
+   "code": "002708",
+   "name": "摩根士丹利健康产业混合A",
+   "nav": 1.838,
+   "pct": 1.2672
+  },
+  {
+   "code": "000968",
+   "name": "广发中证养老产业A",
+   "nav": 0.8172,
+   "pct": 0.6156
+  },
+  {
+   "code": "000071",
+   "name": "华夏恒生ETF联接(QDII)A",
+   "nav": 1.4069,
+   "pct": -1.2495
+  },
+  {
+   "code": "005368",
+   "name": "富国清洁能源产业灵活配置混合A",
+   "nav": 0.961,
+   "pct": -0.8154
+  },
+  {
+   "code": "000727",
+   "name": "融通健康产业灵活配置A/B",
+   "nav": 2.467,
+   "pct": 1.1894
+  },
+  {
+   "code": "110020",
+   "name": "易方达沪深300ETF联接A",
+   "nav": 1.7148,
+   "pct": -0.5337
+  },
+  {
+   "code": "001469",
+   "name": "广发中证全指金融地产联接A",
+   "nav": 1.2423,
+   "pct": -1.0907
+  },
+  {
+   "code": "004424",
+   "name": "汇添富文体娱乐主题A",
+   "nav": 1.6666,
+   "pct": -0.7799
+  },
+  {
+   "code": "519915",
+   "name": "富国消费主题混合A",
+   "nav": 1.805,
+   "pct": -0.0001
+  },
+  {
+   "code": "001551",
+   "name": "天弘中证医药100指数C",
+   "nav": 0.7223,
+   "pct": 0.8236
+  },
+  {
+   "code": "000248",
+   "name": "汇添富中证主要消费联接A",
+   "nav": 1.8261,
+   "pct": -0.3276
+  },
+  {
+   "code": "002742",
+   "name": "泓德裕祥债券A",
+   "nav": 1.2693,
+   "pct": -0.1734
+  },
+  {
+   "code": "100032",
+   "name": "富国中证红利指数增强A",
+   "nav": 0.963,
+   "pct": -0.8736
+  },
+  {
+   "code": "004752",
+   "name": "广发中证传媒ETF联接A",
+   "nav": 0.7979,
+   "pct": -0.0433
+  }
+ ],
+ "unpriced": [
+  {
+   "code": "012348",
+   "name": "天弘恒生科技联接A",
+   "mv": 10400.5,
+   "reason": "净值未推进(nd=2026-10-19，基准 2026-10-19) → 计 0（基准已含）"
+  },
+  {
+   "code": "000051",
+   "name": "华夏沪深300ETF联接A",
+   "mv": 9063.15,
+   "reason": "净值未推进(nd=2026-10-19，基准 2026-10-19) → 计 0（基准已含）"
+  },
+  {
+   "code": "012348",
+   "name": "天弘恒生科技ETF联接(QDII)A",
+   "mv": 3543.1,
+   "reason": "净值未推进(nd=2026-10-19，基准 2026-10-19) → 计 0（基准已含）"
+  }
+ ],
+ "unpriced_total": 23006.75,
+ "priceable_total": 349913.26,
+ "priceable_pct": 93.83,
+ "unpriced_shadow": {
+  "rows": [
+   {
+    "code": "012348",
+    "mv": 13943.6,
+    "proxy_pct": -1.29,
+    "est_pnl": -180.15,
+    "note": "恒生科技 −1.52% × 0.85（联接跟踪折扣）；实际净值 10/21 出库"
+   },
+   {
+    "code": "000051",
+    "mv": 9063.15,
+    "proxy_pct": -0.53,
+    "est_pnl": -47.96,
+    "note": "沪深300 −0.54% × 0.98（联接跟踪折扣）；10/20 净值未出库"
+   },
+   {
+    "code": "164906",
+    "mv": 9098.78,
+    "proxy_pct": 0.0,
+    "est_pnl": 0.0,
+    "note": "LOF 净值 T+1，10/20 净值未出库；其 10/19 净值 +0.02% 已在本档兑现"
+   }
+  ],
+  "total_est_pnl": -228.11,
+  "note": "影子估算只作披露、不并入主口径"
+ },
+ "pending_release": {
+  "window": [
+   "2026-10-20"
+  ],
+  "window_closed": true,
+  "refreshed": true,
+  "closed_on": "2026-10-20",
+  "note": "港股 10/20 复市且已收盘 → 本档**当日定价已全部实现**（场内 ETF 用 A股 收盘价、000071 用 10/20 真实净值 −1.25%），无「待消化」结转项；012348 / 164906 净值未出库 → 单列为「未定价缺口」而非待消化"
+ },
+ "fix_applied": [
+  "portfolio_close_20261019_fix.json"
+ ],
+ "note": "正常交易日收盘档；基准 = 10/19 修正件 372,163.96 元；本档新增真实定价：A股 全量收盘 + 港股复市收盘 + QDII 10/19 净值 + 164906 LOF 10/19 净值；未定价 2 只 3 行（012348 双账户 / 000051，notional 23,006.75 元，占 6.17%）"
+}
