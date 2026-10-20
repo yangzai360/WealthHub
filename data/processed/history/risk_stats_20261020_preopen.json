@@ -1,0 +1,57 @@
+{
+ "date": "2026-10-20",
+ "session": "preopen",
+ "chain_cum_pct": -5.51,
+ "chain_days": 47,
+ "chain_0pct_row_inserted": false,
+ "chain_gap_note": "10/20 为档型③「正常交易日盘前」→ **不产 portfolio_close_* / portfolio_pending_***；链式序列末行 = 10/19 收盘修正件（372,163.96 元），本档不插行",
+ "sharpe": -2.65,
+ "sharpe_n": 47,
+ "daily_mean": -0.1177,
+ "daily_sd": 0.7449,
+ "max_dd_pct": -7.1,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-10-16",
+ "last5_cum_pct": -1.26,
+ "last10_cum_pct": -0.99,
+ "rf_pct": 1.68,
+ "rf_note": "中国 10Y 国债硬编码 1.68%（本地 10Y 序列自 2026-08-11 后未维护，缺口待补）",
+ "w41_cum_pct": -1.01,
+ "w41_days": 2,
+ "w42_cum_pct": -1.83,
+ "w42_days": 5,
+ "w42_note": "W42（10/12-10/18）5 日逐日累计；窗口下界为周一常量（§3.151）",
+ "w43_cum_pct": 0.54,
+ "w43_days": 1,
+ "w43_note": "W43 = 2026-10-19 ~ 2026-10-25；本档含 10/19 已实现日 1 日",
+ "total_mv_end": 372163.96,
+ "med_pct_end": 38.42,
+ "tracks_end": {
+  "其他/宽基": {
+   "mv": 93244.3,
+   "pct_of_total": 25.0546
+  },
+  "大消费": {
+   "mv": 75780.55,
+   "pct_of_total": 20.3621
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.8495
+  },
+  "A股医药": {
+   "mv": 81948.06,
+   "pct_of_total": 22.0193
+  },
+  "美股标普医药": {
+   "mv": 61040.91,
+   "pct_of_total": 16.4016
+  },
+  "恒生科技": {
+   "mv": 30937.18,
+   "pct_of_total": 8.3128
+  }
+ },
+ "recompute_note": "本档链式序列末行 = 10/19 收盘修正件（372,163.96 元 / +0.5434%）→ 全量重算（非沿用）；US 10/19 归档不改变组合总资产（QDII 净值 T+1~T+2 迟滞）→ 10/20 尚无已实现收益",
+ "override_rule": "显式优先级（_fix 优先）+ est_total_pct_raw 显式判空（§3.98 / §3.102）"
+}

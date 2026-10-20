@@ -301,9 +301,10 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 92,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ref_trade_day": "2026-10-19"
+   "actual_ret_1d": -0.5999,
+   "actual_date": "2026-10-19",
+   "ref_trade_day": "2026-10-19",
+   "ret_1d_ref": "2026-10-19 收盘：XLV 175.65 -0.60%"
   }
  },
  {
@@ -328,9 +329,10 @@
    "ret_10d": null,
    "max_vol": 4.8,
    "confidence": 88,
-   "actual_ret_1d": null,
-   "actual_date": null,
-   "ref_trade_day": "2026-10-19"
+   "actual_ret_1d": -0.5999,
+   "actual_date": "2026-10-19",
+   "ref_trade_day": "2026-10-19",
+   "ret_1d_ref": "2026-10-19 收盘：XLV 175.65 -0.60%"
   }
  },
  {

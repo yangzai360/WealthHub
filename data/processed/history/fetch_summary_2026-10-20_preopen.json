@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-20",
+  "session": "preopen",
+  "session_type": "normal_trading_day_preopen",
+  "session_type_note": "档型③「正常交易日盘前」= A股 10/20 正常交易日 + 港股 10/20 复市（10/19 重阳翌日休市）+ 美股 10/20 正常交易日；08:00 A股/港股均无当日价格 → 不产 close/pending，待消化沿用上一档（10/19 收盘件）",
+  "tables": {
+    "fund_nav": 4,
+    "indices_us": 8
+  },
+  "fallback_verdict": {
+    "000727": {
+      "prev_navdays": [
+        "2026-10-16"
+      ],
+      "refetch_nav_date": "2026-10-19",
+      "refetch_nav": "2.4380",
+      "refetch_pct": "1.20",
+      "verdict": "NEW_NAVDAY_NEED_FIX"
+    },
+    "002708": {
+      "prev_navdays": [
+        "2026-10-19"
+      ],
+      "refetch_nav_date": "2026-10-19",
+      "refetch_nav": "1.8150",
+      "refetch_pct": "0.39",
+      "verdict": "unchanged"
+    },
+    "002742": {
+      "prev_navdays": [
+        "2026-10-16"
+      ],
+      "refetch_nav_date": "2026-10-19",
+      "refetch_nav": "1.2710",
+      "refetch_pct": "0.17",
+      "verdict": "NEW_NAVDAY_NEED_FIX"
+    },
+    "100032": {
+      "prev_navdays": [
+        "2026-10-16"
+      ],
+      "refetch_nav_date": "2026-10-19",
+      "refetch_nav": "0.9720",
+      "refetch_pct": "0.73",
+      "verdict": "NEW_NAVDAY_NEED_FIX"
+    },
+    "161616": {
+      "prev_navdays": [
+        "2026-10-16"
+      ],
+      "refetch_nav_date": "2026-10-19",
+      "refetch_nav": "1.6450",
+      "refetch_pct": "1.04",
+      "verdict": "NEW_NAVDAY_NEED_FIX"
+    }
+  },
+  "qdii_1016_revision": {
+    "000369": {
+      "prev_suspect": null,
+      "refetch_1016": {
+        "nav": "2.6460",
+        "pct": "0.00"
+      }
+    },
+    "016280": {
+      "prev_suspect": null,
+      "refetch_1016": {
+        "nav": "2.6000",
+        "pct": "0.00"
+      }
+    }
+  },
+  "us_snapshot": {
+    "XLV": {
+      "date": "2026-10-19",
+      "close": 175.65,
+      "pct": -0.6,
+      "prev_date": "2026-10-16"
+    },
+    "IYH": {
+      "date": "2026-10-19",
+      "close": 73.79,
+      "pct": -0.57,
+      "prev_date": "2026-10-16"
+    },
+    "QQQ": {
+      "date": "2026-10-19",
+      "close": 718.36,
+      "pct": 1.21,
+      "prev_date": "2026-10-16"
+    },
+    "DIA": {
+      "date": "2026-10-19",
+      "close": 518.92,
+      "pct": -0.03,
+      "prev_date": "2026-10-16"
+    },
+    "SPY": {
+      "date": "2026-10-19",
+      "close": 766.48,
+      "pct": 0.42,
+      "prev_date": "2026-10-16"
+    },
+    ".IXIC": {
+      "date": "2026-10-19",
+      "close": 26430.8867,
+      "pct": 1.11,
+      "prev_date": "2026-10-16"
+    },
+    ".DJI": {
+      "date": "2026-10-19",
+      "close": 51966.0312,
+      "pct": -0.07,
+      "prev_date": "2026-10-16"
+    },
+    ".INX": {
+      "date": "2026-10-19",
+      "close": 7690.73,
+      "pct": 0.41,
+      "prev_date": "2026-10-16"
+    }
+  },
+  "a_snapshot": {
+    "sh000001": {
+      "date": "2026-10-19",
+      "close": 3730.92,
+      "pct": 0.39,
+      "distinct_days": 8744
+    },
+    "sh000932": {
+      "date": "2026-10-19",
+      "close": 12467.079,
+      "pct": -0.18,
+      "distinct_days": 4199
+    },
+    "sz399006": {
+      "date": "2026-10-19",
+      "close": 2746.291,
+      "pct": -0.94,
+      "distinct_days": 3976
+    },
+    "sh000300": {
+      "date": "2026-10-19",
+      "close": 4174.535,
+      "pct": 0.09,
+      "distinct_days": 6011
+    },
+    "sh000933": {
+      "date": "2026-10-19",
+      "close": 7624.933,
+      "pct": 1.12,
+      "distinct_days": 4199
+    },
+    "sh000913": {
+      "date": "2026-10-19",
+      "close": 7983.992,
+      "pct": 0.93,
+      "distinct_days": 6011
+    },
+    "sz399989": {
+      "date": "2026-10-19",
+      "close": 6436.711,
+      "pct": 1.24,
+      "distinct_days": 2774
+    },
+    "sz399997": {
+      "date": "2026-10-19",
+      "close": 6399.366,
+      "pct": 0.84,
+      "distinct_days": 2754
+    },
+    "sh000905": {
+      "date": "2026-10-19",
+      "close": 6800.659,
+      "pct": 0.41,
+      "distinct_days": 5290
+    },
+    "sz399005": {
+      "date": "2026-10-19",
+      "close": 7385.768,
+      "pct": 0.51,
+      "distinct_days": 4446
+    }
+  },
+  "hk_snapshot": {
+    "rt_hkHSI": "var hq_str_rt_hkHSI=\"HSI,恒生指数,24321.450,24062.721,24392.300,24087.230,24186.830,124.110,0.520,0.000,0.000,178207245.133,10834829288,0.000,0.000,28056.100,22518.000,2026/10/16,16:08:38,,,,,,\";",
+    "rt_hkHSTECH": "var hq_str_rt_hkHSTECH=\"HSTECH,恒生科技指数,4125.440,4060.990,4160.040,4091.060,4108.240,47.250,1.160,0.000,0.000,40120147.808,1080497777,0.000,0.000,6198.680,4042.050,2026/10/16,16:08:38,,,,,,\";",
+    "rt_hkHSCEI": "var hq_str_rt_hkHSCEI=\"HSCEI,恒生中国企业指数,8199.600,8103.271,8215.110,8098.280,8128.250,24.980,0.310,0.000,0.000,60399229.304,2202946155,0.000,0.000,9645.900,7404.470,2026/10/16,16:08:38,,,,,,\";",
+    "rt_hkHSHCI": "var hq_str_rt_hkHSHCI=\"HSHCI,恒生医疗保健指数,3632.7300,3551.1000,3706.9800,3538.9300,3599.0500,47.9500,1.3503,0.0000,0.0000,18524165.8690,0,0.0000,0.0000,0.0000,0.0000,2026/10/16,16:08:38,,,,,,\";",
+    "rt_hkHSCI": "var hq_str_rt_hkHSCI=\"HSCI,HSCI,3546.7600,3508.7900,3561.6500,3517.4300,3532.1900,23.4000,0.6669,0.0000,0.0000,130412745.0210,0,0.0000,0.0000,0.0000,0.0000,2026/10/16,16:08:38,,,,,,\";"
+  },
+  "hk_crosscheck": {
+    "rt_hkHSI": {
+      "rt_price": 24186.83,
+      "hk_price": 24186.83,
+      "diff_pts": 0.0
+    },
+    "rt_hkHSTECH": {
+      "rt_price": 4108.24,
+      "hk_price": 4108.24,
+      "diff_pts": 0.0
+    },
+    "rt_hkHSCEI": {
+      "rt_price": 8128.25,
+      "hk_price": 8128.25,
+      "diff_pts": 0.0
+    }
+  },
+  "sparse": {
+    "sh000300": {
+      "rows": 6011,
+      "distinct_days": 6011,
+      "first": "2002-01-04",
+      "last": "2026-10-19"
+    },
+    "sh000933": {
+      "rows": 4199,
+      "distinct_days": 4199,
+      "first": "2009-07-03",
+      "last": "2026-10-19"
+    },
+    "sz399006": {
+      "rows": 3976,
+      "distinct_days": 3976,
+      "first": "2010-06-01",
+      "last": "2026-10-19"
+    },
+    "sz399989": {
+      "rows": 2774,
+      "distinct_days": 2774,
+      "first": "2015-05-19",
+      "last": "2026-10-19"
+    }
+  },
+  "qieman": {
+    "plan": {
+      "status": 200,
+      "size": 0
+    },
+    "adjustments": {
+      "status": 200,
+      "size": 0
+    },
+    "nav-history": {
+      "status": 200,
+      "size": 0
+    }
+  },
+  "proxy_env": {
+    "CODEBUDDY_SERVICE_PROXY_URL": "http://127.0.0.1:50797/internal/hooks/services/invoke"
+  },
+  "table_lines_after": {
+    "fund_nav.csv": 1147,
+    "indices.csv": 1536,
+    "etf_intraday.csv": 838
+  }
+}
