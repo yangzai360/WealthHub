@@ -1,0 +1,17 @@
+{
+ "date": "2026-10-21",
+ "session": "close-2000",
+ "session_type": "normal_trading_day_close",
+ "plan": {
+  "status": 200,
+  "size": 0
+ },
+ "nav": {
+  "status": 200,
+  "size": 0
+ },
+ "adjustments": {
+  "status": 200,
+  "size": 0
+ }
+}

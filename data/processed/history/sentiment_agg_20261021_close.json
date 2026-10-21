@@ -1,0 +1,51 @@
+{
+ "date": "2026-10-21",
+ "window": "盘后(10/21 13:30-20:00)",
+ "count": 17,
+ "annotation_mode": "rule_table_degraded",
+ "degraded_items": 17,
+ "degradation_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）",
+ "by_track": {
+  "其他/宽基": {
+   "n": 4,
+   "net_score": -16.5,
+   "mean_strength": 57.5
+  },
+  "恒生科技": {
+   "n": 3,
+   "net_score": -64.0,
+   "mean_strength": 64.0
+  },
+  "宏观": {
+   "n": 2,
+   "net_score": 30.0,
+   "mean_strength": 56.0
+  },
+  "大消费": {
+   "n": 3,
+   "net_score": -41.67,
+   "mean_strength": 61.0
+  },
+  "A股医药": {
+   "n": 4,
+   "net_score": 31.5,
+   "mean_strength": 59.25
+  },
+  "美股标普医药": {
+   "n": 1,
+   "net_score": 66.0,
+   "mean_strength": 66.0
+  }
+ },
+ "mean_strength": 60.0,
+ "net_nominal": -131,
+ "direction_count": {
+  "利多": 4,
+  "利空": 6,
+  "中性": 7
+ },
+ "exposure_weighted_net": 0.3308,
+ "exposure_weight_note": "按 10/21 收盘赛道权重加权；未归类赛道（无）不参与",
+ "source_url_coverage": "17/17",
+ "window_coverage": "17/17"
+}

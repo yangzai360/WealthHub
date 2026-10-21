@@ -1,75 +1,47 @@
 {
  "date": "2026-10-21",
  "window": "盘前(10/20 20:00-10/21 07:30) + 盘中(10/21 07:30-13:30)",
- "count": 48,
+ "count": 65,
  "session_type": "normal_trading_day_intraday",
  "session_type_note": "正常交易日盘中（A股 第 10 个正常交易日 09:30 开盘 + 港股正常交易日；A股/港股/场内 ETF 均可定价，场外基金净值 15:00 后发布）",
  "annotation_mode": "rule_table_fallback",
- "degraded_items": 48,
- "degraded_batches": 4,
+ "degraded_items": 65,
+ "degraded_batches": 5,
  "degradation_reason": "HTTP 402",
  "by_track": {
-  "A股医药": {
-   "n": 8,
-   "net": 3.16,
-   "mean_strength": 60.12,
-   "direction_dist": {
-    "利多": 5,
-    "中性": 3
-   }
+  "宏观": {
+   "n": 15,
+   "net": 74.0,
+   "mean_strength": 57.13
   },
   "其他/宽基": {
-   "n": 6,
-   "net": 1.22,
-   "mean_strength": 57.33,
-   "direction_dist": {
-    "利多": 3,
-    "利空": 1,
-    "中性": 2
-   }
+   "n": 10,
+   "net": 56.0,
+   "mean_strength": 57.4
   },
   "大消费": {
-   "n": 7,
-   "net": -1.91,
-   "mean_strength": 58.86,
-   "direction_dist": {
-    "中性": 2,
-    "利空": 4,
-    "利多": 1
-   }
+   "n": 10,
+   "net": -316.0,
+   "mean_strength": 59.5
   },
-  "宏观": {
-   "n": 13,
-   "net": 0.14,
-   "mean_strength": 57.31,
-   "direction_dist": {
-    "中性": 5,
-    "利空": 4,
-    "利多": 4
-   }
-  },
-  "恒生科技": {
-   "n": 8,
-   "net": -1.23,
-   "mean_strength": 59.88,
-   "direction_dist": {
-    "利多": 3,
-    "利空": 5
-   }
+  "A股医药": {
+   "n": 12,
+   "net": 442.0,
+   "mean_strength": 59.83
   },
   "美股标普医药": {
-   "n": 6,
-   "net": 1.37,
-   "mean_strength": 58.5,
-   "direction_dist": {
-    "利多": 3,
-    "中性": 2,
-    "利空": 1
-   }
+   "n": 7,
+   "net": 203.0,
+   "mean_strength": 59.57
+  },
+  "恒生科技": {
+   "n": 11,
+   "net": -315.0,
+   "mean_strength": 61.0
   }
  },
- "mean_strength": 58.58,
- "net_nominal": 3.41,
+ "mean_strength": 58.95,
+ "net_nominal": 144,
  "items": [
   {
    "idx": 0,
@@ -878,6 +850,278 @@
    "sentiment": "中性",
    "degraded": true,
    "degrade_reason": "HTTP 402 Insufficient Balance（非 429 限流，重试无意义）"
+  },
+  {
+   "idx": 48,
+   "title": "🟡 **10/21 收盘速览：上证 −0.60% 报 3,713.03、深证成指 −0.82%、创业板指 −1.62% 报 2,694.71（失守 2,700 并创 2025-08-25 以来新低）、科创50 +0.06% 逆势微红；两市成交 1.43 万亿元、较 10/20 缩量约 268 亿元；涨 1,981 / 跌 3,364**",
+   "track": "其他/宽基",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "中性",
+   "strength": 55,
+   "confidence": 90,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "沪指-0.60%·缩量268亿·涨1981跌3364",
+   "source_url": "https://news.qq.com/rain/a/20261021A0933R00",
+   "category": "行业事件类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 49,
+   "title": "🔴 **恒生科技收盘 3,994.77（−1.26%），首次收盘失守 4,000 点整数关口，创 2024 年 10 月以来新低**；日内低 3,985.63、日内高 4,110.74（早盘一度 +1.60%）；恒指 −0.90% 报 23,651.87、恒生国企 −1.08%，均刷新近期调整新低；成交 1,766 亿港元（较 10/20 的 1,905 亿缩量）",
+   "track": "恒生科技",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "利空",
+   "strength": 72,
+   "confidence": 92,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "恒科3994.77跌破4000·创2024年10月来新低",
+   "source_url": "https://cj.sina.cn/articles/view/1702925432/6580947801901c5ca",
+   "category": "行业事件类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 50,
+   "title": "🔴 **南向资金 10/21 净卖出港股超 44 亿港元**（10/20 为净卖出 17 亿）→ **连续第 2 日净流出，且规模放大 1.6 倍**；港股成交 1,766 亿港元、较 10/20 缩量 139 亿",
+   "track": "恒生科技",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "利空",
+   "strength": 62,
+   "confidence": 88,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "南向净卖出超44亿港元·连续第2日流出",
+   "source_url": "https://www.mrjjxw.com/articles/2026-10-21/4611271.html",
+   "category": "行业事件类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 51,
+   "title": "🔴 **宁德时代三季报「增收不增利」引爆电池链：Q3 归母净利 212.46 亿元、同比 +14.54%、环比 −5.8%，低于市场预期的 229~250 亿元区间；毛利率 20.69%、连续 3 个季度走低、创 2022Q4 以来新低；A股 收跌 12.03%（历史最大单日跌幅、成交 324.4 亿元居首、自 5 月高点回落逾 50%）、H股 −11.41%**",
+   "track": "其他/宽基",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "利空",
+   "strength": 66,
+   "confidence": 90,
+   "direction": "利空",
+   "volatility": "高",
+   "brief": "宁德Q3净利+14.54%低于预期·跌12.03%",
+   "source_url": "https://www.163.com/dy/article/L9PL1KJV0530NLC9.html",
+   "category": "业绩类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 52,
+   "title": "🟢 **央行 10/21 公开市场：7 天期逆回购操作量为零 + 开展 800 亿元隔夜逆回购，对冲 560 亿元到期后单日净投放 240 亿元**；Shibor 隔夜 1.261%（−0.1BP，创 2026 年 5 月以来新低）、1 个月 1.388%（创 2026 年 6 月以来新低）",
+   "track": "宏观",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "利多",
+   "strength": 60,
+   "confidence": 90,
+   "direction": "利多",
+   "volatility": "低",
+   "brief": "隔夜逆回购800亿·净投放240亿·Shibor新低",
+   "source_url": "https://finance.sina.cn/2026-10-21/detail-inivysyq4877731.d.html",
+   "category": "政策类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 53,
+   "title": "🟡 **国债期货 10/21 收盘全线下跌：30 年期主力 −0.38% 报 117.980、10 年期 −0.10% 报 109.870、5 年期 −0.06%、2 年期 −0.01%** —— 长端跌幅显著大于短端，收益率曲线陡峭化",
+   "track": "宏观",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "中性",
+   "strength": 52,
+   "confidence": 85,
+   "direction": "中性",
+   "volatility": "低",
+   "brief": "国债期货全线跌·30年-0.38%",
+   "source_url": "https://finance.sina.cn/2026-10-21/detail-inivysyq4877731.d.html",
+   "category": "宏观类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 54,
+   "title": "🔴 **日历事实更正：贵州茅台 2026 年三季报预约披露日为 2026-10-31，不是 10/21** —— 13:45 盘中档 P0 事项「茅台三季报今日盘后回填」的前提不成立，本档予以更正",
+   "track": "大消费",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "中性",
+   "strength": 58,
+   "confidence": 95,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "茅台三季报10/31披露·非今日·前档错",
+   "source_url": "http://f10.eastmoney.com/f10_v2/OperationsRequired.aspx?code=sh600519",
+   "category": "业绩类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 55,
+   "title": "🔴 **大消费收盘：中证消费 12,300.09（−0.99%）、中证白酒 −2.46%（跌幅居前）、贵州茅台 −1.67% 报 1,309.69 元、食品饮料 −1.70%**；组合大消费腿 −763.88 元（−1.010%），为本档最大拖累腿",
+   "track": "大消费",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "利空",
+   "strength": 65,
+   "confidence": 90,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "中证白酒-2.46%·茅台-1.67%·汾酒领跌",
+   "source_url": "https://quote.eastmoney.com/sh600519.html",
+   "category": "行业事件类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 56,
+   "title": "🟡 **卖方 Q3 前瞻汇总：招商证券口径「白酒行业深度调整延续、双节动销下滑超 15%，但库存降至低位、价盘企稳，茅台及区域强势品牌韧性较强」；浙商证券口径「26Q3 业绩延续强分化、仍以出清为主基调」，茅台/今世缘/迎驾居前**",
+   "track": "大消费",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "利空",
+   "strength": 60,
+   "confidence": 85,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "双节动销-15%·Q3强分化出清",
+   "source_url": "https://news.qq.com/rain/a/20261020A07XLF00",
+   "category": "业绩类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 57,
+   "title": "🟡 **医药结构性抗跌但内部分化：申万医药生物 −0.18%、医药主题 −0.08%、300医药 −0.32%、CS创新药 +0.05%、港股通创新药 +0.60%、恒生医疗保健 +0.29% 小幅收红；中证医疗 −0.47%、医疗器械 −0.30%、中证中药 −0.73% 偏弱**",
+   "track": "A股医药",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "中性",
+   "strength": 56,
+   "confidence": 88,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "申万医药-0.18%抗跌·创新药+0.05%·中药-0.73%",
+   "source_url": "http://mp.weixin.qq.com/s?__biz=MzIyOTA1MTk4MQ==&mid=2247483727&idx=1&sn=43d469b6be47455623185d51c45d38bd&chksm=e91fed1492175a2f4157359a0215edc2533d4857734b0f2c15afb6986e547d63f3d4f9e86cb#rd",
+   "category": "行业事件类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 58,
+   "title": "🟢 **ESMO 2026（10/23-27 马德里）中国创新药 29 项研究入选最新突破性摘要（LBA）、占大会 LBA 总数约 1/3，创历史新高；翰森制药与罗氏达成潜在总额超 155 亿美元的 ADC 合作**；恒瑞医药 70 余项成果入围、涉 23 款创新药",
+   "track": "A股医药",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "利多",
+   "strength": 68,
+   "confidence": 85,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "ESMO 29项LBA占1/3·翰森ADC 155亿美元",
+   "source_url": "https://fund.jrj.com.cn/2026/10/21145658806458.shtml",
+   "category": "行业事件类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 59,
+   "title": "🟢 **GSK 反义寡核苷酸药物 bepirovirsen（Hibsago）10/20 获 FDA 批准，联合核苷（酸）类逆转录酶抑制剂治疗无肝硬化成人慢性乙肝；B-Well 1/2 III 期汇总显示约 19% 患者实现「功能性治愈」（HBsAg 清除）、安慰剂组 0%，基线 HBsAg ≤1,000 IU/mL 亚组约 26%；日本已于 2026 年 8 月批准，中国 NDA 已受理**",
+   "track": "A股医药",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "利多",
+   "strength": 58,
+   "confidence": 80,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "GSK乙肝新药获FDA批准·中国NDA已受理",
+   "source_url": "http://mp.weixin.qq.com/s?__biz=MzIyOTA1MTk4MQ==&mid=2247483727&idx=1&sn=43d469b6be47455623185d51c45d38bd&chksm=e91fed1492175a2f4157359a0215edc2533d4857734b0f2c15afb6986e547d63f3d4f9e86cb#rd",
+   "category": "行业事件类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 60,
+   "title": "🟡 **国家医保局：2026 年医保目录调整的现场谈判、竞价与价格协商已于 9 月完成并现场确认，近期进入正式签约阶段；企业自 10/20 起可登录国家医保服务平台下载结果；新版目录与商保创新药目录的正式公布时间尚未明确**",
+   "track": "A股医药",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "中性",
+   "strength": 55,
+   "confidence": 88,
+   "direction": "中性",
+   "volatility": "低",
+   "brief": "医保谈判完成进入签约·名单时间未定",
+   "source_url": "http://mp.weixin.qq.com/s?__biz=MzIyOTA1MTk4MQ==&mid=2247483727&idx=1&sn=43d469b6be47455623185d51c45d38bd&chksm=e91fed1492175a2f4157359a0215edc2533d4857734b0f2c15afb6986e547d63f3d4f9e86cb#rd",
+   "category": "政策类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 61,
+   "title": "🟢 **QDII 净值兑现：`000369` 10/20 净值 2.6830（+1.98%）、`016280` 2.6370（+2.01%）→ US 10/20 段按真实净值核销 +1,209.91 元，为本档唯一正贡献腿（+1.994%）**；隐含传导系数 0.8447 / 0.8597（分母 IYH 10/20 +2.34%），**落 0.60~0.90 区间内**",
+   "track": "美股标普医药",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "利多",
+   "strength": 66,
+   "confidence": 90,
+   "direction": "利多",
+   "volatility": "中",
+   "brief": "QDII US10/20段核销+1209.91元·系数0.84/0.86",
+   "source_url": "https://fundf10.eastmoney.com/jjjz_000369.html",
+   "category": "行业事件类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 62,
+   "title": "🟡 **数据要素概念连续第 2 日逆势走强：国家数据集团有限公司 10/20 在雄安新区挂牌成立、位列央企名录第 28 位；南威软件/星光股份 4 天 3 板、海量数据/天威视讯/三维天地涨停；同日 AI 漫剧概念（火山引擎激励计划）与养殖（猪周期）活跃**",
+   "track": "其他/宽基",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "中性",
+   "strength": 54,
+   "confidence": 82,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "数据要素爆发·国家数据集团雄安成立",
+   "source_url": "https://news.qq.com/rain/a/20261021A0933R00",
+   "category": "政策类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 63,
+   "title": "🟡 **卖方观点汇总（12 家）：申万宏源/中信/银河/华金/招商/国泰海通/中信建投 7 家指向「调整接近尾声、缩量磨底」；华西提示碳酸锂与出口退税风险、中信建投提示美债实际利率压制成长估值；东方证券指「沪指仍在考验 3,700 点支撑」，尾盘上证50ETF 20 分钟内成交超 40 亿元、护盘资金再度进场**",
+   "track": "其他/宽基",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "中性",
+   "strength": 55,
+   "confidence": 78,
+   "direction": "中性",
+   "volatility": "中",
+   "brief": "机构共识\"调整接近尾声\"·尾盘宽基ETF护盘",
+   "source_url": "http://mp.weixin.qq.com/s?__biz=Mzg5NTc1MzUxOA==&mid=2247484914&idx=1&sn=9732582f0271561688cd1ec866cd58d3&chksm=c1bfa6a31f59b29f1bb359b3a929b58cde0a1797fb4df2ded38b6d8fc5af645c845dacd6a0fe#rd",
+   "category": "策略类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
+  },
+  {
+   "idx": 64,
+   "title": "🟡 **港股流动性归因（卖方）：中金刘刚指南向前 9 个月累计净流入仅 4,400 亿港元（2025 年全年 14,000 亿）、境内公募与海外主动基金对港股配置已回落至「924」底部附近；蓝水资本李泽铭指大量配售叠加密集 IPO 持续抽紧流动性；下一关键时点为 10/27-28 美联储议息**",
+   "track": "恒生科技",
+   "window": "盘后(10/21 13:30-20:00)",
+   "sentiment": "利空",
+   "strength": 58,
+   "confidence": 80,
+   "direction": "利空",
+   "volatility": "中",
+   "brief": "港股流动性紧·IPO+配售抽水·FOMC 10/27-28",
+   "source_url": "https://cj.sina.cn/articles/view/1702925432/6580947801901c5ca",
+   "category": "宏观类",
+   "degraded": true,
+   "degrade_reason": "规则表降级（DeepSeek HTTP 402，连续第 16 个日历日）"
   }
  ],
  "degradation_note": "⚠️ §3.127b / §3.128a：本档 **20/20 条（本档增量）为确定性规则表标注（非模型标注）**；成因 = DeepSeek v4-flash 端点返回 HTTP 402（Insufficient Balance，非 429 限流）→ 依 §3.127b 停止重试并降级，**连续第 17 个日历日**。规则表由 agent 依新闻正文逐条指定 direction/strength/confidence/volatility，并以「标题前 20 字」硬绑定 + 前缀唯一性守卫 + 未命中即终止（§3.128a / §3.129d）防止静默套用默认值。**跨档比较时本档情绪分不可与模型标注档（≤10/5）直接混算趋势。**"
