@@ -1,5 +1,5 @@
 {
- "count": 265,
+ "count": 266,
  "source": "qieman.com pmdj/v2/long-win/plan/adjustments",
  "direction_note": "direction 字段来自 comment(与 GraphQL redeemOrders/buyOrders 一致): 卖出=卖出份额, 买入=买入份额",
  "adjustments": [
@@ -7385,6 +7385,46 @@
     },
     "detected_on": "2026-10-16-close",
     "backfilled_on": "2026-10-19-intraday"
+   },
+   "unavailable_fields": [
+    "adjustment_id",
+    "create_time",
+    "url",
+    "comment(原文)",
+    "nav",
+    "nav_date"
+   ]
+  },
+  {
+   "adjustment_id": null,
+   "txn_date": "2026-10-22",
+   "create_time": null,
+   "invest_type": "再平衡",
+   "url": "",
+   "comment": "（原文不可得）源侧 adjustedCount 269→270 / investedUnit 115→116；composition 逐品种 022424 广发中证A500ETF联接A planUnit 2→3、现金类 unit 35→34、A股 类 unit 71→72 → 判定为「现金 → A股（A500）」1 unit 再平衡。该信号于 2026-10-22 盘后档检出并当日补录落库。",
+   "orders": [
+    {
+     "fund_code": "022424",
+     "fund_name": "广发中证A500ETF联接A",
+     "variety": "A股",
+     "large_class": "A股",
+     "direction": "买入",
+     "trade_unit": 1,
+     "post_plan_unit": 3,
+     "nav": null,
+     "nav_date": null
+    }
+   ],
+   "detection": {
+    "source": "qieman composition diff（playwright 兜底）",
+    "evidence": {
+     "adjustedCount": "269→270",
+     "investedUnit": "115→116",
+     "planUnit": "022424: 2→3",
+     "classUnit": "现金 35→34 / A股 71→72"
+    },
+    "detected_on": "2026-10-22-close",
+    "backfilled_on": "2026-10-22-close"
    },
    "unavailable_fields": [
     "adjustment_id",
