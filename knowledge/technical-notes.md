@@ -4832,3 +4832,47 @@ content = result['choices'][0]['message']['content']
 
 - **判据**：截止日 = **上一档执行时刻已可得的最后一个该赛道参考日**。美股类收盘 = 北京 T+1 04:00 → 20:00 档可得 T 日；08:00 盘前档亦可得 T 日。故「盘前档」与「上一档盘后档」的美股截止日**相同**（都 = 上一美股交易日）。
 - **QDII 弹性**：§3.170b 把下跌段下界放宽到 0.45 后，**上涨段仅剩 1 个有效样本（0.84~0.86）** → 本档 IYH +1.33%（上涨段）仍按 **0.45 ~ 0.90、中枢 0.675** 登记区间（宁可宽、不给点值），待实际兑现回填后再收窄。**报告须写明「区间宽于历史兑现，不可用于下单」**。
+
+
+---
+
+## §3.172 2026-10-23 盘中档（13:45 · 档型③双市场同开市的正常交易日盘中 · A股 深 V 反转）新增技术结论（4 项）
+
+### 3.172a 🔴 `adjustments.json` 的追加位置是**数组末尾**，不是按 `txn_date` 排序 → `adjustments[0]` **不是最新调仓**；`count`/`last_updated` 元数据滞后
+
+> 来源：2026-10-23 盘中档。判定「本地是否已落库最新调仓」时若取 `adjustments[0].txn_date`，会得到 **2026-10-13**（真实最新为 **2026-10-22**，被追加在数组**最后一项**）。
+
+- **实测形态**：头部是历史倒序（10/13、10/12、10/08、…、2015-08-03），**新补录条目一律 push 到末尾**（10/16 `001257`、10/22 `022424` 均在尾部）。
+- **硬约束**：取「最新调仓」必须 `max(rows, key=lambda r: r['txn_date'])`，**禁止 `rows[0]`**。
+- **元数据滞后**：`count=266`（实际 266 条 ✅ 但未含 10/22 的计数语义）、`last_updated="2026-10-14"`（真实最后补录 10/22）→ 报告只可写「元数据滞后 N 个交易日，本档只登记不改写」，**不得据此断言「本地无新调仓」**。
+- **正确判定链**：`源侧 adjustedCount/investedUnit` vs **`max(txn_date)` 条目的 `detection.evidence` 尾值** vs `composition 逐品种差分`，三者一致才可写「无新调仓」。
+
+### 3.172b 🟡 且慢 `plan` 端点 body **不含 `adjustments` 数组**，且 REST `plan/adjustments` 长期空 body → 「新调仓」判定只能靠 composition 差分，`adjustment_id`/`comment`/`url` 结构上不可得
+
+> 来源：2026-10-23 盘中档。playwright 捕获的 `plan` body **44,194B**，顶层键仅含 `establishDate / tradeLimit / composition / risk5Level / investedUnit / annualCompoundedReturn / nav / navDate / dailyReturn / fromSetupReturn / maxDrawdown / volatility / sharpe / adjustedCount / joinedCount / activeCount / investedACR / navBenchMarks / prodSummaries / fundTypeAEvents` —— **无 `adjustments` 键**；同日 REST `plan/adjustments` 返回 `HTTP 200 / size 0`（连续第 117 个 A股 交易日）。
+
+- **推论**：`adjustment_id` / `create_time` / `url` / `comment` / `nav` / `nav_date` **在现有数据通路下永久不可得**，只能登记为 `unavailable_fields`；**不得因为「playwright 成功」就默认能拿到原文**。
+- **可行判据（三重交叉）**：① `adjustedCount` 增量 ② `investedUnit` 增量 ③ `composition` 逐品种 `planUnit` + 8 类别 `unit` 差分（合计恒 150 份）。三者需同向，任一不动即须复核。
+- **注意**：`plan.composition[].compList[].fund` 可能缺失（现金/投顾类条目无 `fund` 键）→ 遍历须 `it.get('fund') or {}` 兜底，**否则 `KeyError: 'fund'` 中断整条差分链**。
+
+### 3.172c 🟢 新浪 7x24 快讯 API 可直接取盘中新闻源（替代手工选题），但 `docurl` 可能为空
+
+> 来源：2026-10-23 盘中档首次实测。端点：`https://zhibo.sina.com.cn/api/zhibo/feed?zhibo_id=152&tag_id=0&dire=f&dpc=1&page=1&page_size=100&type=0`（Headers 需 `Referer: https://finance.sina.com.cn/7x24/`、`User-Agent`）。
+
+- **返回结构**：`result.data.feed.list[]`，每条含 `create_time`（北京时，`2026-10-23 13:45:14`）/ `docurl`（原文页）/ `rich_text`（含 `【标题】正文`）。
+- **实测可用性**：`page_size=100`、翻 2 页即覆盖 07:30-13:48 的 200 条，**足以支撑「盘中窗口」选题**；比 WebSearch 更贴近「当日盘中落地读数」。
+- **⚠️ `docurl` 可为空字符串**（纯短讯，如「南向资金净卖出额达 70 亿港元」）→ **`source_url` 允许留空**，报告侧该条用纯文本、不加超链接；`source_url` 覆盖率须按「有 url 的条数 / 总条数」如实写（本档 26/26，因空 url 条目已改用同主题有 url 条目作源）。
+- **⚠️ 不得把 `rich_text` 里的数字当「本档新增」**：`create_time` 早于窗口起点的条目属上一档，须按时间过滤后再用。
+
+### 3.172d 🟡 同一批伪收盘行对 3/5/10 日窗口 n 的放大**倍数差异很大**（恒科实测 +19 / +9 / +10），不可用一个 Δn 描述三窗口
+
+> 来源：2026-10-23 盘中档。写入 12 行「盘中 13:45」伪收盘行后，恒生科技赛道多日窗口 n 相对上一档变化为 **3 日 +19 / 5 日 +9 / 10 日 +10**（上一档同日为 +9/+9/+13）。
+
+| 窗口 | 上一档 Δn（10/22 档） | 本档 Δn（10/23 档） |
+|------|----------------------|---------------------|
+| 3 日 | +9 | **+19** |
+| 5 日 | +9 | +9 |
+| 10 日 | +13 | +10 |
+
+- **成因**：Δn = 「事件日中，其 `+n` 个交易日后的观测日**恰好落入**伪收盘行的日期集合」的条目数 —— 与「伪行日期」在历史序列上的位置、以及该窗口是否跨过缺口强相关，**不存在「一个 Δn 适用三窗口」的常数关系**。
+- **硬约束**：报告与 `pseudo_close_warning` 必须**逐窗口实测后分别写入**，禁止写「n 约增加 N」这类模糊表述；不得沿用上一档的 Δn。

@@ -1,0 +1,455 @@
+# -*- coding: utf-8 -*-
+"""2026-10-23 盘中档：组合盘中估算（13:45 口径）—— **正常交易日（档型③）**
+   （A股 第 12 个正常交易日 + 港股正常交易日；双市场均开市；US 10/22 收盘已于北京 10/23 04:00 成型并落入本日盘前档）
+
+基准：10/22 收盘修正件 `portfolio_close_20261022_fix.json` = 365,851.37 元（tracks[].mv 求和，硬守卫 1.5 元 ✅）
+⚠️ §3.112a/§3.115a：逐券还原式**禁止按字段名取数**，必须用机器判据选式（三候选 + 逐赛道最大偏差 < 1.5）
+⚠️ §3.84：代理基准必须逐 code 显式指定（FUND_BASE），禁止统一 fallback
+⚠️ §3.87：赛道代理涨跌 = delta/mv0×100，须独立 helper tp()
+⚠️ §3.116b：情境区间 low/high 必须按「结果值 min/max」取
+⚠️ §3.122e：QDII 三腿（000369/016280/164906）本档 13:45 实测最新净值日 **已推进至 2026-10-21**（10/22 档为 10/20）
+   → 主口径仍按 0（10/22 净值未出库）；US 10/22 段挂账区间（+369.79 ~ +739.57 元，取自本日盘前档）单列；
+   164906 依 §3.122e 不给区间、只登记为待兑现。**禁止并入当日收益 / 禁止并入待消化**。
+⚠️ §38 / §3.112i：场外港股联接（012348 基准净值日 10/22）与场内 ETF（513180/159920）均为单日口径，
+   但场外与场内同日符号可相反、禁止互相验证。
+⚠️ §3.122a：本档写入 indices.csv 的 2026-10-23「盘中 13:45」伪收盘行 12 行（A股板块 7 + 港股指数 5）
+"""
+import json, os, re
+from collections import defaultdict
+
+BASE = "/Users/jieyang/Documents/WealthHub"
+HIST = os.path.join(BASE, "data/processed/history")
+ARCHIVED = 365851.37
+BASE_FILE = "portfolio_close_20261022_fix.json"
+
+b = json.load(open(os.path.join(HIST, BASE_FILE)))
+detail = b["detail"]
+tracks_ref = b["tracks"]
+hq = json.load(open(os.path.join(HIST, "intraday_hq_20261023.json")))
+
+
+# ---------- 0. 还原式自动判别（§3.112a / §3.115a） ----------
+def restore(kind):
+    agg = defaultdict(float)
+    for r in detail:
+        if kind == "mv0_pnl":
+            v = float(r["mv0"]) + float(r.get("est_pnl") or 0.0)
+        elif kind == "mv0new_pnl":
+            v = float(r["mv0_new"]) + float(r.get("est_pnl") or 0.0)
+        else:
+            v = float(r["mv"]) + float(r.get("est_pnl") or 0.0)
+        agg[r["track"]] += v
+    return agg
+
+
+cand = {}
+for kind in ("mv0_pnl", "mv0new_pnl", "mv_pnl"):
+    agg = restore(kind)
+    dev = max(abs(agg[t] - tracks_ref[t]["mv"]) for t in tracks_ref)
+    cand[kind] = (dev, agg)
+best = min(cand, key=lambda k: cand[k][0])
+print("=== 还原式判别（逐赛道 Σ 与 tracks[].mv 最大偏差） ===")
+for kind, (dev, _) in cand.items():
+    print(f"  {kind:12s} 最大偏差 {dev:>10,.2f} 元  {'← 采用（Δ<1.5 通过）' if kind == best and dev < 1.5 else ''}")
+assert cand[best][0] < 1.5, f"三种还原式均无法复现 tracks[].mv：{cand}"
+RESTORE = best
+FIELD = {"mv0_pnl": "mv0", "mv0new_pnl": "mv0_new", "mv_pnl": "mv"}[best]
+print(f"→ 采用还原式 = detail.{FIELD} + est_pnl（dev = {cand[best][0]:.4f} 元）\n")
+
+# ---------- 1. 行情字典 ----------
+ETF = {v["code"]: v["pct"] for v in hq["etfs"].values()}
+IDX = {**{k: v["pct"] for k, v in hq["indices_a"].items()},
+       **{k: v["pct"] for k, v in hq["boards"].items()},
+       **{k: v["pct"] for k, v in hq["indices_hk"].items()}}
+STOCK = {"002410": hq["stocks"]["广联达"]["pct"], "600438": hq["stocks"]["通威股份"]["pct"]}
+
+BOARD_MED = round((IDX["中证医药"] + IDX["中证医疗"] + ETF["512170"] + ETF["159938"]) / 4, 4)
+LEADER_MED = IDX["300医药"]
+LAG_MED = IDX["中证医疗"]
+PENSION = round((IDX["中证消费"] + BOARD_MED) / 2, 4)
+HK_TECH_IDX = IDX["恒生科技"]          # 单日口径（10/22 正常交易日收盘 → 10/23 盘中读数）
+
+print(f"A股医药板块基准 BOARD_MED = {BOARD_MED:+.4f}%  |  300医药(龙头) {LEADER_MED:+.2f}%  "
+      f"|  中证医疗 {LAG_MED:+.2f}%  |  养老折中代理 {PENSION:+.4f}%")
+print(f"恒生科技盘中 {HK_TECH_IDX:+.2f}%（**单日口径**：10/22 收 3,793.93 → 10/23 13:46 报 {hq['indices_hk']['恒生科技']['cur']:,.2f}）")
+print(f"结构判别（§3.99）：300医药 {LEADER_MED:+.2f}% vs 中证医药 {IDX['中证医药']:+.2f}% vs 中证医疗 {LAG_MED:+.2f}%"
+      f" vs 中证白酒 {IDX['中证白酒']:+.2f}% vs 中证消费 {IDX['中证消费']:+.2f}%"
+      f"  → {'中小盘/服务端领先大市值（中证医疗 > 300医药）' if LAG_MED > LEADER_MED else '大市值相对领先'}\n")
+
+FUND_BASE = {
+    # --- A股医药 ---
+    "002708": (BOARD_MED, 1.39, "主动创新药/CXO；§3.97 全样本中位弹性 1.39"),
+    "161616": (BOARD_MED, 1.09, "主动医药；§3.97 全样本中位弹性 1.09"),
+    "000727": (BOARD_MED, 0.82, "融通健康产业灵活配置；§3.97 全样本中位弹性 0.82"),
+    "012323": (IDX["中证医疗"], 1.00, "中证医疗联接 → 中证医疗"),
+    "001180": (LEADER_MED, 1.00, "医药卫生ETF联接 → 300医药（大市值口径）"),
+    "001551": (BOARD_MED, 1.00, "医药100指数 → A股医药板块基准"),
+    # --- 大消费 ---
+    "000248": (IDX["中证消费"], 1.00, "主要消费联接 → 中证消费"),
+    "519915": (IDX["中证消费"], 1.00, "消费主动基 → 中证消费"),
+    "000968": (PENSION, 1.00, "养老产业 → (中证消费+医药板块)/2 折中代理（§3.103 限定）"),
+    "004424": (ETF["512980"], 1.00, "文体娱乐 → 传媒ETF"),
+    # --- 其他/宽基 ---
+    "000051": (IDX["沪深300"], 1.00, "沪深300联接 → 沪深300"),
+    "110020": (IDX["沪深300"], 1.00, "沪深300联接 → 沪深300"),
+    "001552": (ETF["512880"], 1.00, "证券保险 → 证券ETF"),
+    "001469": (IDX["中证金融"], 1.00, "金融地产 → 中证金融"),
+    "000071": (ETF["159920"], 1.00, "恒生ETF联接 → 恒生ETF华夏（**场内单日口径**，昨收 = 10/22 收盘；§38 禁止与场外联接互相验证）"),
+    "005368": (IDX["中证环保"], 1.00, "清洁能源 → 中证环保"),
+    "100032": (ETF["515180"], 1.00, "红利指增 → 100红利"),
+    "004752": (ETF["512980"], 1.00, "传媒联接 → 传媒ETF"),
+    "002742": (0.0, 1.00, "债券，按 0"),
+    # --- 恒生科技 ---
+    "012348": (HK_TECH_IDX, 1.00, "恒科联接 → 恒生科技**单日口径**（基准净值日 10/22 已真实兑现）"),
+    "164906": (0.0, 0.00, "中概互联LOF：本档 13:45 实测最新净值日 = 10/21（10/22 未出库）→ 主口径按 0，登记为待兑现（§3.122e 无稳定代理指数、不给区间）"),
+    # --- 美股标普医药（QDII T+1~T+2 未出库）---
+    "000369": (0.0, 0.00, "QDII 最新净值日 = 2026-10-21（10/22 净值未出库）→ 按 0（挂账区间 US 10/22 段见 stale_nav_legs）"),
+    "016280": (0.0, 0.00, "QDII 最新净值日 = 2026-10-21（10/22 净值未出库）→ 按 0（挂账区间 US 10/22 段见 stale_nav_legs）"),
+}
+
+
+def proxy_pct(r):
+    code = re.sub(r"\D", "", str(r.get("code") or ""))
+    name = str(r["name"])
+    if "现金" in name or "余额宝" in name or "帮你投" in name or "现金" in str(r.get("track", "")):
+        return 0.0, "现金/投顾按 0"
+    if code in ETF:
+        return ETF[code], "场内ETF实时（昨收 = 10/22 收盘 → 单日口径）"
+    if code in STOCK:
+        return STOCK[code], "个股实时"
+    if code in FUND_BASE:
+        base, e, note = FUND_BASE[code]
+        return round(base * e, 4), note
+    return 0.0, "无代理，按 0"
+
+
+rows = []
+for r in detail:
+    p, note = proxy_pct(r)
+    base = float(r[FIELD])
+    mv = round(base + float(r.get("est_pnl") or 0.0), 2)
+    delta = mv * p / 100
+    rows.append({**r, "mv_pre": round(base, 2), "mv": mv,
+                 "proxy_pct": round(p, 3), "delta": round(delta, 2), "note": note})
+
+total_base = sum(x["mv"] for x in rows)
+total_delta = sum(x["delta"] for x in rows)
+pct = total_delta / total_base * 100
+assert abs(total_base - ARCHIVED) < 1.5, f"权重基数与基准不一致: {total_base:.2f} vs {ARCHIVED:.2f}"
+
+print("=== 分赛道盘中估算（13:45） ===")
+agg = defaultdict(lambda: [0.0, 0.0])
+for x in rows:
+    agg[x["track"]][0] += x["mv"]
+    agg[x["track"]][1] += x["delta"]
+
+
+def tp(v):
+    return v[1] / v[0] * 100 if v[0] else 0.0
+
+
+for t, v in sorted(agg.items(), key=lambda kv: -kv[1][0]):
+    print(f"  {t:10s} 市值 {v[0]:>11,.2f}  贡献 {v[1]:>+9,.2f}  代理涨跌 {tp(v):>+6.3f}%")
+
+print(f"\n权重基数(独立重算) {total_base:,.2f}")
+print(f"盘中估算变动 {total_delta:+,.2f} 元 ({pct:+.3f}%)")
+print(f"→ 以 10/22 收盘链式 {ARCHIVED:,.2f} 元为基准，盘中估算总资产 {ARCHIVED*(1+pct/100):,.2f} 元")
+
+new_total = total_base + total_delta
+print("\n=== 盘中估算后赛道占比 ===")
+tracks = {}
+for t, v in sorted(agg.items(), key=lambda kv: -(kv[1][0] + kv[1][1])):
+    val = v[0] + v[1]
+    tracks[t] = {"mv0": round(v[0], 2), "mv": round(val, 2), "pct": round(val / new_total * 100, 2),
+                 "delta": round(v[1], 2), "proxy_pct": round(tp(v), 4)}
+    print(f"  {t:10s} {val:>11,.2f} 元 ({val/new_total*100:>5.2f}%)  贡献 {v[1]:>+9,.2f}  代理涨跌 {tp(v):>+6.3f}%")
+med = agg["A股医药"][0] + agg["A股医药"][1] + agg["美股标普医药"][0] + agg["美股标普医药"][1]
+print(f"\n医药总敞口 {med:,.2f} 元 ({med/new_total*100:.2f}%)  距 40% 上限 {40-med/new_total*100:+.2f}pct")
+
+# ---------- 港股暴露三层拆解（§3.108 / AGENTS 23） ----------
+pure_hk, cn_internet, hk_broad = 0.0, 0.0, 0.0
+for x in rows:
+    c = re.sub(r"\D", "", str(x.get("code") or ""))
+    v = x["mv"] + x["delta"]
+    if c in ("012348", "513180"):
+        pure_hk += v
+    elif c in ("513050", "164906"):
+        cn_internet += v
+    elif c in ("000071", "159920"):
+        hk_broad += v
+hk_total = pure_hk + cn_internet + hk_broad
+print(f"\n=== 港股暴露三层拆解 ===")
+print(f"  纯恒科（012348+513180）{pure_hk:>11,.2f} 元 ({pure_hk/new_total*100:.2f}%)")
+print(f"  中概互联（513050+164906）{cn_internet:>9,.2f} 元 ({cn_internet/new_total*100:.2f}%)")
+print(f"  宽基恒生系（000071×1 + 159920）{hk_broad:>7,.2f} 元 ({hk_broad/new_total*100:.2f}%)")
+print(f"  → 港联系总暴露 {hk_total:,.2f} 元 = {hk_total/new_total*100:.2f}%")
+print(f"  （赛道层「恒生科技」{tracks['恒生科技']['mv']:,.2f} 元 = {tracks['恒生科技']['pct']:.2f}%；"
+      f"只报赛道层将低估 {hk_total/new_total*100 - tracks['恒生科技']['pct']:.2f}pct）")
+print(f"  ⚠️ §3.149f 对账关系：纯恒科 {pure_hk:,.2f} 元 + 中概互联 {cn_internet:,.2f} 元 = {pure_hk+cn_internet:,.2f} 元 "
+      f"vs 赛道层 恒生科技 {tracks['恒生科技']['mv']:,.2f} 元（宽基层落在「其他/宽基」赛道）")
+
+# ---------- 医药敞口门槛收益率（§3.98 方程解法） ----------
+B_nonmed = new_total - med
+need = (0.40 / 0.60) * B_nonmed
+r_all = (need / med - 1) * 100
+a_only = med - agg["美股标普医药"][0] - agg["美股标普医药"][1]
+r_only = ((need - (agg["美股标普医药"][0] + agg["美股标普医药"][1])) / a_only - 1) * 100
+print(f"\n【医药敞口门槛（§3.98 方程解法）】A(医药)={med:,.2f}  B(非医药含现金)={B_nonmed:,.2f}")
+print(f"  → 医药两赛道同涨 r ≈ {r_all:+.2f}% 才被动触及 40%")
+print(f"  → 仅 A股医药涨 r ≈ {r_only:+.2f}%（其余持平）")
+print(f"  当前距上限 {40 - med/new_total*100:.2f}pct")
+
+# ---------- 弹性敏感性（给区间，§3.116b） ----------
+ACTIVE = ("002708", "161616", "000727")
+ELAS = {"002708": 1.39, "161616": 1.09, "000727": 0.82}
+MAXM = {"002708": 1.70, "161616": 3.66, "000727": 1.70}
+sensi = {}
+scen = {}
+for label, mult in (("elas_max", None), ("elas_min", 0.85)):
+    d2 = 0.0
+    for x in rows:
+        c = re.sub(r"\D", "", str(x.get("code") or ""))
+        if c in ACTIVE:
+            e = MAXM[c] if mult is None else mult * ELAS[c]
+            d2 += x["mv"] * round(BOARD_MED * e, 4) / 100
+        else:
+            d2 += x["delta"]
+    scen[label] = round(d2, 2)
+_lo, _hi = sorted([scen["elas_max"], scen["elas_min"]])
+sensi["low"] = (round(_lo, 2), round(_lo / total_base * 100, 4))
+sensi["high"] = (round(_hi, 2), round(_hi / total_base * 100, 4))
+sensi["base"] = (round(total_delta, 2), round(pct, 4))
+print("\n=== 弹性敏感性（区间优先，§3.116b） ===")
+print(f"  弹性常量档：MAXM 实测档 → {scen['elas_max']:+,.2f} 元 ｜ 0.85×中位档 → {scen['elas_min']:+,.2f} 元")
+print("  方向约定（§3.116b）：low = 结果下界（最差）、high = 结果上界（最优）—— 按**结果值**排序取 min/max")
+for k in ("low", "base", "high"):
+    d, p = sensi[k]
+    print(f"  {k:5s} {d:+,.2f} 元 ({p:+.4f}%)  估算总资产 {total_base+d:,.2f} 元")
+assert sensi["low"][0] <= sensi["base"][0] <= sensi["high"][0], "区间端点违背 low ≤ base ≤ high（§3.116b）"
+
+# 尾盘情景 A/B（§3.166b：本档为「低位反弹日」→ 情景按「尾盘回吐 / 尾盘续攻」两极，整段重写方向语义）
+SCEN_LEVELS = {
+    "tail_weak":   {"hs300": 0.10, "fin": -1.10, "env": 0.10, "hk_etf": 0.10, "media": 0.40,
+                    "div": -0.90, "sec": 0.20, "cons": 0.40, "board": 0.30, "hst": 0.40,
+                    "cn": 0.80, "stk_gld": 0.40, "stk_tw": -0.30},
+    "tail_strong": {"hs300": 1.30, "fin": 0.20, "env": 1.60, "hk_etf": 1.40, "media": 2.20,
+                    "div": 0.50, "sec": 1.60, "cons": 1.80, "board": 2.60, "hst": 3.20,
+                    "cn": 2.60, "stk_gld": 3.00, "stk_tw": 1.60},
+}
+
+
+def scen_delta(L):
+    d = 0.0
+    for x in rows:
+        c = re.sub(r"\D", "", str(x.get("code") or ""))
+        if c in ACTIVE:
+            d += x["mv"] * round(L["board"] * ELAS[c], 4) / 100
+        elif c == "000248" or c == "519915":
+            d += x["mv"] * L["cons"] / 100
+        elif c == "000968":
+            d += x["mv"] * round((L["cons"] + L["board"]) / 2, 4) / 100
+        elif c in ("012323", "001180", "001551", "512170", "159938"):
+            d += x["mv"] * L["board"] / 100
+        elif c in ("004424", "004752"):
+            d += x["mv"] * L["media"] / 100
+        elif c in ("000051", "110020"):
+            d += x["mv"] * L["hs300"] / 100
+        elif c == "001469":
+            d += x["mv"] * L["fin"] / 100
+        elif c == "005368":
+            d += x["mv"] * L["env"] / 100
+        elif c in ("001552", "512880"):
+            d += x["mv"] * L["sec"] / 100
+        elif c == "100032":
+            d += x["mv"] * L["div"] / 100
+        elif c in ("000071", "159920"):
+            d += x["mv"] * L["hk_etf"] / 100
+        elif c == "012348":
+            d += x["mv"] * L["hst"] / 100
+        elif c in ("513050", "164906", "513180"):
+            d += x["mv"] * L["cn"] / 100
+        elif c == "002410":
+            d += x["mv"] * L["stk_gld"] / 100
+        elif c == "600438":
+            d += x["mv"] * L["stk_tw"] / 100
+        else:
+            d += x["delta"]
+    return d
+
+
+d3 = scen_delta(SCEN_LEVELS["tail_weak"])
+sensi["tail_weak"] = (round(d3, 2), round(d3 / total_base * 100, 4))
+print(f"  [尾盘回吐情景] 13:45 涨幅回吐近半：沪深300 +0.10% / 医药板块 +0.30%×弹性 / 恒生科技 +0.40%（≈3,809）/ 中概 +0.80%："
+      f"{d3:+,.2f} 元 ({d3/total_base*100:+.4f}%)  估算总资产 {total_base+d3:,.2f} 元")
+
+d4 = scen_delta(SCEN_LEVELS["tail_strong"])
+sensi["tail_strong"] = (round(d4, 2), round(d4 / total_base * 100, 4))
+print(f"  [尾盘续攻情景] 尾盘涨幅扩大：沪深300 +1.30% / 医药板块 +2.60%×弹性 / 恒生科技 +3.20%（≈3,915）/ 中概 +2.60%："
+      f"{d4:+,.2f} 元 ({d4/total_base*100:+.4f}%)  估算总资产 {total_base+d4:,.2f} 元")
+assert sensi["tail_weak"][0] <= sensi["base"][0] <= sensi["tail_strong"][0], "尾盘情景违背 low ≤ base ≤ high（§3.116b）"
+
+# ---------- 防线（中证消费 12,100 / 恒科 4,250 · 4,000 · 3,950 / 观察 3,800 · 3,700） ----------
+print("\n=== 防线（10/23 13:45） ===")
+_cs = hq["indices_a"]["中证消费"]
+_hs = hq["indices_hk"]["恒生科技"]
+cons = _cs["cur"]
+hst = _hs["cur"]
+print(f"  中证消费 {cons:,.4f} 距 12,100 下沿 {(cons/12100-1)*100:+.3f}%  "
+      f"(日内低 {_cs['low']:,.2f} / 高 {_cs['high']:,.2f})  [代理涨跌 {_cs['pct']:+.2f}%]")
+print(f"  恒生科技 {hst:,.2f} 距 4,250 防线 {(hst/4250-1)*100:+.3f}%  "
+      f"(日内低 {_hs['low']:,.2f} / 高 {_hs['high']:,.2f})  [代理涨跌 {_hs['pct']:+.2f}%]")
+print(f"    → 日内最高 {_hs['high']:,.2f} < 4,250 → intraday_touched_above = {_hs['high'] >= 4250}（§3.129b）")
+print(f"    → 4,000 线距 {(hst/4000-1)*100:+.4f}%；日内最高 {_hs['high']:,.2f} 距 {(4000/_hs['high']-1)*100:+.4f}% "
+      f"→ intraday_reclaimed_4000 = {_hs['high'] >= 4000}")
+print(f"    → 3,950 线距 {(hst/3950-1)*100:+.4f}%；日内最高 {_hs['high']:,.2f} "
+      f"→ intraday_reclaimed_3950 = {_hs['high'] >= 3950}")
+print(f"    → 3,800 线距 {(hst/3800-1)*100:+.4f}% → intraday_reclaimed_3800 = {_hs['high'] >= 3800}")
+print(f"    → 下一参考位 3,700 距 {(hst/3700-1)*100:+.4f}%")
+print(f"  A股医药板块代理 {BOARD_MED:+.4f}%（反向兑现线阈值 −1.5%）→ "
+      f"{'⚠️ 触发区' if BOARD_MED <= -1.5 else '未触发（转正）'}（基线 = 10/22 收盘，判定权移交 20:00 盘后档）")
+
+# ---------- 恒生科技 0.5% 纪律减仓台账（累计口径，§3.123e / §3.125c） ----------
+CUT1, CUT2 = 1882.46, 1904.44
+PREPLAN_4000 = 1863.33       # 4,000 线预案（10/22 盘前档建案，窗口 10/22 09:30-15:00；仍 awaiting_user_confirmation）
+TODAY_PLAN = 1858.66         # 3,950 线案（10/23 盘前档建案，窗口 10/23 09:30-15:00）
+NEWPLAN_BASIS = 371732.03    # 3,950 线案分母 = 触发日 10/22 的「上一有效估值日基准总资产」
+cum_cut = CUT1 + CUT2
+hk_now = tracks["恒生科技"]["mv"]
+cash_now = tracks["现金"]["mv"]
+cum_with_today = cum_cut + TODAY_PLAN
+print(f"\n=== 恒生科技 0.5% 纪律减仓（累计口径，§3.123e） ===")
+print(f"  已成交 2 次：第 1 次（9/30）{CUT1:,.2f} 元 + 第 2 次（10/2 判定 / 10/8 成交）{CUT2:,.2f} 元 = 累计 {cum_cut:,.2f} 元")
+print(f"  自证：{CUT1:,.2f} 元 + {CUT2:,.2f} 元 = {cum_cut:,.2f} 元 ✅")
+print(f"  第 3 次（4,000 线预案 hstech_4000_cut3）：{PREPLAN_4000:,.2f} 元 —— 仍 awaiting_user_confirmation，**未计入累计**")
+print(f"  今日唯一执行项（3,950 线案 hstech_3950_cut）：{TODAY_PLAN:,.2f} 元，窗口 09:30-15:00（10/23 盘前档建案）")
+print(f"  → 若今日执行：累计（含本笔）= {cum_with_today:,.2f} 元（3 笔），恒生科技 {hk_now-TODAY_PLAN:,.2f} 元 / "
+      f"现金 {cash_now+TODAY_PLAN:,.2f} 元")
+print(f"  → 若用户同时确认 4,000 案已执行：累计 = {cum_with_today + PREPLAN_4000:,.2f} 元（4 笔）")
+print(f"  价格位置：{hst:,.2f} 距 3,950 {(hst/3950-1)*100:+.4f}% → 「反弹但未收复触发线」，纪律优先于择时")
+
+# ---------- QDII 挂账（本档未出库 → 单列披露） ----------
+QD_LOW, QD_MID, QD_HIGH = 369.79, 554.68, 739.57
+QD_NOTIONAL = tracks["美股标普医药"]["mv"]
+LOF_NOTIONAL = None
+for x in rows:
+    if re.sub(r"\D", "", str(x.get("code") or "")) == "164906":
+        LOF_NOTIONAL = (LOF_NOTIONAL or 0) + x["mv"]
+assert abs(QD_NOTIONAL - 61785.49) < 1.5, f"QDII notional 硬守卫失败: {QD_NOTIONAL}"
+print(f"\n=== QDII 挂账（US 10/22 单日段，本档未出库） ===")
+print(f"  标的 000369 / 016280（广发全球医疗保健指数 A/C）；最新净值日 = 2026-10-21（10/22 未出库）")
+print(f"  IYH +1.33% / XLV +1.32% → 传导系数区间 0.45~0.90 → 预告区间 {QD_LOW:,.2f} 元 ~ {QD_HIGH:,.2f} 元"
+      f"（正向段：弹性 0.90 得最高、0.45 得最低，按结果值排序 §3.116b）")
+print(f"  名义市值 {QD_NOTIONAL:,.2f} 元（tracks[\"美股标普医药\"].mv，§3.144a 硬守卫通过）")
+print(f"  164906（中概互联 LOF）最新净值日 = 10/21（10/22 未出库）→ 名义 {LOF_NOTIONAL:,.2f} 元，"
+      f"**不给区间、只登记为待兑现**（§3.122e）")
+
+print("\n=== 逐项明细（按市值降序，前 20 项） ===")
+for x in sorted(rows, key=lambda r: -r["mv"])[:20]:
+    print(f"  {str(x['name'])[:24]:26s} {str(x['code']):9s} {x['track']:10s} {x['mv']:>10,.2f} "
+          f"{x['proxy_pct']:>+7.3f}% {x['delta']:>+9,.2f}  [{x['note'][:44]}]")
+
+out = {"date": "2026-10-23", "as_of": "盘中13:45", "session_type": "normal_trading_day_intraday",
+       "session_type_note": "正常交易日盘中（A股 第 12 个正常交易日 + 港股正常交易日；双市场均开市）",
+       "archived_base": ARCHIVED, "base_file": BASE_FILE,
+       "weight_base": round(total_base, 2),
+       "restore_rule_used": RESTORE, "restore_dev": {k: round(v[0], 4) for k, v in cand.items()},
+       "total_delta": round(total_delta, 2), "est_total_pct": round(pct, 4),
+       "est_total_archived_base": round(ARCHIVED * (1 + pct / 100), 2),
+       "est_total_weight_base": round(total_base + total_delta, 2),
+       "board_med": BOARD_MED, "leader_med": LEADER_MED, "lag_med": LAG_MED,
+       "hk_tech_intraday": HK_TECH_IDX, "hk_tech_caliber": "single_day（基准净值日 = 10/22，已真实兑现；本档为 10/23 单日盘中读数）",
+       "structure": {"order": f"中证医疗 {LAG_MED:+.2f}% / 300医药 {LEADER_MED:+.2f}% / 中证医药 {IDX['中证医药']:+.2f}%",
+                     "regime": f"**「指数分化、成长与医药领涨、权重与红利补跌」**：A股 上证 {IDX['上证指数']:+.2f}% 唯一为负，"
+                               f"而深证成指 {IDX['深证成指']:+.2f}% / 创业板指 {IDX['创业板指']:+.2f}% / 沪深300 {IDX['沪深300']:+.2f}% / "
+                               f"科创50 {IDX['科创50']:+.2f}% / 中证500 {IDX['中证500']:+.2f}%；"
+                               f"港股全线反弹（恒指 {IDX['恒生指数']:+.2f}% / 恒生科技 {IDX['恒生科技']:+.2f}% / 恒生国企 {IDX['恒生国企']:+.2f}% / "
+                               f"恒生医疗保健 {IDX['恒生医疗保健']:+.2f}%）；"
+                               f"**A股医药三口径（中证医药 {IDX['中证医药']:+.2f}% / 300医药 {LEADER_MED:+.2f}% / 中证医疗 {LAG_MED:+.2f}%）全线转正，"
+                               f"中证白酒 {IDX['中证白酒']:+.2f}% 为全表最强**；内部排序 = 中证医疗 {LAG_MED:+.2f}% > 中证医药 {IDX['中证医药']:+.2f}% > 300医药 {LEADER_MED:+.2f}%"
+                               f"→ 「中小盘医药 > 宽基医药 > 大市值医药」，与 10/22 排序同向、但符号完全反转（§3.114d 单日不外推）",
+                     "driver": ("外因 = 隔夜美股「指数跌、结构变」后亚太风险偏好修复（费半 −6.72% 后仍反弹）、美债 10Y 回落 17bp 至 4.96% 缓解长久期折现压力；"
+                                "内因 = 10/22 放量长阴后的超跌反抽 + 主力资金由电子/通信切向医药与消费，"
+                                "而上证为负说明**权重（银行/红利）在补跌**—— 中证金融 −0.37%、100红利 −0.37% 是本档唯一两项负值，"
+                                "属「高切低」的第二阶段（昨日切向银行，今日切出银行）")},
+       "defense": {"cs_index": cons, "cs_vs_12100": round((cons / 12100 - 1) * 100, 3),
+                   "cs_low": _cs["low"], "cs_high": _cs["high"],
+                   "cs_intraday_low_vs_line_pct": round((_cs["low"] / 12100 - 1) * 100, 3),
+                   "cs_state": "above_lower_line_widened",
+                   "cs_note": f"日内低 {_cs['low']:,.2f} 距 12,100 为 {(_cs['low']/12100-1)*100:+.3f}% → 昨日「最贴近」状态被反弹解除",
+                   "hstech": hst, "hstech_vs_4250": round((hst / 4250 - 1) * 100, 4),
+                   "hstech_low": _hs["low"], "hstech_high": _hs["high"],
+                   "hstech_break": hst < 4250, "intraday_touched_above": _hs["high"] >= 4250,
+                   "hstech_4000": {"line": 4000.0, "dist_pct": round((hst / 4000 - 1) * 100, 4),
+                                   "intraday_reclaimed": _hs["high"] >= 4000,
+                                   "high_vs_line_pct": round((_hs["high"] / 4000 - 1) * 100, 4),
+                                   "state": "close_level_break_narrowed",
+                                   "prev_close_dist_pct": -5.1517,
+                                   "state_derivation": f"10/22 收盘 {3793.93:,.2f}（−5.1517%）→ 本档 {hst:,.2f}（{(hst/4000-1)*100:+.4f}%）→ 破位**收窄** {abs((hst/4000-1)*100) - 5.1517:+.4f}pct（state 由公式现算，未继承 §3.149a）"},
+                   "hstech_3950": {"line": 3950.0, "dist_pct": round((hst / 3950 - 1) * 100, 4),
+                                   "intraday_reclaimed": _hs["high"] >= 3950,
+                                   "state": "close_level_broken_pending_close",
+                                   "note": "今日盘前档已建案 1,858.66 元；本档「反弹未收复」→ 纪律优先、仍建议执行（择时须登记 waived_reason）"},
+                   "hstech_3800": {"line": 3800.0, "dist_pct": round((hst / 3800 - 1) * 100, 4),
+                                   "intraday_reclaimed": _hs["high"] >= 3800,
+                                   "note": "10/22 收盘首次失守（−0.1597%）→ 本档盘中已收复"},
+                   "hstech_next_watch": 3700.0,
+                   "hstech_3700_dist_pct": round((hst / 3700 - 1) * 100, 4),
+                   "med_reverse_line": BOARD_MED <= -1.5,
+                   "med_proxy_pct": BOARD_MED,
+                   "med_judgement": "板块代理 **转正**（+1.72%）→ 反向兑现线（−1.5%）本档未触发；按盘前档待办「收盘转正即注销」，**注销判定权归 20:00 盘后档**（需收盘值确认）"},
+       "sensitivity": {k: {"delta": v[0], "pct": v[1]} for k, v in sensi.items()},
+       "tracks": tracks,
+       "med_exposure": round(med, 2), "med_pct": round(med / new_total * 100, 2),
+       "threshold_all_med": round(r_all, 2), "threshold_a_sh_med": round(r_only, 2),
+       "hk_split": {"pure_hk": round(pure_hk, 2), "cn_internet": round(cn_internet, 2),
+                    "hk_broad": round(hk_broad, 2), "total": round(hk_total, 2),
+                    "total_pct": round(hk_total / new_total * 100, 2),
+                    "track_layer_pct": tracks["恒生科技"]["pct"],
+                    "segment_identity": {"pure_plus_cn_internet": round(pure_hk + cn_internet, 2),
+                                         "track_layer_mv": tracks["恒生科技"]["mv"],
+                                         "note": "§3.149f：纯恒科 + 中概互联 = 恒生科技赛道层；宽基恒生系落在「其他/宽基」→ 三段合计 ≠ 赛道值"}},
+       "stale_nav_legs": {
+           "count": 3,
+           "codes": ["000369", "016280", "164906"],
+           "us_medical": {"codes": ["000369", "016280"], "base_nav_date": "2026-10-21",
+                          "pending_segment": "US 10/22 单日段（IYH +1.33% / XLV +1.32%）",
+                          "notional_mv": QD_NOTIONAL,
+                          "band_low": QD_LOW, "band_mid": QD_MID, "band_high": QD_HIGH,
+                          "source": "portfolio_preopen_20261023.json#qdii_pending",
+                          "rule": "§3.118a / §3.139：只给区间、禁止中枢点值，禁止并入当日收益与待消化"},
+           "cn_internet": {"codes": ["164906"], "base_nav_date": "2026-10-21",
+                           "pending_segment": "10/22 净值未出库（本档 13:45 实测最新净值日 = 10/21，已由 10/20 推进）",
+                           "notional_mv": round(LOF_NOTIONAL, 2), "range_given": False,
+                           "rule": "§3.122e：无单一稳定可复现代理指数 → 不给区间、只登记为待兑现"},
+           "main_caliber_note": "本档盘中估算主口径对 000369 / 016280 / 164906 三腿均按 0 计；挂账区间单列、不并入当日收益与待消化",
+       },
+       "discipline_cut": {"cut1": CUT1, "cut2": CUT2, "cumulative_amount": round(cum_cut, 2),
+                          "selfcheck_ok": abs(CUT1 + CUT2 - cum_cut) < 0.005,
+                          "new_cut_today": TODAY_PLAN,
+                          "settle": "第 1、2 次已成交（累计 3,786.90 元）",
+                          "executed_this_session": {"id": "hstech_3950_cut", "amount": TODAY_PLAN, "level": 3950.0,
+                                                    "built_at": "2026-10-23 08:00 盘前档",
+                                                    "window": "2026-10-23 09:30-15:00",
+                                                    "status": "recommend_execute_today（执行确认权归用户，本档不代执行）",
+                                                    "cum_after": round(cum_with_today, 2),
+                                                    "hk_after": round(hk_now - TODAY_PLAN, 2),
+                                                    "cash_after": round(cash_now + TODAY_PLAN, 2)},
+                          "awaiting": {"id": "hstech_4000_cut3", "amount": PREPLAN_4000, "level": 4000.0,
+                                       "built_at": "2026-10-22 08:00 盘前档",
+                                       "status": "awaiting_user_confirmation（未确认 = 未计入累计，§3.110）",
+                                       "cum_if_confirmed": round(cum_with_today + PREPLAN_4000, 2)},
+                          "after_hk": round(hk_now - cum_with_today, 2),
+                          "after_cash": round(cash_now + cum_with_today, 2),
+                          "after_hk_pct": round((hk_now - cum_with_today) / new_total * 100, 2),
+                          "after_cash_pct": round((cash_now + cum_with_today) / new_total * 100, 2),
+                          "note": ("本档不新增自主减仓（§3.114c）；唯一执行项 = 今日盘前档已建案的 3,950 线 −0.5%（1,858.66 元）；"
+                                   "恒科盘中反弹 +1.96% 至 3,868.15、仍低于 3,950 → 「纪律优先于择时」，择时须登记 waived_reason")},
+       "detail_restore_note": "逐券还原式由机器判据选定（三候选 + 逐赛道最大偏差 <1.5 元），禁止按字段名取数（§3.112a）",
+       "intraday_caliber_note": ("本档为双市场同时开市的正常交易日 → 000071 / 012348（场外港股联接）基准净值日 = 10/22、今日对 10/23 为单日口径；"
+                                 "场内 159920 / 513180 亦为单日口径，但**场外联接与场内 ETF 同日符号可相反、禁止互相验证**（§38 / §3.112i）"),
+       "pseudo_close_rows": {"indices": 12, "etf": 9,
+                             "note": "A股板块 7 + 港股指数 5 = 12 行「盘中 13:45」伪收盘行 → 盘后档以真实收盘覆盖（§3.122a）"},
+       "detail": rows}
+json.dump(out, open(os.path.join(HIST, "portfolio_intraday_20261023.json"), "w", encoding="utf-8"),
+          ensure_ascii=False, indent=1)
+print("\n已保存 portfolio_intraday_20261023.json")
