@@ -1,0 +1,379 @@
+# -*- coding: utf-8 -*-
+"""2026-10-23 盘后档：新闻窗口（14:00-20:00）+ 情绪标注（规则表，DeepSeek 402 降级第 20 日）
+
+输出：
+  data/processed/news/news-close-20261023.json      （本档条目）
+  data/processed/news/news-2026-10-23.json          （合并：盘前 26 + 盘中 26 + 盘后本档）
+  data/processed/news/sentiment-2026-10-23.json     （同结构，含 window 字段）
+  data/processed/history/sentiment_agg_20261023_close.json
+"""
+import json, os
+from collections import defaultdict
+
+BASE = '/Users/jieyang/Documents/WealthHub'
+NEWS = os.path.join(BASE, 'data/processed/news')
+HIST = os.path.join(BASE, 'data/processed/history')
+TODAY = '2026-10-23'
+WIN = '盘后(10/23 14:00-20:00)'
+DEG = '规则表降级（DeepSeek HTTP 402，连续第 20 个日历日）'
+
+ITEMS = [
+    # ---------------- 其他/宽基 ----------------
+    dict(track='其他/宽基', category='行业事件类', sentiment='正面', strength=72, direction='利多',
+         volatility='高', confidence=93,
+         brief='沪指+0.89%·创业板+4.16%·成交1.97万亿·超4500股上涨',
+         title='🟢 **10/23 收盘速览：上证 +0.89% 报 3,690.48（收在日内最高附近，日内低 3,574.27）、深证成指 +2.79% 报 11,673.83、创业板指 +4.16% 报 2,684.10、科创50 +3.04%、北证50 +1.88%；全天成交 19,728 亿元（较上日放量 4,310 亿元）；全市场超 4,500 只个股上涨**',
+         summary=('**本档定价基准条目。** ① **「深 V」以收盘口径完全确认** —— 上午创业板一度 −2.14%、'
+                  '收盘 +4.16%，日内摆动 6.30pct（低 2,494.22 → 高 2,695.08），**振幅为 10 月以来最大**；'
+                  '② **量能是核心差异**：成交 19,728 亿元、放量 4,310 亿元（**放量 27.9%**），'
+                  '与 10/22「放量下跌 1.54 万亿」同属「大额换手」但方向相反 → **是资金再配置而非无人接盘**；'
+                  '③ **结构**：电机/自动化设备/软件开发/减速器/人形机器人领涨（**成长 + 主题**），'
+                  '兵装重组/可燃冰/银行/电力/元件领跌 —— **银行继 10/22「逆势创新高」后今日转跌，'
+                  '高切低链条第二环闭合**；'
+                  '④ **组合映射**：其他/宽基腿 +2,001.52 元（+2.205%）为**本档最大贡献腿**，'
+                  '广联达 +3.96%（+1,478.37 元）单券贡献该腿 73.9%。'),
+         source='新浪财经 7x24 快讯（2026-10-23 15:01）/ 本地新浪 hq 直取（指数点位与成交额）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniweywq4894454.d.html'),
+
+    dict(track='其他/宽基', category='行业事件类', sentiment='正面', strength=60, direction='利多',
+         volatility='中', confidence=90,
+         brief='ETF成交6937.76亿创2026年2月以来最高',
+         title='🟢 **ETF 两市成交额 6,937.76 亿元，创 2026 年 2 月以来最高，较昨日放量 889.89 亿元；其中股票型 ETF 2,361.95 亿元、债券型 2,822.52 亿元、QDII 型 988.79 亿元、货币型 636.06 亿元、商品型 128.44 亿元；创业板 ETF 易方达单日成交近 200 亿元、沪深300ETF 破百亿**',
+         summary=('① **ETF 已成为本轮承接主通道** —— 股票型 ETF 单日 2,361.95 亿元，相当于两市成交的 **12.0%**'
+                  '（10/23 沪深两市 19,728 亿元），被动资金占比创阶段新高；'
+                  '② **口径提示**：全口径 6,937.76 亿元中债券型占 40.7%、货币型占 9.2%，'
+                  '**只有股票型 2,361.95 亿元可视为权益增量**，把全口径当「权益资金」会高估 1.94 倍；'
+                  '③ **QDII 型 988.79 亿元**为本轮高位，与「美股 AI 交易拥挤度出清」同步，属**跨境再平衡**；'
+                  '④ **判读**：宽基 ETF 放量 = 承接盘，**但被动买入不等于看多**（可为对冲/套利），本档只作量能读数。'),
+         source='新浪财经 7x24 快讯（2026-10-23 15:16）',
+         source_url=''),
+
+    dict(track='其他/宽基', category='行业事件类', sentiment='正面', strength=58, direction='利多',
+         volatility='中', confidence=90,
+         brief='首批18只主动ETF·3只一日售罄',
+         title='🟢 **首批 18 只主动 ETF 首日发售火爆：易方达、摩根基金 14:20 前后双双触及 20 亿元首募上限并提前结募、启动比例配售，富国基金随后亦达 20 亿元上限 → 3 只「一日售罄」；半日全市场募集超 10 亿元**',
+         summary=('① **口径升级**：盘前档记录为「计划发行」、盘中档记录为「销售超预期（摩根 15 亿元）」，'
+                  '本档为**收盘后确认「3 只售罄」**——同一事实的三个阶段，**不可跨档混引**；'
+                  '② **量级校准**：3 只 × 20 亿元 = 60 亿元，占当日两市成交 **0.30%**、占股票型 ETF 成交 2.5% → '
+                  '**信号意义 >> 资金体量**，建仓最早 11 月初，**对 10 月行情无实质增量**；'
+                  '③ **产品含义**：主动 ETF 打通「主动管理 + 场内交易」，长期利好**券商与基金公司**，'
+                  '组合仅通过 001552（证券保险）/ 001469（金融地产）间接受益；'
+                  '④ **不构成加仓依据**。'),
+         source='新浪财经 7x24 快讯（2026-10-23 14:30 / 19:13）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniwfmnk4999660.d.html'),
+
+    # ---------------- 宏观 ----------------
+    dict(track='宏观', category='宏观类', sentiment='利空', strength=62, direction='利空',
+         volatility='高', confidence=91,
+         brief='布伦特115美元创5个月新高·燃料油+6.80%·白银-5.23%',
+         title='🔴 **布伦特原油盘中升至 115 美元/桶，创 5 个月新高（新华社）；国内商品期货收盘燃料油 +6.80%、液化石油气 +6.12%、低硫燃料油 +5.72%、丙烯 +4.89%、上海原油 +3.26%，而白银 −5.23%**',
+         summary=('**本档最重要的宏观负向变量。** ① **连续第 3 个交易日**（10/22 油 +4.0%、10/23 盘中 110 → 收盘 115 美元）；'
+                  '② **传导链**：油价 → 通胀预期 → 长端利率 → **长久期资产（创新药/恒科/AI）折现率抬升**，'
+                  '这是 10/22 组合大跌的共同因子；**但今日 A股/港股 逆势大涨** → 说明当日定价权在'
+                  '「超跌修复 + 政策预期」，**两者并存、不可只取一侧**；'
+                  '③ **白银 −5.23% 与油价背离**：贵金属跌 = 避险退潮而非通胀交易，'
+                  '**「油涨银跌」组合指向「供给冲击型通胀」而非「需求型通胀」**；'
+                  '④ **对组合**：无直接商品暴露；通过「利率 → 医药/恒科估值」间接传导，'
+                  '**不构成任何赛道的单日加减仓依据**。'),
+         source='新华社（2026-10-23 19:47）/ 国内商品期货收盘（15:00）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniwfmnh8260677.d.html'),
+
+    dict(track='宏观', category='宏观类', sentiment='正面', strength=58, direction='利多',
+         volatility='高', confidence=88,
+         brief='2年期美债-18bp至4.64%·下周加息概率降至7%',
+         title='🟢 **美债周四重挫（收益率大幅下行）：2 年期美债收益率单日下跌 18 个基点至 4.64%；联邦基金期货显示下周议息会议「加息」概率仅 7%（本月新低）、今年「不再加息」概率升至 24%；12 月加息概率仍有 76%**',
+         summary=('① **这是本档唯一明确利多「长久期资产」的宏观项** —— 2 年期 −18bp 为近期最大单日下行，'
+                  '直接缓解创新药/恒科的分母端压力；'
+                  '② **口径必须精确**：当前处于**加息周期尾部**（不是降息周期），'
+                  '「不加息概率 24%」≠「降息概率 24%」，**禁止写成「降息预期升温」**；'
+                  '③ **与油价矛盾**：油价 115 美元推升通胀 → 理论上应推高利率，实际利率下行 → '
+                  '**市场在为「增长走弱」定价（避险买债）**，与美银「避险至 11 月中」判断同向；'
+                  '④ **对 QDII 腿**：利率下行利好 XLV/IYH 估值，但**净值传导滞后 1 个交易日**，'
+                  '今日兑现的是 US 10/22 段（IYH +1.33%），与本条**时序不同源**。'),
+         source='新浪财经（美债周四重挫，2026-10-23 14:51）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniweywn8109251.d.html'),
+
+    dict(track='宏观', category='宏观类', sentiment='中性', strength=54, direction='中性',
+         volatility='中', confidence=90,
+         brief='前三季度财政收入+5.1%·土地出让-27.9%',
+         title='🟡 **财政部：前三季度全国一般公共预算收入 17.23 万亿元（同比 +5.1%，增幅比上半年提高 0.4pct）、支出 21.02 万亿元（+1%）；税收收入 14.07 万亿元（+6.1%）；政府性基金预算收入 25,010 亿元（−18.6%），其中国有土地使用权出让收入 16,087 亿元（−27.9%）**',
+         summary=('① **两本账分化**：一般公共预算「收入好于支出」（+5.1% vs +1%）= 财政留有后手；'
+                  '政府性基金「收入 −18.6%、土地出让 −27.9%」= **地方财政仍紧**；'
+                  '② **税种结构**：个人所得税 +14.1%、企业所得税 +7.1%、国内增值税 +6%，'
+                  '而**国内消费税 −4.1%** → **消费税负增长是消费侧的硬读数**，与「消费复苏」叙事背离；'
+                  '③ **对市场**：财政收入改善 → 增量刺激必要性下降，**是「政策预期」的负面边际**；'
+                  '④ **对组合**：大消费腿的宏观锚（消费税）仍为负 → **消费腿的反弹属估值修复、非基本面驱动**。'),
+         source='新华社 / 财政部新闻发布会（2026-10-23 15:06-15:09）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniweywq4902741.d.html'),
+
+    dict(track='宏观', category='政策类', sentiment='中性', strength=52, direction='中性',
+         volatility='低', confidence=92,
+         brief='10/26 MLF 7000亿·净回笼2000亿',
+         title='🟡 **央行公告：10 月 26 日以固定数量、利率招标、多重价位中标方式开展 7,000 亿元 1 年期 MLF 操作；东方金诚王青测算 10 月 MLF 净回笼 2,000 亿元，认为「适度缩量不影响政府债券顺利发行」**',
+         summary=('① **净回笼 2,000 亿元 = 边际收紧**，但结合「财政收入 +5.1%、支出 +1%」看，'
+                  '属**财政存款回笼对冲**而非主动收紧；'
+                  '② **对权益**：流动性中性偏紧，与今日 1.97 万亿元放量上涨**不同源** → '
+                  '**今日上涨不能归因于流动性宽松**；'
+                  '③ **对债市**：10 年期国债期货主力 −0.01%、30 年期 −0.11%，反应平淡；'
+                  '④ **判读纪律**：单次 MLF 缩量不足以判断政策转向，须与 11 月 LPR/降准合并观察。'),
+         source='央行公告 / 东方金诚解读（2026-10-23 17:17 / 18:05）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniwffen4970035.d.html'),
+
+    dict(track='宏观', category='宏观类', sentiment='利空', strength=56, direction='利空',
+         volatility='高', confidence=87,
+         brief='美银：避险持续至11月中·标普期货-0.3%',
+         title='🔴 **美银策略师哈特尼特：战术上维持避险立场至 11 月中旬，预期组合为「收益率下行、股市走弱、美元走弱」；并称市场尚未充分消化「民主党同时拿下参众两院」情景。同日美股盘前标普 500 期货 −0.3%、纳指 100 期货 −0.1%、道指期货 −0.6%（此前纳指录得 6 月以来最大单日跌幅）**',
+         summary=('① **外资卖方对 11 月中的一致偏空**（与瑞银「A股仍具吸引力」相反）→ '
+                  '**两家顶级卖方分歧极大，本档不取任一方向**；'
+                  '② **关键变量是「中期选举」**：11/3 投票，属**事件驱动型风险**，'
+                  '与 A股 基本面无关，**不应折现为 A股 赛道判断**；'
+                  '③ **美股期货微跌 + 科技股抛售暂缓**：今夜 21:30 开盘方向未定，'
+                  '**QDII 腿的下一段（US 10/23）在北京时间明日 04:00 才成型**；'
+                  '④ **对组合**：美股腿 16.89% 为第二大权重，若美股续跌，**下一个交易日该腿将转为拖累**。'),
+         source='新浪财经（美银研报 / 美股盘前，2026-10-23 18:24 / 19:41）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniwffen5064394.d.html'),
+
+    # ---------------- 恒生科技 ----------------
+    dict(track='恒生科技', category='行业事件类', sentiment='正面', strength=66, direction='利多',
+         volatility='高', confidence=92,
+         brief='恒指+0.69%·恒科+2.05%报3871.66·收复3800',
+         title='🟢 **港股收盘：恒生指数 +0.69% 报 23,093.37、恒生科技 +2.05% 报 3,871.66、恒生国企 +0.87%、恒生医疗保健 +1.25%；MINIMAX-W +17.24%、地平线机器人-W +8.43%、智谱 +7.47%、比亚迪股份 +6.60%、宁德时代 +5.50%**',
+         summary=('① **四道防线只收复最下面一道**：3,871.66 收复 3,800（+1.8858%，`close_level_recovered_today`），'
+                  '但仍距 3,950 **−1.9833%**、距 4,000 −3.2085%、距 4,250 −8.9021% → '
+                  '**「破位解除」只对 3,800 成立，3,950/4,000 仍在破位状态**；'
+                  '② **三日形态对称**：10/22 收在日内次低（−5.03%）→ 10/23 收在日内偏高（+2.05%，高 3,896.93），'
+                  '**但两日低点几乎相同（3,781.15 / 3,781.23）→ 双底形态待确认，本档不下结论**；'
+                  '③ **领涨结构是「小盘弹性 + 新能源」**（MINIMAX/地平线/智谱/比亚迪/宁德），'
+                  '**腾讯 +0.94%、阿里 +0.46%、网易 +0.66% 权重股偏弱** → 同 10/23 盘中档结论，'
+                  '**指数 +2.05% ≠ 持仓涨幅（腿代理 +0.465%）** 的偏离在收盘口径上**扩大到 1.59pct**；'
+                  '④ **偏离的主因是净值日错位**：164906（中概互联 LOF）今日兑现的是 **10/22 净值（−3.24%）**，'
+                  '与 10/23 港股上涨方向相反 → 该腿 −286.77 元 抵消了 012348/513050 的正贡献。'),
+         source='新浪财经 7x24（港股收盘，2026-10-23 16:09）/ 本地新浪 hq 直取',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniweywq4998596.d.html'),
+
+    dict(track='恒生科技', category='行业事件类', sentiment='负面', strength=58, direction='利空',
+         volatility='中', confidence=90,
+         brief='南向净卖出16.70亿港元·连续第8日',
+         title='🔴 **南向资金今日净卖出 16.70 亿港元（连续第 8 个交易日净卖出）；港股通（沪）：腾讯控股净买入 9.09 亿港元、中际旭创净买入 1.92 亿港元，阿里巴巴-W 净卖出 12.05 亿港元居首；港股通（深）：智谱净买入 17.54 亿港元、南方恒生科技净买入 5.80 亿港元，中国海洋石油净卖出 8.01 亿港元居首**',
+         summary=('① **卖出幅度大幅收敛但仍未转正**：10/22 净卖出 92.18 亿 → 今日 16.70 亿（**收敛 81.9%**），'
+                  '**盘前档登记的「收敛至 30 亿以内」检验线本档达标** ✅；'
+                  '② **结构极其分化**：**智谱单只净买入 17.54 亿**（占全部净买入的绝大部分）而**阿里净卖出 12.05 亿** → '
+                  '**「卖出权重、买入主题」**，与指数「小盘强、权重弱」完全同构；'
+                  '③ **南方恒生科技 ETF 净买入 5.80 亿** 是**唯一与组合直接相关**的读数（同类 ETF 获净申购）；'
+                  '④ **纪律**：连续 8 日净卖出 = 外资/南向仍在减配港股，**但幅度已收敛 82%**，'
+                  '**本档不上调恒科权重、也不追加减仓**（cut3 已按 3,950 线执行，同日不重复）。'),
+         source='新浪财经 7x24（南向资金，2026-10-23 17:40）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniwffen5001759.d.html'),
+
+    dict(track='恒生科技', category='行业事件类', sentiment='正面', strength=54, direction='利多',
+         volatility='中', confidence=88,
+         brief='港股机器人/新能源车链领涨·五一视界+22%',
+         title='🟢 **港股主题板块走强：机器人概念五一视界 +22.49%（早盘曾低见 46.60 港元）、优必选 +8.29%、卧安机器人 +5.58%（消息面：其子公司 51Sim 入选英伟达 Halos SAFE 生态）；新能源汽车股比亚迪股份 +6%、小鹏 +5.5%、小米 +5%、蔚来 +5%、理想 +4.6%**',
+         summary=('① **主题与 A股 同向**：A股 人形机器人/减速器领涨、港股机器人链同步，'
+                  '**属同一「具身智能」主题的跨市场共振**，非港股独立逻辑；'
+                  '② **新能源车链是新增变量**：比亚迪 +6.60%（前一日刚因「市值跌破 1 万亿、股价创年内新低」被记录），'
+                  '**两日对称反转、无新增业绩** → 技术性修复；'
+                  '③ **对组合**：恒科成分含比亚迪/小米，**但组合持有的是指数联接（012348）与 ETF（513180）**，'
+                  '已通过指数间接暴露；'
+                  '④ **判读**：主题股（五一视界 +22%）**波动率极高、不在恒科成分内**，不可作为恒科持续性的证据。'),
+         source='新浪财经 7x24（港股板块，2026-10-23 14:19 / 14:24）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniweuqq8201755.d.html'),
+
+    # ---------------- A股医药 ----------------
+    dict(track='A股医药', category='政策类', sentiment='正面', strength=60, direction='利多',
+         volatility='中', confidence=90,
+         brief='药监局：加大中药政策支持力度',
+         title='🟢 **国家药监局 10/23 在京召开中药监管工作座谈会，明确「将进一步加大中药领域政策支持力度，优化监管模式和评价方法，完善指导原则体系，巩固拓展中药创新成果」，听取院士、国医大师与资深专家意见**',
+         summary=('① **层级与性质**：**部委级监管座谈会（非发文）**，表述为「将加大支持」→ **方向明确、无具体额度/时限**，'
+                  '属**预期管理类**而非可量化政策；'
+                  '② **与 10/15-18「世界传统医药大会」的衔接**：大会（10/17-18）后第 5 个交易日出现监管表态，'
+                  '**政策链条延续**，此前登记的「催化窗口 10/16-18」应**顺延为「会后续表态期」**；'
+                  '③ **对组合**：中药板块**不在主要持仓指数权重前列**（中证医药内中药约占 1/3，'
+                  '但 002708/161616/000727 均为全市场医药主动基）→ **间接受益、不可外推为净值弹性**；'
+                  '④ **本档不因此加仓**（医药敞口 38.98%，余量仅 1.02pct）。'),
+         source='国家药监局（2026-10-23 19:41，新浪财经转载）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniwfmnk5027292.d.html'),
+
+    dict(track='A股医药', category='政策类', sentiment='负面', strength=60, direction='利空',
+         volatility='高', confidence=86,
+         brief='美财政部拟将生物技术列入对华投资受限清单',
+         title='🔴 **外交部回应「美国财政部提议将生物技术纳入对外投资安全项目受限技术清单」：泛化国家安全概念、对特定国家采取歧视性措施不符合任何一方利益，中方将密切关注并采取必要措施维护正当权益**（10/23 例行记者会）',
+         summary=('① **这是本档医药腿唯一的实质性负向政策项**，且**处于「提议」阶段、尚未生效** → '
+                  '**不可写成「已落地」**；'
+                  '② **传导路径**：若落地 → 美资对华生物技术（含 CXO/生物制药）股权投资受限 → '
+                  '**一级市场融资与 BD 交易受影响**，与 10/16「第 48 号公告对 CXO 明文排除」形成**方向相反的两条政策线**；'
+                  '③ **时序纪律**：本条发布于 15:12（A股 已收盘），**今日价格未反映** → '
+                  '**归属下一个交易日（10/26）的事件**，本档只登记、不入今日归因；'
+                  '④ **历史对照**：同类「清单类」政策在事件库中的 3/5 日窗口样本过少（n≤3），'
+                  '**禁止据此外推跌幅**。'),
+         source='外交部例行记者会（2026-10-23 15:12，央视新闻）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniweywq4912279.d.html'),
+
+    dict(track='A股医药', category='业绩类', sentiment='负面', strength=52, direction='利空',
+         volatility='中', confidence=88,
+         brief='上海医药终止HER2项目·太极主营-11.31%·国邦Q3-39.44%',
+         title='🔴 **医药三季报与研发管线密集披露（偏负）：上海医药终止靶向 HER2 的 I025-A 项目临床试验及后续开发；太极集团 1-9 月主营业务收入 79.04 亿元（−11.31%），其中医药工业 −15.87%；国邦医药 Q3 净利润 1.30 亿元（−39.44%）、前三季度 −29.67%**',
+         summary=('① **三类负向信号同时出现**：**研发终止（管线减值风险）+ 工业端收入下滑（集采/降价）+ 利润大幅下滑**；'
+                  '② **口径纪律**：以上三家**均不在组合持仓**，属「板块景气读数」而非个券损益；'
+                  '**太极集团工业 −15.87% 是中药/老字号承压的直接证据**，与同日「药监局加大中药支持」形成**政策与业绩的背离**；'
+                  '③ **对主动基**：002708/161616/000727 的持仓与此重叠度无法从公开信息精确测算 → '
+                  '**只登记为「三季报期个股风险」**，不量化到净值；'
+                  '④ **时点**：三季报披露截止 10/31，**未来 5 个交易日为业绩雷高发窗口**。'),
+         source='上市公司公告（2026-10-23 15:58-17:17）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniwffen4970181.d.html'),
+
+    # ---------------- 大消费 ----------------
+    dict(track='大消费', category='政策类', sentiment='正面', strength=56, direction='利多',
+         volatility='中', confidence=88,
+         brief='财政部：购房贴息成效初显·消费政策储备',
+         title='🟢 **财政部金融司副司长李楠：居民购房贷款贴息政策（10/1 起全国实施）落地平稳、成效初显，「不少家庭看房购房办理贷款」；下一步将「紧扣居民消费、民间投资、供需结构优化等关键环节加强前瞻研究谋划，丰富政策工具箱」**',
+         summary=('① **两条独立信息需分开**：**购房贴息 = 已落地、有微观反馈**；'
+                  '**「消费政策储备」= 尚未出台、纯预期** → 不可合并为「消费刺激加码」；'
+                  '② **与消费税 −4.1% 并读**：财政端在「补贴需求」而税收端显示「消费量价仍弱」→ '
+                  '**政策对冲而非需求反转**；'
+                  '③ **对组合**：大消费腿 20.29%，其中 000248（主要消费联接）28,401 元 **本档未定价**（见行情章节），'
+                  '519915（富国消费主题）+2.77% 已计价；'
+                  '④ **本档不因政策预期加仓消费**（无量化规模）。'),
+         source='财政部新闻发布会（2026-10-23 15:28 / 15:44）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniweywq4934439.d.html'),
+
+    dict(track='大消费', category='宏观类', sentiment='正面', strength=54, direction='利多',
+         volatility='中', confidence=86,
+         brief='9月出口+27.5%·改善扩散至传统消费品',
+         title='🟢 **招商证券张静静：9 月进出口总额 51,628 亿元（同比 +27.5%），其中出口 30,344 亿元；汽车出口重新提速、传统消费品改善更广泛、数量增长提供更多支撑，预计全年出口增长 19%，出口需求改善已开始向部分传统消费品扩散**',
+         summary=('① **这是「出口链消费」的新增读数**，与内需（消费税 −4.1%）方向相反 → '
+                  '**消费的两条腿（内需 / 出口）分化**；'
+                  '② **结构**：汽车 + 传统消费品（家电/轻工/纺服）→ **与组合的「主要消费」指数重叠有限**'
+                  '（主要消费以食品饮料为主），**受益更偏制造端**；'
+                  '③ **口径提示**：+27.5% 为**美元/人民币口径未说明的高增速**，'
+                  '且 9 月有低基数与「抢出口」因素 → **不可线性外推至 Q4**；'
+                  '④ **判读**：对大消费腿**边际正面但不构成加仓依据**（受益标的多不在持仓）。'),
+         source='招商证券研发中心（2026-10-23 14:37）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniweywq4864329.d.html'),
+
+    # ---------------- 美股标普医药 ----------------
+    dict(track='美股标普医药', category='行业事件类', sentiment='正面', strength=58, direction='利多',
+         volatility='中', confidence=87,
+         brief='武田ADC达双终点·BMS乳腺癌降59%',
+         title='🟢 **海外创新药读数偏正：武田制药 CLDN18.2 阳性晚期胃癌 ADC 药物 TAVATECAN 达到双重主要终点；百时美施贵宝（BMS）三期乳腺癌研究中伊沙贝木单抗（IZA-BREN）将疾病进展或死亡风险降低 59%**',
+         summary=('① **两条均为「临床终点达标」级别的一类事件**，对 XLV/IYH 的**管线情绪**为正，'
+                  '但**对指数当日权重影响有限**（武田非 XLV 前十大权重、BMS 权重约 3%）；'
+                  '② **时点错位**：发布在 19:30-19:31（北京），**US 10/23 交易时段尚未开始（21:30 开盘）** → '
+                  '**无法计入今日 QDII 腿**，属「明日 04:00 成型」的挂账段；'
+                  '③ **对组合**：000369/016280 跟踪的是**全球医疗保健指数（MSCI 世界医疗）**，'
+                  '与 XLV 高度相关但非同一指数 → **只作方向参考，禁止用 XLV 点值做净值预告的分子**（§3.106）；'
+                  '④ **不构成 QDII 腿加仓依据**（该腿 16.89%，已是第二大权重）。'),
+         source='公司公告（2026-10-23 19:30-19:31，新浪财经转载）',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniwfmnh8243940.d.html'),
+
+    dict(track='美股标普医药', category='行业事件类', sentiment='中性', strength=54, direction='中性',
+         volatility='中', confidence=92,
+         brief='QDII兑现US10/22段+942.55元·US10/23未开盘',
+         title='🟡 **美股腿时点事实：US 10/22 段本档按真实净值核销 +942.55 元（000369 +1.531% / 016280 +1.520%，IYH 10/22 +1.33%）；US 10/23 交易时段为北京 21:30 起 → 本档该腿无新增定价；今晚 20:30 美国 Q3 GDP 公布时点晚于本档产出（20:00），只可引用「待公布」**',
+         summary=('① **核销值超出 13:45 档预告上界**：预告区间 +369.79 元 ~ +739.57 元（弹性 0.45~0.90），'
+                  '**实测 +942.55 元 = 上界的 127.4%**，隐含传导系数 **1.1511 / 1.1427 > 0.90** → '
+                  '**区间法第 8 样本、第 6 例越界，且越界方向仍为「上界」**；'
+                  '② **累计规律**：8 个样本中 6 例越界、方向 5 次上界 1 次下界 → '
+                  '**系数不是常数，点值继续 pending**；上涨段的 0.45~0.90 区间**明显偏窄**，'
+                  '**下档起应把上涨段上界上调至 1.20**（待下档验证，本档不改口径）；'
+                  '③ **GDP 纪律**：20:30 公布 → 本档 20:00 产出时**结果不存在**，'
+                  '**只可写「待公布」，禁止引用预期值当作实际值**（§3.167a）；'
+                  '④ **对下一档**：US 10/23 段区间待明日 08:00 盘前档重算。'),
+         source='本地净值抓取（F10 直连，2026-10-23 20:0x）/ 新浪 hq 美股实时',
+         source_url='https://finance.sina.cn/7x24/2026-10-23/detail-iniwfmnk5026841.d.html'),
+]
+
+
+def to_news(it):
+    return {'track': it['track'], 'category': it['category'], 'sentiment': it['sentiment'],
+            'direction': it['direction'], 'strength': it['strength'], 'confidence': it['confidence'],
+            'volatility': it['volatility'], 'brief': it['brief'], 'title': it['title'],
+            'summary': it['summary'], 'window': WIN, 'score': it['strength'],
+            'source': it['source'], 'source_url': it['source_url']}
+
+
+def to_sent(it, i):
+    return {'idx': i, 'title': it['title'], 'track': it['track'], 'window': WIN,
+            'sentiment': it['sentiment'], 'strength': it['strength'], 'confidence': it['confidence'],
+            'direction': it['direction'], 'volatility': it['volatility'], 'brief': it['brief'],
+            'source_url': it['source_url'], 'category': it['category'],
+            'degraded': True, 'degrade_reason': DEG}
+
+
+close_news = [to_news(x) for x in ITEMS]
+assert all(n['window'] == WIN for n in close_news), 'window 缺失（§3.103 复发守卫）'
+assert all(n['source_url'] == '' or n['source_url'].startswith('http') for n in close_news), 'source_url 格式异常'
+
+json.dump(close_news, open(os.path.join(NEWS, 'news-close-20261023.json'), 'w', encoding='utf-8'),
+          ensure_ascii=False, indent=1)
+
+# ---- 合并当日新闻（判重键 title[:60]，§3.144c） ----
+p_news = os.path.join(NEWS, 'news-2026-10-23.json')
+alln = json.load(open(p_news, encoding='utf-8'))
+before = len(alln)
+exist_titles = {n['title'][:60] for n in alln}
+added_n = [n for n in close_news if n['title'][:60] not in exist_titles]
+alln.extend(added_n)
+json.dump(alln, open(p_news, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+
+# ---- 合并当日情绪 ----
+p_sent = os.path.join(NEWS, 'sentiment-2026-10-23.json')
+s = json.load(open(p_sent, encoding='utf-8'))
+ex_s = {x['title'][:60] for x in s['items']}
+add_s = [to_sent(x, len(s['items']) + k) for k, x in enumerate(ITEMS) if x['title'][:60] not in ex_s]
+s['items'].extend(add_s)
+s['count'] = len(s['items'])
+s['degraded_items'] = len(s['items'])
+s['degraded_batches'] = s.get('degraded_batches', 0) + 1
+s['degradation_reason'] = 'HTTP 402'
+s['mean_strength'] = round(sum(x['strength'] for x in s['items']) / len(s['items']), 2)
+s['net_nominal'] = round(sum((x['strength'] if x['direction'] == '利多' else -x['strength'] if x['direction'] == '利空' else 0)
+                             for x in s['items']), 2)
+bt = defaultdict(lambda: {'n': 0, 'net': 0.0, 'strength_sum': 0})
+for x in s['items']:
+    v = bt[x['track']]
+    v['n'] += 1; v['strength_sum'] += x['strength']
+    v['net'] += (x['strength'] if x['direction'] == '利多' else -x['strength'] if x['direction'] == '利空' else 0)
+s['by_track'] = {k: {'n': v['n'], 'net': round(v['net'], 2),
+                     'mean_strength': round(v['strength_sum'] / v['n'], 2)} for k, v in bt.items()}
+json.dump(s, open(p_sent, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+
+# ---- 本档窗口聚合 ----
+win_items = [x for x in s['items'] if x['window'] == WIN]
+assert len(win_items) == len(ITEMS), f'本档窗口条目 {len(win_items)} != {len(ITEMS)}'
+wt = defaultdict(lambda: {'n': 0, 'net': 0.0, 'sum': 0})
+for x in win_items:
+    v = wt[x['track']]
+    v['n'] += 1; v['sum'] += x['strength']
+    v['net'] += (x['strength'] if x['direction'] == '利多' else -x['strength'] if x['direction'] == '利空' else 0)
+by_track = {k: {'n': v['n'], 'net_score': round(v['net'] / v['n'], 2),
+                'mean_strength': round(v['sum'] / v['n'], 2)} for k, v in wt.items()}
+
+pc = json.load(open(os.path.join(HIST, 'portfolio_close_20261023.json'), encoding='utf-8'))
+total = pc['total_mv']
+w = {k: v['mv'] / total for k, v in pc['tracks'].items()}
+expo_net = round(sum(by_track[t]['net_score'] * w[t] for t in by_track if t in w) /
+                 sum(w[t] for t in by_track if t in w), 4)
+agg = {'date': TODAY, 'window': WIN, 'count': len(win_items),
+       'annotation_mode': 'rule_table_degraded', 'degraded_items': len(win_items),
+       'degradation_reason': DEG,
+       'by_track': by_track,
+       'mean_strength': round(sum(x['strength'] for x in win_items) / len(win_items), 2),
+       'net_nominal': round(sum((x['strength'] if x['direction'] == '利多' else -x['strength'] if x['direction'] == '利空' else 0)
+                                for x in win_items), 2),
+       'direction_count': {'利多': sum(1 for x in win_items if x['direction'] == '利多'),
+                           '利空': sum(1 for x in win_items if x['direction'] == '利空'),
+                           '中性': sum(1 for x in win_items if x['direction'] == '中性')},
+       'exposure_weighted_net': expo_net,
+       'exposure_weight_note': '按 10/23 收盘赛道权重加权（mv/total_mv 现算，不引用 pct_of_total）',
+       'source_url_coverage': f"{sum(1 for x in win_items if x['source_url'])}/{len(win_items)}",
+       'window_coverage': f"{sum(1 for x in win_items if x.get('window'))}/{len(win_items)}"}
+json.dump(agg, open(os.path.join(HIST, 'sentiment_agg_20261023_close.json'), 'w', encoding='utf-8'),
+          ensure_ascii=False, indent=1)
+
+print(f'news 当日：{before} → {len(alln)}（本档 +{len(added_n)}）')
+print(f'sentiment 当日：{s["count"]} 条；本档窗口 {len(win_items)} 条；均值强度 {agg["mean_strength"]}')
+print(f'名义净 {agg["net_nominal"]} / 暴露加权 {expo_net}')
+print('方向分布', agg['direction_count'])
+print('分赛道净分：', {k: v['net_score'] for k, v in by_track.items()})
+print('source_url 覆盖', agg['source_url_coverage'])

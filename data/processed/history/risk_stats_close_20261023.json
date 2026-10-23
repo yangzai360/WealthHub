@@ -1,0 +1,111 @@
+{
+ "date": "2026-10-23",
+ "chain_cum_pct": -5.73,
+ "chain_days": 51,
+ "chain_0pct_row_inserted": false,
+ "chain_gap_note": "10/1-10/7 长假「混合档」产物均为 portfolio_pending_*（不匹配 portfolio_close_* glob）→ 链式序列无 0% 行插入；10/23 正常交易日以 portfolio_close_20261023.json 接续 10/22 **修正件**末行（portfolio_close_20261022_fix.json = 365,851.37 元 / −1.5820%，§3.108：同日期以 _fix 为准）",
+ "w39_cum_pct": -0.2,
+ "w39_days": 4,
+ "w40_cum_pct": 0.86,
+ "w40_days": 3,
+ "w41_cum_pct": -1.01,
+ "w41_days": 2,
+ "w41_daily": [
+  "10-08 -1.6860%",
+  "10-09 +0.6875%"
+ ],
+ "w42_cum_pct": -1.83,
+ "w42_days": 5,
+ "w43_cum_pct": 0.31,
+ "w43_days": 5,
+ "w43_daily": [
+  {
+   "date": "2026-10-19",
+   "pct": 0.5434
+  },
+  {
+   "date": "2026-10-20",
+   "pct": 0.1351
+  },
+  {
+   "date": "2026-10-21",
+   "pct": -0.2508
+  },
+  {
+   "date": "2026-10-22",
+   "pct": -1.582
+  },
+  {
+   "date": "2026-10-23",
+   "pct": 1.4853
+  }
+ ],
+ "w42_daily": [
+  "10-12 -0.0344%",
+  "10-13 -0.6691%",
+  "10-14 -0.6941%",
+  "10-15 -0.4117%",
+  "10-16 -0.0291%"
+ ],
+ "sharpe": -2.43,
+ "sharpe_n": 51,
+ "daily_mean": -0.1127,
+ "daily_sd": 0.7787,
+ "max_dd_pct": -8.18,
+ "max_dd_peak": "2026-08-10",
+ "max_dd_trough": "2026-10-22",
+ "last5_cum_pct": 0.31,
+ "last10_cum_pct": -1.53,
+ "rf_pct": 1.68,
+ "rf_note": "中国 10Y 国债硬编码 1.68%（本地 10Y 序列自 2026-08-11 后未维护，缺口待补）",
+ "tracks_end": {
+  "其他/宽基": {
+   "mv": 92768.39,
+   "pct_of_total": 24.99
+  },
+  "大消费": {
+   "mv": 75348.69,
+   "pct_of_total": 20.29
+  },
+  "现金": {
+   "mv": 29212.97,
+   "pct_of_total": 7.87
+  },
+  "A股医药": {
+   "mv": 82015.05,
+   "pct_of_total": 22.09
+  },
+  "美股标普医药": {
+   "mv": 62728.04,
+   "pct_of_total": 16.89
+  },
+  "恒生科技": {
+   "mv": 29212.39,
+   "pct_of_total": 7.87
+  }
+ },
+ "med_pct_end": 38.98,
+ "total_mv_end": 371285.52,
+ "fix_applied": [
+  "portfolio_close_20260918_fix.json",
+  "portfolio_close_20260921_fix.json",
+  "portfolio_close_20260922_fix.json",
+  "portfolio_close_20260923_fix.json",
+  "portfolio_close_20260924_fix.json",
+  "portfolio_close_20260928_fix.json",
+  "portfolio_close_20260929_fix.json",
+  "portfolio_close_20260930_fix.json",
+  "portfolio_close_20261009_fix.json",
+  "portfolio_close_20261013_fix.json",
+  "portfolio_close_20261014_fix.json",
+  "portfolio_close_20261015_fix.json",
+  "portfolio_close_20261016_fix.json",
+  "portfolio_close_20261019_fix.json",
+  "portfolio_close_20261020_fix.json",
+  "portfolio_close_20261021_fix.json",
+  "portfolio_close_20261022_fix.json"
+ ],
+ "override_rule": "显式优先级（_fix 优先）+ `est_total_pct_raw is not None` 显式判空（§3.98/§3.102）",
+ "tracks_end_note": "赛道权重一律由 mv / total_mv 现算（§3.146a ①）；med_pct 亦由 mv 求和现算（§3.146a ②）",
+ "note": "正常交易日（A股 15:00 收盘 + 港股 16:00 收盘 + 美股 10/23 未开盘）；末行 = 2026-10-23；本档**4 只 6 行未定价**（000248 双账户 + 002708 双账户 + 000051 + 002742，名义 61,440.08 元 = 16.55%，最新净值日 10/22 == 基准净值日 → 计 0，属「基准已含」口径 §3.105，20:00 首抓未出库、待兜底复抓）；场外 23 只中 19 只出 10/23 真实净值；QDII 000369/016280 的 10/22 净值本档释放（US 10/22 段核销 +942.55 元）；164906 的 10/22 净值 −3.24% 计入恒生科技腿；⚠️ 10/22 末行取 _fix 修正件（portfolio_close_20261022_fix.json，−5,880.66 元 / −1.5820%），非原始 portfolio_close_20261022.json（§3.108：同日期以 _fix 为准）"
+}
