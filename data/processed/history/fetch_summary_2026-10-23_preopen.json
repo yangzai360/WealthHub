@@ -1,0 +1,239 @@
+{
+  "date": "2026-10-23",
+  "session": "preopen",
+  "session_type": "normal_trading_day_preopen",
+  "session_type_note": "档型③「正常交易日盘前」= A股 10/23 正常交易日 + 港股 10/23 正常交易日（10/22 已复市收盘）+ 美股 10/23 正常交易日；08:00 A股/港股均无当日价格 → 不产 close/pending，待消化沿用上一档（10/22 收盘件）",
+  "tables": {
+    "fund_nav": 1,
+    "indices_us": 7
+  },
+  "fallback_verdict": {
+    "002708": {
+      "prev_navdays": [
+        "2026-10-21"
+      ],
+      "refetch_nav_date": "2026-10-22",
+      "refetch_nav": "1.7670",
+      "refetch_pct": "-3.39",
+      "verdict": "NEW_NAVDAY_NEED_FIX"
+    }
+  },
+  "qdii_latest_recheck": {
+    "000369": {
+      "refetch_latest": {
+        "nav_date": "2026-10-21",
+        "nav": "2.6780",
+        "pct": "-0.19"
+      }
+    },
+    "016280": {
+      "refetch_latest": {
+        "nav_date": "2026-10-21",
+        "nav": "2.6320",
+        "pct": "-0.19"
+      }
+    },
+    "164906": {
+      "refetch_latest": {
+        "nav_date": "2026-10-21",
+        "nav": "0.8485",
+        "pct": "-1.66"
+      }
+    }
+  },
+  "us_gb_fallback": {
+    "DIA": {
+      "date": "2026-10-22",
+      "close": 527.89,
+      "pct": 0.04,
+      "prev_close": 527.7,
+      "src": "sina gb_dia",
+      "pct_selfcheck": 0.04
+    }
+  },
+  "us_snapshot": {
+    "XLV": {
+      "date": "2026-10-22",
+      "close": 181.3,
+      "pct": 1.32,
+      "prev_date": "2026-10-21"
+    },
+    "IYH": {
+      "date": "2026-10-22",
+      "close": 76.22,
+      "pct": 1.33,
+      "prev_date": "2026-10-21"
+    },
+    "QQQ": {
+      "date": "2026-10-22",
+      "close": 704.47,
+      "pct": -2.86,
+      "prev_date": "2026-10-21"
+    },
+    "DIA": {
+      "date": "2026-10-22",
+      "close": 527.89,
+      "pct": 0.04,
+      "prev_date": "prev",
+      "src": "gb_"
+    },
+    "SPY": {
+      "date": "2026-10-22",
+      "close": 763.96,
+      "pct": -1.18,
+      "prev_date": "2026-10-21"
+    },
+    ".IXIC": {
+      "date": "2026-10-22",
+      "close": 26008.8594,
+      "pct": -2.6,
+      "prev_date": "2026-10-21"
+    },
+    ".DJI": {
+      "date": "2026-10-21",
+      "close": 52856.0898,
+      "pct": 0.69,
+      "prev_date": "2026-10-20"
+    },
+    ".INX": {
+      "date": "2026-10-22",
+      "close": 7663.4302,
+      "pct": -1.21,
+      "prev_date": "2026-10-21"
+    }
+  },
+  "a_snapshot": {
+    "sh000001": {
+      "date": "2026-10-22",
+      "close": 3658.026,
+      "pct": -1.48,
+      "distinct_days": 8747
+    },
+    "sh000932": {
+      "date": "2026-10-22",
+      "close": 12248.573,
+      "pct": -0.42,
+      "distinct_days": 4202
+    },
+    "sz399006": {
+      "date": "2026-10-22",
+      "close": 2576.901,
+      "pct": -4.37,
+      "distinct_days": 3979
+    },
+    "sh000300": {
+      "date": "2026-10-22",
+      "close": 4036.297,
+      "pct": -1.84,
+      "distinct_days": 6014
+    },
+    "sh000933": {
+      "date": "2026-10-22",
+      "close": 7521.098,
+      "pct": -1.96,
+      "distinct_days": 4202
+    },
+    "sh000913": {
+      "date": "2026-10-22",
+      "close": 7887.889,
+      "pct": -2.12,
+      "distinct_days": 6014
+    },
+    "sz399989": {
+      "date": "2026-10-22",
+      "close": 6433.887,
+      "pct": -1.74,
+      "distinct_days": 2777
+    },
+    "sz399997": {
+      "date": "2026-10-22",
+      "close": 6123.996,
+      "pct": -1.3,
+      "distinct_days": 2757
+    },
+    "sh000905": {
+      "date": "2026-10-22",
+      "close": 6655.25,
+      "pct": -2.71,
+      "distinct_days": 5293
+    },
+    "sz399005": {
+      "date": "2026-10-22",
+      "close": 7162.687,
+      "pct": -2.61,
+      "distinct_days": 4449
+    }
+  },
+  "hk_snapshot": {
+    "rt_hkHSI": "var hq_str_rt_hkHSI=\"HSI,恒生指数,23513.790,23651.871,23513.790,22879.110,22934.680,-717.190,-3.030,0.000,0.000,256050949.417,18875766464,0.000,0.000,28056.100,22518.000,2026/10/22,16:09:30,,,,,,\";",
+    "rt_hkHSTECH": "var hq_str_rt_hkHSTECH=\"HSTECH,恒生科技指数,3949.020,3994.770,3949.020,3781.150,3793.930,-200.840,-5.030,0.000,0.000,72599511.010,2031650771,0.000,0.000,6198.680,3985.630,2026/10/22,16:08:58,,,,,,\";",
+    "rt_hkHSCEI": "var hq_str_rt_hkHSCEI=\"HSCEI,恒生中国企业指数,7887.510,7943.410,7887.510,7667.800,7689.190,-254.220,-3.200,0.000,0.000,96278317.136,3350184552,0.000,0.000,9645.900,7404.470,2026/10/22,16:08:58,,,,,,\";",
+    "rt_hkHSHCI": "var hq_str_rt_hkHSHCI=\"HSHCI,恒生医疗保健指数,3656.9800,3665.0800,3681.5700,3432.9800,3457.8200,-207.2600,-5.6550,0.0000,0.0000,20139442.9660,0,0.0000,0.0000,0.0000,0.0000,2026/10/22,16:08:58,,,,,,\";",
+    "rt_hkHSCI": "var hq_str_rt_hkHSCI=\"HSCI,HSCI,3432.0300,3451.6800,3432.0400,3333.6400,3341.4700,-110.2100,-3.1929,0.0000,0.0000,181009513.3170,0,0.0000,0.0000,0.0000,0.0000,2026/10/22,16:08:58,,,,,,\";"
+  },
+  "hk_crosscheck": {
+    "rt_hkHSI": {
+      "rt_price": 22934.68,
+      "hk_price": 22934.68,
+      "diff_pts": 0.0
+    },
+    "rt_hkHSTECH": {
+      "rt_price": 3793.93,
+      "hk_price": 3793.93,
+      "diff_pts": 0.0
+    },
+    "rt_hkHSCEI": {
+      "rt_price": 7689.19,
+      "hk_price": 7689.19,
+      "diff_pts": 0.0
+    }
+  },
+  "sparse": {
+    "sh000300": {
+      "rows": 6014,
+      "distinct_days": 6014,
+      "first": "2002-01-04",
+      "last": "2026-10-22"
+    },
+    "sh000933": {
+      "rows": 4202,
+      "distinct_days": 4202,
+      "first": "2009-07-03",
+      "last": "2026-10-22"
+    },
+    "sz399006": {
+      "rows": 3979,
+      "distinct_days": 3979,
+      "first": "2010-06-01",
+      "last": "2026-10-22"
+    },
+    "sz399989": {
+      "rows": 2777,
+      "distinct_days": 2777,
+      "first": "2015-05-19",
+      "last": "2026-10-22"
+    }
+  },
+  "qieman": {
+    "plan": {
+      "status": 200,
+      "size": 0
+    },
+    "adjustments": {
+      "status": 200,
+      "size": 0
+    },
+    "nav-history": {
+      "status": 200,
+      "size": 0
+    }
+  },
+  "proxy_env": {
+    "CODEBUDDY_SERVICE_PROXY_URL": "http://127.0.0.1:57167/internal/hooks/services/invoke"
+  },
+  "table_lines_after": {
+    "fund_nav.csv": 1216,
+    "indices.csv": 1652,
+    "etf_intraday.csv": 892
+  }
+}
